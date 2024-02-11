@@ -1,0 +1,62 @@
+<Defs>
+  <GeneDef Name="BS_AbstractDiet" Abstract="True">
+    <exclusionTags>
+      <li>BS_Diet</li>
+      <li>Diet</li>
+    </exclusionTags>
+    <displayCategory>BS_Diet</displayCategory>
+    <biostatCpx>0</biostatCpx>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+  <GeneDef ParentName="BS_AbstractDiet">
+    <defName>BS_Diet_Carnivore</defName>
+    <label>Carnivore</label>
+    <description>Carriers of this gene can only eat carnivore food. They will not automatically eat vegetarian food, and will vomit if they are forced.</description>
+    <iconPath>GeneIcons/BS_Carnivore</iconPath>
+    <biostatMet>2</biostatMet>
+  </GeneDef>
+
+  <GeneDef ParentName="BS_AbstractDiet">
+    <defName>BS_Diet_Herbivore</defName>
+    <label>Herbivore</label>
+    <description>Carriers of this gene can only eat vegetarian food. They will not automatically eat carnivore food, and will vomit if they are forced.</description>
+    <iconPath>GeneIcons/BS_Vegetartian</iconPath>
+    <biostatMet>1</biostatMet>
+    <exclusionTags>
+      <li>BS_Cannibal</li>
+      <li>Diet</li>
+    </exclusionTags>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>Cannibal</defName>
+    <label>Cannibal</label>
+    <labelShortAdj>Cannibal</labelShortAdj>
+    <description>Carriers of this gene have a violent cannibalistic streak.</description>
+    <iconPath>GeneIcons/BS_Cannibal</iconPath>
+    <displayCategory>BS_Diet</displayCategory>
+    <displayOrderInCategory>1</displayOrderInCategory>
+    <forcedTraits>
+      <li>
+        <def>Cannibal</def>
+      </li>
+    </forcedTraits>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
+    <exclusionTags>
+      <li>BS_Cannibal</li>
+    </exclusionTags>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </GeneDef>
+</Defs>

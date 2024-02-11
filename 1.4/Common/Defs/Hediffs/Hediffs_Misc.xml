@@ -1,0 +1,245 @@
+<Defs>
+
+  <HediffDef Abstract="True" Name="BS_GeneratePilot">
+    <label>You shouldn't be able to see this. :D</label>
+    <isBad>false</isBad>
+    <everCurableByItem>false</everCurableByItem>
+    <initialSeverity>1</initialSeverity>
+    <hediffClass>BigAndSmall.GeneratePilotOnSpawn</hediffClass>
+  </HediffDef>
+  
+  <HediffDef>
+    <defName>BS_Piloted</defName>
+    <label>Pilotable</label>
+    <description>This creature requires a pilot to function.</description>
+    <isBad>false</isBad>
+    <everCurableByItem>false</everCurableByItem>
+    <initialSeverity>1</initialSeverity>
+    <hediffClass>BigAndSmall.Piloted</hediffClass>
+    <stages>
+      <li>
+        <label>pilot missing</label>
+        <capMods>
+          <li>
+            <capacity>Talking</capacity>
+            <setMax>0</setMax>
+          </li>
+          <li>
+            <capacity>Hearing</capacity>
+            <setMax>0</setMax>
+          </li>
+        </capMods>
+      </li>
+
+      <li>
+        <minSeverity>0.5</minSeverity>
+        <label>pilot present</label>
+      </li>
+    </stages>
+    
+    <comps>
+			<li Class="BigAndSmall.CompProperties_Piloted">
+        <pilotRequired>true</pilotRequired>
+        <pilotCapacity>1</pilotCapacity>
+        <baseCapacity>0.51</baseCapacity>
+        <pilotConsciousnessOffset>1</pilotConsciousnessOffset>
+        <inheritPilotSkills>true</inheritPilotSkills>
+        <inheritPilotMentalTraits>true</inheritPilotMentalTraits>
+        <inheritRelationShips>true</inheritRelationShips>
+			</li>
+      <li Class="BigAndSmall.CompProperties_GiveAbilities">
+        <abilities><li>BS_EjectPilot</li></abilities>
+			</li>
+		</comps>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>BS_PilotAssisted</defName>
+    <label>operator assisted</label>
+    <description>This creature requires an operator to function at optimal capacity.</description>
+    <isBad>false</isBad>
+    <everCurableByItem>false</everCurableByItem>
+    <initialSeverity>0.1</initialSeverity>
+    <hediffClass>BigAndSmall.Piloted</hediffClass>
+    <stages>
+      <li>
+        <label>pilot missing</label>
+      </li>
+      <li>
+        <minSeverity>0.5</minSeverity>
+        <label>pilot present</label>
+      </li>
+    </stages>
+    <comps>
+			<li Class="BigAndSmall.CompProperties_Piloted">
+        <pilotRequired>false</pilotRequired>
+        <pilotCapacity>1</pilotCapacity>
+        <flatBonusIfPiloted>0.4</flatBonusIfPiloted>
+        <pilotConsciousnessOffset>1</pilotConsciousnessOffset>
+			</li>
+      <li Class="BigAndSmall.CompProperties_GiveAbilities">
+        <abilities><li>BS_EjectPilot</li></abilities>
+			</li>
+		</comps>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>BS_PilotRequired</defName>
+    <label>operator assisted</label>
+    <description>This creature has own intelligence, but will shut off without an operator.</description>
+    <isBad>false</isBad>
+    <everCurableByItem>false</everCurableByItem>
+    <initialSeverity>0.1</initialSeverity>
+    <hediffClass>BigAndSmall.Piloted</hediffClass>
+    <stages>
+      <li>
+        <label>pilot missing</label>
+      </li>
+      <li>
+        <minSeverity>0.5</minSeverity>
+        <label>pilot present</label>
+      </li>
+    </stages>
+    <comps>
+			<li Class="BigAndSmall.CompProperties_Piloted">
+        <pilotRequired>true</pilotRequired>
+        <pilotCapacity>1</pilotCapacity>
+        <flatBonusIfPiloted>0.4</flatBonusIfPiloted>
+        <pilotConsciousnessOffset>1</pilotConsciousnessOffset>
+			</li>
+      <li Class="BigAndSmall.CompProperties_GiveAbilities">
+        <abilities><li>BS_EjectPilot</li></abilities>
+			</li>
+		</comps>
+  </HediffDef>
+
+  <JobDef>
+    <defName>BS_EnteringPilotablePawn</defName>
+    <driverClass>BigAndSmall.JobDriver_EnterPilotable</driverClass>
+    <reportString>Entering pilotable entity</reportString>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+
+  <JobDef>
+    <defName>BS_EjectPilotablePawn</defName>
+    <driverClass>BigAndSmall.JobDriver_EjectPilotable</driverClass>
+    <reportString>Ejecting pilots.</reportString>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+
+  <HediffDef>
+    <defName>BS_Engulfed</defName>
+    <label>Engulfed</label>
+    <description>This creature has temporarily engulfed something.</description>
+    <isBad>false</isBad>
+    <everCurableByItem>false</everCurableByItem>
+    <initialSeverity>1</initialSeverity>
+    <hediffClass>BigAndSmall.EngulfHediff</hediffClass>
+    <stages>
+      <li>
+        <label>engulfed</label>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>BS_EngulfedEnchumberance</defName>
+    <label>Enchumbered</label>
+    <description>This creature is enchumbered due to internal contents.</description>
+    <isBad>false</isBad>
+    <everCurableByItem>false</everCurableByItem>
+    <initialSeverity>0</initialSeverity>
+    <stages>
+      <li>
+        <label>no enchumberance</label>
+      </li>
+      <li>
+        <minSeverity>0.25</minSeverity>
+        <label>light enchumberance</label>
+        <statFactors>
+          <MoveSpeed>0.9</MoveSpeed>
+        </statFactors>
+        <capMods>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>-0.05</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>0.45</minSeverity>
+        <label>moderate enchumberance</label>
+        <statFactors>
+          <MoveSpeed>0.80</MoveSpeed>
+        </statFactors>
+        <capMods>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>-0.075</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>0.65</minSeverity>
+        <label>severe enchumberance</label>
+        <statFactors>
+          <MoveSpeed>0.7</MoveSpeed>
+        </statFactors>
+        <capMods>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>-0.125</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>0.80</minSeverity>
+        <label>over-encumbered</label>
+        <statFactors>
+          <MoveSpeed>0.5</MoveSpeed>
+        </statFactors>
+        <capMods>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>-0.25</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>BS_HeatGenerator</defName>
+    <label>living furnace</label>
+    <description>This creature is generating a large amount of heat.\n\nComparable to two heaters at full power. Somewhat scales based on BodySize.</description>
+    <isBad>false</isBad>
+    <everCurableByItem>false</everCurableByItem>
+    <initialSeverity>1</initialSeverity>
+    <hediffClass>HediffWithComps</hediffClass>
+    <comps>
+			<li Class="BigAndSmall.CompProperties_TempGenerator">
+				<energyPerSecond>42</energyPerSecond>
+        <targetTemperature>1000</targetTemperature>
+        <scaleToBodySize>True</scaleToBodySize>
+			</li>
+		</comps>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>BS_ColdGenerator</defName>
+    <label>cryo-generator</label>
+    <description>This creature is greatly cooling down their surroundings.\n\nComparable to two coolers at full power. Somewhat scales based on BodySize.</description>
+    <isBad>false</isBad>
+    <everCurableByItem>false</everCurableByItem>
+    <initialSeverity>1</initialSeverity>
+    <hediffClass>HediffWithComps</hediffClass>
+    <comps>
+			<li Class="BigAndSmall.CompProperties_TempGenerator">
+        <energyPerSecond>-42</energyPerSecond>
+        <targetTemperature>-60</targetTemperature>
+        <scaleToBodySize>True</scaleToBodySize>
+			</li>
+		</comps>
+  </HediffDef>
+
+</Defs>

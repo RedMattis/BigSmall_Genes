@@ -1,0 +1,98 @@
+<Defs>
+  <ThingDef Name="BMad_ShrinkRay" ParentName="BaseHumanMakeableGun">
+		<defName>BMad_ShrinkRay</defName>
+		<label>shrink ray</label>
+		<description>A ray for shrinking. Use with caution since very small objects get quantum unstable and can fall into other dimensions.\n\nNote: try not to mix up to be confused with the other "shrink ray" made to restore mental health; no need to shrink our customer approval.</description>
+		<possessionCount>1</possessionCount>
+		<graphicData>
+      <texPath>Item/mad_shrinkray</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+		<soundInteract>Interact_ChargeRifle</soundInteract>
+    <generateCommonality>0.05</generateCommonality>
+    <generateAllowChance>0.05</generateAllowChance>
+		<statBases>
+      <Mass>8</Mass>
+      <AccuracyTouch>0.85</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.45</AccuracyMedium>
+      <AccuracyLong>0.25</AccuracyLong>
+      <RangedWeapon_Cooldown>0.2</RangedWeapon_Cooldown>
+      <WorkToMake>30000</WorkToMake>
+    </statBases>
+		<weaponTags Inherit="False">
+      <li>SpacerGun</li>
+			<!-- <li>SpacerGun</li>
+			<li>Revolver</li>
+      <li>SpacerGun</li>
+      <li>MechanoidGunMedium</li> -->
+		</weaponTags>
+    
+		<weaponClasses Inherit="False">
+      <li>RangedLight</li>
+			<!-- <li>RangedLight</li> -->
+		</weaponClasses>
+		<costList>
+			<Steel>30</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<displayPriority>400</displayPriority>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <researchPrerequisites>
+        <li>GunTurrets</li>
+        <li>BS_MadScienceField</li>
+      </researchPrerequisites>
+		</recipeMaker>
+		<verbs>
+			<li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>BMad_ShrinkRayRay</defaultProjectile>
+        <warmupTime>1</warmupTime>
+        <range>19.9</range>
+        <soundCast>Resurrect_Resolve</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    
+	</ThingDef>
+
+  <ThingDef ParentName="BMad_ShrinkRay">
+		<defName>BMad_GrowthRay</defName>
+		<label>growth ray</label>
+		<description>A ray for growing things. Not in the botanical sense.\n\nHopefully this iterration will not create man-eating turnips if the botany team get them mixed up again. \n\nNote: Overloading the subject after growth has stopped can lead do a dangerous discharge of growth flux and the subject suffers a form micro-disintegration that has killed all machies and life-forms we've tested it on.</description>
+		<graphicData>
+      <texPath>Item/mad_growthray</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+		<verbs Inherit="False">
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>BMad_GrowthRayRay</defaultProjectile>
+        <warmupTime>1</warmupTime>
+        <range>19.9</range>
+        <soundCast>Resurrect_Resolve</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+  </ThingDef>
+</Defs>

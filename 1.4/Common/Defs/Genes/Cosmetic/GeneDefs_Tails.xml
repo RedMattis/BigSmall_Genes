@@ -1,0 +1,36 @@
+<Defs>
+
+  <!--Just keeping this the same as the AG tail for now since they are picked randomly.-->
+  <GeneDef ParentName="GeneTailBase">
+		<defName>BS_DemonTail</defName>
+		<label>dexterous demon tail</label>
+		<description>Carriers of this gene grow a powerful demonic-looking tail.</description>
+		<iconPath>Humanlike/BodyAttachments/BS_DemonTaila_icon</iconPath>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<selectionWeight>0.1</selectionWeight>
+    <capMods>
+			<li>
+				<capacity>Manipulation</capacity>
+				<offset>0.05</offset>
+			</li>
+		</capMods>
+		<graphicData>
+			<graphicPath>Humanlike/BodyAttachments/BS_DemonTaila</graphicPath>
+			<colorType>Skin</colorType>
+			<drawScale>1.25</drawScale>
+			<drawOffsetNorth>(0.0, 0.2, -0.0)</drawOffsetNorth>
+			<drawOffsetSouth>(-0.0, -0.1, -0.0)</drawOffsetSouth>
+			<drawOffsetEast>(-0.0, -0.1, -0.0)</drawOffsetEast>
+		</graphicData>
+		<modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	
+
+</Defs>

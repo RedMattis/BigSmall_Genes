@@ -1,0 +1,88 @@
+<!-- NOTE! These are not remotely balanced as regular traits (especially not the Titan-Trait). They are intended for use with other mods, f.ex. to be applied by implant HeDiffs.-->
+
+<Defs>
+
+  <!-- <TraitDef Name="BS_BodyFrameBase_Trait" Abstract="True"> -->
+    <!-- <commonality>0</commonality> -->
+    <!-- <exclusionTags> -->
+      <!-- <li>BS_BodyFrame_Trait</li> -->
+    <!-- </exclusionTags> -->
+    
+  <!-- </TraitDef> -->
+  
+  <!-- <TraitDef ParentName="BS_BodyFrameBase_Trait"> -->
+    <!-- <defName>JotunFrame_Trait</defName> -->
+    <!-- <degreeDatas> -->
+      <!-- <li> -->
+        <!-- <label>Jotun Frame</label> -->
+        <!-- <description>{PAWN_nameDef} towers over other people.</description> -->
+        <!-- <statOffsets> -->
+          <!-- <SM_BodySizeOffset>1.5</SM_BodySizeOffset> -->
+        <!-- </statOffsets> -->
+        <!-- <statFactors> -->
+          <!-- <MiningSpeed>2.0</MiningSpeed> -->
+          <!-- <DeepDrillingSpeed>1.5</DeepDrillingSpeed> -->
+          <!-- <ConstructionSpeed>1.35</ConstructionSpeed> -->
+          <!-- <LifespanFactor>2.0</LifespanFactor> -->
+        <!-- </statFactors> -->
+      <!-- </li> -->
+    <!-- </degreeDatas> -->
+  <!-- </TraitDef> -->
+  
+  <!-- <TraitDef ParentName="BS_BodyFrameBase_Trait"> -->
+    <!-- <defName>TitanFrame_Trait</defName> -->
+    <!-- <degreeDatas> -->
+      <!-- <li> -->
+        <!-- <label>Titan Frame</label> -->
+        <!-- <description>{PAWN_nameDef} is of truly Titanic size.</description> -->
+        <!-- <statFactors> -->
+          <!-- <MiningSpeed>3.0</MiningSpeed> -->
+          <!-- <DeepDrillingSpeed>2.0</DeepDrillingSpeed> -->
+          <!-- <ConstructionSpeed>1.6</ConstructionSpeed> -->
+          <!-- <MoveSpeed>0.85</MoveSpeed> -->
+        <!-- </statFactors> -->
+        <!-- <statOffsets> -->
+          <!-- <SM_BodySizeOffset>3</SM_BodySizeOffset> -->
+        <!-- </statOffsets> -->
+      <!-- </li> -->
+    <!-- </degreeDatas> -->
+  <!-- </TraitDef> -->
+  
+  <!-- <TraitDef ParentName="BS_BodyFrameBase_Trait"> -->
+    <!-- <defName>SmallFrame_Trait</defName> -->
+    <!-- <degreeDatas> -->
+      <!-- <li> -->
+        <!-- <label>Small Frame</label> -->
+        <!-- <description>{PAWN_nameDef} is very small.</description> -->
+        <!-- <statOffsets> -->
+          <!-- <SM_BodySizeOffset>-0.35</SM_BodySizeOffset> -->
+        <!-- </statOffsets> -->
+        <!-- <statFactors> -->
+          <!-- <MiningSpeed>0.75</MiningSpeed> -->
+          <!-- <ConstructionSpeed>0.75</ConstructionSpeed> -->
+          <!-- <MoveSpeed>0.9</MoveSpeed> -->
+        <!-- </statFactors> -->
+      <!-- </li> -->
+    <!-- </degreeDatas> -->
+  <!-- </TraitDef> -->
+  
+  <!-- <TraitDef ParentName="BS_BodyFrameBase_Trait"> -->
+    <!-- <defName>TinyFrame_Trait</defName> -->
+    <!-- <degreeDatas> -->
+      <!-- <li> -->
+        <!-- <label>Tiny Frame</label> -->
+        <!-- <description>{PAWN_nameDef} is diminutive.</description> -->
+        <!-- <statOffsets> -->
+          <!-- <SM_BodySizeOffset>-0.6</SM_BodySizeOffset> -->
+        <!-- </statOffsets> -->
+        <!-- <statFactors> -->
+          <!-- <MiningSpeed>0.6</MiningSpeed> -->
+          <!-- <DeepDrillingSpeed>0.6</DeepDrillingSpeed> -->
+          <!-- <ConstructionSpeed>0.6</ConstructionSpeed> -->
+          <!-- <MoveSpeed>0.8</MoveSpeed> -->
+        <!-- </statFactors> -->
+      <!-- </li> -->
+    <!-- </degreeDatas> -->
+  <!-- </TraitDef> -->
+
+</Defs>

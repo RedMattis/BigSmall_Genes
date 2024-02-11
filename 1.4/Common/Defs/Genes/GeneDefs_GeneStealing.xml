@@ -1,0 +1,63 @@
+<Defs>
+  <GeneDef>
+    <defName>BS_Incorporate</defName>
+    <label>Incorporate</label>
+    <description>Carriers of this gene possess the ability to steal genes from a corpse.\n\nThe carrier will be given a choice of at least 4 possible options.\nSome traits can be turned into genes.\n\nIf metabolism gets too low random traits will be removed until it is okay again (-8 limit).</description>
+    <displayCategory>Archite</displayCategory>
+    <iconPath>GeneIcons/BS_Frankenstein</iconPath>
+    <canGenerateInGeneSet>false</canGenerateInGeneSet>
+    <biostatMet>0</biostatMet>
+    <minAgeActive>3</minAgeActive>
+    <biostatArc>1</biostatArc>
+    <abilities Inherit="False">
+      <li>BS_Incorporate_Abillity</li>
+    </abilities>
+    <descriptionHyperlinks Inherit="False">
+      <AbilityDef>BS_Incorporate_Abillity</AbilityDef>
+    </descriptionHyperlinks>
+    <selectionWeight>2.0</selectionWeight>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+  <AbilityDef ParentName="AbilityTouchBase">
+    <defName>BS_Incorporate_Abillity</defName>
+    <label>Incorporate</label>
+    <description>Carriers of this gene possess the ability to steal genes from a corpse.\n\nThe carrier will be given a choice of least 4 possible options.\nSome traits can be turned into genes.\n\nIf metabolism gets too low random traits will be removed until it is okay again (-8 limit).</description>
+    <iconPath>GeneIcons/BS_Frankenstein</iconPath>
+    <!-- <category>Sanguophage</category> -->
+    <displayOrder>100</displayOrder>
+    <warmupEffecter>Bloodfeed_Warmup</warmupEffecter>
+    <!-- <warmupStartSound>Bloodfeed_Cast</warmupStartSound> -->
+    <hostile>true</hostile>
+    <aiCanUse>false</aiCanUse>
+    <cooldownTicksRange>120000</cooldownTicksRange>
+    <verbProperties>
+      <verbClass>Verb_CastAbilityTouch</verbClass>
+      <drawAimPie>false</drawAimPie>
+      <range>-1</range>
+      <warmupTime>5</warmupTime>
+      <targetParams>
+        <canTargetSelf>false</canTargetSelf>
+        <canTargetBuildings>false</canTargetBuildings>
+        <canTargetMechs>false</canTargetMechs>
+        <canTargetAnimals>false</canTargetAnimals>
+        <canTargetBloodfeeders>false</canTargetBloodfeeders>
+        <canTargetPawns>false</canTargetPawns>
+        <canTargetCorpses>true</canTargetCorpses>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="BigAndSmall.CompProperties_Incorporate">
+        <pickCount>4</pickCount>
+      </li>
+      <li Class="CompProperties_AbilityFleckOnTarget">
+        <fleckDef>BloodSplash</fleckDef>
+      </li>
+    </comps>
+  </AbilityDef>
+</Defs>

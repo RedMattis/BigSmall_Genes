@@ -1,0 +1,28 @@
+<Defs>
+  <GeneDef ParentName="GeneJawBase">
+    <defName>BS_OgreHead</defName>
+    <label>ogre head</label>
+    <description>Carriers of this gene have a big lumpy ogre head.</description>
+    <iconPath>GeneIcons/BS_OgreHead</iconPath>
+    <displayOrderInCategory>97</displayOrderInCategory>
+
+    <graphicData>
+      <graphicPaths>
+        <li>BS_Ogre/standard</li>
+        <li>BS_Ogre/pointy</li>
+        <li>BS_Ogre/square</li>
+      </graphicPaths>
+      <layer>PostSkin</layer>
+      <colorType>Skin</colorType>				
+      <useSkinShader>false</useSkinShader>
+      <drawLoc>HeadTop</drawLoc>
+      <drawOffset>(0, -0.00288, 0)</drawOffset>
+      <drawIfFaceCovered>true</drawIfFaceCovered>						
+    </graphicData>
+    
+    <selectionWeight>0.1</selectionWeight>
+    <canGenerateInGeneSet>false</canGenerateInGeneSet>
+  </GeneDef>
+
+
+</Defs>

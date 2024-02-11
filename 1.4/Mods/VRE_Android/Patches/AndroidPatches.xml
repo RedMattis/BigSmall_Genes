@@ -1,0 +1,68 @@
+<Patch>
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/VREAndroids.AndroidGeneDef[defName="VREA_CombatIncapability"]/exclusionTags</xpath>
+    <value>
+      <li>BS_Pacifism</li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/VREAndroids.AndroidSettings[defName="VREA_AndroidSettings"]/allowedTraits</xpath>
+    <value>
+      <li>BS_Giant</li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/VREAndroids.AndroidSettings[defName="VREA_AndroidSettings"]/allowedTraits</xpath>
+    <value>
+      <li>Gigantism</li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/VREAndroids.AndroidSettings[defName="VREA_AndroidSettings"]/allowedTraits</xpath>
+    <value>
+      <li>Large</li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/VREAndroids.AndroidSettings[defName="VREA_AndroidSettings"]/allowedTraits</xpath>
+    <value>
+      <li>Small</li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/VREAndroids.AndroidSettings[defName="VREA_AndroidSettings"]/allowedTraits</xpath>
+    <value>
+      <li>Dwarfism</li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThoughtDef[defName = "NeedFood"]/nullifyingGenes</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThoughtDef[defName = "NeedFood"]</xpath>
+			<value>
+				<nullifyingGenes>
+					<li>BS_BigFrame_Android</li>
+          <li>BS_GiantFrame_Android</li>
+          <li>BS_TitanFrame_Android</li>
+				</nullifyingGenes>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThoughtDef[defName = "NeedFood"]/nullifyingGenes</xpath>
+			<value>
+				<li>BS_BigFrame_Android</li>
+        <li>BS_GiantFrame_Android</li>
+        <li>BS_TitanFrame_Android</li>
+			</value>
+		</match>
+	</Operation>
+
+
+</Patch>

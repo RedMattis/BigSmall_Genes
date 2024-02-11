@@ -1,0 +1,21 @@
+<Patch>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThoughtDef[defName="RBM_Crushed"]/nullifyingTraits</xpath>
+    <value>
+      <li>BS_Giant</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThoughtDef[defName="RBM_CrushedMasochist"]</xpath>
+    <value>
+      <nullifyingTraits><li>BS_Giant</li></nullifyingTraits>
+    </value>
+  </Operation>
+
+
+  
+</Patch>
+  
+  
+  

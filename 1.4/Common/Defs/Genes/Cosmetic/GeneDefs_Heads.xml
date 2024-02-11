@@ -1,0 +1,50 @@
+<Defs>
+
+  <GeneDef ParentName="GeneJawBase">
+    <defName>BS_BrokenTitanHead</defName>
+    <label>urb cyborg head</label>
+    <description>Carriers of this gene have partial cybernetic-looking head</description>
+    <iconPath>GeneIcons/BS_TitanHead_Icon</iconPath>
+    <displayOrderInCategory>97</displayOrderInCategory>
+    <forcedHeadTypes>
+      <!-- <li>BS_BrokenTitanHeadDefault</li> -->
+      <li>BS_BrokenTitanHeadFemale</li>
+      <li>BS_BrokenTitanHeadMale</li>
+    </forcedHeadTypes>
+    <selectionWeight>0.5</selectionWeight>
+    <canGenerateInGeneSet>true</canGenerateInGeneSet>
+  </GeneDef>
+
+  <!-- <HeadTypeDef ParentName="AverageBase">
+    <defName>BS_BrokenTitanHeadDefault</defName>
+    <graphicPath>Humanlike/Heads/BS_Titan/normal_default</graphicPath>
+    <randomChosen>false</randomChosen>
+    <gender>Male</gender>
+    <selectionWeight>99999</selectionWeight>
+    <requiredGenes>
+      <li>BS_BrokenTitanHead</li>
+    </requiredGenes>
+  </HeadTypeDef> -->
+
+  <HeadTypeDef ParentName="AverageBase">
+    <defName>BS_BrokenTitanHeadFemale</defName>
+    <graphicPath>BS_Heads/Titan/bp_female_normal</graphicPath>
+    <randomChosen>false</randomChosen>
+    <gender>Female</gender>
+    <selectionWeight>99999</selectionWeight>
+    <requiredGenes>
+      <li>BS_BrokenTitanHead</li>
+    </requiredGenes>
+  </HeadTypeDef>
+
+  <HeadTypeDef ParentName="AverageBase">
+    <defName>BS_BrokenTitanHeadMale</defName>
+    <graphicPath>BS_Heads/Titan/bp_default_normal</graphicPath>
+    <randomChosen>false</randomChosen>
+    <gender>Male</gender>
+    <selectionWeight>99999</selectionWeight>
+    <requiredGenes>
+      <li>BS_BrokenTitanHead</li>
+    </requiredGenes>
+  </HeadTypeDef>
+</Defs>

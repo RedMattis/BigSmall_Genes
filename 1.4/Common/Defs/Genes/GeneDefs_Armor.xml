@@ -1,0 +1,437 @@
+<Defs>
+  <GeneDef Name="BS_Armor" Abstract="True">
+		<displayCategory>BS_Armour</displayCategory>
+		<geneClass>BetterPrerequisites.PGene</geneClass>
+		<exclusionTags>
+			<li>AG_Armour</li>
+      <li>Armor</li>
+			<li>Armour</li>
+			<li>Armor</li>
+		</exclusionTags>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>BS_CannotWearClothingOrArmor</defName>
+		<displayCategory>BS_Armour</displayCategory>
+		<label>cannot wear clothing or armor</label>
+		<description>Carriers of this gene cannot or will not wear any type of armour or clothing.</description>
+		<iconPath>GeneIcons/BS_NoArmorOrClothes</iconPath>
+		<biostatMet>8</biostatMet>
+		<exclusionTags><li>NoArmor</li></exclusionTags>
+		<statFactors>
+			<SM_RaidWealthMultiplier>0.5</SM_RaidWealthMultiplier>
+		</statFactors>
+		<modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>BS_CannotWearClothing</defName>
+		<displayCategory>BS_Armour</displayCategory>
+		<label>cannot wear clothes</label>
+		<description>Carriers of this gene cannot or will not wear regular clothing. They can still wear dedicated armor however.</description>
+		<iconPath>GeneIcons/BS_NoClothes</iconPath>
+		<biostatMet>4</biostatMet>
+		<exclusionTags><li>NoArmor</li></exclusionTags>
+		<statFactors>
+			<SM_RaidWealthMultiplier>0.8</SM_RaidWealthMultiplier>
+		</statFactors>
+		<modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>BS_CannotWearArmor</defName>
+		<displayCategory>BS_Armour</displayCategory>
+		<label>cannot wear armor</label>
+		<description>Carriers of this gene cannot or will not wear most types of dedicated armor</description>
+		<iconPath>GeneIcons/BS_NoArmour</iconPath>
+		<biostatMet>4</biostatMet>
+		<exclusionTags><li>NoArmor</li></exclusionTags>
+		<statFactors>
+			<SM_RaidWealthMultiplier>0.7</SM_RaidWealthMultiplier>
+		</statFactors>
+		<modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef>
+    <defName>VeryNakedSpeed</defName>
+    <label>greater naked speed</label>
+    <description>Carriers of this gene move much slower while clothed, and significantly faster while naked.</description>
+    <iconPath>GeneIcons/BS_GreaterNakedSpeed</iconPath>
+    <displayCategory>Movement</displayCategory>
+    <displayOrderInCategory>499</displayOrderInCategory>
+    <conditionalStatAffecters>
+      <li Class="ConditionalStatAffecter_Clothed">
+        <statOffsets>
+          <MoveSpeed>-0.3</MoveSpeed>
+        </statOffsets>
+        <statFactors>
+          <MoveSpeed>0.75</MoveSpeed>
+        </statFactors>
+      </li>
+      <li Class="ConditionalStatAffecter_Unclothed">
+        <statOffsets>
+          <MoveSpeed>0.3</MoveSpeed>
+        </statOffsets>
+        <statFactors>
+          <MoveSpeed>1.15</MoveSpeed>
+        </statFactors>
+      </li>
+    </conditionalStatAffecters>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>2</biostatMet>
+    <selectionWeight>1</selectionWeight>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </GeneDef>
+  
+  <GeneDef Name="BS_ToughSkin" ParentName="BS_Armor">
+		<defName>BS_ToughSkin</defName>
+		<label>Tough Skin</label>
+		<description>Carriers of this gene have naturally tough skin. This offers some resistance to blunt and cutting attacks.</description>
+		<iconPath>GeneIcons/BS_Leather</iconPath>
+		
+		<customEffectDescriptions>
+			<li>+25% sharp natural armour.</li>
+      <li>+15% blunt armour.</li>
+		</customEffectDescriptions>
+		<displayOrderInCategory>20</displayOrderInCategory>
+		<statOffsets>
+			<SM_RaidWealthOffset>250</SM_RaidWealthOffset>
+		</statOffsets>
+
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>thick-skinned</symbol>
+				</li>
+			</prefixSymbols>
+		</symbolPack>
+		<selectionWeight>1</selectionWeight>
+    <modExtensions>
+			<li Class="BetterPrerequisites.GeneExtension">
+				<applyBodyHediff><li><hediff>BS_ToughSkin</hediff></li></applyBodyHediff>
+			</li>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+  
+  <GeneDef ParentName="BS_Armor">
+		<defName>BS_NaturalArmor</defName>
+		<label>Natural Armor</label>
+
+		<description>Carriers of this gene shrug off attacks as though they were wearing padded armour.</description>
+		<iconPath>GeneIcons/BS_Platemail</iconPath>
+		
+		<customEffectDescriptions>
+			<li>+40% sharp natural armour.</li>
+      <li>+25% blunt armour.</li>
+		</customEffectDescriptions>
+		<displayOrderInCategory>20</displayOrderInCategory>
+		<statFactors>
+			<SM_RaidWealthMultiplier>1.2</SM_RaidWealthMultiplier>
+		</statFactors>
+		<statOffsets>
+			<SM_RaidWealthOffset>1500</SM_RaidWealthOffset>
+		</statOffsets>
+
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-2</biostatMet>
+
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>sturdy</symbol>
+				</li>
+			</prefixSymbols>
+		</symbolPack>
+		<selectionWeight>1</selectionWeight>
+    <modExtensions>
+			<li Class="BetterPrerequisites.GeneExtension">
+				<applyBodyHediff>
+					<li>
+						<hediff>BS_NaturalArmor_Padded</hediff>
+					</li>
+				</applyBodyHediff>
+			</li>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+  
+  <GeneDef ParentName="BS_Armor">
+		<defName>BS_NaturalArmor_Great</defName>
+		<label>Fortified Body</label>
+		<displayCategory>Archite</displayCategory>
+		<description>Carriers of this gene shrug off attacks as though they were wearing heavily padded riot gear.</description>
+		<iconPath>GeneIcons/BS_ArchotechArmor</iconPath>
+		
+		<customEffectDescriptions>
+			<li>+60% sharp natural armour.</li>
+      <li>+40% blunt armour.</li>
+		</customEffectDescriptions>
+		<displayOrderInCategory>20</displayOrderInCategory>
+		<statFactors>
+			<SM_RaidWealthMultiplier>1.35</SM_RaidWealthMultiplier>
+		</statFactors>
+		<statOffsets>
+			<SM_RaidWealthOffset>1500</SM_RaidWealthOffset>
+		</statOffsets>
+
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-4</biostatMet>
+
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>impervious</symbol>
+				</li>
+        <li>
+          <symbol>invulnerable</symbol>
+        </li>
+			</prefixSymbols>
+		</symbolPack>
+		<selectionWeight>1</selectionWeight>
+    <modExtensions>
+			<li Class="BetterPrerequisites.GeneExtension">
+				<applyBodyHediff><li><hediff>BS_NaturalArmor_Riot</hediff></li></applyBodyHediff>
+			</li>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+    <biostatArc>2</biostatArc>
+	</GeneDef>
+
+	<GeneDef>
+    <defName>BS_Concussive_Resistance</defName>
+    <label>concussive resistance</label>
+		<displayCategory>Pain</displayCategory>
+    <description>Carriers of this gene are highly resistant to wide-area concussive damage such as that from explosions.</description>
+    <!-- <customEffectDescriptions>
+      <li>Explosion damage x0.40</li>
+      <li>Blunt damage x0.70</li>
+    </customEffectDescriptions> -->
+		<iconPath>GeneIcons/BS_ConcussiveResistance</iconPath>
+    <displayOrderInCategory>2</displayOrderInCategory>
+    <statFactors>
+      <SM_ConcussiveDmgMult>0.4</SM_ConcussiveDmgMult>
+    </statFactors>
+
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-2</biostatMet>
+    <exclusionTags>
+      <li>Concussive_Resistance</li>
+    </exclusionTags>
+		<modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+	<GeneDef>
+    <defName>BS_AcidResistanceMid</defName>
+    <label>acid resistance</label>
+		<displayCategory>Pain</displayCategory>
+    <description>Carriers of this gene are highly resistant to acid.</description>
+    <!-- <customEffectDescriptions>
+      <li>Acid damage x0.40 (should work with any mod)</li>
+      <li>Poison &amp; Tox damage x0.70</li>
+    </customEffectDescriptions> -->
+		<iconPath>GeneIcons/BS_PartialAcidResistance</iconPath>
+    <displayOrderInCategory>2</displayOrderInCategory>
+    <statFactors>
+      <SM_AcidDmgMult>0.4</SM_AcidDmgMult>
+    </statFactors>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
+    <exclusionTags>
+      <li>Acid_Resistance</li>
+    </exclusionTags>
+		<modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>BS_AcidResistanceTotal</defName>
+    <label>acid immunity</label>
+		<displayCategory>Pain</displayCategory>
+    <description>Carriers of this gene are immune resistant to acid. They take no damage from acid of any source.</description>
+    <!-- <customEffectDescriptions>
+      <li>Acid Immunity (should work with any mod)</li>
+      <li>Poison &amp; Tox damage x0.40</li>
+    </customEffectDescriptions> -->
+		<iconPath>GeneIcons/BS_TotalAcidResistance</iconPath>
+    <displayOrderInCategory>2</displayOrderInCategory>
+    <statFactors>
+      <SM_AcidDmgMult>-0.2</SM_AcidDmgMult>
+    </statFactors>
+    <biostatCpx>2</biostatCpx>
+    <biostatMet>-2</biostatMet>
+    <exclusionTags>
+      <li>Acid_Resistance</li>
+    </exclusionTags>
+		<modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+	<GeneDef>
+    <defName>BS_DrunkenPower</defName>
+    <label>drunken might</label>
+    <description>Carriers of this gene are amazingly strong and durable, but only while intoxicated with alcohol. The effect is even greater if the carrier is properly drunk.\n\nThe carrier of the gene will have higher conciousness while drunk as well, but not to the degree that a non-inebriated individual would.\n\nThis gene DOES stack with robust and strong melee damage. Oh my.</description>
+    <iconPath>GeneIcons/BS_DrunkenPower</iconPath>
+		<displayCategory>Pain</displayCategory>
+    <displayOrderInCategory>55</displayOrderInCategory>
+		<geneClass>BetterPrerequisites.PGene</geneClass>
+    <biostatMet>-2</biostatMet>
+		<customEffectDescriptions>
+      <li>5% to 30% damage reduction based on alcohol amount</li>
+			<li>5% to 45% increased melee attack based on alcohol amount</li>
+			<li>Less penalties from being drunk.</li>
+    </customEffectDescriptions>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>drunken</symbol></li>
+        <li><symbol>chaotic</symbol></li>
+        <li><symbol>oni</symbol></li>
+      </prefixSymbols>
+    </symbolPack>
+		<modExtensions>
+			<li Class="BetterPrerequisites.GeneExtension">
+				<applyBodyHediff>
+					<li>
+						<hediff>BS_DrunkenPower1</hediff>
+						<conditionals>
+							<li Class="BigAndSmall.ConditionalStatAffecter_Warm"/>
+						</conditionals>
+					</li>
+					<li>
+						<hediff>BS_DrunkenPower2</hediff>
+						<conditionals>
+							<li Class="BigAndSmall.ConditionalStatAffecter_Tipsy"/>
+						</conditionals>
+					</li>
+					<li>
+						<hediff>BS_DrunkenPower3</hediff>
+						<conditionals>
+							<li Class="BigAndSmall.ConditionalStatAffecter_Drunk"/>
+						</conditionals>
+					</li>
+				</applyBodyHediff>
+			</li>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+	<HediffDef>
+		<defName>BS_DrunkenPower1</defName>
+		<label>Warm-up</label>
+		<description>You can't fight without some alcohol in your blood!</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				<statFactors>
+					<IncomingDamageFactor>0.95</IncomingDamageFactor>
+					<MeleeDamageFactor>1.1</MeleeDamageFactor>
+				</statFactors>
+				<!-- <statOffsets>
+					<MeleeHitChance>1</MeleeHitChance>
+				</statOffsets> -->
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>BS_DrunkenPower2</defName>
+		<label>drunken fighter</label>
+		<description>Hahaha! Let me at 'em!</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				<statFactors>
+					<IncomingDamageFactor>0.9</IncomingDamageFactor>
+					<MeleeDamageFactor>1.10</MeleeDamageFactor>
+				</statFactors>
+				<!-- <statOffsets>
+					<MeleeHitChance>21,1</MeleeHitChance>
+				</statOffsets> -->
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>BS_DrunkenPower3</defName>
+		<label>drunken terror</label>
+		<description>Not you nor your floating ghost twin can stop meee!</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				<statFactors>
+					<IncomingDamageFactor>0.80</IncomingDamageFactor>
+					<SM_AttackSpeed>0.85</SM_AttackSpeed>
+					<MeleeDamageFactor>1.20</MeleeDamageFactor>
+				</statFactors>
+				<statOffsets>
+					<MeleeHitChance>5</MeleeHitChance>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.10</offset>
+					</li>
+					<li>
+						<capacity>Consciousness</capacity>
+						<postFactor>1.33</postFactor>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+	
+</Defs>

@@ -1,0 +1,93 @@
+<Defs>
+  <GeneDef>
+    <defName>BS_StickyAcidSpray</defName>
+    <label>sticky acid spray</label>
+    <description>Carriers of this gene can spit sticky corrosive acid over a conical area.</description>
+    <iconPath>UI/Icons/Genes/Gene_AcidSpray</iconPath>
+    <displayCategory>Ability</displayCategory>
+    <marketValueFactor>1.5</marketValueFactor>
+    <abilities>
+      <li>BS_StickyAcidSpray</li>
+    </abilities>
+    <descriptionHyperlinks>
+      <AbilityDef>BS_StickyAcidSpray</AbilityDef>
+    </descriptionHyperlinks>
+    <biostatMet>-2</biostatMet>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>acid</symbol></li>
+        <li><symbol>acer</symbol></li>
+        <li><symbol>acri</symbol></li>
+        <li><symbol>oxo</symbol></li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li><symbol>sprayer</symbol></li>
+        <li><symbol>spitter</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
+  </GeneDef>
+  <AbilityDef>
+    <defName>BS_StickyAcidSpray</defName>
+    <label>acid spray</label>
+    <description>Spray a sticky acid substance from glands over a conical area. The acid will stick to targets and burn them.</description>
+    <iconPath>UI/Abilities/AcidSpray</iconPath>
+    <cooldownTicksRange>2500</cooldownTicksRange>
+    <aiCanUse>true</aiCanUse>
+    <displayOrder>300</displayOrder>
+    <category>Sanguophage</category>
+    <warmupStartSound>AcidSpray_Warmup</warmupStartSound>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>10.9</range>
+      <warmupTime>0.5</warmupTime>
+      <soundCast>AcidSpray_Resolve</soundCast>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <!-- <li Class="BigAndSmall.CompProperties_AbilitySprayLiquid">
+        <projectileDef>BS_Proj_Acid</projectileDef>
+        <radiusToHit>2</radiusToHit>
+        <sprayEffecter>AcidSpray_Directional</sprayEffecter>
+      </li> -->
+      <li Class="BigAndSmall.CompProperties_AbilityConeAttack">
+        <projectileDef>BS_Proj_Acid</projectileDef>
+        <maxAngle>91</maxAngle>
+        <minAngle>35</minAngle>
+        <maxDistance>10</maxDistance>
+        <minDistnace>0</minDistnace>
+        <maxConeLength>5</maxConeLength>
+        <minimumRadiusAroundTarget>1</minimumRadiusAroundTarget>
+        <!-- <sprayEffecter>AcidSpray_Directional</sprayEffecter> -->
+      </li>
+    </comps>
+  </AbilityDef>
+  <ThingDef>
+    <defName>BS_Proj_Acid</defName>
+    <label>acid</label>
+    <thingClass>Projectile_Liquid</thingClass>
+    <category>Projectile</category>
+    <tickerType>Normal</tickerType>
+    <altitudeLayer>Projectile</altitudeLayer>
+    <useHitPoints>False</useHitPoints>
+    <neverMultiSelect>True</neverMultiSelect>
+    <graphicData>
+      <texPath>Things/Projectile/Acid</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shaderType>MoteGlow</shaderType>
+      <drawSize>0.85</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>BS_AcidBuildUpDmg</damageDef>
+      <speed>26</speed>
+      <damageAmountBase>25</damageAmountBase>
+      <arcHeightFactor>2</arcHeightFactor>
+      <armorPenetrationBase>0</armorPenetrationBase>
+      <stoppingPower>1</stoppingPower>
+      <shadowSize>0</shadowSize>
+      <filth>Filth_SpentAcid</filth>
+      <filthCount>1</filthCount>
+    </projectile>
+  </ThingDef>
+</Defs>

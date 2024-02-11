@@ -1,0 +1,50 @@
+<Defs>
+
+  <DamageDef ParentName="Flame" Name="BS_AcidDmgDirect">
+    <defName>BS_AcidDmgDirect</defName>
+    <label>acid</label>
+    <deathMessage>{0} has melted to death.</deathMessage>
+    <workerClass>BigAndSmall.DamageWorker_OuterAndFullDamage</workerClass>
+    <!-- <additionalHediffs>
+      <li>
+        <hediff>BS_AcidBuildUp</hediff>
+        <severityPerDamageDealt>0.015</severityPerDamageDealt>
+        <inverseStatScaling>true</inverseStatScaling>
+        <victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+      </li>
+    </additionalHediffs> -->
+    <applyAdditionalHediffsIfHuntingForFood>false</applyAdditionalHediffsIfHuntingForFood>
+    <impactSoundType>Toxic</impactSoundType>
+    <damageEffecter>Impact_Toxic</damageEffecter>
+    <armorCategory>Heat</armorCategory>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+  </DamageDef>
+
+  <DamageDef ParentName="BS_AcidDmgDirect">
+    <defName>BS_AcidDmgDirectQuiet</defName>
+    <impactSoundType/>
+  </DamageDef>
+
+  <DamageDef ParentName="Flame">
+    <defName>BS_AcidBuildUpDmg</defName>
+    <label>acid</label>
+    <deathMessage>{0} has melted to death.</deathMessage>
+    <workerClass>BigAndSmall.DamageWorker_OuterAndQuarterDamage</workerClass>
+    <additionalHediffs>
+      <li>
+        <hediff>BS_AcidBuildUp</hediff>
+        <severityPerDamageDealt>0.030</severityPerDamageDealt> <!--Roughly speaking you deal 25% direct damage and then 150% damage over time..-->
+        <!-- <victimSeverityScaling>ToxicResistance</victimSeverityScaling> -->
+        <inverseStatScaling>true</inverseStatScaling>
+        <victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+      </li>
+    </additionalHediffs>
+    <applyAdditionalHediffsIfHuntingForFood>false</applyAdditionalHediffsIfHuntingForFood>
+    <!-- <impactSoundType/> -->
+    <impactSoundType>Toxic</impactSoundType>
+    <damageEffecter>Impact_Toxic</damageEffecter>
+    <armorCategory>Heat</armorCategory>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+  </DamageDef>
+
+</Defs>

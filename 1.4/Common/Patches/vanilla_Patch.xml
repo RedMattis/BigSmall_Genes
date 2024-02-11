@@ -1,0 +1,73 @@
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/GeneDef[defName="ViolenceDisabled"]/exclusionTags</xpath>
+		<value>
+			<li>BS_Pacifism</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/TraitDef[defName = "Beauty"]/exclusionTags</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/TraitDef[defName = "Beauty"]</xpath>
+			<value>
+				<exclusionTags>
+					<li>BS_Beauty</li>
+				</exclusionTags>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/TraitDef[defName = "Beauty"]/exclusionTags</xpath>
+			<value>
+				<li>BS_Beauty</li>
+			</value>
+		</match>
+	</Operation>
+
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThoughtDef[defName="GroinUncovered_Disapproved_Male"]/nullifyingGenes</xpath>
+		<value>
+			<li>BS_CannotWearClothing</li>
+			<li>BS_CannotWearClothingOrArmor</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThoughtDef[defName="GroinUncovered_Disapproved_Social_Male"]/nullifyingGenes</xpath>
+		<value>
+			<li>BS_CannotWearClothing</li>
+			<li>BS_CannotWearClothingOrArmor</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThoughtDef[defName="GroinOrChestUncovered_Disapproved_Male"]/nullifyingGenes</xpath>
+		<value>
+			<li>BS_CannotWearClothing</li>
+			<li>BS_CannotWearClothingOrArmor</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThoughtDef[defName="GroinOrChestUncovered_Disapproved_Social_Male"]/nullifyingGenes</xpath>
+		<value>
+			<li>BS_CannotWearClothing</li>
+			<li>BS_CannotWearClothingOrArmor</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThoughtDef[defName="GroinChestOrHairUncovered_Disapproved_Male"]/nullifyingGenes</xpath>
+		<value>
+			<li>BS_CannotWearClothing</li>
+			<li>BS_CannotWearClothingOrArmor</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThoughtDef[defName="GroinChestOrHairUncovered_Disapproved_Social_Male"]/nullifyingGenes</xpath>
+		<value>
+			<li>BS_CannotWearClothing</li>
+			<li>BS_CannotWearClothingOrArmor</li>
+		</value>
+	</Operation>
+
+</Patch>

@@ -1,0 +1,37 @@
+<Defs>
+
+
+  <FurDef>
+    <defName>BS_BrokenTitanBody</defName>
+    <noGraphic>true</noGraphic>
+    <bodyTypeGraphicPaths>
+      <Hulk>Humanlike/Bodies/BS_TitanBody</Hulk>
+
+      <Male>Humanlike/Bodies/BS_NoFur</Male>
+      <Female>Humanlike/Bodies/BS_NoFur</Female>
+      
+      <Fat>Humanlike/Bodies/BS_NoFur</Fat>
+      <Thin>Humanlike/Bodies/BS_NoFur</Thin>
+      
+      <Child>Humanlike/Bodies/BS_NoFur</Child>
+      <Baby>Humanlike/Bodies/BS_NoFur</Baby>
+    </bodyTypeGraphicPaths>
+  </FurDef>
+
+  <FurDef>
+    <defName>BS_OgreBody</defName>
+    <noGraphic>true</noGraphic>
+    <bodyTypeGraphicPaths>
+      <Hulk>Humanlike/Bodies/BS_NoFur</Hulk>
+
+      <Male>Humanlike/Bodies/BS_NoFur</Male>
+      <Female>Humanlike/Bodies/BS_NoFur</Female>
+      
+      <Fat>Humanlike/Bodies/BS_OgreBody</Fat>
+      <Thin>Humanlike/Bodies/BS_NoFur</Thin>
+      
+      <Child>Humanlike/Bodies/BS_NoFur</Child>
+      <Baby>Humanlike/Bodies/BS_NoFur</Baby>
+    </bodyTypeGraphicPaths>
+  </FurDef>
+</Defs>

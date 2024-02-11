@@ -1,0 +1,60 @@
+<Defs>
+  <GeneDef ParentName="GeneEarsBase">
+    <defName>BS_AnimalEars</defName>
+    <label>furry ears</label>
+    <description>Carriers of this gene have furry ears.\n\nUwU.</description>
+    <iconPath>GeneIcons/BS_GenericAnimalEars</iconPath>
+    <graphicData>
+      <graphicPath>Humanlike/HeadAttachments/BS_GenericAnimalPersonEars</graphicPath>
+      <colorType>Hair</colorType>
+      <useSkinShader>false</useSkinShader>
+    </graphicData>
+    <selectionWeight>0.5</selectionWeight>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneEarsBase">
+    <defName>BS_FoxEars</defName>
+    <label>fox ears</label>
+    <description>Carriers of this gene have furry ears.\n\nUwU.</description>
+    <iconPath>GeneIcons/BS_FoxEars</iconPath>
+    <graphicData>
+      <graphicPath>Humanlike/HeadAttachments/BS_FoxEars</graphicPath>
+      <colorType>Hair</colorType>
+      <useSkinShader>false</useSkinShader>
+    </graphicData>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>fox</symbol></li>
+        <li><symbol>foxy</symbol></li>
+        <li><symbol>tama</symbol></li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li><symbol>ear</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
+    <selectionWeight>0.1</selectionWeight>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneEarsBase">
+    <defName>BS_Ears_PointedHD</defName>
+    <label>pointed ears (HD)</label>
+    <description>Carriers of this gene have pointed ears without alpha-blending artefacts.</description>
+    <iconPath>UI/Icons/Genes/Gene_EarPointed</iconPath>
+    <graphicData>
+      <graphicPath>Humanlike/HeadAttachments/BS_PointedEars</graphicPath>
+      <colorType>Skin</colorType>
+      <useSkinShader>false</useSkinShader>
+    </graphicData>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>point</symbol></li>
+        <li><symbol>sharp</symbol></li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li><symbol>ear</symbol></li>
+        <li><symbol>point</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
+  </GeneDef>
+  Ears_Pointed
+</Defs>

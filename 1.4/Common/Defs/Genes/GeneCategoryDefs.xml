@@ -1,0 +1,56 @@
+<Defs>
+  <GeneCategoryDef>
+    <defName>Body_Size</defName>
+    <label>body size</label>
+    <displayPriorityInXenotype>701</displayPriorityInXenotype>
+  </GeneCategoryDef>
+  
+  <GeneCategoryDef>
+    <defName>Body_Size_Multiplier</defName>
+    <label>body size multiplier</label>
+    <displayPriorityInXenotype>702</displayPriorityInXenotype>
+  </GeneCategoryDef>
+
+   <GeneCategoryDef>
+    <defName>BS_Diet</defName>
+    <label>Diet</label>
+    <displayPriorityInXenotype>704</displayPriorityInXenotype>
+  </GeneCategoryDef>
+
+  <GeneCategoryDef>
+    <defName>BS_Learning</defName>
+    <label>Learning</label>
+    <displayPriorityInXenotype>709</displayPriorityInXenotype>
+  </GeneCategoryDef>
+
+  <GeneCategoryDef>
+    <defName>BS_Armour</defName>
+    <label>Armour</label>
+    <displayPriorityInXenotype>710</displayPriorityInXenotype>
+  </GeneCategoryDef>
+
+  <GeneCategoryDef>
+    <defName>BS_Horns</defName>
+    <label>Horns</label>
+    <displayPriorityInXenotype>730</displayPriorityInXenotype>
+  </GeneCategoryDef>
+
+  <GeneCategoryDef>
+    <defName>BS_DO_NOT</defName>
+    <label>Don't pick these</label>
+    <displayPriorityInXenotype>-99999</displayPriorityInXenotype>
+  </GeneCategoryDef>
+
+  <GeneCategoryDef>
+    <defName>VU_Unliving</defName>
+    <label>unliving</label>
+    <displayPriorityInXenotype>703</displayPriorityInXenotype>
+  </GeneCategoryDef>
+
+  <GeneCategoryDef>
+    <!--Require HAR to actually do the swap.-->
+    <defName>BS_BodySwap</defName>
+    <label>Body Transformation</label>
+    <displayPriorityInXenotype>-388</displayPriorityInXenotype>
+  </GeneCategoryDef>
+</Defs>

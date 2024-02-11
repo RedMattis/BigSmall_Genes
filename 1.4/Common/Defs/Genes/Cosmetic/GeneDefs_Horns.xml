@@ -1,0 +1,278 @@
+<Defs>
+  <GeneDef Name="BS_Hornbase" ParentName="GeneHeadboneBase" Abstract="True">
+    <graphicData>
+			<graphicPath>Humanlike/HeadAttachments/jotun_horns</graphicPath>
+			<layer>PostHeadgear</layer>
+      <!-- <useSkinShader>true</useSkinShader> -->
+      <colorType>Skin</colorType>
+      <drawOffsetSouth>(0, 0.001, 0)</drawOffsetSouth>
+    </graphicData>
+    <displayCategory>BS_Horns</displayCategory>
+    <selectionWeight>0.1</selectionWeight>
+    
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+  <GeneDef Name="BS_DemonHornBase" ParentName="BS_Hornbase" Abstract="True">
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>horn</symbol></li>
+        <li><symbol>devil</symbol></li>
+        <li><symbol>demon</symbol></li>
+        <li><symbol>luci</symbol></li>
+        <li><symbol>beelze</symbol></li>
+        <li><symbol>hell</symbol></li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li><symbol>horn</symbol></li>
+        <li><symbol>vil</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
+  </GeneDef>
+
+  <GeneDef ParentName="BS_DemonHornBase">
+		<defName>Jotun_Horns</defName>
+		<label>jotun horns</label>
+		<description>Carriers of this gene possess large impressive horns.</description>
+		<iconPath>GeneIcons/BS_Horns/JotunHorns</iconPath>
+		<graphicData>
+      <color>(180, 180, 180)</color>
+      <colorType>Hair</colorType>
+			<graphicPath>Humanlike/HeadAttachments/jotun_horns</graphicPath>
+    </graphicData>
+	</GeneDef>
+
+  <GeneDef ParentName="BS_DemonHornBase">
+		<defName>Jotun_Horns_skin</defName>
+		<label>jotun horns (skin-coloured)</label>
+		<description>Carriers of this gene possess large impressive horns. This variant has the same colour as the carrier's skin.</description>
+		<iconPath>GeneIcons/BS_Horns/JotunHorns</iconPath>
+		<graphicData>
+			<graphicPath>Humanlike/HeadAttachments/jotun_horns</graphicPath>
+      <colorType>Skin</colorType>
+      <useSkinShader>true</useSkinShader>
+    </graphicData>
+	</GeneDef>
+
+  <GeneDef ParentName="BS_DemonHornBase">
+    <defName>Jotun_Horns_Small</defName>
+    <label>small jotun horns</label>
+    <description>Carriers of this gene possess two small horns.</description>
+    <iconPath>UI/Icons/Genes/Gene_HeadboneMinihorns</iconPath>
+    <graphicData>
+      <color>(200, 200, 200)</color>
+      <graphicPath>Humanlike/HeadAttachments/jotun_horns_small</graphicPath>
+      <colorType>Hair</colorType>
+    </graphicData>
+  </GeneDef>
+
+  <GeneDef ParentName="BS_DemonHornBase">
+    <defName>Jotun_Horns_Small_skin</defName>
+    <label>small jotun horns (skin-coloured)</label>
+    <description>Carriers of this gene possess two small horns. This variant has the same colour as the carrier's skin.</description>
+    <iconPath>UI/Icons/Genes/Gene_HeadboneMinihorns</iconPath>
+    <graphicData>
+      <graphicPath>Humanlike/HeadAttachments/jotun_horns_small</graphicPath>
+      <colorType>Skin</colorType>
+      <useSkinShader>true</useSkinShader>
+    </graphicData>
+  </GeneDef>
+
+  <GeneDef ParentName="BS_DemonHornBase">
+    <defName>BS_Arching_Horns</defName>
+    <label>arching horns</label>
+    <description>Carriers of this gene possess two arching horns. This variant has the same colour as the carrier's skin.</description>
+    <iconPath>GeneIcons/BS_Horns/Bendy</iconPath>
+    <graphicData>
+      <color>(180, 180, 180)</color>
+      <colorType>Hair</colorType>
+			<graphicPath>Humanlike/HeadAttachments/BS_BendyHorns</graphicPath>
+    </graphicData>
+  </GeneDef>
+
+  <GeneDef ParentName="BS_DemonHornBase">
+    <defName>BS_Arching_Horns_skin</defName>
+    <label>arching horns (skin-coloured)</label>
+    <description>Carriers of this gene possess two arching horns. This variant has the same colour as the carrier's skin.</description>
+    <iconPath>GeneIcons/BS_Horns/Bendy</iconPath>
+    <graphicData>
+      <graphicPath>Humanlike/HeadAttachments/BS_BendyHorns</graphicPath>
+      <colorType>Skin</colorType>
+      <useSkinShader>true</useSkinShader>
+    </graphicData>
+  </GeneDef>
+
+  <GeneDef ParentName="BS_DemonHornBase">
+		<defName>BS_TallJotunHorns</defName>
+		<label>tall jotun horns</label>
+		<description>Carriers of this gene possess large impressive horns.</description>
+		<iconPath>GeneIcons/BS_Horns/HornGenea</iconPath>
+		<graphicData>
+      <color>(180, 180, 180)</color>
+      <colorType>Hair</colorType>
+			<graphicPath>Humanlike/HeadAttachments/BS_DemonHornsa</graphicPath>
+    </graphicData>
+	</GeneDef>
+
+  <GeneDef ParentName="BS_DemonHornBase">
+		<defName>BS_TallJotunHorns_Skin</defName>
+		<label>tall jotun horns</label>
+		<description>Carriers of this gene possess long impressive horns. This variant has the same colour as the carrier's skin.</description>
+		<iconPath>GeneIcons/BS_Horns/HornGenea</iconPath>
+		<graphicData>
+			<graphicPath>Humanlike/HeadAttachments/BS_DemonHornsa</graphicPath>
+			<layer>PostHeadgear</layer>
+      <colorType>Skin</colorType>
+      <useSkinShader>true</useSkinShader>
+    </graphicData>
+	</GeneDef>
+
+  <GeneDef ParentName="BS_DemonHornBase">
+		<defName>BS_StubbyDemonHorns</defName>
+		<label>stubby demon horns</label>
+		<description>Carriers of this gene possess short horns.</description>
+		<iconPath>GeneIcons/BS_Horns/HornGeneb</iconPath>
+		<graphicData>
+      <color>(180, 180, 180)</color>
+      <colorType>Hair</colorType>
+			<graphicPath>Humanlike/HeadAttachments/BS_DemonHornsb</graphicPath>
+    </graphicData>
+	</GeneDef>
+
+  <GeneDef ParentName="BS_DemonHornBase">
+		<defName>BS_StubbyDemonHorns_Skin</defName>
+		<label>stubby demon</label>
+		<description>Carriers of this gene possess short horns. This variant has the same colour as the carrier's skin.</description>
+		<iconPath>GeneIcons/BS_Horns/HornGeneb</iconPath>
+		<graphicData>
+			<graphicPath>Humanlike/HeadAttachments/BS_DemonHornsb</graphicPath>
+			<layer>PostHeadgear</layer>
+      <colorType>Skin</colorType>
+      <useSkinShader>true</useSkinShader>
+    </graphicData>
+	</GeneDef>
+
+  <GeneDef ParentName="BS_DemonHornBase">
+		<defName>BS_ForwardArchingHorns</defName>
+		<label>forward-arching horns </label>
+		<description>Carriers of this gene possess arching horns.</description>
+		<iconPath>GeneIcons/BS_Horns/HornGenec</iconPath>
+		<graphicData>
+      <color>(200, 200, 200)</color>
+      <colorType>Hair</colorType>
+			<graphicPath>Humanlike/HeadAttachments/BS_DemonHornsc</graphicPath>
+    </graphicData>
+	</GeneDef>
+
+  <GeneDef ParentName="BS_DemonHornBase">
+		<defName>BS_ForwardArchingHorns_Skin</defName>
+		<label>forward-arching horns (skin-coloured)</label>
+		<description>Carriers of this gene possess arching horns. This variant has the same colour as the carrier's skin.</description>
+		<iconPath>GeneIcons/BS_Horns/HornGenec</iconPath>
+		<graphicData>
+			<graphicPath>Humanlike/HeadAttachments/BS_DemonHornsc</graphicPath>
+			<layer>PostHeadgear</layer>
+      <colorType>Skin</colorType>
+      <useSkinShader>true</useSkinShader>
+    </graphicData>
+	</GeneDef>
+
+  <GeneDef ParentName="BS_DemonHornBase">
+		<defName>BS_TyrantCrown</defName>
+		<label>tyrant crown</label>
+		<description>Carriers of this gene possess bull-like horns.</description>
+		<iconPath>GeneIcons/BS_Horns/HornGened</iconPath>
+		<graphicData>
+      <colorType>Hair</colorType>
+			<graphicPath>Humanlike/HeadAttachments/BS_DemonHornsd</graphicPath>
+    </graphicData>
+	</GeneDef>
+
+  <!-- <GeneDef ParentName="BS_DemonHornBase">
+		<defName>BS_TyrantCrown</defName>
+		<label>tyrant crown (skin-coloured)</label>
+		<description>Carriers of this gene possess bull-like horns. This variant has the same colour as the carrier's skin.</description>
+		<iconPath>Humanlike/HeadAttachments/BS_DemonHornsd_south</iconPath>
+		<graphicData>
+			<graphicPath>Humanlike/HeadAttachments/BS_DemonHornsd</graphicPath>
+      <colorType>Skin</colorType>
+      <useSkinShader>true</useSkinShader>
+    </graphicData>
+	</GeneDef> -->
+
+  <GeneDef ParentName="BS_DemonHornBase">
+		<defName>BS_SmallQuadHorns</defName>
+		<label>quadhorns</label>
+		<description>Carriers of this gene possess two pairs of horns.</description>
+		<iconPath>GeneIcons/BS_Horns/HornGenee</iconPath>
+		<graphicData>
+      <colorType>Hair</colorType>
+			<graphicPath>Humanlike/HeadAttachments/BS_DemonHornse</graphicPath>
+    </graphicData>
+	</GeneDef>
+
+  <GeneDef ParentName="BS_DemonHornBase">
+		<defName>BS_SmallQuadHorns_Skin</defName>
+		<label>quadhorns (skin-coloured)</label>
+		<description>Carriers of this gene possess two pairs of horns. This variant has the same colour as the carrier's skin.</description>
+		<iconPath>GeneIcons/BS_Horns/HornGenee</iconPath>
+		<graphicData>
+			<graphicPath>Humanlike/HeadAttachments/BS_DemonHornse</graphicPath>
+      <colorType>Skin</colorType>
+      <useSkinShader>true</useSkinShader>
+    </graphicData>
+	</GeneDef>
+
+  <GeneDef ParentName="BS_DemonHornBase">
+		<defName>BS_HexaHorns</defName>
+		<label>demon hexahorns</label>
+		<description>Carriers of this gene possess two pairs of horns.</description>
+		<iconPath>GeneIcons/BS_Horns/HornGenef</iconPath>
+		<graphicData>
+      <colorType>Hair</colorType>
+			<graphicPath>Humanlike/HeadAttachments/BS_DemonHornsf</graphicPath>
+    </graphicData>
+	</GeneDef>
+
+  <GeneDef ParentName="BS_DemonHornBase">
+		<defName>BS_HexaHorns_Skin</defName>
+		<label>demon hexahorns (skin-coloured)</label>
+		<description>Carriers of this gene possess two pairs of horns. This variant has the same colour as the carrier's skin.</description>
+		<iconPath>GeneIcons/BS_Horns/HornGenef</iconPath>
+		<graphicData>
+			<graphicPath>Humanlike/HeadAttachments/BS_DemonHornsf</graphicPath>
+      <colorType>Skin</colorType>
+      <useSkinShader>true</useSkinShader>
+    </graphicData>
+	</GeneDef>
+
+  <GeneDef ParentName="BS_DemonHornBase">
+		<defName>BS_OniHorns</defName>
+		<label>oni horns</label>
+		<description>Carriers of this gene possess intimidating oni horns.</description>
+		<iconPath>GeneIcons/BS_Horns/Oni</iconPath>
+		<graphicData>
+      <colorType>Skin</colorType>
+      <!-- <useSkinShader>true</useSkinShader> -->
+			<graphicPath>Humanlike/HeadAttachments/BS_OniHorns</graphicPath>
+    </graphicData>
+	</GeneDef>
+
+  <GeneDef ParentName="BS_DemonHornBase">
+		<defName>BS_OniSingleHorn</defName>
+		<label>oni centre horn</label>
+		<description>Carriers of this gene possess a single intimidating oni horn.</description>
+		<iconPath>GeneIcons/BS_Horns/OniSingle</iconPath>
+		<graphicData>
+      <colorType>Skin</colorType>
+      <!-- <useSkinShader>true</useSkinShader> -->
+			<graphicPath>Humanlike/HeadAttachments/BS_OniSingleHorn</graphicPath>
+    </graphicData>
+	</GeneDef>
+
+</Defs>

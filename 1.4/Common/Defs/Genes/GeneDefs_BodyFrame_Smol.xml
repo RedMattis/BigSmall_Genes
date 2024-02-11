@@ -1,0 +1,160 @@
+<Defs>
+  
+  <GeneDef ParentName="BodyFrameBase">
+    <defName>DwarfFrame</defName>
+    <label>Dwarf Frame</label>
+    <description>Adults carriers of this gene are on the short but somewhat stout side.</description>
+    <iconPath>GeneIcons/BS_Frames/Dwarf</iconPath>
+    <displayOrderInCategory>1050</displayOrderInCategory>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>5</biostatMet>
+    <statFactors>
+      <MiningSpeed>0.95</MiningSpeed>
+      <ConstructionSpeed>0.95</ConstructionSpeed>
+      <MoveSpeed>0.79</MoveSpeed>
+      <SM_RaidWealthMultiplier>0.6</SM_RaidWealthMultiplier>
+    </statFactors>
+    <statOffsets>
+      <SM_BodySizeOffset>-0.35</SM_BodySizeOffset>
+      <SM_RaidWealthOffset>-1000</SM_RaidWealthOffset>
+    </statOffsets>
+    <selectionWeight>0.4</selectionWeight>
+    <marketValueFactor>1.0</marketValueFactor>
+    <!-- <modExtensions>
+			<li Class="BigAndSmall.TattooStyleGeneExtension">
+				<whitelist>
+          <li>TattooBodyTribal</li>
+          <li>TattooFaceTribal</li>
+        </whitelist>
+			</li>
+      <li Class="BigAndSmall.TattooStyleGeneExtension">
+        <noTattoos>true</noTattoos>
+			</li> 
+		</modExtensions> -->
+  </GeneDef>
+  
+    <GeneDef ParentName="BodyFrameBase">
+    <defName>BS_SmallFrame</defName>
+    <label>Small Frame</label>
+    <description>Adults carriers of this gene are barely taller than children, but very quick for their size.</description>
+    <iconPath>GeneIcons/BS_Frames/Small</iconPath>
+    <displayOrderInCategory>1051</displayOrderInCategory>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>5</biostatMet>
+    <statFactors>
+      <MiningSpeed>0.75</MiningSpeed>
+      <ConstructionSpeed>0.75</ConstructionSpeed>
+      <SM_RaidWealthMultiplier>0.6</SM_RaidWealthMultiplier>
+    </statFactors>
+    <statOffsets>
+      <SM_BodySizeOffset>-0.35</SM_BodySizeOffset>
+      <SM_RaidWealthOffset>-1000</SM_RaidWealthOffset>
+      <MeleeHitChance>1</MeleeHitChance>
+    </statOffsets>
+    <selectionWeight>0.0</selectionWeight>
+    <marketValueFactor>1.0</marketValueFactor>
+    <!-- <modExtensions>
+			<li Class="BigAndSmall.TattooStyleGeneExtension">
+        <noTattoos>true</noTattoos>
+			</li>
+		</modExtensions> -->
+  </GeneDef>
+  
+  <!--Incompatible with Genes that make the character smaller. No smaller-than-squirells characters.-->
+  <GeneDef ParentName="BodyFrameBase">
+    <defName>GnomeFrame</defName>
+    <label>Nisse Frame</label>
+    <description>Carriers of this gene are tiny, but suprisingly nimble and capable for their size.</description>
+    <exclusionTags>
+      <li>Tiny</li>
+    </exclusionTags>
+    <iconPath>GeneIcons/BS_Frames/Diminutive</iconPath>
+    <displayOrderInCategory>1052</displayOrderInCategory>
+    <biostatCpx>3</biostatCpx>
+    <biostatMet>10</biostatMet>
+    <statOffsets>
+      <SM_BodySizeOffset>-0.6</SM_BodySizeOffset>
+      <SM_Cosmetic_BodySizeOffset>-0.10</SM_Cosmetic_BodySizeOffset>
+      <SM_RaidWealthOffset>-2000</SM_RaidWealthOffset>
+      <MeleeHitChance>5</MeleeHitChance>
+    </statOffsets>
+    <statFactors>
+      <MiningSpeed>0.6</MiningSpeed>
+      <DeepDrillingSpeed>0.6</DeepDrillingSpeed>
+      <ConstructionSpeed>0.6</ConstructionSpeed>
+      <MoveSpeed>0.8</MoveSpeed>
+      <SM_RaidWealthMultiplier>0.4</SM_RaidWealthMultiplier>
+    </statFactors>
+    <selectionWeight>0.4</selectionWeight>
+    <marketValueFactor>1.0</marketValueFactor>
+    <!-- <modExtensions>
+			<li Class="BigAndSmall.TattooStyleGeneExtension">
+        <noTattoos>true</noTattoos>
+			</li>
+		</modExtensions> -->
+  </GeneDef>
+  
+  <GeneDef ParentName="BodyFrameBase">
+    <defName>BS_RabbitFrame</defName>
+    <label>Rabbit Frame</label>
+    <iconPath>GeneIcons/BS_Frames/Diminutive</iconPath>
+    <description>Carriers of this gene are tiny, but amazingly fast despite their size.</description>
+    <exclusionTags>
+      <li>Tiny</li>
+    </exclusionTags>
+    <displayOrderInCategory>1053</displayOrderInCategory>
+    <biostatCpx>3</biostatCpx>
+    <biostatMet>6</biostatMet>
+    <statOffsets>
+      <SM_BodySizeOffset>-0.6</SM_BodySizeOffset>
+      <SM_Cosmetic_BodySizeOffset>-0.15</SM_Cosmetic_BodySizeOffset>
+      <SM_RaidWealthOffset>-2000</SM_RaidWealthOffset>
+      <MeleeHitChance>5</MeleeHitChance>
+    </statOffsets>
+    <statFactors>
+      <MiningSpeed>0.5</MiningSpeed>
+      <DeepDrillingSpeed>0.5</DeepDrillingSpeed>
+      <ConstructionSpeed>0.5</ConstructionSpeed>
+      <MoveSpeed>1.05</MoveSpeed>
+      <SM_RaidWealthMultiplier>0.4</SM_RaidWealthMultiplier>
+    </statFactors>
+    <selectionWeight>0.0</selectionWeight>
+    <marketValueFactor>1.0</marketValueFactor>
+    <!-- <modExtensions>
+			<li Class="BigAndSmall.TattooStyleGeneExtension">
+        <noTattoos>true</noTattoos>
+			</li>
+		</modExtensions> -->
+  </GeneDef>
+
+  <GeneDef ParentName="BodyFrameBase">
+    <defName>BS_AriettyFrame</defName>
+    <label>Illegally Smol Frame</label>
+    <iconPath>GeneIcons/BS_Frames/illegallySmol</iconPath>
+    <description>Carriers of this gene are itty bitty tiny, like unreasonably smol. So diminutive that an archotech was involved in their creation.\n\nArchotech involvement is probably also why their abilities are unreasonably great for their size.\n\nAdded by popular request. Probably not terribly well-balanced. Combine with something like "small people toughness" unless you want a stiff breeze to kill them.</description>
+    <exclusionTags>
+      <li>Tiny</li>
+    </exclusionTags>
+    <displayOrderInCategory>1052</displayOrderInCategory>
+    <biostatCpx>5</biostatCpx>
+    <biostatMet>6</biostatMet>
+    <biostatArc>1</biostatArc>
+    <statOffsets>
+      <SM_RaidWealthOffset>0.1</SM_RaidWealthOffset>
+      <SM_HeadSize_Cosmetic>-0.1</SM_HeadSize_Cosmetic>
+      <MeleeHitChance>12</MeleeHitChance>
+    </statOffsets>
+    <statFactors>
+      <SM_BodySizeMultiplier>0.15</SM_BodySizeMultiplier>
+      <IncomingDamageFactor>0.50</IncomingDamageFactor>
+      <MeleeDamageFactor>2</MeleeDamageFactor>
+      <MiningSpeed>0.1</MiningSpeed>
+      <DeepDrillingSpeed>0.25</DeepDrillingSpeed>
+      <ConstructionSpeed>0.25</ConstructionSpeed>
+      <MoveSpeed>0.8</MoveSpeed>
+      <SM_RaidWealthMultiplier>0.25</SM_RaidWealthMultiplier>
+    </statFactors>
+    <selectionWeight>0.5</selectionWeight>
+    <marketValueFactor>2.0</marketValueFactor>
+  </GeneDef>
+</Defs>

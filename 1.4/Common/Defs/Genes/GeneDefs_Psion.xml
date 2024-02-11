@@ -1,0 +1,195 @@
+<Defs>
+
+	<GeneDef ParentName="GenePsychicAbilityBase">
+    <defName>BS_EltexPsychic</defName>
+    <label>eltex synchronization</label> 
+    <labelShortAdj>eltex gene</labelShortAdj>
+    <description>Carriers of this gene are psychically-sensitive and better at utilizing psychic-enhancing gear and implants.</description>
+    <iconPath>GeneIcons/BS_EltexGear</iconPath>
+    <displayOrderInCategory>30</displayOrderInCategory>
+		<statOffsets>
+      <PsychicSensitivity>0.20</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate>0.15</PsychicEntropyRecoveryRate>
+    </statOffsets>
+		<statFactors>
+			<PsychicSensitivity>1.20</PsychicSensitivity>
+			<PsychicEntropyRecoveryRate>1.3</PsychicEntropyRecoveryRate>
+			<MeditationFocusGain>1.70</MeditationFocusGain>
+		</statFactors>
+    <biostatCpx>2</biostatCpx>
+    <biostatMet>-6</biostatMet>
+    <symbolPack>
+      <prefixSymbols>
+        <li>
+          <symbol>psy</symbol>
+          <weight>3</weight>
+        </li>
+        <li><symbol>senso</symbol></li>
+        <li><symbol>sensi</symbol></li>
+      </prefixSymbols>
+    </symbolPack>
+		<selectionWeight>0.5</selectionWeight>
+		<modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+	<GeneDef ParentName="GenePsychicAbilityBase">
+    <defName>BS_NaturalPsychic</defName>
+    <label>natural psychic</label> 
+    <labelShortAdj>natural psychic</labelShortAdj>
+    <description>Carriers of this gene are highly psychically-sensitive and highly capable of dispelling psychic entorphy. They are noticeably worse at utilizing psychic-enhacing gear and implants however.</description>
+    <customEffectDescriptions><li>x0.8 + 120% offsets Sensitivity = ~+75% Psychic Sensitivity for average pawns</li></customEffectDescriptions>
+		<iconPath>GeneIcons/BS_NaturalPsychic</iconPath>
+    <displayOrderInCategory>30</displayOrderInCategory>
+		<statOffsets>
+      <PsychicSensitivity>1.20</PsychicSensitivity>
+      <MeditationFocusGain>0.5</MeditationFocusGain>
+      <PsychicEntropyRecoveryRate>0.3</PsychicEntropyRecoveryRate>
+    </statOffsets>
+		<statFactors>
+			<PsychicSensitivity>0.8</PsychicSensitivity>
+		</statFactors>
+    <biostatCpx>2</biostatCpx>
+    <biostatMet>-6</biostatMet>
+    <symbolPack>
+      <prefixSymbols>
+        <li>
+          <symbol>psy</symbol>
+          <weight>3</weight>
+        </li>
+        <li><symbol>senso</symbol></li>
+        <li><symbol>sensi</symbol></li>
+      </prefixSymbols>
+    </symbolPack>
+		<selectionWeight>0.5</selectionWeight>
+		<modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>BS_PsychicWarrior</defName>
+    <label>Mystic warrior</label> 
+    <labelShortAdj>psy-warrior</labelShortAdj>
+		<displayCategory>Psychic</displayCategory>
+    <description>Carriers of this gene are able to project their psychic powers into themselves to empower their physical abilities. They gain increasing bonuses based on psychic sensitivity.</description>
+    <iconPath>GeneIcons/BS_PsionArmor</iconPath>
+    <displayOrderInCategory>30</displayOrderInCategory>
+    
+    <biostatCpx>2</biostatCpx>
+    <biostatMet>-6</biostatMet>
+		<geneClass>BetterPrerequisites.PGene</geneClass>
+    
+    <exclusionTags>
+			<li>AG_Armour</li>
+      <li>Armor</li>
+			<li>Armour</li>
+			<li>Armor</li>
+			<li>MeleeDamage</li>
+			<!-- <li>Toughness</li> -->
+		</exclusionTags>
+		<selectionWeight>0.5</selectionWeight>
+    <modExtensions>
+			<li Class="BetterPrerequisites.GeneExtension">
+				<conditionals><li Class="BigAndSmall.ConditionalStatAffecter_PsychicSensitivityNormal"/></conditionals>
+				<applyBodyHediff>
+					<li>
+						<hediff>BS_PsychicArmor_Stage1</hediff>
+					</li>
+					<li>
+						<hediff>BS_PsychicArmor_Stage2</hediff>
+						<conditionals>
+							<li Class="BigAndSmall.ConditionalStatAffecter_PsychicSensitivityHigh"/>
+						</conditionals>
+					</li>
+					<li>
+						<hediff>BS_PsychicArmor_Stage3</hediff>
+						<conditionals>
+							<li Class="BigAndSmall.ConditionalStatAffecter_PsychicSensitivityVeryHigh"/>
+						</conditionals>
+					</li>
+				</applyBodyHediff>
+			</li>
+			<li Class="BetterPrerequisites.GenePrerequisites" MayRequire="RedMattis.BetterPrerequisites">
+        <prerequisiteSets>
+          <li>
+            <type>NoneOf</type>
+            <prerequisites>
+              <li>Robust</li>
+            </prerequisites>
+          </li>
+        </prerequisiteSets>
+      </li>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+  <HediffDef>
+		<defName>BS_PsychicArmor_Stage1</defName>
+		<label>psychic strengthening</label>
+		<description>A soft coat of psychic energy shields from harm.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				<minSeverity>0</minSeverity>
+				<statOffsets>
+					<ArmorRating_Blunt>0.10</ArmorRating_Blunt>
+          <ArmorRating_Sharp>0.20</ArmorRating_Sharp>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+  <HediffDef>
+		<defName>BS_PsychicArmor_Stage2</defName>
+		<label>psychokinetic aura</label>
+		<description>Psychokinetic energy surges all around around them in combat, empowering attacks and deflecting attacks.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				<minSeverity>0</minSeverity>
+				<statOffsets>
+					<ArmorRating_Blunt>0.30</ArmorRating_Blunt>
+					<ArmorRating_Sharp>0.50</ArmorRating_Sharp>
+				</statOffsets>
+				<statFactors>
+          <MeleeDamageFactor>1.3</MeleeDamageFactor>
+        </statFactors>
+			</li>
+		</stages>
+	</HediffDef>
+  <HediffDef>
+		<defName>BS_PsychicArmor_Stage3</defName>
+		<label>in-betweener</label>
+		<description>Their powerful astral form is partially fused with their coporeal body.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				<minSeverity>0</minSeverity>
+				<statFactors>
+          <MeleeDamageFactor>1.15</MeleeDamageFactor>
+					<IncomingDamageFactor>0.70</IncomingDamageFactor>
+					<InjuryHealingFactor>2</InjuryHealingFactor>
+        </statFactors>
+			</li>
+		</stages>
+	</HediffDef>
+</Defs>

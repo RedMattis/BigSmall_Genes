@@ -1,0 +1,28 @@
+<loadFolders>
+  <v1.4>
+    <li>/</li>
+    <li>1.4/Common</li>
+    <li IfModActive="Rooboid.Minotaur">1.4/Mods/RooMinotaur</li>
+    <li IfModActive="vanillaracesexpanded.android">1.4/Mods/VRE_Android</li>
+    <li IfModActive="Killathon.MechHumanlikes.AndroidTiersCore">1.4/Mods/AndroidTiersCore</li>
+    <li IfModActive="sarg.alphagenes">1.4/Mods/AlphaSarg</li>
+    <li IfModActive="oskarpotocki.vanillafactionsexpanded.core">1.4/Mods/VE</li>
+    <li IfModActive="nals.facialanimation">1.4/Mods/FacialAnim</li>
+    <li IfModNotActive="nals.facialanimation">1.4/Mods/NO_FacialAnim</li>
+    <li IfModActive="Ludeon.RimWorld.Royalty">1.4/Royalty</li>
+    <li IfModActive="erdelf.HumanoidAlienRaces">1.4/Mods/HAR</li>
+  </v1.4>
+  <v1.5>
+    <li>/</li>
+    <li>1.5/Common</li>
+    <li IfModActive="Rooboid.Minotaur">1.5/Mods/RooMinotaur</li>
+    <li IfModActive="vanillaracesexpanded.android">1.5/Mods/VRE_Android</li>
+    <li IfModActive="Killathon.MechHumanlikes.AndroidTiersCore">1.5/Mods/AndroidTiersCore</li>
+    <li IfModActive="sarg.alphagenes">1.5/Mods/AlphaSarg</li>
+    <li IfModActive="oskarpotocki.vanillafactionsexpanded.core">1.5/Mods/VE</li>
+    <li IfModActive="nals.facialanimation">1.5/Mods/FacialAnim</li>
+    <li IfModNotActive="nals.facialanimation">1.5/Mods/NO_FacialAnim</li>
+    <li IfModActive="Ludeon.RimWorld.Royalty">1.5/Royalty</li>
+    <li IfModActive="erdelf.HumanoidAlienRaces">1.5/Mods/HAR</li>
+  </v1.5>
+</loadFolders>

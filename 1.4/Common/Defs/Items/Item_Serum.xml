@@ -1,0 +1,337 @@
+<Defs>
+  <ThingDef Name="BS_Giant_Serum" ParentName="MechSerumBase">
+    <defName>BS_Giant_Serum</defName>
+    <label>animal giantizer</label>
+    <description>A serum to make an animal larger than usual. Most significant effect on small animals.</description>
+    <graphicData>
+      <texPath>Item/Serum/BS_Giantizer</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>10</stackLimit>
+    <statBases>
+      <MarketValue>1000</MarketValue>
+      <WorkToMake>2000</WorkToMake>
+    </statBases>
+    <thingCategories>
+      <li>ItemsMisc</li>
+    </thingCategories>
+    <tradeability>Sellable</tradeability>
+    <thingSetMakerTags>
+      <li>RewardStandardMidFreq</li>
+    </thingSetMakerTags>
+    <comps>
+      <li Class="CompProperties_Usable">
+        <useJob>UseItem</useJob>
+        <useLabel>Use {0_label}</useLabel>
+        <useDuration>0</useDuration>
+        <warmupMote>Mote_ResurrectAbility</warmupMote>
+      </li>
+      <li Class="CompProperties_Targetable">
+        <compClass>CompTargetable_SinglePawn</compClass>
+      </li>
+      
+      <li Class="BigAndSmall.CompProperties_TargetEffectApplySerum">
+        <hediffName>BS_Gigantized</hediffName>
+        <animalsOnly>true</animalsOnly>
+        <humanoidsOnly>false</humanoidsOnly>
+      </li>
+    </comps>
+    <recipeMaker>
+      <researchPrerequisite>BS_AnimalGrowthSerums</researchPrerequisite>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+      <soundWorking>Recipe_Drug</soundWorking>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+        <Intellectual>8</Intellectual>
+      </skillRequirements>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    </recipeMaker>
+    <costList>
+      <Neutroamine>4</Neutroamine>
+      <MedicineUltratech>4</MedicineUltratech>
+      <ComponentSpacer>1</ComponentSpacer>
+      <!-- <MechSerumHealer>1</MechSerumHealer> -->
+      <!-- <MedicineHerbal>1</MedicineHerbal> -->
+    </costList>
+  </ThingDef>
+
+  <ThingDef ParentName="BS_Giant_Serum">
+    <defName>BS_Shrink_Serum</defName>
+    <label>animal minimizer</label>
+    <description>A serum to make an animal much smaller than usual. Beaware that using this on injured animals can be fatal.</description>
+    <graphicData>
+      <texPath>Item/Serum/BS_Minimizer</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Usable">
+        <useJob>UseItem</useJob>
+        <useLabel>Use {0_label}</useLabel>
+        <useDuration>0</useDuration>
+        <warmupMote>Mote_ResurrectAbility</warmupMote>
+      </li>
+      <li Class="CompProperties_Targetable">
+        <compClass>CompTargetable_SinglePawn</compClass>
+      </li>
+      <li Class="BigAndSmall.CompProperties_TargetEffectApplySerum">
+        <hediffName>BS_Minified</hediffName>
+        <animalsOnly>true</animalsOnly>
+        <humanoidsOnly>false</humanoidsOnly>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>BS_Gigantized</defName>
+    <label>gigantized animal</label>
+    <description>This animal has been enlarged.</description>
+    <isBad>false</isBad>
+    <makesSickThought>false</makesSickThought>
+    <everCurableByItem>false</everCurableByItem>
+    <stages>
+      <li>
+        <statFactors>
+          <MoveSpeed>0.90</MoveSpeed>
+          <SM_BodySizeMultiplier>1.20</SM_BodySizeMultiplier>
+        </statFactors>
+        <statOffsets>
+          <SM_BodySizeOffset>0.85</SM_BodySizeOffset>
+        </statOffsets>
+      </li>
+    </stages>
+    <comps>
+    </comps>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>BS_Minified</defName>
+    <label>minified animal</label>
+    <description>This animal has been shrunked down, but the method used made it unusually fast and sturdy for its size.</description>
+    <isBad>false</isBad>
+    <makesSickThought>false</makesSickThought>
+    <everCurableByItem>false</everCurableByItem>
+    <stages>
+      <li>
+        <statFactors>
+          <MoveSpeed>1.15</MoveSpeed>
+          <IncomingDamageFactor>0.5</IncomingDamageFactor>
+          <SM_BodySizeMultiplier>0.5</SM_BodySizeMultiplier>
+        </statFactors>
+      </li>
+    </stages>
+    <comps>
+    </comps>
+  </HediffDef>
+
+  <JobDef>
+    <defName>BS_ApplySerum</defName>
+    <driverClass>BigAndSmall.JobDriver_ApplySerum</driverClass>
+    <reportString>injecting serum into TargetA.</reportString>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+
+  <ThingDef Name="BS_GeneDicombobulator" ParentName="BS_Giant_Serum">
+    <defName>BS_GeneDicombobulator</defName>
+    <label>Xenodiscombobulator</label>
+    <description>Chaotically shifts around all xenogenes genes in a character into any possible genes their metabolism can sustain.\n\nExcludes some control genes as well as most genes from Vampires, Demons, and the Undead mod. Also excludes the Titan Frame gene.</description>
+    <graphicData>
+      <!-- Replace icon...-->
+      <texPath>Item/Serum/BS_Discombobulator</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <thingSetMakerTags Inherit="False">
+    </thingSetMakerTags>
+    <comps Inherit="False">
+      <li Class="CompProperties_Usable">
+        <useJob>UseItem</useJob>
+        <useLabel>Use {0_label}</useLabel>
+        <useDuration>0</useDuration>
+        <warmupMote>Mote_ResurrectAbility</warmupMote>
+      </li>
+      <li Class="CompProperties_Targetable">
+        <compClass>CompTargetable_SinglePawn</compClass>
+      </li>
+      <li Class="BigAndSmall.CompProperties_TargetEffectApplySerum">
+        <specialEffect>Dicombobulator</specialEffect>
+        <animalsOnly>false</animalsOnly>
+        <humanoidsOnly>true</humanoidsOnly>
+      </li>
+    </comps>
+    <recipeMaker Inherit="False">
+      <researchPrerequisite>BS_GeneScience</researchPrerequisite>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+      <soundWorking>Recipe_Drug</soundWorking>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+        <Intellectual>8</Intellectual>
+      </skillRequirements>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    </recipeMaker>
+    <costList Inherit="False">
+      <MedicineUltratech>1</MedicineUltratech>
+      <ComponentIndustrial>1</ComponentIndustrial>
+      <Neutroamine>5</Neutroamine>
+      <!-- <MedicineHerbal>1</MedicineHerbal> -->
+    </costList>
+  </ThingDef>
+
+  <ThingDef ParentName="BS_GeneDicombobulator">
+    <defName>BS_GeneGeneIntegrator</defName>
+    <label>Gene Integrator</label>
+    <description>Turns all xenogenes into endogenes.</description>
+    <graphicData>
+      <!-- Replace icon...-->
+      <texPath>Item/Serum/BS_GeneIntegrator</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <thingSetMakerTags Inherit="False">
+    </thingSetMakerTags>
+    <comps Inherit="False">
+      <li Class="CompProperties_Usable">
+        <useJob>UseItem</useJob>
+        <useLabel>Use {0_label}</useLabel>
+        <useDuration>0</useDuration>
+        <warmupMote>Mote_ResurrectAbility</warmupMote>
+      </li>
+      <li Class="CompProperties_Targetable">
+        <compClass>CompTargetable_SinglePawn</compClass>
+      </li>
+      <li Class="BigAndSmall.CompProperties_TargetEffectApplySerum">
+        <specialEffect>GeneIntegrator</specialEffect>
+        <animalsOnly>false</animalsOnly>
+        <humanoidsOnly>true</humanoidsOnly>
+      </li>
+    </comps>
+    <costList Inherit="False">
+      <MedicineIndustrial>1</MedicineIndustrial>
+      <ComponentIndustrial>1</ComponentIndustrial>
+      <Neutroamine>10</Neutroamine>
+      <!-- <MedicineHerbal>1</MedicineHerbal> -->
+    </costList>
+  </ThingDef>
+
+  <ThingDef ParentName="BS_GeneDicombobulator">
+    <defName>BS_XenoCopy</defName>
+    <label>Xeno-germline mirroring</label>
+    <description>Randomly copies about 2/3 of endogenes into xenogenes.\n\nThis is mostly useful to control what overrides what, or for extracing into Xenogerms.</description>
+    <graphicData>
+      <!-- Replace icon...-->
+      <texPath>Item/Serum/BS_Mirroring</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <thingSetMakerTags Inherit="False">
+    </thingSetMakerTags>
+    <comps Inherit="False">
+      <li Class="CompProperties_Usable">
+        <useJob>UseItem</useJob>
+        <useLabel>Use {0_label}</useLabel>
+        <useDuration>0</useDuration>
+        <warmupMote>Mote_ResurrectAbility</warmupMote>
+      </li>
+      <li Class="CompProperties_Targetable">
+        <compClass>CompTargetable_SinglePawn</compClass>
+      </li>
+      <li Class="BigAndSmall.CompProperties_TargetEffectApplySerum">
+        <specialEffect>XenoCopy</specialEffect>
+        <animalsOnly>false</animalsOnly>
+        <humanoidsOnly>true</humanoidsOnly>
+      </li>
+    </comps>
+    <costList Inherit="False">
+      <MedicineIndustrial>3</MedicineIndustrial>
+      <ComponentIndustrial>1</ComponentIndustrial>
+      <!-- <Neutroamine>5</Neutroamine> -->
+      <!-- <MedicineHerbal>1</MedicineHerbal> -->
+    </costList>
+  </ThingDef>
+
+  <ThingDef ParentName="BS_GeneDicombobulator">
+    <defName>BS_CreateXenogerm</defName>
+    <label>Xenogerm Cloner</label>
+    <description>Generates a new Xenogerm based on a subject's xenogenes. This let's you, for example, create a Hussar Xenogerm from a hussar. The subject keeps their xenogerms. Does not copy archite genes.</description>
+    <graphicData>
+      <!-- Replace icon...-->
+      <texPath>Item/Serum/BS_GeneCreate</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <thingSetMakerTags Inherit="False">
+    </thingSetMakerTags>
+    <comps Inherit="False">
+      <li Class="CompProperties_Usable">
+        <useJob>UseItem</useJob>
+        <useLabel>Use {0_label}</useLabel>
+        <useDuration>0</useDuration>
+        <warmupMote>Mote_ResurrectAbility</warmupMote>
+      </li>
+      <li Class="CompProperties_Targetable">
+        <compClass>CompTargetable_SinglePawn</compClass>
+      </li>
+      <li Class="BigAndSmall.CompProperties_TargetEffectApplySerum">
+        <specialEffect>CreateXenogerm</specialEffect>
+        <animalsOnly>false</animalsOnly>
+        <humanoidsOnly>true</humanoidsOnly>
+      </li>
+    </comps>
+    <costList Inherit="False">
+      <MedicineUltratech>1</MedicineUltratech>
+      <ComponentSpacer>1</ComponentSpacer>
+      <!-- <Neutroamine>5</Neutroamine> -->
+      <!-- <MedicineHerbal>1</MedicineHerbal> -->
+    </costList>
+  </ThingDef>
+
+  <ThingDef ParentName="BS_GeneDicombobulator">
+    <defName>BS_CreateArchiteXenogerm</defName>
+    <label>Archite Xenogerm Cloner</label>
+    <description>Generates a new Xenogerm based on a subject's xenogenes. This let's you, for example, create a Sanguophage Xenogerm from a Sanguophage. The subject keeps their xenogerms. This DOES copy archite genes.</description>
+    <graphicData>
+      <!-- Replace icon...-->
+      <texPath>Item/Serum/BS_GeneCreate_archite</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <thingSetMakerTags Inherit="False">
+    </thingSetMakerTags>
+    <comps Inherit="False">
+      <li Class="CompProperties_Usable">
+        <useJob>UseItem</useJob>
+        <useLabel>Use {0_label}</useLabel>
+        <useDuration>0</useDuration>
+        <warmupMote>Mote_ResurrectAbility</warmupMote>
+      </li>
+      <li Class="CompProperties_Targetable">
+        <compClass>CompTargetable_SinglePawn</compClass>
+      </li>
+      <li Class="BigAndSmall.CompProperties_TargetEffectApplySerum">
+        <specialEffect>CreateArchiteXenogerm</specialEffect>
+        <animalsOnly>false</animalsOnly>
+        <humanoidsOnly>true</humanoidsOnly>
+      </li>
+    </comps>
+    <recipeMaker Inherit="False">
+      <researchPrerequisite>BS_ArchiteGeneScience</researchPrerequisite>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+      <soundWorking>Recipe_Drug</soundWorking>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+        <Intellectual>8</Intellectual>
+      </skillRequirements>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    </recipeMaker>
+    <costList Inherit="False">
+      <MedicineUltratech>1</MedicineUltratech>
+      <ComponentSpacer>1</ComponentSpacer>
+      <ArchiteCapsule>1</ArchiteCapsule>
+      <MechSerumHealer>1</MechSerumHealer>
+      <!-- <Neutroamine>5</Neutroamine> -->
+      <!-- <MedicineHerbal>1</MedicineHerbal> -->
+    </costList>
+  </ThingDef>
+
+
+</Defs>

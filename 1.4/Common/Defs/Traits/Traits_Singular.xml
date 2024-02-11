@@ -1,0 +1,161 @@
+<Defs>
+  <TraitDef>
+    <defName>Gigantism</defName>
+    <commonality>0.8</commonality>
+    <degreeDatas>
+      <li>
+        <label>gigantism</label>
+        <description>{PAWN_nameDef} is truly gigantic by the standards of their kind. They are sturdier than usual, but being significantly larger than normal for their kind does slow them down somewhat and make them more prone to early heart attacks and other health-issues.</description> <!---->
+        <statFactors>
+          <SM_BodySizeMultiplier>1.30</SM_BodySizeMultiplier>
+          <ConstructionSpeed>1.10</ConstructionSpeed>
+          <MoveSpeed>0.9</MoveSpeed>
+          <LifespanFactor>0.8</LifespanFactor>
+        </statFactors>
+      </li>
+    </degreeDatas>
+    <exclusionTags>
+      <li>Large</li>
+      <li>Small</li>
+      <li>Dwarfism</li>
+    </exclusionTags>
+  </TraitDef>
+  
+  <TraitDef>
+    <defName>Large</defName>
+    <commonality>2.0</commonality>
+    <degreeDatas>
+      <li>
+        <label>large</label>
+        <description>{PAWN_nameDef} is taller and bulkier than usual for their kind. This makes them sturdier but slightly slower.</description> <!---->
+        <statFactors>
+          <SM_BodySizeMultiplier>1.15</SM_BodySizeMultiplier>
+          <ConstructionSpeed>1.05</ConstructionSpeed>
+          <MoveSpeed>0.95</MoveSpeed>
+          <LifespanFactor>0.95</LifespanFactor>
+        </statFactors>
+      </li>
+    </degreeDatas>
+    <exclusionTags>
+      <li>Gigantism</li>
+      <li>Small</li>
+      <li>Dwarfism</li>
+    </exclusionTags>
+  </TraitDef>
+  
+  <TraitDef>
+    <defName>Small</defName>
+    <commonality>2.0</commonality>
+    <degreeDatas>
+      <li>
+        <label>small</label>
+        <description>{PAWN_nameDef} is a bit smaller than usual for their kind.</description> <!---->
+        <statFactors>
+          <SM_BodySizeMultiplier>0.80</SM_BodySizeMultiplier>
+          <MiningSpeed>0.95</MiningSpeed>
+          <ConstructionSpeed>0.95</ConstructionSpeed>
+          <DeepDrillingSpeed>0.95</DeepDrillingSpeed>
+          <MoveSpeed>0.93</MoveSpeed>
+        </statFactors>
+      </li>
+    </degreeDatas>
+    <exclusionTags>
+      <li>Large</li>
+      <li>Gigantism</li>
+      <li>Dwarfism</li>
+    </exclusionTags>
+  </TraitDef>
+  
+  <TraitDef>
+    <defName>Dwarfism</defName>
+    <commonality>1.0</commonality>
+    <degreeDatas>
+      <li>
+        <label>dwarfism</label>
+        <description>{PAWN_nameDef} is much smaller than usual for their kind.</description> <!---->
+        <statFactors>
+          <SM_BodySizeMultiplier>0.60</SM_BodySizeMultiplier>
+          <MiningSpeed>0.75</MiningSpeed>
+          <ConstructionSpeed>0.75</ConstructionSpeed>
+          <DeepDrillingSpeed>0.75</DeepDrillingSpeed>
+          <MoveSpeed>0.85</MoveSpeed>
+        </statFactors>
+      </li>
+    </degreeDatas>
+    <exclusionTags>
+      <li>Large</li>
+      <li>Gigantism</li>
+      <li>Small</li>
+    </exclusionTags>
+  </TraitDef>
+  
+  <TraitDef>
+    <defName>Passioned_Learning</defName>
+    <commonality>1.0</commonality>
+    <degreeDatas>
+      <li>
+        <label>diligent student</label>
+        <description>{PAWN_nameDef} learns faster in skills they lack passion in.\n\n(This increase to no-passion learning will not show in the skill UI)</description> <!---->
+        <statOffsets>
+          <SM_Minimum_Learning_Speed>0.35</SM_Minimum_Learning_Speed>
+          <GlobalLearningFactor>0.15</GlobalLearningFactor>
+          
+        </statOffsets>
+      </li>
+    </degreeDatas>
+    <exclusionTags>
+      <li>Passioned_Learning</li>
+    </exclusionTags>
+  </TraitDef>
+  
+  <TraitDef>
+    <defName>Very_Passioned_Learning</defName>
+    <commonality>1.0</commonality>
+    <degreeDatas>
+      <li>
+        <label>very diligent student</label>
+        <description>{PAWN_nameDef} learns much faster in skills they lack passion in.\n\n(This increase to no-passion learning will not show in the skill UI)</description> <!---->
+        <statOffsets>
+          <SM_Minimum_Learning_Speed>0.65</SM_Minimum_Learning_Speed>
+          <GlobalLearningFactor>0.30</GlobalLearningFactor>
+        </statOffsets>
+      </li>
+    </degreeDatas>
+    <exclusionTags>
+      <li>Passioned_Learning</li>
+    </exclusionTags>
+  </TraitDef>
+  
+  <TraitDef>
+    <defName>BS_AnimalFriend</defName>
+    <commonality>0.5</commonality>
+    <degreeDatas>
+      <li>
+        <label>Animal Friend</label>
+        <description>There is something about {PAWN_nameDef} that makes predators not consider them prey</description> <!---->
+      </li>
+    </degreeDatas>
+  </TraitDef>
+
+  <TraitDef>
+		<defName>BS_AlcoholAddict</defName>
+		<commonality>0.0</commonality>
+		<degreeDatas>
+			<li>
+				<label>alcohol lover</label>
+				<description>[PAWN_nameDef] loves alcohol. [PAWN_pronoun] will never stop being addicted to it.</description>
+        <statOffsets>
+          <MentalBreakThreshold>0.10</MentalBreakThreshold>
+        </statOffsets>
+        <statFactors>
+          <JoyGainFactor>1.5</JoyGainFactor>
+        </statFactors>
+			</li>
+		</degreeDatas>
+		<conflictingTraits>
+			<li>DrugDesire</li>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">VTE_Lush</li>
+		</conflictingTraits>
+	</TraitDef>
+
+</Defs>

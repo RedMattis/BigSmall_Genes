@@ -1,0 +1,76 @@
+<Defs>
+  <ThingDef>
+    <defName>BS_Proj_Fire</defName>
+    <label>fire</label>
+    <!-- <thingClass>Projectile_Liquid</thingClass> -->
+    <thingClass>Projectile_Explosive</thingClass>
+    <category>Projectile</category>
+    <tickerType>Normal</tickerType>
+    <altitudeLayer>Projectile</altitudeLayer>
+    <useHitPoints>False</useHitPoints>
+    <neverMultiSelect>True</neverMultiSelect>
+    <rotatable>false</rotatable>
+    <graphicData>
+      <graphicClass>Graphic_FleckPulse</graphicClass>
+      <shaderType>GlowAnimated</shaderType>
+      <texPath>Things/Mote/FireSpew_A</texPath>
+      <drawRotated>true</drawRotated>
+      <allowFlip>true</allowFlip>
+      <shaderParameters>
+        <_NumFrames>5</_NumFrames>
+        <_FramesPerSec>7</_FramesPerSec>
+      </shaderParameters>
+      <drawSize>1.2</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>Flame</damageDef>
+      <speed>30</speed>
+      <explosionRadius>0.9</explosionRadius>
+      <preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
+      <ai_IsIncendiary>true</ai_IsIncendiary>
+      <damageAmountBase>15</damageAmountBase>
+      <arcHeightFactor>2</arcHeightFactor>
+      <armorPenetrationBase>0</armorPenetrationBase>
+      <stoppingPower>1</stoppingPower>
+      <shadowSize>0</shadowSize>
+    </projectile>
+  </ThingDef>
+
+
+  <ThingDef>
+    <defName>BS_Proj_FireExplosive</defName>
+    <label>fire</label>
+    <!-- <thingClass>Projectile_Liquid</thingClass> -->
+    <thingClass>Projectile_Explosive</thingClass>
+    <category>Projectile</category>
+    <tickerType>Normal</tickerType>
+    <altitudeLayer>Projectile</altitudeLayer>
+    <useHitPoints>False</useHitPoints>
+    <neverMultiSelect>True</neverMultiSelect>
+    <rotatable>false</rotatable>
+    <graphicData>
+      <graphicClass>Graphic_FleckPulse</graphicClass>
+      <shaderType>GlowAnimated</shaderType>
+      <texPath>Things/Mote/FireSpew_A</texPath>
+      <drawRotated>true</drawRotated>
+      <allowFlip>true</allowFlip>
+      <shaderParameters>
+        <_NumFrames>5</_NumFrames>
+        <_FramesPerSec>7</_FramesPerSec>
+      </shaderParameters>
+      <drawSize>1.2</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>Flame</damageDef>
+      <speed>25</speed>
+      <explosionRadius>1.9</explosionRadius>
+      <preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
+      <ai_IsIncendiary>true</ai_IsIncendiary>
+      <damageAmountBase>15</damageAmountBase>
+      <arcHeightFactor>2</arcHeightFactor>
+      <armorPenetrationBase>0</armorPenetrationBase>
+      <stoppingPower>1</stoppingPower>
+      <shadowSize>0</shadowSize>
+    </projectile>
+  </ThingDef>
+</Defs>

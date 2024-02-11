@@ -1,0 +1,134 @@
+<Defs>
+
+  <GeneDef>
+    <defName>VU_Hermaphromorph</defName>
+    <label>Hermaphromorph</label>
+    <displayCategory>Reproduction</displayCategory>
+    
+    <description>Carriers of this gene can change the sex of their body at will.</description>
+    <iconPath>GeneIcons/VU_Genderbender</iconPath>
+    <abilities>
+      <li>VU_Hermaphromorph</li>
+    </abilities>
+    <descriptionHyperlinks>
+      <AbilityDef>VU_Hermaphromorph</AbilityDef>
+    </descriptionHyperlinks>
+    <biostatMet>0</biostatMet>
+    <biostatCpx>3</biostatCpx>
+    <selectionWeight>1</selectionWeight>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>BS_FoamSpray</defName>
+    <label>foam spray cone</label>
+    <description>Carriers can generate and store a fire-retardant foam. They can spew this foam over an area to extinguish fires.</description>
+    <iconPath>UI/Icons/Genes/Gene_FoamSpray</iconPath>
+    <displayCategory>Ability</displayCategory>
+    <abilities>
+      <li>BS_FoamSpray</li>
+    </abilities>
+    <descriptionHyperlinks>
+      <AbilityDef>FoamSpray</AbilityDef>
+    </descriptionHyperlinks>
+    <biostatMet>-2</biostatMet>
+    <symbolPack>
+      <wholeNameSymbols>
+        <li><symbol>foamer</symbol></li>
+      </wholeNameSymbols>
+      <prefixSymbols>
+        <li><symbol>foam</symbol></li>
+        <li><symbol>spit</symbol></li>
+        <li><symbol>spray</symbol></li>
+        <li><symbol>suds</symbol></li>
+        <li><symbol>cream</symbol></li>
+        <li><symbol>froth</symbol></li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li><symbol>foamer</symbol></li>
+        <li><symbol>sud</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+    <selectionWeight>0.25</selectionWeight>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>VU_Pounce</defName>
+    <label>pounce</label>
+    <displayCategory>Ability</displayCategory>
+    <description>Carriers of this gene can pounce at prey.</description>
+    <iconPath>UI/Icons/Genes/Gene_LongJumpLegs</iconPath>
+    
+    <biostatCpx>2</biostatCpx>
+    <biostatMet>-2</biostatMet>
+    <canGenerateInGeneSet>true</canGenerateInGeneSet>
+    <symbolPack>
+      <wholeNameSymbols>
+        <li><symbol>jumper</symbol></li>
+        <li><symbol>leaper</symbol></li>
+        <li><symbol>bouncer</symbol></li>
+      </wholeNameSymbols>
+      <prefixSymbols>
+        <li><symbol>jump</symbol></li>
+        <li><symbol>leap</symbol></li>
+        <li><symbol>vault</symbol></li>
+        <li><symbol>long</symbol></li>
+        <li><symbol>fly</symbol></li>
+        <li><symbol>hop</symbol></li>
+      </prefixSymbols>
+    </symbolPack>
+
+    <abilities>
+      <li>VU_Pounce</li>
+    </abilities>
+    <descriptionHyperlinks>
+      <AbilityDef>VU_Pounce</AbilityDef>
+    </descriptionHyperlinks>
+    <selectionWeight>1</selectionWeight>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+  <AbilityDef Name="VU_Pounce">
+    <defName>VU_Pounce</defName>
+    <label>Ambush</label>
+    <description>Jump to a nearby location.</description>
+    <iconPath>UI/Abilities/Longjump</iconPath>
+    <cooldownTicksRange>100</cooldownTicksRange>
+    <hostile>false</hostile>
+    <verbProperties>
+      <verbClass>Verb_CastAbilityJump</verbClass>
+      <label>jump</label>
+      <violent>false</violent>
+      <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+      <warmupTime>1</warmupTime>
+      <range>4.9</range>
+      <requireLineOfSight>true</requireLineOfSight>
+      <soundCast>Longjump_Jump</soundCast>
+      <soundLanding>Longjump_Land</soundLanding>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+        <canTargetPawns>false</canTargetPawns>
+        <canTargetBuildings>false</canTargetBuildings>
+      </targetParams>
+    </verbProperties>
+    <jobDef>CastJump</jobDef>
+    <aiCanUse>true</aiCanUse>
+  </AbilityDef>
+
+</Defs>

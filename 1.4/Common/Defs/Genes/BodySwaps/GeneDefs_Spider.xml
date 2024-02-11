@@ -1,0 +1,223 @@
+<Defs>
+
+
+  <GeneDef Name="BS_Spiderbase" Abstract="True">
+    <displayCategory>BS_BodySwap</displayCategory>
+    <geneClass>BetterPrerequisites.PGene</geneClass>
+    <biostatCpx>0</biostatCpx>
+    <biostatMet>0</biostatMet>
+    <randomChosen>false</randomChosen>
+    <displayOrderInCategory>50</displayOrderInCategory>
+    <iconColor>(0.75, 0.75, 0.75)</iconColor>
+    <graphicData>
+      <drawLoc>Tailbone</drawLoc>
+      <drawScale>1.5</drawScale>
+      <drawOffsetNorth>(0, 0.0150617733, -0.47)</drawOffsetNorth>
+      <drawOffsetSouth>(0, 0.0150617733, 0)</drawOffsetSouth>
+      <drawOffsetEast>(0, 0.0150617733, 0)</drawOffsetEast>
+    </graphicData>
+
+    <exclusionTags>
+      <li>Tail</li>
+      <li>Bug_BodyAttachment</li>
+      <li>taur</li>
+      <li>ThingDefSwap</li>
+      <li>spiderlegs</li>
+    </exclusionTags>
+  </GeneDef>
+
+  <GeneDef Name="BS_SpoderLegs" ParentName="BS_Spiderbase" Abstract="True">
+    <description>Carriers of this gene have their lower half replaced with the body of a spider. Has science gone too far?</description>
+    <customEffectDescriptions>
+      <li>Switches the character's "Race" for another one. HAR required for this part of the gene.</li>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">Reduces the movement speed penalty when traversing difficult terrain</li>
+    </customEffectDescriptions>
+    <iconPath>GeneIcons/BS_Spooder</iconPath>
+    <displayOrderInCategory>777</displayOrderInCategory>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-2</biostatMet>
+    <selectionWeight>0</selectionWeight>
+    <statFactors>
+      <SM_Food_Need_Capacity>2.0</SM_Food_Need_Capacity>
+    </statFactors>
+    <missingGeneRomanceChanceFactor>0.75</missingGeneRomanceChanceFactor>
+    
+  </GeneDef>
+
+  <GeneDef ParentName="BS_SpoderLegs">
+    <defName>BS_SpiderBody_Synthread</defName>
+    <label>Spider Abdomen (Synthread)</label>
+    <description>Carriers of this gene have their lower half replaced with the body of a spider. Has science gone too far?\n\nProduces 80 Synthread every 4 days, modified by body-size.\n\nSpider body has skin-colour.</description>
+    <geneClass>BigAndSmall.ProductionGene</geneClass>
+    <graphicData>
+      <graphicPaths>
+        <li>Humanlike/BodyAttachments/BS_Spoder/bp_default</li>
+        <li>Humanlike/BodyAttachments/BS_Spoder/bp_child</li>
+        <li>Humanlike/BodyAttachments/BS_Spoder/bp_fat</li>
+        <li>Humanlike/BodyAttachments/BS_Spoder/bp_hulk</li>
+        <li>Humanlike/BodyAttachments/BS_Spoder/bp_female</li>
+        <li>Humanlike/BodyAttachments/BS_Spoder/bp_male</li>
+      </graphicPaths>
+      <drawScale>2.25</drawScale>
+      <drawOffsetNorth>(0, 0.0150617733, -0.3067)</drawOffsetNorth>
+      <drawOffsetSouth>(0, 0.0150617733, -0.3067)</drawOffsetSouth>
+      <drawOffsetEast>(-0.3067, 0.0150617733, -0.3067)</drawOffsetEast>
+      <colorType>Skin</colorType>
+    </graphicData>
+    <modExtensions>
+      <li Class="BetterPrerequisites.GeneExtension">
+        <applyBodyHediff MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+          <li>
+            <hediff MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">BS_Stride</hediff>
+          </li>
+        </applyBodyHediff>
+        <thingDefSwap MayRequire="erdelf.HumanoidAlienRaces">BS_SpiderPersonRace</thingDefSwap>
+        <forceThingDefSwap>false</forceThingDefSwap>
+        <bodyPosOffset>0.5</bodyPosOffset>
+        <hiddenGenes>
+          <li>BS_SpiderBodyBack_skin</li>
+        </hiddenGenes>
+      </li>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+        <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+        <backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+      </li>
+      <li Class="BigAndSmall.ProductionGeneSettings">
+        <product>Synthread</product>
+        <frequencyInDays>4</frequencyInDays>
+        <!-- <frequencyInDays>0.05</frequencyInDays> -->
+        <baseAmount>40</baseAmount>
+        <progressName>Producing Synthread</progressName>
+        <saveKey>BS_SynthreadProduction</saveKey>
+      </li>
+    </modExtensions>
+  </GeneDef>
+
+  <GeneDef ParentName="BS_SpoderLegs">
+    <defName>BS_SpiderBody_Devil</defName>
+    <label>Spider Abdomen (Devilstrand)</label>
+    <description>Carriers of this gene have their lower half replaced with the body of a spider. Has science gone too far?\n\nProduces 25 Devilstrand every 4 days, modified by body-size.\n\nSpider body has hair-colour</description>
+    <geneClass>BigAndSmall.ProductionGene</geneClass>
+    <graphicData>
+      <graphicPaths>
+        <li>Humanlike/BodyAttachments/BS_Spoder/bp_default</li>
+        <li>Humanlike/BodyAttachments/BS_Spoder/bp_child</li>
+        <li>Humanlike/BodyAttachments/BS_Spoder/bp_fat</li>
+        <li>Humanlike/BodyAttachments/BS_Spoder/bp_hulk</li>
+        <li>Humanlike/BodyAttachments/BS_Spoder/bp_female</li>
+        <li>Humanlike/BodyAttachments/BS_Spoder/bp_male</li>
+      </graphicPaths>
+      <drawScale>2.25</drawScale>
+      <drawOffsetNorth>(0, 0.0150617733, -0.3067)</drawOffsetNorth>
+      <drawOffsetSouth>(0, 0.0150617733, -0.3067)</drawOffsetSouth>
+      <drawOffsetEast>(-0.3067, 0.0150617733, -0.3067)</drawOffsetEast>
+      <colorType>Hair</colorType>
+    </graphicData>
+    
+    <modExtensions>
+      <li Class="BetterPrerequisites.GeneExtension">
+        <applyBodyHediff MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+          <li>
+            <hediff MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">BS_Stride</hediff>
+          </li>
+        </applyBodyHediff>
+        <thingDefSwap MayRequire="erdelf.HumanoidAlienRaces">BS_SpiderPersonRace</thingDefSwap>
+        <forceThingDefSwap>false</forceThingDefSwap>
+        <bodyPosOffset>0.5</bodyPosOffset>
+        <hiddenGenes>
+          <li>BS_SpiderBodyBack</li>
+        </hiddenGenes>
+      </li>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+        <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+        <backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+      </li>
+      <li Class="BigAndSmall.ProductionGeneSettings">
+        <product>DevilstrandCloth</product>
+        <frequencyInDays>4</frequencyInDays>
+        <!-- <frequencyInDays>0.05</frequencyInDays> -->
+        <baseAmount>20</baseAmount>
+        <progressName>Producing Devilstrand</progressName>
+        <saveKey>BS_Devilstrandroduction</saveKey>
+      </li>
+    </modExtensions>
+  </GeneDef>
+
+  <GeneDef ParentName="BS_Spiderbase">
+    <defName>BS_SpiderBodyBack</defName>
+    <label>Spider Abdomen (Back)</label>
+    <description>Back graphic for spider abdomen.</description>
+    <iconPath>GeneIcons/BS_Spooder</iconPath>
+    <canGenerateInGeneSet>false</canGenerateInGeneSet>
+    <selectionWeight>0</selectionWeight>
+    <displayCategory>BS_DO_NOT</displayCategory>
+    <exclusionTags Inherit="False">
+    </exclusionTags>
+
+    <graphicData>
+      <graphicPaths>
+        <li>Humanlike/BodyAttachments/BS_Spoder/Back/bp_default</li>
+        <li>Humanlike/BodyAttachments/BS_Spoder/Back/bp_child</li>
+        <li>Humanlike/BodyAttachments/BS_Spoder/Back/bp_fat</li>
+        <li>Humanlike/BodyAttachments/BS_Spoder/Back/bp_hulk</li>
+        <li>Humanlike/BodyAttachments/BS_Spoder/Back/bp_female</li>
+        <li>Humanlike/BodyAttachments/BS_Spoder/Back/bp_male</li>
+      </graphicPaths>
+      <visibleNorth>false</visibleNorth>
+      <drawOffsetNorth>(0, 0.0150617733, -0.3067)</drawOffsetNorth>
+      <drawOffsetSouth>(0, -0.05, -0.3067)</drawOffsetSouth>
+      <drawOffsetEast>(-0.3067, 0.0150617733, -0.3067)</drawOffsetEast>
+      <colorType>Hair</colorType>
+      <drawScale>2.25</drawScale>
+    </graphicData>
+    <modExtensions>
+      <li Class="BetterPrerequisites.GeneExtension">
+        <hiddenAddon>true</hiddenAddon>
+      </li>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+        <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+        <backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+      </li>
+    </modExtensions>
+  </GeneDef>
+
+  <GeneDef ParentName="BS_Spiderbase">
+    <defName>BS_SpiderBodyBack_skin</defName>
+    <label>Spider Abdomen (Back, skin-color)</label>
+    <description>Back graphic for spider abdomen.</description>
+    <iconPath>GeneIcons/BS_Spooder</iconPath>
+    <canGenerateInGeneSet>false</canGenerateInGeneSet>
+    <selectionWeight>0</selectionWeight>
+    <displayCategory>BS_DO_NOT</displayCategory>
+    <exclusionTags Inherit="False">
+    </exclusionTags>
+
+    <graphicData>
+      <graphicPaths>
+        <li>Humanlike/BodyAttachments/BS_Spoder/Back/bp_default</li>
+        <li>Humanlike/BodyAttachments/BS_Spoder/Back/bp_child</li>
+        <li>Humanlike/BodyAttachments/BS_Spoder/Back/bp_fat</li>
+        <li>Humanlike/BodyAttachments/BS_Spoder/Back/bp_hulk</li>
+        <li>Humanlike/BodyAttachments/BS_Spoder/Back/bp_female</li>
+        <li>Humanlike/BodyAttachments/BS_Spoder/Back/bp_male</li>
+      </graphicPaths>
+      <visibleNorth>false</visibleNorth>
+      <drawOffsetNorth>(0, 0.0150617733, -0.3067)</drawOffsetNorth>
+      <drawOffsetSouth>(0, -0.05, -0.3067)</drawOffsetSouth>
+      <drawOffsetEast>(-0.3067, 0.0150617733, -0.3067)</drawOffsetEast>
+      <colorType>Skin</colorType>
+      <drawScale>2.25</drawScale>
+    </graphicData>
+    <modExtensions>
+      <li Class="BetterPrerequisites.GeneExtension">
+        <hiddenAddon>true</hiddenAddon>
+      </li>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+        <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+        <backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+      </li>
+    </modExtensions>
+  </GeneDef>
+
+
+</Defs>

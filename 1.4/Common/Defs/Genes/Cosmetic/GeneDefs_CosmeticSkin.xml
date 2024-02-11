@@ -1,0 +1,184 @@
+<Defs>
+  <GeneDef ParentName="GeneSkinColorOverride">
+    <defName>BS_SkinFrostWhite</defName>
+    <label>Frost-White Skin</label>
+    <labelShortAdj>frosty</labelShortAdj>
+    <description>Carriers of this gene have icy white skin.</description>
+    <iconPath>UI/Icons/Genes/Gene_SkinColorOverride</iconPath>
+    <randomBrightnessFactor>0</randomBrightnessFactor>
+    <skinColorOverride>(214,255,247)</skinColorOverride>
+    <displayOrderInCategory>175</displayOrderInCategory>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneSkinColorOverride">
+    <defName>BS_SkinPermafrost</defName>
+    <label>Permafrost Skin</label>
+    <labelShortAdj>permafrost</labelShortAdj>
+    <description>Carriers of this gene have dark blue skin.</description>
+    <iconPath>UI/Icons/Genes/Gene_SkinColorOverride</iconPath>
+    <randomBrightnessFactor>0</randomBrightnessFactor>
+    <skinColorOverride>(62,168,244,255)</skinColorOverride>
+    <displayOrderInCategory>175</displayOrderInCategory>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </GeneDef>
+  
+  <GeneDef ParentName="GeneSkinColorOverride">
+    <defName>BS_SkinBurningOrange</defName>
+    <label>light orange skin</label>
+    <description>Carriers of this gene produce a pigment that turns their skin a light orange.</description>
+    <iconPath>UI/Icons/Genes/Gene_SkinColorOverride</iconPath>
+    <randomBrightnessFactor>0</randomBrightnessFactor>
+    <skinColorOverride>(255,154,62)</skinColorOverride>
+    <displayOrderInCategory>176</displayOrderInCategory>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </GeneDef>
+  
+  <GeneDef ParentName="GeneSkinColorOverride">
+    <defName>BS_SkinBloodRed</defName>
+    <label>blood-red skin</label>
+    <labelShortAdj>blood-red</labelShortAdj>
+    <iconPath>UI/Icons/Genes/Gene_SkinColorOverride</iconPath>
+    <description>Carriers of this gene produce a pigment that turns their skin a dark red color.</description>
+    <randomBrightnessFactor>0</randomBrightnessFactor>
+    <skinColorOverride>(125,12,26,255)</skinColorOverride>
+    <displayOrderInCategory>177</displayOrderInCategory>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneSkinColorOverride">
+		<defName>BS_Skin_DarkAsh</defName>
+		<label>dark ashen skin</label>
+		<labelShortAdj>ashen</labelShortAdj>
+		<description>Carriers of this gene produce a deep purple pigment that gives their skin a sickly appearance.</description>
+		<skinColorOverride>(61, 59, 78)</skinColorOverride>
+		<displayOrderInCategory>178</displayOrderInCategory>
+	</GeneDef>
+
+  <GeneDef ParentName="GeneSkinColorOverride">
+    <defName>VU_LightPallorSkin</defName>
+    <label>light pallor</label>
+    <description>Carriers of this gene have icy white skin.</description>
+    <iconPath>UI/Icons/Genes/Gene_SkinColorOverride</iconPath>
+    <randomBrightnessFactor>0</randomBrightnessFactor>
+    <skinColorOverride>(227,255,227)</skinColorOverride>
+    <displayOrderInCategory>175</displayOrderInCategory>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+    <selectionWeight>0.2</selectionWeight>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneSkinColorOverride">
+    <defName>VU_DarkPallorSkin</defName>
+    <label>dark pallor</label>
+    <description>Carriers of this gene have icy white skin.</description>
+    <iconPath>UI/Icons/Genes/Gene_SkinColorOverride</iconPath>
+    <randomBrightnessFactor>0</randomBrightnessFactor>
+    <skinColorOverride>(138,153,139)</skinColorOverride>
+    <displayOrderInCategory>176</displayOrderInCategory>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+    <selectionWeight>0.2</selectionWeight>
+  </GeneDef>
+  
+  <GeneDef ParentName="GeneSkinColorOverride">
+    <defName>VU_NosferatuSkin</defName>
+    <label>Corpse-like Skin</label>
+    <description>Carriers of this gene have creepy corpse-like skin.</description>
+    <iconPath>UI/Icons/Genes/Gene_SkinColorOverride</iconPath>
+    <randomBrightnessFactor>0</randomBrightnessFactor>
+    <skinColorOverride>(129,144,127,255)</skinColorOverride>
+    <displayOrderInCategory>177</displayOrderInCategory>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+    <selectionWeight>0.2</selectionWeight>
+  </GeneDef>
+  
+  <GeneDef ParentName="GeneSkinColorOverride">
+    <defName>VU_ZombieSkin</defName>
+    <label>zombie skin</label>
+    <description>Carriers of this gene have greenish corpse-like skin.</description>
+    <iconPath>UI/Icons/Genes/Gene_SkinColorOverride</iconPath>
+    <randomBrightnessFactor>0</randomBrightnessFactor>
+    <skinColorOverride>(65,71,37)</skinColorOverride>
+    <displayOrderInCategory>178</displayOrderInCategory>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+    <selectionWeight>0.2</selectionWeight>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneSkinColorOverride">
+    <defName>BS_CreamSkin</defName>
+    <label>cream skin</label>
+    <labelShortAdj>creamy</labelShortAdj>
+    <description>Carriers of this gene have creamy white skin.</description>
+    <iconPath>UI/Icons/Genes/Gene_SkinColorOverride</iconPath>
+    <randomBrightnessFactor>0</randomBrightnessFactor>
+    <skinColorOverride>(230,255,210,255)</skinColorOverride>
+    <displayOrderInCategory>175</displayOrderInCategory>
+    <selectionWeight>0</selectionWeight>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneSkinColorOverride">
+    <defName>BS_LightGreenSkin</defName>
+    <label>fair green skin</label>
+    <labelShortAdj>green</labelShortAdj>
+    <description>Carriers of this gene produce a pigment that gives their skin a green color.</description>
+    <skinColorOverride>(216, 227, 166)</skinColorOverride>
+    <displayOrderInCategory>0</displayOrderInCategory>
+    <symbolPack>
+      <wholeNameSymbols>
+        <li><symbol>greenskin</symbol></li>
+      </wholeNameSymbols>
+      <prefixSymbols>
+        <li><symbol>green</symbol></li>
+        <li><symbol>lime</symbol></li>
+        <li><symbol>jade</symbol></li>
+        <li><symbol>leaf</symbol></li>
+      </prefixSymbols>
+    </symbolPack>
+    <selectionWeight>0</selectionWeight>
+  </GeneDef>
+</Defs>

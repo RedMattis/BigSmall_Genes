@@ -1,0 +1,66 @@
+<Defs>
+  
+  <GeneDef>
+    <defName>BS_SlimeAttack</defName>
+    <label>acidic attack</label>
+    <!-- <displayCategory>Ability</displayCategory> -->
+    <description>Carriers of this genes can attack with corrosive sticky acid.</description>
+    <iconPath>GeneIcons/BS_AcidPunch</iconPath>
+    <biostatMet>-1</biostatMet>
+    <biostatArc>0</biostatArc>
+    <selectionWeight>1</selectionWeight>
+    <geneClass>BetterPrerequisites.PGene</geneClass>
+    <statOffsets>
+      <SM_RaidWealthOffset>1000</SM_RaidWealthOffset>
+    </statOffsets>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+      <li Class="BetterPrerequisites.GeneExtension">
+				<applyPartHediff>
+					<li>
+						<hediff>BS_AcidAttack</hediff>
+            <bodyparts>
+              <li>Torso</li>
+            </bodyparts>
+					</li>
+				</applyPartHediff>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+  <GeneDef>
+		<defName>LoS_VenomTalons</defName>
+		<label>venom talons</label>
+		<description>Carriers of this gene possess dangerous venomous talons. They are good at getting into the chinks of armour.\n\nTechnically more corrosive than a venomous. Slows down most types of work.</description>
+		<iconPath>GeneIcons/BS_AcidClaws</iconPath>
+		<displayOrderInCategory>775</displayOrderInCategory>
+		<biostatCpx>2</biostatCpx>
+		<biostatMet>-2</biostatMet>
+		<statFactors>
+			<WorkSpeedGlobal>0.85</WorkSpeedGlobal>
+		</statFactors>
+    <geneClass>BetterPrerequisites.PGene</geneClass>
+		<selectionWeight>0</selectionWeight>
+		 <modExtensions>
+			<li Class="BetterPrerequisites.GeneExtension">
+				<applyPartHediff>
+					<li>
+						<hediff>LoS_VenomClaws</hediff>
+            <bodyparts>
+              <!--So it can add up to 6 sets of talons.-->
+              <li>Hand</li>
+              <li>Hand</li>
+              <li>Hand</li>
+              <li>Hand</li>
+              <li>Hand</li>
+              <li>Hand</li>
+            </bodyparts>
+					</li>
+				</applyPartHediff>
+			</li>
+		</modExtensions>
+	</GeneDef>
+</Defs>

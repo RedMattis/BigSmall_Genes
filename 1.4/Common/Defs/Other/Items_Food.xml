@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+
+  <ThingDef ParentName="MealBase">
+    <defName>BS_MealLargeSurvivalPack</defName>
+    <label>packaged large survival meal</label>
+    <description>A large high-quality packaged meal, manufactured for use in survival situations. While it never rots, it can still deteriorate if left outside. Great for traveling.</description>
+    <graphicData>
+      <texPath>Item/BS_Meal/SurvivalPack</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0.25</DeteriorationRate>
+      <MarketValue>72</MarketValue>
+      <Mass>0.9</Mass>
+      <WorkToMake>1000</WorkToMake>
+      <Nutrition>4</Nutrition>
+    </statBases>
+    <ingestible>
+      <preferability>MealSimple</preferability>
+      <optimalityOffsetHumanlikes>-5</optimalityOffsetHumanlikes>
+      <optimalityOffsetFeedingAnimals>-10</optimalityOffsetFeedingAnimals>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+    <allowedArchonexusCount>40</allowedArchonexusCount>
+  </ThingDef>
+
+  <ThingDef ParentName="MealCooked">
+    <defName>BS_MealLargeSimple</defName>
+    <label>simple large meal</label>
+    <description>A large simple meal quickly cooked from one main ingredient.</description>
+    <graphicData>
+      <texPath>Item/BS_Meal/Simple</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>45</MarketValue>
+      <WorkToMake>600</WorkToMake>
+      <Nutrition>4</Nutrition>
+    </statBases>
+    <ingestible>
+      <preferability>MealSimple</preferability>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+  
+  <ThingDef Name="BS_MealLargeFineBase" ParentName="MealCookedIngredientless" Abstract="True">
+    <statBases>
+      <MarketValue>60</MarketValue>
+      <WorkToMake>1350</WorkToMake>
+      <Nutrition>4</Nutrition>
+    </statBases>
+    <ingestible>
+      <preferability>MealFine</preferability>
+      <tasteThought>AteFineMeal</tasteThought>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+    
+  </ThingDef>
+
+  <ThingDef ParentName="BS_MealLargeFineBase">
+    <defName>BS_MealLargeFine</defName>
+    <label>fine large meal</label>
+    <description>A large complex dish assembled with care from a variety of ingredients.</description>
+    <possessionCount>4</possessionCount>
+    <graphicData>
+      <texPath>Item/BS_Meal/Fine</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Ingredients">
+        <splitTransferableFoodKind>true</splitTransferableFoodKind>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="BS_MealLargeFineBase">
+    <defName>BS_MealLargeFine_Veg</defName>
+    <label>vegetarian large fine meal</label>
+    <description>A large complex dish assembled with care from vegetarian ingredients.</description>
+    <possessionCount>4</possessionCount>
+    <graphicData>
+      <texPath>Item/BS_Meal/FineVeg</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Ingredients">
+        <noIngredientsFoodKind>NonMeat</noIngredientsFoodKind>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="BS_MealLargeFineBase">
+    <defName>BS_MealLargeFine_Meat</defName>
+    <label>carnivore large fine meal</label>
+    <description>A large complex dish assembled with care from meat ingredients.</description>
+    <possessionCount>4</possessionCount>
+    <graphicData>
+      <texPath>Item/BS_Meal/FineMeat</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Ingredients">
+        <noIngredientsFoodKind>Meat</noIngredientsFoodKind>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef Name="BS_MealLargeLavishBase" ParentName="MealCookedIngredientless" Abstract="True">
+    <description>A large masterpiece of the culinary arts, this meal nourishes the body, mind, and soul.</description>
+    <statBases>
+      <MarketValue>120</MarketValue>
+      <WorkToMake>2400</WorkToMake>
+      <Nutrition>4</Nutrition>
+    </statBases>
+    <ingestible>
+      <preferability>MealLavish</preferability>
+      <tasteThought>AteLavishMeal</tasteThought>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+
+  <ThingDef ParentName="BS_MealLargeLavishBase">
+    <defName>BS_MealLargeLavish</defName>
+    <label>lavish large meal</label>
+    <graphicData>
+      <texPath>Item/BS_Meal/Lavish</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Ingredients">
+        <splitTransferableFoodKind>true</splitTransferableFoodKind>
+      </li>
+    </comps>
+    
+  </ThingDef>
+
+  <ThingDef ParentName="BS_MealLargeLavishBase">
+    <defName>BS_MealLargeLavish_Veg</defName>
+    <label>vegetarian large lavish meal</label>
+    <graphicData>
+      <texPath>Item/BS_Meal/LavishVeg</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Ingredients">
+        <noIngredientsFoodKind>NonMeat</noIngredientsFoodKind>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="BS_MealLargeLavishBase">
+    <defName>BS_MealLargeLavish_Meat</defName>
+    <label>carnivore large lavish meal</label>
+    <graphicData>
+      <texPath>Item/BS_Meal/LavishMeat</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <comps>
+    <li Class="CompProperties_Ingredients">
+      <noIngredientsFoodKind>Meat</noIngredientsFoodKind>
+    </li>
+    </comps>
+    <statBases>
+      <DeteriorationRate>0.25</DeteriorationRate>
+      <MarketValue>72</MarketValue>
+      <Mass>0.9</Mass>
+      <WorkToMake>1200</WorkToMake>
+      <Nutrition>2.7</Nutrition>
+    </statBases>
+  </ThingDef>
+
+
+</Defs>

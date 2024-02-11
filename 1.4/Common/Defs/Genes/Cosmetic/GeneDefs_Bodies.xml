@@ -1,0 +1,68 @@
+<Defs>
+  <GeneDef Name="BS_BodyBase" Abstract="True">
+		<displayCategory>Cosmetic_Body</displayCategory>
+		<exclusionTags>
+			<li>AG_Bodies</li>
+			<li>Bodies</li>
+			<li>Body</li>
+      <li>BS_Body</li>
+		</exclusionTags>
+		<graphicData>
+			<drawLoc>Tailbone</drawLoc>
+		</graphicData>
+	</GeneDef>
+
+  <GeneDef ParentName="BS_BodyBase">
+		<defName>BS_BrokenTitanBody</defName>
+		<label>urb cyborg body</label>
+		<labelShortAdj>urb body</labelShortAdj>
+		<description>Carriers of this gene have a part-robotic body. Forces Hulk-body type.</description>
+    <exclusionTags>
+			<li>BodyType</li> <!--Exclude other body genes since we only have hulk-graphics.-->
+		</exclusionTags>
+		<biostatCpx>1</biostatCpx>
+		<selectionWeight>0</selectionWeight>
+		<displayOrderInCategory>430</displayOrderInCategory>
+		<iconPath>GeneIcons/BS_UrbCyborgBody</iconPath>
+		<bodyType>Hulk</bodyType>
+		<graphicData>
+			<fur>BS_BrokenTitanBody</fur>
+			<tattoosVisible>false</tattoosVisible>
+		</graphicData>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+        <!-- <dontColourFur>true</dontColourFur> -->
+        <useSkinColorForFur>true</useSkinColorForFur>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+  <GeneDef ParentName="BS_BodyBase">
+		<defName>BS_OgreBody</defName>
+		<label>ogre body</label>
+		<labelShortAdj>ogre body</labelShortAdj>
+		<description>Carriers of this gene have obese ogre body.</description>
+    <exclusionTags>
+			<li>BodyType</li> <!--Exclude other body genes since we only have fat-graphics.-->
+		</exclusionTags>
+		<biostatCpx>1</biostatCpx>
+		<selectionWeight>0</selectionWeight>
+		<displayOrderInCategory>430</displayOrderInCategory>
+		<iconPath>GeneIcons/BS_OgreBody</iconPath>
+		<bodyType>Fat</bodyType>
+		<graphicData>
+			<fur>BS_OgreBody</fur>
+			<tattoosVisible>false</tattoosVisible>
+		</graphicData>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+        <!-- <dontColourFur>true</dontColourFur> -->
+        <useSkinColorForFur>true</useSkinColorForFur>
+			</li>
+		</modExtensions>
+	</GeneDef>
+</Defs>

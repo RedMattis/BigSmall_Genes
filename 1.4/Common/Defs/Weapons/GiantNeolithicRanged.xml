@@ -1,0 +1,215 @@
+<Defs>
+
+<!--Giant Javelin-->
+  <ThingDef ParentName="BaseWeaponNeolithic">
+    <defName>BS_JotunJavelin</defName>
+    <label>Huge Javelin</label>
+    <description>These huge javelins are primarily made for throwing, but they also make for acceptable melee weapons. They take a long time to throw, but one hit can do devastating damage. They are exceptionally bad at penetrating heavy armour. \n\nCan be wielded by giant, herculean, or warcasket pawns.</description>
+    <graphicData>
+      <texPath>Item/GiantJavelin</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>3</drawSize>
+    </graphicData>
+    <!-- <equippedAngleOffset>-95</equippedAngleOffset> -->
+    <equippedDistanceOffset>0.2</equippedDistanceOffset>
+    <soundInteract>Interact_BeatFire</soundInteract>
+    <costList>
+      <WoodLog>140</WoodLog>
+      <Steel>80</Steel>
+    </costList>
+    <relicChance>0.05</relicChance>
+    <statBases>
+      <WorkToMake>18000</WorkToMake>
+      <Mass>20</Mass>
+      <AccuracyTouch>0.50</AccuracyTouch>
+      <AccuracyShort>0.65</AccuracyShort>
+      <AccuracyMedium>0.45</AccuracyMedium>
+      <AccuracyLong>0.32</AccuracyLong>
+      <RangedWeapon_Cooldown>3</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponClasses Inherit="False">
+      <li>BS_GiantWeapon</li>
+    </weaponClasses>
+    <weaponTags Inherit="False">
+      <li>RangedMedievalGiant</li>
+    </weaponTags>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>3</Crafting>
+      </skillRequirements>
+      <displayPriority>500</displayPriority>
+    </recipeMaker>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>BS_JotunJavelinProjectile</defaultProjectile>
+        <warmupTime>3</warmupTime>
+        <range>21.9</range>
+        <soundCast>BS_JotunJavelinThrow_Sound</soundCast>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>shaft</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+         <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>22</power>
+         <cooldownTime>2.6</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  <ThingDef ParentName="BaseProjectileNeolithic">
+    <defName>BS_JotunJavelinProjectile</defName>
+    <label>giant javelin</label>
+    <graphicData>
+      <texPath>Item/GiantJavelin_Projectile</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>3</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>RangedStab</damageDef>
+      <damageAmountBase>50</damageAmountBase>
+      <stoppingPower>5.0</stoppingPower>
+      <armorPenetrationBase>0.0</armorPenetrationBase>
+      <speed>25</speed>
+      <arcHeightFactor>1</arcHeightFactor>
+    </projectile>
+  </ThingDef>
+  <SoundDef>
+    <defName>BS_JotunJavelinThrow_Sound</defName>  
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Impact/BeatFire</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>100~100</volumeRange>
+        <pitchRange>0.8~0.8</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  <RecipeDef>
+    <defName>BS_OgreThrowinRockRecipe</defName>
+    <label>make throwing chunks</label>
+    <jobString>making throwing chunks</jobString>
+    <workAmount>100</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <skillRequirements>
+      <Crafting>0</Crafting>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>StoneChunks</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <BS_OgreThrowinRock>1</BS_OgreThrowinRock>
+    </products>
+    <fixedIngredientFilter>
+      <categories>
+        <li>StoneChunks</li>
+      </categories>
+    </fixedIngredientFilter>
+    <recipeUsers>
+      <li>CraftingSpot</li>
+    </recipeUsers>
+  </RecipeDef>
+
+  <!--Throwing Chunk-->
+  <ThingDef ParentName="BaseWeapon">
+    <techLevel>Neolithic</techLevel>
+    <defName>BS_OgreThrowinRock</defName>
+    <label>Throwing Chunks</label>
+    <description>These large rocks have been crudely chiseled for throwing at enemies.\n\nCan be wielded by giant, herculean, or warcasket pawns.</description>
+    <graphicData>
+      <texPath>Item/BS_ThrowableChunk_projectile</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.4</drawSize>
+    </graphicData>
+    <soundInteract>Interact_BeatFire</soundInteract>
+    <relicChance>0</relicChance>
+    <statBases>
+      <MarketValue>50</MarketValue>
+      <Mass>20</Mass>
+      <AccuracyTouch>0.65</AccuracyTouch>
+      <AccuracyShort>0.60</AccuracyShort>
+      <AccuracyMedium>0.45</AccuracyMedium>
+      <AccuracyLong>0.30</AccuracyLong>
+      <RangedWeapon_Cooldown>3</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponClasses Inherit="False">
+      <li>BS_GiantWeapon</li>
+    </weaponClasses>
+    <weaponTags Inherit="False">
+      <li>RangedNeolithicGiant</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>BS_ChunkProjectile</defaultProjectile>
+        <warmupTime>3.5</warmupTime>
+        <range>14.9</range>
+        <soundCast>BS_JotunJavelinThrow_Sound</soundCast>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+        <forcedMissRadius>2.1</forcedMissRadius>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>rock</label>
+        <capacities>
+          <li>Demolish</li>
+        </capacities>
+        <power>15</power>
+         <cooldownTime>2.5</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>BS_ChunkProjectile</defName>
+    <label>chunk projectile</label>
+    <thingClass>Projectile_Explosive</thingClass>
+    <category>Projectile</category>
+    <tickerType>Normal</tickerType>
+    <altitudeLayer>Projectile</altitudeLayer>
+    <useHitPoints>False</useHitPoints>
+    <neverMultiSelect>True</neverMultiSelect>
+    <graphicData>
+      <texPath>Item/BS_ThrowableChunk_projectile</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.4</drawSize>
+    </graphicData>
+    <projectile>
+      <!-- <damageDef>Blunt</damageDef> -->
+      <damageDef>Bomb</damageDef>
+      <explosionRadius>0.9</explosionRadius>
+      <speed>25</speed>
+      <damageAmountBase>25</damageAmountBase>
+      <arcHeightFactor>1.5</arcHeightFactor>
+      <preExplosionSpawnThingDef>Filth_RubbleRock</preExplosionSpawnThingDef>
+      <soundExplode>BuildingDestroyed_Stone_Medium</soundExplode>
+      <armorPenetrationBase>0.3</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+</Defs>

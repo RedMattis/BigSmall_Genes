@@ -1,0 +1,158 @@
+<Defs>
+  <GeneDef ParentName="GeneHairColorBase">
+    <defName>Hair_MediumRed</defName>
+    <label>Dark red hair</label>
+    <hairColorOverride>(131, 66, 66)</hairColorOverride>
+    <selectionWeight>0.05</selectionWeight>
+    <displayOrderInCategory>191</displayOrderInCategory>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </GeneDef>
+  
+  <GeneDef ParentName="GeneHairColorBase">
+    <defName>Hair_MediumBlue</defName>
+    <label>Dark Blue hair</label>
+    <hairColorOverride>(66, 66, 131)</hairColorOverride>
+    <selectionWeight>0.05</selectionWeight>
+    <displayOrderInCategory>191</displayOrderInCategory>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </GeneDef>
+  
+  <GeneDef ParentName="GeneHairColorBase">
+    <defName>BS_HairFrostWhite</defName>
+    <label>Frost-White Hair</label>
+    <hairColorOverride>(205,251,255)</hairColorOverride>
+    <selectionWeight>0.05</selectionWeight>
+    <displayOrderInCategory>191</displayOrderInCategory>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneHairColorBase">
+    <defName>BS_HairPermafrost</defName>
+    <label>Permafrost Hair</label>
+    <hairColorOverride>(1,107,183,255)</hairColorOverride>
+    <selectionWeight>0.05</selectionWeight>
+    <displayOrderInCategory>191</displayOrderInCategory>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </GeneDef>
+  
+  <GeneDef ParentName="GeneHairColorBase">
+    <defName>BS_BloodHair</defName>
+    <label>blood red hair</label>
+    <hairColorOverride>(125,12,26)</hairColorOverride>
+    <selectionWeight>0.05</selectionWeight>
+    <displayOrderInCategory>191</displayOrderInCategory>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </GeneDef>
+  
+  <GeneDef ParentName="GeneNoseBase">
+    <defName>BS_WerewolfSnoot</defName>
+    <label>werewolf snoot</label>
+    <description>Rawr! Carriers of this gene possess a mean werewolf-like snoot.</description>
+    <iconPath>GeneIcons/BS_werewolfsnoot</iconPath>
+    <graphicData>
+      <graphicPath>Humanlike/HeadAttachments/BS_WerewolfSnoot</graphicPath>
+      <layer>PostSkin</layer>
+      <useSkinShader>true</useSkinShader>
+	    <drawScale>1</drawScale>
+      <narrowCrownHorizontalOffset>0.03</narrowCrownHorizontalOffset>
+    </graphicData>
+    <selectionWeight>0.1</selectionWeight>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>lycan</symbol></li>
+        <li><symbol>lunar</symbol></li>
+        <li><symbol>mad</symbol></li>
+        <li><symbol>snout</symbol></li>
+        <li><symbol>snoot</symbol></li>
+        <li><symbol>wolf</symbol></li>
+        <li><symbol>moon</symbol></li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li><symbol>wolf</symbol></li>
+        <li><symbol>moon</symbol></li>
+        <li><symbol>crazed</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </GeneDef>
+  
+  <GeneDef ParentName="BS_Hornbase">
+		<defName>BS_BananaSplitHair</defName>
+		<label>neko banana split horns with sprinkles</label>
+		<description>Carriers of this gene grow protuding banana-looking horns, and cream with a cherry-looking thing on top.\n\nThat's can't be right.</description>
+		<iconPath>GeneIcons/BS_Horns/BananaSplit</iconPath>
+		<graphicData>
+      <color>(255, 255, 255)</color>
+			<graphicPath>Humanlike/HeadAttachments/BS_bananasplit</graphicPath>
+      <useSkinShader>false</useSkinShader>
+      <colorType>Custom</colorType>
+      <drawWhileDessicated>false</drawWhileDessicated>
+    </graphicData>
+	</GeneDef>
+
+  <GeneDef ParentName="GeneHairColorBase">
+    <defName>BS_CreamHair</defName>
+    <label>cream hair</label>
+    <labelShortAdj>creamy</labelShortAdj>
+    <description>Carriers of this gene have creamy white hair.</description>
+    <selectionWeight>0.05</selectionWeight>
+    <randomBrightnessFactor>0</randomBrightnessFactor>
+    <hairColorOverride>(255,240,180)</hairColorOverride>
+    <displayOrderInCategory>175</displayOrderInCategory>
+    <modExtensions>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+        <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+        <backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+      </li>
+    </modExtensions>
+  </GeneDef>
+  
+  <GeneDef ParentName="GeneHairColorBase">
+    <defName>BS_MatteGreenHair</defName>
+    <label>serpentine hair</label>
+    <labelShortAdj>serpentine</labelShortAdj>
+    <description>Carriers of this gene have matte green hair.</description>
+    <selectionWeight>0.05</selectionWeight>
+    <randomBrightnessFactor>0</randomBrightnessFactor>
+    <hairColorOverride>(115,163,95)</hairColorOverride>
+    <displayOrderInCategory>175</displayOrderInCategory>
+    <modExtensions>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+        <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+        <backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+      </li>
+    </modExtensions>
+  </GeneDef>
+  
+  
+</Defs>

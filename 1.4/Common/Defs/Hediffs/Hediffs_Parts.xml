@@ -1,0 +1,130 @@
+<Defs>
+  <HediffDef>
+		<defName>BS_AcidAttack</defName>
+		<label>acidic attack</label>
+		<description>Permits the user to attack with acid that will cling to the victim.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+          <li>
+            <label>acid splash</label>
+            <capacities>
+              <li>BS_AcidBuiltupCap</li>
+            </capacities>
+            <power>10</power>
+            <cooldownTime>2</cooldownTime>
+            <alwaysTreatAsWeapon>false</alwaysTreatAsWeapon>
+          </li>
+          <li> <!--Just to make it more likely that acid will be used when the pawn low-rolls on tool-pick.-->
+            <label>acid splash</label>
+            <capacities>
+              <li>BS_AcidBuiltupCap</li>
+            </capacities>
+            <power>8</power>
+            <cooldownTime>2</cooldownTime>
+            <alwaysTreatAsWeapon>false</alwaysTreatAsWeapon>
+          </li>
+				</tools>
+      </li>
+		</comps>
+		<addedPartProps>
+			<betterThanNatural>false</betterThanNatural>
+		</addedPartProps>
+	</HediffDef>
+
+  <ToolCapacityDef>
+    <defName>BS_AcidBuiltupCap</defName>
+    <label>acid build-up</label>
+  </ToolCapacityDef>
+
+  <ManeuverDef>
+    <defName>VU_AcidAttack</defName>
+    <requiredCapacity>BS_AcidBuiltupCap</requiredCapacity>
+    <verb>
+      <verbClass>Verb_MeleeAttackDamage</verbClass>
+      <ai_IsWeapon>false</ai_IsWeapon>
+      <meleeDamageDef>BS_AcidBuildUpDmg</meleeDamageDef>
+    </verb>
+    <logEntryDef>MeleeAttack</logEntryDef>
+    <combatLogRulesHit>Maneuver_Bite_MeleeHit</combatLogRulesHit>
+    <combatLogRulesDeflect>Maneuver_Bite_MeleeDeflect</combatLogRulesDeflect>
+    <combatLogRulesMiss>Maneuver_Bite_MeleeMiss</combatLogRulesMiss>
+    <combatLogRulesDodge>Maneuver_Bite_MeleeDodge</combatLogRulesDodge>
+  </ManeuverDef>
+
+  <HediffDef>
+    <defName>BS_AcidBuildUp</defName>
+    <label>acid build-up</label>
+    <description>description.</description>
+    <isBad>true</isBad>
+    <makesSickThought>true</makesSickThought>
+    <tendable>true</tendable>
+    <initialSeverity>0.01</initialSeverity>
+    <hediffClass>BigAndSmall.AcidBuildUp</hediffClass>
+    <stages>
+      <li>
+        <label>acid buildup (light)</label>
+        <extraTooltip>Small spots exposed to corrosive substance</extraTooltip>
+        <minSeverity>0.05</minSeverity>
+      </li>
+      <li>
+        <label>acid buildup (moderate)</label>
+        <extraTooltip>Significantly exposed to corrosive substance</extraTooltip>
+        <minSeverity>0.33</minSeverity>
+      </li>
+      <li>
+        <label>acid buildup (severe)</label>
+        <extraTooltip>Almost completely covered in corrosive substance</extraTooltip>
+        <minSeverity>0.66</minSeverity>
+      </li>
+      <li>
+        <label>acid buildup (maximal)</label>
+        <extraTooltip>Drenched in corrosive substance. More build-up will only increase duration.</extraTooltip>
+        <minSeverity>1</minSeverity>
+      </li>
+      
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+		<defName>LoS_VenomClaws</defName>
+		<label>Venom Talons</label>
+		<description>Long envenomed talons. They are very good at getting into the chinks of armour. Technically more corrosive than venomous.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+
+    <stages>
+      <li>
+        <statFactors>
+          <MeleeWeapon_CooldownMultiplier>0.95</MeleeWeapon_CooldownMultiplier>
+        </statFactors>
+      </li>
+    </stages>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>venomus talons</label>
+						<capacities>
+							<li>Cut</li>
+              <li>BS_AcidBuiltupCap</li>
+						</capacities>
+						<power>18</power>
+						<cooldownTime>2.2</cooldownTime>
+            <armorPenetration>0.5</armorPenetration>
+					</li>
+				</tools>
+			</li>
+		</comps>
+		<addedPartProps>
+			<betterThanNatural>false</betterThanNatural>
+		</addedPartProps>
+	</HediffDef>
+
+</Defs>

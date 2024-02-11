@@ -1,0 +1,11 @@
+<Defs>
+	<VREAndroids.AndroidConvertableGenesDef>
+		<defName>BS_AndroidConvertableGenesDefs</defName>
+		
+		<geneCategories>
+			<li>Body_Size_Multiplier</li>
+			<li>ForcedSex</li>
+			<!-- <li>BS_Learning</li> Doesn't work with the basic androids since they won't get the associated trait. -->
+		</geneCategories>	
+	</VREAndroids.AndroidConvertableGenesDef>
+</Defs>

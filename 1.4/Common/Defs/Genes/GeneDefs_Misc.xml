@@ -1,0 +1,677 @@
+<Defs>
+
+
+  <GeneDef ParentName="GeneMoveSpeedBase">
+    <defName>BS_Very_Slow</defName>
+    <label>very slow runner</label>
+    <description>Carriers of this gene move at a very sluggish pace.</description>
+    <iconPath>GeneIcons/snail_speed_icon</iconPath>
+    <displayOrderInCategory>1</displayOrderInCategory>
+    <statOffsets>
+      <MoveSpeed>-0.35</MoveSpeed>
+    </statOffsets>
+    <statFactors>
+      <MoveSpeed>0.7</MoveSpeed>
+    </statFactors>
+    <biostatCpx>2</biostatCpx>
+    <biostatMet>6</biostatMet>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>BS_EVA_Gene</defName>
+    <label>Vacuum Sealed</label>
+    <description>Carriers of this gene can withstand the vacuum of space. This does nothing to help against the cold or slowness of movement in the void.</description>
+    <iconPath>GeneIcons/BS_Vacuum_Gene</iconPath>
+    <displayOrderInCategory>1</displayOrderInCategory>
+    <statOffsets>
+      <SM_EVA_Level>2</SM_EVA_Level>
+      <DecompressionResistance MayRequire="kentington.saveourship2">1</DecompressionResistance>
+      <HypoxiaResistance MayRequire="kentington.saveourship2">1</HypoxiaResistance>
+    </statOffsets>
+    <biostatCpx>2</biostatCpx>
+    <biostatMet>-1</biostatMet>
+    <modExtensions>
+      <li Class="Universum.Utilities.Gene.Properties" MayRequire="sindre0830.Universum">
+        <allowed_utilities>
+          <li>universum.vacuum_decompression_protection</li>
+          <li>universum.vacuum_suffocation_protection</li>
+        </allowed_utilities>
+      </li>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+  <GeneDef ParentName="GenePainBase">
+    <defName>BS_Pain_None</defName>
+    <label>no pain</label>
+    <labelShortAdj>pain-dull</labelShortAdj>
+    <description>Carriers of this gene cannot feel pain. This can sometimes be advantagous but is oftentimes very dangerous to the individual</description>
+    <iconPath>GeneIcons/BS_NoPain</iconPath>
+    <displayOrderInCategory>-5</displayOrderInCategory>
+    <painFactor>0</painFactor>
+    <biostatMet>-1</biostatMet>
+    <symbolPack>
+      <prefixSymbols>
+        <li>
+          <symbol>dull</symbol>
+        </li>
+        <li>
+          <symbol>daze</symbol>
+        </li>
+        <li>
+          <symbol>tough</symbol>
+        </li>
+      </prefixSymbols>
+    </symbolPack>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+  <GeneDef ParentName="GenePainBase">
+    <defName>BS_PainNumb</defName>
+    <label>numb</label>
+    <labelShortAdj>pain-dull</labelShortAdj>
+    <description>Carriers of this gene are completely numb. They have little or no sense of touch and cannot feel pain or comfort. This can sometimes be advantagous but is oftentimes very dangerous to the individual</description>
+    <iconPath>GeneIcons/BS_PainNumb</iconPath>
+    <displayOrderInCategory>-5</displayOrderInCategory>
+    <painFactor>0</painFactor>
+    <biostatMet>0</biostatMet>
+    <disablesNeeds>
+      <li>Comfort</li>
+    </disablesNeeds>
+    <symbolPack>
+      <prefixSymbols>
+        <li>
+          <symbol>numb</symbol>
+        </li>
+      </prefixSymbols>
+    </symbolPack>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </GeneDef>
+  
+
+  <GeneDef ParentName="CellInstabilityBase">
+    <defName>BS_Instability_Catastrophic</defName>
+    <label>catastrophic cell instability</label>
+    <description>Carriers of this gene need much less metabolic energy to stay alive, at the cost of catastrophically-reduced stability in their cell-replication machinery.</description>
+    <iconPath>GeneIcons/BS_CatastrophicCellInstability</iconPath>
+    <displayOrderInCategory>230</displayOrderInCategory>
+    <biostatMet>6</biostatMet>
+    <statFactors>
+      <LifespanFactor>0.4</LifespanFactor>
+      <CancerRate>20</CancerRate>
+      <ImmunityGainSpeed>0.85</ImmunityGainSpeed>
+    </statFactors>
+    <forcedTraits>
+      <li>
+        <def>Immunity</def>
+        <degree>-1</degree>
+      </li>
+    </forcedTraits>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>BS_TinyTough</defName>
+    <label>small people toughness</label>
+    <displayCategory>Pain</displayCategory>
+    
+    <labelShortAdj>small toughness</labelShortAdj>
+    <description>Carriers of this gene are amazingly sturdy despite their tiny size.</description>
+    <iconPath>GeneIcons/BS_TinyTough</iconPath>
+    <displayOrderInCategory>-6</displayOrderInCategory>
+    <statFactors>
+      <IncomingDamageFactor>0.4</IncomingDamageFactor>
+    </statFactors>
+    <biostatCpx>3</biostatCpx>
+    <biostatMet>-4</biostatMet>
+    <exclusionTags>
+      <li>Toughness</li>
+    </exclusionTags>
+    <geneClass>BetterPrerequisites.PGene</geneClass>
+    <modExtensions>
+      <li Class="BetterPrerequisites.GenePrerequisites" MayRequire="RedMattis.BetterPrerequisites">
+        <prerequisiteSets>
+          <li>
+            <type>AnyOf</type>
+            <prerequisites>
+              <li>GnomeFrame</li>
+              <li>BS_SmallFrame</li>
+              <li>BS_RabbitFrame</li>
+              <li>BS_AriettyFrame</li>
+            </prerequisites>
+          </li>
+        </prerequisiteSets>
+      </li>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>BS_DvergrConstitution</defName>
+    <label>dwarven grit</label>
+    <displayCategory>Pain</displayCategory>
+    <labelShortAdj>dwarven grit</labelShortAdj>
+    <description>Carriers of this gene are deceptively strong and robust for their size</description>
+    <iconPath>GeneIcons/BS_DwarvenGrit</iconPath>
+    <displayOrderInCategory>-6</displayOrderInCategory>
+    <statFactors>
+      <IncomingDamageFactor>0.5</IncomingDamageFactor>
+      <MeleeDamageFactor>1.1</MeleeDamageFactor>
+    </statFactors>
+    <biostatCpx>2</biostatCpx>
+    <biostatMet>-3</biostatMet>
+    <exclusionTags>
+      <li>Toughness</li>
+    </exclusionTags>
+    <geneClass>BetterPrerequisites.PGene</geneClass>
+    <modExtensions>
+      <li Class="BetterPrerequisites.GenePrerequisites" MayRequire="RedMattis.BetterPrerequisites">
+        <prerequisiteSets>
+          <li>
+            <type>AnyOf</type>
+            <prerequisites>
+              <li>DwarfFrame</li>
+              <li>GnomeFrame</li>
+              <li>BS_SmallFrame</li>
+              <li>BS_RabbitFrame</li>
+            </prerequisites>
+          </li>
+          <li>
+            <type>NoneOf</type>
+            <prerequisites>
+              <li>MeleeDamage_Weak</li>
+              <li>ViolenceDisabled</li>
+            </prerequisites>
+          </li>
+        </prerequisiteSets>
+      </li>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>BS_GiantWeaponWielder</defName>
+    <label>Giant Weapon Wielder</label>
+    <!-- <prerequisite>JotunFrame</prerequisite> -->
+    <description>Carriers of this gene are capable of wielding giant weapons even if they would otherwise be too small.</description>
+    <iconPath>GeneIcons/BS_HugeWeaponWielder</iconPath>
+    <displayOrderInCategory>411</displayOrderInCategory>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>0</biostatMet>
+    <canGenerateInGeneSet>false</canGenerateInGeneSet>
+    <displayCategory>Violence</displayCategory>
+    <selectionWeight>0</selectionWeight>
+    <marketValueFactor>1</marketValueFactor>
+    <geneClass>BetterPrerequisites.PGene</geneClass>
+    <forcedTraits>
+      <li>
+        <def>BS_Giant</def>
+      </li>
+    </forcedTraits>
+    <modExtensions>
+      <li Class="BetterPrerequisites.GenePrerequisites" MayRequire="RedMattis.BetterPrerequisites">
+        <prerequisiteSets>
+          <li>
+            <type>AnyOf</type>
+            <prerequisites>
+              <li>MeleeDamage_Strong</li>
+            </prerequisites>
+          </li>
+        </prerequisiteSets>
+      </li>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+  <GeneDef Name="BS_Xenoreconstruction">
+    <defName>BS_Xenoreconstruction</defName>
+    <label>Xenoreconstruction</label>
+    <description>Carriers of this gene can heal permanent injuries in themselves or others.</description>
+    <prerequisite>Hemogenic</prerequisite>
+    <iconPath>UI/Icons/Genes/Gene_Coagulate</iconPath>
+    <displayCategory>Ability</displayCategory>
+    <marketValueFactor>2.0</marketValueFactor>
+    <abilities>
+      <li>BS_Regenerate</li>
+    </abilities>
+    <descriptionHyperlinks>
+      <AbilityDef>BS_Regenerate</AbilityDef>
+    </descriptionHyperlinks>
+    <biostatMet>-3</biostatMet>
+    <selectionWeight>1</selectionWeight>
+    <biostatArc>3</biostatArc>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>BS_Fast_TotalHealing</defName>
+    <label>Regeneration</label>
+    <labelShortAdj>scarless</labelShortAdj>
+    <description>Carriers of this gene can regenerate scars and missing limbs.</description>
+    <customEffectDescriptions>
+      <li>Every few days, one old wound, limb, or missing organ is healed.</li>
+    </customEffectDescriptions>
+    <iconPath>GeneIcons/BS_TotalHealing_Fast</iconPath>
+    <geneClass>BigAndSmall.Gene_FastHealing</geneClass>
+    <preventPermanentWounds>true</preventPermanentWounds>
+    <biostatCpx>10</biostatCpx>
+    <biostatArc>3</biostatArc>
+    <displayCategory>Archite</displayCategory>
+    <!-- <geneClass>BetterPrerequisites.PGene</geneClass> -->
+    <!-- <modExtensions>
+      <li Class="BetterPrerequisites.GenePrerequisites"
+    MayRequire="RedMattis.BetterPrerequisites">
+        <prerequisiteSets>
+          <li>
+    <type>AnyOf</type>
+            <prerequisites>
+              <li>WoundHealing_SuperFast</li>
+    <li>VU_DarknessWoundHealing_UltraFast</li>
+            </prerequisites>
+          </li>
+    </prerequisiteSets>
+      </li>
+    </modExtensions> -->
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+  <Genedef>
+    <defName>BS_NoFood</defName>
+    <label>doesn't eat</label>
+    <description>Carriers of this gene obtains their energy from some other source than food. Their food need is locked to 90%. (set to 90% to avoid issues which would stop them from eating hemogen packs f.ex.\n\nNote: If you're using Dubs Bad Hygene it also does the same to thrist and bladder.</description>
+    <iconPath>GeneIcons/BS_NoFood</iconPath>
+    <displayCategory>Archite</displayCategory>
+    <geneClass>BetterPrerequisites.LockedNeedGene</geneClass>
+    <biostatMet>-9</biostatMet>
+    <biostatCpx>10</biostatCpx>
+    <biostatArc>1</biostatArc>
+
+    <exclusionTags>
+      <li>Diet</li>
+      <li>Eats</li>
+    </exclusionTags>
+
+    <!--Disabling DBHThrist from genes doesn't seem to actually work, so we're locking those too.-->
+    <modExtensions>
+      <li Class="BetterPrerequisites.LockedNeed">
+        <lockedNeeds>
+          <li>Food</li>
+          <li MayRequire="Dubwise.DubsBadHygiene">DBHThirst</li>
+          <li MayRequire="Dubwise.DubsBadHygienee">Bladder</li>
+        </lockedNeeds>
+        <value>0.90</value>
+      </li>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </Genedef>
+
+  <GeneDef>
+    <defName>VU_UltraRapidAging</defName>
+    <label>deterioration</label>
+    <description>Carriers of this gene fall apart quickly over time.</description>
+    <iconPath>GeneIcons/VU_UltraAging</iconPath>
+    <biologicalAgeTickFactorFromAgeCurve>
+      <points>
+        <li>(15, 1)</li>
+        <li>(20, 5)</li>
+        <li>(90, 15)</li>
+        <li>(100, 40)</li>
+        <li>(150, 20)</li>
+        <li>(175, 0.05)</li>
+      </points>
+    </biologicalAgeTickFactorFromAgeCurve>
+    <biostatMet>4</biostatMet>
+    <symbolPack>
+      <wholeNameSymbols>
+        <li><symbol>decaying</symbol></li>
+        <li><symbol>deteriorating</symbol></li>
+      </wholeNameSymbols>
+      <prefixSymbols>
+        <li><symbol>fallen</symbol></li>
+        <li><symbol>disintegrating</symbol></li>
+        <li><symbol>fading</symbol></li>
+      </prefixSymbols>
+    </symbolPack>
+    <exclusionTags>
+      <li>BS_Metabolism_Gene</li>
+      <li>BS_AgingRate</li>
+    </exclusionTags>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>BS_JotunArchiteMetabolism</defName>
+    <label>jotun metabolism</label>
+    <labelShortAdj>archite-metabolic</labelShortAdj>
+    <description>Carriers of this gene have special archites in their cells that facilitate and optimize metabolism. This particular variant is tailored for costly archite-powered Jotun.</description>
+    <iconPath>GeneIcons/BS_JotunMetabolism</iconPath>
+    <displayCategory>Archite</displayCategory>
+    <marketValueFactor>2</marketValueFactor>
+    <biostatCpx>8</biostatCpx>
+    <biostatMet>9</biostatMet>
+    <biostatArc>5</biostatArc>
+    <exclusionTags>
+      <li>BS_Metabolism_Gene</li>
+    </exclusionTags>
+    <statFactors>
+      <MoveSpeed>1.1</MoveSpeed>
+      <LifespanFactor>3.0</LifespanFactor>
+    </statFactors>
+    <geneClass>BetterPrerequisites.PGene</geneClass>
+    <modExtensions>
+      <li Class="BetterPrerequisites.GenePrerequisites" MayRequire="RedMattis.BetterPrerequisites">
+        <prerequisiteSets>
+          <li>
+            <type>AnyOf</type>
+            <prerequisites>
+              <li>JotunFrame</li>
+              <li>TitanFrame</li>
+            </prerequisites>
+          </li>
+        </prerequisiteSets>
+      </li>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+    <selectionWeight>0.4</selectionWeight>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>BS_Deathlike</defName>
+    <label>Undead Affinity</label>
+    <description>Carriers of this gene have something deathlike about them that causes zombies and the like to ignore them.\n\nSome obviously undead creatures lack this property, while some living entities possess it.</description>
+    <iconPath>GeneIcons/BS_Zombie</iconPath>
+    <displayCategory>Archite</displayCategory>
+    <marketValueFactor>2</marketValueFactor>
+    <biostatCpx>0</biostatCpx>
+    <biostatMet>0</biostatMet>
+    <biostatArc>2</biostatArc>
+    <statFactors>
+      <HSAU_GhoulismSusceptibility MayRequire="Baskerville.HellsingARMSUltimate">0</HSAU_GhoulismSusceptibility>
+    </statFactors>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+    <!-- <selectionWeight>0.0</selectionWeight> -->
+  </GeneDef>
+
+  <GeneDef>
+    <defName>BS_UnarmedOnly</defName>
+    <label>Unarmed Combat Only</label>
+    <description>Carriers of this gene will not wield weapons in melee combat.</description>
+    <iconPath>GeneIcons/BS_Unarmed Only</iconPath>
+    <displayCategory>Violence</displayCategory>
+    <marketValueFactor>1</marketValueFactor>
+    <displayOrderInCategory>-10</displayOrderInCategory>
+    <biostatCpx>0</biostatCpx>
+    <biostatMet>2</biostatMet>
+    <biostatArc>0</biostatArc>
+    <exclusionTags>
+      <li>BS_Pacifism</li>
+    </exclusionTags>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>BS_NoEquip</defName>
+    <label>Cannot Wield Weapons</label>
+    <description>Carriers of this gene will not or cannot wield weapons or tools with their appendages.</description>
+    <iconPath>GeneIcons/BS_NoEquip</iconPath>
+    <displayCategory>Violence</displayCategory>
+    <marketValueFactor>1</marketValueFactor>
+    <displayOrderInCategory>-10</displayOrderInCategory>
+    <biostatCpx>0</biostatCpx>
+    <biostatMet>4</biostatMet>
+    <biostatArc>0</biostatArc>
+    <statOffsets>
+      <SM_RaidWealthOffset>-2000</SM_RaidWealthOffset>
+    </statOffsets>
+    <exclusionTags>
+      <li>BS_Pacifism</li>
+    </exclusionTags>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneMeleeDamageBase">
+    <defName>BS_Unarmed_Strong</defName>
+    <label>Strong Unarmed</label>
+    <labelShortAdj>strong</labelShortAdj>
+    <description>Carriers of this gene do more damage in close-quarters combat, but they are only able to use this power in unarmed combat.</description>
+    <iconPath>GeneIcons/BS_UnarmedStrong</iconPath>
+    <statFactors>
+      <MeleeDamageFactor>1.5</MeleeDamageFactor>
+    </statFactors>
+    <displayOrderInCategory>-9</displayOrderInCategory>
+    <biostatMet>-1</biostatMet>
+    <geneClass>BetterPrerequisites.PGene</geneClass>
+    <modExtensions>
+      <li Class="BetterPrerequisites.GenePrerequisites" MayRequire="RedMattis.BetterPrerequisites">
+        <prerequisiteSets>
+          <li>
+            <type>AnyOf</type>
+            <prerequisites>
+              <li>BS_UnarmedOnly</li>
+              <li>BS_NoEquip</li>
+            </prerequisites>
+          </li>
+        </prerequisiteSets>
+      </li>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneMeleeDamageBase">
+    <defName>BS_Unarmed_VeryStrong</defName>
+    <label>Very Strong Unarmed</label>
+    <labelShortAdj>strong</labelShortAdj>
+    <description>Carriers of this gene do significantly more damage in close-quarters combat, but they are only able to use this power in unarmed combat.</description>
+    <iconPath>GeneIcons/BS_UnarmedVeryStrong</iconPath>
+    <statFactors>
+      <MeleeDamageFactor>1.75</MeleeDamageFactor>
+    </statFactors>
+    <displayOrderInCategory>-8</displayOrderInCategory>
+    <biostatMet>-2</biostatMet>
+    <geneClass>BetterPrerequisites.PGene</geneClass>
+    <modExtensions>
+      <li Class="BetterPrerequisites.GenePrerequisites" MayRequire="RedMattis.BetterPrerequisites">
+        <prerequisiteSets>
+          <li>
+            <type>AnyOf</type>
+            <prerequisites>
+              <li>BS_UnarmedOnly</li>
+              <li>BS_NoEquip</li>
+            </prerequisites>
+          </li>
+        </prerequisiteSets>
+      </li>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+
+  <GeneDef>
+		<defName>BS_Pilotable</defName>
+		<label>pilotable</label>
+		<description>This being has been made to function as a simple extension of a pilot. It will not be able to function without a pilot. The skills and mental traits of the pilot will be used.\n\nNote that the pilot can be no larger than half the size of their vehicle, also they will not be able to socially interact with others normally while busy piloting.</description>
+		<iconPath>GeneIcons/BS_Pilotable</iconPath>
+    <geneClass>BetterPrerequisites.PGene</geneClass>
+		<displayOrderInCategory>1</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>1</biostatMet>
+    <missingGeneRomanceChanceFactor>0</missingGeneRomanceChanceFactor>
+    <exclusionTags>
+      <li>BS_Pilotable</li>
+    </exclusionTags>
+		 <modExtensions>
+			<li Class="BetterPrerequisites.GeneExtension">
+				<applyBodyHediff>
+					<li>
+						<hediff>BS_Piloted</hediff>
+					</li>
+				</applyBodyHediff>
+			</li>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+		<selectionWeight>1</selectionWeight>
+	</GeneDef>
+
+  <GeneDef>
+		<defName>BS_PilotAssistible</defName>
+		<label>operator assistable</label>
+		<description>This being has been made to utilize an operator, and will be much more effective when one is available.\n\nNote that the operator can be no larger than half the size of the carrier.</description>
+		<iconPath>GeneIcons/BS_Pilotassistable</iconPath>
+    <geneClass>BetterPrerequisites.PGene</geneClass>
+		<displayOrderInCategory>2</displayOrderInCategory>
+		<biostatCpx>5</biostatCpx>
+		<biostatMet>-1</biostatMet>
+    <exclusionTags>
+      <li>BS_Pilotable</li>
+    </exclusionTags>
+		 <modExtensions>
+			<li Class="BetterPrerequisites.GeneExtension">
+				<applyBodyHediff>
+					<li>
+						<hediff>BS_PilotAssisted</hediff>
+					</li>
+				</applyBodyHediff>
+			</li>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+		<selectionWeight>1</selectionWeight>
+	</GeneDef>
+
+  <GeneDef>
+		<defName>BS_PilotRequired</defName>
+		<label>operator required</label>
+		<description>This being its own intelligence but has been unable to function without an operator. They will operate at great effectiveness when a pilot is present.\n\nNote that the operator can be no larger than half the size of the carrier.</description>
+		<iconPath>GeneIcons/BS_PilotRequired</iconPath>
+    <geneClass>BetterPrerequisites.PGene</geneClass>
+		<displayOrderInCategory>2</displayOrderInCategory>
+		<biostatCpx>3</biostatCpx>
+		<biostatMet>0</biostatMet>
+    <exclusionTags>
+      <li>BS_Pilotable</li>
+    </exclusionTags>
+		 <modExtensions>
+			<li Class="BetterPrerequisites.GeneExtension">
+				<applyBodyHediff>
+					<li>
+						<hediff>BS_PilotRequired</hediff>
+					</li>
+				</applyBodyHediff>
+			</li>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+		<selectionWeight>0.5</selectionWeight>
+	</GeneDef>
+
+  <!-- <GeneDef>
+		<defName>BS_FusedPiloting</defName>
+		<label>nerve-fused piloting</label>
+		<description>This being has been made to function as a permanent extension of a pilot. The only way to remove the pilot from this entity after entering is by destroying it.\n\nNote that the pilot can be no larger than half the size of their vehicle, also they will not be able to socially interact with others normally while busy piloting.</description>
+		<iconPath>GeneIcons/BS_PilotablePermanent</iconPath>
+    <geneClass>BetterPrerequisites.PGene</geneClass>
+		<displayOrderInCategory>1</displayOrderInCategory>
+		<biostatCpx>6</biostatCpx>
+		<biostatMet>-1</biostatMet>
+    <exclusionTags>
+      <li>BS_Pilotable</li>
+    </exclusionTags>
+    <missingGeneRomanceChanceFactor>0</missingGeneRomanceChanceFactor>
+		 <modExtensions>
+			<li Class="BetterPrerequisites.GeneExtension">
+				<applyBodyHediff>
+					<li>
+						<hediff>BS_PermanentPiloted</hediff>
+					</li>
+				</applyBodyHediff>
+			</li>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+		<selectionWeight>1</selectionWeight>
+	</GeneDef> -->
+</Defs>

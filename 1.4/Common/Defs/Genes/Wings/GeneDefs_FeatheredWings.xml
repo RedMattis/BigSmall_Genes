@@ -1,0 +1,232 @@
+<Defs>
+
+  <!-- Bird Wings -->
+  
+  <GeneDef ParentName="BS_FunctionalWingBase">
+		<defName>BS_MajesticBird</defName>
+		<label>Majestic Bird Wings (Large)</label>
+		<description>Carriers of this gene possess angelic wings.</description>
+		<iconPath>Humanlike/BodyAttachments/BS_GorgonWings_south</iconPath>
+		<displayOrderInCategory>777</displayOrderInCategory>
+    <geneClass>BetterPrerequisites.PGene</geneClass>
+		<graphicData>
+			<graphicPath>Humanlike/BodyAttachments/BS_GorgonWingsBack</graphicPath>
+			<colorType>Hair</colorType>
+      <color>(245,245,245)</color>
+      <drawScale>1.9</drawScale>
+		</graphicData>
+    <modExtensions>
+      <li Class="BetterPrerequisites.GeneExtension">
+        <applyBodyHediff>
+          <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+            <hediff>BS_Floating</hediff>
+          </li>
+        </applyBodyHediff>
+        <hiddenGenes>
+          <li>BS_MajesticBird_Front</li>
+        </hiddenGenes>
+      </li>
+      <li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
+        <movementDef>PF_Movement_Flying</movementDef>
+      </li>
+    </modExtensions>
+	</GeneDef>
+
+  <GeneDef ParentName="BS_WingsOuter">
+		<defName>BS_MajesticBird_Front</defName>
+		<label>Majestic Bird Wings (OuterGraphic)</label>
+		<description>Carriers of this gene possess angelic wings.</description>
+		<iconPath>Humanlike/BodyAttachments/BS_GorgonWings_south</iconPath>
+    <prerequisite>BS_MajesticBird</prerequisite> <!--This is just to avoid them spawning in AlphaGenes something..-->
+		<graphicData>
+			<graphicPath>Humanlike/BodyAttachments/BS_GorgonWingsFront</graphicPath>
+			<colorType>Hair</colorType>
+      <color>(245,245,245)</color>
+      <drawScale>1.9</drawScale>
+		</graphicData>
+	</GeneDef>
+
+  <GeneDef ParentName="BS_FunctionalWingBase">
+		<defName>BS_MajesticBird_Mid</defName>
+		<label>Majestic Bird Wings</label>
+		<description>Carriers of this gene possess angelic wings.</description>
+		<iconPath>Humanlike/BodyAttachments/BS_GorgonWings_south</iconPath>
+		<displayOrderInCategory>777</displayOrderInCategory>
+    <geneClass>BetterPrerequisites.PGene</geneClass>
+		<graphicData>
+			<graphicPath>Humanlike/BodyAttachments/BS_GorgonWingsBack</graphicPath>
+			<colorType>Hair</colorType>
+      <color>(245,245,245)</color>
+      <drawScale>1.48</drawScale>
+		</graphicData>
+    <modExtensions>
+      <li Class="BetterPrerequisites.GeneExtension">
+        <applyBodyHediff>
+          <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+            <hediff>BS_Floating</hediff>
+          </li>
+        </applyBodyHediff>
+        <hiddenGenes>
+          <li>BS_MajesticBird_Mid_Front</li>
+        </hiddenGenes>
+      </li>
+      <li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
+        <movementDef>PF_Movement_Flying</movementDef>
+      </li>
+    </modExtensions>
+	</GeneDef>
+
+  <GeneDef ParentName="BS_WingsOuter">
+		<defName>BS_MajesticBird_Mid_Front</defName>
+		<label>Majestic Bird Wings (OuterGraphic)</label>
+		<description>Carriers of this gene possess angelic wings.</description>
+		<iconPath>Humanlike/BodyAttachments/BS_GorgonWings_south</iconPath>
+    <prerequisite>BS_MajesticBird_Mid</prerequisite> <!--This is just to avoid them spawning in AlphaGenes something..-->
+		<graphicData>
+			<graphicPath>Humanlike/BodyAttachments/BS_GorgonWingsFront</graphicPath>
+			<colorType>Hair</colorType>
+      <color>(245,245,245)</color>
+      <drawScale>1.48</drawScale>
+		</graphicData>
+	</GeneDef>
+
+
+
+  <!-- Angel Wings -->
+
+  <GeneDef ParentName="BS_FunctionalWingBase">
+		<defName>BS_AngelWings</defName>
+		<label>Angelic Messenger Wings (Large)</label>
+		<description>Carriers of this gene possess angelic wings.</description>
+		<iconPath>Humanlike/BodyAttachments/BS_GorgonWings_south</iconPath>
+		<displayOrderInCategory>777</displayOrderInCategory>
+    <geneClass>BetterPrerequisites.PGene</geneClass>
+		<graphicData>
+			<graphicPath>Humanlike/BodyAttachments/BS_GorgonWingsBack</graphicPath>
+			<colorType>Custom</colorType>
+      <color>(255,241,199)</color>
+      <drawScale>1.9</drawScale>
+		</graphicData>
+    <modExtensions Inherit="False">
+      <li Class="BetterPrerequisites.GeneExtension">
+        <applyBodyHediff>
+          <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+            <hediff>BS_Floating</hediff>
+          </li>
+        </applyBodyHediff>
+        <hiddenGenes>
+          <li>BS_AngelWings_Front</li>
+        </hiddenGenes>
+      </li>
+      <li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
+        <movementDef>PF_Movement_Flying</movementDef>
+      </li>
+    </modExtensions>
+	</GeneDef>
+
+  <GeneDef ParentName="BS_WingsOuter">
+		<defName>BS_AngelWings_Front</defName>
+		<label>Angelic Messenger Wings (OuterGraphic)</label>
+		<description>Carriers of this gene possess angelic wings.</description>
+		<iconPath>Humanlike/BodyAttachments/BS_GorgonWings_south</iconPath>
+    <prerequisite>BS_AngelWings</prerequisite>
+		<graphicData>
+			<graphicPath>Humanlike/BodyAttachments/BS_GorgonWingsFront</graphicPath>
+			<colorType>Custom</colorType>
+      <color>(255,241,199)</color>
+      <drawScale>1.9</drawScale>
+		</graphicData>
+	</GeneDef>
+
+  <GeneDef ParentName="BS_FunctionalWingBase">
+		<defName>BS_AngelWings_Mid</defName>
+		<label>Angelic Messenger Wings</label>
+		<description>Carriers of this gene possess angelic wings.</description>
+		<iconPath>Humanlike/BodyAttachments/BS_GorgonWings_south</iconPath>
+		<displayOrderInCategory>777</displayOrderInCategory>
+    <geneClass>BetterPrerequisites.PGene</geneClass>
+		<graphicData>
+			<graphicPath>Humanlike/BodyAttachments/BS_GorgonWingsBack</graphicPath>
+			<colorType>Custom</colorType>
+      <color>(255,241,199)</color>
+      <drawScale>1.48</drawScale>
+		</graphicData>
+    <modExtensions Inherit="False">
+      <li Class="BetterPrerequisites.GeneExtension">
+        <applyBodyHediff>
+          <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+            <hediff>BS_Floating</hediff>
+          </li>
+        </applyBodyHediff>
+        <hiddenGenes>
+          <li>BS_AngelWings_Mid_Front</li>
+        </hiddenGenes>
+      </li>
+      <li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
+        <movementDef>PF_Movement_Flying</movementDef>
+      </li>
+    </modExtensions>
+	</GeneDef>
+
+  <GeneDef ParentName="BS_WingsOuter">
+		<defName>BS_AngelWings_Mid_Front</defName>
+		<label>Angelic Messenger Wings (OuterGraphic)</label>
+		<description>Carriers of this gene possess angelic wings.</description>
+		<iconPath>Humanlike/BodyAttachments/BS_GorgonWings_south</iconPath>
+    <prerequisite>BS_AngelWings_Mid</prerequisite>
+		<graphicData>
+			<graphicPath>Humanlike/BodyAttachments/BS_GorgonWingsFront</graphicPath>
+			<colorType>Custom</colorType>
+      <color>(255,241,199)</color>
+      <drawScale>1.48</drawScale>
+		</graphicData>
+	</GeneDef>
+
+  <!-- Gorgon Wings -->
+
+  <GeneDef ParentName="BS_FunctionalWingBase">
+		<defName>BS_GoldenGorgonWings</defName>
+		<label>Golden Gorgon Wings</label>
+		<description>Carriers of this gene possess divine golden wings.</description>
+		<iconPath>Humanlike/BodyAttachments/BS_GorgonWings_south</iconPath>
+		<displayOrderInCategory>777</displayOrderInCategory>
+    <geneClass>BetterPrerequisites.PGene</geneClass>
+		<graphicData>
+			<graphicPath>Humanlike/BodyAttachments/BS_GorgonWingsBack</graphicPath>
+			<colorType>Custom</colorType>
+      <color>(255,241,160)</color>
+      <drawScale>1.9</drawScale>
+		</graphicData>
+    <modExtensions>
+      <li Class="BetterPrerequisites.GeneExtension">
+        <applyBodyHediff>
+          <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+            <hediff>BS_Floating</hediff>
+          </li>
+        </applyBodyHediff>
+        <hiddenGenes>
+          <li>BS_GoldenGorgonWings_Front</li>
+        </hiddenGenes>
+      </li>
+      <li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
+        <movementDef>PF_Movement_Flying</movementDef>
+      </li>
+    </modExtensions>
+	</GeneDef>
+
+  <GeneDef ParentName="BS_WingsOuter">
+		<defName>BS_GoldenGorgonWings_Front</defName>
+		<label>Golden Gorgon Wings (OuterGraphic)</label>
+		<description>Carriers of this gene possess divine golden wings.</description>
+		<iconPath>Humanlike/BodyAttachments/BS_GorgonWings_south</iconPath>
+    <prerequisite>BS_GoldenGorgonWings</prerequisite>
+		<graphicData>
+			<graphicPath>Humanlike/BodyAttachments/BS_GorgonWingsFront</graphicPath>
+			<colorType>Custom</colorType>
+      <color>(255,241,160)</color>
+      <drawScale>1.9</drawScale>
+		</graphicData>
+	</GeneDef>
+
+
+</Defs>

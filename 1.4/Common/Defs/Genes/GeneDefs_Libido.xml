@@ -1,0 +1,130 @@
+<Defs>
+
+
+  <GeneDef ParentName="LibidoBase">
+    <defName>VU_Libido_None</defName>
+    <label>no libido</label>
+    <description>Carriers of this gene are unlikely to ever engage in lovin' with their partner.</description>
+    <customEffectDescriptions>
+      <li>Dramatically decreases the chance of lovin'.</li>
+    </customEffectDescriptions>
+    <iconPath>GeneIcons/VU_NoLibido</iconPath>
+    <displayOrderInCategory>0</displayOrderInCategory>
+    <lovinMTBFactor>50</lovinMTBFactor>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>BS_Flirty</defName>
+    <label>flirty</label>
+    <description>Carriers of this gene will flirt much more often than usual.</description>
+    <displayCategory>Reproduction</displayCategory>
+    <customEffectDescriptions>
+      <li>4x more likely to flirt.</li>
+    </customEffectDescriptions>
+    <iconPath>GeneIcons/BS_Flirty</iconPath>
+    <displayOrderInCategory>2</displayOrderInCategory>
+    <statFactors>
+      <SM_FlirtChance>4</SM_FlirtChance>
+    </statFactors>
+    <biostatCpx>0</biostatCpx>
+    <biostatMet>0</biostatMet>
+    <exclusionTags>
+      <li>Flirty</li>
+    </exclusionTags>
+		<modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>BS_NotFlirty</defName>
+    <label>never flirts</label>
+    <description>Carriers of this gene will not flirt or be flirted with.</description>
+    <displayCategory>Reproduction</displayCategory>
+    <customEffectDescriptions>
+      <li>Will never flirt and will never be flirted with</li>
+    </customEffectDescriptions>
+    <iconPath>GeneIcons/BS_NeverFlirts</iconPath>
+    <displayOrderInCategory>2</displayOrderInCategory>
+    <statFactors>
+      <SM_FlirtChance>0</SM_FlirtChance>
+    </statFactors>
+    <biostatCpx>0</biostatCpx>
+    <biostatMet>0</biostatMet>
+    <exclusionTags>
+      <li>Flirty</li>
+    </exclusionTags>
+		<modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </GeneDef>
+  
+  <GeneDef>
+    <defName>BS_ShortPregnancy</defName>
+    <label>short pregnancy</label>
+    <description>Carriers of this gene have very short pregnancies, less than half the usual.</description>
+    <iconPath>GeneIcons/BS_FastPregnancy</iconPath>
+    <displayCategory>Reproduction</displayCategory>
+    <marketValueFactor>2</marketValueFactor>
+    <biostatCpx>5</biostatCpx>
+    <biostatMet>-1</biostatMet>
+    <biostatArc>0</biostatArc>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+    <!-- <selectionWeight>0.0</selectionWeight> -->
+  </GeneDef>
+
+  <GeneDef>
+    <defName>BS_EverFertile</defName>
+    <label>ever fertile</label>
+    <description>Carriers of this gene do not lose fertility with age.</description>
+    <iconPath>GeneIcons/BS_EverFertile</iconPath>
+    <displayCategory>Reproduction</displayCategory>
+    <marketValueFactor>2</marketValueFactor>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>0</biostatMet>
+    <biostatArc>0</biostatArc>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+    <selectionWeight>0.5</selectionWeight>
+  </GeneDef>
+
+  <GeneDef ParentName="FertilityBase">
+    <defName>VU_NearSterile</defName>
+    <label>almost sterile</label>
+    <description>Carriers of this gene are almost incapable of reproducing by natural means.</description>
+    <iconPath>UI/Icons/Genes/Gene_Sterile</iconPath>
+    <sterilize>false</sterilize>
+    <biostatMet>1</biostatMet>
+    <displayOrderInCategory>101</displayOrderInCategory>
+    <statFactors>
+      <Fertility>0.2</Fertility>
+    </statFactors>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </GeneDef>
+</Defs>

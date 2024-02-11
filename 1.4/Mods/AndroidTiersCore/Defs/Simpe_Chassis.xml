@@ -1,0 +1,158 @@
+<Defs>
+
+  <ThingDef Name="BATR_Simple_BodyPartFrameworkBase" ParentName="ATR_BodyPartFrameworkBase" Abstract="True">
+    <statBases>
+      <WorkToMake>26000</WorkToMake>
+      <Mass>6</Mass>
+    </statBases>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+      <researchPrerequisite>ATR_MechanicalInsight</researchPrerequisite>
+      <recipeUsers>
+        <li>ATR_MechPartWorkbench</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+
+  <!-- Roomba -->
+
+  <HediffDef ParentName="ATR_AddedBodyPartFrameworkBase">
+    <defName>BATR_Roomba</defName>
+    <label>Roomba Frame</label>
+    <description>A chassis optimized for speed, cleaning, rescue, small-volume hauling, and low energy consumption. Because of its small size and sanitized tools it is sometimes used as a cheap alternative to the dedicated surgery frames.\n\nDue to its small size it is quite fragile.</description>
+    <stages>
+      <li>
+        <hungerRateFactor>0.6</hungerRateFactor>
+        <statOffsets>
+          <MedicalTendQuality>0.05</MedicalTendQuality>
+          <MedicalSurgerySuccessChance>0.12</MedicalSurgerySuccessChance>
+        </statOffsets>
+        <statFactors>
+          <SM_BodySizeMultiplier>0.55</SM_BodySizeMultiplier>
+          <MiningSpeed>0.75</MiningSpeed>
+          <DeepDrillingSpeed>0.6</DeepDrillingSpeed>
+          <ConstructionSpeed>0.75</ConstructionSpeed>
+          <MoveSpeed>1.6</MoveSpeed>
+          <FilthRate>0</FilthRate>
+          <FoodPoisonChance>0.45</FoodPoisonChance>
+          <CleaningSpeed>3</CleaningSpeed>
+          <ShootingAccuracyFactor_Long>0.5</ShootingAccuracyFactor_Long>
+          <ShootingAccuracyFactor_Medium>0.75</ShootingAccuracyFactor_Medium>
+          <IncomingDamageFactor>0.9</IncomingDamageFactor>
+        </statFactors>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <ThingDef ParentName="BATR_Simple_BodyPartFrameworkBase">
+    <defName>BATR_Roomba</defName>
+    <label>Roomba Frame</label>
+    <description>A chassis optimized for speed, cleaning, rescue, small-volume hauling, and low energy consumption. Because of its small size and sanitized tools it is sometimes used as a cheap alternative to the dedicated surgery frames.\n\nDue to its small size it is quite fragile.</description>
+    <statBases>
+      <MarketValue>500</MarketValue>
+    </statBases>
+    <costList>
+      <Neutroamine>5</Neutroamine>
+      <Plasteel>8</Plasteel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+  </ThingDef>
+
+  <RecipeDef ParentName="ATR_SurgeryFramework">
+    <defName>BATR_Install_Roomba_Frame</defName>
+    <label>Install Roomba Frame</label>
+    <description>Replaces the chassis frame of this unit with a energy-efficient "Roomba Frame"; a chassis optimized for speed, cleaning, rescue, small-volume hauling, and low energy consumption. Because of its small size and sanitized tools it is sometimes used as a cheap alternative to the dedicated surgery frames.\n\nDue to its small size it is quite fragile.</description>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BATR_Roomba</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>BATR_Roomba</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <recipeUsers>
+      <!-- <li>ATR_M7Mech</li> -->
+      <!--<li>ATR_M8Mech</li>-->
+    </recipeUsers>
+    <addsHediff>BATR_Roomba</addsHediff>
+  </RecipeDef>
+
+  <!-- Brusier -->
+
+  <HediffDef ParentName="ATR_AddedBodyPartFrameworkBase">
+    <defName>BATR_Bouncer</defName>
+    <label>Bouncer Frame</label>
+    <description>A blunky chassis optimized for taking hits and looking scary. Also decent for heavy labour.</description>
+    <stages>
+      <li>
+        <statOffsets>
+          <SM_BodySizeOffset>0.75</SM_BodySizeOffset>
+        </statOffsets>
+        <statFactors>
+          <MiningSpeed>1.3</MiningSpeed>
+          <DeepDrillingSpeed>1.2</DeepDrillingSpeed>
+          <ConstructionSpeed>1.2</ConstructionSpeed>
+          <MoveSpeed>0.8</MoveSpeed>
+          <IncomingDamageFactor>0.65</IncomingDamageFactor>
+          <StaggerDurationFactor>0</StaggerDurationFactor>
+        </statFactors>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <ThingDef ParentName="BATR_Simple_BodyPartFrameworkBase">
+    <defName>BATR_Bouncer</defName>
+    <label>Bouncer Frame</label>
+    <description>A blunky chassis optimized for taking hits and looking scary. Also decent for heavy labour.</description>
+    <statBases>
+      <MarketValue>500</MarketValue>
+    </statBases>
+    <costList>
+      <Neutroamine>20</Neutroamine>
+      <Plasteel>20</Plasteel>
+      <Steel>100</Steel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+    </costList>
+  </ThingDef>
+
+  <RecipeDef ParentName="ATR_SurgeryFramework">
+    <defName>BATR_Install_Bouncer_Frame</defName>
+    <label>Install Bouncer Frame</label>
+    <description>Replaces the chassis frame of this unit with a Bouncer Frame, made for taking hits and looking scary. With a side of heavy labour.</description>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BATR_Bouncer</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>BATR_Bouncer</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <recipeUsers>
+      <!-- <li>ATR_M7Mech</li> -->
+      <!--<li>ATR_M8Mech</li>-->
+    </recipeUsers>
+    <addsHediff>BATR_Bouncer</addsHediff>
+  </RecipeDef>
+
+</Defs>

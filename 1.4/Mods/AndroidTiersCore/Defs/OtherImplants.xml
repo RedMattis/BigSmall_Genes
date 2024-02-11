@@ -1,0 +1,207 @@
+<Defs>
+
+  <HediffDef ParentName="ATR_AddedBodyPartCoreAssistantBase">
+    <defName>BATR_Piloted</defName>
+    <label>pilotable robot</label>
+    <description>This robot has had its core-assitant overriden to make use of a pilot to function.</description>
+    <isBad>false</isBad>
+    <everCurableByItem>false</everCurableByItem>
+    <initialSeverity>1</initialSeverity>
+    <hediffClass>BigAndSmall.Piloted</hediffClass>
+    <stages>
+      <li>
+        <label>pilot missing</label>
+      </li>
+      <li>
+        <minSeverity>0.5</minSeverity>
+        <label>pilot present</label>
+      </li>
+    </stages>
+
+    <comps>
+      <li Class="BigAndSmall.CompProperties_Piloted">
+        <pilotRequired>true</pilotRequired>
+        <pilotCapacity>1</pilotCapacity>
+        <baseCapacity>0.51</baseCapacity>
+        <pilotConsciousnessOffset>1</pilotConsciousnessOffset>
+        <inheritPilotSkills>true</inheritPilotSkills>
+        <inheritPilotMentalTraits>true</inheritPilotMentalTraits>
+        <flatBonusIfPiloted>0.1</flatBonusIfPiloted>
+      </li>
+      <li Class="BigAndSmall.CompProperties_GiveAbilities">
+        <abilities>
+          <li>BS_EjectPilot</li>
+        </abilities>
+      </li>
+    </comps>
+    <spawnThingOnRemoved>BATR_PilotingEquipment</spawnThingOnRemoved>
+  </HediffDef>
+
+  <ThingDef ParentName="ATR_BodyPartCoreAssistantBase">
+    <defName>BATR_PilotingEquipment</defName>
+    <label>pilotingEquipment</label>
+    <description>Components needed to modify a robot to make it pilotable by something smaller than itself.</description>
+    <costList>
+      <Plasteel>20</Plasteel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+  </ThingDef>
+
+  <RecipeDef ParentName="ATR_SurgeryCoreAssistant">
+    <defName>BATR_Install_PilotingEquipment</defName>
+    <label>Install piloting equipment</label>
+    <description>Installs piloting equipment into a unit.</description>
+    <jobString>Installing piloting equipment.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BATR_PilotingEquipment</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>BATR_PilotingEquipment</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <addsHediff>BATR_Piloted</addsHediff>
+  </RecipeDef>
+
+  <!-- Pilot Assisted-->
+
+  <HediffDef ParentName="ATR_AddedBodyPartCoreAssistantBase">
+    <defName>BATR_OperatorAssisted</defName>
+    <label>operator assisted</label>
+    <description>This robot has had its core-assitant overriden to make use of a operator to function better than normal.</description>
+    <isBad>false</isBad>
+    <everCurableByItem>false</everCurableByItem>
+    <initialSeverity>1</initialSeverity>
+    <hediffClass>BigAndSmall.Piloted</hediffClass>
+    <stages>
+      <li>
+        <label>pilot missing</label>
+      </li>
+      <li>
+        <minSeverity>0.5</minSeverity>
+        <label>pilot present</label>
+      </li>
+    </stages>
+    <comps>
+    <li Class="BigAndSmall.CompProperties_Piloted">
+      <pilotRequired>false</pilotRequired>
+      <pilotCapacity>1</pilotCapacity>
+      <flatBonusIfPiloted>0.5</flatBonusIfPiloted>
+      <pilotConsciousnessOffset>1</pilotConsciousnessOffset>
+    </li>
+    <li Class="BigAndSmall.CompProperties_GiveAbilities">
+      <abilities><li>BS_EjectPilot</li></abilities>
+    </li>
+  </comps>
+    <spawnThingOnRemoved>BATR_OperatingEquipment</spawnThingOnRemoved>
+  </HediffDef>
+
+  <ThingDef ParentName="ATR_BodyPartCoreAssistantBase">
+    <defName>BATR_OperatingEquipment</defName>
+    <label>pilotingEquipment</label>
+    <description>Components needed to modify a robot to make it possible to assist in operations by utilizing an operator smaller than itself.</description>
+    <costList>
+      <Plasteel>20</Plasteel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+      <ComponentSpacer>8</ComponentSpacer>
+    </costList>
+  </ThingDef>
+
+  <RecipeDef ParentName="ATR_SurgeryCoreAssistant">
+    <defName>BATR_Install_OperatingEquipment</defName>
+    <label>Install operating equipment</label>
+    <description>Installs operating equipment into a unit.</description>
+    <jobString>Installing operating equipment.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BATR_OperatingEquipment</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>BATR_OperatingEquipment</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <addsHediff>BATR_OperatorAssisted</addsHediff>
+  </RecipeDef>
+
+  <!-- Pilot Fusion-->
+  
+  <!-- <HediffDef ParentName="ATR_AddedBodyPartCoreAssistantBase">
+    <defName>BATR_PilotedPermanent</defName>
+    <label>pilotable robot</label>
+    <description>This robot has had its core functionallity overriden and internals modified to permanently fuse with a somwhat smaller creature. Only (mostly) destroying the robot will let you remove the creature.</description>
+    <isBad>false</isBad>
+    <everCurableByItem>false</everCurableByItem>
+    <initialSeverity>0.1</initialSeverity>
+    <hediffClass>BigAndSmall.Piloted</hediffClass>
+    <stages>
+      <li>
+        <label>pilot missing</label>
+      </li>
+      <li>
+        <minSeverity>0.5</minSeverity>
+        <label>pilot present</label>
+      </li>
+    </stages>
+
+    <comps>
+      <li Class="BigAndSmall.CompProperties_Piloted">
+        <pilotRequired>true</pilotRequired>
+        <pilotCapacity>1</pilotCapacity>
+        <baseCapacity>0.91</baseCapacity>
+        <pilotConsciousnessOffset>1</pilotConsciousnessOffset>
+        <inheritPilotSkills>true</inheritPilotSkills>
+        <inheritPilotMentalTraits>true</inheritPilotMentalTraits>
+        <flatBonusIfPiloted>0</flatBonusIfPiloted>
+        <permanent>true</permanent>
+      </li>
+    </comps>
+    <spawnThingOnRemoved>BATR_PilotingPermanentEquipment</spawnThingOnRemoved>
+  </HediffDef>
+
+  <ThingDef ParentName="ATR_BodyPartCoreAssistantBase">
+    <defName>BATR_PilotingPermanentEquipment</defName>
+    <label>pilotingEquipment</label>
+    <description>Components needed to modify a robot to permanently wrap it around something smaller than itself. Do not install into a drone unless you want the subject to be unable to function at a higher level than a drone.</description>
+    <costList>
+      <Plasteel>20</Plasteel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+  </ThingDef>
+
+  <RecipeDef ParentName="ATR_SurgeryCoreAssistant">
+    <defName>BATR_Install_PilotingPermanentEquipment</defName>
+    <label>Install piloting equipment</label>
+    <description>Installs piloting equipment into a unit.</description>
+    <jobString>Installing piloting equipment.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BATR_PilotingPermanentEquipment</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>BATR_PilotingPermanentEquipment</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <addsHediff>BATR_PilotedPermanent</addsHediff>
+  </RecipeDef> -->
+</Defs>
