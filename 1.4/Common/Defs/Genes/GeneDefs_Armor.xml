@@ -434,4 +434,90 @@
 		</stages>
 	</HediffDef>
 	
+	<GeneDef>
+    <defName>BS_TinyTough</defName>
+    <label>small people toughness</label>
+    <displayCategory>Pain</displayCategory>
+    
+    <labelShortAdj>small toughness</labelShortAdj>
+    <description>Carriers of this gene are amazingly sturdy despite their tiny size.</description>
+    <iconPath>GeneIcons/BS_TinyTough</iconPath>
+    <displayOrderInCategory>-6</displayOrderInCategory>
+    <statFactors>
+      <IncomingDamageFactor>0.4</IncomingDamageFactor>
+    </statFactors>
+    <biostatCpx>3</biostatCpx>
+    <biostatMet>-4</biostatMet>
+    <exclusionTags>
+      <li>Toughness</li>
+    </exclusionTags>
+    <geneClass>BetterPrerequisites.PGene</geneClass>
+    <modExtensions>
+      <li Class="BetterPrerequisites.GenePrerequisites" MayRequire="RedMattis.BetterPrerequisites">
+        <prerequisiteSets>
+          <li>
+            <type>AnyOf</type>
+            <prerequisites>
+              <li>GnomeFrame</li>
+              <li>BS_SmallFrame</li>
+              <li>BS_RabbitFrame</li>
+              <li>BS_AriettyFrame</li>
+            </prerequisites>
+          </li>
+        </prerequisiteSets>
+      </li>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>BS_DvergrConstitution</defName>
+    <label>dwarven grit</label>
+    <displayCategory>Pain</displayCategory>
+    <labelShortAdj>dwarven grit</labelShortAdj>
+    <description>Carriers of this gene are deceptively strong and robust for their size</description>
+    <iconPath>GeneIcons/BS_DwarvenGrit</iconPath>
+    <displayOrderInCategory>-6</displayOrderInCategory>
+    <statFactors>
+      <IncomingDamageFactor>0.5</IncomingDamageFactor>
+      <MeleeDamageFactor>1.1</MeleeDamageFactor>
+    </statFactors>
+    <biostatCpx>2</biostatCpx>
+    <biostatMet>-3</biostatMet>
+    <exclusionTags>
+      <li>Toughness</li>
+    </exclusionTags>
+    <geneClass>BetterPrerequisites.PGene</geneClass>
+    <modExtensions>
+      <li Class="BetterPrerequisites.GenePrerequisites" MayRequire="RedMattis.BetterPrerequisites">
+        <prerequisiteSets>
+          <li>
+            <type>AnyOf</type>
+            <prerequisites>
+              <li>DwarfFrame</li>
+              <li>GnomeFrame</li>
+              <li>BS_SmallFrame</li>
+              <li>BS_RabbitFrame</li>
+            </prerequisites>
+          </li>
+          <li>
+            <type>NoneOf</type>
+            <prerequisites>
+              <li>MeleeDamage_Weak</li>
+              <li>ViolenceDisabled</li>
+            </prerequisites>
+          </li>
+        </prerequisiteSets>
+      </li>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+
 </Defs>

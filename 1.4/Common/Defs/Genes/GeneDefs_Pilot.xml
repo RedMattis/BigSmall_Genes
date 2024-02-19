@@ -1,0 +1,86 @@
+<Defs>
+  <GeneDef>
+		<defName>BS_Pilotable</defName>
+		<label>pilotable</label>
+		<description>This being has been made to function as a simple extension of a pilot. It will not be able to function without a pilot. The skills and mental traits of the pilot will be used.\n\nNote that the pilot can be no larger than half the size of their vehicle, also they will not be able to socially interact with others normally while busy piloting.</description>
+		<iconPath>GeneIcons/BS_Pilotable</iconPath>
+    <geneClass>BetterPrerequisites.PGene</geneClass>
+		<displayOrderInCategory>1</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>1</biostatMet>
+    <missingGeneRomanceChanceFactor>0</missingGeneRomanceChanceFactor>
+    <exclusionTags>
+      <li>BS_Pilotable</li>
+    </exclusionTags>
+		 <modExtensions>
+			<li Class="BetterPrerequisites.GeneExtension">
+				<applyBodyHediff>
+					<li>
+						<hediff>BS_Piloted</hediff>
+					</li>
+				</applyBodyHediff>
+			</li>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+		<selectionWeight>1</selectionWeight>
+	</GeneDef>
+
+  <GeneDef>
+		<defName>BS_PilotAssistible</defName>
+		<label>operator assistable</label>
+		<description>This being has been made to utilize an operator, and will be much more effective when one is available.\n\nNote that the operator can be no larger than half the size of the carrier.</description>
+		<iconPath>GeneIcons/BS_Pilotassistable</iconPath>
+    <geneClass>BetterPrerequisites.PGene</geneClass>
+		<displayOrderInCategory>2</displayOrderInCategory>
+		<biostatCpx>5</biostatCpx>
+		<biostatMet>-1</biostatMet>
+    <exclusionTags>
+      <li>BS_Pilotable</li>
+    </exclusionTags>
+		 <modExtensions>
+			<li Class="BetterPrerequisites.GeneExtension">
+				<applyBodyHediff>
+					<li>
+						<hediff>BS_PilotAssisted</hediff>
+					</li>
+				</applyBodyHediff>
+			</li>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+		<selectionWeight>1</selectionWeight>
+	</GeneDef>
+
+  <GeneDef>
+		<defName>BS_PilotRequired</defName>
+		<label>operator required</label>
+		<description>This being its own intelligence but has been unable to function without an operator. They will operate at great effectiveness when a pilot is present.\n\nNote that the operator can be no larger than half the size of the carrier.</description>
+		<iconPath>GeneIcons/BS_PilotRequired</iconPath>
+    <geneClass>BetterPrerequisites.PGene</geneClass>
+		<displayOrderInCategory>2</displayOrderInCategory>
+		<biostatCpx>3</biostatCpx>
+		<biostatMet>0</biostatMet>
+    <exclusionTags>
+      <li>BS_Pilotable</li>
+    </exclusionTags>
+		 <modExtensions>
+			<li Class="BetterPrerequisites.GeneExtension">
+				<applyBodyHediff>
+					<li>
+						<hediff>BS_PilotRequired</hediff>
+					</li>
+				</applyBodyHediff>
+			</li>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+		<selectionWeight>0.5</selectionWeight>
+	</GeneDef>
+</Defs>
