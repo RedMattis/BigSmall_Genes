@@ -1,0 +1,170 @@
+<Defs>
+  <GeneDef Name="LoS_SnakeTailBase" Abstract="True">
+		<geneClass>BetterPrerequisites.PGene</geneClass>
+    <biostatCpx>0</biostatCpx>
+    <biostatMet>0</biostatMet>
+		<customEffectDescriptions>
+			<li>Switches the character's "Race" for another one. HAR required for this part of the gene.</li>
+		</customEffectDescriptions>
+    <randomChosen>false</randomChosen>
+    <displayCategory>LoS_Snake_Vis</displayCategory>
+    <displayOrderInCategory>50</displayOrderInCategory>
+    <iconColor>(0.75, 0.75, 0.75)</iconColor>
+    <graphicData>
+      <drawLoc>Tailbone</drawLoc>
+      <drawScale>1.5</drawScale>
+      <drawOffsetNorth>(0, 0.0150617733, -0.47)</drawOffsetNorth>
+			<drawOffsetSouth>(0, 0.0150617733, 0)</drawOffsetSouth>
+			<drawOffsetEast>(0, 0.0150617733, 0)</drawOffsetEast>
+    </graphicData>
+    <exclusionTags>
+			<!-- <li>Tail</li> --> <!--Removed by request of users who wanted fox-tailed nagas. O_o -->
+      <li>Bug_BodyAttachment</li>
+			<li>taur</li>
+			<li>ThingDefSwap</li>
+			<!-- <li>spiderlegs</li> -->
+    </exclusionTags>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+	
+	<GeneDef Name="LoS_Snake_Tail" ParentName="LoS_SnakeTailBase">
+		<defName>LoS_Snake_Tail</defName>
+		<label>Snake Tail</label>
+		<description>Carriers of this gene have a large snake tail instead regular human legs. They eat much less often than baseliners.</description>
+		<customEffectDescriptions><li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">Reduces the movement speed penalty when traversing difficult terrain</li></customEffectDescriptions>
+		<iconPath>GeneIcons/LoS_SnekTail_icon2</iconPath>
+		<displayOrderInCategory>777</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>0</biostatMet>
+		<selectionWeight>0</selectionWeight>
+		<statOffsets>
+		  <MoveSpeed>-0.5</MoveSpeed>
+		</statOffsets>
+    <statFactors>
+      <SM_Food_Need_Capacity>4.0</SM_Food_Need_Capacity>
+      <EatingSpeed>1.5</EatingSpeed>
+    </statFactors>
+    <missingGeneRomanceChanceFactor>0.75</missingGeneRomanceChanceFactor>
+		<graphicData>
+			<graphicPaths>
+				<li>Pawn/BodyAttachments/LoS_SnakeTail/bp_default</li>
+				<li>Pawn/BodyAttachments/LoS_SnakeTail/bp_child</li>
+				<li>Pawn/BodyAttachments/LoS_SnakeTail/bp_fat</li>
+				<li>Pawn/BodyAttachments/LoS_SnakeTail/bp_hulk</li>
+				<li>Pawn/BodyAttachments/LoS_SnakeTail/bp_female</li>
+				<li>Pawn/BodyAttachments/LoS_SnakeTail/bp_male</li>
+			</graphicPaths>
+			<drawScale>2.25</drawScale>
+			<drawOffsetNorth>(0, 0.0150617733, -0.3067)</drawOffsetNorth>
+			<drawOffsetSouth>(0, 0.0150617733, -0.3067)</drawOffsetSouth>
+			<drawOffsetEast>(-0.3067, 0.0150617733, -0.3067)</drawOffsetEast>
+			<colorType>Skin</colorType>
+		</graphicData>
+		 <modExtensions>
+			<li Class="BetterPrerequisites.GeneExtension">
+				<applyBodyHediff MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+					<li>
+						<hediff MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">BS_Slither</hediff>
+					</li>
+				</applyBodyHediff>
+				<applyPartHediff>
+					<li>
+						<hediff>LS_SnakeTail</hediff>
+            <bodyparts>
+              <li>Leg</li>
+							<li>Leg</li>
+							<li MayRequire="erdelf.HumanoidAlienRaces">BS_SnakeBody</li>
+            </bodyparts>
+					</li>
+				</applyPartHediff>
+				<thingDefSwap MayRequire="erdelf.HumanoidAlienRaces">BS_Naga</thingDefSwap>
+				<forceThingDefSwap>false</forceThingDefSwap>
+				<bodyPosOffset>0.6</bodyPosOffset>
+			</li>
+			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
+        <movementDef>PF_Movement_Flying</movementDef>
+      </li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="LoS_Snake_Tail">
+		<defName>LoS_Snake_Tail_HairClr</defName>
+		<label>Snake Tail (hair-color)</label>
+		<graphicData>
+			<colorType>Hair</colorType>
+		</graphicData>
+	</GeneDef>
+
+	<GeneDef ParentName="LoS_SnakeTailBase">
+		<defName>LoS_MarlithBody</defName>
+		<label>Marlith</label>
+		<description>Carriers of this gene have a 3 pairs of arms and a large snake tail instead regular human legs.</description>
+		<customEffectDescriptions><li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">Reduces the movement speed penalty when traversing difficult terrain</li></customEffectDescriptions>
+		<iconPath>GeneIcons/BS_Marlith</iconPath>
+		<displayOrderInCategory>777</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-4</biostatMet>
+		<selectionWeight>0</selectionWeight>
+		<statOffsets>
+		  <MoveSpeed>-0.5</MoveSpeed>
+			<WorkSpeedGlobal>0.50</WorkSpeedGlobal>
+		</statOffsets>
+    <statFactors>
+      <SM_Food_Need_Capacity>4.0</SM_Food_Need_Capacity>
+      <EatingSpeed>1.5</EatingSpeed>
+    </statFactors>
+    <capMods>
+			<li>
+				<capacity>Manipulation</capacity>
+				<offset>0.15</offset>
+			</li>
+		</capMods>
+    <missingGeneRomanceChanceFactor>0.75</missingGeneRomanceChanceFactor>
+		<graphicData>
+			<graphicPaths>
+				<li>Pawn/BodyAttachments/LoS_SnakeTail/bp_default</li>
+				<li>Pawn/BodyAttachments/LoS_SnakeTail/bp_child</li>
+				<li>Pawn/BodyAttachments/LoS_SnakeTail/bp_fat</li>
+				<li>Pawn/BodyAttachments/LoS_SnakeTail/bp_hulk</li>
+				<li>Pawn/BodyAttachments/LoS_SnakeTail/bp_female</li>
+				<li>Pawn/BodyAttachments/LoS_SnakeTail/bp_male</li>
+			</graphicPaths>
+			<drawScale>2.25</drawScale>
+			<drawOffsetNorth>(0, 0.0150617733, -0.3067)</drawOffsetNorth>
+			<drawOffsetSouth>(0, 0.0150617733, -0.3067)</drawOffsetSouth>
+			<drawOffsetEast>(-0.3067, 0.0150617733, -0.3067)</drawOffsetEast>
+			<colorType>Skin</colorType>
+		</graphicData>
+		 <modExtensions>
+			<li Class="BetterPrerequisites.GeneExtension">
+				<applyBodyHediff MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+					<li>
+						<hediff MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">BS_Slither</hediff>
+					</li>
+				</applyBodyHediff>
+				<applyPartHediff>
+					<li>
+						<hediff>LS_SnakeTail</hediff>
+            <bodyparts>
+              <li>Leg</li>
+							<li>Leg</li>
+							<li MayRequire="erdelf.HumanoidAlienRaces">BS_SnakeBody</li>
+            </bodyparts>
+					</li>
+				</applyPartHediff>
+				<thingDefSwap MayRequire="erdelf.HumanoidAlienRaces">BS_Marlith</thingDefSwap>
+				<forceThingDefSwap>false</forceThingDefSwap>
+				<bodyPosOffset>0.6</bodyPosOffset>
+			</li>
+			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
+        <movementDef>PF_Movement_Flying</movementDef>
+      </li>
+		</modExtensions>
+	</GeneDef>
+
+</Defs>

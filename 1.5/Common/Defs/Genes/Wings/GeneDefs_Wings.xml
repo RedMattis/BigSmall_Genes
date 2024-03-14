@@ -1,0 +1,251 @@
+<?xml version="1.0" ?>
+<Defs>
+  <GeneDef Name="BS_WingBase" Abstract="True">
+    <biostatCpx>0</biostatCpx>
+    <biostatMet>0</biostatMet>
+    <randomChosen>true</randomChosen>
+    <symbolPack>
+      <prefixSymbols>
+        <li>
+          <symbol>winged</symbol>
+        </li>
+      </prefixSymbols>
+    </symbolPack>
+    <modExtensions>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+        <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+        <backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+      </li>
+    </modExtensions>
+    <selectionWeight>0.25</selectionWeight>
+    <renderNodeProperties Inherit="False">
+      <li>
+        <parentTagDef>Body</parentTagDef>
+        <drawSize>(1.5,1.5)</drawSize>
+        <drawData>
+          <defaultData>
+            <layer>10</layer>
+          </defaultData>
+          <dataNorth>
+            <layer>80</layer>
+            <offset>(0, 0, 0)</offset>
+          </dataNorth>
+          <dataSouth>
+            <offset>(0, 0, 0)</offset>
+          </dataSouth>
+          <dataEast>
+            <offset>(0, 0, 0)</offset>
+          </dataEast>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+  <GeneDef Name="BS_WingsOuter" Abstract="True">
+    <biostatCpx>0</biostatCpx>
+    <biostatMet>0</biostatMet>
+    <displayCategory>BS_DO_NOT</displayCategory>
+    <geneClass>BetterPrerequisites.PGene</geneClass>
+    <selectionWeight>0</selectionWeight>
+    <canGenerateInGeneSet>false</canGenerateInGeneSet>
+    <modExtensions>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+        <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+        <backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+        <hideGene>true</hideGene>
+      </li>
+      <li Class="BetterPrerequisites.GeneExtension">
+        <hiddenAddon>true</hiddenAddon>
+      </li>
+    </modExtensions>
+    <renderNodeProperties Inherit="False">
+      <li>
+        <parentTagDef>Body</parentTagDef>
+        <drawSize>(1.5,1.5)</drawSize>
+        <drawData>
+          <defaultData>
+            <layer>10</layer>
+          </defaultData>
+          <dataNorth>
+            <layer>80</layer>
+            <offset>(0, 0, 0)</offset>
+          </dataNorth>
+          <dataSouth>
+            <offset>(0, 0, 0)</offset>
+          </dataSouth>
+          <dataEast>
+            <offset>(0, 0, 0)</offset>
+          </dataEast>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+  <GeneDef Name="BS_FunctionalWingBase" ParentName="BS_WingBase" Abstract="True">
+    <geneClass>BetterPrerequisites.PGene</geneClass>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
+    <customEffectDescriptions>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">Removes the movement speed penalty for traversing difficult terrain</li>
+    </customEffectDescriptions>
+    <exclusionTags>
+      <li>Wing</li>
+      <li>Wings</li>
+    </exclusionTags>
+    <abilities>
+      <li>BS_flying_jump</li>
+    </abilities>
+  </GeneDef>
+  <GeneDef ParentName="BS_FunctionalWingBase">
+    <defName>BS_SmallDemonWings</defName>
+    <label>Small Demon Wings</label>
+    <description>Carriers of this gene grow small leathery wings.</description>
+    <iconPath>Humanlike/BodyAttachments/BS_DemonWings_south</iconPath>
+    <displayOrderInCategory>777</displayOrderInCategory>
+    <modExtensions>
+      <li Class="BetterPrerequisites.GeneExtension">
+        <applyBodyHediff>
+          <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+            <hediff>BS_Floating</hediff>
+          </li>
+        </applyBodyHediff>
+      </li>
+      <li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
+        <movementDef>PF_Movement_Flying</movementDef>
+      </li>
+      <li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
+        <movementDef>PF_Movement_Flying</movementDef>
+      </li>
+    </modExtensions>
+    <renderNodeProperties Inherit="False">
+      <li>
+        <parentTagDef>Body</parentTagDef>
+        <texPath>Humanlike/BodyAttachments/BS_DemonWings</texPath>
+        <colorType>Skin</colorType>
+        <drawData>
+          <defaultData>
+            <layer>10</layer>
+          </defaultData>
+          <dataNorth>
+            <layer>80</layer>
+            <offset>(0, 0, 0)</offset>
+          </dataNorth>
+          <dataSouth>
+            <offset>(0, 0, 0)</offset>
+          </dataSouth>
+          <dataEast>
+            <offset>(0, 0, 0)</offset>
+          </dataEast>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+  <GeneDef ParentName="BS_FunctionalWingBase">
+    <defName>BS_LargeDemonWings</defName>
+    <label>Large Demon Wings</label>
+    <description>Carriers of this gene grow leathery wings.</description>
+    <iconPath>Humanlike/BodyAttachments/BS_DemonWingsc_south</iconPath>
+    <displayOrderInCategory>777</displayOrderInCategory>
+    <modExtensions>
+      <li Class="BetterPrerequisites.GeneExtension">
+        <applyBodyHediff>
+          <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+            <hediff>BS_Floating</hediff>
+          </li>
+        </applyBodyHediff>
+      </li>
+      <li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
+        <movementDef>PF_Movement_Flying</movementDef>
+      </li>
+    </modExtensions>
+    <renderNodeProperties Inherit="False">
+      <li>
+        <parentTagDef>Body</parentTagDef>
+        <texPath>Humanlike/BodyAttachments/BS_DemonWingsc</texPath>
+        <drawSize>(1.45,1.45)</drawSize>
+        <colorType>Skin</colorType>
+        <drawData>
+          <defaultData>
+            <layer>10</layer>
+          </defaultData>
+          <dataNorth>
+            <layer>80</layer>
+            <offset>(0, 0, 0)</offset>
+          </dataNorth>
+          <dataSouth>
+            <offset>(0, 0, 0)</offset>
+          </dataSouth>
+          <dataEast>
+            <offset>(0, 0, 0)</offset>
+          </dataEast>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+  <GeneDef ParentName="BS_FunctionalWingBase">
+    <defName>BS_AncientDemonWings</defName>
+    <label>Ancient Demon Wings</label>
+    <description>Carriers of this gene grow majestic wings.</description>
+    <iconPath>Humanlike/BodyAttachments/BS_DemonWingsb_south</iconPath>
+    <displayOrderInCategory>777</displayOrderInCategory>
+    <modExtensions>
+      <li Class="BetterPrerequisites.GeneExtension">
+        <applyBodyHediff>
+          <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+            <hediff>BS_Floating</hediff>
+          </li>
+        </applyBodyHediff>
+      </li>
+      <li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
+        <movementDef>PF_Movement_Flying</movementDef>
+      </li>
+    </modExtensions>
+    <renderNodeProperties Inherit="False">
+      <li>
+        <parentTagDef>Body</parentTagDef>
+        <texPath>Humanlike/BodyAttachments/BS_DemonWingsb</texPath>
+        <drawSize>(1.45,1.45)</drawSize>
+        <colorType>Skin</colorType>
+        <drawData>
+          <defaultData>
+            <layer>10</layer>
+          </defaultData>
+          <dataNorth>
+            <layer>80</layer>
+            <offset>(0, 0, 0)</offset>
+          </dataNorth>
+          <dataSouth>
+            <offset>(0, 0, 0)</offset>
+          </dataSouth>
+          <dataEast>
+            <offset>(0, 0, 0)</offset>
+          </dataEast>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+  <AbilityDef Name="BS_flying_jump">
+    <defName>BS_flying_jump</defName>
+    <label>flying jump</label>
+    <description>Use your wings to fly high above.</description>
+    <iconPath>Humanlike/BodyAttachments/BS_GorgonWings_south</iconPath>
+    <cooldownTicksRange>1000</cooldownTicksRange>
+    <hostile>false</hostile>
+    <verbProperties>
+      <verbClass>Verb_CastAbilityJump</verbClass>
+      <label>flying jump</label>
+      <violent>false</violent>
+      <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+      <warmupTime>2.25</warmupTime>
+      <range>9.9</range>
+      <requireLineOfSight>true</requireLineOfSight>
+      <soundCast>Longjump_Jump</soundCast>
+      <soundLanding>Longjump_Land</soundLanding>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+        <canTargetPawns>false</canTargetPawns>
+        <canTargetBuildings>false</canTargetBuildings>
+      </targetParams>
+    </verbProperties>
+    <jobDef>CastJump</jobDef>
+    <aiCanUse>true</aiCanUse>
+  </AbilityDef>
+</Defs>

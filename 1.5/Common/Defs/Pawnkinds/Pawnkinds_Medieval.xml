@@ -1,0 +1,155 @@
+<Defs>
+  <!--Mostly similar to the pawnKinds VE's old Medieval Mod to have something to fall back on to create medieval factions when that mod isn't available.-->
+
+  <PawnKindDef Name="BS_MedievalBase" Abstract="True">
+    <combatPower>35</combatPower>
+    <race>Human</race>
+    <chemicalAddictionChance>0.10</chemicalAddictionChance>
+    <invNutrition>3</invNutrition>
+    <invFoodDef>Pemmican</invFoodDef>
+    <defaultFactionType>OutlanderRough</defaultFactionType>
+    <apparelTags>
+      <li>BS_MedievalBasic</li>
+      <li>MedievalBasic</li>
+    </apparelTags>
+    <weaponTags>
+      <li>NeolithicMeleeBasic</li>
+      <li>MedievalMeleeBasic</li>
+    </weaponTags>
+    <techHediffsChance>0.05</techHediffsChance>
+    <initialWillRange>3~5</initialWillRange>
+    <initialResistanceRange>8~20</initialResistanceRange>
+  </PawnKindDef>
+
+  <PawnKindDef Name="BS_Peasant" ParentName="BS_MedievalBase" Abstract="True">
+    <combatPower>35</combatPower>
+    <chemicalAddictionChance>0.10</chemicalAddictionChance>
+    <itemQuality>Poor</itemQuality>
+    <invNutrition>2</invNutrition>
+    <gearHealthRange>
+      <min>0.5</min>
+      <max>1.2</max>
+    </gearHealthRange>
+
+    <apparelMoney>50~200</apparelMoney>
+    <weaponMoney>100~250</weaponMoney>
+    <apparelTags>
+      <li>BS_MedievalBasic</li>
+      <li>MedievalBasic</li>
+      <li>Neolithic</li>
+      <li>MedievalArmorBasic</li>
+      <li>DankPyon_Peasant</li>
+      <li>DankPyon_PeasantHelmet</li>
+    </apparelTags>
+    <weaponTags>
+      <li>NeolithicMeleeBasic</li>
+      <li>MedievalMeleeBasic</li>
+      <li>MedievalMeleeDecent</li>
+      <li>NeolithicMeleeBasic</li>
+      <li>NeolithicMeleeDecent</li>
+      <li>NeolithicMeleeAdvanced</li>
+      <li>DankPyon_Greatsword</li>
+      <li>DankPyon_NamedGreataxe</li>
+    </weaponTags>
+    <techHediffsMoney>50~100</techHediffsMoney>
+    <techHediffsTags>
+      <li>Poor</li>
+    </techHediffsTags>
+    <techHediffsChance>0.15</techHediffsChance>
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+  </PawnKindDef>
+
+  <PawnKindDef Name="BS_MedievalMerchant" ParentName="BS_MedievalBase" Abstract="True">
+    <combatPower>40</combatPower>
+    <trader>true</trader>
+    <isFighter>false</isFighter>
+    <itemQuality>Good</itemQuality>
+    <gearHealthRange>
+      <min>0.8</min>
+      <max>1.1</max>
+    </gearHealthRange>
+    <apparelMoney>400~600</apparelMoney>
+    <weaponMoney>200~300</weaponMoney>
+    <weaponTags>
+      <li>MedievalMeleeBasic</li>
+    </weaponTags>
+  </PawnKindDef>
+
+  <PawnKindDef Name="BS_MedievalSoldier" ParentName="BS_MedievalBase" Abstract="True">
+    <combatPower>80</combatPower>
+    <apparelTags>
+      <li>MedievalMilitary</li>
+      <li>MedievalArmorDecent</li>
+
+    </apparelTags>
+    <gearHealthRange>
+      <min>0.8</min>
+      <max>1.1</max>
+    </gearHealthRange>
+    <apparelMoney>800~1000</apparelMoney>
+    <weaponMoney>200~300</weaponMoney>
+    <weaponTags>
+      <li>MedievalMeleeDecent</li>
+    </weaponTags>
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+  </PawnKindDef>
+
+  <PawnKindDef Name="BS_MedievalBasicArcher" ParentName="BS_MedievalBase" Abstract="True">
+    <combatPower>80</combatPower>
+    <apparelTags>
+      <li>MedievalMilitary</li>
+      <li>MedievalArmorDecent</li>
+    </apparelTags>
+    <gearHealthRange>
+      <min>0.8</min>
+      <max>1.1</max>
+    </gearHealthRange>
+    <apparelMoney>500~700</apparelMoney>
+    <weaponMoney>200~400</weaponMoney>
+    <weaponTags>
+      <li>MedievalRanged</li>
+			<li>MedievalRangedHeavy</li>
+    </weaponTags>
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+  </PawnKindDef>
+
+  <PawnKindDef Name="BS_MedievalKnight" ParentName="BS_MedievalBase" Abstract="True">
+    <combatPower>100</combatPower>
+    <apparelTags>
+      <li>MedievalArmorAdvanced</li>
+      <li>MedievalMilitary</li>
+      <li>MedievalArmorDecent</li>
+      <li>MedievalArmorElite</li>
+    </apparelTags>
+    <gearHealthRange>
+      <min>0.8</min>
+      <max>1.1</max>
+    </gearHealthRange>
+    <apparelMoney>1000~3000</apparelMoney>
+    <weaponMoney>300~2000</weaponMoney>
+    <weaponTags>
+      <li>MedievalMeleeDecent</li>
+      <li>MedievalMeleeAdvanced</li>
+      <li>LongSword</li>
+      <li>DankPyon_Greatsword</li>
+      <li>DankPyon_NamedGreataxe</li>
+      <li MayRequire="Sierra.RF.MedievalOverhaul">BS_ArcaneRing</li>
+      <li MayRequire="Sierra.RF.MedievalOverhaul">BS_ArcaneWand</li>
+      <li MayRequire="Sierra.RF.MedievalOverhaul">BS_ArcaneStaff</li>
+      <li MayRequire="Sierra.RF.MedievalOverhaul">BS_ArcaneBattleAxe</li>
+      <li MayRequire="Sierra.RF.MedievalOverhaul">BS_ArcanHalberd</li>
+      <li MayRequire="Sierra.RF.MedievalOverhaul">BS_ArcaneSpear</li>
+      <li MayRequire="Sierra.RF.MedievalOverhaul">BS_ArcaneHammer</li>
+    </weaponTags>
+    <techHediffsMoney>200~2000</techHediffsMoney>
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+  </PawnKindDef>
+</Defs>

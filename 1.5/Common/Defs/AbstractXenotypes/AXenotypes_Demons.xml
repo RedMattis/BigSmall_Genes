@@ -1,0 +1,295 @@
+<Defs>
+
+  <XenotypeDef Name="BS_Succubus_A" Abstract="True">
+    <!-- <defName>VU_Succubus</defName> -->
+    <label>Succubus</label>
+    <description>Succubus/Incubus are said to be demons that seduce their victims and prey upon them and the victim's friends and family.</description>
+    <inheritable>true</inheritable>
+    <combatPowerFactor>2</combatPowerFactor>
+    <iconPath>Xenotypes/VU_Succubus</iconPath>
+    <genes>
+      <li>VU_SuccubusBloodFeeder</li>
+      <li>VU_Disguised_Succubus</li>
+      <li>PsychicBonding</li>
+      <li>VU_Hermaphromorph</li>
+      <li>BS_Bisexual</li>
+      <li>Hair_Grayless</li>
+
+      <li>Ageless</li>
+			<li>ArchiteMetabolism</li>
+			<li>DiseaseFree</li>
+			<li>PerfectImmunity</li>
+			
+			<li>FireSpew</li>
+			<li>Hemogenic</li>
+			<li>VU_GreaterHemogenDrain</li>
+			<li>WoundHealing_Fast</li>
+			<li>PsychicAbility_Enhanced</li>
+			<li>VU_LethalLover</li>
+			<li>Mood_Depressive</li>
+			<li>MaxTemp_HugeIncrease</li>
+			<li>MinTemp_SmallDecrease</li>
+			<li>FireImmunity</li>
+			<!-- <li>VU_DarknessMelee</li> -->
+			<li>KillThirst</li>
+			<li>VU_Libido_Succubus</li>
+			<li>BS_EverFertile</li>
+			<li>VU_NearSterile</li>
+      <li>Aggression_Aggressive</li>
+			
+			<li>BS_Ears_PointedHD</li>
+      <li>BS_AncientDemonWings</li>
+			<li>BS_LargeDemonWings</li>
+      
+			<li MayRequire="sarg.alphagenes">AG_Beauty_Angelic</li>
+			<!-- <li MayRequire="sarg.alphagenes">AG_DemonWings</li>  -->
+			<li MayRequire="sarg.alphagenes">AG_DemonEars</li>
+      <li MayRequire="sarg.alphagenes">AG_Detonation</li>
+      <!-- <li MayRequire="sarg.alphagenes">AG_ClawedHands</li> -->
+			<li>BS_Talons</li>
+      <li MayRequire="vanillaracesexpanded.highmate">VRE_HighmateHair</li>
+      <li MayRequire="vanillaracesexpanded.highmate">VRE_PerfectBody</li>
+
+			<li>Ears_Human</li>
+			<li>Beard_NoBeardOnly</li>
+			<li>Jotun_Horns_Small</li>
+      <li>Jotun_Horns_Small_skin</li>
+      <li>BS_ForwardArchingHorns</li>
+      <li>BS_ForwardArchingHorns_Skin</li>
+			<li MayRequire="sarg.alphagenes">AG_DemonHorns</li>
+			<li>BS_TyrantCrown</li>
+
+			<li>BS_DemonTail</li>
+			<!-- <li MayRequire="sarg.alphagenes">AG_DemonTail</li> -->
+			
+			<li>Body_Standard</li>
+			<li>Hair_MediumRed</li>
+      <li>Hair_BrightRed</li>
+      <li>BS_BloodHair</li>
+			<li>Skin_DeepRed</li>
+			<li>Skin_PaleRed</li>
+			<li>BS_SkinBloodRed</li>
+			<li>BS_ToughSkin</li>
+			<!-- <li>AptitudePoor_Mining</li> -->
+			<li>AptitudePoor_Animals</li>
+      <li>AptitudeStrong_Melee</li>
+			<li>AptitudeRemarkable_Social</li>
+      <li>VU_DemonTrueForm</li>
+      <li>VU_VampireLover</li>
+
+      <!-- <li>BS_Deathlike</li> Thought it was a cool idea to have succubi be ignored by zombies maybe? -->
+    </genes>
+    <factionlessGenerationWeight>0.1</factionlessGenerationWeight>
+    <forbiddenWeaponClasses>
+      <li>RangedLight</li>
+      <li>LongShots</li>
+    </forbiddenWeaponClasses>
+  </XenotypeDef>
+
+  <XenotypeDef Name="BS_Hellguard_A" Abstract="True">
+    <label>Hellguard</label>
+    <description>These large creatures are the backbone of the hells' armies and their industry</description>
+    <inheritable>true</inheritable>
+    <combatPowerFactor>2</combatPowerFactor>
+    <iconPath>GeneIcons/BS_Bloodlust</iconPath>
+    <genes>
+      <li>BS_Bloodlust</li>
+      <li>Ageless</li>
+      <li>RobustDigestion</li>
+			<li>ArchiteMetabolism</li>
+			<li>DiseaseFree</li>
+			<li>PerfectImmunity</li>
+			<li>TotalHealing</li>
+			<li>HalfJotunFrame</li>
+			<li MayRequire="sarg.alphagenes">AG_Detonation</li>
+			<li MayRequire="sarg.alphagenes">AG_ChemfuelBlood</li>
+			<li>WoundHealing_Fast</li>
+			<li>BS_EverFertile</li>
+			<li>PsychicAbility_Dull</li>
+			<li>MoveSpeed_Slow</li>
+			<li>Mood_Optimist</li>
+			<li>MaxTemp_HugeIncrease</li>
+			<li>MinTemp_SmallDecrease</li>
+			<li>FireImmunity</li>
+			<li>Aggression_HyperAggressive</li>
+			<li>LowSleep</li>
+			<li>Robust</li>
+			<li>Pain_Reduced</li>
+			<li>BS_AncientDemonWings</li>
+			<li>BS_LargeDemonWings</li>
+			<li>BS_DemonTail</li>
+			<li MayRequire="sarg.alphagenes">AG_DemonTail</li>
+			<li MayRequire="sarg.alphagenes">AG_DemonEars</li>
+			<li>BS_Ears_PointedHD</li>
+			<li>Beauty_Ugly</li>
+			<li>Beard_NoBeardOnly</li>
+
+			
+			<li MayRequire="sarg.alphagenes">AG_GutturalVoice</li>
+			<li>FacialRidges</li>
+			<li>BS_Arching_Horns_skin</li>
+			<li>BS_ForwardArchingHorns_Skin</li>
+			<li>BS_StubbyDemonHorns_Skin</li>
+			
+			<li>BS_TallJotunHorns_Skin</li>
+
+			<li>Body_Standard</li>
+			<li>Body_Hulk</li>
+			<li>BS_BloodHair</li>
+			<li>Hair_MediumRed</li>
+			<li>Skin_DeepRed</li>
+			<li>BS_Skin_DarkAsh</li>
+			<li>BS_SkinBloodRed</li>
+			<li>BS_NaturalArmor</li>
+			<li>Learning_Slow</li>
+			<li>AptitudeStrong_Melee</li>
+			<li>AptitudeStrong_Mining</li>
+			<li>AptitudePoor_Cooking</li>
+			<li>AptitudeTerrible_Plants</li>
+			<li>AptitudeTerrible_Animals</li>
+			<li>AptitudeStrong_Crafting</li>
+			<li>AptitudeTerrible_Artistic</li>
+			<li>AptitudePoor_Medicine</li>
+			<li>AptitudeTerrible_Social</li>
+			<li>AptitudeTerrible_Intellectual</li>
+			<li>BS_Diet_Carnivore</li>
+			<li>Cannibal</li>
+    </genes>
+    <factionlessGenerationWeight>0.1</factionlessGenerationWeight>
+  </XenotypeDef>
+  
+  <XenotypeDef Name="BS_GateKeeper_A" Abstract="True">
+    <label>Gatekeeper</label>
+    <description>These lumbering creatures are often found guarding important sites.</description>
+    <inheritable>true</inheritable>
+    <combatPowerFactor>2</combatPowerFactor>
+    <iconPath>GeneIcons/BS_Bloodlust</iconPath>
+    <genes>
+      <li>BS_Bloodlust</li>
+      <li>Ageless</li>
+      <li>RobustDigestion</li>
+			<li>ArchiteMetabolism</li>
+			<li>DiseaseFree</li>
+			<li>PerfectImmunity</li>
+			<li>TotalHealing</li>
+			<li>Large</li>
+			<li>OgreFrame</li>
+			<li MayRequire="sarg.alphagenes">AG_ChemfuelBlood</li>
+			<li>WoundHealing_SuperFast</li>
+			<li>Superclotting</li>
+			<li>BS_EverFertile</li>
+			<li>PsychicAbility_Deaf</li>
+			<li>BS_Very_Slow</li>
+			<li>Mood_Sanguine</li>
+			<li>MaxTemp_HugeIncrease</li>
+			<li>MinTemp_LargeDecrease</li>
+			<li>FireImmunity</li>
+			<li>Aggression_Aggressive</li>
+			<li>Neversleep</li>
+			<li>BS_PainNumb</li>
+			<li>Robust</li>
+			<li>BS_DemonTail</li>
+			<li MayRequire="sarg.alphagenes">AG_DemonTail</li>
+			<li>Beauty_Ugly</li>
+			<li>Hair_BaldOnly</li>
+			<li>Beard_NoBeardOnly</li>
+			<li MayRequire="sarg.alphagenes">AG_GutturalVoice</li>
+			<li>FacialRidges</li>
+			<!-- <li MayRequire="sarg.alphagenes">AG_DemonHorns</li> -->
+			<li MayRequire="sarg.alphagenes">AG_DemonHornsQuadruple</li>
+			<li>BS_HexaHorns_Skin</li>
+			<li>BS_SmallQuadHorns_Skin</li>
+			<li>BS_StubbyDemonHorns_Skin</li>
+			<li>BS_ForwardArchingHorns_Skin</li>
+
+			<li>Body_Fat</li>
+			<li>Body_Hulk</li>
+			<li>BS_BloodHair</li>
+			<li>Hair_MediumRed</li>
+			<li>Skin_DeepRed</li>
+			<li>BS_Skin_DarkAsh</li>
+			<li>BS_SkinBloodRed</li>
+			<li>BS_SimpleMind</li>
+			<li>BS_NaturalArmor</li>
+			<li>DarkVision</li>
+			<li>Unstoppable</li>
+			<li>AptitudeStrong_Melee</li>
+			<li>AptitudeRemarkable_Mining</li>
+			<li>AptitudeTerrible_Cooking</li>
+			<li>AptitudeTerrible_Plants</li>
+			<li>AptitudeTerrible_Animals</li>
+			<li>AptitudeTerrible_Crafting</li>
+			<li>AptitudeTerrible_Artistic</li>
+			<li>AptitudeTerrible_Medicine</li>
+			<li>AptitudeTerrible_Social</li>
+			<li>AptitudeTerrible_Intellectual</li>
+			<li>BS_Diet_Carnivore</li>
+			<li>Cannibal</li>
+    </genes>
+    <factionlessGenerationWeight>0.1</factionlessGenerationWeight>
+    <forbiddenWeaponClasses>
+      <li>RangedLight</li>
+      <li>LongShots</li>
+    </forbiddenWeaponClasses>
+  </XenotypeDef>
+
+  <XenotypeDef Name="BS_Imp_A" Abstract="True">
+    <label>Imp</label>
+    <description>These little theives are often in all sorts of strange places. They are especially know for stealing technological gadgets.</description>
+    <inheritable>true</inheritable>
+    <combatPowerFactor>1</combatPowerFactor>
+    <iconPath>UI/Icons/Xenotypes/Custom/CustomXenotypeIcon7</iconPath>
+    <genes>
+      <li>Ageless</li>
+      <li>RobustDigestion</li>
+			<li>ArchiteMetabolism</li>
+			<li>DiseaseFree</li>
+			<li>PerfectImmunity</li>
+			<li>BS_SmallFrame</li>
+			<li>WoundHealing_Fast</li>
+			<li>PsychicAbility_Enhanced</li>
+			<li>MoveSpeed_VeryQuick</li>
+			<li>BS_EverFertile</li>
+			<li>Mood_Optimist</li>
+			<li>MaxTemp_HugeIncrease</li>
+			<li>MinTemp_SmallIncrease</li>
+			<li>FireImmunity</li>
+			<li>Aggression_Aggressive</li>
+			<li>Robust</li>
+			<li>Libido_High</li>
+			<li>Fertile</li>
+			<li MayRequire="sarg.alphagenes">AG_DemonTail</li>
+			<li>BS_DemonTail</li>
+			<li MayRequire="sarg.alphagenes">AG_DemonEars</li>
+			<li>BS_Ears_PointedHD</li>
+			<li>Beauty_Ugly</li>
+			<li>Beard_NoBeardOnly</li>
+			<!-- <li>BS_ForwardArchingHorns_Skin</li>
+			<li>BS_ForwardArchingHorns</li> -->
+			<li>Jotun_Horns_Small</li>
+			<li>Jotun_Horns_Small_skin</li>
+			<li>BS_Arching_Horns_skin</li>
+			<li>FacialRidges</li>
+			<li>Body_Standard</li>
+			<li>Body_Thin</li>
+			<li>BS_BloodHair</li>
+			<li>Hair_MediumRed</li>
+			<li>BS_Skin_DarkAsh</li>
+			<li>BS_SkinBloodRed</li>
+			<li>VU_Pounce</li>
+			<li>Learning_Fast</li>
+			<li>BS_SmallDemonWings</li>
+			<li>AptitudePoor_Construction</li>
+			<li>AptitudeTerrible_Mining</li>
+			<li>AptitudeTerrible_Cooking</li>
+			<li>AptitudePoor_Animals</li>
+			<li>AptitudeTerrible_Crafting</li>
+			<li>AptitudeTerrible_Artistic</li>
+			<li>AptitudePoor_Social</li>
+			<li>AptitudeStrong_Intellectual</li>
+			<li>BS_Diet_Carnivore</li>
+			<li>Cannibal</li>
+    </genes>
+    <factionlessGenerationWeight>0.1</factionlessGenerationWeight>
+  </XenotypeDef>
+</Defs>

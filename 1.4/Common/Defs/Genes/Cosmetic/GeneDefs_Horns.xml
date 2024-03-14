@@ -193,6 +193,17 @@
     </graphicData>
 	</GeneDef>
 
+  <GeneDef ParentName="BS_DemonHornBase">
+		<defName>BS_TyrantCrown_Skin</defName>
+		<label>tyrant crown (skin-coloured)</label>
+		<description>Carriers of this gene possess bull-like horns.</description>
+		<iconPath>GeneIcons/BS_Horns/HornGened</iconPath>
+		<graphicData>
+      <colorType>Skin</colorType>
+			<graphicPath>Humanlike/HeadAttachments/BS_DemonHornsd</graphicPath>
+    </graphicData>
+	</GeneDef>
+
   <!-- <GeneDef ParentName="BS_DemonHornBase">
 		<defName>BS_TyrantCrown</defName>
 		<label>tyrant crown (skin-coloured)</label>

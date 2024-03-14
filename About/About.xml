@@ -1,8 +1,9 @@
 <ModMetaData>
-	<name>Big and Small Genes</name>
+	<name>Big and Small - Genes &amp; More</name>
 	<author>RedMattis</author>
 	<supportedVersions>
 		<li>1.4</li>
+    <li>1.5</li>
 	</supportedVersions>
   <packageId>RedMattis.BigSmall.Core</packageId>
 	<modDependencies>
@@ -45,6 +46,7 @@
 		<li>nals.facialanimation</li>
 		<li>vanillaexpanded.vtexe.facialanims</li>
 		<li>Killathon.MechHumanlikes.AndroidTiersCore</li>
+		<li>biotexpans.core</li>
 	</loadAfter>
   <incompatibleWith>
 	</incompatibleWith>

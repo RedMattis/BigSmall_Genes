@@ -1,0 +1,230 @@
+<?xml version="1.0" ?>
+<Defs>
+  <GeneDef ParentName="GeneJawBase">
+    <defName>BS_OgreHead</defName>
+    <label>ogre head</label>
+    <description>Carriers of this gene have a big lumpy ogre head.</description>
+    <iconPath>GeneIcons/BS_OgreHead</iconPath>
+    <displayOrderInCategory>97</displayOrderInCategory>
+    <selectionWeight>0.1</selectionWeight>
+    <canGenerateInGeneSet>false</canGenerateInGeneSet>
+    <modExtensions>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+        <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+        <backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+      </li>
+    </modExtensions>
+    <renderNodeProperties Inherit="False">
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPaths>
+          <li>BS_Ogre/standard</li>
+          <li>BS_Ogre/pointy</li>
+          <li>BS_Ogre/square</li>
+        </texPaths>
+        <useSkinShader>false</useSkinShader>
+        <colorType>Skin</colorType>
+        <drawData>
+          <defaultData>
+            <layer>52</layer>
+          </defaultData>
+        </drawData>
+        <parentTagDef>Head</parentTagDef>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+  <GeneDef ParentName="GeneJawBase">
+    <defName>BS_DevourerHead</defName>
+    <label>devourer head</label>
+    <description>Carriers of this gene have a menacing devourer head</description>
+    <iconPath>GeneIcons/BS_DevourerHead</iconPath>
+    <displayOrderInCategory>98</displayOrderInCategory>
+    <selectionWeight>1</selectionWeight>
+    <canGenerateInGeneSet>true</canGenerateInGeneSet>
+    <hairTagFilter>
+      <whitelist>true</whitelist>
+      <tags>
+        <li>Bald</li>
+      </tags>
+    </hairTagFilter>
+    <beardTagFilter>
+      <whitelist>true</whitelist>
+      <tags>
+        <li>NoBeard</li>
+      </tags>
+    </beardTagFilter>
+    <geneClass>BetterPrerequisites.PGene</geneClass>
+    <modExtensions>
+      <li Class="BetterPrerequisites.GeneExtension">
+        <facialDisabler/>
+      </li>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+        <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+        <backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+      </li>
+    </modExtensions>
+    <renderNodeProperties Inherit="False">
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPaths>
+          <li>BS_Heads/Devourer/average</li>
+          <li>BS_Heads/Devourer/square</li>
+          <li>BS_Heads/Devourer/closed</li>
+          <li>BS_Heads/Devourer/smile</li>
+        </texPaths>
+        <useSkinShader>false</useSkinShader>
+        <colorType>Skin</colorType>
+        <drawData>
+          <defaultData>
+            <layer>52</layer>
+          </defaultData>
+        </drawData>
+        <parentTagDef>Head</parentTagDef>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+  <GeneDef ParentName="GeneJawBase" Name="BS_DragonHead">
+    <defName>BS_DragonHead</defName>
+    <label>big dragon head</label>
+    <description>Carriers of this gene have an intimidating dragon-like head.</description>
+    <iconPath>GeneIcons/BS_DragonHead</iconPath>
+    <displayOrderInCategory>98</displayOrderInCategory>
+    <selectionWeight>1</selectionWeight>
+    <statFactors>
+      <SM_HeadSize_Cosmetic>0.9</SM_HeadSize_Cosmetic>
+    </statFactors>
+    <canGenerateInGeneSet>true</canGenerateInGeneSet>
+    <beardTagFilter>
+      <whitelist>true</whitelist>
+      <tags>
+        <li>NoBeard</li>
+      </tags>
+    </beardTagFilter>
+    <geneClass>BetterPrerequisites.PGene</geneClass>
+    <modExtensions>
+      <li Class="BetterPrerequisites.GeneExtension">
+        <facialDisabler>
+        </facialDisabler>
+      </li>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+        <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+        <backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+      </li>
+    </modExtensions>
+    <renderNodeProperties Inherit="False">
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPaths>
+          <li>BS_Heads/Dragon/average</li>
+        </texPaths>
+        <useSkinShader>false</useSkinShader>
+        <colorType>Skin</colorType>
+        <drawData>
+          <defaultData>
+            <layer>52</layer>
+          </defaultData>
+        </drawData>
+        <parentTagDef>Head</parentTagDef>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+  <GeneDef ParentName="GeneJawBase">
+    <defName>BS_StonemaskHead</defName>
+    <label>stone mask</label>
+    <description>Carriers of this gene have head resembling a stone mask</description>
+    <iconPath>GeneIcons/Gene_StonemaskHead</iconPath>
+    <displayOrderInCategory>98</displayOrderInCategory>
+    <selectionWeight>1</selectionWeight>
+    <canGenerateInGeneSet>true</canGenerateInGeneSet>
+    <beardTagFilter>
+      <whitelist>true</whitelist>
+      <tags>
+        <li>NoBeard</li>
+      </tags>
+    </beardTagFilter>
+    <geneClass>BetterPrerequisites.PGene</geneClass>
+    <modExtensions>
+      <li Class="BetterPrerequisites.GeneExtension">
+        <facialDisabler>
+          <browName>retain</browName>
+        </facialDisabler>
+      </li>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+        <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+        <backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+      </li>
+    </modExtensions>
+    <renderNodeProperties Inherit="False">
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPaths>
+          <li>BS_Heads/StoneMask/normal</li>
+        </texPaths>
+        <useSkinShader>false</useSkinShader>
+        <colorType>Skin</colorType>
+        <drawData>
+          <defaultData>
+            <layer>52</layer>
+          </defaultData>
+        </drawData>
+        <parentTagDef>Head</parentTagDef>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+  <GeneDef ParentName="GeneJawBase">
+    <defName>BS_SatanHead</defName>
+    <label>carapace head</label>
+    <description>Carriers of this gene have head resembling a carapace</description>
+    <iconPath>GeneIcons/Gene_CarapaceHead</iconPath>
+    <displayOrderInCategory>98</displayOrderInCategory>
+    <selectionWeight>1</selectionWeight>
+    <canGenerateInGeneSet>true</canGenerateInGeneSet>
+    <statFactors>
+      <SM_HeadSize_Cosmetic>0.9</SM_HeadSize_Cosmetic>
+    </statFactors>
+    <hairTagFilter>
+      <whitelist>true</whitelist>
+      <tags>
+        <li>Bald</li>
+      </tags>
+    </hairTagFilter>
+    <beardTagFilter>
+      <whitelist>true</whitelist>
+      <tags>
+        <li>NoBeard</li>
+      </tags>
+    </beardTagFilter>
+    <geneClass>BetterPrerequisites.PGene</geneClass>
+    <modExtensions>
+      <li Class="BetterPrerequisites.GeneExtension">
+        <facialDisabler>
+        </facialDisabler>
+      </li>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+        <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+        <backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+      </li>
+    </modExtensions>
+    <renderNodeProperties Inherit="False">
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPaths>
+          <li>BS_Heads/SatanHead/normal</li>
+        </texPaths>
+        <useSkinShader>false</useSkinShader>
+        <colorType>Skin</colorType>
+        <drawData>
+          <defaultData>
+            <layer>52</layer>
+          </defaultData>
+        </drawData>
+        <parentTagDef>Head</parentTagDef>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+</Defs>

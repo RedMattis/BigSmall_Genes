@@ -1,0 +1,92 @@
+<Defs>
+  <!-- <ThingDef ParentName="BaseMakeableGrenade">
+    <defName>bMad_ShrinkGrenade</defName>
+    <label>shrink gas grenades</label>
+    <description>Grenades loaded with liquified shrinking gas.</description>
+    <possessionCount>1</possessionCount>
+    <tickerType>Normal</tickerType>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/ToxGrenades</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.3</uiIconScale>
+    <soundInteract>Interact_Grenade</soundInteract>
+    <techLevel>Industrial</techLevel>
+    <statBases>
+      <Mass>1</Mass>
+      <RangedWeapon_Cooldown>2.66</RangedWeapon_Cooldown>
+      <WorkToMake>24000</WorkToMake>
+    </statBases>
+    <costList>
+      <Steel>20</Steel>
+      <ComponentIndustrial>6</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>ToxGas</researchPrerequisite>
+    </recipeMaker>
+    <weaponTags>
+      <li>GrenadeTox</li>
+    </weaponTags>
+    <thingCategories>
+      <li>Grenades</li>
+    </thingCategories>
+    <verbs>
+      <li>
+        <label>throw tox grenade</label>
+        <verbClass>Verb_LaunchProjectile</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <range>12.9</range>
+        <forcedMissRadius>1.9</forcedMissRadius>
+        <warmupTime>1.5</warmupTime>
+        <noiseRadius>4</noiseRadius>
+        <ai_IsBuildingDestroyer>false</ai_IsBuildingDestroyer>
+        <soundCast>ThrowGrenade</soundCast>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <defaultProjectile>Proj_GrenadeTox</defaultProjectile>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>5</explosiveRadius>
+        <explosiveDamageType>bMad_ShrinkGas</explosiveDamageType>
+        <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+        <postExplosionGasType>bMad_ShrinkGas</postExplosionGasType>
+      </li>
+    </comps>
+    <smeltable>true</smeltable>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseGrenadeProjectile">
+    <defName>bMad_Proj_GrenadeTox</defName>
+    <label>shrink grenade</label>
+    <thingClass>Projectile_Explosive</thingClass>
+    <graphicData>
+      <texPath>Things/Projectile/ToxGrenadeThrown</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>bMad_ShrinkGas</damageDef>
+      <explosionDelay>100</explosionDelay>
+      <explosionRadius>1.9</explosionRadius>
+      <explosionRadiusDisplayPadding>2</explosionRadiusDisplayPadding>
+      <postExplosionGasType>bMad_ShrinkGas</postExplosionGasType>
+      <screenShakeFactor>0.5</screenShakeFactor>
+    </projectile>
+  </ThingDef>
+
+  <DamageDef>
+    <defName>bMad_ShrinkGas</defName>
+    <label>shrink gas</label>
+    <canInterruptJobs>false</canInterruptJobs>
+    <makesBlood>false</makesBlood>
+    <defaultDamage>0</defaultDamage>
+    <explosionCellFleck>BlastExtinguisher</explosionCellFleck>
+    <explosionColorEdge>(0.706, 0.839, 0.09, 0.05)</explosionColorEdge>
+    <harmsHealth>false</harmsHealth>
+    <soundExplosion>Explosion_Smoke</soundExplosion>
+    <combatLogRules>Damage_Smoke</combatLogRules>
+  </DamageDef> -->
+</Defs>

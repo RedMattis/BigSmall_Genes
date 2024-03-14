@@ -22,6 +22,191 @@
     
     <selectionWeight>0.1</selectionWeight>
     <canGenerateInGeneSet>false</canGenerateInGeneSet>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneJawBase">
+    <defName>BS_DevourerHead</defName>
+    <label>devourer head</label>
+    <description>Carriers of this gene have a menacing devourer head</description>
+    <iconPath>GeneIcons/BS_DevourerHead</iconPath>
+    <displayOrderInCategory>98</displayOrderInCategory>
+    <graphicData>
+      <graphicPaths>
+        <li>BS_Heads/Devourer/average</li>
+        <li>BS_Heads/Devourer/square</li>
+        <li>BS_Heads/Devourer/closed</li>
+        <li>BS_Heads/Devourer/smile</li>
+      </graphicPaths>
+      <layer>PostSkin</layer>
+      <colorType>Skin</colorType>				
+      <useSkinShader>false</useSkinShader>
+      <drawLoc>HeadTop</drawLoc>
+      <drawOffset>(0, -0.00288, 0)</drawOffset>
+      <drawIfFaceCovered>true</drawIfFaceCovered>						
+    </graphicData>
+    <selectionWeight>1</selectionWeight>
+    <canGenerateInGeneSet>true</canGenerateInGeneSet>
+    <hairTagFilter>
+      <whitelist>true</whitelist>
+      <tags>
+        <li>Bald</li>
+      </tags>
+    </hairTagFilter>
+    <beardTagFilter>
+      <whitelist>true</whitelist>
+      <tags>
+        <li>NoBeard</li>
+      </tags>
+    </beardTagFilter>
+    <geneClass>BetterPrerequisites.PGene</geneClass>
+    <modExtensions>
+      <li Class="BetterPrerequisites.GeneExtension">
+        <facialDisabler/>
+      </li>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneJawBase" Name="BS_DragonHead">
+    <defName>BS_DragonHead</defName>
+    <label>big dragon head</label>
+    <description>Carriers of this gene have an intimidating dragon-like head.</description>
+    <iconPath>GeneIcons/BS_DragonHead</iconPath>
+    <displayOrderInCategory>98</displayOrderInCategory>
+    <graphicData>
+      <graphicPaths>
+        <li>BS_Heads/Dragon/average</li>
+      </graphicPaths>
+      <layer>PostSkin</layer>
+      <colorType>Skin</colorType>				
+      <useSkinShader>false</useSkinShader>
+      <drawLoc>HeadTop</drawLoc>
+      <drawOffset>(0, -0.00288, 0)</drawOffset>
+      <drawIfFaceCovered>true</drawIfFaceCovered>						
+    </graphicData>
+    <selectionWeight>1</selectionWeight>
+    <statFactors>
+      <SM_HeadSize_Cosmetic>0.9</SM_HeadSize_Cosmetic>
+    </statFactors>
+    <canGenerateInGeneSet>true</canGenerateInGeneSet>
+    <!-- <hairTagFilter>
+      <whitelist>true</whitelist>
+      <tags>
+        <li>Bald</li>
+      </tags>
+    </hairTagFilter> -->
+    <beardTagFilter>
+      <whitelist>true</whitelist>
+      <tags>
+        <li>NoBeard</li>
+      </tags>
+    </beardTagFilter>
+    <geneClass>BetterPrerequisites.PGene</geneClass>
+    <modExtensions>
+      <li Class="BetterPrerequisites.GeneExtension">
+        <facialDisabler>
+        </facialDisabler>
+      </li>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+        <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+        <backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+      </li>
+    </modExtensions>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneJawBase">
+    <defName>BS_StonemaskHead</defName>
+    <label>stone mask</label>
+    <description>Carriers of this gene have head resembling a stone mask</description>
+    <iconPath>GeneIcons/Gene_StonemaskHead</iconPath>
+    <displayOrderInCategory>98</displayOrderInCategory>
+    <selectionWeight>1</selectionWeight>
+    <canGenerateInGeneSet>true</canGenerateInGeneSet>
+    <graphicData>
+      <graphicPaths>
+        <li>BS_Heads/StoneMask/normal</li>
+      </graphicPaths>
+      <layer>PostSkin</layer>
+      <colorType>Skin</colorType>				
+      <useSkinShader>false</useSkinShader>
+      <drawLoc>HeadTop</drawLoc>
+      <drawOffset>(0, -0.00288, 0)</drawOffset>
+      <drawIfFaceCovered>true</drawIfFaceCovered>						
+    </graphicData>
+    <beardTagFilter>
+      <whitelist>true</whitelist>
+      <tags>
+        <li>NoBeard</li>
+      </tags>
+    </beardTagFilter>
+    <geneClass>BetterPrerequisites.PGene</geneClass>
+    <modExtensions>
+      <li Class="BetterPrerequisites.GeneExtension">
+        <facialDisabler>
+          <browName>retain</browName>
+        </facialDisabler>
+      </li>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+        <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+        <backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+      </li>
+    </modExtensions>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneJawBase">
+    <defName>BS_SatanHead</defName>
+    <label>carapace head</label>
+    <description>Carriers of this gene have head resembling a carapace</description>
+    <iconPath>GeneIcons/Gene_CarapaceHead</iconPath>
+    <displayOrderInCategory>98</displayOrderInCategory>
+    <selectionWeight>1</selectionWeight>
+    <canGenerateInGeneSet>true</canGenerateInGeneSet>
+    <statFactors>
+      <SM_HeadSize_Cosmetic>0.9</SM_HeadSize_Cosmetic>
+    </statFactors>
+    <graphicData>
+      <graphicPaths>
+        <li>BS_Heads/SatanHead/normal</li>
+      </graphicPaths>
+      <layer>PostSkin</layer>
+      <colorType>Skin</colorType>				
+      <useSkinShader>false</useSkinShader>
+      <drawLoc>HeadTop</drawLoc>
+      <drawOffset>(0, -0.00288, 0)</drawOffset>
+      <drawIfFaceCovered>true</drawIfFaceCovered>						
+    </graphicData>
+    <hairTagFilter>
+      <whitelist>true</whitelist>
+      <tags>
+        <li>Bald</li>
+      </tags>
+    </hairTagFilter>
+    <beardTagFilter>
+      <whitelist>true</whitelist>
+      <tags>
+        <li>NoBeard</li>
+      </tags>
+    </beardTagFilter>
+    <geneClass>BetterPrerequisites.PGene</geneClass>
+    <modExtensions>
+      <li Class="BetterPrerequisites.GeneExtension">
+        <facialDisabler>
+        </facialDisabler>
+      </li>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+        <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+        <backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+      </li>
+    </modExtensions>
   </GeneDef>
 
 

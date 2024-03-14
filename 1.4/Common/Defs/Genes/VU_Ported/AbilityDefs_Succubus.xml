@@ -1,0 +1,105 @@
+<Defs>
+
+<AbilityDef>
+    <defName>VU_DemonForm_Abillity</defName>
+    <label>true form</label>
+    <description>Temporarily transform into a more powerful form.</description>
+    <iconPath>GeneIcons/VU_DemonForm</iconPath>
+    <cooldownTicksRange>4375</cooldownTicksRange>
+    <hostile>False</hostile>
+    <targetRequired>False</targetRequired>
+    <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <label>Transform</label>
+      <violent>false</violent>
+      <warmupTime>5</warmupTime>
+      <range>0</range>
+      <requireLineOfSight>False</requireLineOfSight>
+      <targetParams>
+        <canTargetSelf>True</canTargetSelf>
+      </targetParams>
+    </verbProperties>
+    <statBases>
+      <Ability_Duration>125</Ability_Duration>
+      <Ability_EffectRadius>0</Ability_EffectRadius>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_AbilityGiveHediff">
+        <compClass>CompAbilityEffect_GiveHediff</compClass>
+        <hediffDef>VU_DemonForm_Hediff</hediffDef>
+        <replaceExisting>True</replaceExisting>
+        <onlyApplyToSelf>True</onlyApplyToSelf>
+      </li>
+      <li Class="CompProperties_AbilityHemogenCost">
+        <hemogenCost>0.35</hemogenCost>
+      </li>
+      <!-- <li Class="BigAndSmall.CombatBuff"></li> -->
+    </comps>
+    <aiCanUse>true</aiCanUse>
+    <!--<jobDef>JobGiver_TakeCombatEnhancingDrug</jobDef> -->
+    <modExtensions>
+      <li Class="BigAndSmall.CombatBuff"/>
+    </modExtensions>
+  </AbilityDef>
+    
+  <HediffDef>
+    <defName>VU_DemonForm_Hediff</defName>
+    <label>true form</label>
+    <description>Tremble Mortals!</description>
+    <isBad>False</isBad>
+    <hediffClass>HediffWithComps</hediffClass>
+    <initialSeverity>1</initialSeverity>
+    <stages>
+      <li>
+        <statFactors>
+          <SM_BodySizeMultiplier>1.25</SM_BodySizeMultiplier>
+        </statFactors>
+        <statOffsets>
+          <SM_BodySizeOffset>1</SM_BodySizeOffset>
+        </statOffsets>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <showRemainingTime>True</showRemainingTime>
+        <!-- <messageOnDisappear>Debug_Removed_TrueForm</messageOnDisappear> -->
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="BetterPrerequisites.GeneSuppressor_Hediff" MayRequire="RedMattis.BetterPrerequisites">
+        <supressedGenes>
+          <li>VU_Disguised_Succubus</li>
+        </supressedGenes>
+      </li>
+    </modExtensions>
+  </HediffDef>
+
+  <AbilityDef>
+    <defName>VU_CutBond</defName>
+    <label>Cut parasitic bond</label>
+    <description>A parasitic bond can be cut at any time. This will remove the psychic bond.</description>
+    <iconPath>GeneIcons/VU_LethalLover</iconPath>
+    <cooldownTicksRange>30</cooldownTicksRange>
+    <hostile>False</hostile>
+    <targetRequired>False</targetRequired>
+    <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <label>cut parasitic bond</label>
+      <violent>false</violent>
+      <warmupTime>2.5</warmupTime>
+      <range>0</range>
+      <requireLineOfSight>False</requireLineOfSight>
+      <targetParams>
+        <canTargetSelf>True</canTargetSelf>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="BigAndSmall.CompProperties_CutBond"/>
+    </comps>
+    <aiCanUse>false</aiCanUse>
+  </AbilityDef>
+</Defs>

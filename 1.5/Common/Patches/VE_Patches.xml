@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Factions Expanded - Pirates</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+          <!-- <success>Always</success> -->
+          <operations>
+              <!-- Add Trait to accepted tags -->
+              <li Class="PatchOperationAdd">
+                  <xpath>/Defs/ThingDef[@Name="VFEP_BaseMeleeWeapon_Warcasket"]/modExtensions/li[@Class="HeavyWeapons.HeavyWeapon"]/supportedTraits</xpath>
+                  <value>
+                      <li>BS_Giant</li>
+                  </value>
+              </li>
+              
+              <li Class="PatchOperationAdd">
+                  <xpath>/Defs/ThingDef[@Name="VFEP_BaseWarcasketGun"]/modExtensions/li[@Class="HeavyWeapons.HeavyWeapon"]/supportedTraits</xpath>
+                  <value>
+                      <li>BS_Giant</li>
+                  </value>
+              </li>
+          </operations>
+        </match>
+    </Operation>
+    
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Weapons Expanded - Heavy Weapons</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+          <!-- <success>Always</success> -->
+          <operations>
+              <!-- Add Trait to accepted tags -->
+              <li Class="PatchOperationAdd">
+                  <xpath>/Defs/ThingDef[defName="VWE_Gun_Autocannon" or defName="VWE_Gun_HandheldMortar" or defName="VWE_Gun_HeavyFlamer" or defName="VWE_Bullet_HeavyFlamer" or defName="VWE_Gun_SwarmMissileLauncher" or defName="VWE_Bullet_SwarmRocket" or defName="VWE_Gun_Autocannon" or defName="VWE_Gun_UraniumSlugRifle"]/modExtensions/li[@Class="HeavyWeapons.HeavyWeapon"]/supportedTraits</xpath>
+                  <value>
+                      <li>BS_Giant</li>
+                  </value>
+              </li>
+          </operations>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Armour Expanded</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+          <operations>
+              <li Class="PatchOperationReplace">
+                  <xpath>/Defs/PawnKindDef[defName="BS_WomanInBlue"]/apparelRequired</xpath>
+                  <value>
+                    <apparelRequired>
+                        <li>VAE_Apparel_Gambeson</li>
+                        <li>VAE_Apparel_Chestplate</li>
+                        <li>VAE_Apparel_PlateShoulderpads</li>
+                        <li>VAE_Footwear_PlateBoots</li>
+                        <li>VAE_Handwear_PlateGloves</li>
+                        <li>Apparel_Pants</li>
+                    </apparelRequired>
+                  </value>
+              </li>
+          </operations>
+        </match>
+    </Operation>
+</Patch>

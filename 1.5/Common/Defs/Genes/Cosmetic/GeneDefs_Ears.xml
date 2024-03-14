@@ -1,0 +1,105 @@
+<?xml version="1.0" ?>
+<Defs>
+  <GeneDef ParentName="GeneEarsBase">
+    <defName>BS_AnimalEars</defName>
+    <label>furry ears</label>
+    <description>Carriers of this gene have furry ears.\n\nUwU.</description>
+    <iconPath>GeneIcons/BS_GenericAnimalEars</iconPath>
+    <selectionWeight>0.5</selectionWeight>
+    <renderNodeProperties Inherit="False">
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPath>Humanlike/HeadAttachments/BS_GenericAnimalPersonEars</texPath>
+        <useSkinShader>false</useSkinShader>
+        <colorType>Hair</colorType>
+        <drawData>
+          <defaultData>
+            <layer>52</layer>
+          </defaultData>
+        </drawData>
+        <parentTagDef>Head</parentTagDef>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+  <GeneDef ParentName="GeneEarsBase">
+    <defName>BS_FoxEars</defName>
+    <label>fox ears</label>
+    <description>Carriers of this gene have furry ears.\n\nUwU.</description>
+    <iconPath>GeneIcons/BS_FoxEars</iconPath>
+    <symbolPack>
+      <prefixSymbols>
+        <li>
+          <symbol>fox</symbol>
+        </li>
+        <li>
+          <symbol>foxy</symbol>
+        </li>
+        <li>
+          <symbol>tama</symbol>
+        </li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li>
+          <symbol>ear</symbol>
+        </li>
+      </suffixSymbols>
+    </symbolPack>
+    <selectionWeight>0.1</selectionWeight>
+    <renderNodeProperties Inherit="False">
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPath>Humanlike/HeadAttachments/BS_FoxEars</texPath>
+        <useSkinShader>false</useSkinShader>
+        <colorType>Hair</colorType>
+        <drawData>
+          <defaultData>
+            <layer>52</layer>
+          </defaultData>
+        </drawData>
+        <parentTagDef>Head</parentTagDef>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+  <GeneDef ParentName="GeneEarsBase">
+    <defName>BS_Ears_PointedHD</defName>
+    <label>pointed ears (HD)</label>
+    <description>Carriers of this gene have pointed ears without alpha-blending artefacts.</description>
+    <iconPath>UI/Icons/Genes/Gene_EarPointed</iconPath>
+    <symbolPack>
+      <prefixSymbols>
+        <li>
+          <symbol>point</symbol>
+        </li>
+        <li>
+          <symbol>sharp</symbol>
+        </li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li>
+          <symbol>ear</symbol>
+        </li>
+        <li>
+          <symbol>point</symbol>
+        </li>
+      </suffixSymbols>
+    </symbolPack>
+    <renderNodeProperties Inherit="False">
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPath>Humanlike/HeadAttachments/BS_PointedEars</texPath>
+        <useSkinShader>false</useSkinShader>
+        <colorType>Skin</colorType>
+        <drawData>
+          <defaultData>
+            <layer>52</layer>
+          </defaultData>
+        </drawData>
+        <parentTagDef>Head</parentTagDef>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+  Ears_Pointed
+</Defs>

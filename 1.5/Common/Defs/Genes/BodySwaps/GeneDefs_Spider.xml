@@ -1,0 +1,228 @@
+<?xml version="1.0" ?>
+<Defs>
+  <GeneDef Name="BS_Spiderbase" Abstract="True">
+    <displayCategory>BS_BodySwap</displayCategory>
+    <geneClass>BetterPrerequisites.PGene</geneClass>
+    <biostatCpx>0</biostatCpx>
+    <biostatMet>0</biostatMet>
+    <randomChosen>false</randomChosen>
+    <displayOrderInCategory>50</displayOrderInCategory>
+    <iconColor>(0.75, 0.75, 0.75)</iconColor>
+    <exclusionTags>
+      <li>Tail</li>
+      <li>Bug_BodyAttachment</li>
+      <li>taur</li>
+      <li>ThingDefSwap</li>
+      <li>spiderlegs</li>
+    </exclusionTags>
+    <renderNodeProperties Inherit="False">
+      <li>
+        <parentTagDef>Body</parentTagDef>
+        <drawSize>(1.25,1.25)</drawSize>
+        <drawData>
+          <dataNorth>
+            <offset>(0, 0.0150617733, -0.47)</offset>
+          </dataNorth>
+          <dataSouth>
+            <offset>(0, 0.0150617733, 0)</offset>
+          </dataSouth>
+          <dataEast>
+            <offset>(0, 0.0150617733, 0)</offset>
+          </dataEast>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+  <GeneDef Name="BS_SpoderLegs" ParentName="BS_Spiderbase" Abstract="True">
+    <description>Carriers of this gene have their lower half replaced with the body of a spider. Has science gone too far?</description>
+    <customEffectDescriptions>
+      <li>Switches the character's &quot;Race&quot; for another one. HAR required for this part of the gene.</li>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">Reduces the movement speed penalty when traversing difficult terrain</li>
+    </customEffectDescriptions>
+    <iconPath>GeneIcons/BS_Spooder</iconPath>
+    <displayOrderInCategory>777</displayOrderInCategory>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-2</biostatMet>
+    <selectionWeight>0</selectionWeight>
+    <statFactors>
+      <SM_Food_Need_Capacity>2.0</SM_Food_Need_Capacity>
+    </statFactors>
+    <missingGeneRomanceChanceFactor>0.75</missingGeneRomanceChanceFactor>
+  </GeneDef>
+  <GeneDef ParentName="BS_SpoderLegs">
+    <defName>BS_SpiderBody_Synthread</defName>
+    <label>Spider Abdomen (Synthread)</label>
+    <description>Carriers of this gene have their lower half replaced with the body of a spider. Has science gone too far?\n\nProduces 80 Synthread every 4 days, modified by body-size.\n\nSpider body has skin-colour.</description>
+    <geneClass>BigAndSmall.ProductionGene</geneClass>
+    <modExtensions>
+      <li Class="BetterPrerequisites.GeneExtension">
+        <applyBodyHediff MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+          <li>
+            <hediff MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">BS_Stride</hediff>
+          </li>
+        </applyBodyHediff>
+        <thingDefSwap MayRequire="erdelf.HumanoidAlienRaces">BS_SpiderPersonRace</thingDefSwap>
+        <forceThingDefSwap>false</forceThingDefSwap>
+        <bodyPosOffset>0.5</bodyPosOffset>
+      </li>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+        <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+        <backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+      </li>
+      <li Class="BigAndSmall.ProductionGeneSettings">
+        <product>Synthread</product>
+        <frequencyInDays>4</frequencyInDays>
+        <baseAmount>40</baseAmount>
+        <progressName>Producing Synthread</progressName>
+        <saveKey>BS_SynthreadProduction</saveKey>
+      </li>
+    </modExtensions>
+    <renderNodeProperties Inherit="False">
+      <li>
+        <parentTagDef>Body</parentTagDef>
+        <bodyTypeGraphicPaths>
+          <Hulk>Humanlike/BodyAttachments/BS_Spoder/bp_hulk</Hulk>
+    
+          <Male>Humanlike/BodyAttachments/BS_Spoder/bp_male</Male>
+          <Female>Humanlike/BodyAttachments/BS_Spoder/bp_female</Female>
+          
+          <Fat>Humanlike/BodyAttachments/BS_Spoder/bp_fat</Fat>
+          <Thin>Humanlike/BodyAttachments/BS_Spoder/bp_default</Thin>
+          
+          <Child>Humanlike/BodyAttachments/BS_Spoder/bp_child</Child>
+          <Baby>Humanlike/BodyAttachments/BS_Spoder/bp_child</Baby>
+        </bodyTypeGraphicPaths>
+        <drawSize>(1.625,1.625)</drawSize>
+        <colorType>Skin</colorType>
+        <drawData>
+          <dataNorth>
+            <offset>(0, 0.0150617733, -0.3067)</offset>
+          </dataNorth>
+          <dataSouth>
+            <offset>(0, 0.0150617733, -0.3067)</offset>
+          </dataSouth>
+          <dataEast>
+            <offset>(-0.3567, 0.0150617733, -0.3067)</offset>
+          </dataEast>
+        </drawData>
+      </li>
+      <li>
+        <parentTagDef>Body</parentTagDef>
+        <bodyTypeGraphicPaths>
+          <Hulk>Humanlike/BodyAttachments/BS_Spoder/Back/bp_hulk</Hulk>
+    
+          <Male>Humanlike/BodyAttachments/BS_Spoder/Back/bp_male</Male>
+          <Female>Humanlike/BodyAttachments/BS_Spoder/Back/bp_female</Female>
+          
+          <Fat>Humanlike/BodyAttachments/BS_Spoder/Back/bp_fat</Fat>
+          <Thin>Humanlike/BodyAttachments/BS_Spoder/Back/bp_default</Thin>
+          
+          <Child>Humanlike/BodyAttachments/BS_Spoder/Back/bp_child</Child>
+          <Baby>Humanlike/BodyAttachments/BS_Spoder/Back/bp_child</Baby>
+        </bodyTypeGraphicPaths>
+        <drawSize>(1.625,1.625)</drawSize>
+        <colorType>Skin</colorType>
+        <drawData>
+          <dataNorth>
+            <offset>(0, 0.0150617733, -0.3067)</offset>
+          </dataNorth>
+          <dataSouth>
+            <offset>(0, -0.05, -0.3067)</offset>
+          </dataSouth>
+          <dataEast>
+            <offset>(-0.3567, 0.0150617733, -0.3067)</offset>
+          </dataEast>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+
+  <GeneDef ParentName="BS_SpoderLegs">
+    <defName>BS_SpiderBody_Devil</defName>
+    <label>Spider Abdomen (Devilstrand)</label>
+    <description>Carriers of this gene have their lower half replaced with the body of a spider. Has science gone too far?\n\nProduces 25 Devilstrand every 4 days, modified by body-size.\n\nSpider body has hair-colour</description>
+    <geneClass>BigAndSmall.ProductionGene</geneClass>
+    <modExtensions>
+      <li Class="BetterPrerequisites.GeneExtension">
+        <applyBodyHediff MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+          <li>
+            <hediff MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">BS_Stride</hediff>
+          </li>
+        </applyBodyHediff>
+        <thingDefSwap MayRequire="erdelf.HumanoidAlienRaces">BS_SpiderPersonRace</thingDefSwap>
+        <forceThingDefSwap>false</forceThingDefSwap>
+        <bodyPosOffset>0.5</bodyPosOffset>
+      </li>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+        <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+        <backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+      </li>
+      <li Class="BigAndSmall.ProductionGeneSettings">
+        <product>DevilstrandCloth</product>
+        <frequencyInDays>4</frequencyInDays>
+        <baseAmount>20</baseAmount>
+        <progressName>Producing Devilstrand</progressName>
+        <saveKey>BS_Devilstrandroduction</saveKey>
+      </li>
+    </modExtensions>
+    <renderNodeProperties Inherit="False">
+      <li>
+        <parentTagDef>Body</parentTagDef>
+        <bodyTypeGraphicPaths>
+          <Hulk>Humanlike/BodyAttachments/BS_Spoder/bp_hulk</Hulk>
+    
+          <Male>Humanlike/BodyAttachments/BS_Spoder/bp_male</Male>
+          <Female>Humanlike/BodyAttachments/BS_Spoder/bp_female</Female>
+          
+          <Fat>Humanlike/BodyAttachments/BS_Spoder/bp_fat</Fat>
+          <Thin>Humanlike/BodyAttachments/BS_Spoder/bp_default</Thin>
+          
+          <Child>Humanlike/BodyAttachments/BS_Spoder/bp_child</Child>
+          <Baby>Humanlike/BodyAttachments/BS_Spoder/bp_child</Baby>
+        </bodyTypeGraphicPaths>
+        <drawSize>(1.625,1.625)</drawSize>
+        <colorType>Hair</colorType>
+        <drawData>
+          <dataNorth>
+            <offset>(0, 0.0150617733, -0.3067)</offset>
+          </dataNorth>
+          <dataSouth>
+            <offset>(0, 0.0150617733, -0.3067)</offset>
+          </dataSouth>
+          <dataEast>
+            <offset>(-0.3567, 0.0150617733, -0.3067)</offset>
+          </dataEast>
+        </drawData>
+      </li>
+      <li>
+        <parentTagDef>Body</parentTagDef>
+        <bodyTypeGraphicPaths>
+          <Hulk>Humanlike/BodyAttachments/BS_Spoder/Back/bp_hulk</Hulk>
+    
+          <Male>Humanlike/BodyAttachments/BS_Spoder/Back/bp_male</Male>
+          <Female>Humanlike/BodyAttachments/BS_Spoder/Back/bp_female</Female>
+          
+          <Fat>Humanlike/BodyAttachments/BS_Spoder/Back/bp_fat</Fat>
+          <Thin>Humanlike/BodyAttachments/BS_Spoder/Back/bp_default</Thin>
+          
+          <Child>Humanlike/BodyAttachments/BS_Spoder/Back/bp_child</Child>
+          <Baby>Humanlike/BodyAttachments/BS_Spoder/Back/bp_child</Baby>
+        </bodyTypeGraphicPaths>
+        <drawSize>(1.625,1.625)</drawSize>
+        <colorType>Hair</colorType>
+        <drawData>
+          <dataNorth>
+            <offset>(0, 0.0150617733, -0.3067)</offset>
+          </dataNorth>
+          <dataSouth>
+            <offset>(0, -0.05, -0.3067)</offset>
+          </dataSouth>
+          <dataEast>
+            <offset>(-0.3567, 0.0150617733, -0.3067)</offset>
+          </dataEast>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+
+</Defs>

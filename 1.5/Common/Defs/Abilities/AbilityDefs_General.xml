@@ -1,0 +1,137 @@
+<Defs>
+  <AbilityDef ParentName="AbilityTouchBase"  Abstract="True" Name="BS_Regenerate_Abstract">
+    <!--This is intended to be used on characters whose pool-resouce is more difficult to fill.-->
+    <iconPath>UI/Icons/Genes/Gene_Coagulate</iconPath>
+    <displayOrder>100</displayOrder>
+    <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+    <warmupMote>Mote_CoagulateStencil</warmupMote>
+    <warmupEffecter>Coagulate</warmupEffecter>
+    <warmupStartSound>Coagulate_Cast</warmupStartSound>
+    <hostile>false</hostile>
+    <verbProperties>
+      <verbClass>Verb_CastAbilityTouch</verbClass>
+      <drawAimPie>true</drawAimPie>
+      <range>-1</range>
+      <warmupTime>30</warmupTime>
+      <targetParams>
+        <canTargetSelf>true</canTargetSelf>
+        <canTargetBuildings>false</canTargetBuildings>
+        <canTargetMechs>false</canTargetMechs>
+        <canTargetBloodfeeders>true</canTargetBloodfeeders>
+      </targetParams>
+    </verbProperties>
+  </AbilityDef>
+  
+  <AbilityDef ParentName="BS_Regenerate_Abstract" Name="BS_Regenerate_Cheap">
+    <!--This is intended to be used on characters whose pool-resouce is more difficult to fill.-->
+    <defName>BS_Regenerate_Cheap</defName>
+    <label>Life for life</label>
+    <description>Heal the worst condition on the target at a large cost in power.</description>
+    <iconPath>GeneIcons/CursedHealing</iconPath>
+    <comps>
+      <li Class="BigAndSmall.CompAbilityEffect_Xenoregenerate"/>
+      <li Class="BigAndSmall.CompProperties_CursedCost">
+        <resourceCost>0.40</resourceCost>
+      </li>
+    </comps>
+  </AbilityDef>
+  
+  <AbilityDef ParentName="BS_Regenerate_Abstract">
+    <defName>BS_Regenerate</defName>
+    <description>Heal the worst condition on the target at a large cost in power.</description>
+    <label>Xenoreconstruction</label>
+    <comps>
+      <li Class="BigAndSmall.CompAbilityEffect_Xenoregenerate"/>
+      <li Class="CompProperties_AbilityHemogenCost">
+        <hemogenCost>0.95</hemogenCost>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <AbilityDef>
+    <defName>VU_Hermaphromorph</defName>
+    <label>Hermaphromorph</label>
+    <description>Change biological sex.</description>
+    <iconPath>GeneIcons/VU_Genderbender</iconPath>
+    <cooldownTicksRange>300</cooldownTicksRange>
+    <hostile>False</hostile>
+    <targetRequired>False</targetRequired>
+    <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <label>Genderblender</label>
+      <violent>false</violent>
+      <warmupTime>2.5</warmupTime>
+      <range>0</range>
+      <requireLineOfSight>False</requireLineOfSight>
+      <targetParams>
+        <canTargetSelf>True</canTargetSelf>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="BigAndSmall.Genderbender_AbilityEffect"/>
+    </comps>
+    <aiCanUse>false</aiCanUse>
+  </AbilityDef>
+
+  <AbilityDef>
+    <defName>BS_FoamSpray</defName>
+    <label>foam spray cone</label>
+    <description>Spray thick cone of fire-retardant foam from glands in the neck up through the mouth. The foam will cover a small area and extinguish any fire it touches.\n\nThis is blatantly better than the regular Foam Spray.</description>
+    <iconPath>UI/Icons/Genes/Gene_FoamSpray</iconPath>
+    <charges>3</charges>
+    <cooldownTicksRange>7500</cooldownTicksRange>
+    <warmupStartSound>FoamSpray_Warmup</warmupStartSound>
+    <hostile>false</hostile>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>6.9</range>
+      <warmupTime>1</warmupTime>
+      <soundCast>FoamSpray_Resolve</soundCast>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="BigAndSmall.CompProperties_AbilityConeAttack">
+        <projectileDef>Proj_Foam_Ability</projectileDef>
+        <maxAngle>220</maxAngle>
+        <minAngle>25</minAngle> <!--Adjusted because the range verb is less than the range of the comp.-->
+        <maxDistance>6</maxDistance>
+        <minDistnace>3</minDistnace>
+        <!-- <sprayEffecter>AcidSpray_Directional</sprayEffecter> -->
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <AbilityDef>
+    <defName>BS_EjectPilot</defName>
+    <label>Eject Pilot</label>
+    <description>Eject the pilot from the vehicle.\n\nIf downed this will happen automatically after some time.</description>
+    <iconPath>UI/Icons/Genes/Gene_FoamSpray</iconPath>
+    <cooldownTicksRange>50</cooldownTicksRange>
+    <warmupStartSound>FoamSpray_Warmup</warmupStartSound>
+    <hostile>false</hostile>
+    <targetRequired>False</targetRequired>
+    <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <label>Eject Pilot</label>
+      <violent>false</violent>
+      <warmupTime>2.5</warmupTime>
+      <range>0</range>
+      <requireLineOfSight>False</requireLineOfSight>
+      <targetParams>
+        <canTargetSelf>True</canTargetSelf>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="BigAndSmall.CompProperties_RemovePilot"/>
+    </comps>
+
+  </AbilityDef>
+  
+</Defs>

@@ -1,0 +1,94 @@
+<Defs>
+  
+
+  <GeneDef Name="BodyMultiplierBase" Abstract="True">
+    <displayCategory>Body_Size_Multiplier</displayCategory>
+    <exclusionTags>
+      <li>Body_Size_Multiplier</li>
+    </exclusionTags>
+    <biostatCpx>0</biostatCpx>
+    <biostatMet>0</biostatMet>
+    <selectionWeight>1</selectionWeight>
+    <canGenerateInGeneSet>true</canGenerateInGeneSet>
+    <endogeneCategory>BodyType</endogeneCategory>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </GeneDef>
+  
+  <GeneDef ParentName="BodyMultiplierBase">
+    <defName>Gigantism</defName>
+    <label>Gigantism</label>
+    <description>Carriers of this gene have genetic gigantism</description>
+    <iconPath>GeneIcons/BS_VeryScaleUp</iconPath>
+    <displayOrderInCategory>1050</displayOrderInCategory>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-3</biostatMet>
+    <forcedTraits>
+      <li>
+        <def>Gigantism</def>
+      </li>
+    </forcedTraits>
+    <marketValueFactor>1.2</marketValueFactor>
+    <selectionWeight>1.5</selectionWeight>
+  </GeneDef>
+  
+  <GeneDef ParentName="BodyMultiplierBase">
+    <defName>Large</defName>
+    <label>Large</label>
+    <description>Carriers of this gene have been modified to be larger</description>
+    <iconPath>GeneIcons/BS_ScaleUp</iconPath>
+    <displayOrderInCategory>1050</displayOrderInCategory>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
+    <forcedTraits>
+      <li>
+        <def>Large</def>
+      </li>
+    </forcedTraits>
+    <marketValueFactor>1.1</marketValueFactor>
+  </GeneDef>
+  
+  <GeneDef ParentName="BodyMultiplierBase">
+    <defName>Small</defName>
+    <label>Small</label>
+    <description>Carriers of this gene have been modified to be a bit smaller</description>
+    <iconPath>GeneIcons/BS_ScaleDown</iconPath>
+    <displayOrderInCategory>1050</displayOrderInCategory>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>3</biostatMet>
+    <forcedTraits>
+      <li>
+        <def>Small</def>
+      </li>
+    </forcedTraits>
+    <exclusionTags>
+      <li>Tiny</li>
+    </exclusionTags>
+    <marketValueFactor>0.9</marketValueFactor>
+  </GeneDef>
+  
+  <GeneDef ParentName="BodyMultiplierBase">
+    <defName>Dwarfism</defName>
+    <label>Dwarfism</label>
+    <description>Carriers of this gene have genetic dwarfism</description>
+    <iconPath>GeneIcons/BS_VeryScaleDown</iconPath>
+    <displayOrderInCategory>1050</displayOrderInCategory>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>6</biostatMet>
+    <forcedTraits>
+      <li>
+        <def>Dwarfism</def>
+      </li>
+    </forcedTraits>
+    <exclusionTags>
+      <li>Tiny</li>
+    </exclusionTags>
+    <marketValueFactor>0.8</marketValueFactor>
+    <selectionWeight>1.5</selectionWeight>
+  </GeneDef>
+  
+</Defs>

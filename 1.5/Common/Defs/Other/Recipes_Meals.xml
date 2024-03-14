@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  <!--=================================== Simple meal ==========================================-->
+
+  <RecipeDef ParentName="CookMealBase">
+    <defName>BS_CookLargeMealSimple</defName>
+    <label>cook simple large meal</label>
+    <description>Cook a straightforward meal from one ingredient.</description>
+    <jobString>Cooking simple meal.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>FoodRaw</li>
+          </categories>
+        </filter>
+        <count>2.25</count>
+      </li>
+    </ingredients>
+    <products>
+      <BS_MealLargeSimple>1</BS_MealLargeSimple>
+    </products>
+    <workSkill>Cooking</workSkill>
+    <displayPriority>1100</displayPriority>
+    <recipeUsers>
+      <li>ElectricStove</li>
+      <li>FueledStove</li>
+    </recipeUsers>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookMealBase">
+    <defName>BS_CookLargeMealSimpleBulk</defName>
+    <label>cook simple large meal x4</label>
+    <description>Cook 4 straightforward meals from one ingredient.</description>
+    <jobString>Cooking 4 simple meals.</jobString>
+    <workAmount>1200</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>FoodRaw</li>
+          </categories>
+        </filter>
+        <count>9.0</count>
+      </li>
+    </ingredients>
+    <products>
+      <BS_MealLargeSimple>4</BS_MealLargeSimple>
+    </products>
+    <workSkill>Cooking</workSkill>
+    <displayPriority>1400</displayPriority>
+    <recipeUsers>
+      <li>ElectricStove</li>
+      <li>FueledStove</li>
+    </recipeUsers>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookMealFineBase">
+    <defName>BS_CookLargeMealFine</defName>
+    <label>cook fine large meal</label>
+    <description>Cook a somewhat complex meal from a combination of meat and plant ingredients.</description>
+    <jobString>Cooking fine meal.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <customSummary>protein</customSummary>
+          <categories>
+            <li>MeatRaw</li>
+            <li>AnimalProductRaw</li>
+          </categories>
+        </filter>
+        <count>1.1</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>PlantFoodRaw</li>
+          </categories>
+        </filter>
+        <count>1.1</count>
+      </li>
+    </ingredients>
+    <products>
+      <BS_MealLargeFine>1</BS_MealLargeFine>
+    </products>
+    <displayPriority>1200</displayPriority>
+    <recipeUsers>
+      <li>ElectricStove</li>
+      <li>FueledStove</li>
+    </recipeUsers>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookMealFineBase">
+    <defName>BS_CookLargeMealFine_Veg</defName>
+    <label>cook vegetarian fine large meal</label>
+    <description>Cook a somewhat complex meal from plant ingredients.</description>
+    <jobString>Cooking vegetarian fine meal.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <customSummary>vegetarian ingredients</customSummary>
+          <categories>
+            <li>PlantFoodRaw</li>
+            <li>AnimalProductRaw</li>
+          </categories>
+        </filter>
+        <count>3.35</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <disallowedCategories>
+        <li>MeatRaw</li>
+      </disallowedCategories>
+    </fixedIngredientFilter>
+    <products>
+      <BS_MealLargeFine_Veg>1</BS_MealLargeFine_Veg>
+    </products>
+    <displayPriority>1700</displayPriority>
+    <recipeUsers>
+      <li>ElectricStove</li>
+      <li>FueledStove</li>
+    </recipeUsers>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookMealFineBase">
+    <defName>BS_CookLargeMealFine_Meat</defName>
+    <label>cook carnivore fine large meal</label>
+    <description>Cook a somewhat complex meal from meat ingredients.</description>
+    <jobString>Cooking carnivore fine meal.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>3.35</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <disallowedCategories>
+        <li>PlantFoodRaw</li>
+        <li>AnimalProductRaw</li>
+      </disallowedCategories>
+    </fixedIngredientFilter>
+    <products>
+      <BS_MealLargeFine_Meat>1</BS_MealLargeFine_Meat>
+    </products>
+    <displayPriority>11100</displayPriority>
+    <recipeUsers>
+      <li>ElectricStove</li>
+      <li>FueledStove</li>
+    </recipeUsers>
+  </RecipeDef>
+
+  <!--=================================== Fine meal ==========================================-->
+
+
+  <RecipeDef ParentName="CookMealFineBulkBase">
+    <defName>BS_CookLargeMealFineBulk</defName>
+    <label>cook fine large meal x4</label>
+    <description>Cook 4 somewhat complex meals from a combination of meat and plant ingredients. Some of the ingredients are wasted in order to create a good eating experience.</description>
+    <jobString>Cooking 4 fine meals.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <customSummary>protein</customSummary>
+          <categories>
+            <li>MeatRaw</li>
+            <li>AnimalProductRaw</li>
+          </categories>
+        </filter>
+        <count>4.5</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>PlantFoodRaw</li>
+          </categories>
+        </filter>
+        <count>4.5</count>
+      </li>
+    </ingredients>
+    <products>
+      <BS_MealLargeFine>4</BS_MealLargeFine>
+    </products>
+    <displayPriority>1500</displayPriority>
+    <recipeUsers>
+      <li>ElectricStove</li>
+      <li>FueledStove</li>
+    </recipeUsers>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookMealFineBulkBase">
+    <defName>BS_CookLargeMealFineBulk_Meat</defName>
+    <label>cook carnivore fine large meal x4</label>
+    <description>Cook 4 somewhat complex meals from meat ingredients. Some of the ingredients are wasted in order to create a good eating experience. Producing varied flavors with meat alone introduces extra inefficiencies.</description>
+    <jobString>Cooking 4 carnivore fine meals.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>13.5</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <disallowedCategories>
+        <li>PlantFoodRaw</li>
+        <li>AnimalProductRaw</li>
+      </disallowedCategories>
+    </fixedIngredientFilter>
+    <products>
+      <BS_MealLargeFine_Meat>4</BS_MealLargeFine_Meat>
+    </products>
+    <displayPriority>11300</displayPriority>
+    <recipeUsers>
+      <li>ElectricStove</li>
+      <li>FueledStove</li>
+    </recipeUsers>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookMealFineBulkBase">
+    <defName>BS_CookLargeMealFineBulk_Veg</defName>
+    <label>cook vegetarian fine large meal x4</label>
+    <description>Cook 4 somewhat complex meals from plant ingredients. Some of the ingredients are wasted in order to create a good eating experience. Producing varied flavors with plants alone introduces extra inefficiencies.</description>
+    <jobString>Cooking 4 vegetarian fine meals.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <customSummary>vegetarian ingredients</customSummary>
+          <categories>
+            <li>PlantFoodRaw</li>
+            <li>AnimalProductRaw</li>
+          </categories>
+        </filter>
+        <count>13.5</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <disallowedCategories>
+        <li>MeatRaw</li>
+      </disallowedCategories>
+    </fixedIngredientFilter>
+    <products>
+      <BS_MealLargeFine_Veg>4</BS_MealLargeFine_Veg>
+    </products>
+    <displayPriority>1900</displayPriority>
+    <recipeUsers>
+      <li>ElectricStove</li>
+      <li>FueledStove</li>
+    </recipeUsers>
+  </RecipeDef>
+
+  <!--=================================== Lavish meal ==========================================-->
+
+
+  <RecipeDef ParentName="CookMealLavishBase">
+    <defName>BS_CookLargeMealLavish</defName>
+    <label>cook lavish large meal</label>
+    <description>Cook a very complex meal from a combination of meat and plant ingredients. Much of the ingredients are wasted in order to create the best eating experience.</description>
+    <jobString>Cooking lavish meal.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <customSummary>protein</customSummary>
+          <categories>
+            <li>MeatRaw</li>
+            <li>AnimalProductRaw</li>
+          </categories>
+        </filter>
+        <count>2.25</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>PlantFoodRaw</li>
+          </categories>
+        </filter>
+        <count>2.25</count>
+      </li>
+    </ingredients>
+    <products>
+      <BS_MealLargeLavish>1</BS_MealLargeLavish>
+    </products>
+    <displayPriority>1300</displayPriority>
+    <recipeUsers>
+      <li>ElectricStove</li>
+      <li>FueledStove</li>
+    </recipeUsers>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookMealLavishBase">
+    <defName>BS_CookLargeMealLavish_Meat</defName>
+    <label>cook carnivore lavish large meal</label>
+    <description>Cook a very complex meal from meat ingredients. Much of the ingredients are wasted in order to create the best eating experience. Producing varied flavors with meat alone introduces extra inefficiencies.</description>
+    <jobString>Cooking carnivore lavish meal.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>5.6</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <disallowedCategories>
+        <li>PlantFoodRaw</li>
+        <li>AnimalProductRaw</li>
+      </disallowedCategories>
+    </fixedIngredientFilter>
+    <products>
+      <BS_MealLargeLavish_Meat>1</BS_MealLargeLavish_Meat>
+    </products>
+    <displayPriority>11200</displayPriority>
+    <recipeUsers>
+      <li>ElectricStove</li>
+      <li>FueledStove</li>
+    </recipeUsers>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookMealLavishBase">
+    <defName>BS_CookLargeMealLavish_Veg</defName>
+    <label>cook vegetarian lavish large meal</label>
+    <description>Cook a very complex meal from plant ingredients. Much of the ingredients are wasted in order to create the best eating experience. Producing varied flavors with plants alone introduces extra inefficiencies.</description>
+    <jobString>Cooking vegetarian lavish meal.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <customSummary>vegetarian ingredients</customSummary>
+          <categories>
+            <li>PlantFoodRaw</li>
+            <li>AnimalProductRaw</li>
+          </categories>
+        </filter>
+        <count>5.6</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <disallowedCategories>
+        <li>MeatRaw</li>
+      </disallowedCategories>
+    </fixedIngredientFilter>
+    <products>
+      <BS_MealLargeLavish_Veg>1</BS_MealLargeLavish_Veg>
+    </products>
+    <displayPriority>1800</displayPriority>
+    <recipeUsers>
+      <li>ElectricStove</li>
+      <li>FueledStove</li>
+    </recipeUsers>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookMealLavishBulkBase">
+    <defName>BS_CookLargeMealLavishBulk</defName>
+    <label>cook lavish large meal x4</label>
+    <description>Cook 4 very complex meals from a combination of meat and plant ingredients. Much of the ingredients are wasted in order to create the best eating experience.</description>
+    <jobString>Cooking 4 lavish meals.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <customSummary>protein</customSummary>
+          <categories>
+            <li>MeatRaw</li>
+            <li>AnimalProductRaw</li>
+          </categories>
+        </filter>
+        <count>9.0</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>PlantFoodRaw</li>
+          </categories>
+        </filter>
+        <count>9.0</count>
+      </li>
+    </ingredients>
+    <products>
+      <BS_MealLargeLavish>4</BS_MealLargeLavish>
+    </products>
+    <displayPriority>1600</displayPriority>
+    <recipeUsers>
+      <li>ElectricStove</li>
+      <li>FueledStove</li>
+    </recipeUsers>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookMealLavishBulkBase">
+    <defName>BS_CookLargeMealLavishBulk_Veg</defName>
+    <label>cook vegetarian lavish large meal x4</label>
+    <description>Cook 4 very complex meals from plant ingredients. Much of the ingredients are wasted in order to create the best eating experience. Producing varied flavors with plants alone introduces extra inefficiencies.</description>
+    <jobString>Cooking 4 vegetarian lavish meals.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <customSummary>vegetarian ingredients</customSummary>
+          <categories>
+            <li>PlantFoodRaw</li>
+            <li>AnimalProductRaw</li>
+          </categories>
+        </filter>
+        <count>22.5</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <disallowedCategories>
+        <li>MeatRaw</li>
+      </disallowedCategories>
+    </fixedIngredientFilter>
+    <products>
+      <BS_MealLargeLavish_Veg>4</BS_MealLargeLavish_Veg>
+    </products>
+    <displayPriority>11000</displayPriority>
+    <recipeUsers>
+      <li>ElectricStove</li>
+      <li>FueledStove</li>
+    </recipeUsers>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookMealLavishBulkBase">
+    <defName>BS_CookLargeMealLavishBulk_Meat</defName>
+    <label>cook carnivore lavish large meal x4</label>
+    <description>Cook 4 very complex meals from meat ingredients. Much of the ingredients are wasted in order to create the best eating experience. Producing varied flavors with meat alone introduces extra inefficiencies.</description>
+    <jobString>Cooking 4 carnivore lavish meals.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>22.5</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <disallowedCategories>
+        <li>PlantFoodRaw</li>
+        <li>AnimalProductRaw</li>
+      </disallowedCategories>
+    </fixedIngredientFilter>
+    <products>
+      <BS_MealLargeLavish_Meat>4</BS_MealLargeLavish_Meat>
+    </products>
+    <displayPriority>11400</displayPriority>
+    <recipeUsers>
+      <li>ElectricStove</li>
+      <li>FueledStove</li>
+    </recipeUsers>
+  </RecipeDef>
+
+  <!--=================================== Survival meal ==========================================-->
+
+  <RecipeDef ParentName="CookMealBase">
+    <defName>BS_CookLargeMealSurvival</defName>
+    <label>cook packaged survival large meal</label>
+    <description>Prepare a packaged survival meal from a combination of meat and plant ingredients. Much of the ingredients are wasted in the preservation process.</description>
+    <jobString>Cooking survival meal.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <ingredients>
+      <li>
+        <filter>
+          <customSummary>protein</customSummary>
+          <categories>
+            <li>MeatRaw</li>
+            <li>AnimalProductRaw</li>
+          </categories>
+        </filter>
+        <count>1.35</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>PlantFoodRaw</li>
+          </categories>
+        </filter>
+        <count>1.35</count>
+      </li>
+    </ingredients>
+    <products>
+      <BS_MealLargeSurvivalPack>1</BS_MealLargeSurvivalPack>
+    </products>
+    <skillRequirements>
+      <Cooking>8</Cooking>
+    </skillRequirements>
+    <researchPrerequisite>PackagedSurvivalMeal</researchPrerequisite>
+    <displayPriority>11410</displayPriority>
+    <recipeUsers>
+      <li>ElectricStove</li>
+      <li>FueledStove</li>
+    </recipeUsers>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookMealBase">
+    <defName>BS_CookLargeMealSurvivalBulk</defName>
+    <label>cook packaged survival meal x4</label>
+    <description>Prepare 4 packaged survival meals from a combination of meat and plant ingredients. Much of the ingredients are wasted in the preservation process.</description>
+    <jobString>Cooking 4 survival meals.</jobString>
+    <workAmount>1440</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <ingredients>
+      <li>
+        <filter>
+          <customSummary>protein</customSummary>
+          <categories>
+            <li>MeatRaw</li>
+            <li>AnimalProductRaw</li>
+          </categories>
+        </filter>
+        <count>5.40</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>PlantFoodRaw</li>
+          </categories>
+        </filter>
+        <count>5.40</count>
+      </li>
+    </ingredients>
+    <products>
+      <BS_MealLargeSurvivalPack>4</BS_MealLargeSurvivalPack>
+    </products>
+    <skillRequirements>
+      <Cooking>8</Cooking>
+    </skillRequirements>
+    <researchPrerequisite>PackagedSurvivalMeal</researchPrerequisite>
+    <displayPriority>11420</displayPriority>
+    <recipeUsers>
+      <li>ElectricStove</li>
+      <li>FueledStove</li>
+    </recipeUsers>
+  </RecipeDef>
+
+</Defs>

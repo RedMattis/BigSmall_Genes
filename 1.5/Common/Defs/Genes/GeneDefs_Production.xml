@@ -1,0 +1,27 @@
+<Defs>
+  <GeneDef>
+    <defName>BS_ChocolateProduction</defName>
+    <label>chocolate production</label>
+    <description>Carriers of this gene grow chocolate bars from their head, sometimes even with wrappers on.</description>
+    <geneClass>BigAndSmall.ProductionGene</geneClass>
+    <iconPath>GeneIcons/BS_BananaSplitProduction</iconPath>
+    <displayOrderInCategory>666</displayOrderInCategory>
+    <minAgeActive>15</minAgeActive>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
+    <modExtensions>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+      <li Class="BigAndSmall.ProductionGeneSettings">
+        <product>Chocolate</product>
+        <frequencyInDays>1</frequencyInDays>
+        <!-- <frequencyInDays>0.05</frequencyInDays> -->
+        <baseAmount>4</baseAmount>
+        <progressName>Marabou Switzere Progress</progressName>
+        <saveKey>BS_ChocolateProduction</saveKey>
+      </li>
+    </modExtensions>
+  </GeneDef>
+</Defs>

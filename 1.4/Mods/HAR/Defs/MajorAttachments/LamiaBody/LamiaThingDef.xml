@@ -1,0 +1,112 @@
+<Defs>
+
+  <ThingDef Class="AlienRace.ThingDef_AlienRace" ParentName="HumanRace">
+    <defName>BS_Naga</defName>
+    <label>snake-person</label>
+    <description>A humanlike being with a snake tail instead of legs.</description>
+    <statBases>
+      <MarketValue>1750</MarketValue>
+      <MoveSpeed>4.6</MoveSpeed>
+      <Flammability>1.0</Flammability>
+      <ComfyTemperatureMin>16</ComfyTemperatureMin>
+      <ComfyTemperatureMax>26</ComfyTemperatureMax>
+      <LeatherAmount>100</LeatherAmount>
+      <RoyalFavorValue>3</RoyalFavorValue>
+    </statBases>
+    <race>
+      <thinkTreeMain>Humanlike</thinkTreeMain>
+      <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
+      <intelligence>Humanlike</intelligence>
+      <makesFootprints>true</makesFootprints>
+      <lifeExpectancy>80</lifeExpectancy>
+      <leatherDef>Leather_Lizard</leatherDef>
+      <nameCategory>HumanStandard</nameCategory>
+      <body>BS_SnakeHuman</body>
+      <baseBodySize>1</baseBodySize>
+      <baseHealthScale>1</baseHealthScale>
+      <foodType>OmnivoreHuman</foodType>
+      <gestationPeriodDays>45</gestationPeriodDays>
+      <meatMarketValue>0.8</meatMarketValue>
+      <manhunterOnDamageChance>0.20</manhunterOnDamageChance>
+      <manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>
+
+      <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+      <!--Just for testing.-->
+    </race>
+    <alienRace>
+      <generalSettings>
+        <humanRecipeImport>true</humanRecipeImport>
+      </generalSettings>
+    </alienRace>
+  </ThingDef>
+
+  <ThingDef Class="AlienRace.ThingDef_AlienRace" ParentName="HumanRace">
+    <defName>BS_Naga_HideFacialAnim</defName>
+    <label>snake-person</label>
+    <description>A humanlike being with a snake tail instead of legs.</description>
+    <statBases>
+      <MarketValue>1750</MarketValue>
+      <MoveSpeed>4.6</MoveSpeed>
+      <Flammability>1.0</Flammability>
+      <ComfyTemperatureMin>16</ComfyTemperatureMin>
+      <ComfyTemperatureMax>26</ComfyTemperatureMax>
+      <LeatherAmount>100</LeatherAmount>
+      <RoyalFavorValue>3</RoyalFavorValue>
+    </statBases>
+    <comps>
+      <li Class="BigAndSmall.CompProperties_CompRemover">
+        <compNamespaceList><li>FacialAnimation</li></compNamespaceList>
+      </li>
+    </comps>
+    <race>
+      <thinkTreeMain>Humanlike</thinkTreeMain>
+      <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
+      <intelligence>Humanlike</intelligence>
+      <makesFootprints>true</makesFootprints>
+      <lifeExpectancy>80</lifeExpectancy>
+      <leatherDef>Leather_Lizard</leatherDef>
+      <nameCategory>HumanStandard</nameCategory>
+      <body>BS_SnakeHuman</body>
+      <baseBodySize>1</baseBodySize>
+      <baseHealthScale>1</baseHealthScale>
+      <foodType>OmnivoreHuman</foodType>
+      <gestationPeriodDays>45</gestationPeriodDays>
+      <meatMarketValue>0.8</meatMarketValue>
+      <manhunterOnDamageChance>0.20</manhunterOnDamageChance>
+      <manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>
+
+      <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+      <!--Just for testing.-->
+    </race>
+    <alienRace>
+      <generalSettings>
+        <humanRecipeImport>true</humanRecipeImport>
+      </generalSettings>
+    </alienRace>
+  </ThingDef>
+
+<!-- 
+  <PawnKindDef ParentName="LoS_ViperGrunt">
+    <defName>DEBUG_LoS_Viper_Trooper</defName>
+    <race>BS_Naga</race>
+    <label>viper shock trooper (DEBUG)</label>
+    <apparelColor>(34,30,34)</apparelColor>
+    <techHediffsTags>
+      <li>ImplantEmpireCommon</li>
+    </techHediffsTags>
+    <skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>4~10</range>
+      </li>
+    </skills>
+    <disallowedTraits>
+      <li>Brawler</li>
+    </disallowedTraits>
+    <initialResistanceRange>15~24</initialResistanceRange>
+  </PawnKindDef> -->
+</Defs>

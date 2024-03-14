@@ -1,0 +1,254 @@
+<Defs>
+
+
+  <VREAndroids.AndroidGeneDef ParentName="BS_AndroidHardware">
+    <defName>BS_RoboticResilienceLesser</defName>
+    <label>unliving resilience</label>
+    <description>Androids with this gene are built to handle getting holes punched through them without critical malfunction. They take 50% damage from bullets and arrows and 75% damage from stabbing attacks.\n\nIncludes vacuum sealing.</description>
+    <iconPath>GeneIcons/VU_UnlivingResistance_Lesser</iconPath>
+    <statFactors>
+      <SM_BulletDmgMult>0.5</SM_BulletDmgMult>
+    </statFactors>
+    <statOffsets>
+      <SM_EVA_Level>2</SM_EVA_Level>
+      <DecompressionResistance MayRequire="kentington.saveourship2">1</DecompressionResistance>
+      <HypoxiaResistance MayRequire="kentington.saveourship2">1</HypoxiaResistance>
+    </statOffsets>
+
+    <biostatCpx>3</biostatCpx>
+    <biostatMet>-3</biostatMet>
+    <exclusionTags>
+      <li>BulletResistance</li>
+      <li>BS_Vacuum_Poof</li>
+    </exclusionTags>
+    <modExtensions>
+      <li Class="Universum.Utilities.Gene.Properties" MayRequire="sindre0830.Universum">
+          <allowed_utilities>
+              <li>universum.vacuum_decompression_protection</li>
+              <li>universum.vacuum_suffocation_protection</li>
+          </allowed_utilities>
+      </li>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackAndroidChip</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackAndroidChip</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </VREAndroids.AndroidGeneDef>
+  
+  <VREAndroids.AndroidGeneDef ParentName="BS_AndroidHardware">
+    <defName>BS_RoboticResilience</defName>
+    <label>greater unliving resilience</label>
+    <description>Androids with this gene are built to handle much of their body getting turned into swiss cheese without critical malfunction. They take 35% damage from bullets and arrows and 67% damage from stabbing attacks.\n\nIncludes vacuum sealing.</description>
+    <iconPath>GeneIcons/VU_UnlivingResistance_Normal</iconPath>
+    <statFactors>
+      <SM_BulletDmgMult>0.35</SM_BulletDmgMult>
+    </statFactors>
+    <statOffsets>
+      <SM_EVA_Level>2</SM_EVA_Level>
+      <DecompressionResistance MayRequire="kentington.saveourship2">1</DecompressionResistance>
+      <HypoxiaResistance MayRequire="kentington.saveourship2">1</HypoxiaResistance>
+    </statOffsets>
+
+    <biostatCpx>5</biostatCpx>
+    <biostatMet>-5</biostatMet>
+    <exclusionTags>
+      <li>BulletResistance</li>
+      <li>BS_Vacuum_Poof</li>
+    </exclusionTags>
+    <modExtensions>
+      <li Class="Universum.Utilities.Gene.Properties" MayRequire="sindre0830.Universum">
+          <allowed_utilities>
+              <li>universum.vacuum_decompression_protection</li>
+              <li>universum.vacuum_suffocation_protection</li>
+          </allowed_utilities>
+      </li>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackAndroidChip</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackAndroidChip</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </VREAndroids.AndroidGeneDef>
+
+  <VREAndroids.AndroidGeneDef ParentName="BS_AndroidHardware">
+    <defName>BS_AndroidEVA_Gene</defName>
+    <label>Vacuum Sealed</label>
+    <description>Androids with this modification can withstand the vacuum of space. This does little to help against the cold or slowness of movement in the void.</description>
+    <iconPath>GeneIcons/BS_Vacuum_Gene</iconPath>
+    <statOffsets>
+      <SM_EVA_Level>2</SM_EVA_Level>
+      <DecompressionResistance MayRequire="kentington.saveourship2">1</DecompressionResistance>
+      <HypoxiaResistance MayRequire="kentington.saveourship2">1</HypoxiaResistance>
+      <VacuumSpeedMultiplier MayRequire="kentington.saveourship2">1.2</VacuumSpeedMultiplier>
+    </statOffsets>
+
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
+    <exclusionTags>
+      <li>BS_Vacuum_Poof</li>
+    </exclusionTags>
+    <modExtensions>
+      <li Class="Universum.Utilities.Gene.Properties" MayRequire="sindre0830.Universum">
+          <allowed_utilities>
+              <li>universum.vacuum_decompression_protection</li>
+              <li>universum.vacuum_suffocation_protection</li>
+          </allowed_utilities>
+      </li>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackAndroidChip</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackAndroidChip</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </VREAndroids.AndroidGeneDef>
+  
+  <VREAndroids.AndroidGeneDef ParentName="VREA_SubroutineBase">
+    <defName>BS_UnarmedOnly_Android</defName>
+    <label>Unarmed Combat Only</label>
+    <description>Androids with this modification cannot or will not wield weapons in melee combat.</description>
+    <iconPath>GeneIcons/BS_Unarmed Only</iconPath>
+    <!-- <displayCategory>Violence</displayCategory> -->
+    <biostatCpx>0</biostatCpx>
+    <biostatMet>2</biostatMet>
+    <biostatArc>0</biostatArc>
+    <exclusionTags>
+      <li>BS_Pacifism</li>
+    </exclusionTags>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackAndroidChip</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackAndroidChip</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </VREAndroids.AndroidGeneDef>
+
+  <VREAndroids.AndroidGeneDef ParentName="VREA_SubroutineBase">
+    <defName>BS_Unarmed_Strong_Android</defName>
+    <label>Strong Unarmed</label>
+    <labelShortAdj>strong</labelShortAdj>
+    <description>Carriers of this gene do more damage in close-quarters combat, but they are only able to use this power in unarmed combat.</description>
+    <iconPath>GeneIcons/BS_UnarmedStrong</iconPath>
+    <!-- <displayCategory>Subroutine</displayCategory> -->
+    <statFactors>
+      <MeleeDamageFactor>1.5</MeleeDamageFactor>
+    </statFactors>
+    <exclusionTags>
+      <li>MeleeDamage</li>
+    </exclusionTags>
+    <biostatMet>-1</biostatMet>
+    <prerequisite>BS_UnarmedOnly_Android</prerequisite>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackAndroidChip</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackAndroidChip</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </VREAndroids.AndroidGeneDef>
+
+  <VREAndroids.AndroidGeneDef ParentName="VREA_SubroutineBase">
+    <defName>BS_Unarmed_VeryStrong_Android</defName>
+    <label>Very Strong Unarmed</label>
+    <labelShortAdj>strong</labelShortAdj>
+    <description>Carriers of this gene do significently more damage in close-quarters combat, but they are only able to use this power in unarmed combat.</description>
+    <iconPath>GeneIcons/BS_UnarmedVeryStrong</iconPath>
+    <!-- <displayCategory>Subroutine</displayCategory> -->
+    <statFactors>
+      <MeleeDamageFactor>1.75</MeleeDamageFactor>
+    </statFactors>
+    <exclusionTags>
+      <li>MeleeDamage</li>
+    </exclusionTags>
+    <biostatMet>-2</biostatMet>
+    <prerequisite>BS_UnarmedOnly_Android</prerequisite>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackAndroidChip</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackAndroidChip</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </VREAndroids.AndroidGeneDef>
+
+  <VREAndroids.AndroidGeneDef ParentName="VREA_SubroutineBase">
+		<defName>BS_Pilotable_Android</defName>
+		<label>pilotable</label>
+		<description>This android has been made to function as an extension of a pilot. It will not be able to function without a pilot. The skills and mental traits of the pilot will be used.\n\nNote that the pilot can be no larger than half the size of their vehicle, also they will not be able to socially interact with others normally while busy piloting.\n\nDeveloper's Note: Due to how Androids remove needs you might need to remove some of their 'genes' to get this behaving properly. I might get around to fixing this eventually.</description>
+		<iconPath>GeneIcons/BS_Pilotable</iconPath>
+    <geneClass>BetterPrerequisites.PGene</geneClass>
+		<displayOrderInCategory>1</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>1</biostatMet>
+    <exclusionTags>
+      <li>BS_Pilotable</li>
+    </exclusionTags>
+    <missingGeneRomanceChanceFactor>0</missingGeneRomanceChanceFactor>
+		 <modExtensions>
+			<li Class="BetterPrerequisites.GeneExtension">
+				<applyBodyHediff>
+					<li>
+						<hediff>BS_Piloted</hediff>
+					</li>
+				</applyBodyHediff>
+			</li>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackAndroidChip</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackAndroidChip</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+		<selectionWeight>0</selectionWeight>
+	</VREAndroids.AndroidGeneDef>
+
+  <VREAndroids.AndroidGeneDef ParentName="VREA_SubroutineBase">
+		<defName>BS_PilotAssistible_Android</defName>
+		<label>operator assistable</label>
+		<description>This android has been made to utilize an operator, and will be much more effective when one is available.\n\nNote that the operator can be no larger than half the size of the carrier.</description>
+		<iconPath>GeneIcons/BS_Pilotassistable</iconPath>
+    <geneClass>BetterPrerequisites.PGene</geneClass>
+		<displayOrderInCategory>2</displayOrderInCategory>
+		<biostatCpx>5</biostatCpx>
+    <exclusionTags>
+      <li>BS_Pilotable</li>
+    </exclusionTags>
+		<biostatMet>-1</biostatMet>
+		 <modExtensions>
+			<li Class="BetterPrerequisites.GeneExtension">
+				<applyBodyHediff>
+					<li>
+						<hediff>BS_PilotAssisted</hediff>
+					</li>
+				</applyBodyHediff>
+			</li>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackAndroidChip</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackAndroidChip</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+		<selectionWeight>0</selectionWeight>
+	</VREAndroids.AndroidGeneDef>
+
+  <!-- <VREAndroids.AndroidGeneDef ParentName="VREA_SubroutineBase">
+		<defName>BS_FusedPiloting_Android</defName>
+		<label>nerve-fused piloting</label>
+		<description>This android has been made to function as a permanent extension of a pilot. The only way to remove the pilot from this entity after entering is by destroying it.\n\nNote that the pilot can be no larger than half the size of their vehicle, also they will not be able to socially interact with others normally while busy piloting.\n\nDeveloper's Note: Due to how Androids remove needs you might need to remove some of their 'genes' to get this behaving properly. I might get around to fixing this eventually.</description>
+		<iconPath>GeneIcons/BS_PilotablePermanent</iconPath>
+    <geneClass>BetterPrerequisites.PGene</geneClass>
+		<displayOrderInCategory>1</displayOrderInCategory>
+		<biostatCpx>6</biostatCpx>
+		<biostatMet>-1</biostatMet>
+    <exclusionTags>
+      <li>BS_Pilotable</li>
+    </exclusionTags>
+    <missingGeneRomanceChanceFactor>0</missingGeneRomanceChanceFactor>
+		 <modExtensions>
+			<li Class="BetterPrerequisites.GeneExtension">
+				<applyBodyHediff>
+					<li>
+						<hediff>BS_PermanentPiloted</hediff>
+					</li>
+				</applyBodyHediff>
+			</li>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackAndroidChip</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackAndroidChip</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+		<selectionWeight>0</selectionWeight>
+	</VREAndroids.AndroidGeneDef> -->
+</Defs>

@@ -1,0 +1,106 @@
+<Defs>
+
+  <VREAndroids.AndroidGeneDef ParentName="BS_AndroidHardware">
+    <defName>BS_MinTemp_HugeDecrease_Android</defName>
+    <label>Cold Immunity</label>
+    <labelShortAdj>freezing</labelShortAdj>
+    <description>This android is capable of enduring almost absolute-zero temperatures.</description>
+    <iconPath>GeneIcons/super_cold_resist_icon</iconPath>
+    <displayOrderInCategory>-5</displayOrderInCategory>
+    <statOffsets>
+      <ComfyTemperatureMin>-250</ComfyTemperatureMin>
+    </statOffsets>
+    <biostatMet>-2</biostatMet>
+    <symbolPack>
+      <prefixSymbols>
+        <li>
+          <symbol>ice</symbol>
+        </li>
+      </prefixSymbols>
+    </symbolPack>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackAndroidChip</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackAndroidChip</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </VREAndroids.AndroidGeneDef>
+
+  <VREAndroids.AndroidGeneDef ParentName="BS_AndroidHardware">
+    <defName>BS_MaxTemp_HugeIncrease_Android</defName>
+    <label>Heat Immunity</label>
+    <labelShortAdj>boiling</labelShortAdj>
+    <description>This android is capable of enduring incredibly high temperatures.</description>
+    <iconPath>GeneIcons/super_heat_resist_icon</iconPath>
+    <displayOrderInCategory>-5</displayOrderInCategory>
+    <statOffsets>
+      <ComfyTemperatureMax>250</ComfyTemperatureMax>
+    </statOffsets>
+    <biostatMet>-3</biostatMet>
+    <symbolPack>
+      <prefixSymbols>
+        <li>
+          <symbol>hot</symbol>
+        </li>
+        <li>
+          <symbol>heat</symbol>
+        </li>
+        <li>
+          <symbol>sun</symbol>
+        </li>
+        <li>
+          <symbol>sweat</symbol>
+        </li>
+        <li>
+          <symbol>bake</symbol>
+        </li>
+      </prefixSymbols>
+    </symbolPack>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackAndroidChip</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackAndroidChip</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </VREAndroids.AndroidGeneDef>
+
+  <VREAndroids.AndroidGeneDef ParentName="BS_AndroidHardware">
+    <defName>BS_FireImmunity_Android</defName>
+    <label>fire immune</label>
+    <labelShortAdj>fireproof</labelShortAdj>
+    <description>Androids with these modifications are unfaced by fire and most heat-based attacks.</description>
+    <iconPath>GeneIcons/fire_immune_icon</iconPath>
+    <displayOrderInCategory>-5</displayOrderInCategory>
+    <statFactors>
+      <Flammability>0.0</Flammability>
+    </statFactors>
+    <damageFactors>
+      <Flame>0.0</Flame>
+    </damageFactors>
+    <biostatMet>-3</biostatMet>
+    <symbolPack>
+      <prefixSymbols>
+        <li>
+          <symbol>foam</symbol>
+        </li>
+        <li>
+          <symbol>wet</symbol>
+        </li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li>
+          <symbol>foam</symbol>
+        </li>
+      </suffixSymbols>
+    </symbolPack>
+    <exclusionTags>
+      <li>FireDamage</li>
+    </exclusionTags>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackAndroidChip</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackAndroidChip</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </VREAndroids.AndroidGeneDef>
+</Defs>

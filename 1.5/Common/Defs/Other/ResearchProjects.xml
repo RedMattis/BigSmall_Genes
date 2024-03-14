@@ -1,0 +1,65 @@
+<Defs>
+  <ResearchProjectDef>
+    <defName>BS_AnimalGrowthSerums</defName>
+    <label>animal size serums</label>
+    <description>Learn how to create serums to change the size of animals.</description>
+    <baseCost>250</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>MedicineProduction</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <researchViewX>1</researchViewX>
+    <researchViewY>1</researchViewY>
+    <tab>big_and_small</tab>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>BS_GeneScience</defName>
+    <label>experimental gene tools</label>
+    <description>Learn how to create a variety of tools for modifying genes.</description>
+    <baseCost>250</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>MedicineProduction</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <researchViewX>1</researchViewX>
+    <researchViewY>1.5</researchViewY>
+    <tab>big_and_small</tab>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>BS_MadScienceField</defName>
+    <label>mad science field testing</label>
+    <description>Apply gene studies offensively</description>
+    <baseCost>500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>BS_AnimalGrowthSerums</li>
+      <li>BS_GeneScience</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <researchViewX>2</researchViewX>
+    <researchViewY>1</researchViewY>
+    <tab>big_and_small</tab>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>BS_ArchiteGeneScience</defName>
+    <label>experimental archite gene tools</label>
+    <description>Archite-based methods for modifying genes</description>
+    <baseCost>250</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>BS_GeneScience</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <researchViewX>3</researchViewX>
+    <researchViewY>1.5</researchViewY>
+    <tab>big_and_small</tab>
+  </ResearchProjectDef>
+</Defs>

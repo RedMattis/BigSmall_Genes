@@ -1,0 +1,20 @@
+<Defs>
+  <IncidentDef>
+    <defName>BS_WomanInBlueJoin</defName>
+    <label>woman in blue</label>
+    <category>Special</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>IncidentWorker_WandererJoin</workerClass>
+    <letterLabel>Woman in blue</letterLabel>
+    <letterText>A [PAWN_kind] noticed the trouble from afar, and having heard of the colony's efforts she has decided to join your side.\n\nOf course she'll expect a generous reward for her efforts.</letterText>
+    <baseChance>0</baseChance>
+    <minRefireDays>80</minRefireDays>
+    <minGreatestPopulation>1</minGreatestPopulation>
+    <pawnKind>BS_WomanInBlue</pawnKind>
+    <pawnFixedGender>Female</pawnFixedGender>
+    <pawnMustBeCapableOfViolence>true</pawnMustBeCapableOfViolence>
+  </IncidentDef>
+
+</Defs>

@@ -1,0 +1,41 @@
+<Defs>
+  <GeneDef>
+    <defName>VU_GreaterHemogenDrain</defName>
+    <label>greater blood drain</label>
+    <labelShortAdj>draining</labelShortAdj>
+    <description>Carriers lose an additional 16 blood per day from biological entropy.</description>
+    <resourceLabel>hemogen</resourceLabel>
+    <geneClass>Gene_HemogenDrain</geneClass>
+    <iconPath>GeneIcons/VU_BloodDrain_Great</iconPath>
+    <prerequisite>Hemogenic</prerequisite>
+    <resourceLossPerDay>0.16</resourceLossPerDay>
+    <displayCategory>Hemogen</displayCategory>
+    <displayOrderInCategory>-1</displayOrderInCategory>
+    <minAgeActive>3</minAgeActive>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>10</biostatMet>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>VU_VampireLover</defName>
+    <label>Love Feedin'</label>
+    <prerequisite>Hemogenic</prerequisite>
+    <description>Carriers of this gene have a troublesome tendency to bite their lovers.</description>
+    <iconPath>GeneIcons/VU_BiteSleeper_2</iconPath>
+    <biostatMet>1</biostatMet>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+    <canGenerateInGeneSet>false</canGenerateInGeneSet>
+    <selectionWeight>0</selectionWeight>
+  </GeneDef>
+</Defs>

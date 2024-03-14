@@ -1,0 +1,43 @@
+<Defs>
+  <GeneDef>
+    <defName>BS_SelfRepairingApparel</defName>
+    <label>self-repairing apparel</label>
+    <description>Carriers of this genes have special archites that repair apparel.\n\nThis cannot repair the apparel to a better state than when it was last put on.</description>
+    <iconPath>GeneIcons/BS_SelfRepairingApparel</iconPath>
+    <displayCategory>Archite</displayCategory>
+    <biostatMet>0</biostatMet>
+    <biostatCpx>2</biostatCpx>
+    <selectionWeight>1</selectionWeight>
+    <biostatArc>1</biostatArc>
+    <exclusionTags>
+      <li>BS_SelfRepairingApparel</li>
+    </exclusionTags>
+    <modExtensions>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+        <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+        <backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+      </li>
+    </modExtensions>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>BS_IndestructibleApparel</defName>
+    <label>indestructible apparel</label>
+    <description>Carriers of this genes have special archites that prevent their worn gear from being damaged by repairing it nearly instantly.\n\nIt cannot repair the gear to a better state than when it was put on.</description>
+    <iconPath>GeneIcons/BS_IndestructibleApparel</iconPath>
+    <displayCategory>Archite</displayCategory>
+    <biostatMet>-1</biostatMet>
+    <biostatCpx>2</biostatCpx>
+    <selectionWeight>1</selectionWeight>
+    <biostatArc>2</biostatArc>
+    <exclusionTags>
+      <li>BS_SelfRepairingApparel</li>
+    </exclusionTags>
+    <modExtensions>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+        <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+        <backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+      </li>
+    </modExtensions>
+  </GeneDef>
+</Defs>

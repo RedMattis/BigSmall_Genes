@@ -1,0 +1,99 @@
+<?xml version="1.0" ?>
+<Defs>
+  <GeneDef Name="BS_BodyBase" Abstract="True">
+    <displayCategory>Cosmetic_Body</displayCategory>
+    <exclusionTags>
+      <li>AG_Bodies</li>
+      <li>Bodies</li>
+      <li>Body</li>
+      <li>BS_Body</li>
+    </exclusionTags>
+    <renderNodeProperties Inherit="False">
+      <li>
+        <parentTagDef>Body</parentTagDef>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+  <GeneDef ParentName="BS_BodyBase">
+    <defName>BS_BrokenTitanBody</defName>
+    <label>urb cyborg body</label>
+    <labelShortAdj>urb body</labelShortAdj>
+    <description>Carriers of this gene have a part-robotic body. Forces Hulk-body type.</description>
+    <exclusionTags>
+      <li>BodyType</li>
+    </exclusionTags>
+    <biostatCpx>1</biostatCpx>
+    <selectionWeight>0</selectionWeight>
+    <displayOrderInCategory>430</displayOrderInCategory>
+    <iconPath>GeneIcons/BS_UrbCyborgBody</iconPath>
+    <bodyType>Hulk</bodyType>
+    <modExtensions>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+        <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+        <backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+        <useSkinColorForFur>true</useSkinColorForFur>
+      </li>
+    </modExtensions>
+    <renderNodeProperties Inherit="False">
+      <li>
+        <parentTagDef>Body</parentTagDef>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+  <GeneDef ParentName="BS_BodyBase">
+    <defName>BS_OgreBody</defName>
+    <label>ogre body</label>
+    <labelShortAdj>ogre body</labelShortAdj>
+    <description>Carriers of this gene have obese ogre body.</description>
+    <exclusionTags>
+      <li>BodyType</li>
+    </exclusionTags>
+    <biostatCpx>1</biostatCpx>
+    <selectionWeight>0</selectionWeight>
+    <displayOrderInCategory>430</displayOrderInCategory>
+    <iconPath>GeneIcons/BS_OgreBody</iconPath>
+    <bodyType>Fat</bodyType>
+    <modExtensions>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+        <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+        <backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+        <useSkinColorForFur>true</useSkinColorForFur>
+      </li>
+    </modExtensions>
+    <renderNodeProperties Inherit="False">
+      <li>
+        <parentTagDef>Body</parentTagDef>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+  <GeneDef ParentName="BS_BodyBase">
+    <defName>BS_MimicBody</defName>
+    <label>glutton horror body</label>
+    <description>Carriers of this gene have a body like a terrifying demon of gluttony.</description>
+    <geneClass>BetterPrerequisites.PGene</geneClass>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
+    <selectionWeight>0</selectionWeight>
+    <displayOrderInCategory>430</displayOrderInCategory>
+    <iconPath>Humanlike/Bodies/BS_Mimic/bp_hulk_south</iconPath>
+    <statOffsets>
+      <SM_Food_Need_Capacity>2</SM_Food_Need_Capacity>
+    </statOffsets>
+    <modExtensions>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+        <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+        <backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+        <useSkinColorForFur>true</useSkinColorForFur>
+      </li>
+      <li Class="BetterPrerequisites.GeneExtension">
+        <thingDefSwap MayRequire="erdelf.HumanoidAlienRaces">BS_GluttonRace</thingDefSwap>
+        <forceThingDefSwap>false</forceThingDefSwap>
+      </li>
+    </modExtensions>
+    <renderNodeProperties Inherit="False">
+      <li>
+        <parentTagDef>Body</parentTagDef>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+</Defs>

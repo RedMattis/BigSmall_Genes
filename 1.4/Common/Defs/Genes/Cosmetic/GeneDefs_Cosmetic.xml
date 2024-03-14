@@ -28,6 +28,20 @@
   </GeneDef>
   
   <GeneDef ParentName="GeneHairColorBase">
+    <defName>BS_Hair_TrueWhite</defName>
+    <label>Blinding White Hair</label>
+    <hairColorOverride>(255, 255, 255)</hairColorOverride>
+    <selectionWeight>0.05</selectionWeight>
+    <displayOrderInCategory>191</displayOrderInCategory>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneHairColorBase">
     <defName>BS_HairFrostWhite</defName>
     <label>Frost-White Hair</label>
     <hairColorOverride>(205,251,255)</hairColorOverride>

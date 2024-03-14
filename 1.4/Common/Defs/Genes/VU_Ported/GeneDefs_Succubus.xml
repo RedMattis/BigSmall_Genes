@@ -1,0 +1,188 @@
+<Defs>
+  
+
+
+  <GeneDef>
+    <defName>VU_SuccubusBloodFeeder</defName>
+    <label>bloodfeeder (demon)</label>
+    <description>Carriers of this gene have small retractable fangs and an organ on the roof of the mouth which can extract hemogen from fresh warm blood. They can bite an unresisting person, suck the blood, and gain hemogen directly.\nThe carriers of thise gene seem prone to biting their lovers.</description>
+    <iconPath>UI/Icons/Genes/Gene_Bloodfeeder</iconPath>
+    <geneClass>Gene_Bloodfeeder</geneClass>
+    <prerequisite>Hemogenic</prerequisite>
+    <displayCategory>Hemogen</displayCategory>
+    <deathHistoryEvent>BloodfeederDied</deathHistoryEvent>
+    <abilities>
+      <li>Bloodfeed</li>
+    </abilities>
+    <descriptionHyperlinks>
+      <AbilityDef>Bloodfeed</AbilityDef>
+    </descriptionHyperlinks>
+    <biostatMet>-1</biostatMet>
+    <minAgeActive>3</minAgeActive>
+    <symbolPack>
+      <wholeNameSymbols>
+        <li><symbol>bloodfeeder</symbol></li>
+      </wholeNameSymbols>
+      <prefixSymbols>
+        <li><symbol>hemo</symbol></li>
+        <li><symbol>blood</symbol></li>
+        <li><symbol>vamp</symbol></li>
+        <li><symbol>fang</symbol></li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li><symbol>fang</symbol></li>
+        <li><symbol>eater</symbol></li>
+        <li><symbol>ubus</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+    <canGenerateInGeneSet>false</canGenerateInGeneSet>
+    <selectionWeight>0</selectionWeight>
+  </GeneDef>
+
+  <GeneDef ParentName="LibidoBase">
+    <defName>VU_Libido_Succubus</defName>
+    <label>very high libido</label>
+    <description>Carriers of this gene take almost every chance to engage in lovin'.</description>
+    <customEffectDescriptions>
+      <li>Greatly increases the chance of lovin'.</li>
+    </customEffectDescriptions>
+    <iconPath>GeneIcons/VU_VeryHighLibido</iconPath>
+    <displayOrderInCategory>9</displayOrderInCategory>
+    <lovinMTBFactor>0.20</lovinMTBFactor>
+    <abilities>
+			<li MayRequire="vanillaracesexpanded.highmate">VRE_InitiateLovin</li>
+		</abilities>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>VU_LethalLover</defName>
+    <label>parasitic bond</label>
+    <description>Carriers of this gene psychically bond with their lovers in a parasitic manner. Their lovers will get devastated should the carrier of this gene die.</description>
+    <iconPath>GeneIcons/VU_LethalLover</iconPath>
+    <displayCategory>Psychic</displayCategory>
+    <displayOrderInCategory>0</displayOrderInCategory>
+    <biostatCpx>2</biostatCpx>
+    <biostatMet>-2</biostatMet>
+    <hediffGiversCannotGive>
+      <li MayRequire="vanillaracesexpanded.highmate">VRE_PsychicBondBloodlust</li>
+    </hediffGiversCannotGive>
+    <exclusionTags>
+      <li>PsychicBonding</li>
+    </exclusionTags>
+    <forcedTraits>
+      <li>
+        <def>Bloodlust</def>
+      </li>
+    </forcedTraits>
+    <abilities>
+      <li>VU_CutBond</li>
+    </abilities>
+    <descriptionHyperlinks>
+      <AbilityDef>VU_CutBond</AbilityDef>
+    </descriptionHyperlinks>
+    <aggroMentalBreakSelectionChanceFactor>999</aggroMentalBreakSelectionChanceFactor>
+    <geneClass>BetterPrerequisites.PGene</geneClass>
+    <modExtensions>
+      <li Class="BetterPrerequisites.GenePrerequisites" MayRequire="RedMattis.BetterPrerequisites">
+        <prerequisiteSets>
+          <li>
+            <type>AnyOf</type>
+            <prerequisites>
+              <li>PsychicBonding</li>
+            </prerequisites>
+          </li>
+        </prerequisiteSets>
+      </li>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>VU_Disguised_Succubus</defName>
+    <label>disguised</label>
+    <displayCategory>BS_DO_NOT</displayCategory>
+    <description>Carriers of this gene hides their true nature...</description>
+    <iconPath>GeneIcons/BS_DisguisedDemon</iconPath>
+    <canGenerateInGeneSet>false</canGenerateInGeneSet>
+    <biostatMet>0</biostatMet>
+    <selectionWeight>0.0</selectionWeight>
+    <geneClass>BetterPrerequisites.PGene</geneClass>
+    <modExtensions>
+      <li Class="BetterPrerequisites.GeneSuppressor_Gene" MayRequire="RedMattis.BetterPrerequisites">
+        <supressedGenes>
+          <li>AG_BatWings</li>
+          <li>AG_DemonWings</li>
+          <li>AG_DemonTail</li>
+          <li>AG_DemonEars</li>
+          <li>Ears_Human</li>
+          <li>Ears_Pointed</li>
+          <li>BS_Ears_PointedHD</li>
+          <li>Jotun_Horns_Small</li>
+          <li>Jotun_Horns_Small_skin</li>
+          <li>AG_DemonHorns</li>
+          <li>AG_ClawedHands</li>
+          <li>BS_SmallDemonWings</li>
+          <li>BS_AncientDemonWings</li>
+          <li>BS_LargeDemonWings</li>
+          <li>BS_DemonTail</li>
+          <li>BS_Talons</li>
+          <li>BS_Arching_Horns</li>
+          <li>BS_Arching_Horns_skin</li>
+          <li>BS_ForwardArchingHorns_Skin</li>
+          <li>BS_ForwardArchingHorns</li>
+          <li>BS_TyrantCrown</li>
+
+          <!-- <li>Hair_MediumRed</li>
+          <li>Hair_BrightRed</li>
+          <li>BS_BloodHair</li>
+          <li>Skin_DeepRed</li>
+          <li>Skin_PaleRed</li>
+          <li>BS_SkinBloodRed</li> -->
+        </supressedGenes>
+      </li>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </GeneDef>
+  
+  <GeneDef>
+    <defName>VU_DemonTrueForm</defName>
+    <label>true form</label>
+    <prerequisite>Hemogenic</prerequisite>
+    <displayCategory>BS_DO_NOT</displayCategory>
+    <description>Carriers of this gene can transform into a larger more powerful form temporarily.</description>
+    <iconPath>GeneIcons/VU_DemonForm</iconPath>
+    <abilities>
+      <li>VU_DemonForm_Abillity</li>
+    </abilities>
+    <descriptionHyperlinks>
+      <AbilityDef>VU_DemonForm_Abillity</AbilityDef>
+    </descriptionHyperlinks>
+    <biostatMet>-5</biostatMet>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+    <canGenerateInGeneSet>false</canGenerateInGeneSet>
+    <selectionWeight>0</selectionWeight>
+  </GeneDef>
+</Defs>
