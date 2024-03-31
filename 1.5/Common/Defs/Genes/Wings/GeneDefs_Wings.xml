@@ -15,70 +15,12 @@
       <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
         <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
         <backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
       </li>
     </modExtensions>
     <selectionWeight>0.25</selectionWeight>
-    <renderNodeProperties Inherit="False">
-      <li>
-        <parentTagDef>Body</parentTagDef>
-        <drawSize>(1.5,1.5)</drawSize>
-        <drawData>
-          <defaultData>
-            <layer>10</layer>
-          </defaultData>
-          <dataNorth>
-            <layer>80</layer>
-            <offset>(0, 0, 0)</offset>
-          </dataNorth>
-          <dataSouth>
-            <offset>(0, 0, 0)</offset>
-          </dataSouth>
-          <dataEast>
-            <offset>(0, 0, 0)</offset>
-          </dataEast>
-        </drawData>
-      </li>
-    </renderNodeProperties>
   </GeneDef>
-  <GeneDef Name="BS_WingsOuter" Abstract="True">
-    <biostatCpx>0</biostatCpx>
-    <biostatMet>0</biostatMet>
-    <displayCategory>BS_DO_NOT</displayCategory>
-    <geneClass>BetterPrerequisites.PGene</geneClass>
-    <selectionWeight>0</selectionWeight>
-    <canGenerateInGeneSet>false</canGenerateInGeneSet>
-    <modExtensions>
-      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-        <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-        <backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <hideGene>true</hideGene>
-      </li>
-      <li Class="BetterPrerequisites.GeneExtension">
-        <hiddenAddon>true</hiddenAddon>
-      </li>
-    </modExtensions>
-    <renderNodeProperties Inherit="False">
-      <li>
-        <parentTagDef>Body</parentTagDef>
-        <drawSize>(1.5,1.5)</drawSize>
-        <drawData>
-          <defaultData>
-            <layer>10</layer>
-          </defaultData>
-          <dataNorth>
-            <layer>80</layer>
-            <offset>(0, 0, 0)</offset>
-          </dataNorth>
-          <dataSouth>
-            <offset>(0, 0, 0)</offset>
-          </dataSouth>
-          <dataEast>
-            <offset>(0, 0, 0)</offset>
-          </dataEast>
-        </drawData>
-      </li>
-    </renderNodeProperties>
-  </GeneDef>
+
   <GeneDef Name="BS_FunctionalWingBase" ParentName="BS_WingBase" Abstract="True">
     <geneClass>BetterPrerequisites.PGene</geneClass>
     <biostatCpx>1</biostatCpx>
@@ -126,18 +68,12 @@
           </defaultData>
           <dataNorth>
             <layer>80</layer>
-            <offset>(0, 0, 0)</offset>
           </dataNorth>
-          <dataSouth>
-            <offset>(0, 0, 0)</offset>
-          </dataSouth>
-          <dataEast>
-            <offset>(0, 0, 0)</offset>
-          </dataEast>
         </drawData>
       </li>
     </renderNodeProperties>
   </GeneDef>
+
   <GeneDef ParentName="BS_FunctionalWingBase">
     <defName>BS_LargeDemonWings</defName>
     <label>Large Demon Wings</label>
@@ -168,18 +104,12 @@
           </defaultData>
           <dataNorth>
             <layer>80</layer>
-            <offset>(0, 0, 0)</offset>
           </dataNorth>
-          <dataSouth>
-            <offset>(0, 0, 0)</offset>
-          </dataSouth>
-          <dataEast>
-            <offset>(0, 0, 0)</offset>
-          </dataEast>
         </drawData>
       </li>
     </renderNodeProperties>
   </GeneDef>
+
   <GeneDef ParentName="BS_FunctionalWingBase">
     <defName>BS_AncientDemonWings</defName>
     <label>Ancient Demon Wings</label>
@@ -210,18 +140,12 @@
           </defaultData>
           <dataNorth>
             <layer>80</layer>
-            <offset>(0, 0, 0)</offset>
           </dataNorth>
-          <dataSouth>
-            <offset>(0, 0, 0)</offset>
-          </dataSouth>
-          <dataEast>
-            <offset>(0, 0, 0)</offset>
-          </dataEast>
         </drawData>
       </li>
     </renderNodeProperties>
   </GeneDef>
+
   <AbilityDef Name="BS_flying_jump">
     <defName>BS_flying_jump</defName>
     <label>flying jump</label>

@@ -37,7 +37,7 @@
 
   <GeneDef ParentName="GeneEarsBase">
     <defName>BS_Ears_PointedHD</defName>
-    <label>pointed ears (HD)</label>
+    <label>improved pointed ears</label>
     <description>Carriers of this gene have pointed ears without alpha-blending artefacts.</description>
     <iconPath>UI/Icons/Genes/Gene_EarPointed</iconPath>
     <graphicData>

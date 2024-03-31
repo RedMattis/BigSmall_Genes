@@ -81,16 +81,16 @@
       <li>
         <parentTagDef>Body</parentTagDef>
         <bodyTypeGraphicPaths>
-          <Hulk>Humanlike/BodyAttachments/BS_Spoder/bp_hulk</Hulk>
+          <Hulk>Humanlike/BodyAttachments/BS_Spoder_New/bp_hulk</Hulk>
     
-          <Male>Humanlike/BodyAttachments/BS_Spoder/bp_male</Male>
-          <Female>Humanlike/BodyAttachments/BS_Spoder/bp_female</Female>
+          <Male>Humanlike/BodyAttachments/BS_Spoder_New/bp_male</Male>
+          <Female>Humanlike/BodyAttachments/BS_Spoder_New/bp_female</Female>
           
-          <Fat>Humanlike/BodyAttachments/BS_Spoder/bp_fat</Fat>
-          <Thin>Humanlike/BodyAttachments/BS_Spoder/bp_default</Thin>
+          <Fat>Humanlike/BodyAttachments/BS_Spoder_New/bp_fat</Fat>
+          <Thin>Humanlike/BodyAttachments/BS_Spoder_New/bp_default</Thin>
           
-          <Child>Humanlike/BodyAttachments/BS_Spoder/bp_child</Child>
-          <Baby>Humanlike/BodyAttachments/BS_Spoder/bp_child</Baby>
+          <Child>Humanlike/BodyAttachments/BS_Spoder_New/bp_default</Child>
+          <Baby>Humanlike/BodyAttachments/BS_Spoder_New/bp_default</Baby>
         </bodyTypeGraphicPaths>
         <drawSize>(1.625,1.625)</drawSize>
         <colorType>Skin</colorType>
@@ -109,16 +109,16 @@
       <li>
         <parentTagDef>Body</parentTagDef>
         <bodyTypeGraphicPaths>
-          <Hulk>Humanlike/BodyAttachments/BS_Spoder/Back/bp_hulk</Hulk>
+          <Hulk>Humanlike/BodyAttachments/BS_Spoder_New/Back/bp_hulk</Hulk>
     
-          <Male>Humanlike/BodyAttachments/BS_Spoder/Back/bp_male</Male>
-          <Female>Humanlike/BodyAttachments/BS_Spoder/Back/bp_female</Female>
+          <Male>Humanlike/BodyAttachments/BS_Spoder_New/Back/bp_male</Male>
+          <Female>Humanlike/BodyAttachments/BS_Spoder_New/Back/bp_female</Female>
           
-          <Fat>Humanlike/BodyAttachments/BS_Spoder/Back/bp_fat</Fat>
-          <Thin>Humanlike/BodyAttachments/BS_Spoder/Back/bp_default</Thin>
+          <Fat>Humanlike/BodyAttachments/BS_Spoder_New/Back/bp_fat</Fat>
+          <Thin>Humanlike/BodyAttachments/BS_Spoder_New/Back/bp_default</Thin>
           
-          <Child>Humanlike/BodyAttachments/BS_Spoder/Back/bp_child</Child>
-          <Baby>Humanlike/BodyAttachments/BS_Spoder/Back/bp_child</Baby>
+          <Child>Humanlike/BodyAttachments/BS_Spoder_New/Back/bp_default</Child>
+          <Baby>Humanlike/BodyAttachments/BS_Spoder_New/Back/bp_default</Baby>
         </bodyTypeGraphicPaths>
         <drawSize>(1.625,1.625)</drawSize>
         <colorType>Skin</colorType>
@@ -169,16 +169,16 @@
       <li>
         <parentTagDef>Body</parentTagDef>
         <bodyTypeGraphicPaths>
-          <Hulk>Humanlike/BodyAttachments/BS_Spoder/bp_hulk</Hulk>
+          <Hulk>Humanlike/BodyAttachments/BS_Spoder_New/bp_hulk</Hulk>
     
-          <Male>Humanlike/BodyAttachments/BS_Spoder/bp_male</Male>
-          <Female>Humanlike/BodyAttachments/BS_Spoder/bp_female</Female>
+          <Male>Humanlike/BodyAttachments/BS_Spoder_New/bp_male</Male>
+          <Female>Humanlike/BodyAttachments/BS_Spoder_New/bp_female</Female>
           
-          <Fat>Humanlike/BodyAttachments/BS_Spoder/bp_fat</Fat>
-          <Thin>Humanlike/BodyAttachments/BS_Spoder/bp_default</Thin>
+          <Fat>Humanlike/BodyAttachments/BS_Spoder_New/bp_fat</Fat>
+          <Thin>Humanlike/BodyAttachments/BS_Spoder_New/bp_default</Thin>
           
-          <Child>Humanlike/BodyAttachments/BS_Spoder/bp_child</Child>
-          <Baby>Humanlike/BodyAttachments/BS_Spoder/bp_child</Baby>
+          <Child>Humanlike/BodyAttachments/BS_Spoder_New/bp_default</Child>
+          <Baby>Humanlike/BodyAttachments/BS_Spoder_New/bp_default</Baby>
         </bodyTypeGraphicPaths>
         <drawSize>(1.625,1.625)</drawSize>
         <colorType>Hair</colorType>
@@ -197,16 +197,16 @@
       <li>
         <parentTagDef>Body</parentTagDef>
         <bodyTypeGraphicPaths>
-          <Hulk>Humanlike/BodyAttachments/BS_Spoder/Back/bp_hulk</Hulk>
+          <Hulk>Humanlike/BodyAttachments/BS_Spoder_New/Back/bp_hulk</Hulk>
     
-          <Male>Humanlike/BodyAttachments/BS_Spoder/Back/bp_male</Male>
-          <Female>Humanlike/BodyAttachments/BS_Spoder/Back/bp_female</Female>
+          <Male>Humanlike/BodyAttachments/BS_Spoder_New/Back/bp_male</Male>
+          <Female>Humanlike/BodyAttachments/BS_Spoder_New/Back/bp_female</Female>
           
-          <Fat>Humanlike/BodyAttachments/BS_Spoder/Back/bp_fat</Fat>
-          <Thin>Humanlike/BodyAttachments/BS_Spoder/Back/bp_default</Thin>
+          <Fat>Humanlike/BodyAttachments/BS_Spoder_New/Back/bp_fat</Fat>
+          <Thin>Humanlike/BodyAttachments/BS_Spoder_New/Back/bp_default</Thin>
           
-          <Child>Humanlike/BodyAttachments/BS_Spoder/Back/bp_child</Child>
-          <Baby>Humanlike/BodyAttachments/BS_Spoder/Back/bp_child</Baby>
+          <Child>Humanlike/BodyAttachments/BS_Spoder_New/Back/bp_default</Child>
+          <Baby>Humanlike/BodyAttachments/BS_Spoder_New/Back/bp_default</Baby>
         </bodyTypeGraphicPaths>
         <drawSize>(1.625,1.625)</drawSize>
         <colorType>Hair</colorType>

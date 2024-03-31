@@ -295,6 +295,7 @@
           </dataEast>
           <dataNorth>
             <layer>80</layer>
+            <offset>(0.0, 0, -0.05)</offset>
           </dataNorth>
         </drawData>
       </li>
@@ -313,6 +314,7 @@
           </dataEast>
           <dataNorth>
             <layer>81</layer>
+            <offset>(0.0, 0, -0.05)</offset>
           </dataNorth>
         </drawData>
       </li>
@@ -353,6 +355,7 @@
           </dataEast>
           <dataNorth>
             <layer>80</layer>
+            <offset>(0.0, 0, -0.05)</offset>
           </dataNorth>
         </drawData>
       </li>
@@ -371,6 +374,7 @@
           </dataEast>
           <dataNorth>
             <layer>81</layer>
+            <offset>(0.0, 0, -0.05)</offset>
           </dataNorth>
         </drawData>
       </li>
@@ -411,6 +415,7 @@
           </dataEast>
           <dataNorth>
             <layer>80</layer>
+            <offset>(0.0, 0, -0.05)</offset>
           </dataNorth>
         </drawData>
       </li>
@@ -429,6 +434,7 @@
           </dataEast>
           <dataNorth>
             <layer>81</layer>
+            <offset>(0.0, 0, -0.05)</offset>
           </dataNorth>
         </drawData>
       </li>
@@ -469,6 +475,7 @@
           </dataEast>
           <dataNorth>
             <layer>80</layer>
+            <offset>(0.0, 0, -0.15)</offset>
           </dataNorth>
         </drawData>
       </li>
@@ -487,6 +494,7 @@
           </dataEast>
           <dataNorth>
             <layer>81</layer>
+            <offset>(0.0, 0, -0.15)</offset>
           </dataNorth>
         </drawData>
       </li>

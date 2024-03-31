@@ -147,6 +147,9 @@
     </graphicData>
     <soundInteract>Interact_BeatFire</soundInteract>
     <relicChance>0</relicChance>
+    <thingCategories>
+      <li>WeaponsRanged</li>
+    </thingCategories>
     <statBases>
       <MarketValue>50</MarketValue>
       <Mass>20</Mass>

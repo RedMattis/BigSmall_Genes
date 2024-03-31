@@ -72,16 +72,16 @@
       <li>
         <parentTagDef>Body</parentTagDef>
         <bodyTypeGraphicPaths>
-          <Hulk>Pawn/BodyAttachments/LoS_SnakeTail/bp_hulk</Hulk>
+          <Hulk>Humanlike/BodyAttachments/BS_Snek_New/bp_hulk</Hulk>
     
-          <Male>Pawn/BodyAttachments/LoS_SnakeTail/bp_male</Male>
-          <Female>Pawn/BodyAttachments/LoS_SnakeTail/bp_female</Female>
+          <Male>Humanlike/BodyAttachments/BS_Snek_New/bp_male</Male>
+          <Female>Humanlike/BodyAttachments/BS_Snek_New/bp_female</Female>
           
-          <Fat>Pawn/BodyAttachments/LoS_SnakeTail/bp_fat</Fat>
-          <Thin>Pawn/BodyAttachments/LoS_SnakeTail/bp_default</Thin>
+          <Fat>Humanlike/BodyAttachments/BS_Snek_New/bp_fat</Fat>
+          <Thin>Humanlike/BodyAttachments/BS_Snek_New/bp_default</Thin>
           
-          <Child>Pawn/BodyAttachments/LoS_SnakeTail/bp_child</Child>
-          <Baby>Pawn/BodyAttachments/LoS_SnakeTail/bp_child</Baby>
+          <Child>Humanlike/BodyAttachments/BS_Snek_New/bp_child</Child>
+          <Baby>Humanlike/BodyAttachments/BS_Snek_New/bp_child</Baby>
         </bodyTypeGraphicPaths>
         <drawSize>(1.625,1.625)</drawSize>
         <colorType>Skin</colorType>
@@ -106,16 +106,16 @@
       <li>
         <parentTagDef>Body</parentTagDef>
         <bodyTypeGraphicPaths>
-          <Hulk>Pawn/BodyAttachments/LoS_SnakeTail/bp_hulk</Hulk>
+          <Hulk>Humanlike/BodyAttachments/BS_Snek_New/bp_hulk</Hulk>
     
-          <Male>Pawn/BodyAttachments/LoS_SnakeTail/bp_male</Male>
-          <Female>Pawn/BodyAttachments/LoS_SnakeTail/bp_female</Female>
+          <Male>Humanlike/BodyAttachments/BS_Snek_New/bp_male</Male>
+          <Female>Humanlike/BodyAttachments/BS_Snek_New/bp_female</Female>
           
-          <Fat>Pawn/BodyAttachments/LoS_SnakeTail/bp_fat</Fat>
-          <Thin>Pawn/BodyAttachments/LoS_SnakeTail/bp_default</Thin>
+          <Fat>Humanlike/BodyAttachments/BS_Snek_New/bp_fat</Fat>
+          <Thin>Humanlike/BodyAttachments/BS_Snek_New/bp_default</Thin>
           
-          <Child>Pawn/BodyAttachments/LoS_SnakeTail/bp_child</Child>
-          <Baby>Pawn/BodyAttachments/LoS_SnakeTail/bp_child</Baby>
+          <Child>Humanlike/BodyAttachments/BS_Snek_New/bp_child</Child>
+          <Baby>Humanlike/BodyAttachments/BS_Snek_New/bp_child</Baby>
         </bodyTypeGraphicPaths>
         <drawSize>(1.625,1.625)</drawSize>
         <colorType>Hair</colorType>
@@ -189,16 +189,16 @@
       <li>
         <parentTagDef>Body</parentTagDef>
         <bodyTypeGraphicPaths>
-          <Hulk>Pawn/BodyAttachments/LoS_SnakeTail/bp_hulk</Hulk>
+          <Hulk>Humanlike/BodyAttachments/BS_Snek_New/bp_hulk</Hulk>
     
-          <Male>Pawn/BodyAttachments/LoS_SnakeTail/bp_male</Male>
-          <Female>Pawn/BodyAttachments/LoS_SnakeTail/bp_female</Female>
+          <Male>Humanlike/BodyAttachments/BS_Snek_New/bp_male</Male>
+          <Female>Humanlike/BodyAttachments/BS_Snek_New/bp_female</Female>
           
-          <Fat>Pawn/BodyAttachments/LoS_SnakeTail/bp_fat</Fat>
-          <Thin>Pawn/BodyAttachments/LoS_SnakeTail/bp_default</Thin>
+          <Fat>Humanlike/BodyAttachments/BS_Snek_New/bp_fat</Fat>
+          <Thin>Humanlike/BodyAttachments/BS_Snek_New/bp_default</Thin>
           
-          <Child>Pawn/BodyAttachments/LoS_SnakeTail/bp_child</Child>
-          <Baby>Pawn/BodyAttachments/LoS_SnakeTail/bp_child</Baby>
+          <Child>Humanlike/BodyAttachments/BS_Snek_New/bp_child</Child>
+          <Baby>Humanlike/BodyAttachments/BS_Snek_New/bp_child</Baby>
         </bodyTypeGraphicPaths>
         <drawSize>(1.625,1.625)</drawSize>
         <colorType>Skin</colorType>

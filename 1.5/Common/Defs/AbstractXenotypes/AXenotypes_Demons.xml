@@ -7,6 +7,8 @@
     <inheritable>true</inheritable>
     <combatPowerFactor>2</combatPowerFactor>
     <iconPath>Xenotypes/VU_Succubus</iconPath>
+		<nameMaker>BS_Demon_Namer</nameMaker>
+		<chanceToUseNameMaker>1.0</chanceToUseNameMaker>
     <genes>
       <li>VU_SuccubusBloodFeeder</li>
       <li>VU_Disguised_Succubus</li>
@@ -91,7 +93,9 @@
     <description>These large creatures are the backbone of the hells' armies and their industry</description>
     <inheritable>true</inheritable>
     <combatPowerFactor>2</combatPowerFactor>
-    <iconPath>GeneIcons/BS_Bloodlust</iconPath>
+    <iconPath>Xenotypes/BS_Hellguard</iconPath>
+		<nameMaker>BS_Demon_Namer</nameMaker>
+		<chanceToUseNameMaker>1.0</chanceToUseNameMaker>
     <genes>
       <li>BS_Bloodlust</li>
       <li>Ageless</li>
@@ -163,7 +167,9 @@
     <description>These lumbering creatures are often found guarding important sites.</description>
     <inheritable>true</inheritable>
     <combatPowerFactor>2</combatPowerFactor>
-    <iconPath>GeneIcons/BS_Bloodlust</iconPath>
+    <iconPath>Xenotypes/BS_Hellguard</iconPath>
+		<nameMaker>BS_Demon_Namer</nameMaker>
+		<chanceToUseNameMaker>1.0</chanceToUseNameMaker>
     <genes>
       <li>BS_Bloodlust</li>
       <li>Ageless</li>
@@ -239,6 +245,8 @@
     <inheritable>true</inheritable>
     <combatPowerFactor>1</combatPowerFactor>
     <iconPath>UI/Icons/Xenotypes/Custom/CustomXenotypeIcon7</iconPath>
+		<nameMaker>BS_Demon_Namer</nameMaker>
+		<chanceToUseNameMaker>1.0</chanceToUseNameMaker>
     <genes>
       <li>Ageless</li>
       <li>RobustDigestion</li>

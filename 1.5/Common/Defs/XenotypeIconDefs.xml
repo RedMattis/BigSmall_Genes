@@ -1,53 +1,190 @@
 <Defs>
   <XenotypeIconDef>
+    <defName>BS_Dvergr_Icon</defName>
+    <texPath>Xenotypes/BS_Dvergr</texPath>
+  </XenotypeIconDef>
+  
+  <XenotypeIconDef>
+    <defName>BS_Dvergr_Old_Icon</defName> 
+    <texPath>Xenotypes/BS_Dvergr_2</texPath>
+  </XenotypeIconDef>
+  
+  <XenotypeIconDef>
+    <defName>BS_Svartalf_Icon</defName>
+    <texPath>Xenotypes/BS_Svartalf</texPath>
+  </XenotypeIconDef>
+
+  <XenotypeIconDef>
+    <defName>BS_SvartAlf2</defName>
+    <texPath>Xenotypes/BS_Svartalf_2</texPath>
+  </XenotypeIconDef>
+
+  <XenotypeIconDef>
+    <defName>BS_HalfJotun</defName>
+    <texPath>Xenotypes/BS_HalfJotun</texPath>
+  </XenotypeIconDef>
+
+  <XenotypeIconDef>
+    <defName>BS_JotunNoHorn</defName>
+    <texPath>Xenotypes/BS_JotunNoHorns</texPath>
+  </XenotypeIconDef>
+
+  <XenotypeIconDef>
+    <defName>BS_FireJotun</defName>
+    <texPath>Xenotypes/BS_FireJotun</texPath>
+  </XenotypeIconDef>
+
+  <XenotypeIconDef>
+    <defName>BS_Jotun</defName>
+    <texPath>Xenotypes/BS_Jotun</texPath>
+  </XenotypeIconDef>
+
+  <XenotypeIconDef>
+    <defName>BS_FrostJotun</defName>
+    <texPath>Xenotypes/BS_FrostJotun</texPath>
+  </XenotypeIconDef>
+
+  <XenotypeIconDef>
+    <defName>BS_Surtr</defName>
+    <texPath>Xenotypes/BS_Surtr</texPath>
+  </XenotypeIconDef>
+
+  <XenotypeIconDef>
+    <defName>BS_Ymir</defName>
+    <texPath>Xenotypes/BS_Ymir</texPath>
+  </XenotypeIconDef>
+
+  <XenotypeIconDef>
+    <defName>BS_YmirHappy</defName>
+    <texPath>Xenotypes/BS_YmirHappy</texPath>
+  </XenotypeIconDef>
+
+  <XenotypeIconDef>
+    <defName>BS_DeterioratingTitan</defName>
+    <texPath>Xenotypes/BS_DeterioratingTitan</texPath>
+  </XenotypeIconDef>
+
+  <XenotypeIconDef>
+    <defName>BS_GreatJotun_Icon</defName>
+    <texPath>Xenotypes/BS_GreatJotun</texPath>
+  </XenotypeIconDef>
+  
+  <XenotypeIconDef>
+    <defName>BS_Nisse_Icon</defName>
+    <texPath>Xenotypes/BS_Nisse</texPath>
+  </XenotypeIconDef>
+  <XenotypeIconDef>
+    <defName>BS_Nisse_old</defName>
+    <texPath>Xenotypes/BS_Nisse_old</texPath>
+  </XenotypeIconDef>
+  
+  <XenotypeIconDef>
+    <defName>BS_Ogre_Icon</defName>
+    <texPath>Xenotypes/BS_Ogre</texPath>
+  </XenotypeIconDef>
+
+  <XenotypeIconDef>
+    <defName>BS_GreatOgre</defName>
+    <texPath>Xenotypes/BS_GreatOgre</texPath>
+  </XenotypeIconDef>
+  
+  <XenotypeIconDef>
+    <defName>BS_Redcap_Icon</defName>
+    <texPath>Xenotypes/BS_Redcap</texPath>
+  </XenotypeIconDef>
+
+  <XenotypeIconDef>
+    <defName>BS_Redcap_2</defName>
+    <texPath>Xenotypes/BS_Redcap_2</texPath>
+  </XenotypeIconDef>
+
+  <XenotypeIconDef>
+    <defName>BS_Gorgon</defName>
+    <texPath>Xenotypes/LoS_SnakeHair</texPath>
+  </XenotypeIconDef>
+
+  <XenotypeIconDef>
+    <defName>BS_Oni</defName>
+    <texPath>Xenotypes/BS_Oni</texPath>
+  </XenotypeIconDef>
+
+  <XenotypeIconDef>
+    <defName>BS_OniOneHorn</defName>
+    <texPath>Xenotypes/BS_OniOneHorn</texPath>
+  </XenotypeIconDef>
+
+  <XenotypeIconDef>
+    <defName>BS_Kitsune</defName>
+    <texPath>Xenotypes/BS_Kitsune</texPath>
+  </XenotypeIconDef>
+
+  <XenotypeIconDef>
+    <defName>BS_Neko1</defName>
+    <texPath>Xenotypes/BS_Neko</texPath>
+  </XenotypeIconDef>
+
+  <XenotypeIconDef>
+    <defName>BS_Neko2</defName>
+    <texPath>Xenotypes/BS_NekoTrick</texPath>
+  </XenotypeIconDef>
+
+  <XenotypeIconDef>
+    <defName>BS_Spider</defName>
+    <texPath>Xenotypes/BS_Spider</texPath>
+  </XenotypeIconDef>
+
+  <XenotypeIconDef>
     <defName>BS_Lycantrope</defName>
     <texPath>GeneIcons/BS_werewolfsnoot</texPath>
   </XenotypeIconDef>
 
-  <Defs>
-    <XenotypeIconDef>
-      <defName>BS_Authority</defName>
-      <texPath>Xenotypes/BS_Authority</texPath>
-    </XenotypeIconDef>
-  </Defs>
+  <XenotypeIconDef>
+    <defName>BS_Authority</defName>
+    <texPath>Xenotypes/BS_Authority</texPath>
+  </XenotypeIconDef>
 
-  <Defs>
-    <XenotypeIconDef>
-      <defName>BS_Malakim</defName>
-      <texPath>Xenotypes/BS_Malakim</texPath>
-    </XenotypeIconDef>
-  </Defs>
+  <XenotypeIconDef>
+    <defName>BS_Malakim</defName>
+    <texPath>Xenotypes/BS_Malakim</texPath>
+  </XenotypeIconDef>
 
-  <Defs>
-    <XenotypeIconDef>
-      <defName>BS_Lilim</defName>
-      <texPath>Xenotypes/BS_Lilim</texPath>
-    </XenotypeIconDef>
-  </Defs>
+  <XenotypeIconDef>
+    <defName>BS_Lilim</defName>
+    <texPath>Xenotypes/BS_Lilim</texPath>
+  </XenotypeIconDef>
 
-  <Defs>
-    <XenotypeIconDef>
-      <defName>BS_Satan</defName>
-      <texPath>Xenotypes/BS_Satan</texPath>
-    </XenotypeIconDef>
-  </Defs>
+  <XenotypeIconDef>
+    <defName>BS_Satan</defName>
+    <texPath>Xenotypes/BS_Satan</texPath>
+  </XenotypeIconDef>
 
-  <Defs>
-    <XenotypeIconDef>
-      <defName>BS_Grigori</defName>
-      <texPath>Xenotypes/BS_Grigori</texPath>
-    </XenotypeIconDef>
-  </Defs>
-
-  <Defs>
-    <XenotypeIconDef>
-      <defName>BS_Spider</defName>
-      <texPath>Xenotypes/BS_Spider</texPath>
-    </XenotypeIconDef>
-  </Defs>
+  <XenotypeIconDef>
+    <defName>BS_Grigori</defName>
+    <texPath>Xenotypes/BS_Grigori</texPath>
+  </XenotypeIconDef>
 
   <XenotypeIconDef>
     <defName>VU_SuccubusIcon</defName>
     <texPath>Xenotypes/VU_Succubus</texPath>
+  </XenotypeIconDef>
+
+  <XenotypeIconDef>
+    <defName>VU_SuccubusIcon2</defName>
+    <texPath>Xenotypes/BS_Succubus</texPath>
+  </XenotypeIconDef>
+
+  <XenotypeIconDef>
+    <defName>BS_Mimic</defName>
+    <texPath>Xenotypes/BS_Mimic</texPath>
+  </XenotypeIconDef>
+
+  <XenotypeIconDef>
+    <defName>BS_Hellguard</defName>
+    <texPath>Xenotypes/BS_Hellguard</texPath>
+  </XenotypeIconDef>
+
+  <XenotypeIconDef>
+    <defName>LoS_SnakeHair</defName>
+    <texPath>Xenotypes/LoS_SnakeHair</texPath>
   </XenotypeIconDef>
 </Defs>

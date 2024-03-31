@@ -27,6 +27,9 @@
     <displayOrderInCategory>430</displayOrderInCategory>
     <iconPath>GeneIcons/BS_UrbCyborgBody</iconPath>
     <bodyType>Hulk</bodyType>
+    <fur>BS_BrokenTitanBody</fur>
+    <tattoosVisible>false</tattoosVisible>
+    <skinIsHairColor>false</skinIsHairColor>
     <modExtensions>
       <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
         <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
@@ -37,6 +40,14 @@
     <renderNodeProperties Inherit="False">
       <li>
         <parentTagDef>Body</parentTagDef>
+        <useSkinShader>true</useSkinShader>
+        <debugLabel>Fur</debugLabel>
+        <nodeClass>PawnRenderNode_Body</nodeClass>
+        <workerClass>PawnRenderNodeWorker_Fur</workerClass>
+        <baseLayer>5</baseLayer>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <colorType>Skin</colorType>
+        <!-- <colorType>Skin</colorType> -->
       </li>
     </renderNodeProperties>
   </GeneDef>
@@ -53,6 +64,9 @@
     <displayOrderInCategory>430</displayOrderInCategory>
     <iconPath>GeneIcons/BS_OgreBody</iconPath>
     <bodyType>Fat</bodyType>
+    <fur>BS_OgreBody</fur>
+    <tattoosVisible>false</tattoosVisible>
+    <skinIsHairColor>false</skinIsHairColor>
     <modExtensions>
       <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
         <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
@@ -63,6 +77,14 @@
     <renderNodeProperties Inherit="False">
       <li>
         <parentTagDef>Body</parentTagDef>
+        <useSkinShader>true</useSkinShader>
+        <debugLabel>Fur</debugLabel>
+        <nodeClass>PawnRenderNode_Body</nodeClass>
+        <workerClass>PawnRenderNodeWorker_Fur</workerClass>
+        <baseLayer>5</baseLayer>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <colorType>Skin</colorType>
+        <!-- <colorType>Skin</colorType> -->
       </li>
     </renderNodeProperties>
   </GeneDef>
@@ -76,6 +98,9 @@
     <selectionWeight>0</selectionWeight>
     <displayOrderInCategory>430</displayOrderInCategory>
     <iconPath>Humanlike/Bodies/BS_Mimic/bp_hulk_south</iconPath>
+    <fur>BS_MimicBody</fur>
+    <tattoosVisible>false</tattoosVisible>
+    <skinIsHairColor>false</skinIsHairColor>
     <statOffsets>
       <SM_Food_Need_Capacity>2</SM_Food_Need_Capacity>
     </statOffsets>
@@ -93,6 +118,14 @@
     <renderNodeProperties Inherit="False">
       <li>
         <parentTagDef>Body</parentTagDef>
+        <useSkinShader>true</useSkinShader>
+        <debugLabel>Fur</debugLabel>
+        <nodeClass>PawnRenderNode_Body</nodeClass>
+        <workerClass>PawnRenderNodeWorker_Fur</workerClass>
+        <baseLayer>5</baseLayer>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <colorType>Skin</colorType>
+        <!-- <colorType>Skin</colorType> -->
       </li>
     </renderNodeProperties>
   </GeneDef>

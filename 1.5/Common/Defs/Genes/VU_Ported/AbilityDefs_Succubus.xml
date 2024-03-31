@@ -1,6 +1,6 @@
 <Defs>
 
-<AbilityDef>
+  <AbilityDef>
     <defName>VU_DemonForm_Abillity</defName>
     <label>true form</label>
     <description>Temporarily transform into a more powerful form.</description>
@@ -10,20 +10,21 @@
     <targetRequired>False</targetRequired>
     <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
     <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
     <verbProperties>
       <verbClass>Verb_CastAbility</verbClass>
       <label>Transform</label>
       <violent>false</violent>
       <warmupTime>5</warmupTime>
-      <range>0</range>
+      <range>20</range>
       <requireLineOfSight>False</requireLineOfSight>
+      <nonInterruptingSelfCast>true</nonInterruptingSelfCast>
       <targetParams>
         <canTargetSelf>True</canTargetSelf>
       </targetParams>
     </verbProperties>
     <statBases>
       <Ability_Duration>125</Ability_Duration>
-      <Ability_EffectRadius>0</Ability_EffectRadius>
     </statBases>
     <comps>
       <li Class="CompProperties_AbilityGiveHediff">
@@ -37,13 +38,11 @@
       </li>
       <!-- <li Class="BigAndSmall.CombatBuff"></li> -->
     </comps>
+    <groupAbility>true</groupAbility>
     <aiCanUse>true</aiCanUse>
-    <!--<jobDef>JobGiver_TakeCombatEnhancingDrug</jobDef> -->
-    <modExtensions>
-      <li Class="BigAndSmall.CombatBuff"/>
-    </modExtensions>
+    <ai_IsOffensive>true</ai_IsOffensive>
   </AbilityDef>
-    
+
   <HediffDef>
     <defName>VU_DemonForm_Hediff</defName>
     <label>true form</label>
@@ -98,7 +97,7 @@
       </targetParams>
     </verbProperties>
     <comps>
-      <li Class="BigAndSmall.CompProperties_CutBond"/>
+      <li Class="BigAndSmall.CompProperties_CutBond" />
     </comps>
     <aiCanUse>false</aiCanUse>
   </AbilityDef>

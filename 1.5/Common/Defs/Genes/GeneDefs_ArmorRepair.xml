@@ -14,9 +14,10 @@
     </exclusionTags>
     <modExtensions>
       <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-        <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-        <backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-      </li>
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
+			</li>
     </modExtensions>
   </GeneDef>
 
@@ -35,9 +36,10 @@
     </exclusionTags>
     <modExtensions>
       <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-        <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-        <backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-      </li>
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
+			</li>
     </modExtensions>
   </GeneDef>
 </Defs>

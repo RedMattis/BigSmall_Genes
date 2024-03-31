@@ -816,7 +816,7 @@
         </li>
         <li>
           <def>BS_SnakeBody</def>
-          <coverage>0.5</coverage>
+          <coverage>0.4</coverage>
           <height>Bottom</height>
           <groups>
             <li>Legs</li>

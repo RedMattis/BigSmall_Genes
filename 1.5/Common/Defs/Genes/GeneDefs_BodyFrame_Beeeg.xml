@@ -13,9 +13,9 @@
     <endogeneCategory>BodyType</endogeneCategory>
     <customEffectDescriptions>
       <li>- Body Size General - -</li>
+      <li>Alters Body Size attribute and associated traits</li>
       <li>Dramatic effect on max nutrition.</li>
       <li>Very large effect on nutrition use.</li>
-      <li>Alters Body Size attribute and associated traits</li>
       <li>Dramatically modifies health.</li>
       <li>Alters damage, a bit less than the linear increase.</li>
       <li>Large effect on Melee Dodge chance benefitting small characters.</li>
@@ -25,6 +25,7 @@
 			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
 				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
 				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
 			</li>
 		</modExtensions>
   </GeneDef>

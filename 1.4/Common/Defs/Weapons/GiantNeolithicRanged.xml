@@ -195,6 +195,9 @@
     <altitudeLayer>Projectile</altitudeLayer>
     <useHitPoints>False</useHitPoints>
     <neverMultiSelect>True</neverMultiSelect>
+    <thingCategories>
+      <li>WeaponsRanged</li>
+    </thingCategories>
     <graphicData>
       <texPath>Item/BS_ThrowableChunk_projectile</texPath>
       <graphicClass>Graphic_Single</graphicClass>
