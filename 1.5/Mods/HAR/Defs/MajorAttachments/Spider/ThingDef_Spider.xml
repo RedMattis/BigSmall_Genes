@@ -1,5 +1,5 @@
 <Defs>
-  <ThingDef Class="AlienRace.ThingDef_AlienRace" ParentName="HumanRace">
+  <AlienRace.ThingDef_AlienRace ParentName="Human">
     <defName>BS_SpiderPersonRace</defName>
     <label>spider-person</label>
     <description>A humanlike being with a spider-like abdomen.</description>
@@ -39,5 +39,5 @@
         <humanRecipeImport>true</humanRecipeImport>
       </generalSettings>
     </alienRace>
-  </ThingDef>
+  </AlienRace.ThingDef_AlienRace>
 </Defs>

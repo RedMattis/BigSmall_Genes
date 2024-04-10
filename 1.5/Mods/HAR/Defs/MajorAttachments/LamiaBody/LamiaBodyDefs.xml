@@ -43,15 +43,6 @@
             <li>Torso</li>
           </groups>
         </li>
-        <!-- <li>
-          <def>Pelvis</def>
-          <coverage>0.025</coverage>
-          <height>Bottom</height>
-          <depth>Inside</depth>
-          <groups>
-            <li>Torso</li>
-          </groups>
-        </li> -->
         <li>
           <def>Spine</def>
           <coverage>0.025</coverage>

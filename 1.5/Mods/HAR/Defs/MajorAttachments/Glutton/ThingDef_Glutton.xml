@@ -1,5 +1,5 @@
 <Defs>
-  <ThingDef Class="AlienRace.ThingDef_AlienRace" ParentName="HumanRace">
+  <ThingDef Class="AlienRace.ThingDef_AlienRace" ParentName="Human">
     <defName>BS_GluttonRace</defName>
     <label>glutton</label>
     <description>At a distance they could be mistaken for being human...</description>

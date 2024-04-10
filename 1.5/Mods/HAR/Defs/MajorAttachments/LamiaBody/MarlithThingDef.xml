@@ -1,6 +1,6 @@
 <Defs>
 
-  <ThingDef Class="AlienRace.ThingDef_AlienRace" ParentName="HumanRace">
+  <AlienRace.ThingDef_AlienRace ParentName="Human">
     <defName>BS_Marlith</defName>
     <label>six-armed snake-person</label>
     <description>A humanlike being with a six arms and a snake tail instead of legs.</description>
@@ -40,5 +40,5 @@
         <humanRecipeImport>true</humanRecipeImport>
       </generalSettings>
     </alienRace>
-  </ThingDef>
+  </AlienRace.ThingDef_AlienRace>>
 </Defs>
