@@ -180,30 +180,7 @@
 		</modExtensions>
   </GeneDef>
 
-  <GeneDef ParentName="GeneHealingRateBase">
-    <defName>WoundHealing_VerySlow</defName>
-    <label>Very slow wound healing</label>
-    <labelShortAdj>slow-heal</labelShortAdj>
-    <description>Carriers of this gene heal from wounds at a third of the normal speed.</description>
-    <iconPath>GeneIcons/VU_SlowerHealing</iconPath>
-    <displayOrderInCategory>29</displayOrderInCategory>
-    <statFactors>
-      <InjuryHealingFactor>0.35</InjuryHealingFactor>
-    </statFactors>
-    <biostatMet>5</biostatMet>
-    <symbolPack>
-      <prefixSymbols>
-        <li><symbol>unhealing</symbol></li>
-      </prefixSymbols>
-    </symbolPack>
-    <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
-		</modExtensions>
-  </GeneDef>
+  
 
   <GeneDef>
     <defName>VU_Pallor</defName>

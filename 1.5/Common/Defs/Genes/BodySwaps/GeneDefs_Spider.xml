@@ -43,7 +43,7 @@
     <displayOrderInCategory>777</displayOrderInCategory>
     <biostatCpx>1</biostatCpx>
     <biostatMet>-2</biostatMet>
-    <selectionWeight>0</selectionWeight>
+    <selectionWeight>1</selectionWeight>
     <statFactors>
       <SM_Food_Need_Capacity>2.0</SM_Food_Need_Capacity>
     </statFactors>
@@ -56,6 +56,7 @@
     <geneClass>BigAndSmall.ProductionGene</geneClass>
     <modExtensions>
       <li Class="BetterPrerequisites.GeneExtension">
+        <renderCacheOff>true</renderCacheOff>
         <applyBodyHediff MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
           <li>
             <hediff MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">BS_Stride</hediff>
@@ -96,17 +97,25 @@
         <colorType>Skin</colorType>
         <drawData>
           <dataNorth>
-            <offset>(0, 0.0150617733, -0.3067)</offset>
+            <offset>(0, -0.0001, -0.3067)</offset>
+            <layer>79</layer>
           </dataNorth>
           <dataSouth>
-            <offset>(0, 0.0150617733, -0.3067)</offset>
+            <offset>(0, -0.0001, -0.3067)</offset>
+            <layer>20</layer>
           </dataSouth>
           <dataEast>
-            <offset>(-0.3567, 0.0150617733, -0.3067)</offset>
+            <offset>(-0.3067, -0.0001, -0.3067)</offset>
+            <layer>20</layer>
           </dataEast>
+          <dataWest>
+            <offset>(0.3067, -0.0001, -0.3067)</offset>
+            <layer>20</layer>
+          </dataWest>
         </drawData>
       </li>
       <li>
+        <workerClass>BigAndSmall.PawnRenderNodeWorker_BodyTypeOffsets</workerClass>
         <parentTagDef>Body</parentTagDef>
         <bodyTypeGraphicPaths>
           <Hulk>Humanlike/BodyAttachments/BS_Spoder_New/Back/bp_hulk</Hulk>
@@ -124,7 +133,8 @@
         <colorType>Skin</colorType>
         <drawData>
           <dataNorth>
-            <offset>(0, 0.0150617733, -0.3067)</offset>
+            <offset>(0, 0.0001, -0.3067)</offset>
+            <layer>79</layer>
           </dataNorth>
           <dataSouth>
             <offset>(0, -0.05, -0.3067)</offset>
@@ -144,6 +154,7 @@
     <geneClass>BigAndSmall.ProductionGene</geneClass>
     <modExtensions>
       <li Class="BetterPrerequisites.GeneExtension">
+        <renderCacheOff>true</renderCacheOff>
         <applyBodyHediff MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
           <li>
             <hediff MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">BS_Stride</hediff>
@@ -167,6 +178,7 @@
     </modExtensions>
     <renderNodeProperties Inherit="False">
       <li>
+        <workerClass>BigAndSmall.PawnRenderNodeWorker_BodyTypeOffsets</workerClass>
         <parentTagDef>Body</parentTagDef>
         <bodyTypeGraphicPaths>
           <Hulk>Humanlike/BodyAttachments/BS_Spoder_New/bp_hulk</Hulk>
@@ -184,14 +196,21 @@
         <colorType>Hair</colorType>
         <drawData>
           <dataNorth>
-            <offset>(0, 0.0150617733, -0.3067)</offset>
+            <offset>(0, -0.0001, -0.3067)</offset>
+            <layer>79</layer>
           </dataNorth>
           <dataSouth>
-            <offset>(0, 0.0150617733, -0.3067)</offset>
+            <offset>(0, -0.0001, -0.3067)</offset>
+            <layer>20</layer>
           </dataSouth>
           <dataEast>
-            <offset>(-0.3567, 0.0150617733, -0.3067)</offset>
+            <offset>(-0.3067, -0.0001, -0.3067)</offset>
+            <layer>20</layer>
           </dataEast>
+          <dataWest>
+            <offset>(0.3067, -0.0001, -0.3067)</offset>
+            <layer>20</layer>
+          </dataWest>
         </drawData>
       </li>
       <li>
@@ -212,7 +231,8 @@
         <colorType>Hair</colorType>
         <drawData>
           <dataNorth>
-            <offset>(0, 0.0150617733, -0.3067)</offset>
+            <offset>(0, 0.0001, -0.3067)</offset>
+            <layer>79</layer>
           </dataNorth>
           <dataSouth>
             <offset>(0, -0.05, -0.3067)</offset>

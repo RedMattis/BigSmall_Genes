@@ -161,6 +161,8 @@
           <li>BS_Xenolocked</li>
           <li>BS_Incorporate</li>
           <li>BS_IntegrateGenes</li>
+          <li>BS_DisintegrateXenoGenes</li>
+          <li>BS_GeneEater</li>
         </genesToRetain>
       </li>
     </comps>
@@ -184,7 +186,7 @@
     <descriptionHyperlinks Inherit="False">
       <AbilityDef>BS_IntegrateGenes</AbilityDef>
     </descriptionHyperlinks>
-    <selectionWeight>2.0</selectionWeight>
+    <selectionWeight>0.5</selectionWeight>
     <modExtensions>
 			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
 				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
@@ -221,4 +223,88 @@
     </comps>
     <aiCanUse>false</aiCanUse>
   </AbilityDef>
+
+  <GeneDef>
+    <defName>BS_DisintegrateXenoGenes</defName>
+    <label>gene disintegrator</label>
+    <description>Carriers of this gene possess the ability to purge themselves of their xenogenes at will at a moment's notice. There are a rare few types of xenogenes which cannot be purged by this method.</description>
+    <displayCategory>Archite</displayCategory>
+    <iconPath>GeneIcons/BS_DisIntegrateXenoGenes</iconPath>
+    <canGenerateInGeneSet>true</canGenerateInGeneSet>
+    <biostatMet>0</biostatMet>
+    <minAgeActive>3</minAgeActive>
+    <biostatArc>1</biostatArc>
+    <biostatCpx>1</biostatCpx>
+    <abilities Inherit="False">
+      <li>BS_DisintegrateXenoGenes</li>
+    </abilities>
+    <descriptionHyperlinks Inherit="False">
+      <AbilityDef>BS_DisintegrateXenoGenes</AbilityDef>
+    </descriptionHyperlinks>
+    <selectionWeight>0.25</selectionWeight>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+  <AbilityDef>
+    <defName>BS_DisintegrateXenoGenes</defName>
+    <label>disintegrate genes</label>
+    <description>Remove all xenogenes, with the exception of a rare few that cannot be removed by this method.</description>
+    <iconPath>GeneIcons/BS_DisIntegrateXenoGenes</iconPath>
+    <cooldownTicksRange>30</cooldownTicksRange>
+    <hostile>False</hostile>
+    <targetRequired>False</targetRequired>
+    <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <label>purging xenogenes</label>
+      <violent>false</violent>
+      <warmupTime>2.5</warmupTime>
+      <range>0</range>
+      <requireLineOfSight>False</requireLineOfSight>
+      <targetParams>
+        <canTargetSelf>True</canTargetSelf>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="BigAndSmall.CompPropertiesMimicOff">
+        <genesToRetain>
+          <li>BS_Mimic</li>
+          <li>BS_Xenolocked</li>
+          <li>BS_Incorporate</li>
+          <li>BS_IntegrateGenes</li>
+          <li>BS_DisintegrateXenoGenes</li>
+          <li>BS_GeneEater</li>
+        </genesToRetain>
+      </li>
+    </comps>
+    <aiCanUse>false</aiCanUse>
+  </AbilityDef>
+
+  <GeneDef>
+    <defName>BS_GeneEater</defName>
+    <label>Gene-Eater</label>
+    <description>Carriers of this gene possess a horrifying ability to replicate genes of corpses they munch on. This does NOT make them like cannibalizing raw corpses.</description>
+    <displayCategory>Archite</displayCategory>
+    <iconPath>GeneIcons/BS_GeneEater</iconPath>
+    <canGenerateInGeneSet>true</canGenerateInGeneSet>
+    <geneClass>BigAndSmall.GeneEater</geneClass>
+    <biostatMet>0</biostatMet>
+    <minAgeActive>3</minAgeActive>
+    <biostatArc>1</biostatArc>
+    <selectionWeight>2.0</selectionWeight>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
+			</li>
+		</modExtensions>
+  </GeneDef>
 </Defs>

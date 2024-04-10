@@ -22,7 +22,7 @@
       <li Class="BigAndSmall.CompProperties_Piloted">
         <pilotRequired>true</pilotRequired>
         <pilotCapacity>1</pilotCapacity>
-        <baseCapacity>0.51</baseCapacity>
+        <baseCapacity>0.61</baseCapacity>
         <pilotConsciousnessOffset>1</pilotConsciousnessOffset>
         <inheritPilotSkills>true</inheritPilotSkills>
         <inheritPilotMentalTraits>true</inheritPilotMentalTraits>

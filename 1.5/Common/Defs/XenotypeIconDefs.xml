@@ -73,10 +73,12 @@
     <defName>BS_Nisse_Icon</defName>
     <texPath>Xenotypes/BS_Nisse</texPath>
   </XenotypeIconDef>
+  
   <XenotypeIconDef>
     <defName>BS_Nisse_old</defName>
     <texPath>Xenotypes/BS_Nisse_old</texPath>
   </XenotypeIconDef>
+  
   
   <XenotypeIconDef>
     <defName>BS_Ogre_Icon</defName>
@@ -88,6 +90,11 @@
     <texPath>Xenotypes/BS_GreatOgre</texPath>
   </XenotypeIconDef>
   
+  <XenotypeIconDef>
+    <defName>BS_Troll</defName>
+    <texPath>Xenotypes/BS_Troll</texPath>
+  </XenotypeIconDef>
+
   <XenotypeIconDef>
     <defName>BS_Redcap_Icon</defName>
     <texPath>Xenotypes/BS_Redcap</texPath>

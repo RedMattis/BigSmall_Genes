@@ -87,7 +87,7 @@
   </GeneDef>
   <GeneDef ParentName="GeneJawBase" Name="BS_DragonHead">
     <defName>BS_DragonHead</defName>
-    <label>big dragon head</label>
+    <label>dragon head</label>
     <description>Carriers of this gene have an intimidating dragon-like head.</description>
     <iconPath>GeneIcons/BS_DragonHead</iconPath>
     <displayOrderInCategory>98</displayOrderInCategory>

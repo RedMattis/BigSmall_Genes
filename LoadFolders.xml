@@ -15,6 +15,7 @@
   <v1.5>
     <li>/</li>
     <li>1.5/Common</li>
+    <li IfModActive="ludeon.rimworld.anomaly">1.5/Anomaly</li>
     <li IfModActive="Rooboid.Minotaur">1.5/Mods/RooMinotaur</li>
     <li IfModActive="vanillaracesexpanded.android">1.5/Mods/VRE_Android</li>
     <li IfModActive="Killathon.MechHumanlikes.AndroidTiersCore">1.5/Mods/AndroidTiersCore</li>

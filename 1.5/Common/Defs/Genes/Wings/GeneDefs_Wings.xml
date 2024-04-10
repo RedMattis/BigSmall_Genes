@@ -44,6 +44,7 @@
     <displayOrderInCategory>777</displayOrderInCategory>
     <modExtensions>
       <li Class="BetterPrerequisites.GeneExtension">
+        <renderCacheOff>true</renderCacheOff>
         <applyBodyHediff>
           <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
             <hediff>BS_Floating</hediff>
@@ -67,7 +68,7 @@
             <layer>10</layer>
           </defaultData>
           <dataNorth>
-            <layer>80</layer>
+            <layer>90</layer>
           </dataNorth>
         </drawData>
       </li>
@@ -103,7 +104,7 @@
             <layer>10</layer>
           </defaultData>
           <dataNorth>
-            <layer>80</layer>
+            <layer>90</layer>
           </dataNorth>
         </drawData>
       </li>
@@ -139,7 +140,7 @@
             <layer>10</layer>
           </defaultData>
           <dataNorth>
-            <layer>80</layer>
+            <layer>90</layer>
           </dataNorth>
         </drawData>
       </li>

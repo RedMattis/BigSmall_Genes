@@ -12,7 +12,8 @@
     <canGenerateInGeneSet>true</canGenerateInGeneSet>
     <endogeneCategory>BodyType</endogeneCategory>
     <customEffectDescriptions>
-      <li>- Body Size General - -</li>
+      <li>- - - - - - - - - - - - - - - - - - -</li>
+      <li>- - Body Size General - - -</li>
       <li>Alters Body Size attribute and associated traits</li>
       <li>Dramatic effect on max nutrition.</li>
       <li>Very large effect on nutrition use.</li>
@@ -274,48 +275,60 @@
     </forcedTraits>
   </GeneDef>
 
-  <!-- <GeneDef ParentName="BodyFrameBase">
-    <defName>BS_ForeverGrowing</defName>
-    <label>Forever Growing</label>
+  <GeneDef ParentName="BodyFrameBase">
+    <defName>BS_EndlessGrowth</defName>
+    <label>Endless Growth</label>
     <description>Carriers of this gene grow to an absurd size</description>
-    <iconPath>GeneIcons/BS_Frames/Titan</iconPath>
-    <displayOrderInCategory>411</displayOrderInCategory>
+    <iconPath>GeneIcons/BS_Frames/EndlessGrowth</iconPath>
+    <displayOrderInCategory>412</displayOrderInCategory>
     <biostatCpx>5</biostatCpx>
-    <biostatMet>-10</biostatMet>
+    <biostatMet>-4</biostatMet>
+    <biostatArc>0</biostatArc>
     <statFactors>
-      <IncomingDamageFactor>0.90</IncomingDamageFactor>
-      <MiningSpeed>3.0</MiningSpeed>
-      <DeepDrillingSpeed>2.0</DeepDrillingSpeed>
-      <ConstructionSpeed>1.6</ConstructionSpeed>
-      <MoveSpeed>1.2</MoveSpeed>
-      <CarryingCapacity>4</CarryingCapacity>
-      <SM_RaidWealthMultiplier>4</SM_RaidWealthMultiplier>
+      <MiningSpeed>1.6</MiningSpeed>
+      <ConstructionSpeed>1.25</ConstructionSpeed>
+      <DeepDrillingSpeed>1.25</DeepDrillingSpeed>
+      <CarryingCapacity>3</CarryingCapacity>
+      <SM_RaidWealthMultiplier>2</SM_RaidWealthMultiplier>
     </statFactors>
     <statOffsets>
-      <SM_BodySizeOffset>3</SM_BodySizeOffset>
-      <MoveSpeed>1.0</MoveSpeed>
-      <SM_RaidWealthOffset>10000</SM_RaidWealthOffset>
+      <SM_RaidWealthOffset>2500</SM_RaidWealthOffset>
+      <MoveSpeed>-0.1</MoveSpeed>
     </statOffsets>
-    <conditionalStatAffecters>
-      <li Class="ConditionalStatAffecter_Clothed"> 
-        <statOffsets>
-          <MoveSpeed>-1.0</MoveSpeed>
-        </statOffsets>
-        <statFactors>
-          <MoveSpeed>0.6</MoveSpeed>
-        </statFactors>
-      </li>
-    </conditionalStatAffecters>
-    <biostatArc>3</biostatArc>
     <canGenerateInGeneSet>true</canGenerateInGeneSet>
     <displayCategory>Archite</displayCategory>
     <selectionWeight>1.5</selectionWeight>
+    <geneClass>BetterPrerequisites.PGene</geneClass>
     <marketValueFactor>1</marketValueFactor>
     <forcedTraits>
       <li>
         <def>BS_Giant</def>
       </li>
     </forcedTraits>
-  </GeneDef> -->
+    <modExtensions>
+      <li Class="BetterPrerequisites.GeneExtension">
+        <sizeByAge>
+          <points>
+            <li>(0, 0)</li>
+            <li>(13, 0.25)</li>
+            <li>(20, 0.5)</li>
+            <!-- <li>(100, 1.5)</li> -->
+            <li>(300, 4)</li>
+            <li>(5000, 10)</li>
+          </points>
+        </sizeByAge>
+      </li>
+      <li Class="BetterPrerequisites.GenePrerequisites" MayRequire="RedMattis.BetterPrerequisites">
+        <prerequisiteSets>
+          <li>
+            <type>NoneOf</type>
+            <prerequisites>
+              <li>VU_UltraRapidAging</li>
+            </prerequisites>
+          </li>
+        </prerequisiteSets>
+      </li>
+    </modExtensions>
+  </GeneDef>
   
 </Defs>

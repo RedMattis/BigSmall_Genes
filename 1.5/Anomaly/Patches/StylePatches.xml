@@ -1,0 +1,12 @@
+<Patch>
+
+  <!-- <Operation Class="PatchOperationAdd">
+		<xpath>Defs/HairDef[@Name="GhoulHairBase"]/styleTags</xpath>
+		<value>
+			<li>BS_Creepy</li>
+		</value>
+	</Operation> -->
+
+
+
+</Patch>

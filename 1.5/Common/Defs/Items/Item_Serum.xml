@@ -60,7 +60,7 @@
   <ThingDef ParentName="BS_Giant_Serum">
     <defName>BS_Shrink_Serum</defName>
     <label>animal minimizer</label>
-    <description>A serum to make an animal much smaller than usual. Beaware that using this on injured animals can be fatal.</description>
+    <description>A serum to make an animal much smaller than usual.</description>
     <graphicData>
       <texPath>Item/Serum/BS_Minimizer</texPath>
       <graphicClass>Graphic_Single</graphicClass>

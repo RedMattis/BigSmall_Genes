@@ -42,7 +42,7 @@
         <parentTagDef>Body</parentTagDef>
         <useSkinShader>true</useSkinShader>
         <debugLabel>Fur</debugLabel>
-        <nodeClass>PawnRenderNode_Body</nodeClass>
+        <nodeClass>BigAndSmall.PawnRenderNode_FurSkinClr</nodeClass>
         <workerClass>PawnRenderNodeWorker_Fur</workerClass>
         <baseLayer>5</baseLayer>
         <rotDrawMode>Fresh, Rotting</rotDrawMode>
@@ -79,7 +79,7 @@
         <parentTagDef>Body</parentTagDef>
         <useSkinShader>true</useSkinShader>
         <debugLabel>Fur</debugLabel>
-        <nodeClass>PawnRenderNode_Body</nodeClass>
+        <nodeClass>BigAndSmall.PawnRenderNode_FurSkinClr</nodeClass>
         <workerClass>PawnRenderNodeWorker_Fur</workerClass>
         <baseLayer>5</baseLayer>
         <rotDrawMode>Fresh, Rotting</rotDrawMode>
@@ -95,7 +95,7 @@
     <geneClass>BetterPrerequisites.PGene</geneClass>
     <biostatCpx>1</biostatCpx>
     <biostatMet>-1</biostatMet>
-    <selectionWeight>0</selectionWeight>
+    <selectionWeight>1</selectionWeight>
     <displayOrderInCategory>430</displayOrderInCategory>
     <iconPath>Humanlike/Bodies/BS_Mimic/bp_hulk_south</iconPath>
     <fur>BS_MimicBody</fur>
@@ -120,7 +120,7 @@
         <parentTagDef>Body</parentTagDef>
         <useSkinShader>true</useSkinShader>
         <debugLabel>Fur</debugLabel>
-        <nodeClass>PawnRenderNode_Body</nodeClass>
+        <nodeClass>BigAndSmall.PawnRenderNode_FurSkinClr</nodeClass>
         <workerClass>PawnRenderNodeWorker_Fur</workerClass>
         <baseLayer>5</baseLayer>
         <rotDrawMode>Fresh, Rotting</rotDrawMode>

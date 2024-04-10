@@ -1,27 +1,26 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Patch>
-
-	
 	<Operation Class="PatchOperationAdd">
 		<xpath>/Defs/GeneDef[defName="BS_BrokenTitanHead"]</xpath>
 		<value>
-			<graphicData>
-				<graphicPaths>
-					<li>BS_Titan/bp_default_normal</li>
-					<li>BS_Titan/bp_female_normal</li>
-					<!-- <li>Humanlike/Ogre/Heads_Blank/Pointy/Male/normal</li>
-					<li>Humanlike/Ogre/Heads_Blank/Square/Male/normal</li> -->
-				</graphicPaths>
-				<layer>PostSkin</layer>
-				<colorType>Skin</colorType>				
-				<useSkinShader>false</useSkinShader>
-				<drawLoc>HeadTop</drawLoc>
-				<drawOffset>(0, -0.00288, 0)</drawOffset>
-				<drawIfFaceCovered>true</drawIfFaceCovered>						
-			</graphicData>
+			<renderNodeProperties>
+				<li>
+					<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+					<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+					<texPaths>
+						<li>BS_Titan/bp_default_normal</li>
+						<li>BS_Titan/bp_female_normal</li>
+					</texPaths>
+					<useSkinShader>false</useSkinShader>
+					<colorType>Skin</colorType>
+					<drawData>
+						<defaultData>
+							<layer>52</layer>
+						</defaultData>
+					</drawData>
+					<parentTagDef>Head</parentTagDef>
+				</li>
+			</renderNodeProperties>
 		</value>
 	</Operation>
-
-  
-
 </Patch>

@@ -15,12 +15,19 @@
         <colorType>Hair</colorType>
         <drawData>
           <defaultData>
-            <layer>52</layer>
+            <layer>80</layer>
           </defaultData>
         </drawData>
         <parentTagDef>Head</parentTagDef>
       </li>
     </renderNodeProperties>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
+			</li>
+		</modExtensions>
   </GeneDef>
   <GeneDef ParentName="GeneEarsBase">
     <defName>BS_FoxEars</defName>
@@ -55,17 +62,24 @@
         <colorType>Hair</colorType>
         <drawData>
           <defaultData>
-            <layer>52</layer>
+            <layer>80</layer>
           </defaultData>
         </drawData>
         <parentTagDef>Head</parentTagDef>
       </li>
     </renderNodeProperties>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
+			</li>
+		</modExtensions>
   </GeneDef>
   <GeneDef ParentName="GeneEarsBase">
     <defName>BS_Ears_PointedHD</defName>
-    <label>pointed ears (HD)</label>
-    <description>Carriers of this gene have pointed ears without alpha-blending artefacts.</description>
+    <label>pointed ears (alternative)</label>
+    <description>Carriers of this gene have pointed ears.</description>
     <iconPath>UI/Icons/Genes/Gene_EarPointed</iconPath>
     <symbolPack>
       <prefixSymbols>
@@ -100,6 +114,12 @@
         <parentTagDef>Head</parentTagDef>
       </li>
     </renderNodeProperties>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
+			</li>
+		</modExtensions>
   </GeneDef>
-  Ears_Pointed
 </Defs>

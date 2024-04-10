@@ -47,4 +47,20 @@
       <li>BS_BrokenTitanHead</li>
     </requiredGenes>
   </HeadTypeDef>
+
+  <GeneDef>
+    <defName>BS_Smallhead</defName>
+    <label>small head</label>
+    <description>Carriers of this genes have heads that are 15% smaller than normal.</description>
+    <iconPath>UI/Icons/Genes/Gene_HeadboneHuman</iconPath>
+    <displayOrderInCategory>100</displayOrderInCategory>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>pea-headed</symbol></li>
+      </prefixSymbols>
+    </symbolPack>
+    <statOffsets>
+      <SM_HeadSize_Cosmetic>-0.15</SM_HeadSize_Cosmetic>
+    </statOffsets>
+  </GeneDef>
 </Defs>

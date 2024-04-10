@@ -1,0 +1,84 @@
+<Defs>
+
+  <GeneDef ParentName="GeneJawBase">
+    <defName>BS_GhoulHead</defName>
+    <label>ghoulish head</label>
+    <labelShortAdj>ghoulish</labelShortAdj>
+    <description>Carriers of this gene have ghoulish heads.\n\nCan be overriden by jaw genes.</description>
+    <iconPath>GeneIcons/BS_GhoulHeaded</iconPath>
+    <displayOrderInCategory>200</displayOrderInCategory>
+    <forcedHeadTypes>
+      <li>Ghoul_Normal</li>
+      <li>Ghoul_Heavy</li>
+      <li>Ghoul_Narrow</li>
+      <li MayRequire="Ludeon.RimWorld.Biotech">Ghoul_Wide</li>
+    </forcedHeadTypes>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneHairStyleBase">
+    <defName>BS_CreepyHaired</defName>
+    <label>messy-haired</label>
+    <labelShortAdj>messy</labelShortAdj>
+    <description>Carriers of this gene grow creepy hair.</description>
+    <iconPath>GeneIcons/BS_GhoulHaired</iconPath>
+    <displayOrderInCategory>56</displayOrderInCategory>
+    <hairTagFilter>
+      <whitelist>true</whitelist>
+      <tags>
+        <li>Cultist</li>
+        <li>BS_Creepy</li>
+      </tags>
+    </hairTagFilter>
+  </GeneDef>
+
+  <!--Just a verion of the anomality hair with the gene needed instead of the race.-->
+  <HairDef Abstract="True" Name="BS_GhoulHairBase">
+    <requiredGene>BS_CreepyHaired</requiredGene>
+    <styleTags>
+      <li>BS_Creepy</li>
+    </styleTags>
+    <styleGender>Any</styleGender>
+  </HairDef>
+
+  <HairDef ParentName="BS_GhoulHairBase">
+    <defName>BS_Ghoul_Furious</defName>
+    <label>furious</label>
+    <texPath>Things/Pawn/Ghoul/Hairs/GhoulHair_Furious</texPath>
+  </HairDef>
+
+  <HairDef ParentName="BS_GhoulHairBase">
+    <defName>BS_Ghoul_Hungry</defName>
+    <label>hungry</label>
+    <texPath>Things/Pawn/Ghoul/Hairs/GhoulHair_Hungry</texPath>
+  </HairDef>
+
+  <HairDef ParentName="BS_GhoulHairBase">
+    <defName>BS_Ghoul_Ravenous</defName>
+    <label>ravenous</label>
+    <texPath>Things/Pawn/Ghoul/Hairs/GhoulHair_Ravenous</texPath>
+  </HairDef>
+
+  <HairDef ParentName="BS_GhoulHairBase">
+    <defName>BS_Ghoul_Twisted</defName>
+    <label>twisted</label>
+    <texPath>Things/Pawn/Ghoul/Hairs/GhoulHair_Twisted</texPath>
+  </HairDef>
+
+  <HairDef ParentName="BS_GhoulHairBase">
+    <defName>BS_Ghoul_Vengeful</defName>
+    <label>vengeful</label>
+    <texPath>Things/Pawn/Ghoul/Hairs/GhoulHair_Vengeful</texPath>
+  </HairDef>
+
+  <HairDef ParentName="BS_GhoulHairBase">
+    <defName>BS_Ghoul_Warped</defName>
+    <label>warped</label>
+    <texPath>Things/Pawn/Ghoul/Hairs/GhoulHair_Warped</texPath>
+  </HairDef>
+
+  <HairDef ParentName="BS_GhoulHairBase">
+    <defName>BS_Ghoul_Wicked</defName>
+    <label>wicked</label>
+    <texPath>Things/Pawn/Ghoul/Hairs/GhoulHair_Wicked</texPath>
+  </HairDef>
+</Defs>

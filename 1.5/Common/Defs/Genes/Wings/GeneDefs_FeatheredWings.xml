@@ -22,6 +22,7 @@
     <renderNodeProperties Inherit="False">
       <li>
         <parentTagDef>Body</parentTagDef>
+        <workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
         <texPath>Humanlike/BodyAttachments/BS_GorgonWingsBack</texPath>
         <drawSize>(1.45,1.45)</drawSize>
         <color>(245,245,245)</color>
@@ -31,22 +32,23 @@
             <layer>10</layer>
           </defaultData>
           <dataNorth>
-            <layer>80</layer>
+            <layer>90</layer>
           </dataNorth>
         </drawData>
       </li>
       <li>
         <parentTagDef>Body</parentTagDef>
+        <workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
         <texPath>Humanlike/BodyAttachments/BS_GorgonWingsFront</texPath>
         <drawSize>(1.45,1.45)</drawSize>
         <color>(245,245,245)</color>
         <colorType>Hair</colorType>
         <drawData>
           <defaultData>
-            <layer>11</layer>
+            <layer>91</layer>
           </defaultData>
           <dataNorth>
-            <layer>81</layer>
+            <layer>91</layer>
           </dataNorth>
         </drawData>
       </li>
@@ -74,6 +76,7 @@
     <renderNodeProperties Inherit="False">
       <li>
         <parentTagDef>Body</parentTagDef>
+        <workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
         <texPath>Humanlike/BodyAttachments/BS_GorgonWingsBack</texPath>
         <drawSize>(1.24,1.24)</drawSize>
         <color>(245,245,245)</color>
@@ -83,22 +86,23 @@
             <layer>10</layer>
           </defaultData>
           <dataNorth>
-            <layer>80</layer>
+            <layer>90</layer>
           </dataNorth>
         </drawData>
       </li>
       <li>
         <parentTagDef>Body</parentTagDef>
+        <workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
         <texPath>Humanlike/BodyAttachments/BS_GorgonWingsFront</texPath>
         <drawSize>(1.24,1.24)</drawSize>
         <color>(245,245,245)</color>
         <colorType>Hair</colorType>
         <drawData>
           <defaultData>
-            <layer>11</layer>
+            <layer>91</layer>
           </defaultData>
           <dataNorth>
-            <layer>81</layer>
+            <layer>91</layer>
           </dataNorth>
         </drawData>
       </li>
@@ -126,6 +130,7 @@
     <renderNodeProperties Inherit="False">
       <li>
         <parentTagDef>Body</parentTagDef>
+        <workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
         <texPath>Humanlike/BodyAttachments/BS_GorgonWingsBack</texPath>
         <drawSize>(1.45,1.45)</drawSize>
         <color>(255,241,199)</color>
@@ -135,22 +140,23 @@
             <layer>10</layer>
           </defaultData>
           <dataNorth>
-            <layer>80</layer>
+            <layer>90</layer>
           </dataNorth>
         </drawData>
       </li>
       <li>
         <parentTagDef>Body</parentTagDef>
+        <workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
         <texPath>Humanlike/BodyAttachments/BS_GorgonWingsFront</texPath>
         <drawSize>(1.45,1.45)</drawSize>
         <color>(255,241,199)</color>
         <colorType>Custom</colorType>
         <drawData>
           <defaultData>
-            <layer>11</layer>
+            <layer>91</layer>
           </defaultData>
           <dataNorth>
-            <layer>81</layer>
+            <layer>91</layer>
           </dataNorth>
         </drawData>
       </li>
@@ -178,6 +184,7 @@
     <renderNodeProperties Inherit="False">
       <li>
         <parentTagDef>Body</parentTagDef>
+        <workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
         <texPath>Humanlike/BodyAttachments/BS_GorgonWingsBack</texPath>
         <drawSize>(1.24,1.24)</drawSize>
         <color>(255,241,199)</color>
@@ -187,22 +194,23 @@
             <layer>10</layer>
           </defaultData>
           <dataNorth>
-            <layer>80</layer>
+            <layer>90</layer>
           </dataNorth>
         </drawData>
       </li>
       <li>
         <parentTagDef>Body</parentTagDef>
+        <workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
         <texPath>Humanlike/BodyAttachments/BS_GorgonWingsFront</texPath>
         <drawSize>(1.24,1.24)</drawSize>
         <color>(255,241,199)</color>
         <colorType>Custom</colorType>
         <drawData>
           <defaultData>
-            <layer>11</layer>
+            <layer>91</layer>
           </defaultData>
           <dataNorth>
-            <layer>81</layer>
+            <layer>91</layer>
           </dataNorth>
         </drawData>
       </li>
@@ -230,6 +238,7 @@
     <renderNodeProperties Inherit="False">
       <li>
         <parentTagDef>Body</parentTagDef>
+        <workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
         <texPath>Humanlike/BodyAttachments/BS_GorgonWingsBack</texPath>
         <drawSize>(1.45,1.45)</drawSize>
         <color>(255,241,160)</color>
@@ -239,22 +248,23 @@
             <layer>10</layer>
           </defaultData>
           <dataNorth>
-            <layer>80</layer>
+            <layer>90</layer>
           </dataNorth>
         </drawData>
       </li>
       <li>
         <parentTagDef>Body</parentTagDef>
+        <workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
         <texPath>Humanlike/BodyAttachments/BS_GorgonWingsFront</texPath>
         <drawSize>(1.45,1.45)</drawSize>
         <color>(255,241,160)</color>
         <colorType>Custom</colorType>
         <drawData>
           <defaultData>
-            <layer>11</layer>
+            <layer>91</layer>
           </defaultData>
           <dataNorth>
-            <layer>81</layer>
+            <layer>91</layer>
           </dataNorth>
         </drawData>
       </li>
@@ -282,6 +292,7 @@
     <renderNodeProperties Inherit="False">
       <li>
         <parentTagDef>Body</parentTagDef>
+        <workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
         <texPath>Humanlike/BodyAttachments/BS_Wings/AngelicWings_Bottom</texPath>
         <drawSize>(1.45,1.45)</drawSize>
         <color>(245,245,245)</color>
@@ -294,92 +305,95 @@
             <offset>(0.10, 0, -0.05)</offset>
           </dataEast>
           <dataNorth>
-            <layer>80</layer>
+            <layer>90</layer>
             <offset>(0.0, 0, -0.05)</offset>
           </dataNorth>
         </drawData>
       </li>
       <li>
         <parentTagDef>Body</parentTagDef>
+        <workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
         <texPath>Humanlike/BodyAttachments/BS_Wings/AngelicWings_Top</texPath>
         <drawSize>(1.45,1.45)</drawSize>
         <color>(245,245,245)</color>
         <colorType>Hair</colorType>
         <drawData>
           <defaultData>
-            <layer>11</layer>
+            <layer>91</layer>
           </defaultData>
           <dataEast>
             <offset>(0.10, 0, -0.05)</offset>
           </dataEast>
           <dataNorth>
-            <layer>81</layer>
+            <layer>91</layer>
             <offset>(0.0, 0, -0.05)</offset>
           </dataNorth>
         </drawData>
       </li>
     </renderNodeProperties>
   </GeneDef>
-  <GeneDef ParentName="BS_FunctionalWingBase">
-    <defName>BS_HolyAngelwings</defName>
-    <label>Fluffy Angel Wings</label>
-    <description>Carriers of this gene possess divine wings.</description>
-    <iconPath>GeneIcons/BS_Wings/Gene_WingsHoly</iconPath>
-    <displayOrderInCategory>777</displayOrderInCategory>
-    <geneClass>BetterPrerequisites.PGene</geneClass>
-    <modExtensions>
-      <li Class="BetterPrerequisites.GeneExtension">
-        <applyBodyHediff>
-          <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
-            <hediff>BS_Floating</hediff>
-          </li>
-        </applyBodyHediff>
-      </li>
-      <li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
-        <movementDef>PF_Movement_Flying</movementDef>
-      </li>
-    </modExtensions>
-    <renderNodeProperties Inherit="False">
-      <li>
-        <parentTagDef>Body</parentTagDef>
-        <texPath>Humanlike/BodyAttachments/BS_Wings/HolyWings_Bottom</texPath>
-        <drawSize>(1.35,1.35)</drawSize>
-        <color>(245,245,245)</color>
-        <colorType>Hair</colorType>
-        <drawData>
-          <defaultData>
-            <layer>10</layer>
-          </defaultData>
-          <dataEast>
-            <offset>(0.10, 0, -0.05)</offset>
-          </dataEast>
-          <dataNorth>
-            <layer>80</layer>
-            <offset>(0.0, 0, -0.05)</offset>
-          </dataNorth>
-        </drawData>
-      </li>
-      <li>
-        <parentTagDef>Body</parentTagDef>
-        <texPath>Humanlike/BodyAttachments/BS_Wings/HolyWings_Top</texPath>
-        <drawSize>(1.35,1.35)</drawSize>
-        <color>(245,245,245)</color>
-        <colorType>Hair</colorType>
-        <drawData>
-          <defaultData>
-            <layer>11</layer>
-          </defaultData>
-          <dataEast>
-            <offset>(0.10, 0, -0.05)</offset>
-          </dataEast>
-          <dataNorth>
-            <layer>81</layer>
-            <offset>(0.0, 0, -0.05)</offset>
-          </dataNorth>
-        </drawData>
-      </li>
-    </renderNodeProperties>
-  </GeneDef>
+<GeneDef ParentName="BS_FunctionalWingBase">
+  <defName>BS_HolyAngelwings</defName>
+  <label>Fluffy Angel Wings</label>
+  <description>Carriers of this gene possess divine wings.</description>
+  <iconPath>GeneIcons/BS_Wings/Gene_WingsHoly</iconPath>
+  <displayOrderInCategory>777</displayOrderInCategory>
+  <geneClass>BetterPrerequisites.PGene</geneClass>
+  <modExtensions>
+    <li Class="BetterPrerequisites.GeneExtension">
+      <applyBodyHediff>
+        <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+          <hediff>BS_Floating</hediff>
+        </li>
+      </applyBodyHediff>
+    </li>
+    <li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
+      <movementDef>PF_Movement_Flying</movementDef>
+    </li>
+  </modExtensions>
+  <renderNodeProperties Inherit="False">
+    <li>
+      <parentTagDef>Body</parentTagDef>
+      <workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+      <texPath>Humanlike/BodyAttachments/BS_Wings/HolyWings_Bottom</texPath>
+      <drawSize>(1.35,1.35)</drawSize>
+      <color>(245,245,245)</color>
+      <colorType>Hair</colorType>
+      <drawData>
+        <defaultData>
+          <layer>10</layer>
+        </defaultData>
+        <dataEast>
+          <offset>(0.10, 0, -0.05)</offset>
+        </dataEast>
+        <dataNorth>
+          <layer>90</layer>
+          <offset>(0.0, 0, -0.05)</offset>
+        </dataNorth>
+      </drawData>
+    </li>
+    <li>
+      <parentTagDef>Body</parentTagDef>
+      <workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+      <texPath>Humanlike/BodyAttachments/BS_Wings/HolyWings_Top</texPath>
+      <drawSize>(1.35,1.35)</drawSize>
+      <color>(245,245,245)</color>
+      <colorType>Hair</colorType>
+      <drawData>
+        <defaultData>
+          <layer>91</layer>
+        </defaultData>
+        <dataEast>
+          <offset>(0.10, 0, -0.05)</offset>
+        </dataEast>
+        <dataNorth>
+          <layer>91</layer>
+          <offset>(0.0, 0, -0.05)</offset>
+        </dataNorth>
+      </drawData>
+    </li>
+  </renderNodeProperties>
+</GeneDef>
   <GeneDef ParentName="BS_FunctionalWingBase">
     <defName>BS_MenacingAngelwings</defName>
     <label>Menacing Angel Wings</label>
@@ -402,6 +416,7 @@
     <renderNodeProperties Inherit="False">
       <li>
         <parentTagDef>Body</parentTagDef>
+        <workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
         <texPath>Humanlike/BodyAttachments/BS_Wings/MenacingWings_Bottom</texPath>
         <drawSize>(1.45,1.45)</drawSize>
         <color>(245,245,245)</color>
@@ -414,26 +429,27 @@
             <offset>(0.10, 0, -0.05)</offset>
           </dataEast>
           <dataNorth>
-            <layer>80</layer>
+            <layer>90</layer>
             <offset>(0.0, 0, -0.05)</offset>
           </dataNorth>
         </drawData>
       </li>
       <li>
         <parentTagDef>Body</parentTagDef>
+        <workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
         <texPath>Humanlike/BodyAttachments/BS_Wings/MenacingWings_Top</texPath>
         <drawSize>(1.45,1.45)</drawSize>
         <color>(245,245,245)</color>
         <colorType>Hair</colorType>
         <drawData>
           <defaultData>
-            <layer>11</layer>
+            <layer>91</layer>
           </defaultData>
           <dataEast>
             <offset>(0.10, 0, -0.05)</offset>
           </dataEast>
           <dataNorth>
-            <layer>81</layer>
+            <layer>91</layer>
             <offset>(0.0, 0, -0.05)</offset>
           </dataNorth>
         </drawData>
@@ -462,6 +478,7 @@
     <renderNodeProperties Inherit="False">
       <li>
         <parentTagDef>Body</parentTagDef>
+        <workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
         <texPath>Humanlike/BodyAttachments/BS_Wings/DemonWings_Bottom</texPath>
         <drawSize>(1.45,1.45)</drawSize>
         <color>(245,245,245)</color>
@@ -474,26 +491,27 @@
             <offset>(0.10, 0, -0.05)</offset>
           </dataEast>
           <dataNorth>
-            <layer>80</layer>
+            <layer>90</layer>
             <offset>(0.0, 0, -0.15)</offset>
           </dataNorth>
         </drawData>
       </li>
       <li>
         <parentTagDef>Body</parentTagDef>
+        <workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
         <texPath>Humanlike/BodyAttachments/BS_Wings/DemonWings_Top</texPath>
         <drawSize>(1.45,1.45)</drawSize>
         <color>(245,245,245)</color>
         <colorType>Skin</colorType>
         <drawData>
           <defaultData>
-            <layer>11</layer>
+            <layer>91</layer>
           </defaultData>
           <dataEast>
             <offset>(0.10, 0, -0.05)</offset>
           </dataEast>
           <dataNorth>
-            <layer>81</layer>
+            <layer>91</layer>
             <offset>(0.0, 0, -0.15)</offset>
           </dataNorth>
         </drawData>

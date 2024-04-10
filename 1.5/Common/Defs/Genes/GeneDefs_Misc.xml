@@ -193,8 +193,9 @@
   <GeneDef ParentName="CellInstabilityBase">
     <defName>BS_CellPandemonium</defName>
     <label>cell-stability pandemonium</label>
-    <description>Carriers of this gene are almost walking super-carcinoma; constantly in a state of flux and somehow kept in check in a strange self-balancing almost incomprehensibly complex archite system.\n\nSubjects still frequently develop out of control carcinoma or infections which require amputation. Only the sturdiest (or most bionic) of test-subjects are likely to survive for long. The pinnacle of reckless mad science.\n\nNote that while this does disable Perfect Immunity does not disable the normal improved-immunity genes.</description>
+    <description>Carriers of this gene are almost walking super-carcinoma; constantly in a state of flux and somehow kept in check in a strange self-balancing almost incomprehensibly complex archite system.\n\nSubjects still frequently develop out of control carcinoma or infections which require amputation. Only the sturdiest (or most bionic) of test-subjects are likely to survive for long. The pinnacle of reckless mad science.\n\nNote that while this does disable Perfect Immunity, it does not disable the normal improved-immunity genes.</description>
     <iconPath>GeneIcons/BS_CellPandemonium</iconPath>
+    <displayCategory>Archite</displayCategory>
     <displayOrderInCategory>234</displayOrderInCategory>
     <biostatMet>14</biostatMet>
     <biostatCpx>12</biostatCpx>
@@ -202,7 +203,7 @@
     <statFactors>
       <CancerRate>20</CancerRate>
       <ImmunityGainSpeed>0.85</ImmunityGainSpeed>
-      <InjuryHealingFactor>4</InjuryHealingFactor>
+      <InjuryHealingFactor>5</InjuryHealingFactor>
     </statFactors>
     <statOffsets>
       <MentalBreakThreshold>0.10</MentalBreakThreshold>
@@ -248,7 +249,6 @@
   <GeneDef>
     <defName>BS_GiantWeaponWielder</defName>
     <label>Giant Weapon Wielder</label>
-    <!-- <prerequisite>JotunFrame</prerequisite> -->
     <description>Carriers of this gene are capable of wielding giant weapons even if they would otherwise be too small.</description>
     <iconPath>GeneIcons/BS_HugeWeaponWielder</iconPath>
     <displayOrderInCategory>411</displayOrderInCategory>
@@ -284,71 +284,7 @@
 		</modExtensions>
   </GeneDef>
 
-  <GeneDef Name="BS_Xenoreconstruction">
-    <defName>BS_Xenoreconstruction</defName>
-    <label>Xenoreconstruction</label>
-    <description>Carriers of this gene can heal permanent injuries in themselves or others.</description>
-    <prerequisite>Hemogenic</prerequisite>
-    <iconPath>UI/Icons/Genes/Gene_Coagulate</iconPath>
-    <displayCategory>Ability</displayCategory>
-    <marketValueFactor>2.0</marketValueFactor>
-    <abilities>
-      <li>BS_Regenerate</li>
-    </abilities>
-    <descriptionHyperlinks>
-      <AbilityDef>BS_Regenerate</AbilityDef>
-    </descriptionHyperlinks>
-    <biostatMet>-3</biostatMet>
-    <selectionWeight>1</selectionWeight>
-    <biostatArc>3</biostatArc>
-    <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
-		</modExtensions>
-  </GeneDef>
-
   <GeneDef>
-    <defName>BS_Fast_TotalHealing</defName>
-    <label>Regeneration</label>
-    <labelShortAdj>scarless</labelShortAdj>
-    <description>Carriers of this gene can regenerate scars and missing limbs.</description>
-    <customEffectDescriptions>
-      <li>Every few days, one old wound, limb, or missing organ is healed.</li>
-    </customEffectDescriptions>
-    <iconPath>GeneIcons/BS_TotalHealing_Fast</iconPath>
-    <geneClass>BigAndSmall.Gene_FastHealing</geneClass>
-    <preventPermanentWounds>true</preventPermanentWounds>
-    <biostatCpx>10</biostatCpx>
-    <biostatArc>3</biostatArc>
-    <displayCategory>Archite</displayCategory>
-    <!-- <geneClass>BetterPrerequisites.PGene</geneClass> -->
-    <!-- <modExtensions>
-      <li Class="BetterPrerequisites.GenePrerequisites"
-    MayRequire="RedMattis.BetterPrerequisites">
-        <prerequisiteSets>
-          <li>
-    <type>AnyOf</type>
-            <prerequisites>
-              <li>WoundHealing_SuperFast</li>
-    <li>VU_DarknessWoundHealing_UltraFast</li>
-            </prerequisites>
-          </li>
-    </prerequisiteSets>
-      </li>
-    </modExtensions> -->
-    <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
-		</modExtensions>
-  </GeneDef>
-
-  <Genedef>
     <defName>BS_NoFood</defName>
     <label>doesn't eat</label>
     <description>Carriers of this gene obtains their energy from some other source than food. Their food need is locked to 90%. (set to 90% to avoid issues which would stop them from eating hemogen packs f.ex.\n\nNote: If you're using Dubs Bad Hygene it also does the same to thrist and bladder.</description>
@@ -380,7 +316,7 @@
         <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
 			</li>
 		</modExtensions>
-  </Genedef>
+  </GeneDef>
 
   <GeneDef>
     <defName>VU_UltraRapidAging</defName>

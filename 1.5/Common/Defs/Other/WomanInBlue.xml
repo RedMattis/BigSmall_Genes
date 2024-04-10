@@ -141,6 +141,7 @@
       <li>BS_SkinPermafrost</li>
       <li>BS_HairPermafrost</li>
 			<li>BS_EverFertile</li>
+			<li>Hair_LongOnly</li>
     </genes>
     <forbiddenWeaponClasses><li>RangedLight</li></forbiddenWeaponClasses>
     <factionlessGenerationWeight>0.0</factionlessGenerationWeight>
