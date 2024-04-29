@@ -29,6 +29,7 @@
     <label>Life for life</label>
     <description>Heal the worst condition on the target at a large cost in power.</description>
     <iconPath>GeneIcons/CursedHealing</iconPath>
+    <hostile>False</hostile>
     <comps>
       <li Class="BigAndSmall.CompAbilityEffect_Xenoregenerate"/>
       <li Class="BigAndSmall.CompProperties_CursedCost">
@@ -41,6 +42,7 @@
     <defName>BS_Regenerate</defName>
     <description>Heal the worst condition on the target at a large cost in power.</description>
     <label>Xenoreconstruction</label>
+    <hostile>False</hostile>
     <comps>
       <li Class="BigAndSmall.CompAbilityEffect_Xenoregenerate"/>
       <li Class="CompProperties_AbilityHemogenCost">

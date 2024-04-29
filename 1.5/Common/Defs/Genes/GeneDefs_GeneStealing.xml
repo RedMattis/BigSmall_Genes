@@ -290,7 +290,7 @@
   <GeneDef>
     <defName>BS_GeneEater</defName>
     <label>Gene-Eater</label>
-    <description>Carriers of this gene possess a horrifying ability to replicate genes of corpses they munch on. This does NOT make them like cannibalizing raw corpses.</description>
+    <description>Carriers of this gene possess a horrifying ability to replicate genes of corpses they munch on. This gene does NOT make them cannibals.</description>
     <displayCategory>Archite</displayCategory>
     <iconPath>GeneIcons/BS_GeneEater</iconPath>
     <canGenerateInGeneSet>true</canGenerateInGeneSet>

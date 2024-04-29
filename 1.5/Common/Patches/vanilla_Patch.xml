@@ -101,6 +101,7 @@
     <xpath>Defs/ThoughtDef[defName="AteCorpse"]/nullifyingGenes</xpath>
     <value>
       <li>BS_FeedingFrenzy</li>
+			<li>BS_GeneEater</li>
     </value>
   </Operation>
 

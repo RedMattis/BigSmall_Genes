@@ -146,7 +146,7 @@
     <iconPath>GeneIcons/BS_GeneStabilizing_Moderate</iconPath>
     <displayOrderInCategory>231</displayOrderInCategory>
     <biostatMet>2</biostatMet>
-    <biostatCpx>8</biostatCpx>
+    <biostatCpx>4</biostatCpx>
     <modExtensions>
 			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
 				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
@@ -162,7 +162,7 @@
     <iconPath>GeneIcons/BS_GeneStabilizing_Great</iconPath>
     <displayOrderInCategory>232</displayOrderInCategory>
     <biostatMet>4</biostatMet>
-    <biostatCpx>20</biostatCpx>
+    <biostatCpx>9</biostatCpx>
     <biostatArc>0</biostatArc>
     <modExtensions>
 			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
@@ -179,7 +179,7 @@
     <iconPath>GeneIcons/BS_GeneStabilizing_Extreme</iconPath>
     <displayOrderInCategory>233</displayOrderInCategory>
     <biostatMet>6</biostatMet>
-    <biostatCpx>33</biostatCpx>
+    <biostatCpx>15</biostatCpx>
     <biostatArc>0</biostatArc>
     <modExtensions>
 			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
@@ -202,15 +202,14 @@
     <biostatArc>1</biostatArc>
     <statFactors>
       <CancerRate>20</CancerRate>
-      <ImmunityGainSpeed>0.85</ImmunityGainSpeed>
-      <InjuryHealingFactor>5</InjuryHealingFactor>
+      <ImmunityGainSpeed>0.90</ImmunityGainSpeed>
+      <InjuryHealingFactor>3</InjuryHealingFactor>
     </statFactors>
     <statOffsets>
       <MentalBreakThreshold>0.10</MentalBreakThreshold>
     </statOffsets>
     <exclusionTags>
       <li>BS_Metabolism_Gene</li>
-      <li>WoundHealingRate</li>
     </exclusionTags>
     <biologicalAgeTickFactorFromAgeCurve>
       <points>
@@ -347,6 +346,124 @@
     </symbolPack>
     <exclusionTags>
       <li>BS_Metabolism_Gene</li>
+      <li>BS_AgingRate</li>
+    </exclusionTags>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>BS_VeryFastAging</defName>
+    <label>very fast aging</label>
+    <description>Carriers of this gene age much faster than a baseline human.</description>
+    <iconPath>GeneIcons/BS_VeryFastAging</iconPath>
+    <biologicalAgeTickFactorFromAgeCurve>
+      <points>
+        <li>(0, 16)</li>
+        <li>(2.99, 16)</li>
+        <li>(3, 4)</li>
+        <li>(18, 4)</li>
+        <li>(35, 5)</li>
+        <li>(40, 8)</li>
+      </points>
+    </biologicalAgeTickFactorFromAgeCurve>
+    <biostatMet>2</biostatMet>
+    <biostatCpx>-2</biostatCpx>
+    <exclusionTags>
+      <li>BS_AgingRate</li>
+    </exclusionTags>
+    <statFactors>
+      <SM_GrowthPointAccumulation>4</SM_GrowthPointAccumulation>
+    </statFactors>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>BS_FastAging</defName>
+    <label>fast aging</label>
+    <description>Carriers appear to age roughly twice as fast as a baseline human.</description>
+    <iconPath>GeneIcons/BS_FastAging</iconPath>
+    <biologicalAgeTickFactorFromAgeCurve>
+      <points>
+        <li>(0, 4)</li>
+        <li>(2.99, 4)</li>
+        <li>(3, 2)</li>
+        <li>(18, 2)</li>
+      </points>
+    </biologicalAgeTickFactorFromAgeCurve>
+    <biostatMet>1</biostatMet>
+    <biostatCpx>-1</biostatCpx>
+    <exclusionTags>
+      <li>BS_AgingRate</li>
+    </exclusionTags>
+    <statFactors>
+      <SM_GrowthPointAccumulation>3</SM_GrowthPointAccumulation>
+    </statFactors>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>BS_SlowAging</defName>
+    <label>slow aging</label>
+    <description>Carriers age half as fast as a baseline human.</description>
+    <iconPath>GeneIcons/BS_SlowAging</iconPath>
+    <biologicalAgeTickFactorFromAgeCurve>
+      <points>
+        <li>(0, 0.9)</li>
+        <li>(3, 0.9)</li>
+        <li>(18, 0.8)</li>
+        <li>(25, 0.5)</li>
+        <li>(30, 0.5)</li>
+      </points>
+    </biologicalAgeTickFactorFromAgeCurve>
+    <biostatMet>0</biostatMet>
+    <biostatCpx>1</biostatCpx>
+    <exclusionTags>
+      <li>BS_AgingRate</li>
+    </exclusionTags>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>BS_VerySlowAging</defName>
+    <label>slow aging</label>
+    <description>Carriers age at about a quarter of the speed of a baseline human.</description>
+    <iconPath>GeneIcons/BS_VerySlowAging</iconPath>
+    <biologicalAgeTickFactorFromAgeCurve>
+      <points>
+        <li>(0, 0.8)</li>
+        <li>(3, 0.8)</li>
+        <li>(18, 0.7)</li>
+        <li>(20, 0.25)</li>
+        <li>(25, 0.25)</li>
+      </points>
+    </biologicalAgeTickFactorFromAgeCurve>
+    <biostatMet>0</biostatMet>
+    <biostatCpx>2</biostatCpx>
+    <exclusionTags>
       <li>BS_AgingRate</li>
     </exclusionTags>
     <modExtensions>

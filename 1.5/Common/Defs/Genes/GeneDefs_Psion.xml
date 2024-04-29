@@ -280,12 +280,15 @@
 			<li>
 				<minSeverity>0</minSeverity>
 				<statOffsets>
-					<PawnBeauty>4</PawnBeauty>
+					<PawnBeauty>10</PawnBeauty>
 					<SocialImpact>0.15</SocialImpact>
 					<TradePriceImprovement>0.025</TradePriceImprovement>
 					<NegotiationAbility>0.20</NegotiationAbility>
 					<MeleeDodgeChance>10</MeleeDodgeChance>
 				</statOffsets>
+				<statFactors>
+					<SM_RaidWealthMultiplier>0.15</SM_RaidWealthMultiplier>
+				</statFactors>
 			</li>
 		</stages>
 	</HediffDef>

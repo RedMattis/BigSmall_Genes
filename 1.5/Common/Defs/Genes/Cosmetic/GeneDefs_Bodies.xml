@@ -34,7 +34,7 @@
       <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
         <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
         <backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <useSkinColorForFur>true</useSkinColorForFur>
+        <!-- <useSkinColorForFur>true</useSkinColorForFur> -->
       </li>
     </modExtensions>
     <renderNodeProperties Inherit="False">
@@ -71,7 +71,7 @@
       <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
         <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
         <backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <useSkinColorForFur>true</useSkinColorForFur>
+        <!-- <useSkinColorForFur>true</useSkinColorForFur> -->
       </li>
     </modExtensions>
     <renderNodeProperties Inherit="False">
@@ -108,7 +108,6 @@
       <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
         <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
         <backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <useSkinColorForFur>true</useSkinColorForFur>
       </li>
       <li Class="BetterPrerequisites.GeneExtension">
         <thingDefSwap MayRequire="erdelf.HumanoidAlienRaces">BS_GluttonRace</thingDefSwap>

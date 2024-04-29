@@ -457,6 +457,7 @@
               <height>Bottom</height>
               <groups>
                 <li>Legs</li>
+                <li>Feet</li>
               </groups>
               <woundAnchorTag>LeftLeg</woundAnchorTag>
             </li>
@@ -467,6 +468,7 @@
               <height>Bottom</height>
               <groups>
                 <li>Legs</li>
+                <li>Feet</li>
               </groups>
               <woundAnchorTag>RightLeg</woundAnchorTag>
             </li>
@@ -477,6 +479,7 @@
               <height>Bottom</height>
               <groups>
                 <li>Legs</li>
+                <li>Feet</li>
               </groups>
               <woundAnchorTag>LeftLeg</woundAnchorTag>
             </li>
@@ -487,6 +490,7 @@
               <height>Bottom</height>
               <groups>
                 <li>Legs</li>
+                <li>Feet</li>
               </groups>
               <woundAnchorTag>RightLeg</woundAnchorTag>
             </li>
@@ -497,6 +501,7 @@
               <height>Bottom</height>
               <groups>
                 <li>Legs</li>
+                <li>Feet</li>
               </groups>
               <woundAnchorTag>LeftLeg</woundAnchorTag>
             </li>
@@ -507,6 +512,7 @@
               <height>Bottom</height>
               <groups>
                 <li>Legs</li>
+                <li>Feet</li>
               </groups>
               <woundAnchorTag>RightLeg</woundAnchorTag>
             </li>
@@ -517,6 +523,7 @@
               <height>Bottom</height>
               <groups>
                 <li>Legs</li>
+                <li>Feet</li>
               </groups>
               <woundAnchorTag>LeftLeg</woundAnchorTag>
             </li>
@@ -527,6 +534,7 @@
               <height>Bottom</height>
               <groups>
                 <li>Legs</li>
+                <li>Feet</li>
               </groups>
               <woundAnchorTag>RightLeg</woundAnchorTag>
             </li>

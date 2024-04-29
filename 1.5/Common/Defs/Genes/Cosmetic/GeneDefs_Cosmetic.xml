@@ -133,6 +133,7 @@
         <texPath>Humanlike/HeadAttachments/BS_WerewolfSnoot</texPath>
         <drawSize>(1.0,1.0)</drawSize>
         <useSkinShader>true</useSkinShader>
+        <colorType>Hair</colorType>
         <drawData>
           <defaultData>
             <layer>52</layer>

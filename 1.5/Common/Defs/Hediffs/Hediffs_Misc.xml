@@ -54,6 +54,50 @@
   </HediffDef>
 
   <HediffDef>
+    <defName>BS_PilotedSameSize</defName>
+    <label>Pilotable (same size)</label>
+    <description>This creature requires a pilot to function.</description>
+    <isBad>false</isBad>
+    <everCurableByItem>false</everCurableByItem>
+    <initialSeverity>1</initialSeverity>
+    <hediffClass>BigAndSmall.Piloted</hediffClass>
+    <stages>
+      <li>
+        <label>pilot missing</label>
+        <capMods>
+          <li>
+            <capacity>Talking</capacity>
+            <setMax>0</setMax>
+          </li>
+          <li>
+            <capacity>Hearing</capacity>
+            <setMax>0</setMax>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>0.5</minSeverity>
+        <label>pilot present</label>
+      </li>
+    </stages>
+    
+    <comps>
+			<li Class="BigAndSmall.CompProperties_Piloted">
+        <pilotRequired>true</pilotRequired>
+        <pilotCapacity>1</pilotCapacity>
+        <baseCapacity>1.01</baseCapacity>
+        <pilotConsciousnessOffset>1</pilotConsciousnessOffset>
+        <inheritPilotSkills>true</inheritPilotSkills>
+        <inheritPilotMentalTraits>true</inheritPilotMentalTraits>
+        <inheritRelationShips>true</inheritRelationShips>
+			</li>
+      <li Class="BigAndSmall.CompProperties_GiveAbilities">
+        <abilities><li>BS_EjectPilot</li></abilities>
+			</li>
+		</comps>
+  </HediffDef>
+
+  <HediffDef>
     <defName>BS_PilotAssisted</defName>
     <label>operator assisted</label>
     <description>This creature requires an operator to function at optimal capacity.</description>

@@ -76,7 +76,7 @@
 	<GeneDef>
 		<defName>BS_Talons</defName>
 		<label>talons</label>
-		<description>Carriers of this gene possess dangerous venomous talons. They are good at getting into the chinks of armour.\n\nTechnically more corrosive than a venomous. Slows down most types of work.</description>
+		<description>Carriers of this gene possess dangerous talons. They are good at getting into the chinks of armour.</description>
 		<iconPath>GeneIcons/BS_Claws</iconPath>
 		<customEffectDescriptions>
 			<li>90% Hand part-efficiency</li>

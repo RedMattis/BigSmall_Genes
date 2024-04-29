@@ -13,6 +13,13 @@
       <li>Ghoul_Narrow</li>
       <li MayRequire="Ludeon.RimWorld.Biotech">Ghoul_Wide</li>
     </forcedHeadTypes>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
+			</li>
+		</modExtensions>
   </GeneDef>
 
   <GeneDef ParentName="GeneHairStyleBase">
@@ -29,6 +36,13 @@
         <li>BS_Creepy</li>
       </tags>
     </hairTagFilter>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
+			</li>
+		</modExtensions>
   </GeneDef>
 
   <!--Just a verion of the anomality hair with the gene needed instead of the race.-->

@@ -67,6 +67,9 @@
           <defaultData>
             <layer>10</layer>
           </defaultData>
+          <dataSouth>
+            <layer>-1</layer>
+          </dataSouth>
           <dataNorth>
             <layer>90</layer>
           </dataNorth>
@@ -103,6 +106,9 @@
           <defaultData>
             <layer>10</layer>
           </defaultData>
+          <dataSouth>
+            <layer>-1</layer>
+          </dataSouth>
           <dataNorth>
             <layer>90</layer>
           </dataNorth>
@@ -139,6 +145,9 @@
           <defaultData>
             <layer>10</layer>
           </defaultData>
+          <dataSouth>
+            <layer>-1</layer>
+          </dataSouth>
           <dataNorth>
             <layer>90</layer>
           </dataNorth>

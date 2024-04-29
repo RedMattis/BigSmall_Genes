@@ -39,13 +39,6 @@
     <displayOrderInCategory>950</displayOrderInCategory>
     <biostatCpx>3</biostatCpx>
     <biostatMet>-5</biostatMet>
-    <biologicalAgeTickFactorFromAgeCurve>
-      <points>
-        <li>(15, 0.75)</li>
-        <li>(20, 0.5)</li>
-        <li>(50, 0.33)</li>
-      </points>
-    </biologicalAgeTickFactorFromAgeCurve>
     <statOffsets>
       <SM_BodySizeOffset>1.5</SM_BodySizeOffset>
       <SM_RaidWealthOffset>2500</SM_RaidWealthOffset>
@@ -75,13 +68,6 @@
     <displayOrderInCategory>1100</displayOrderInCategory>
     <biostatCpx>2</biostatCpx>
     <biostatMet>-3</biostatMet>
-    <biologicalAgeTickFactorFromAgeCurve>
-      <points>
-        <li>(15, 0.70)</li>
-        <li>(20, 0.45)</li>
-        <!-- <li>(45, 0.25)</li> -->
-      </points>
-    </biologicalAgeTickFactorFromAgeCurve>
     <statFactors>
       <MiningSpeed>1.5</MiningSpeed>
       <ConstructionSpeed>1.25</ConstructionSpeed>

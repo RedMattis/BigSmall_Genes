@@ -223,6 +223,35 @@
 		<selectionWeight>0</selectionWeight>
 	</VREAndroids.AndroidGeneDef>
 
+  <VREAndroids.AndroidGeneDef>
+    <defName>BS_PilotableSameSize_Android</defName>
+		<label>second-skin pilotable</label>
+		<description>This android has been made to function as a simple extension of a pilot. It will not be able to function without a pilot. The skills and mental traits of the pilot will be used.\n\nNote that the pilot can be no larger than the size of their vehicle.</description>
+		<iconPath>GeneIcons/BS_PilotableSameSize</iconPath>
+    <geneClass>BetterPrerequisites.PGene</geneClass>
+		<displayOrderInCategory>1</displayOrderInCategory>
+		<biostatCpx>10</biostatCpx>
+		<biostatMet>0</biostatMet>
+    <exclusionTags>
+      <li>BS_Pilotable</li>
+    </exclusionTags>
+    <missingGeneRomanceChanceFactor>0</missingGeneRomanceChanceFactor>
+		 <modExtensions>
+			<li Class="BetterPrerequisites.GeneExtension">
+				<applyBodyHediff>
+					<li>
+						<hediff>BS_PilotedSameSize</hediff>
+					</li>
+				</applyBodyHediff>
+			</li>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackAndroidChip</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackAndroidChip</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+		<selectionWeight>0</selectionWeight>
+	</VREAndroids.AndroidGeneDef>
+
   <!-- <VREAndroids.AndroidGeneDef ParentName="VREA_SubroutineBase">
 		<defName>BS_FusedPiloting_Android</defName>
 		<label>nerve-fused piloting</label>

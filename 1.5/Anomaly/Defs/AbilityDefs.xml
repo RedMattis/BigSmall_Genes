@@ -1,0 +1,35 @@
+<Defs>
+
+  <AbilityDef>
+    <defName>BS_ReleaseMiniDeadlifeDust</defName>
+    <label>release deadlife dust</label>
+    <description>Release a very small cloud of dust-like substance that will settle on nearby corpses and raise them as shamblers. The shamblers will only attack your enemies.</description>
+    <iconPath>UI/Abilities/ReleaseDeadlifeDust</iconPath>
+    <cooldownTicksRange>6000</cooldownTicksRange> <!-- 0.1 day -->
+    <showPsycastEffects>false</showPsycastEffects>
+    <sendMessageOnCooldownComplete>true</sendMessageOnCooldownComplete>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+    <hotKey>Misc1</hotKey>
+    <hostile>false</hostile>
+    <targetRequired>false</targetRequired>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <label>release deadlife dust</label>
+      <drawAimPie>true</drawAimPie>
+      <warmupTime>2</warmupTime>
+      <violent>false</violent>
+      <targetable>false</targetable>
+      <targetParams>
+        <canTargetSelf>true</canTargetSelf>
+      </targetParams>
+      <soundCast>DeadlifeRelease</soundCast>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityReleaseGas">
+        <gasType>DeadlifeDust</gasType>
+        <cellsToFill>4</cellsToFill>
+      </li>
+    </comps>
+  </AbilityDef>
+
+</Defs>
