@@ -26,7 +26,7 @@
         <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
 			</li>
 		</modExtensions>
-		<selectionWeight>1</selectionWeight>
+		<selectionWeight>0.5</selectionWeight>
 	</GeneDef>
 
   <GeneDef>

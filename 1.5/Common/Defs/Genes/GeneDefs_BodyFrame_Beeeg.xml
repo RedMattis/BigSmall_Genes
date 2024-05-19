@@ -10,7 +10,6 @@
     <biostatMet>0</biostatMet>
     <selectionWeight>1</selectionWeight>
     <canGenerateInGeneSet>true</canGenerateInGeneSet>
-    <endogeneCategory>BodyType</endogeneCategory>
     <customEffectDescriptions>
       <li>- - - - - - - - - - - - - - - - - - -</li>
       <li>- - Body Size General - - -</li>

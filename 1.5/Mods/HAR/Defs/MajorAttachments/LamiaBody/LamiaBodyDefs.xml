@@ -124,6 +124,7 @@
                     <li>Eyes</li>
                   </groups>
                   <woundAnchorTag>LeftEye</woundAnchorTag>
+                  <flipGraphic>true</flipGraphic>
                 </li>
                 <li>
                   <def>Eye</def>
@@ -143,6 +144,7 @@
                     <li>UpperHead</li>
                     <li>FullHead</li>
                   </groups>
+                  <flipGraphic>true</flipGraphic>
                 </li>
                 <li>
                   <def>Ear</def>
@@ -191,6 +193,7 @@
           <groups>
             <li>Shoulders</li>
           </groups>
+          <flipGraphic>true</flipGraphic>
           <parts>
             <li>
               <def>Clavicle</def>
@@ -209,6 +212,7 @@
               <groups>
                 <li>Arms</li>
               </groups>
+              <flipGraphic>true</flipGraphic>
               <parts>
                 <li>
                   <def>Humerus</def>
@@ -236,6 +240,7 @@
                   <groups>
                     <li>Hands</li>
                   </groups>
+                  <flipGraphic>true</flipGraphic>
                   <parts>
                     <li>
                       <def>Finger</def>

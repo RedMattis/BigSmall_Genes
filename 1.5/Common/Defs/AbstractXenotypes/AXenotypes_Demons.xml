@@ -244,7 +244,7 @@
     <description>These little theives are often in all sorts of strange places. They are especially know for stealing technological gadgets.</description>
     <inheritable>true</inheritable>
     <combatPowerFactor>1</combatPowerFactor>
-    <iconPath>UI/Icons/Xenotypes/Custom/CustomXenotypeIcon7</iconPath>
+    <iconPath>Xenotypes/BS_Imp</iconPath>
 		<nameMaker>BS_Demon_Namer</nameMaker>
 		<chanceToUseNameMaker>1.0</chanceToUseNameMaker>
     <genes>

@@ -9,7 +9,7 @@
     <statFactors>
       <InjuryHealingFactor>0.35</InjuryHealingFactor>
     </statFactors>
-    <biostatMet>5</biostatMet>
+    <biostatMet>6</biostatMet>
     <symbolPack>
       <prefixSymbols>
         <li><symbol>unhealing</symbol></li>

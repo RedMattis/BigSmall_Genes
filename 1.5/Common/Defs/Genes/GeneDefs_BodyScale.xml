@@ -10,7 +10,6 @@
     <biostatMet>0</biostatMet>
     <selectionWeight>1</selectionWeight>
     <canGenerateInGeneSet>true</canGenerateInGeneSet>
-    <endogeneCategory>BodyType</endogeneCategory>
     <modExtensions>
 			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
 				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>

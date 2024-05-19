@@ -217,7 +217,7 @@
   <ThingDef ParentName="BS_GeneDicombobulator">
     <defName>BS_XenoCopy</defName>
     <label>Xeno-germline mirroring</label>
-    <description>Randomly copies about 2/3 of endogenes into xenogenes.\n\nThis is mostly useful to control what overrides what, or for extracing into Xenogerms.</description>
+    <description>Randomly copies about 2/3 of not-disabled endogenes into xenogenes.\n\nThis is mostly useful to control what overrides what, or for extracing into Xenogerms.</description>
     <graphicData>
       <!-- Replace icon...-->
       <texPath>Item/Serum/BS_Mirroring</texPath>

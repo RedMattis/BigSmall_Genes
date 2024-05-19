@@ -10,6 +10,7 @@
 		<comps>
 			<li Class="AnimalBehaviours.HediffCompProperties_Waterstriding"/>
 		</comps>
+		<allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
 	</HediffDef>
 
 	<HediffDef>
@@ -23,6 +24,7 @@
 		<comps>
 			<li Class="AnimalBehaviours.HediffCompProperties_Floating"/>
 		</comps>
+		<allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
 	</HediffDef>
 
 	<HediffDef>
@@ -36,6 +38,7 @@
 		<comps>
 			<li Class="AnimalBehaviours.HediffCompProperties_Floating"/>
 		</comps>
+		<allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
 	</HediffDef>
 
 	<HediffDef>
@@ -49,5 +52,6 @@
 		<comps>
 			<li Class="AnimalBehaviours.HediffCompProperties_Floating"/>
 		</comps>
+		<allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
 	</HediffDef>
 </Defs>

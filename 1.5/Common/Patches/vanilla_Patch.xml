@@ -1,6 +1,6 @@
 <Patch>
 	<Operation Class="PatchOperationAdd">
-		<xpath>*/GeneDef[defName="ViolenceDisabled"]/exclusionTags</xpath>
+		<xpath>Defs/GeneDef[defName="ViolenceDisabled"]/exclusionTags</xpath>
 		<value>
 			<li>BS_Pacifism</li>
 		</value>
@@ -24,7 +24,6 @@
 			</value>
 		</match>
 	</Operation>
-
 
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThoughtDef[defName="GroinUncovered_Disapproved_Male"]/nullifyingGenes</xpath>

@@ -348,6 +348,7 @@
       <li>BS_Metabolism_Gene</li>
       <li>BS_AgingRate</li>
     </exclusionTags>
+    <selectionWeight>0.75</selectionWeight>
     <modExtensions>
 			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
 				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
@@ -377,6 +378,7 @@
     <exclusionTags>
       <li>BS_AgingRate</li>
     </exclusionTags>
+    <selectionWeight>0.5</selectionWeight>
     <statFactors>
       <SM_GrowthPointAccumulation>4</SM_GrowthPointAccumulation>
     </statFactors>
@@ -407,8 +409,9 @@
     <exclusionTags>
       <li>BS_AgingRate</li>
     </exclusionTags>
+    <selectionWeight>0.25</selectionWeight>
     <statFactors>
-      <SM_GrowthPointAccumulation>3</SM_GrowthPointAccumulation>
+      <SM_GrowthPointAccumulation>2.1</SM_GrowthPointAccumulation>
     </statFactors>
     <modExtensions>
 			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
@@ -430,11 +433,12 @@
         <li>(3, 0.9)</li>
         <li>(18, 0.8)</li>
         <li>(25, 0.5)</li>
-        <li>(30, 0.5)</li>
+        <li>(30, 0.45)</li>
       </points>
     </biologicalAgeTickFactorFromAgeCurve>
     <biostatMet>0</biostatMet>
     <biostatCpx>1</biostatCpx>
+    <selectionWeight>0.25</selectionWeight>
     <exclusionTags>
       <li>BS_AgingRate</li>
     </exclusionTags>
@@ -458,11 +462,12 @@
         <li>(3, 0.8)</li>
         <li>(18, 0.7)</li>
         <li>(20, 0.25)</li>
-        <li>(25, 0.25)</li>
+        <li>(25, 0.23)</li>
       </points>
     </biologicalAgeTickFactorFromAgeCurve>
     <biostatMet>0</biostatMet>
     <biostatCpx>2</biostatCpx>
+    <selectionWeight>0.5</selectionWeight>
     <exclusionTags>
       <li>BS_AgingRate</li>
     </exclusionTags>

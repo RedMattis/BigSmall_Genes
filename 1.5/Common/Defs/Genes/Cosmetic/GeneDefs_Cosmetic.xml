@@ -1,4 +1,4 @@
-<?xml version="1.0" ?>
+<?xml version="1.0"?>
 <Defs>
   <GeneDef ParentName="GeneHairColorBase">
     <defName>Hair_MediumRed</defName>
@@ -159,8 +159,11 @@
         <colorType>Custom</colorType>
         <drawData>
           <defaultData>
-            <layer>52</layer>
+            <layer>80</layer>
           </defaultData>
+          <dataNorth>
+            <layer>10</layer>
+          </dataNorth>
         </drawData>
         <parentTagDef>Head</parentTagDef>
       </li>

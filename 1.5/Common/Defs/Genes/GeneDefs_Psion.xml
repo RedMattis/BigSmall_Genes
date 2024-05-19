@@ -95,6 +95,7 @@
 			<li>Armour</li>
 			<li>Armor</li>
 			<li>MeleeDamage</li>
+			<li>BS_MysticWarrior</li>
 			<!-- <li>Toughness</li> -->
 		</exclusionTags>
 		<selectionWeight>1</selectionWeight>
@@ -263,7 +264,7 @@
 					<PawnBeauty>1</PawnBeauty>
 					<SocialImpact>0.10</SocialImpact>
 					<TradePriceImprovement>0.025</TradePriceImprovement>
-					<NegotiationAbility>0.10</NegotiationAbility>
+					<NegotiationAbility>0.20</NegotiationAbility>
 					<MeleeDodgeChance>4</MeleeDodgeChance>
 				</statOffsets>
 			</li>
@@ -283,7 +284,7 @@
 					<PawnBeauty>10</PawnBeauty>
 					<SocialImpact>0.15</SocialImpact>
 					<TradePriceImprovement>0.025</TradePriceImprovement>
-					<NegotiationAbility>0.20</NegotiationAbility>
+					<NegotiationAbility>0.30</NegotiationAbility>
 					<MeleeDodgeChance>10</MeleeDodgeChance>
 				</statOffsets>
 				<statFactors>

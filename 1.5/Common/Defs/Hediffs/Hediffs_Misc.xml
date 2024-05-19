@@ -267,6 +267,7 @@
         <scaleToBodySize>True</scaleToBodySize>
 			</li>
 		</comps>
+    <allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
   </HediffDef>
 
   <HediffDef>
@@ -284,6 +285,7 @@
         <scaleToBodySize>True</scaleToBodySize>
 			</li>
 		</comps>
+    <allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
   </HediffDef>
 
 </Defs>

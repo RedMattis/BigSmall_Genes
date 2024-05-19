@@ -194,4 +194,105 @@
     <defName>LoS_SnakeHair</defName>
     <texPath>Xenotypes/LoS_SnakeHair</texPath>
   </XenotypeIconDef>
+
+  <XenotypeIconDef>
+    <defName>BS_Freak</defName>
+    <texPath>Xenotypes/BS_Freak</texPath>
+  </XenotypeIconDef>
+
+  <XenotypeIconDef>
+    <defName>BS_Troll_2</defName>
+    <texPath>Xenotypes/BS_Troll_2</texPath>
+  </XenotypeIconDef>
+  
+  <XenotypeIconDef>
+    <defName>BS_Hearthguardian</defName>
+    <texPath>Xenotypes/BS_Hearthguardian</texPath>
+  </XenotypeIconDef>
+
+  <XenotypeIconDef>
+    <defName>BS_Hearthdoll</defName>
+    <texPath>Xenotypes/BS_Hearthdoll</texPath>
+  </XenotypeIconDef>
+  
+  <XenotypeIconDef>
+    <defName>BS_Fleshgolem</defName>
+    <texPath>Xenotypes/BS_Fleshgolem</texPath>
+  </XenotypeIconDef>
+
+  <XenotypeIconDef>
+    <defName>BS_FleshGolemServant</defName>
+    <texPath>Xenotypes/BS_FleshGolemServant</texPath>
+  </XenotypeIconDef>
+  
+  <XenotypeIconDef>
+    <defName>BS_Glutton</defName>
+    <texPath>Xenotypes/BS_Glutton</texPath>
+  </XenotypeIconDef>
+
+  <XenotypeIconDef>
+    <defName>BS_LilGlutton</defName>
+    <texPath>Xenotypes/BS_LilGlutton</texPath>
+  </XenotypeIconDef>
+  
+  <XenotypeIconDef>
+    <defName>BS_Imp</defName>
+    <texPath>Xenotypes/BS_Imp</texPath>
+  </XenotypeIconDef>
+
+  <XenotypeIconDef>
+    <defName>BS_DraculMaster</defName>
+    <texPath>Xenotypes/BS_DraculMaster</texPath>
+  </XenotypeIconDef>
+  
+  <XenotypeIconDef>
+    <defName>BS_BS_Dracul</defName>
+    <texPath>Xenotypes/BS_BS_Dracul</texPath>
+  </XenotypeIconDef>
+
+  <XenotypeIconDef>
+    <defName>BS_DraculNeonate</defName>
+    <texPath>Xenotypes/BS_DraculNeonate</texPath>
+  </XenotypeIconDef>
+  
+  <XenotypeIconDef>
+    <defName>BS_DraculSpawn</defName>
+    <texPath>Xenotypes/BS_DraculSpawn</texPath>
+  </XenotypeIconDef>
+
+  <XenotypeIconDef>
+    <defName>BS_HalfVampire</defName>
+    <texPath>Xenotypes/BS_HalfVampire</texPath>
+  </XenotypeIconDef>
+  
+  <XenotypeIconDef>
+    <defName>BS_Frankenstein</defName>
+    <texPath>Xenotypes/BS_Frankenstein</texPath>
+  </XenotypeIconDef>
+
+  <XenotypeIconDef>
+    <defName>BS_Lycanthrope_2</defName>
+    <texPath>Xenotypes/BS_Lycanthrope_2</texPath>
+  </XenotypeIconDef>
+
+  <XenotypeIconDef>
+    <defName>BS_Ghost</defName>
+    <texPath>Xenotypes/BS_Ghost</texPath>
+  </XenotypeIconDef>
+  
+  <XenotypeIconDef>
+    <defName>BS_Returned</defName>
+    <texPath>Xenotypes/BS_Returned</texPath>
+  </XenotypeIconDef>
+
+  <XenotypeIconDef>
+    <defName>BS_Nosferatu</defName>
+    <texPath>Xenotypes/BS_Nosferatu</texPath>
+  </XenotypeIconDef>
+  
+  <XenotypeIconDef>
+    <defName>BS_WhiteRose</defName>
+    <texPath>Xenotypes/BS_WhiteRose</texPath>
+  </XenotypeIconDef>
+  
 </Defs>

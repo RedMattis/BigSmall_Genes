@@ -8,6 +8,48 @@
 	</Operation> -->
 
 
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/MutantDef[defName="Ghoul"]/disablesGenes</xpath>
+    <value>
+      <li>BS_Diet_Herbivore</li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/MutantDef[defName="Ghoul"]/abilityWhitelist</xpath>
+    <value>
+      <li>BS_StickyAcidSpray</li>
+      <li>VU_Hermaphromorph</li> <!-- -_-;; -->
+      <li>BS_FoamSpray</li>
+      <li>BS_EjectPilot</li>
+      <li>BS_Incorporate_Abillity</li>
+      <li>BS_Mimic_Abillity</li>
+      <li>BS_StopMimic</li>
+      <li>BS_IntegrateGenes</li>
+      <li>BS_DisintegrateXenoGenes</li>
+      <li>BS_flying_jump</li>
+      <li MayRequire="RedMattis.Yokai">BS_NekoReanimate</li>
+      <li MayRequire="RedMattis.Yokai">BS_KitsuneFireball</li>
+      <li MayRequire="RedMattis.Yokai">BS_FireJump</li>
+      <li MayRequire="RedMattis.LamiasAndOtherSnakes">LoS_Spring</li>
+      <li MayRequire="RedMattis.LamiasAndOtherSnakes">LoS_Long_Spring</li>
+      <li MayRequire="RedMattis.LamiasAndOtherSnakes">LoS_Babyeater</li>
+      <li MayRequire="RedMattis.LamiasAndOtherSnakes">LoS_CursedAcidSpray</li>
+      <li MayRequire="RedMattis.LamiasAndOtherSnakes">BS_GorgonPetrify</li>
+      <li MayRequire="RedMattis.LamiasAndOtherSnakes">BS_GorgonPointBlankPetrify</li>
+      <li MayRequire="RedMattis.LamiasAndOtherSnakes">BS_SnekEngulf_New</li>
+      <li MayRequire="RedMattis.BSSlimes">BS_Regurgitate</li>
+      <li MayRequire="RedMattis.BSSlimes">BS_SlimeEngulf_New</li>
+      <li MayRequire="RedMattis.BSSlimes">BS_SlimeEngulfElixir_New</li>
+      <li MayRequire="RedMattis.BSSlimes">BS_SlimeJump</li>
+      <li MayRequire="RedMattis.BSSlimes">BS_SlimeFoamJump</li>
+      <li MayRequire="RedMattis.BSSlimes">BS_SlimeFireJump</li>
+      <li MayRequire="RedMattis.BSSlimes">BS_Slime_Acidspray</li>
+      <li MayRequire="RedMattis.BSSlimes">BS_SlimeGreater_Acidspray</li>
+      <li MayRequire="RedMattis.BSSlimes">BS_SlimeFireSpew</li>
+      <li MayRequire="RedMattis.BSSlimes">BS_SlimeCoagulate</li>
+    </value>
+  </Operation>
 
 
 </Patch>
