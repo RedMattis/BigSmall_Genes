@@ -9,6 +9,7 @@
 		<biostatCpx>1</biostatCpx>
 		<biostatMet>1</biostatMet>
     <missingGeneRomanceChanceFactor>0</missingGeneRomanceChanceFactor>
+		<displayCategory>BS_Pilotable</displayCategory>
     <exclusionTags>
       <li>BS_Pilotable</li>
     </exclusionTags>
@@ -38,6 +39,7 @@
 		<displayOrderInCategory>2</displayOrderInCategory>
 		<biostatCpx>5</biostatCpx>
 		<biostatMet>-1</biostatMet>
+		<displayCategory>BS_Pilotable</displayCategory>
     <exclusionTags>
       <li>BS_Pilotable</li>
     </exclusionTags>
@@ -67,6 +69,7 @@
 		<displayOrderInCategory>2</displayOrderInCategory>
 		<biostatCpx>3</biostatCpx>
 		<biostatMet>0</biostatMet>
+		<displayCategory>BS_Pilotable</displayCategory>
     <exclusionTags>
       <li>BS_Pilotable</li>
     </exclusionTags>
@@ -97,6 +100,7 @@
 		<biostatCpx>10</biostatCpx>
 		<biostatMet>1</biostatMet>
     <missingGeneRomanceChanceFactor>0</missingGeneRomanceChanceFactor>
+		<displayCategory>BS_Pilotable</displayCategory>
     <exclusionTags>
       <li>BS_Pilotable</li>
     </exclusionTags>

@@ -49,6 +49,7 @@
       <SM_RaidWealthMultiplier>2</SM_RaidWealthMultiplier>
       <LifespanFactor>2.0</LifespanFactor>
       <CarryingCapacity>3</CarryingCapacity>
+      <VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">2.5</VEF_MassCarryCapacity>
     </statFactors>
     <selectionWeight>1</selectionWeight>
     <marketValueFactor>2</marketValueFactor>
@@ -73,11 +74,13 @@
       <DeepDrillingSpeed>1.35</DeepDrillingSpeed>
       <MoveSpeed>1.1</MoveSpeed>
       <CarryingCapacity>1.5</CarryingCapacity>
+      <VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">1.4</VEF_MassCarryCapacity>
       <SM_RaidWealthMultiplier>1.5</SM_RaidWealthMultiplier>
     </statFactors>
     <statOffsets>
       <SM_BodySizeOffset>0.75</SM_BodySizeOffset>
       <SM_RaidWealthOffset>1500</SM_RaidWealthOffset>
+      <VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">75</VEF_MassCarryCapacity>
     </statOffsets>
     <selectionWeight>1</selectionWeight>
     <marketValueFactor>1.5</marketValueFactor>
@@ -96,7 +99,8 @@
       <ConstructionSpeed>1.2</ConstructionSpeed>
       <DeepDrillingSpeed>1.2</DeepDrillingSpeed>
       <MoveSpeed>1.1</MoveSpeed>
-      <CarryingCapacity>1.4</CarryingCapacity>
+      <CarryingCapacity>1.3</CarryingCapacity>
+      <VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">1.3</VEF_MassCarryCapacity>
       <SM_RaidWealthMultiplier>1.2</SM_RaidWealthMultiplier>
     </statFactors>
     <statOffsets>
@@ -121,6 +125,7 @@
       <DeepDrillingSpeed>1.25</DeepDrillingSpeed>
       <MoveSpeed>0.8</MoveSpeed>
       <CarryingCapacity>2</CarryingCapacity>
+      <VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">2</VEF_MassCarryCapacity>
       <SM_RaidWealthMultiplier>1.5</SM_RaidWealthMultiplier>
     </statFactors>
     <statOffsets>
@@ -146,6 +151,7 @@
       <ConstructionSpeed>1.2</ConstructionSpeed>
       <DeepDrillingSpeed>1.1</DeepDrillingSpeed>
       <CarryingCapacity>2</CarryingCapacity>
+      <VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">2</VEF_MassCarryCapacity>
       <SM_RaidWealthMultiplier>1.8</SM_RaidWealthMultiplier>
     </statFactors>
     <statOffsets>
@@ -188,6 +194,7 @@
       <ConstructionSpeed>1.3</ConstructionSpeed>
       <DeepDrillingSpeed>1.2</DeepDrillingSpeed>
       <CarryingCapacity>2</CarryingCapacity>
+      <VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">1.75</VEF_MassCarryCapacity>
       <SM_RaidWealthMultiplier>2</SM_RaidWealthMultiplier>
     </statFactors>
     <statOffsets>
@@ -231,6 +238,7 @@
       <ConstructionSpeed>1.6</ConstructionSpeed>
       <MoveSpeed>1.2</MoveSpeed>
       <CarryingCapacity>4</CarryingCapacity>
+      <VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">2</VEF_MassCarryCapacity>
       <SM_RaidWealthMultiplier>4</SM_RaidWealthMultiplier>
     </statFactors>
     <statOffsets>
@@ -274,6 +282,7 @@
       <ConstructionSpeed>1.25</ConstructionSpeed>
       <DeepDrillingSpeed>1.25</DeepDrillingSpeed>
       <CarryingCapacity>3</CarryingCapacity>
+      <VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">2</VEF_MassCarryCapacity>
       <SM_RaidWealthMultiplier>2</SM_RaidWealthMultiplier>
     </statFactors>
     <statOffsets>
@@ -281,7 +290,6 @@
       <MoveSpeed>-0.1</MoveSpeed>
     </statOffsets>
     <canGenerateInGeneSet>true</canGenerateInGeneSet>
-    <displayCategory>Archite</displayCategory>
     <selectionWeight>1.5</selectionWeight>
     <geneClass>BetterPrerequisites.PGene</geneClass>
     <marketValueFactor>1</marketValueFactor>

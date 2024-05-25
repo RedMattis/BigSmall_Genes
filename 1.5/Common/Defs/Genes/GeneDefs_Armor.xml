@@ -456,6 +456,7 @@
     <displayOrderInCategory>-6</displayOrderInCategory>
     <statFactors>
       <IncomingDamageFactor>0.4</IncomingDamageFactor>
+			<CarryingCapacity>1.5</CarryingCapacity>
     </statFactors>
     <biostatCpx>3</biostatCpx>
     <biostatMet>-4</biostatMet>
@@ -496,6 +497,7 @@
     <statFactors>
       <IncomingDamageFactor>0.5</IncomingDamageFactor>
       <MeleeDamageFactor>1.1</MeleeDamageFactor>
+			<CarryingCapacity>1.5</CarryingCapacity>
     </statFactors>
     <biostatCpx>2</biostatCpx>
     <biostatMet>-3</biostatMet>

@@ -18,6 +18,7 @@
       <li>Hair_Grayless</li>
 
       <li>Ageless</li>
+			<li>BS_TrulyAgeless</li>
 			<li>ArchiteMetabolism</li>
 			<li>DiseaseFree</li>
 			<li>PerfectImmunity</li>
@@ -99,6 +100,7 @@
     <genes>
       <li>BS_Bloodlust</li>
       <li>Ageless</li>
+			<li>BS_TrulyAgeless</li>
       <li>RobustDigestion</li>
 			<li>ArchiteMetabolism</li>
 			<li>DiseaseFree</li>
@@ -173,6 +175,7 @@
     <genes>
       <li>BS_Bloodlust</li>
       <li>Ageless</li>
+			<li>BS_TrulyAgeless</li>
       <li>RobustDigestion</li>
 			<li>ArchiteMetabolism</li>
 			<li>DiseaseFree</li>
@@ -249,6 +252,7 @@
 		<chanceToUseNameMaker>1.0</chanceToUseNameMaker>
     <genes>
       <li>Ageless</li>
+			<li>BS_TrulyAgeless</li>
       <li>RobustDigestion</li>
 			<li>ArchiteMetabolism</li>
 			<li>DiseaseFree</li>

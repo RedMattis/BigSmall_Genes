@@ -1,5 +1,14 @@
 <Defs>
-
+  <GeneDef Abstract="True" Name="BS_GenericGene">
+    <exclusionTags Inherit="False"/>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
+			</li>
+		</modExtensions>
+  </GeneDef>
 
   <GeneDef ParentName="GeneMoveSpeedBase">
     <defName>BS_Very_Slow</defName>
@@ -471,6 +480,25 @@
     <exclusionTags>
       <li>BS_AgingRate</li>
     </exclusionTags>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>BS_TrulyAgeless</defName>
+    <label>truly ageless</label>
+    <description>Carriers of this gene have at most an apparent age of 25 regardless of their actual age.</description>
+    <geneClass>BigAndSmall.TrulyAgeless</geneClass>
+    <prerequisite>Ageless</prerequisite>
+    <iconPath>GeneIcons/BS_TrulyAgeless</iconPath>
+    <biostatMet>0</biostatMet>
+    <biostatCpx>1</biostatCpx>
+    <selectionWeight>0.5</selectionWeight>
     <modExtensions>
 			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
 				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>

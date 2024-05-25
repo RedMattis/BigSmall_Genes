@@ -70,6 +70,7 @@
     <statOffsets>
       <SM_BodySizeOffset>1.5</SM_BodySizeOffset>
       <CarryingCapacity>200</CarryingCapacity>
+      <VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">200</VEF_MassCarryCapacity>
     </statOffsets>
     <statFactors>
       <MiningSpeed>2.0</MiningSpeed>
@@ -106,6 +107,7 @@
       <SM_BodySizeOffset>3</SM_BodySizeOffset>
       <MoveSpeed>1.0</MoveSpeed>
       <CarryingCapacity>500</CarryingCapacity>
+      <VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">500</VEF_MassCarryCapacity>
     </statOffsets>
     <conditionalStatAffecters>
       <li Class="ConditionalStatAffecter_Clothed">

@@ -1,0 +1,93 @@
+<Defs>
+  <GeneDef ParentName="BS_GenericGene">
+    <defName>BS_LesserDeathless</defName>
+    <label>unstable deathlessness</label>
+    <description>Carriers of this gene can only survive lethal injuries for a bit over a day.</description>
+    <iconPath>GeneIcons/BS_Gene_LesserDeathless</iconPath>
+    <displayCategory>BS_Deathless</displayCategory>
+    <prerequisite>Deathless</prerequisite>
+    <biostatMet>2</biostatMet>
+    <biostatCpx>-6</biostatCpx>
+    <geneClass>BigAndSmall.LesserDeathless</geneClass>
+    <exclusionTags><li>BS_GreaterLesserDeathless</li></exclusionTags>
+  </GeneDef>
+
+  <HediffDef>
+    <defName>BS_LesserDeathless_Death</defName>
+    <label>Lethal Deterioration</label>
+    <description>This person is fading as the body fails to stabilize due to lethal injuries.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <initialSeverity>0.001</initialSeverity>
+    <defaultLabelColor>(0.9, 1.0, 0.35)</defaultLabelColor>
+    <comps>
+      <li Class="HediffCompProperties_KillAfterDays">
+				<days>1</days>
+			</li>
+    </comps>
+  </HediffDef>
+
+  <GeneDef>
+    <defName>BS_ReturningSoul</defName>
+    <label>revenant soul</label>
+    <description>Carriers of this gene can only be permanently killed with fire, otherwise their essence will find a new intact dead body to rise and inhabit.</description>
+    <iconPath>GeneIcons/BS_ReturningSoul</iconPath>
+    <displayCategory>BS_Deathless</displayCategory>
+    <biostatMet>0</biostatMet>
+    <biostatArc>2</biostatArc>
+    <biostatCpx>6</biostatCpx>
+    <geneClass>BigAndSmall.ReturningSoul</geneClass>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
+			</li>
+      <li Class="BigAndSmall.ReturningSoulModExt">
+        <corpseReturn>true</corpseReturn>
+        <addCorpseGenes>true</addCorpseGenes>
+        <addCorpseBionics>true</addCorpseBionics>
+      </li>
+		</modExtensions>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>BS_Immortal</defName>
+    <label>Immortal Return</label>
+    <description>Carriers of this gene can only be permanently killed with fire, otherwise they will eventually return.</description>
+    <iconPath>GeneIcons/BS_Immortal</iconPath>
+    <displayCategory>BS_Deathless</displayCategory>
+    <biostatMet>0</biostatMet>
+    <biostatArc>3</biostatArc>
+    <biostatCpx>12</biostatCpx>
+    <geneClass>BigAndSmall.ReturningSoul</geneClass>
+    <selectionWeight>0.5</selectionWeight>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
+			</li>
+      <li Class="BigAndSmall.ReturningSoulModExt">
+        <corpseReturn>false</corpseReturn>
+      </li>
+		</modExtensions>
+  </GeneDef>
+
+  <HediffDef>
+    <defName>BS_BurnReturnDenial</defName>
+    <label>Recent Burns</label>
+    <description>This person was recently burned. This might prevent them from returning if they die.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <initialSeverity>0.001</initialSeverity>
+    <defaultLabelColor>(0.9, 1.0, 0.35)</defaultLabelColor>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>1000</disappearsAfterTicks> <!-- Average coma duration based on ImplantXenogerm surgery outcome. -->
+        <showRemainingTime>true</showRemainingTime>
+        <canUseDecimalsShortForm>true</canUseDecimalsShortForm>
+      </li>
+    </comps>
+  </HediffDef>
+
+
+</Defs>

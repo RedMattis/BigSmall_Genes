@@ -471,7 +471,7 @@
 
   <RecipeDef ParentName="CookMealBase">
     <defName>BS_CookLargeMealSurvival</defName>
-    <label>cook packaged survival large meal</label>
+    <label>cook packaged large survival meal</label>
     <description>Prepare a packaged survival meal from a combination of meat and plant ingredients. Much of the ingredients are wasted in the preservation process.</description>
     <jobString>Cooking survival meal.</jobString>
     <workSpeedStat>CookSpeed</workSpeedStat>
@@ -515,7 +515,7 @@
 
   <RecipeDef ParentName="CookMealBase">
     <defName>BS_CookLargeMealSurvivalBulk</defName>
-    <label>cook packaged survival meal x4</label>
+    <label>cook packaged large survival meal x4</label>
     <description>Prepare 4 packaged survival meals from a combination of meat and plant ingredients. Much of the ingredients are wasted in the preservation process.</description>
     <jobString>Cooking 4 survival meals.</jobString>
     <workAmount>1440</workAmount>

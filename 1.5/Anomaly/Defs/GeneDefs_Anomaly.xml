@@ -1,0 +1,14 @@
+<Defs>
+  <GeneDef ParentName="BS_GenericGene">
+    <defName>BS_GreaterDeathless</defName>
+    <label>greater deathlessness</label>
+    <description>Carriers of this gene can survive what is normally lethal injuries even for the deathless. Every now and then they will get a stack of Death Refusal (max 1).</description>
+    <iconPath>GeneIcons/BS_Gene_FastDeathless</iconPath>
+    <displayCategory>BS_Deathless</displayCategory>
+    <prerequisite>Deathless</prerequisite>
+    <biostatArc>1</biostatArc>
+    <biostatCpx>5</biostatCpx>
+    <geneClass>BigAndSmall.GreaterDeathless</geneClass>
+    <exclusionTags><li>BS_GreaterLesserDeathless</li></exclusionTags>
+  </GeneDef>
+</Defs>

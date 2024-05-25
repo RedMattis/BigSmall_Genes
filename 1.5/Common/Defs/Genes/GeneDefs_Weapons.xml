@@ -10,6 +10,7 @@
 		<biostatArc>0</biostatArc>
 		<selectionWeight>1</selectionWeight>
 		<geneClass>BetterPrerequisites.PGene</geneClass>
+		<displayCategory>BS_InnateAttacks</displayCategory>
 		<statOffsets>
 			<SM_RaidWealthOffset>1000</SM_RaidWealthOffset>
 		</statOffsets>
@@ -47,6 +48,7 @@
 			<WorkSpeedGlobal>0.85</WorkSpeedGlobal>
 		</statFactors> -->
 		<geneClass>BetterPrerequisites.PGene</geneClass>
+		<displayCategory>BS_InnateAttacks</displayCategory>
 		<selectionWeight>0.5</selectionWeight>
 		<modExtensions>
 			<li Class="BetterPrerequisites.GeneExtension">
@@ -88,6 +90,7 @@
 			<WorkSpeedGlobal>0.85</WorkSpeedGlobal>
 		</statFactors> -->
 		<geneClass>BetterPrerequisites.PGene</geneClass>
+		<displayCategory>BS_InnateAttacks</displayCategory>
 		<selectionWeight>0.5</selectionWeight>
 		<modExtensions>
 			<li Class="BetterPrerequisites.GeneExtension">
@@ -123,6 +126,7 @@
 		<biostatCpx>2</biostatCpx>
 		<biostatMet>-3</biostatMet>
 		<geneClass>BetterPrerequisites.PGene</geneClass>
+		<displayCategory>BS_InnateAttacks</displayCategory>
 		<selectionWeight>0.5</selectionWeight>
 		<statFactors>
       <EatingSpeed>4</EatingSpeed>

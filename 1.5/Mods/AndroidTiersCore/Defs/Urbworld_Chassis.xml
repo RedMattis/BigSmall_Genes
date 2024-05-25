@@ -33,6 +33,7 @@
         <statOffsets>
           <SM_BodySizeOffset>3</SM_BodySizeOffset>
           <CarryingCapacity>500</CarryingCapacity>
+          <VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">500</VEF_MassCarryCapacity>
           <ComfyTemperatureMin>-80</ComfyTemperatureMin>
           <ComfyTemperatureMax>20</ComfyTemperatureMax>
           <SM_EVA_Level>2</SM_EVA_Level>

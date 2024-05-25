@@ -30,6 +30,18 @@
   </GeneCategoryDef>
 
   <GeneCategoryDef>
+    <defName>BS_Pilotable</defName>
+    <label>Pilotable</label>
+    <displayPriorityInXenotype>711</displayPriorityInXenotype>
+  </GeneCategoryDef>
+
+  <GeneCategoryDef>
+    <defName>BS_InnateAttacks</defName>
+    <label>Innate Attacks</label>
+    <displayPriorityInXenotype>712</displayPriorityInXenotype>
+  </GeneCategoryDef>
+
+  <GeneCategoryDef>
     <defName>BS_Horns</defName>
     <label>Horns</label>
     <displayPriorityInXenotype>730</displayPriorityInXenotype>
@@ -70,4 +82,11 @@
     <!-- Cosmetic_Skin -110 -->
     <displayPriorityInGenepack>-2104</displayPriorityInGenepack>
   </GeneCategoryDef>
+
+  <GeneCategoryDef>
+    <defName>BS_Deathless</defName>
+    <label>death-resistance</label>
+    <displayPriorityInXenotype>995</displayPriorityInXenotype>
+  </GeneCategoryDef>
+
 </Defs>
