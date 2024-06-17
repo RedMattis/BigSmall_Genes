@@ -101,6 +101,8 @@
     <value>
       <li>BS_FeedingFrenzy</li>
 			<li>BS_GeneEater</li>
+			<li MayRequire="RedMattis.LamiasAndOtherSnakes">BS_SnekEngulf</li>
+			<li MayRequire="RedMattis.BSSlime">BS_SlimeEngulf</li>
     </value>
   </Operation>
 
@@ -163,6 +165,21 @@
     <xpath>Defs/ThingDef[defName="Apparel_BasicShirt" or defName="Apparel_Pants" or defName="Apparel_Parka" or defName="Apparel_Tuque" or defName="Apparel_SimpleHelmet"]/apparel/tags</xpath>
     <value>
 			<li>BS_MedievalBasic</li>
+    </value>
+  </Operation>
+
+	<!--A character with both these genes otherwise lack a comfortable temperature entierly.-->
+	<Operation Class="PatchOperationReplace">
+    <xpath>Defs/GeneDef[defName="MinTemp_SmallIncrease"]/statOffsets/ComfyTemperatureMin</xpath>
+    <value>
+      <ComfyTemperatureMin>4.5</ComfyTemperatureMin>
+    </value>
+  </Operation>
+
+	<Operation Class="PatchOperationReplace">
+    <xpath>Defs/GeneDef[defName="MaxTemp_SmallDecrease"]/statOffsets/ComfyTemperatureMax</xpath>
+    <value>
+      <ComfyTemperatureMax>-4.5</ComfyTemperatureMax>
     </value>
   </Operation>
 	

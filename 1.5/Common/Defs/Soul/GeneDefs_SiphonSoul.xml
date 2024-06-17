@@ -1,0 +1,150 @@
+<Defs>
+  <GeneDef>
+    <defName>BS_ConsumeSoul</defName>
+    <label>siphon soul</label>
+    <displayCategory>Archite</displayCategory>
+    <description>Grants the ability to drain the essence of a downed foe; killing them in the process. THe ability grants Anomalous Power and steals a small amount of the target's highest skill. The effect has diminishing returns. Dramatically more effective on psychicially sensitive targets (above 100%), targets with many archite genes, and targets with anomalous power themselves.</description>
+    <iconPath>GeneIcons/BS_SoulEater</iconPath>
+    <abilities>
+      <li>BS_ConsumeSoul</li>
+    </abilities>
+    <descriptionHyperlinks>
+      <AbilityDef>BS_ConsumeSoul</AbilityDef>
+    </descriptionHyperlinks>
+    <biostatMet>0</biostatMet>
+    <biostatArc>1</biostatArc>
+    <minAgeActive>5</minAgeActive>
+    <selectionWeight>1</selectionWeight>
+    <biostatCpx>4</biostatCpx>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+  <AbilityDef ParentName="AbilityTouchBase">
+    <defName>BS_ConsumeSoul</defName>
+    <label>siphon soul</label>
+    <description>Siphon power from a downed foe. This will cause irreversible damage.</description>
+    <iconPath>GeneIcons/BS_SoulEater</iconPath>
+    <displayOrder>100</displayOrder>
+    <warmupMote>Mote_ResurrectAbility</warmupMote>
+    <warmupStartSound>Resurrect_Cast</warmupStartSound>
+    <hostile>true</hostile>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+    <verbProperties>
+      <verbClass>Verb_CastAbilityTouch</verbClass>
+      <drawAimPie>true</drawAimPie>
+      <range>-1</range>
+      <warmupTime>3</warmupTime>
+      <targetParams>
+        <canTargetSelf>false</canTargetSelf>
+        <canTargetBuildings>false</canTargetBuildings>
+        <canTargetMechs>false</canTargetMechs>
+        <canTargetBloodfeeders>true</canTargetBloodfeeders>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="BigAndSmall.CompProperties_ConsumeSoul">
+        <gainMultiplier>1</gainMultiplier>
+        <exponentialFalloff>2.5</exponentialFalloff>
+        <gainSkillMultiplier>0.25</gainSkillMultiplier>
+      </li>
+      <li Class="CompProperties_AbilityFleckOnTarget">
+        <fleckDef>PsycastPsychicEffect</fleckDef>
+        <scale>0.6</scale>
+      </li>
+    </comps>
+    <aiCanUse>false</aiCanUse>
+  </AbilityDef>
+
+  <GeneDef>
+    <defName>BS_ConsumeSoul_Enslave</defName>
+    <label>siphon soul (husk)</label>
+    <description>Grants the ability to drain the essence of a downed foe; subjugating them in the process. THe ability grants Anomalous Power and steals a small amount of the target's highest skill. The effect has diminishing returns. Dramatically more effective on psychicially sensitive targets (above 100%), targets with many archite genes, and targets with anomalous power themselves.</description>
+    <iconPath>GeneIcons/BS_SoulEater</iconPath>
+    <prerequisite>BS_ConsumeSoul</prerequisite>
+    <abilities>
+      <li>BS_ConsumeSoul_Enslave</li>
+    </abilities>
+    <descriptionHyperlinks>
+      <AbilityDef>BS_ConsumeSoul_Enslave</AbilityDef>
+    </descriptionHyperlinks>
+    <biostatMet>0</biostatMet>
+    <biostatArc>0</biostatArc>
+    <minAgeActive>5</minAgeActive>
+    <selectionWeight>1</selectionWeight>
+    <biostatCpx>3</biostatCpx>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+  <AbilityDef ParentName="AbilityTouchBase">
+    <defName>BS_ConsumeSoul_Enslave</defName>
+    <label>create husk</label>
+    <description>Siphon power from a downed foe. This will not kill them, but will cause irreversible mental damage.</description>
+    <iconPath>GeneIcons/BS_SoulEater_Enslave</iconPath>
+    <displayOrder>100</displayOrder>
+    <warmupMote>Mote_ResurrectAbility</warmupMote>
+    <warmupStartSound>Resurrect_Cast</warmupStartSound>
+    <hostile>true</hostile>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+    <verbProperties>
+      <verbClass>Verb_CastAbilityTouch</verbClass>
+      <drawAimPie>true</drawAimPie>
+      <range>-1</range>
+      <warmupTime>3</warmupTime>
+      <targetParams>
+        <canTargetSelf>false</canTargetSelf>
+        <canTargetBuildings>false</canTargetBuildings>
+        <canTargetMechs>false</canTargetMechs>
+        <canTargetBloodfeeders>true</canTargetBloodfeeders>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="BigAndSmall.CompProperties_ConsumeSoul">
+        <gainMultiplier>0.6</gainMultiplier>
+        <exponentialFalloff>2.5</exponentialFalloff>
+        <doKill>false</doKill>
+        <doEnslave>true</doEnslave>
+        <gainSkillMultiplier>0.25</gainSkillMultiplier>
+      </li>
+      <li Class="CompProperties_AbilityFleckOnTarget">
+        <fleckDef>PsycastPsychicEffect</fleckDef>
+        <scale>1.5</scale>
+      </li>
+    </comps>
+    <aiCanUse>false</aiCanUse>
+  </AbilityDef>
+
+  <GeneDef>
+    <defName>BS_ConsumeSoulOnHit</defName>
+    <label>siphon soul melee</label>
+    <description>Trigger siphon soul when dealing a fatal blow in melee or close-combat. Unlike the regular version this will steal only a tiny amount of skill from the victim.</description>
+    <prerequisite>BS_ConsumeSoul</prerequisite>
+    <iconPath>GeneIcons/BS_SoulEaterOnKill</iconPath>
+    <biostatMet>-1</biostatMet>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
+			</li>
+      <li Class="BetterPrerequisites.GeneExtension">
+				<consumeSoulOnHit>
+          <gainMultiplier>1</gainMultiplier>
+          <exponentialFalloff>2.5</exponentialFalloff>
+          <gainSkillMultiplier>0.05</gainSkillMultiplier>
+        </consumeSoulOnHit>
+			</li>
+		</modExtensions>
+  </GeneDef>
+</Defs>

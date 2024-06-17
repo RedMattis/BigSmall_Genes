@@ -246,7 +246,7 @@
 
   <RecipeDef ParentName="ATR_SurgeryFramework">
     <defName>BATR_Install_VacuumSealing</defName>
-    <label>Install Vaccum Proofing</label>
+    <label>Install Vacuum Proofing</label>
     <description>RA bundle of components meant to modify an android to secure it to vacuum exposure, this also decently insulates, but unfortunately decreases mobility somewhat.</description>
     <!-- <hediffClass>Hediff_Implant</hediffClass> -->
     <ingredients>

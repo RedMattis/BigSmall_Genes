@@ -81,7 +81,7 @@
     <iconPath>GeneIcons/BS_FastPregnancy</iconPath>
     <displayCategory>Reproduction</displayCategory>
     <marketValueFactor>2</marketValueFactor>
-    <biostatCpx>5</biostatCpx>
+    <biostatCpx>3</biostatCpx>
     <biostatMet>-1</biostatMet>
     <biostatArc>0</biostatArc>
     <modExtensions>

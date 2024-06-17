@@ -1,0 +1,134 @@
+<Defs>
+  
+  <GeneDef>
+    <defName>BS_TrueForm_Angelic</defName>
+    <label>true form (angelic)</label>
+    <displayCategory>BS_Transformation</displayCategory>
+    <exclusionTags>
+      <li>BS_Transformation</li>
+      <li>BS_BodySizeHuge</li>
+    </exclusionTags>
+    <customEffectDescriptions>
+      <li>Gene is incompatible with the very large body size genes.</li>
+    </customEffectDescriptions>
+    <description>Carriers of this gene can transform into a larger more powerful form temporarily, the power of which is determined by the amount of Anomalous Power possessed. Sprouts glorious feathered wings, a halo, and gains increased ability to resist injury.</description>
+    <iconPath>GeneIcons/BS_AngelicForm</iconPath>
+    <abilities>
+      <li>BS_AngelicForm_Abillity</li>
+    </abilities>
+    <descriptionHyperlinks>
+      <AbilityDef>BS_AngelicForm_Abillity</AbilityDef>
+    </descriptionHyperlinks>
+    <biostatMet>-4</biostatMet>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
+        <hideGene>true</hideGene>
+			</li>
+		</modExtensions>
+    <canGenerateInGeneSet>false</canGenerateInGeneSet>
+    <selectionWeight>1</selectionWeight>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>BS_TrueForm_Demonic</defName>
+    <label>true form (demonic)</label>
+    <displayCategory>BS_Transformation</displayCategory>
+    <exclusionTags>
+      <li>BS_Transformation</li>
+      <li>BS_BodySizeHuge</li>
+    </exclusionTags>
+    <customEffectDescriptions>
+      <li>Gene is incompatible with the very large body size genes.</li>
+    </customEffectDescriptions>
+    <description>Carriers of this gene can transform into a larger more powerful form temporarily, the power of which is determined by the amount of Anomalous Power possessed. Sprouts frightening wings, talons, and gains the ability to breathe fire.</description>
+    <iconPath>GeneIcons/VU_DemonForm</iconPath>
+    <abilities>
+      <li>BS_DemonicForm_Abillity</li>
+    </abilities>
+    <descriptionHyperlinks>
+      <AbilityDef>BS_DemonicForm_Abillity</AbilityDef>
+    </descriptionHyperlinks>
+    <biostatMet>-4</biostatMet>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
+        <hideGene>true</hideGene>
+			</li>
+		</modExtensions>
+    <canGenerateInGeneSet>false</canGenerateInGeneSet>
+    <selectionWeight>1</selectionWeight>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>BS_TrueForm_Goliath</defName>
+    <label>goliath form</label>
+    <displayCategory>BS_Transformation</displayCategory>
+    <exclusionTags>
+      <li>BS_Transformation</li>
+      <li>BS_BodySizeHuge</li>
+    </exclusionTags>
+    <customEffectDescriptions>
+      <li>Gene is incompatible with the very large body size genes.</li>
+    </customEffectDescriptions>
+    <description>Carriers of this gene can transform into a larger more powerful form temporarily, the power of which is determined by the amount of Anomalous Power possessed. The form of a goliath is incredible resilient.</description>
+    <iconPath>GeneIcons/BS_GoliathForm</iconPath>
+    <abilities>
+      <li>BS_GoliathForm_Abillity</li>
+    </abilities>
+    <descriptionHyperlinks>
+      <AbilityDef>BS_GoliathForm_Abillity</AbilityDef>
+    </descriptionHyperlinks>
+    <biostatMet>-3</biostatMet>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
+        <hideGene>true</hideGene>
+			</li>
+		</modExtensions>
+    <canGenerateInGeneSet>false</canGenerateInGeneSet>
+    <selectionWeight>1</selectionWeight>
+  </GeneDef>
+
+  <!--Succubus version (Hemogen Powered)-->
+  <GeneDef>
+    <defName>BS_TrueForm_Demonic_Hemo</defName>
+    <label>true form (demonic, hemogenic)</label>
+    <displayCategory>BS_Transformation</displayCategory>
+    <exclusionTags>
+      <li>BS_Transformation</li>
+      <li>BS_BodySizeHuge</li>
+    </exclusionTags>
+    <customEffectDescriptions>
+      <li>Gene is incompatible with the very large body size genes.</li>
+    </customEffectDescriptions>
+    <description>Carriers of this gene can transform into a larger more powerful form temporarily, the power of which is determined by the amount of Anomalous Power possessed. Sprouts frightening wings, talons, and gains the ability to breathe fire.\n\nThis is a hemogenic version, trading resources for more rapid reuse and reset of true-form abilities.</description>
+    <iconPath>GeneIcons/VU_DemonForm</iconPath>
+    <prerequisite>Hemogenic</prerequisite>
+    <abilities>
+      <li>BS_DemonicForm_Hemo_Abillity</li>
+    </abilities>
+    <descriptionHyperlinks>
+      <AbilityDef>BS_DemonicForm_Hemo_Abillity</AbilityDef>
+    </descriptionHyperlinks>
+    <biostatMet>-4</biostatMet>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
+        <hideGene>true</hideGene>
+			</li>
+		</modExtensions>
+    <canGenerateInGeneSet>false</canGenerateInGeneSet>
+    <selectionWeight>0</selectionWeight>
+  </GeneDef>
+
+
+</Defs>

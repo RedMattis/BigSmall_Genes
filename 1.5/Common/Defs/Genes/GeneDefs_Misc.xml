@@ -301,6 +301,41 @@
     <geneClass>BetterPrerequisites.LockedNeedGene</geneClass>
     <biostatMet>-9</biostatMet>
     <biostatCpx>10</biostatCpx>
+    <biostatArc>3</biostatArc>
+
+    <exclusionTags>
+      <li>Diet</li>
+      <li>Eats</li>
+    </exclusionTags>
+
+    <!--Disabling DBHThrist from genes doesn't seem to actually work, so we're locking those too.-->
+    <modExtensions>
+      <li Class="BetterPrerequisites.LockedNeed">
+        <lockedNeeds>
+          <li>Food</li>
+          <li MayRequire="Dubwise.DubsBadHygiene">DBHThirst</li>
+          <li MayRequire="Dubwise.DubsBadHygienee">Bladder</li>
+        </lockedNeeds>
+        <value>0.90</value>
+      </li>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>BS_NoFood_Hemogenic</defName>
+    <label>hemogen-eater</label>
+    <description>Carriers of this gene obtains their energy from hemogen. Their food need is locked to 90%. (set to 90% to avoid issues which would stop them from eating hemogen packs f.ex.\n\nNote: If you're using Dubs Bad Hygene it also does the same to thrist and bladder. Anomaly ghouls will gain no advantage from this gene..</description>
+    <iconPath>GeneIcons/BS_NoFood_Hemogenic</iconPath>
+    <displayCategory>Archite</displayCategory>
+    <geneClass>BetterPrerequisites.LockedNeedGene</geneClass>
+    <prerequisite>Hemogenic</prerequisite>
+    <biostatMet>-8</biostatMet>
+    <biostatCpx>10</biostatCpx>
     <biostatArc>1</biostatArc>
 
     <exclusionTags>
@@ -672,6 +707,7 @@
             <prerequisites>
               <li>BS_UnarmedOnly</li>
               <li>BS_NoEquip</li>
+              <li>VU_Involuntary_Werewolf</li>
             </prerequisites>
           </li>
         </prerequisiteSets>

@@ -11,7 +11,7 @@
 		<chanceToUseNameMaker>1.0</chanceToUseNameMaker>
     <genes>
       <li>VU_SuccubusBloodFeeder</li>
-      <li>VU_Disguised_Succubus</li>
+      
       <li>PsychicBonding</li>
       <li>VU_Hermaphromorph</li>
       <li>BS_Bisexual</li>
@@ -23,7 +23,7 @@
 			<li>DiseaseFree</li>
 			<li>PerfectImmunity</li>
 			
-			<li>FireSpew</li>
+			<!-- <li>FireSpew</li> -->
 			<li>Hemogenic</li>
 			<li>VU_GreaterHemogenDrain</li>
 			<li>WoundHealing_Fast</li>
@@ -40,45 +40,53 @@
 			<li>VU_NearSterile</li>
       <li>Aggression_Aggressive</li>
 			
-			<li>BS_Ears_PointedHD</li>
-      <li>BS_AncientDemonWings</li>
-			<li>BS_LargeDemonWings</li>
+			<!-- <li>BS_Ears_PointedHD</li> -->
+      <!-- <li>BS_AncientDemonWings</li>
+			<li>BS_LargeDemonWings</li> -->
       
 			<li MayRequire="sarg.alphagenes">AG_Beauty_Angelic</li>
 			<!-- <li MayRequire="sarg.alphagenes">AG_DemonWings</li>  -->
-			<li MayRequire="sarg.alphagenes">AG_DemonEars</li>
-      <li MayRequire="sarg.alphagenes">AG_Detonation</li>
+			<!-- <li MayRequire="sarg.alphagenes">AG_DemonEars</li> -->
       <!-- <li MayRequire="sarg.alphagenes">AG_ClawedHands</li> -->
-			<li>BS_Talons</li>
+			<!-- <li>BS_Talons</li> -->
       <li MayRequire="vanillaracesexpanded.highmate">VRE_HighmateHair</li>
       <li MayRequire="vanillaracesexpanded.highmate">VRE_PerfectBody</li>
 
 			<li>Ears_Human</li>
 			<li>Beard_NoBeardOnly</li>
-			<li>Jotun_Horns_Small</li>
+			<!-- <li>Jotun_Horns_Small</li>
       <li>Jotun_Horns_Small_skin</li>
       <li>BS_ForwardArchingHorns</li>
       <li>BS_ForwardArchingHorns_Skin</li>
 			<li MayRequire="sarg.alphagenes">AG_DemonHorns</li>
-			<li>BS_TyrantCrown</li>
+			<li>BS_TyrantCrown</li> -->
 
-			<li>BS_DemonTail</li>
+			
 			<!-- <li MayRequire="sarg.alphagenes">AG_DemonTail</li> -->
 			
 			<li>Body_Standard</li>
-			<li>Hair_MediumRed</li>
+			<!-- <li>Hair_MediumRed</li>
       <li>Hair_BrightRed</li>
       <li>BS_BloodHair</li>
 			<li>Skin_DeepRed</li>
 			<li>Skin_PaleRed</li>
-			<li>BS_SkinBloodRed</li>
+			<li>BS_SkinBloodRed</li> -->
 			<li>BS_ToughSkin</li>
 			<!-- <li>AptitudePoor_Mining</li> -->
 			<li>AptitudePoor_Animals</li>
       <li>AptitudeStrong_Melee</li>
 			<li>AptitudeRemarkable_Social</li>
-      <li>VU_DemonTrueForm</li>
+      <!-- <li>VU_DemonTrueForm</li> -->
+			<!-- <li>VU_Disguised_Succubus</li> -->
+			<!-- <li>BS_DemonTail</li> -->
       <li>VU_VampireLover</li>
+
+			<!-- <li>BS_SoulPowerGreat</li> -->
+			<li>BS_SoulPower</li>
+			<li>BS_TrueForm_Demonic_Hemo</li>
+			<li>BS_ConsumeSoul</li>
+			<li>BS_ConsumeSoul_Enslave</li>
+			<li>BS_ConsumeSoulOnHit</li>
 
       <!-- <li>BS_Deathlike</li> Thought it was a cool idea to have succubi be ignored by zombies maybe? -->
     </genes>
@@ -106,7 +114,11 @@
 			<li>DiseaseFree</li>
 			<li>PerfectImmunity</li>
 			<li>TotalHealing</li>
-			<li>HalfJotunFrame</li>
+
+			<li>BS_SoulPowerGreat</li>
+			<li>BS_AnomalousForm</li>
+			<li>BS_ConsumeSoul</li>
+
 			<li MayRequire="sarg.alphagenes">AG_Detonation</li>
 			<li MayRequire="sarg.alphagenes">AG_ChemfuelBlood</li>
 			<li>WoundHealing_Fast</li>
@@ -301,6 +313,7 @@
 			<li>AptitudeStrong_Intellectual</li>
 			<li>BS_Diet_Carnivore</li>
 			<li>Cannibal</li>
+			<li>BS_SoulPower</li>
     </genes>
     <factionlessGenerationWeight>0.1</factionlessGenerationWeight>
   </XenotypeDef>

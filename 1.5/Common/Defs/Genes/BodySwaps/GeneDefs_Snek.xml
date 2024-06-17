@@ -169,7 +169,7 @@
       <WorkSpeedGlobal>0.50</WorkSpeedGlobal>
     </statOffsets>
     <statFactors>
-      <SM_Food_Need_Capacity>4.0</SM_Food_Need_Capacity>
+      <SM_Food_Need_Capacity>3.0</SM_Food_Need_Capacity>
       <EatingSpeed>1.5</EatingSpeed>
     </statFactors>
     <capMods>

@@ -38,6 +38,9 @@
     <displayOrderInCategory>950</displayOrderInCategory>
     <biostatCpx>3</biostatCpx>
     <biostatMet>-5</biostatMet>
+    <exclusionTags>
+      <li>BS_BodySizeHuge</li>
+    </exclusionTags>
     <statOffsets>
       <SM_BodySizeOffset>1.5</SM_BodySizeOffset>
       <SM_RaidWealthOffset>2500</SM_RaidWealthOffset>
@@ -47,7 +50,6 @@
       <DeepDrillingSpeed>1.6</DeepDrillingSpeed>
       <ConstructionSpeed>1.35</ConstructionSpeed>
       <SM_RaidWealthMultiplier>2</SM_RaidWealthMultiplier>
-      <LifespanFactor>2.0</LifespanFactor>
       <CarryingCapacity>3</CarryingCapacity>
       <VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">2.5</VEF_MassCarryCapacity>
     </statFactors>
@@ -187,6 +189,9 @@
     <displayOrderInCategory>998</displayOrderInCategory>
     <biostatCpx>4</biostatCpx>
     <biostatMet>-5</biostatMet>
+    <exclusionTags>
+      <li>BS_BodySizeHuge</li>
+    </exclusionTags>
     <statFactors>
       <IncomingDamageFactor>0.75</IncomingDamageFactor>
       <LifespanFactor>0.6</LifespanFactor>
@@ -231,6 +236,9 @@
     <displayOrderInCategory>411</displayOrderInCategory>
     <biostatCpx>5</biostatCpx>
     <biostatMet>-10</biostatMet>
+    <exclusionTags>
+      <li>BS_BodySizeHuge</li>
+    </exclusionTags>
     <statFactors>
       <IncomingDamageFactor>0.90</IncomingDamageFactor>
       <MiningSpeed>3.0</MiningSpeed>
@@ -277,6 +285,9 @@
     <biostatCpx>5</biostatCpx>
     <biostatMet>-4</biostatMet>
     <biostatArc>0</biostatArc>
+    <exclusionTags>
+      <li>BS_BodySizeHuge</li>
+    </exclusionTags>
     <statFactors>
       <MiningSpeed>1.6</MiningSpeed>
       <ConstructionSpeed>1.25</ConstructionSpeed>

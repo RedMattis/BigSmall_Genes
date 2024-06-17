@@ -1,0 +1,104 @@
+<Defs>
+  <GeneDef ParentName="BS_GenericGene">
+    <defName>BS_SoulPower</defName>
+    <label>trace anomalous power</label>
+    <description>Carries of this genes naturally possess trace amounts anomalous power. This power can be further increased using dark shards of archotech (crafting requires Anomaly DLC).</description>
+    <customEffectDescriptions>
+      <li>+5% Consciousness, scaled by Anomalous Power</li>
+      <li>+5% Melee Damage, scaled by Anomalous Power</li>
+      <li>+5% Momvement Speed, scaled by Anomalous Power</li>
+      <li>0.05 damage reduction, scaled by Anomalous Power</li>
+    </customEffectDescriptions>
+    <iconPath>GeneIcons/BS_SoulPower</iconPath>
+    <biostatMet>-1</biostatMet>
+    <exclusionTags><li>BS_SoulPower</li></exclusionTags>
+    <statOffsets>
+      <BS_SoulPower>0.5</BS_SoulPower>
+    </statOffsets>
+  </GeneDef>
+
+  <GeneDef ParentName="BS_GenericGene">
+    <defName>BS_SoulPowerGreat</defName>
+    <label>anomalous power</label>
+    <description>Carries of this genes naturally possess significant anomalous power. This power can be further increased using dark shards of archotech (crafting requires Anomaly DLC)</description>
+    <displayCategory>Archite</displayCategory>
+    <customEffectDescriptions>
+      <li>+5% Consciousness, scaled by Anomalous Power</li>
+      <li>+5% Melee Damage, scaled by Anomalous Power</li>
+      <li>+5% Momvement Speed, scaled by Anomalous Power</li>
+      <li>0.05 damage reduction, scaled by Anomalous Power</li>
+    </customEffectDescriptions>
+    <iconPath>GeneIcons/BS_SoulPower</iconPath>
+    <biostatArc>2</biostatArc>
+    <exclusionTags><li>BS_SoulPower</li></exclusionTags>
+    <statOffsets>
+      <BS_SoulPower>1</BS_SoulPower>
+    </statOffsets>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>BS_AnomalousPsychicPower</defName>
+    <label>anomalous psychic power</label>
+    <description>The shape and size of this being is determined by their amount of anomalous power. This is compatible with other genes that increase psychic power.</description>
+    <customEffectDescriptions>
+      <li>Gain 25% of Anomalous Power as Psychic Sensitivity</li>
+    </customEffectDescriptions>
+    <iconPath>GeneIcons/BS_SoulPsychic</iconPath>
+    <biostatMet>-2</biostatMet>
+    <selectionWeight>1</selectionWeight>
+    <geneClass>BetterPrerequisites.PGene</geneClass>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
+			</li>
+      <li Class="BetterPrerequisites.GeneExtension">
+				<applyBodyHediff><li><hediff>BS_SoulPsychicPower</hediff></li></applyBodyHediff>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>BS_AnomalousForm</defName>
+    <label>anomalous form</label>
+    <displayCategory>Body_Size</displayCategory>
+    <description>The shape and size of this being is determined by their amount of anomalous power. Note that if anomalous power is at 0% or less this will do nothing.</description>
+    <customEffectDescriptions>
+      <li>+0.5 size offset, scaled by Anomalous Power</li>
+      <li>+1000$ raid wealth, scaled by Anomalous Power</li>
+      <li>x1.35 mining speed, scaled by Anomalous Power</li>
+      <li>x1.2 deep drilling speed, scaled by Anomalous Power</li>
+      <li>x1.1 construction speed, scaled by Anomalous Power</li>
+      <li>x1.35 raid wealth, scaled by Anomalous Power</li>
+      <li>x1.5 caravan and carrying weight, scaled by Anomalous Power</li>
+      <li>- - - - - - - - - - - - - - - - - - -</li>
+      <li>- - Body Size General - - -</li>
+      <li>Alters Body Size attribute and associated traits</li>
+      <li>Dramatic effect on max nutrition.</li>
+      <li>Very large effect on nutrition use.</li>
+      <li>Dramatically modifies health.</li>
+      <li>Alters damage, a bit less than the linear increase.</li>
+      <li>Large effect on Melee Dodge chance benefitting small characters.</li>
+      <li>Very large effect on Self-"Production" from Alpha Genes and Biotech Expansion genes.</li>
+    </customEffectDescriptions>
+    <exclusionTags>
+      <li>BodySize</li>
+    </exclusionTags>
+    <iconPath>GeneIcons/BS_SoulSize</iconPath>
+    <biostatMet>-3</biostatMet>
+    <minAgeActive>5</minAgeActive>
+    <selectionWeight>1</selectionWeight>
+    <geneClass>BetterPrerequisites.PGene</geneClass>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
+			</li>
+      <li Class="BetterPrerequisites.GeneExtension">
+				<applyBodyHediff><li><hediff>BS_SoulSize</hediff></li></applyBodyHediff>
+			</li>
+		</modExtensions>
+  </GeneDef>
+</Defs>

@@ -48,10 +48,18 @@
   <!--Just a verion of the anomality hair with the gene needed instead of the race.-->
   <HairDef Abstract="True" Name="BS_GhoulHairBase">
     <requiredGene>BS_CreepyHaired</requiredGene>
-    <styleTags>
-      <li>BS_Creepy</li>
-    </styleTags>
     <styleGender>Any</styleGender>
+    <styleTags>
+			<li>VRE_HighmateHair</li>
+			<li>Shaved</li>
+			<li>Urban</li>
+			<li>Punk</li>
+			<li>Rural</li>
+			<li>Tribal</li>
+			<li>Soldier</li>
+			<li>HairShort</li>
+      <li>BS_Creepy</li>
+		</styleTags>
   </HairDef>
 
   <HairDef ParentName="BS_GhoulHairBase">

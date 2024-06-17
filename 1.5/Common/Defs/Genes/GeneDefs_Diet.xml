@@ -20,7 +20,7 @@
     <label>Carnivore</label>
     <description>Carriers of this gene can only eat carnivore food. They will not automatically eat vegetarian food, and will vomit if they are forced.</description>
     <iconPath>GeneIcons/BS_Carnivore</iconPath>
-    <biostatMet>2</biostatMet>
+    <biostatMet>3</biostatMet>
   </GeneDef>
 
   <GeneDef ParentName="BS_AbstractDiet">

@@ -42,6 +42,23 @@
   </GeneCategoryDef>
 
   <GeneCategoryDef>
+    <defName>LoS_Snake_Vis</defName>
+    <label>Snake Parts</label>
+    <!-- Cosmetic_Skin 280 Misc 270-->
+    <displayPriorityInXenotype>700</displayPriorityInXenotype>
+    <!-- Cosmetic_Skin -110 -->
+    <displayPriorityInGenepack>-2103</displayPriorityInGenepack>
+  </GeneCategoryDef>
+  <GeneCategoryDef>
+    <defName>LoS_Snake_NoVis</defName>
+    <label>Snake</label>
+    <!-- Cosmetic_Skin 280 Misc 270-->
+    <displayPriorityInXenotype>699</displayPriorityInXenotype>
+    <!-- Cosmetic_Skin -110 -->
+    <displayPriorityInGenepack>-2104</displayPriorityInGenepack>
+  </GeneCategoryDef>
+
+  <GeneCategoryDef>
     <defName>BS_Horns</defName>
     <label>Horns</label>
     <displayPriorityInXenotype>730</displayPriorityInXenotype>
@@ -66,27 +83,17 @@
     <displayPriorityInXenotype>-388</displayPriorityInXenotype>
   </GeneCategoryDef>
 
-  <GeneCategoryDef>
-    <defName>LoS_Snake_Vis</defName>
-    <label>Snake Parts</label>
-    <!-- Cosmetic_Skin 280 Misc 270-->
-    <displayPriorityInXenotype>2535</displayPriorityInXenotype>
-    <!-- Cosmetic_Skin -110 -->
-    <displayPriorityInGenepack>-2103</displayPriorityInGenepack>
-  </GeneCategoryDef>
-  <GeneCategoryDef>
-    <defName>LoS_Snake_NoVis</defName>
-    <label>Snake</label>
-    <!-- Cosmetic_Skin 280 Misc 270-->
-    <displayPriorityInXenotype>2536</displayPriorityInXenotype>
-    <!-- Cosmetic_Skin -110 -->
-    <displayPriorityInGenepack>-2104</displayPriorityInGenepack>
-  </GeneCategoryDef>
+
 
   <GeneCategoryDef>
     <defName>BS_Deathless</defName>
     <label>death-resistance</label>
     <displayPriorityInXenotype>995</displayPriorityInXenotype>
+  </GeneCategoryDef>
+  <GeneCategoryDef>
+    <defName>BS_Transformation</defName>
+    <label>transformation</label>
+    <displayPriorityInXenotype>994</displayPriorityInXenotype>
   </GeneCategoryDef>
 
 </Defs>

@@ -140,7 +140,7 @@
           </defaultData>
         </drawData>
         <parentTagDef>Head</parentTagDef>
-        <narrowCrownHorizontalOffset>0.03</narrowCrownHorizontalOffset>
+        <narrowCrownHorizontalOffset>0.05</narrowCrownHorizontalOffset>
       </li>
     </renderNodeProperties>
   </GeneDef>

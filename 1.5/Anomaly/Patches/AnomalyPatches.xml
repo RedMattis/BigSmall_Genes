@@ -12,6 +12,7 @@
     <xpath>Defs/MutantDef[defName="Ghoul"]/disablesGenes</xpath>
     <value>
       <li>BS_Diet_Herbivore</li>
+      <li>BS_NoFood_Hemogenic</li>
     </value>
   </Operation>
 
@@ -51,5 +52,50 @@
     </value>
   </Operation>
 
+	<!-- <Operation Class="PatchOperationAdd">
+    <xpath>Defs/HediffDef[defName="VoidTouched"]/stages/li/[not(statOffsets)]</xpath>
+    <value>
+      <statOffsets/>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/HediffDef[defName="VoidTouched"]/stages/li/statOffsets</xpath>
+    <value>
+      <BS_SoulPower>1</BS_SoulPower>
+    </value>
+  </Operation> -->
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/HediffDef[defName="VoidTouched"]/stages/li/statFactors</xpath>
+    <value>
+      <BS_SoulPower>2</BS_SoulPower>
+    </value>
+  </Operation>
+
+      
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="BS_DarkSoulshard"]</xpath>
+    <value>
+      <costList Inherit="False">
+        <Shard>1</Shard>
+        <Bioferrite>5</Bioferrite>
+      </costList>
+      <recipeMaker>
+        <researchPrerequisite>BioferriteShaping</researchPrerequisite>
+        <displayPriority>0</displayPriority>
+        <skillRequirements>
+          <Crafting>4</Crafting>
+        </skillRequirements>
+        <recipeUsers Inherit="false">
+          <li>BioferriteShaper</li>
+        </recipeUsers>
+      </recipeMaker>
+      <genericMarketSellable>false</genericMarketSellable>
+    </value>
+  </Operation>
+
+  
 
 </Patch>

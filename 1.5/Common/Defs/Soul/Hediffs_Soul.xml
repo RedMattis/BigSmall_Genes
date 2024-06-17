@@ -1,0 +1,160 @@
+<Defs>
+  <HediffDef>
+    <defName>BS_Soulless</defName>
+    <label>Soulless Husk</label>
+    <description>This creature has been robbed of its spiritual essence causing irreversible damage.</description>
+    <isBad>true</isBad>
+    <everCurableByItem>false</everCurableByItem>
+    <keepOnBodyPartRestoration>true</keepOnBodyPartRestoration>
+    <disablesNeeds>
+      <!-- <li>Rest</li> -->
+      <li>Comfort</li>
+      <li>Mood</li>
+      <li>Beauty</li>
+      <li>Outdoors</li>
+      <li>Indoors</li>
+      <li>Joy</li>
+    </disablesNeeds>
+    <aptitudes>
+      <Social>-20</Social>
+      <Intellectual>-12</Intellectual>
+      <Animals>-12</Animals>
+      <Artistic>-12</Artistic>
+      <Crafting>-4</Crafting>
+      <Construction>-4</Construction>
+      <Plants>-4</Plants>
+      <Medicine>-4</Medicine>
+      <Cooking>-4</Cooking>
+    </aptitudes>
+    <stages>
+      <li>
+        <painFactor>0.30</painFactor>
+        <socialFightChanceFactor>0</socialFightChanceFactor>
+        <statFactors>
+          <PsychicSensitivity>0</PsychicSensitivity>
+          <GlobalLearningFactor>0</GlobalLearningFactor>
+          <SlaveSuppressionFallRate MayRequire="Ludeon.RimWorld.Ideology">0</SlaveSuppressionFallRate>
+        </statFactors>
+        <statOffsets>
+          <PawnBeauty>-1</PawnBeauty>
+          <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">2.0</SlaveSuppressionOffset>
+        </statOffsets>
+        <hungerRateFactor>0.7</hungerRateFactor>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <!-- <setMax>0.8</setMax> -->
+            <offset>-0.20</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+    <allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>BS_SoulCollector</defName>
+    <label>Anomalous Power Stockpile</label>
+    <description>A messure of anomalous energy obtained from some source.</description>
+    <isBad>false</isBad>
+    <everCurableByItem>false</everCurableByItem>
+    <initialSeverity>0</initialSeverity>
+    <keepOnBodyPartRestoration>true</keepOnBodyPartRestoration>
+    <stages>
+      <li>
+        <statOffsetsBySeverity>
+          <li>
+            <stat>BS_SoulPower</stat>
+            <valueBySeverity>
+              <points>
+                <li>(0, 0)</li>
+                <li>(1000, 1000)</li>
+              </points>
+            </valueBySeverity>
+          </li>
+        </statOffsetsBySeverity>
+      </li>
+    </stages>
+    <hediffClass>BigAndSmall.SoulCollector</hediffClass>
+    <allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>BS_SoulPowerHediff</defName>
+    <label>Anomalous Power</label>
+    <description>A messure of anomalous energy.</description>
+    <isBad>false</isBad>
+    <everCurableByItem>false</everCurableByItem>
+    <initialSeverity>1</initialSeverity>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <!-- <setMax>0.8</setMax> -->
+            <postFactor>1.05</postFactor>
+          </li>
+        </capMods>
+        <statFactors>
+          <IncomingDamageFactor>0.95</IncomingDamageFactor>
+          <MeleeDamageFactor>1.05</MeleeDamageFactor>
+          <MoveSpeed>1.025</MoveSpeed>
+        </statFactors>
+        <capacityFactorEffectMultiplier>BS_SoulPower</capacityFactorEffectMultiplier>
+        <statFactorEffectMultiplier>BS_SoulPower</statFactorEffectMultiplier>
+      </li>
+    </stages>
+    <allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>BS_SoulSize</defName>
+    <label>Anomalous Form</label>
+    <description>The physical form of this being is determined by its anomalous power.</description>
+    <isBad>false</isBad>
+    <everCurableByItem>false</everCurableByItem>
+    <initialSeverity>1</initialSeverity>
+    <stages>
+      <li>
+        <statOffsets>
+          <SM_BodySizeOffset>0.5</SM_BodySizeOffset>
+          <SM_RaidWealthOffset>1000</SM_RaidWealthOffset>
+        </statOffsets>
+        <statFactors>
+          <MiningSpeed>1.35</MiningSpeed>
+          <DeepDrillingSpeed>1.2</DeepDrillingSpeed>
+          <ConstructionSpeed>1.10</ConstructionSpeed>
+          <SM_RaidWealthMultiplier>1.35</SM_RaidWealthMultiplier>
+          <CarryingCapacity>1.5</CarryingCapacity>
+          <VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">1.5</VEF_MassCarryCapacity>
+        </statFactors>
+        <statFactorEffectMultiplier>BS_SoulPower</statFactorEffectMultiplier>
+        <statOffsetEffectMultiplier>BS_SoulPower</statOffsetEffectMultiplier>
+      </li>
+    </stages>
+    <allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>BS_SoulPsychicPower</defName>
+    <label>Anomalous Psychic Power</label>
+    <description>Psychic Power is being amplified by anomalous power.</description>
+    <isBad>false</isBad>
+    <everCurableByItem>false</everCurableByItem>
+    <initialSeverity>1</initialSeverity>
+    <stages>
+      <li>
+        <statOffsets>
+          <PsychicSensitivity>0.25</PsychicSensitivity>
+          <MeditationFocusGain>0.1</MeditationFocusGain>
+          <PsychicEntropyRecoveryRate>0.1</PsychicEntropyRecoveryRate>
+        </statOffsets>
+        <!-- <statFactorEffectMultiplier>BS_SoulPower</statFactorEffectMultiplier> -->
+        <statOffsetEffectMultiplier>BS_SoulPower</statOffsetEffectMultiplier>
+      </li>
+    </stages>
+    <allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
+  </HediffDef>
+
+  
+</Defs>

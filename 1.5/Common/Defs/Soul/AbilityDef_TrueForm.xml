@@ -1,0 +1,159 @@
+<Defs>
+
+  <EffecterDef>
+    <defName>BS_TrueForm_Warmup</defName>
+    <children>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerTriggeredDelayed</subEffecterClass>
+        <moteDef>Mote_AnimalWarcallWarmup</moteDef>
+        <initialDelayTicks>20</initialDelayTicks>
+        <spawnLocType>OnSource</spawnLocType>
+      </li>
+    </children>
+  </EffecterDef>
+
+  <ThingDef ParentName="MoteBase">
+    <defName>BS_TrueformAbilityMote</defName>
+    <thingClass>MoteAttached</thingClass>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <mote>
+      <fadeInTime>0.35</fadeInTime>
+      <fadeOutTime>0.25</fadeOutTime>
+      <solidTime>999999</solidTime>
+      <needsMaintenance>True</needsMaintenance>
+    </mote>
+    <graphicData>
+      <graphicClass>Graphic_PawnBodySilhouette</graphicClass>
+      <color>(0.85, 0.45, 0.52, 1.0)</color>
+      <shaderType>MoteMultiplyAddScroll</shaderType>
+      <texPath>Things/Mote/Transparent</texPath>
+      <shaderParameters>
+        <_MultiplyTexA>/Things/Mote/Cloudy_B</_MultiplyTexA>
+        <_MultiplyTexB>/Things/Mote/Cloudy_C</_MultiplyTexB>
+        <_DetailTex>/Things/Mote/Speckles</_DetailTex>
+        <_detailIntensity>1.3</_detailIntensity>
+        <_texAScale>0.4</_texAScale>
+        <_texBScale>0.3</_texBScale>
+        <_DetailScale>1.25</_DetailScale>
+        <_texAScrollSpeed>(0, 0.15, 0)</_texAScrollSpeed>
+        <_texBScrollSpeed>(0.12, 0, 0)</_texBScrollSpeed>
+        <_detailScrollSpeed>(0.15, 0.15, 0)</_detailScrollSpeed>
+      </shaderParameters>
+    </graphicData>
+  </ThingDef>
+
+  <AbilityDef Abstract="True" Name="BS_TrueFormAbillity">
+    <cooldownTicksRange>14000</cooldownTicksRange>
+    <hostile>False</hostile>
+    <targetRequired>False</targetRequired>
+    <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+
+    <warmupEffecter>BS_TrueForm_Warmup</warmupEffecter>
+    <warmupMote>BS_TrueformAbilityMote</warmupMote>
+    <!-- <warmupStartSound>Coagulate_Cast</warmupStartSound> -->
+
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <label>Transform</label>
+      <violent>false</violent>
+      <warmupTime>2</warmupTime>
+      <range>20</range>
+      <requireLineOfSight>False</requireLineOfSight>
+      <nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+      <targetParams>
+        <canTargetSelf>True</canTargetSelf>
+      </targetParams>
+    </verbProperties>
+    <statBases>
+      <Ability_Duration>125</Ability_Duration>
+    </statBases>
+    <groupAbility>true</groupAbility>
+    <aiCanUse>true</aiCanUse>
+    <ai_IsOffensive>true</ai_IsOffensive>
+    <comps>
+      <li Class="CompProperties_AbilityFleckOnTarget">
+        <fleckDefs>
+          <li>PsycastSkipInnerExit</li>
+          <li>PsycastSkipOuterRingExit</li>
+          <!-- <li>PsycastPsychicEffect</li> -->
+        </fleckDefs>
+        <scale>1.5</scale>
+        <sound>Psycast_Skip_Exit</sound>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <AbilityDef ParentName="BS_TrueFormAbillity">
+    <defName>BS_AngelicForm_Abillity</defName>
+    <label>true form</label>
+    <description>Temporarily transform into a more powerful form.</description>
+    <iconPath>GeneIcons/BS_AngelicForm</iconPath>
+    <comps>
+      <li Class="CompProperties_AbilityGiveHediff">
+        <compClass>CompAbilityEffect_GiveHediff</compClass>
+        <hediffDef>BS_TrueForm_Angelic</hediffDef>
+        <replaceExisting>True</replaceExisting>
+        <onlyApplyToSelf>True</onlyApplyToSelf>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <AbilityDef ParentName="BS_TrueFormAbillity">
+    <defName>BS_DemonicForm_Abillity</defName>
+    <label>true form</label>
+    <description>Temporarily transform into a more powerful form.</description>
+    <iconPath>GeneIcons/VU_DemonForm</iconPath>
+    <comps>
+      <li Class="CompProperties_AbilityGiveHediff">
+        <compClass>CompAbilityEffect_GiveHediff</compClass>
+        <hediffDef>BS_TrueForm_Demonic</hediffDef>
+        <replaceExisting>True</replaceExisting>
+        <onlyApplyToSelf>True</onlyApplyToSelf>
+      </li>
+    </comps>
+  </AbilityDef>
+  
+  <AbilityDef ParentName="BS_TrueFormAbillity">
+    <defName>BS_GoliathForm_Abillity</defName>
+    <label>true form</label>
+    <description>Temporarily transform into a more powerful form.</description>
+    <iconPath>GeneIcons/BS_GoliathForm</iconPath>
+    <comps>
+      <li Class="CompProperties_AbilityGiveHediff">
+        <compClass>CompAbilityEffect_GiveHediff</compClass>
+        <hediffDef>BS_TrueForm_Goliath</hediffDef>
+        <replaceExisting>True</replaceExisting>
+        <onlyApplyToSelf>True</onlyApplyToSelf>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <AbilityDef ParentName="BS_TrueFormAbillity">
+    <defName>BS_DemonicForm_Hemo_Abillity</defName>
+    <label>true form</label>
+    <description>Temporarily transform into a more powerful form.</description>
+    <iconPath>GeneIcons/VU_DemonForm</iconPath>
+    <cooldownTicksRange>4000</cooldownTicksRange>
+    <!-- <verbProperties>
+      <warmupTime>2</warmupTime>
+    </verbProperties> -->
+    <comps>
+      <li Class="CompProperties_AbilityGiveHediff">
+        <compClass>CompAbilityEffect_GiveHediff</compClass>
+        <hediffDef>BS_TrueForm_Demonic</hediffDef>
+        <replaceExisting>True</replaceExisting>
+        <onlyApplyToSelf>True</onlyApplyToSelf>
+      </li>
+      <li Class="CompProperties_AbilityHemogenCost">
+        <hemogenCost>0.35</hemogenCost>
+      </li>
+      <!-- <li Class="CompProperties_AbilityEffecterOnTarget">
+        <effecterDef>Skip_Exit</effecterDef>
+        <maintainForTicks>60</maintainForTicks>
+        <scale>1.55</scale>
+      </li> -->
+    </comps>
+  </AbilityDef>
+</Defs>

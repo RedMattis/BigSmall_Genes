@@ -7,6 +7,7 @@
 		<scenarioCanAdd>false</scenarioCanAdd>
 		<isBad>false</isBad>
 		<everCurableByItem>false</everCurableByItem>
+		<initialSeverity>1</initialSeverity>
 		<comps>
 			<li Class="AnimalBehaviours.HediffCompProperties_Waterstriding"/>
 		</comps>
@@ -21,6 +22,7 @@
 		<scenarioCanAdd>false</scenarioCanAdd>
 		<isBad>false</isBad>
 		<everCurableByItem>false</everCurableByItem>
+		<initialSeverity>1</initialSeverity>
 		<comps>
 			<li Class="AnimalBehaviours.HediffCompProperties_Floating"/>
 		</comps>
@@ -35,6 +37,7 @@
 		<scenarioCanAdd>false</scenarioCanAdd>
 		<isBad>false</isBad>
 		<everCurableByItem>false</everCurableByItem>
+		<initialSeverity>1</initialSeverity>
 		<comps>
 			<li Class="AnimalBehaviours.HediffCompProperties_Floating"/>
 		</comps>
@@ -49,6 +52,7 @@
 		<scenarioCanAdd>false</scenarioCanAdd>
 		<isBad>false</isBad>
 		<everCurableByItem>false</everCurableByItem>
+		<initialSeverity>1</initialSeverity>
 		<comps>
 			<li Class="AnimalBehaviours.HediffCompProperties_Floating"/>
 		</comps>

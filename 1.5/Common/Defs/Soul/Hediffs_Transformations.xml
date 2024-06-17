@@ -1,0 +1,482 @@
+<Defs>
+  <HediffDef Abstract="True" Name="BS_TrueFormBase">
+    <isBad>false</isBad>
+    <everCurableByItem>false</everCurableByItem>
+    <hediffClass>HediffWithComps</hediffClass>
+    <initialSeverity>1</initialSeverity>
+    <stages>
+      <li>
+        <statFactors>
+          <!-- <SM_BodySizeMultiplier>1.05</SM_BodySizeMultiplier> -->
+        </statFactors>
+        <statOffsets>
+          <SM_BodySizeOffset>0.5</SM_BodySizeOffset>
+        </statOffsets>
+        <statFactorEffectMultiplier>BS_SoulPower</statFactorEffectMultiplier>
+        <statOffsetEffectMultiplier>BS_SoulPower</statOffsetEffectMultiplier>
+      </li>
+    </stages>
+    <allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <showRemainingTime>True</showRemainingTime>
+        <!-- <messageOnDisappear>Debug_Removed_TrueForm</messageOnDisappear> -->
+      </li>
+    </comps>
+  </HediffDef>
+
+  <HediffDef ParentName="BS_TrueFormBase">
+    <defName>BS_TrueForm_Angelic</defName>
+    <label>True Form (Angelic)</label>
+    <description>True power unleached!</description>
+    <abilities>
+      <li>BS_flying_jump</li>
+    </abilities>
+    <aptitudes>
+      <Melee>4</Melee>
+    </aptitudes>
+    <stages Inherit="False">
+      <li>
+        <statFactors>
+          <!-- <SM_BodySizeMultiplier>1.05</SM_BodySizeMultiplier> -->
+        </statFactors>
+        <statOffsets>
+          <SM_BodySizeOffset>0.5</SM_BodySizeOffset>
+          <ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+          <ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+        </statOffsets>
+        <statFactorEffectMultiplier>BS_SoulPower</statFactorEffectMultiplier>
+        <statOffsetEffectMultiplier>BS_SoulPower</statOffsetEffectMultiplier>
+      </li>
+		</stages>
+    <comps>
+      <li Class="BetterPrerequisites.CompProperties_ColorAndFur">
+        <hairColorOverride>
+          <li>(255,240,180)</li>
+        </hairColorOverride>
+        <skinColorOverride>
+          <li>(250, 238, 197)</li>
+        </skinColorOverride>
+      </li>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="AnimalBehaviours.HediffCompProperties_Floating"/>
+		</comps>
+    <renderNodeProperties Inherit="False">
+      <li>
+        <parentTagDef>Body</parentTagDef>
+        <workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+        <texPath>Humanlike/BodyAttachments/BS_Wings/AngelicWings_Bottom</texPath>
+        <drawSize>(1.45,1.45)</drawSize>
+        <color>(245,245,245)</color>
+        <colorType>Hair</colorType>
+        <drawData>
+          <defaultData>
+            <layer>10</layer>
+          </defaultData>
+          <dataSouth>
+            <layer>-1</layer>
+          </dataSouth>
+          <dataEast>
+            <offset>(0.10, 0, -0.05)</offset>
+          </dataEast>
+          <dataNorth>
+            <layer>90</layer>
+            <offset>(0.0, 0, -0.05)</offset>
+          </dataNorth>
+        </drawData>
+      </li>
+      <li>
+        <parentTagDef>Body</parentTagDef>
+        <workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+        <texPath>Humanlike/BodyAttachments/BS_Wings/AngelicWings_Top</texPath>
+        <drawSize>(1.45,1.45)</drawSize>
+        <color>(245,245,245)</color>
+        <colorType>Hair</colorType>
+        <drawData>
+          <defaultData>
+            <layer>91</layer>
+          </defaultData>
+          <dataEast>
+            <offset>(0.10, 0, -0.05)</offset>
+          </dataEast>
+          <dataNorth>
+            <layer>91</layer>
+            <offset>(0.0, 0, -0.05)</offset>
+          </dataNorth>
+        </drawData>
+      </li>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPath>BS_Halos/AngelHaloSmall</texPath>
+        <color>(255, 255, 255, 200)</color>
+        <shaderTypeDef>TransparentPostLight</shaderTypeDef>
+        <colorType>Custom</colorType>
+        <drawData>
+          <defaultData>
+            <layer>52</layer>
+          </defaultData>
+          <dataNorth>
+            <offset>(0.0, 0, 0.0)</offset>
+          </dataNorth>
+          <dataSouth>
+            <offset>(-0.0, 0, 0.05)</offset>
+          </dataSouth>
+          <dataEast>
+            <offset>(-0.0, 0, 0.0)</offset>
+            <layer>90</layer>
+          </dataEast>
+        </drawData>
+        <parentTagDef>Head</parentTagDef>
+      </li>
+    </renderNodeProperties>
+  </HediffDef>
+
+  <HediffDef ParentName="BS_TrueFormBase">
+    <defName>BS_TrueForm_Demonic</defName>
+    <label>True Form (Demonic)</label>
+    <description>True power unleached!</description>
+    <abilities>
+      <li>BS_flying_jump</li>
+      <li>FireSpew</li>
+      <li MayRequire="sarg.alphagenes">AG_Detonation</li>
+    </abilities>
+    <aptitudes>
+      <Melee>4</Melee>
+    </aptitudes>
+    <comps>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="AnimalBehaviours.HediffCompProperties_Floating"/>
+      <li Class="BetterPrerequisites.CompProperties_ColorAndFur">
+        <hairColorOverride>
+          <li>(125,12,26)</li>
+          <li>(131, 66, 66)</li>
+          <li>(191, 86, 86)</li>
+        </hairColorOverride>
+        <skinColorOverride>
+          <li>(120,11,24,255)</li>
+          <li>(150, 62, 62)</li>
+          <li>(222, 106, 106)</li>
+        </skinColorOverride>
+      </li>
+      <li Class="HediffCompProperties_VerbGiver">
+        <tools>
+          <li>
+            <label>talons</label>
+            <capacities>
+              <li>Cut</li>
+            </capacities>
+            <power>20</power>
+            <chanceFactor>2</chanceFactor>
+            <cooldownTime>2.3</cooldownTime>
+            <armorPenetration>0.3</armorPenetration>
+          </li>
+        </tools>
+      </li>
+		</comps>
+    <renderNodeProperties Inherit="False">
+      <li>
+        <parentTagDef>Body</parentTagDef>
+        <texPath>Humanlike/BodyAttachments/BS_DemonWingsb</texPath>
+        <drawSize>(1.45,1.45)</drawSize>
+        <colorType>Skin</colorType>
+        <drawData>
+          <defaultData>
+            <layer>10</layer>
+          </defaultData>
+          <dataSouth>
+            <layer>-1</layer>
+          </dataSouth>
+          <dataNorth>
+            <layer>90</layer>
+          </dataNorth>
+        </drawData>
+      </li>
+      <li>
+        <parentTagDef>Body</parentTagDef>
+        <texPath>Humanlike/BodyAttachments/BS_DemonTaila</texPath>
+        <drawSize>(1.125,1.125)</drawSize>
+        <colorType>Skin</colorType>
+        <drawData>
+          <defaultData>
+            <layer>-2</layer>
+          </defaultData>
+          <dataNorth>
+            <offset>(0.0, 0, -0.0)</offset>
+          </dataNorth>
+          <dataSouth>
+            <offset>(-0.0, 0, -0.0)</offset>
+          </dataSouth>
+          <dataEast>
+            <offset>(-0.0, 0, -0.0)</offset>
+          </dataEast>
+        </drawData>
+      </li>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPath>Humanlike/HeadAttachments/BS_DemonHornsc</texPath>
+        <color>(200, 200, 200)</color>
+        <colorType>Hair</colorType>
+        <drawData>
+          <defaultData>
+            <layer>80</layer>
+          </defaultData>
+          <dataNorth>
+            <layer>10</layer>
+          </dataNorth>
+          <dataSouth>
+            <offset>(0, 0, 0)</offset>
+          </dataSouth>
+        </drawData>
+        <parentTagDef>Head</parentTagDef>
+      </li>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPath>Humanlike/HeadAttachments/BS_PointedEars</texPath>
+        <useSkinShader>false</useSkinShader>
+        <colorType>Skin</colorType>
+        <drawData>
+          <defaultData>
+            <layer>52</layer>
+          </defaultData>
+        </drawData>
+        <parentTagDef>Head</parentTagDef>
+      </li>
+    </renderNodeProperties>
+  </HediffDef>
+
+  <HediffDef ParentName="BS_TrueFormBase">
+    <defName>BS_TrueForm_Goliath</defName>
+    <label>goliath form</label>
+    <description>tremble before the might of the rock and stone!</description>
+    <abilities>
+    </abilities>
+    <stages Inherit="False">
+      <li>
+        <totalBleedFactor>0.25</totalBleedFactor>
+        <painFactor>0.65</painFactor>
+        <statFactors>
+          <MoveSpeed>0.75</MoveSpeed>
+          <!-- <SM_BodySizeMultiplier>1.25</SM_BodySizeMultiplier> -->
+          <StaggerDurationFactor>0</StaggerDurationFactor>
+        </statFactors>
+        <statOffsets>
+          <SM_BodySizeOffset>0.6</SM_BodySizeOffset>
+          <ArmorRating_Sharp>0.10</ArmorRating_Sharp>
+          <ArmorRating_Heat>0.5</ArmorRating_Heat>
+          <IncomingDamageFactor>0.95</IncomingDamageFactor>
+        </statOffsets>
+        <statOffsetEffectMultiplier>BS_SoulPower</statOffsetEffectMultiplier>
+      </li>
+		</stages>
+    <comps>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="AnimalBehaviours.HediffCompProperties_Floating"/>
+      <li Class="BetterPrerequisites.CompProperties_ColorAndFur">
+        <hairColorOverride>
+          <li>(100,100,100)</li>
+          <li>(150, 150, 150)</li>
+          <li>(50, 50, 50)</li>
+        </hairColorOverride>
+        <skinIsHairColor>true</skinIsHairColor>
+        <bodyDefOverride>Hulk</bodyDefOverride>
+      </li>
+      <li Class="HediffCompProperties_VerbGiver">
+        <tools>
+          <li>
+            <label>stone fist</label>
+            <capacities>
+              <li>Blunt</li>
+            </capacities>
+            <power>14</power>
+            <chanceFactor>2</chanceFactor>
+            <cooldownTime>2.3</cooldownTime>
+            <armorPenetration>0.3</armorPenetration>
+          </li>
+        </tools>
+      </li>
+		</comps>
+    <renderNodeProperties Inherit="False">
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPaths>
+          <li>BS_Heads/StoneMask/normal</li>
+        </texPaths>
+        <useSkinShader>false</useSkinShader>
+        <colorType>Skin</colorType>
+        <drawData>
+          <defaultData>
+            <layer>52</layer>
+          </defaultData>
+        </drawData>
+        <parentTagDef>Head</parentTagDef>
+      </li>
+    </renderNodeProperties>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>BS_WerewolfForm</defName>
+    <label>werewolf form</label>
+    <description>Transformed into a terrifying werewolf.</description>
+    <isBad>false</isBad>
+    <everCurableByItem>false</everCurableByItem>
+    <hediffClass>HediffWithComps</hediffClass>
+    <initialSeverity>1</initialSeverity>
+    <abilities>
+      <li>VU_Pounce</li>
+      <li MayRequire="RedMattis.Undead">VU_LycantropeInfect</li>
+    </abilities>
+    <stages Inherit="False">
+      <li>
+        <painFactor>0</painFactor>
+        <regeneration>350</regeneration>
+        <totalBleedFactor>0</totalBleedFactor>
+        <blocksSleeping>true</blocksSleeping>
+        <statFactors>
+          <!-- <SM_BodySizeMultiplier>1.05</SM_BodySizeMultiplier> -->
+          <WorkSpeedGlobal>0.65</WorkSpeedGlobal>
+          <StaggerDurationFactor>0</StaggerDurationFactor>
+          <ShootingAccuracyFactor_Long>0.25</ShootingAccuracyFactor_Long>
+          <ShootingAccuracyFactor_Medium>0.5</ShootingAccuracyFactor_Medium>
+          <ImmunityGainSpeed>1.5</ImmunityGainSpeed>
+          <RestFallRateFactor>0</RestFallRateFactor>
+        </statFactors>
+        <statOffsets>
+          <SM_BodySizeOffset>0.75</SM_BodySizeOffset>
+					<ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+					<ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+          <PawnBeauty>-2</PawnBeauty>
+          <ComfyTemperatureMin>-20</ComfyTemperatureMin>
+          <ComfyTemperatureMax>10</ComfyTemperatureMax>
+          <MoveSpeed>0.60</MoveSpeed>
+				</statOffsets>
+      </li>
+		</stages>
+    <comps>
+      <li Class="BetterPrerequisites.CompProperties_ColorAndFur">
+        <furskinOverride>Furskin</furskinOverride>
+        <skinIsHairColor>true</skinIsHairColor>
+      </li>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="AnimalBehaviours.HediffCompProperties_Floating"/>
+      <li Class="HediffCompProperties_VerbGiver">
+        <tools>
+          <li>
+            <label>talons</label>
+            <capacities>
+              <li>Cut</li>
+            </capacities>
+            <power>16</power>
+            <chanceFactor>2</chanceFactor>
+            <cooldownTime>2.3</cooldownTime>
+            <armorPenetration>0.3</armorPenetration>
+          </li>
+        </tools>
+      </li>
+		</comps>
+    <aptitudes>
+      <Melee>4</Melee>
+      <Shooting>-4</Shooting>
+      <Social>-8</Social>
+      <Intellectual>-12</Intellectual>
+      <Animals>-4</Animals>
+      <Artistic>-6</Artistic>
+      <Crafting>-8</Crafting>
+      <Construction>-4</Construction>
+      <Plants>-4</Plants>
+      <Medicine>-8</Medicine>
+      <Cooking>-6</Cooking>
+    </aptitudes>
+    <renderNodeProperties Inherit="False">
+      <li> <!--This is required to display Fur.-->
+        <debugLabel>Fur</debugLabel>
+        <nodeClass>PawnRenderNode_Fur</nodeClass>
+        <workerClass>PawnRenderNodeWorker_Fur</workerClass>
+        <baseLayer>5</baseLayer>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <colorType>Hair</colorType>
+        <parentTagDef>Body</parentTagDef>
+      </li>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPath>Humanlike/HeadAttachments/BS_WerewolfSnoot</texPath>
+        <drawSize>(1.0,1.0)</drawSize>
+        <useSkinShader>true</useSkinShader>
+        <colorType>Hair</colorType>
+        <drawData>
+          <defaultData>
+            <layer>52</layer>
+          </defaultData>
+        </drawData>
+        <parentTagDef>Head</parentTagDef>
+        <narrowCrownHorizontalOffset>0.05</narrowCrownHorizontalOffset>
+      </li>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPath>Humanlike/HeadAttachments/BS_GenericAnimalPersonEars</texPath>
+        <useSkinShader>false</useSkinShader>
+        <colorType>Hair</colorType>
+        <drawData>
+          <defaultData>
+            <layer>80</layer>
+          </defaultData>
+        </drawData>
+        <parentTagDef>Head</parentTagDef>
+      </li>
+      <li>
+        <workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+        <texPath>Things/Pawn/Humanlike/BodyAttachments/FurryTail/FurryTail</texPath>
+        <colorType>Hair</colorType>
+        <overrideMeshSize>(1, 1)</overrideMeshSize>
+        <parentTagDef>Body</parentTagDef>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <drawData>
+          <scaleOffsetByBodySize>true</scaleOffsetByBodySize>
+          <defaultData>
+            <layer>-2</layer>
+          </defaultData>
+          <dataNorth>
+            <offset>(0.1, 0, -0.25)</offset>
+            <layer>90</layer>
+          </dataNorth>
+          <dataSouth>
+            <offset>(-0.1, 0, -0.25)</offset>
+          </dataSouth>
+          <dataEast>
+            <offset>(-0.5, 0, -0.15)</offset>
+          </dataEast>
+          <dataWest>
+            <offset>(0.5, 0, -0.15)</offset>
+          </dataWest>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+    <!-- <modExtensions>
+      <li Class="BetterPrerequisites.GeneSuppressor_Hediff" MayRequire="RedMattis.BetterPrerequisites">
+        <supressedGenes>
+          <li>BS_Unarmed_VeryStrong</li>
+          <li>BS_UnarmedOnly</li>
+          <li>Superclotting</li>
+          <li>VU_Darkness_MoveSpeed_VeryQuick</li>
+          <li>Nearsighted</li>
+        </supressedGenes>
+      </li>
+    </modExtensions> -->
+  </HediffDef>
+
+  <ThoughtDef>
+    <defName>BS_WerewolfRage</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>BS_WerewolfForm</hediff>
+    <validWhileDespawned>false</validWhileDespawned>
+    <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+    <stages>
+      <li>
+        <label>Werewolf rage</label>
+        <description>Raaaaaaah!</description>
+        <baseMoodEffect>-25</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+</Defs>
