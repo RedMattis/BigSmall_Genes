@@ -19,7 +19,6 @@
       <intelligence>Humanlike</intelligence>
       <makesFootprints>true</makesFootprints>
       <lifeExpectancy>79</lifeExpectancy>
-      <leatherDef>Leather_Human</leatherDef>
       <nameCategory>HumanStandard</nameCategory>
       <body>BS_FourArmedHuman</body>
       <baseBodySize>1</baseBodySize>
@@ -33,6 +32,10 @@
       <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
       <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+
+      <useMeatFrom>Human</useMeatFrom>
+      <useLeatherFrom>Human</useLeatherFrom>
+
       <!--Just for testing.-->
     </race>
     <alienRace>

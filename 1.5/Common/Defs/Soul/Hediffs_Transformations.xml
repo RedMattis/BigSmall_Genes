@@ -259,12 +259,12 @@
           <MoveSpeed>0.75</MoveSpeed>
           <!-- <SM_BodySizeMultiplier>1.25</SM_BodySizeMultiplier> -->
           <StaggerDurationFactor>0</StaggerDurationFactor>
+          <IncomingDamageFactor>0.9</IncomingDamageFactor>
         </statFactors>
         <statOffsets>
           <SM_BodySizeOffset>0.6</SM_BodySizeOffset>
           <ArmorRating_Sharp>0.10</ArmorRating_Sharp>
           <ArmorRating_Heat>0.5</ArmorRating_Heat>
-          <IncomingDamageFactor>0.95</IncomingDamageFactor>
         </statOffsets>
         <statOffsetEffectMultiplier>BS_SoulPower</statOffsetEffectMultiplier>
       </li>
@@ -348,7 +348,7 @@
           <PawnBeauty>-2</PawnBeauty>
           <ComfyTemperatureMin>-20</ComfyTemperatureMin>
           <ComfyTemperatureMax>10</ComfyTemperatureMax>
-          <MoveSpeed>0.60</MoveSpeed>
+          <MoveSpeed>1.0</MoveSpeed>
 				</statOffsets>
       </li>
 		</stages>

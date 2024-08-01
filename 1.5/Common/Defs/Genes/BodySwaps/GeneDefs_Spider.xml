@@ -80,6 +80,7 @@
     </modExtensions>
     <renderNodeProperties Inherit="False">
       <li>
+        <workerClass>BigAndSmall.PawnRenderNodeWorker_BodyTypeOffsets</workerClass>
         <parentTagDef>Body</parentTagDef>
         <bodyTypeGraphicPaths>
           <Hulk>Humanlike/BodyAttachments/BS_Spoder_New/bp_hulk</Hulk>
@@ -214,6 +215,7 @@
         </drawData>
       </li>
       <li>
+        <workerClass>BigAndSmall.PawnRenderNodeWorker_BodyTypeOffsets</workerClass>
         <parentTagDef>Body</parentTagDef>
         <bodyTypeGraphicPaths>
           <Hulk>Humanlike/BodyAttachments/BS_Spoder_New/Back/bp_hulk</Hulk>

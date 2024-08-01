@@ -95,6 +95,7 @@
         <statFactors>
           <MoveSpeed>0.90</MoveSpeed>
           <SM_BodySizeMultiplier>1.20</SM_BodySizeMultiplier>
+          <VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">3</VEF_MassCarryCapacity>
         </statFactors>
         <statOffsets>
           <SM_BodySizeOffset>0.85</SM_BodySizeOffset>
@@ -108,7 +109,7 @@
   <HediffDef>
     <defName>BS_Minified</defName>
     <label>minified animal</label>
-    <description>This animal has been shrunked down, but the method used made it unusually fast and sturdy for its size.</description>
+    <description>This animal has been shrunked down, but the method used made it unusually fast, ferocious, and sturdy for its size.</description>
     <isBad>false</isBad>
     <makesSickThought>false</makesSickThought>
     <everCurableByItem>false</everCurableByItem>
@@ -116,8 +117,9 @@
       <li>
         <statFactors>
           <MoveSpeed>1.15</MoveSpeed>
-          <IncomingDamageFactor>0.5</IncomingDamageFactor>
-          <SM_BodySizeMultiplier>0.5</SM_BodySizeMultiplier>
+          <IncomingDamageFactor>0.4</IncomingDamageFactor>
+          <SM_BodySizeMultiplier>0.4</SM_BodySizeMultiplier>
+          <MeleeDamageFactor>1.2</MeleeDamageFactor>
         </statFactors>
       </li>
     </stages>

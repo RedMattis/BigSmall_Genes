@@ -55,11 +55,12 @@
   <HediffDef>
     <defName>BS_SoulCollector</defName>
     <label>Anomalous Power Stockpile</label>
-    <description>A messure of anomalous energy obtained from some source.</description>
+    <description>A measure of anomalous energy obtained from some source.</description>
     <isBad>false</isBad>
     <everCurableByItem>false</everCurableByItem>
     <initialSeverity>0</initialSeverity>
     <keepOnBodyPartRestoration>true</keepOnBodyPartRestoration>
+    <maxSeverity>6</maxSeverity>
     <stages>
       <li>
         <statOffsetsBySeverity>
@@ -86,6 +87,9 @@
     <isBad>false</isBad>
     <everCurableByItem>false</everCurableByItem>
     <initialSeverity>1</initialSeverity>
+    <makesAlert>false</makesAlert>
+    <minSeverity>1</minSeverity>
+    <forceRemoveOnResurrection>true</forceRemoveOnResurrection>
     <stages>
       <li>
         <capMods>

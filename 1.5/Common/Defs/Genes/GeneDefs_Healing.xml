@@ -27,7 +27,7 @@
   <GeneDef ParentName="GeneHealingRateBase">
     <defName>WoundHealing_UltraFast</defName>
     <label>Ultra-Fast wound healing</label>
-    <labelShortAdj>slow-heal</labelShortAdj>
+    <labelShortAdj>ultra-heal</labelShortAdj>
     <description>Carriers of this gene heal wounds at an absolutely absurd rate, and any bleeding stops nearly instantly. The only drawback is that they feel far less pain than normal and often keep fighting until death.</description>
     <iconPath>GeneIcons/BS_WoundHealingRateUltra</iconPath>
     <displayOrderInCategory>28</displayOrderInCategory>

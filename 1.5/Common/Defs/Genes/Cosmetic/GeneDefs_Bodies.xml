@@ -101,6 +101,9 @@
     <fur>BS_MimicBody</fur>
     <tattoosVisible>false</tattoosVisible>
     <skinIsHairColor>false</skinIsHairColor>
+    <exclusionTags>
+      <li>ThingDefSwap</li>
+    </exclusionTags>
     <statOffsets>
       <SM_Food_Need_Capacity>2</SM_Food_Need_Capacity>
     </statOffsets>

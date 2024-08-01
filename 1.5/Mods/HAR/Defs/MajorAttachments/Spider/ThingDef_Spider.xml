@@ -18,14 +18,13 @@
       <intelligence>Humanlike</intelligence>
       <makesFootprints>true</makesFootprints>
       <lifeExpectancy>80</lifeExpectancy>
-      <leatherDef>Leather_Lizard</leatherDef>
       <nameCategory>HumanStandard</nameCategory>
       <body>BS_SpiderHybrid</body>
       <baseBodySize>1.1</baseBodySize>
       <baseHealthScale>0.9091</baseHealthScale>
-      <foodType>OmnivoreHuman</foodType>
       <gestationPeriodDays>45</gestationPeriodDays>
-      <meatMarketValue>0.8</meatMarketValue>
+      <useMeatFrom>Megaspider</useMeatFrom>
+      <useLeatherFrom>Megaspider</useLeatherFrom>
       <manhunterOnDamageChance>0.20</manhunterOnDamageChance>
       <manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>
 

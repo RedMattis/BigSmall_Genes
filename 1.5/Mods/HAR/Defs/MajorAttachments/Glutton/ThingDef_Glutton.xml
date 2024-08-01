@@ -18,7 +18,6 @@
       <intelligence>Humanlike</intelligence>
       <makesFootprints>true</makesFootprints>
       <lifeExpectancy>80</lifeExpectancy>
-      <leatherDef>Leather_Human</leatherDef>
       <nameCategory>HumanStandard</nameCategory>
       <body>BS_Glutton</body>
       <baseBodySize>1.1</baseBodySize>
@@ -32,7 +31,10 @@
       <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
       <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
-      <!--Just for testing.-->
+
+      <useMeatFrom>Human</useMeatFrom>
+      <useLeatherFrom>Human</useLeatherFrom>
+      
     </race>
     <alienRace>
       <generalSettings>

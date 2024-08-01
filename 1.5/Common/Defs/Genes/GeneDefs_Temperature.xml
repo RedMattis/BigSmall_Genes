@@ -216,7 +216,7 @@
     <defName>MinTemp_HugeNeed</defName>
     <label>Cold Need</label>
     <labelShortAdj>freezing</labelShortAdj>
-    <description>Carriers of this gene require extremely low temperatures to avoid heatstrokes. This can be somewhat mitigated with via equipmment with good insulation.</description>
+    <description>Carriers of this gene require extremely low temperatures to avoid heatstrokes. This can be somewhat mitigated with via equipmment with good insulation.Does not include extreme cold tolerance in itself, but lacking it is a death-sentence.</description>
     <iconPath>GeneIcons/BS_TemperatureLowNeed</iconPath>
     <displayOrderInCategory>-7</displayOrderInCategory>
     <statOffsets>
@@ -230,8 +230,9 @@
         </li>
       </prefixSymbols>
     </symbolPack>
-    <geneClass>BetterPrerequisites.PGene</geneClass>
+    <!-- <geneClass>BetterPrerequisites.PGene</geneClass> -->
     <modExtensions>
+    <!-- 
       <li Class="BetterPrerequisites.GenePrerequisites" MayRequire="RedMattis.BetterPrerequisites">
         <prerequisiteSets>
           <li>
@@ -242,7 +243,7 @@
             </prerequisites>
           </li>
         </prerequisiteSets>
-      </li>
+      </li> -->
 			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
 				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
 				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
@@ -255,7 +256,7 @@
     <defName>MaxTemp_HugeNeed</defName>
     <label>Heat Need</label>
     <labelShortAdj>boiling</labelShortAdj>
-    <description>Carriers of this gene require an extremely high temperature to survive. This can be somewhat mitigated with via equipmment with good insulation.</description>
+    <description>Carriers of this gene require an extremely high temperature to survive. This can be somewhat mitigated with via equipmment with good insulation. Does not include extreme heat tolerance in itself, but lacking it is a death-sentence.</description>
     <iconPath>GeneIcons/BS_TemperatureHighNeed</iconPath>
     <displayOrderInCategory>-7</displayOrderInCategory>
     <statOffsets>
@@ -281,9 +282,9 @@
         </li>
       </prefixSymbols>
     </symbolPack>
-    <geneClass>BetterPrerequisites.PGene</geneClass>
+    <!-- <geneClass>BetterPrerequisites.PGene</geneClass> -->
     <modExtensions>
-      <li Class="BetterPrerequisites.GenePrerequisites" MayRequire="RedMattis.BetterPrerequisites">
+      <!-- <li Class="BetterPrerequisites.GenePrerequisites" MayRequire="RedMattis.BetterPrerequisites">
         <prerequisiteSets>
           <li>
             <type>AnyOf</type>
@@ -293,7 +294,7 @@
             </prerequisites>
           </li>
         </prerequisiteSets>
-      </li>
+      </li> -->
 			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
 				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
 				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
