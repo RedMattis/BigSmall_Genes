@@ -80,10 +80,14 @@
   </GeneDef>
   <GeneDef ParentName="GeneNoseBase">
     <defName>BS_WerewolfSnoot</defName>
-    <label>werewolf snoot</label>
-    <description>Rawr! Carriers of this gene possess a mean werewolf-like snoot.</description>
+    <label>werewolf head</label>
+    <description>Rawr! Carriers of this gene possess a mean werewolf-like head.</description>
     <iconPath>GeneIcons/BS_werewolfsnoot</iconPath>
     <selectionWeight>0.1</selectionWeight>
+    <skinIsHairColor>true</skinIsHairColor>
+    <forcedHeadTypes>
+      <li>BS_WerewolfHead</li>
+    </forcedHeadTypes>
     <symbolPack>
       <prefixSymbols>
         <li>
@@ -121,12 +125,15 @@
       </suffixSymbols>
     </symbolPack>
     <modExtensions>
+      <li Class="BetterPrerequisites.GeneExtension">
+				<disableFacialAnimations>true</disableFacialAnimations>
+			</li>
       <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
         <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
         <backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
       </li>
     </modExtensions>
-    <renderNodeProperties Inherit="False">
+    <!-- <renderNodeProperties Inherit="False">
       <li>
         <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
         <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
@@ -142,8 +149,20 @@
         <parentTagDef>Head</parentTagDef>
         <narrowCrownHorizontalOffset>0.05</narrowCrownHorizontalOffset>
       </li>
-    </renderNodeProperties>
+    </renderNodeProperties> -->
   </GeneDef>
+
+  <HeadTypeDef ParentName="AverageBase">
+    <defName>BS_WerewolfHead</defName>
+    <graphicPath>BS_Heads/Werewolf/average</graphicPath>
+    <randomChosen>false</randomChosen>
+    <gender>None</gender>
+    <selectionWeight>99999</selectionWeight>
+    <requiredGenes>
+      <li>BS_WerewolfSnoot</li>
+    </requiredGenes>
+  </HeadTypeDef>
+
   <GeneDef ParentName="BS_Hornbase">
     <defName>BS_BananaSplitHair</defName>
     <label>neko banana split horns with sprinkles</label>

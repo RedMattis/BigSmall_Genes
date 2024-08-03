@@ -169,7 +169,7 @@
     <defName>BS_ColdGenerator</defName>
     <label>cryo-generator</label>
     <labelShortAdj>freezing</labelShortAdj>
-    <description>Carriers of this gene will dramatically cool up their environment. They are also immune to frostbite and extremely low temperatures. Not flammable, but takes increased damage from direct heat damage. Somewhat affected by BodySize.</description>
+    <description>Carriers of this gene will dramatically cool down their environment. They are also immune to frostbite and extremely low temperatures. Not flammable, but takes increased damage from direct heat damage. Somewhat affected by BodySize.</description>
     <displayCategory>Archite</displayCategory>
     <customEffectDescriptions>
       <li>Comparable to two coolers at full power.</li>

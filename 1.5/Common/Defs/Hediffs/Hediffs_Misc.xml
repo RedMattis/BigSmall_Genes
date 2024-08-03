@@ -273,14 +273,14 @@
   <HediffDef>
     <defName>BS_ColdGenerator</defName>
     <label>cryo-generator</label>
-    <description>This creature is greatly cooling down their surroundings.\n\nComparable to two coolers at full power. Somewhat scales based on BodySize.</description>
+    <description>This creature is greatly cooling down their surroundings.\n\nAlmost comparable to two coolers at full power. Somewhat scales based on BodySize.</description>
     <isBad>false</isBad>
     <everCurableByItem>false</everCurableByItem>
     <initialSeverity>1</initialSeverity>
     <hediffClass>HediffWithComps</hediffClass>
     <comps>
 			<li Class="BigAndSmall.CompProperties_TempGenerator">
-        <energyPerSecond>-42</energyPerSecond>
+        <energyPerSecond>-32</energyPerSecond>
         <targetTemperature>-60</targetTemperature>
         <scaleToBodySize>True</scaleToBodySize>
 			</li>

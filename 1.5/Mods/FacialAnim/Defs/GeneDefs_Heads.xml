@@ -57,7 +57,7 @@
     <geneClass>BetterPrerequisites.PGene</geneClass>
     <modExtensions>
       <li Class="BetterPrerequisites.GeneExtension">
-        <facialDisabler/>
+        <disableFacialAnimations>true</disableFacialAnimations>
       </li>
       <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
         <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>

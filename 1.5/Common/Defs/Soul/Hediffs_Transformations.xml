@@ -356,6 +356,8 @@
       <li Class="BetterPrerequisites.CompProperties_ColorAndFur">
         <furskinOverride>Furskin</furskinOverride>
         <skinIsHairColor>true</skinIsHairColor>
+        <headDefOverride>BS_WerewolfHead</headDefOverride>
+        <disableFacialAnims>true</disableFacialAnims>
       </li>
 			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="AnimalBehaviours.HediffCompProperties_Floating"/>
       <li Class="HediffCompProperties_VerbGiver">
@@ -396,7 +398,7 @@
         <colorType>Hair</colorType>
         <parentTagDef>Body</parentTagDef>
       </li>
-      <li>
+      <!-- <li>
         <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
         <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
         <texPath>Humanlike/HeadAttachments/BS_WerewolfSnoot</texPath>
@@ -410,7 +412,7 @@
         </drawData>
         <parentTagDef>Head</parentTagDef>
         <narrowCrownHorizontalOffset>0.05</narrowCrownHorizontalOffset>
-      </li>
+      </li> -->
       <li>
         <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
         <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
@@ -452,17 +454,6 @@
         </drawData>
       </li>
     </renderNodeProperties>
-    <!-- <modExtensions>
-      <li Class="BetterPrerequisites.GeneSuppressor_Hediff" MayRequire="RedMattis.BetterPrerequisites">
-        <supressedGenes>
-          <li>BS_Unarmed_VeryStrong</li>
-          <li>BS_UnarmedOnly</li>
-          <li>Superclotting</li>
-          <li>VU_Darkness_MoveSpeed_VeryQuick</li>
-          <li>Nearsighted</li>
-        </supressedGenes>
-      </li>
-    </modExtensions> -->
   </HediffDef>
 
   <ThoughtDef>

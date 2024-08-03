@@ -214,6 +214,9 @@
       </tags>
     </beardTagFilter>
     <modExtensions>
+      <li Class="BetterPrerequisites.GeneExtension">
+				<disableFacialAnimations>true</disableFacialAnimations>
+			</li>
 			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
 				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
 				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
@@ -260,6 +263,9 @@
       </tags>
     </beardTagFilter>
     <modExtensions>
+      <li Class="BetterPrerequisites.GeneExtension">
+				<disableFacialAnimations>true</disableFacialAnimations>
+			</li>
 			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
 				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
 				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
