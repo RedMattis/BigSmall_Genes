@@ -322,6 +322,12 @@
     <everCurableByItem>false</everCurableByItem>
     <hediffClass>HediffWithComps</hediffClass>
     <initialSeverity>1</initialSeverity>
+    <!-- <beardTagFilter>
+      <whitelist>true</whitelist>
+      <tags>
+        <li>NoBeard</li>
+      </tags>
+    </beardTagFilter> -->
     <abilities>
       <li>VU_Pounce</li>
       <li MayRequire="RedMattis.Undead">VU_LycantropeInfect</li>
@@ -356,8 +362,9 @@
       <li Class="BetterPrerequisites.CompProperties_ColorAndFur">
         <furskinOverride>Furskin</furskinOverride>
         <skinIsHairColor>true</skinIsHairColor>
-        <headDefOverride>BS_WerewolfHead</headDefOverride>
+        <headDefOverride>BS_WerewolfHeadHediff</headDefOverride>
         <disableFacialAnims>true</disableFacialAnims>
+        <disableBeards>true</disableBeards>
       </li>
 			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="AnimalBehaviours.HediffCompProperties_Floating"/>
       <li Class="HediffCompProperties_VerbGiver">

@@ -190,7 +190,7 @@
   </HeadTypeDef>
 
 
-  <GeneDef ParentName="GeneJawBase">
+  <GeneDef>
     <defName>BS_StonemaskHead</defName>
     <label>stone mask</label>
     <description>Carriers of this gene have head resembling a stone mask</description>

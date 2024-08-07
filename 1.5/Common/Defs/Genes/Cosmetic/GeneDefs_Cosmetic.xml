@@ -78,16 +78,32 @@
       </li>
     </modExtensions>
   </GeneDef>
-  <GeneDef ParentName="GeneNoseBase">
+  <GeneDef>
     <defName>BS_WerewolfSnoot</defName>
-    <label>werewolf head</label>
-    <description>Rawr! Carriers of this gene possess a mean werewolf-like head.</description>
+    <label>werewolf body</label>
+    <description>Rawr! Carriers of this gene possess a mean werewolf-like head and a somewhat furry body.</description>
     <iconPath>GeneIcons/BS_werewolfsnoot</iconPath>
     <selectionWeight>0.1</selectionWeight>
+    <biostatMet>-1</biostatMet>
+    <fur>Furskin</fur>
     <skinIsHairColor>true</skinIsHairColor>
+    <statOffsets>
+      <ComfyTemperatureMin>-10</ComfyTemperatureMin>
+    </statOffsets>
+    <tattoosVisible>false</tattoosVisible>
     <forcedHeadTypes>
       <li>BS_WerewolfHead</li>
     </forcedHeadTypes>
+    <beardTagFilter>
+      <whitelist>true</whitelist>
+      <tags/>
+    </beardTagFilter>
+    <exclusionTags>
+      <li>HairStyle</li>
+      <li>Fur</li>
+      <li>BeardStyle</li>
+      <li>Jaw</li>
+    </exclusionTags>
     <symbolPack>
       <prefixSymbols>
         <li>
@@ -133,6 +149,17 @@
         <backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
       </li>
     </modExtensions>
+    <renderNodeProperties>
+      <li>
+        <debugLabel>Fur</debugLabel>
+        <nodeClass>PawnRenderNode_Fur</nodeClass>
+        <workerClass>PawnRenderNodeWorker_Fur</workerClass>
+        <baseLayer>5</baseLayer>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <colorType>Hair</colorType>
+        <parentTagDef>Body</parentTagDef>
+      </li>
+    </renderNodeProperties>
     <!-- <renderNodeProperties Inherit="False">
       <li>
         <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
@@ -157,7 +184,18 @@
     <graphicPath>BS_Heads/Werewolf/average</graphicPath>
     <randomChosen>false</randomChosen>
     <gender>None</gender>
-    <selectionWeight>99999</selectionWeight>
+    <selectionWeight>9999</selectionWeight> 
+    <requiredGenes>
+      <li>BS_WerewolfSnoot</li>
+    </requiredGenes>
+  </HeadTypeDef>
+
+  <HeadTypeDef ParentName="AverageBase">
+    <defName>BS_WerewolfHeadHediff</defName>
+    <graphicPath>BS_Heads/Werewolf/average</graphicPath>
+    <randomChosen>false</randomChosen>
+    <gender>None</gender>
+    <selectionWeight>1</selectionWeight> 
     <requiredGenes>
       <li>BS_WerewolfSnoot</li>
     </requiredGenes>

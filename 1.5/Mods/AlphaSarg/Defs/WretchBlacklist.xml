@@ -1,10 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Patch>
+<Defs>
 
-  <!-- <Operation Class="PatchOperationAdd">
-    <xpath>Defs/AlphaGenes.WretchBlacklistDef[defName="AG_WretchBlacklistDef"]/blackListedGenes</xpath>
-    <value>
-      <li>BS_Damaged_Genes</li>
+  <AlphaGenes.WretchBlacklistDef>
+		<defName>BS_WretchBlacklistDef_Various</defName>
+		<blackListedGenes>							
+			<li>BS_Damaged_Genes</li>
       <li>BS_Corrupted</li>
       <li>BS_Xenolocked</li>
       <li>TitanFrame</li>
@@ -14,6 +13,7 @@
       <li>BS_PilotRequired</li>
       <li>BS_PilotableSameSize</li>
 
+      <!-- Block Android Genes...-->
       <li MayRequire="vanillaracesexpanded.android">BS_SmallFrame_Android</li>
       <li MayRequire="vanillaracesexpanded.android">BS_TinyFrame_Android</li>
       <li MayRequire="vanillaracesexpanded.android">BS_TitanFrame_Android</li>
@@ -30,6 +30,11 @@
       <li MayRequire="vanillaracesexpanded.android">BS_Unarmed_Strong_Android</li>
       <li MayRequire="vanillaracesexpanded.android">BS_Unarmed_VeryStrong_Android</li>
 
+      <li MayRequire="vanillaracesexpanded.android">BS_Pilotable_Android</li>
+      <li MayRequire="vanillaracesexpanded.android">BS_PilotAssistible_Android</li>
+      <li MayRequire="vanillaracesexpanded.android">BS_PilotableSameSize_Android</li>
+
+      <!--Block nonsense from the Vampire mod.-->
       <li MayRequire="redmattis.undead">VU_Disguised_Succubus</li>
       <li MayRequire="redmattis.undead">VU_Involuntary_Werewolf</li>
       <li MayRequire="redmattis.undead">VU_Disguised_Succubus</li>
@@ -37,39 +42,7 @@
       <li MayRequire="redmattis.undead">VU_Stage_DraculNeonate</li>
       <li MayRequire="redmattis.undead">VU_Stage_DraculMature</li>
       <li MayRequire="redmattis.undead">VU_Stage_DraculProgenitor</li>
-    </value>
-  </Operation> -->
+		</blackListedGenes>							
+	</AlphaGenes.WretchBlacklistDef>
 
-  <Operation Class="PatchOperationReplace">
-    <xpath>Defs/GeneDef[@Name="BS_FunctionalWingBase"]/abilities</xpath>
-    <value>
-      <abilities>
-        <!--Just use AG's jump instead if both exist, otherwise the randomChosen wings will change game mechanics and confuse people.-->
-			  <li>AG_WingPoweredJump</li>
-      </abilities>
-    </value>
-  </Operation>
-
-  <!-- I assume this is just something you forgot about Sarg?-->
-
-  <Operation Class="PatchOperationConditional">
-		<success>Always</success>
-		<xpath>/Defs/TraitDef[defName = "AG_Beauty"]/exclusionTags</xpath>
-		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/TraitDef[defName = "AG_Beauty"]</xpath>
-			<value>
-				<exclusionTags>
-					<li>BS_Beauty</li>
-				</exclusionTags>
-			</value>
-		</nomatch>
-		<match Class="PatchOperationAdd">
-			<xpath>/Defs/TraitDef[defName = "AG_Beauty"]/exclusionTags</xpath>
-			<value>
-				<li>BS_Beauty</li>
-			</value>
-		</match>
-	</Operation>
-
-  
-</Patch>
+</Defs>
