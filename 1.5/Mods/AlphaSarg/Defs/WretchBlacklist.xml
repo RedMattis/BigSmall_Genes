@@ -18,6 +18,7 @@
       <li MayRequire="vanillaracesexpanded.android">BS_TinyFrame_Android</li>
       <li MayRequire="vanillaracesexpanded.android">BS_TitanFrame_Android</li>
       <li MayRequire="vanillaracesexpanded.android">BS_BigFrame_Android</li>
+      <li MayRequire="vanillaracesexpanded.android">BS_GiantFrame_Android</li>
 
       <li MayRequire="vanillaracesexpanded.android">BS_MinTemp_HugeDecrease_Android</li>
       <li MayRequire="vanillaracesexpanded.android">BS_MaxTemp_HugeIncrease_Android</li>
