@@ -30,13 +30,6 @@
     <fur>BS_BrokenTitanBody</fur>
     <tattoosVisible>false</tattoosVisible>
     <skinIsHairColor>false</skinIsHairColor>
-    <modExtensions>
-      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-        <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-        <backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <!-- <useSkinColorForFur>true</useSkinColorForFur> -->
-      </li>
-    </modExtensions>
     <renderNodeProperties Inherit="False">
       <li>
         <parentTagDef>Body</parentTagDef>
@@ -67,13 +60,6 @@
     <fur>BS_OgreBody</fur>
     <tattoosVisible>false</tattoosVisible>
     <skinIsHairColor>false</skinIsHairColor>
-    <modExtensions>
-      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-        <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-        <backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <!-- <useSkinColorForFur>true</useSkinColorForFur> -->
-      </li>
-    </modExtensions>
     <renderNodeProperties Inherit="False">
       <li>
         <parentTagDef>Body</parentTagDef>
@@ -108,10 +94,7 @@
       <SM_Food_Need_Capacity>2</SM_Food_Need_Capacity>
     </statOffsets>
     <modExtensions>
-      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-        <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-        <backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-      </li>
+
       <li Class="BetterPrerequisites.GeneExtension">
         <thingDefSwap MayRequire="erdelf.HumanoidAlienRaces">BS_GluttonRace</thingDefSwap>
         <forceThingDefSwap>false</forceThingDefSwap>

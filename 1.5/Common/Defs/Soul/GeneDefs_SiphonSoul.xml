@@ -17,11 +17,7 @@
     <selectionWeight>1</selectionWeight>
     <biostatCpx>4</biostatCpx>
     <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
+			
 		</modExtensions>
   </GeneDef>
 
@@ -79,11 +75,7 @@
     <selectionWeight>1</selectionWeight>
     <biostatCpx>3</biostatCpx>
     <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
+			
 		</modExtensions>
   </GeneDef>
 
@@ -133,11 +125,7 @@
     <iconPath>GeneIcons/BS_SoulEaterOnKill</iconPath>
     <biostatMet>-1</biostatMet>
     <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
+			
       <li Class="BetterPrerequisites.GeneExtension">
 				<consumeSoulOnHit>
           <gainMultiplier>0.15</gainMultiplier>

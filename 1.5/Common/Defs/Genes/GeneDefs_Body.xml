@@ -41,11 +41,6 @@
               <li>universum.vacuum_suffocation_protection</li>
           </allowed_utilities>
       </li>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
 		</modExtensions>
   </GeneDef>
   
@@ -82,11 +77,6 @@
               <li>universum.vacuum_suffocation_protection</li>
           </allowed_utilities>
       </li>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
 		</modExtensions>
   </GeneDef>
   
@@ -106,13 +96,6 @@
     <statFactors>
       <HSAU_GhoulismSusceptibility MayRequire="Baskerville.HellsingARMSUltimate">0</HSAU_GhoulismSusceptibility>
     </statFactors>
-    <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
-		</modExtensions>
   </GeneDef>
 
   <GeneDef>
@@ -128,13 +111,6 @@
     <biostatCpx>1</biostatCpx>
     <biostatMet>-1</biostatMet>
     <exclusionTags><li>BS_BleedRate</li></exclusionTags>
-    <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
-		</modExtensions>
   </GeneDef>
   
   <GeneDef>
@@ -171,36 +147,6 @@
     <biostatCpx>2</biostatCpx>
     <biostatMet>-1</biostatMet>
     <geneClass>BetterPrerequisites.PGene</geneClass>
-    <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
-		</modExtensions>
-  </GeneDef>
-
-  
-
-  <GeneDef>
-    <defName>VU_Pallor</defName>
-    <label>pallor</label>
-    <displayCategory>Beauty</displayCategory>
-    <description>Carriers of this gene have a corpse-like pallor.</description>
-    <iconPath>GeneIcons/VU_Pallor</iconPath>
-    <displayOrderInCategory>10</displayOrderInCategory>
-    <statOffsets>
-      <PawnBeauty>-1</PawnBeauty>
-    </statOffsets>
-    <biostatMet>1</biostatMet>
-    <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
-		</modExtensions>
-    <selectionWeight>0.2</selectionWeight>
   </GeneDef>
   
 </Defs>

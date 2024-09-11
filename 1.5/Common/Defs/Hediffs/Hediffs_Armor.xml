@@ -1,5 +1,5 @@
 <Defs>
-  <HediffDef>
+  <!-- <HediffDef>
 		<defName>BS_ToughSkin</defName>
 		<label>tough skin</label>
 		<description>This person has exceptionally tough skin and somewhat resists blunt and cutting damage.</description>
@@ -51,5 +51,5 @@
 				</statOffsets>
 			</li>
 		</stages>
-	</HediffDef>
+	</HediffDef> -->
 </Defs>

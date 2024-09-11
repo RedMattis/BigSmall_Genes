@@ -25,51 +25,6 @@
 		</match>
 	</Operation>
 
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThoughtDef[defName="GroinUncovered_Disapproved_Male"]/nullifyingGenes</xpath>
-		<value>
-			<li>BS_CannotWearClothing</li>
-			<li>BS_CannotWearClothingOrArmor</li>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThoughtDef[defName="GroinUncovered_Disapproved_Social_Male"]/nullifyingGenes</xpath>
-		<value>
-			<li>BS_CannotWearClothing</li>
-			<li>BS_CannotWearClothingOrArmor</li>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThoughtDef[defName="GroinOrChestUncovered_Disapproved_Male"]/nullifyingGenes</xpath>
-		<value>
-			<li>BS_CannotWearClothing</li>
-			<li>BS_CannotWearClothingOrArmor</li>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThoughtDef[defName="GroinOrChestUncovered_Disapproved_Social_Male"]/nullifyingGenes</xpath>
-		<value>
-			<li>BS_CannotWearClothing</li>
-			<li>BS_CannotWearClothingOrArmor</li>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThoughtDef[defName="GroinChestOrHairUncovered_Disapproved_Male"]/nullifyingGenes</xpath>
-		<value>
-			<li>BS_CannotWearClothing</li>
-			<li>BS_CannotWearClothingOrArmor</li>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThoughtDef[defName="GroinChestOrHairUncovered_Disapproved_Social_Male"]/nullifyingGenes</xpath>
-		<value>
-			<li>BS_CannotWearClothing</li>
-			<li>BS_CannotWearClothingOrArmor</li>
-		</value>
-	</Operation>
-
-
 	<!---BS_InsultProof-->
 	<Operation Class="PatchOperationAdd">
     <!-- <success>Always</success> -->
@@ -103,6 +58,24 @@
 			<li>BS_GeneEater</li>
 			<li MayRequire="RedMattis.LamiasAndOtherSnakes">BS_SnekEngulf</li>
 			<li MayRequire="RedMattis.BSSlime">BS_SlimeEngulf</li>
+    </value>
+  </Operation>
+
+  <!-- BS_DroneKind -->
+
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>Defs/ThoughtDef[@Name="DeathMemory" or @Name="LostMemory" or @Name="KilledChild_Opinion"][not(nullifyingHediffs)]</xpath>
+    <value>
+      <nullifyingHediffs/>
+    </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>Defs/ThoughtDef[@Name="DeathMemory" or @Name="LostMemory" or @Name="KilledChild_Opinion"]/nullifyingHediffs</xpath>
+    <value>
+      <li>BS_DroneHediff</li>
     </value>
   </Operation>
 

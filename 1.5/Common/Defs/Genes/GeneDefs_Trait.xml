@@ -13,14 +13,10 @@
     </forcedTraits>
     <biostatCpx>1</biostatCpx>
     <biostatMet>0</biostatMet>
-    <modExtensions>
-      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-        <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-        <backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-      </li>
-    </modExtensions>
+
   </GeneDef>
 
+  <!-- Really old gene is was missing the prefix... -->
   <GeneDef>
     <defName>Undergrounder</defName>
     <label>Undergrounder</label>
@@ -35,12 +31,7 @@
     </forcedTraits>
     <biostatCpx>1</biostatCpx>
     <biostatMet>1</biostatMet>
-    <modExtensions>
-      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-        <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-        <backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-      </li>
-    </modExtensions>
+
   </GeneDef>
 
   <GeneDef>
@@ -56,12 +47,7 @@
     <biostatMet>0</biostatMet>
     <biostatCpx>0</biostatCpx>
     <selectionWeight>0.0</selectionWeight>
-    <modExtensions>
-      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-        <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-        <backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-      </li>
-    </modExtensions>
+
   </GeneDef>
 
   <GeneDef>
@@ -78,19 +64,14 @@
     <biostatMet>0</biostatMet>
     <biostatCpx>1</biostatCpx>
     <selectionWeight>1</selectionWeight>
-    <modExtensions>
-      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-        <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-        <backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-      </li>
-    </modExtensions>
+
   </GeneDef>
 
   <GeneDef>
     <defName>BS_Unpretentious</defName>
     <label>unpretentious</label>
     <displayCategory>Violence</displayCategory>
-    <description>Carriers of this gene aren't bothered by rough apperances or a bit of rough living. This also overwrites a large number of conflicting traits.</description>
+    <description>Carriers of this gene aren't bothered by rough appearances or a bit of rough living. This also overwrites a large number of conflicting traits.</description>
     <iconPath>GeneIcons/BS_Unpretencious</iconPath>
     <forcedTraits>
       <li>
@@ -100,12 +81,7 @@
     <biostatMet>-1</biostatMet>
     <biostatCpx>1</biostatCpx>
     <selectionWeight>1</selectionWeight>
-    <modExtensions>
-      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-        <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-        <backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-      </li>
-    </modExtensions>
+
   </GeneDef>
 
   <GeneDef>
@@ -121,12 +97,7 @@
     <biostatMet>2</biostatMet>
     <biostatCpx>1</biostatCpx>
     <selectionWeight>1</selectionWeight>
-    <modExtensions>
-      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-        <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-        <backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-      </li>
-    </modExtensions>
+
   </GeneDef>
 
   <GeneDef>
@@ -142,12 +113,7 @@
     <biostatMet>-1</biostatMet>
     <biostatCpx>1</biostatCpx>
     <selectionWeight>1</selectionWeight>
-    <modExtensions>
-      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-        <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-        <backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-      </li>
-    </modExtensions>
+
   </GeneDef>
 
   <GeneDef>
@@ -164,12 +130,7 @@
     <biostatMet>-1</biostatMet>
     <biostatCpx>1</biostatCpx>
     <selectionWeight>1</selectionWeight>
-    <modExtensions>
-      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-        <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-        <backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-      </li>
-    </modExtensions>
+
   </GeneDef>
 
   <GeneDef>
@@ -204,10 +165,7 @@
           </li>
         </prerequisiteSets>
       </li>
-      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-        <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-        <backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-      </li>
+
     </modExtensions>
   </GeneDef>
 

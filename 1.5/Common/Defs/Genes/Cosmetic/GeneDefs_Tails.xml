@@ -14,12 +14,7 @@
         <offset>0.05</offset>
       </li>
     </capMods>
-    <modExtensions>
-      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-        <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-        <backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-      </li>
-    </modExtensions>
+
     <renderNodeProperties Inherit="False">
       <li>
         <parentTagDef>Body</parentTagDef>

@@ -9,11 +9,7 @@
     <skinColorOverride>(214,255,247)</skinColorOverride>
     <displayOrderInCategory>175</displayOrderInCategory>
     <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
+			
 		</modExtensions>
     <selectionWeight>0.2</selectionWeight>
   </GeneDef>
@@ -28,11 +24,7 @@
     <skinColorOverride>(62,168,244,255)</skinColorOverride>
     <displayOrderInCategory>175</displayOrderInCategory>
     <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
+			
 		</modExtensions>
     <selectionWeight>0.2</selectionWeight>
   </GeneDef>
@@ -46,11 +38,7 @@
     <randomBrightnessFactor>0</randomBrightnessFactor>
     <displayOrderInCategory>93</displayOrderInCategory>
     <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
+			
 		</modExtensions>
     <selectionWeight>0.2</selectionWeight>
   </GeneDef>
@@ -64,11 +52,7 @@
     <skinColorOverride>(255,154,62)</skinColorOverride>
     <displayOrderInCategory>176</displayOrderInCategory>
     <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
+			
 		</modExtensions>
     <selectionWeight>0.2</selectionWeight>
   </GeneDef>
@@ -82,11 +66,7 @@
     <skinColorOverride>(250, 238, 197)</skinColorOverride>
     <displayOrderInCategory>176</displayOrderInCategory>
     <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
+			
 		</modExtensions>
     <selectionWeight>0.2</selectionWeight>
   </GeneDef>
@@ -101,11 +81,7 @@
     <skinColorOverride>(125,12,26,255)</skinColorOverride>
     <displayOrderInCategory>177</displayOrderInCategory>
     <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
+			
 		</modExtensions>
     <selectionWeight>0.2</selectionWeight>
   </GeneDef>
@@ -129,11 +105,7 @@
     <skinColorOverride>(227,255,227)</skinColorOverride>
     <displayOrderInCategory>175</displayOrderInCategory>
     <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
+			
 		</modExtensions>
     <selectionWeight>0.2</selectionWeight>
   </GeneDef>
@@ -147,11 +119,7 @@
     <skinColorOverride>(138,153,139)</skinColorOverride>
     <displayOrderInCategory>176</displayOrderInCategory>
     <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
+			
 		</modExtensions>
     <selectionWeight>0.2</selectionWeight>
   </GeneDef>
@@ -165,11 +133,7 @@
     <skinColorOverride>(129,144,127,255)</skinColorOverride>
     <displayOrderInCategory>177</displayOrderInCategory>
     <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
+			
 		</modExtensions>
     <selectionWeight>0.2</selectionWeight>
   </GeneDef>
@@ -183,11 +147,7 @@
     <skinColorOverride>(65,71,37)</skinColorOverride>
     <displayOrderInCategory>178</displayOrderInCategory>
     <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
+			
 		</modExtensions>
     <selectionWeight>0.2</selectionWeight>
   </GeneDef>
@@ -203,11 +163,7 @@
     <displayOrderInCategory>175</displayOrderInCategory>
     <selectionWeight>0</selectionWeight>
     <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
+			
 		</modExtensions>
   </GeneDef>
 

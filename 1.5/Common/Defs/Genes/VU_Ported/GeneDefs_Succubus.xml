@@ -35,13 +35,6 @@
         <li><symbol>ubus</symbol></li>
       </suffixSymbols>
     </symbolPack>
-    <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
-		</modExtensions>
     <canGenerateInGeneSet>false</canGenerateInGeneSet>
     <selectionWeight>0</selectionWeight>
   </GeneDef>
@@ -59,13 +52,6 @@
     <abilities>
 			<li MayRequire="vanillaracesexpanded.highmate">VRE_InitiateLovin</li>
 		</abilities>
-    <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
-		</modExtensions>
   </GeneDef>
 
   <GeneDef>
@@ -107,11 +93,7 @@
           </li>
         </prerequisiteSets>
       </li>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
+			
 		</modExtensions>
   </GeneDef>
 
@@ -158,13 +140,10 @@
           <li>BS_SkinBloodRed</li> -->
         </supressedGenes>
       </li>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-        <hideGene>true</hideGene>
-			</li>
-		</modExtensions>
+      <li Class="BetterPrerequisites.GeneExtension">
+        <hideInXenotypeUI>true</hideInXenotypeUI>
+      </li>
+    </modExtensions>
   </GeneDef>
   
   <GeneDef>
@@ -182,11 +161,8 @@
     </descriptionHyperlinks>
     <biostatMet>-5</biostatMet>
     <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-        <hideGene>true</hideGene>
+			<li Class="BetterPrerequisites.GeneExtension">
+				<hideInXenotypeUI>true</hideInXenotypeUI>
 			</li>
 		</modExtensions>
     <canGenerateInGeneSet>false</canGenerateInGeneSet>

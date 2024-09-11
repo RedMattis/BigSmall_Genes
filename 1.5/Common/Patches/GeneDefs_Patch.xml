@@ -85,5 +85,47 @@
 		</match>
 	</Operation>
 
+
+	<!-- Beauty Genes -->
+	<!-- <Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/GeneDef[defName = "Beauty_VeryUgly"]/exclusionTags</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/GeneDef[defName = "Beauty_VeryUgly"]</xpath>
+			<value>
+				<exclusionTags>
+					<li>BS_VeryAlien</li>
+					<li>BS_SomeAlien</li>
+				</exclusionTags>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/GeneDef[defName = "Beauty_VeryUgly"]/exclusionTags</xpath>
+			<value>
+				<li>BS_VeryAlien</li>
+				<li>BS_SomeAlien</li>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/GeneDef[defName = "Beauty_Ugly"]/exclusionTags</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/GeneDef[defName = "Beauty_Ugly"]</xpath>
+			<value>
+				<exclusionTags>
+					<li>BS_VeryAlien</li>
+				</exclusionTags>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/GeneDef[defName = "Beauty_Ugly"]/exclusionTags</xpath>
+			<value>
+				<li>BS_VeryAlien</li>
+			</value>
+		</match>
+	</Operation> -->
+
   
 </Patch>

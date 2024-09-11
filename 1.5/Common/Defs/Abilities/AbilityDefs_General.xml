@@ -109,6 +109,34 @@
     </comps>
   </AbilityDef>
 
+  <AbilityDef ParentName="AbilityTouchBase">
+    <defName>BS_Regurgitate</defName>
+    <label>regurgitate</label>
+    <description>Regurgitate everything you've engulfed.</description>
+    <iconPath>GeneIcons/BS_AcidVomit2</iconPath>
+    <displayOrder>101</displayOrder>
+    <hostile>false</hostile>
+    <targetRequired>False</targetRequired>
+    <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+    <cooldownTicksRange>50</cooldownTicksRange>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <label>regurgitate</label>
+      <violent>false</violent>
+      <warmupTime>2.5</warmupTime>
+      <range>0</range>
+      <requireLineOfSight>False</requireLineOfSight>
+      <targetParams>
+        <canTargetSelf>True</canTargetSelf>
+      </targetParams>
+    </verbProperties>
+    <aiCanUse>false</aiCanUse>
+    <comps>
+      <li Class="BigAndSmall.CompProperties_AbilityRegurgitate"/>
+    </comps>
+  </AbilityDef>
+
   <AbilityDef>
     <defName>BS_EjectPilot</defName>
     <label>Eject Pilot</label>

@@ -6,12 +6,7 @@
     <hairColorOverride>(131, 66, 66)</hairColorOverride>
     <selectionWeight>0.05</selectionWeight>
     <displayOrderInCategory>191</displayOrderInCategory>
-    <modExtensions>
-      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-        <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-        <backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-      </li>
-    </modExtensions>
+
   </GeneDef>
   <GeneDef ParentName="GeneHairColorBase">
     <defName>Hair_MediumBlue</defName>
@@ -19,12 +14,7 @@
     <hairColorOverride>(66, 66, 131)</hairColorOverride>
     <selectionWeight>0.05</selectionWeight>
     <displayOrderInCategory>191</displayOrderInCategory>
-    <modExtensions>
-      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-        <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-        <backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-      </li>
-    </modExtensions>
+
   </GeneDef>
   <GeneDef ParentName="GeneHairColorBase">
     <defName>BS_Hair_TrueWhite</defName>
@@ -32,12 +22,7 @@
     <hairColorOverride>(255, 255, 255)</hairColorOverride>
     <selectionWeight>0.05</selectionWeight>
     <displayOrderInCategory>191</displayOrderInCategory>
-    <modExtensions>
-      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-        <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-        <backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-      </li>
-    </modExtensions>
+
   </GeneDef>
   <GeneDef ParentName="GeneHairColorBase">
     <defName>BS_HairFrostWhite</defName>
@@ -45,12 +30,7 @@
     <hairColorOverride>(205,251,255)</hairColorOverride>
     <selectionWeight>0.05</selectionWeight>
     <displayOrderInCategory>191</displayOrderInCategory>
-    <modExtensions>
-      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-        <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-        <backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-      </li>
-    </modExtensions>
+
   </GeneDef>
   <GeneDef ParentName="GeneHairColorBase">
     <defName>BS_HairPermafrost</defName>
@@ -58,12 +38,7 @@
     <hairColorOverride>(1,107,183,255)</hairColorOverride>
     <selectionWeight>0.05</selectionWeight>
     <displayOrderInCategory>191</displayOrderInCategory>
-    <modExtensions>
-      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-        <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-        <backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-      </li>
-    </modExtensions>
+
   </GeneDef>
   <GeneDef ParentName="GeneHairColorBase">
     <defName>BS_BloodHair</defName>
@@ -71,12 +46,7 @@
     <hairColorOverride>(125,12,26)</hairColorOverride>
     <selectionWeight>0.05</selectionWeight>
     <displayOrderInCategory>191</displayOrderInCategory>
-    <modExtensions>
-      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-        <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-        <backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-      </li>
-    </modExtensions>
+
   </GeneDef>
   <GeneDef>
     <defName>BS_WerewolfSnoot</defName>
@@ -144,10 +114,7 @@
       <li Class="BetterPrerequisites.GeneExtension">
 				<disableFacialAnimations>true</disableFacialAnimations>
 			</li>
-      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-        <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-        <backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-      </li>
+
     </modExtensions>
     <renderNodeProperties>
       <li>
@@ -235,12 +202,7 @@
     <randomBrightnessFactor>0</randomBrightnessFactor>
     <hairColorOverride>(255,240,180)</hairColorOverride>
     <displayOrderInCategory>175</displayOrderInCategory>
-    <modExtensions>
-      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-        <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-        <backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-      </li>
-    </modExtensions>
+
   </GeneDef>
   <GeneDef ParentName="GeneHairColorBase">
     <defName>BS_MatteGreenHair</defName>
@@ -251,11 +213,6 @@
     <randomBrightnessFactor>0</randomBrightnessFactor>
     <hairColorOverride>(115,163,95)</hairColorOverride>
     <displayOrderInCategory>175</displayOrderInCategory>
-    <modExtensions>
-      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-        <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-        <backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-      </li>
-    </modExtensions>
+
   </GeneDef>
 </Defs>

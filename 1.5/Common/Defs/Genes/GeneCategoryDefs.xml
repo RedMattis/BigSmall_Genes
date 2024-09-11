@@ -2,50 +2,63 @@
   <GeneCategoryDef>
     <defName>Body_Size</defName>
     <label>body size</label>
-    <displayPriorityInXenotype>701</displayPriorityInXenotype>
+    <displayPriorityInXenotype>709</displayPriorityInXenotype>
   </GeneCategoryDef>
   
   <GeneCategoryDef>
     <defName>Body_Size_Multiplier</defName>
     <label>body size multiplier</label>
-    <displayPriorityInXenotype>702</displayPriorityInXenotype>
+    <displayPriorityInXenotype>708</displayPriorityInXenotype>
   </GeneCategoryDef>
 
    <GeneCategoryDef>
     <defName>BS_Diet</defName>
     <label>Diet</label>
-    <displayPriorityInXenotype>704</displayPriorityInXenotype>
+    <displayPriorityInXenotype>707</displayPriorityInXenotype>
   </GeneCategoryDef>
 
   <GeneCategoryDef>
     <defName>BS_Learning</defName>
     <label>Learning</label>
-    <displayPriorityInXenotype>709</displayPriorityInXenotype>
+    <displayPriorityInXenotype>706</displayPriorityInXenotype>
   </GeneCategoryDef>
 
   <GeneCategoryDef>
     <defName>BS_Armour</defName>
     <label>Armour</label>
-    <displayPriorityInXenotype>710</displayPriorityInXenotype>
+    <displayPriorityInXenotype>705</displayPriorityInXenotype>
   </GeneCategoryDef>
 
   <GeneCategoryDef>
     <defName>BS_Pilotable</defName>
     <label>Pilotable</label>
-    <displayPriorityInXenotype>711</displayPriorityInXenotype>
+    <displayPriorityInXenotype>704</displayPriorityInXenotype>
   </GeneCategoryDef>
 
   <GeneCategoryDef>
     <defName>BS_InnateAttacks</defName>
     <label>Innate Attacks</label>
-    <displayPriorityInXenotype>712</displayPriorityInXenotype>
+    <displayPriorityInXenotype>703</displayPriorityInXenotype>
   </GeneCategoryDef>
+
+  <GeneCategoryDef>
+    <defName>BS_Production</defName>
+    <label>Production</label>
+    <displayPriorityInXenotype>702</displayPriorityInXenotype>
+  </GeneCategoryDef>
+
+  <GeneCategoryDef>
+    <defName>BS_Aging</defName>
+    <label>Aging</label>
+    <displayPriorityInXenotype>701</displayPriorityInXenotype>
+  </GeneCategoryDef>
+
 
   <GeneCategoryDef>
     <defName>LoS_Snake_Vis</defName>
     <label>Snake Parts</label>
     <!-- Cosmetic_Skin 280 Misc 270-->
-    <displayPriorityInXenotype>700</displayPriorityInXenotype>
+    <displayPriorityInXenotype>387</displayPriorityInXenotype>
     <!-- Cosmetic_Skin -110 -->
     <displayPriorityInGenepack>-2103</displayPriorityInGenepack>
   </GeneCategoryDef>
@@ -53,7 +66,7 @@
     <defName>LoS_Snake_NoVis</defName>
     <label>Snake</label>
     <!-- Cosmetic_Skin 280 Misc 270-->
-    <displayPriorityInXenotype>699</displayPriorityInXenotype>
+    <displayPriorityInXenotype>388</displayPriorityInXenotype>
     <!-- Cosmetic_Skin -110 -->
     <displayPriorityInGenepack>-2104</displayPriorityInGenepack>
   </GeneCategoryDef>
@@ -73,7 +86,7 @@
   <GeneCategoryDef>
     <defName>VU_Unliving</defName>
     <label>unliving</label>
-    <displayPriorityInXenotype>703</displayPriorityInXenotype>
+    <displayPriorityInXenotype>700</displayPriorityInXenotype>
   </GeneCategoryDef>
 
   <GeneCategoryDef>

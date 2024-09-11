@@ -16,13 +16,6 @@
       <AbilityDef>BS_Incorporate_Abillity</AbilityDef>
     </descriptionHyperlinks>
     <selectionWeight>2.0</selectionWeight>
-    <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
-		</modExtensions>
   </GeneDef>
 
   <AbilityDef ParentName="AbilityTouchBase">
@@ -82,13 +75,6 @@
       <AbilityDef>BS_StopMimic</AbilityDef>
     </descriptionHyperlinks>
     <selectionWeight>2.0</selectionWeight>
-    <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
-		</modExtensions>
   </GeneDef>
 
   <AbilityDef ParentName="AbilityTouchBase">
@@ -187,13 +173,6 @@
       <AbilityDef>BS_IntegrateGenes</AbilityDef>
     </descriptionHyperlinks>
     <selectionWeight>0.5</selectionWeight>
-    <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
-		</modExtensions>
   </GeneDef>
 
   <AbilityDef>
@@ -242,13 +221,6 @@
       <AbilityDef>BS_DisintegrateXenoGenes</AbilityDef>
     </descriptionHyperlinks>
     <selectionWeight>0.25</selectionWeight>
-    <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
-		</modExtensions>
   </GeneDef>
 
   <AbilityDef>
@@ -299,12 +271,5 @@
     <minAgeActive>3</minAgeActive>
     <biostatArc>1</biostatArc>
     <selectionWeight>2.0</selectionWeight>
-    <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
-		</modExtensions>
   </GeneDef>
 </Defs>

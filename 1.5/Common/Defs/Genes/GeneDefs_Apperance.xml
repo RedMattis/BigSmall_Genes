@@ -1,0 +1,19 @@
+<Defs>
+  <GeneDef>
+    <defName>VU_Pallor</defName>
+    <label>pallor</label>
+    <displayCategory>Beauty</displayCategory>
+    <description>Carriers of this gene have a corpse-like pallor.</description>
+    <iconPath>GeneIcons/VU_Pallor</iconPath>
+    <displayOrderInCategory>10</displayOrderInCategory>
+    <statOffsets>
+      <PawnBeauty>-1</PawnBeauty>
+    </statOffsets>
+    <biostatMet>1</biostatMet>
+    <selectionWeight>0.2</selectionWeight>
+  </GeneDef>
+
+  
+
+  
+</Defs>

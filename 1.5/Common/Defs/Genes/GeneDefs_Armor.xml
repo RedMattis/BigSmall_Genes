@@ -11,26 +11,6 @@
 	</GeneDef>
 
 	<GeneDef>
-		<defName>BS_CannotWearClothingOrArmor</defName>
-		<displayCategory>BS_Armour</displayCategory>
-		<label>cannot wear clothing or armor</label>
-		<description>Carriers of this gene cannot or will not wear any type of armour or clothing.</description>
-		<iconPath>GeneIcons/BS_NoArmorOrClothes</iconPath>
-		<biostatMet>8</biostatMet>
-		<exclusionTags><li>NoArmor</li></exclusionTags>
-		<statFactors>
-			<SM_RaidWealthMultiplier>0.5</SM_RaidWealthMultiplier>
-		</statFactors>
-		<modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
-		</modExtensions>
-	</GeneDef>
-
-	<GeneDef>
 		<defName>BS_CannotWearClothing</defName>
 		<displayCategory>BS_Armour</displayCategory>
 		<label>cannot wear clothes</label>
@@ -41,13 +21,6 @@
 		<statFactors>
 			<SM_RaidWealthMultiplier>0.8</SM_RaidWealthMultiplier>
 		</statFactors>
-		<modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
-		</modExtensions>
 	</GeneDef>
 
 	<GeneDef>
@@ -61,13 +34,19 @@
 		<statFactors>
 			<SM_RaidWealthMultiplier>0.7</SM_RaidWealthMultiplier>
 		</statFactors>
-		<modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
-		</modExtensions>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>BS_CannotWearClothingOrArmor</defName>
+		<displayCategory>BS_Armour</displayCategory>
+		<label>cannot wear clothing or armor</label>
+		<description>Carriers of this gene cannot or will not wear any type of armour or clothing.</description>
+		<iconPath>GeneIcons/BS_NoArmorOrClothes</iconPath>
+		<biostatMet>8</biostatMet>
+		<exclusionTags><li>NoArmor</li></exclusionTags>
+		<statFactors>
+			<SM_RaidWealthMultiplier>0.5</SM_RaidWealthMultiplier>
+		</statFactors>
 	</GeneDef>
 
 	<GeneDef>
@@ -98,13 +77,6 @@
     <biostatCpx>1</biostatCpx>
     <biostatMet>2</biostatMet>
     <selectionWeight>1</selectionWeight>
-    <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
-		</modExtensions>
   </GeneDef>
   
   <GeneDef Name="BS_ToughSkin" ParentName="BS_Armor">
@@ -113,18 +85,14 @@
 		<description>Carriers of this gene have naturally tough skin. This offers some resistance to blunt and cutting attacks.</description>
 		<iconPath>GeneIcons/BS_Leather</iconPath>
 		
-		<customEffectDescriptions>
-			<li>+25% sharp natural armour.</li>
-      <li>+15% blunt armour.</li>
-		</customEffectDescriptions>
 		<displayOrderInCategory>20</displayOrderInCategory>
 		<statOffsets>
 			<SM_RaidWealthOffset>250</SM_RaidWealthOffset>
+			<ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.25</ArmorRating_Sharp>
 		</statOffsets>
-
 		<biostatCpx>1</biostatCpx>
 		<biostatMet>-1</biostatMet>
-
 		<symbolPack>
 			<prefixSymbols>
 				<li>
@@ -133,16 +101,11 @@
 			</prefixSymbols>
 		</symbolPack>
 		<selectionWeight>1</selectionWeight>
-    <modExtensions>
+    <!-- <modExtensions>
 			<li Class="BetterPrerequisites.GeneExtension">
 				<applyBodyHediff><li><hediff>BS_ToughSkin</hediff></li></applyBodyHediff>
 			</li>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
-		</modExtensions>
+		</modExtensions> -->
 	</GeneDef>
   
   <GeneDef ParentName="BS_Armor">
@@ -152,21 +115,18 @@
 		<description>Carriers of this gene shrug off attacks as though they were wearing padded armour.</description>
 		<iconPath>GeneIcons/BS_Platemail</iconPath>
 		
-		<customEffectDescriptions>
-			<li>+40% sharp natural armour.</li>
-      <li>+25% blunt armour.</li>
-		</customEffectDescriptions>
+		
 		<displayOrderInCategory>20</displayOrderInCategory>
 		<statFactors>
 			<SM_RaidWealthMultiplier>1.2</SM_RaidWealthMultiplier>
 		</statFactors>
 		<statOffsets>
 			<SM_RaidWealthOffset>1500</SM_RaidWealthOffset>
+			<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.40</ArmorRating_Sharp>
 		</statOffsets>
-
 		<biostatCpx>1</biostatCpx>
 		<biostatMet>-2</biostatMet>
-
 		<symbolPack>
 			<prefixSymbols>
 				<li>
@@ -175,7 +135,7 @@
 			</prefixSymbols>
 		</symbolPack>
 		<selectionWeight>1</selectionWeight>
-    <modExtensions>
+    <!-- <modExtensions>
 			<li Class="BetterPrerequisites.GeneExtension">
 				<applyBodyHediff>
 					<li>
@@ -183,12 +143,7 @@
 					</li>
 				</applyBodyHediff>
 			</li>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
-		</modExtensions>
+		</modExtensions> -->
 	</GeneDef>
   
   <GeneDef ParentName="BS_Armor">
@@ -198,21 +153,19 @@
 		<description>Carriers of this gene shrug off attacks as though they were wearing heavily padded riot gear.</description>
 		<iconPath>GeneIcons/BS_ArchotechArmor</iconPath>
 		
-		<customEffectDescriptions>
-			<li>+60% sharp natural armour.</li>
-      <li>+40% blunt armour.</li>
-		</customEffectDescriptions>
 		<displayOrderInCategory>20</displayOrderInCategory>
 		<statFactors>
 			<SM_RaidWealthMultiplier>1.35</SM_RaidWealthMultiplier>
 		</statFactors>
 		<statOffsets>
 			<SM_RaidWealthOffset>1500</SM_RaidWealthOffset>
+			<ArmorRating_Blunt>0.40</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.60</ArmorRating_Sharp>
 		</statOffsets>
 
 		<biostatCpx>1</biostatCpx>
 		<biostatMet>-4</biostatMet>
-
+		<biostatArc>2</biostatArc>
 		<symbolPack>
 			<prefixSymbols>
 				<li>
@@ -224,17 +177,11 @@
 			</prefixSymbols>
 		</symbolPack>
 		<selectionWeight>1</selectionWeight>
-    <modExtensions>
+    <!-- <modExtensions>
 			<li Class="BetterPrerequisites.GeneExtension">
 				<applyBodyHediff><li><hediff>BS_NaturalArmor_Riot</hediff></li></applyBodyHediff>
 			</li>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
-		</modExtensions>
-    <biostatArc>2</biostatArc>
+		</modExtensions> -->
 	</GeneDef>
 
 	<GeneDef>
@@ -257,13 +204,6 @@
     <exclusionTags>
       <li>Concussive_Resistance</li>
     </exclusionTags>
-		<modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
-		</modExtensions>
   </GeneDef>
 
 	<GeneDef>
@@ -285,13 +225,6 @@
     <exclusionTags>
       <li>Acid_Resistance</li>
     </exclusionTags>
-		<modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
-		</modExtensions>
   </GeneDef>
 
   <GeneDef>
@@ -313,13 +246,6 @@
     <exclusionTags>
       <li>Acid_Resistance</li>
     </exclusionTags>
-		<modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
-		</modExtensions>
   </GeneDef>
 
 	<GeneDef>
@@ -365,11 +291,6 @@
 						</conditionals>
 					</li>
 				</applyBodyHediff>
-			</li>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
 			</li>
 		</modExtensions>
   </GeneDef>
@@ -478,11 +399,6 @@
           </li>
         </prerequisiteSets>
       </li>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
 		</modExtensions>
   </GeneDef>
 
@@ -526,11 +442,6 @@
           </li>
         </prerequisiteSets>
       </li>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
 		</modExtensions>
   </GeneDef>
 

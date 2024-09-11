@@ -1,13 +1,6 @@
 <Defs>
   <GeneDef Abstract="True" Name="BS_GenericGene">
     <exclusionTags Inherit="False"/>
-    <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
-		</modExtensions>
   </GeneDef>
 
   <GeneDef ParentName="GeneMoveSpeedBase">
@@ -24,13 +17,6 @@
     </statFactors>
     <biostatCpx>2</biostatCpx>
     <biostatMet>6</biostatMet>
-    <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
-		</modExtensions>
   </GeneDef>
 
   <GeneDef>
@@ -53,11 +39,6 @@
           <li>universum.vacuum_suffocation_protection</li>
         </allowed_utilities>
       </li>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
 		</modExtensions>
   </GeneDef>
 
@@ -65,7 +46,7 @@
     <defName>BS_Pain_None</defName>
     <label>no pain</label>
     <labelShortAdj>pain-dull</labelShortAdj>
-    <description>Carriers of this gene cannot feel pain. This can sometimes be advantagous but is oftentimes very dangerous to the individual</description>
+    <description>Carriers of this gene cannot feel pain. This can sometimes be advantagous but can also be incredibly dangerous to the individual</description>
     <iconPath>GeneIcons/BS_NoPain</iconPath>
     <displayOrderInCategory>-5</displayOrderInCategory>
     <painFactor>0</painFactor>
@@ -83,13 +64,6 @@
         </li>
       </prefixSymbols>
     </symbolPack>
-    <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
-		</modExtensions>
   </GeneDef>
 
   <GeneDef ParentName="GenePainBase">
@@ -111,13 +85,6 @@
         </li>
       </prefixSymbols>
     </symbolPack>
-    <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
-		</modExtensions>
   </GeneDef>
   
 
@@ -139,13 +106,6 @@
         <degree>-1</degree>
       </li>
     </forcedTraits>
-    <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
-		</modExtensions>
   </GeneDef>
 
   <GeneDef ParentName="CellInstabilityBase">
@@ -156,13 +116,6 @@
     <displayOrderInCategory>231</displayOrderInCategory>
     <biostatMet>2</biostatMet>
     <biostatCpx>4</biostatCpx>
-    <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
-		</modExtensions>
   </GeneDef>
   <GeneDef ParentName="CellInstabilityBase">
     <defName>BS_GeneStabilizing_Great</defName>
@@ -173,13 +126,6 @@
     <biostatMet>4</biostatMet>
     <biostatCpx>9</biostatCpx>
     <biostatArc>0</biostatArc>
-    <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
-		</modExtensions>
   </GeneDef>
   <GeneDef ParentName="CellInstabilityBase">
     <defName>BS_GeneStabilizing_Extreme</defName>
@@ -190,13 +136,6 @@
     <biostatMet>6</biostatMet>
     <biostatCpx>15</biostatCpx>
     <biostatArc>0</biostatArc>
-    <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
-		</modExtensions>
   </GeneDef>
 
   <GeneDef ParentName="CellInstabilityBase">
@@ -246,11 +185,6 @@
           <li>PerfectImmunity</li>
         </supressedGenes>
       </li>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
 		</modExtensions>
   </GeneDef>
 
@@ -284,11 +218,6 @@
           </li>
         </prerequisiteSets>
       </li>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
 		</modExtensions>
   </GeneDef>
 
@@ -298,7 +227,7 @@
     <description>Carriers of this gene obtains their energy from some other source than food. Their food need is locked to 90%. (set to 90% to avoid issues which would stop them from eating hemogen packs f.ex.\n\nNote: If you're using Dubs Bad Hygene it also does the same to thrist and bladder.</description>
     <iconPath>GeneIcons/BS_NoFood</iconPath>
     <displayCategory>Archite</displayCategory>
-    <geneClass>BetterPrerequisites.LockedNeedGene</geneClass>
+    <geneClass>BetterPrerequisites.PGene</geneClass>
     <biostatMet>-9</biostatMet>
     <biostatCpx>10</biostatCpx>
     <biostatArc>3</biostatArc>
@@ -310,20 +239,23 @@
 
     <!--Disabling DBHThrist from genes doesn't seem to actually work, so we're locking those too.-->
     <modExtensions>
-      <li Class="BetterPrerequisites.LockedNeed">
+      <li Class="BetterPrerequisites.GeneExtension">
         <lockedNeeds>
-          <li>Food</li>
-          <li MayRequire="Dubwise.DubsBadHygiene">DBHThirst</li>
-          <li MayRequire="Dubwise.DubsBadHygienee">Bladder</li>
+          <li>
+            <need>Food</need>
+            <value>0.9</value>
+          </li>
+          <li>
+            <need MayRequire="Dubwise.DubsBadHygiene">DBHThirst</need>
+            <value>0.9</value>
+          </li>
+          <li>
+            <need MayRequire="Dubwise.DubsBadHygienee">Bladder</need>
+            <value>0.9</value>
+          </li>
         </lockedNeeds>
-        <value>0.90</value>
       </li>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
-		</modExtensions>
+    </modExtensions>
   </GeneDef>
 
   <GeneDef>
@@ -332,7 +264,7 @@
     <description>Carriers of this gene obtains their energy from hemogen. Their food need is locked to 90%. (set to 90% to avoid issues which would stop them from eating hemogen packs f.ex.\n\nNote: If you're using Dubs Bad Hygene it also does the same to thrist and bladder. Anomaly ghouls will gain no advantage from this gene..</description>
     <iconPath>GeneIcons/BS_NoFood_Hemogenic</iconPath>
     <displayCategory>Archite</displayCategory>
-    <geneClass>BetterPrerequisites.LockedNeedGene</geneClass>
+    <geneClass>BetterPrerequisites.PGene</geneClass>
     <prerequisite>Hemogenic</prerequisite>
     <biostatMet>-8</biostatMet>
     <biostatCpx>10</biostatCpx>
@@ -345,27 +277,31 @@
 
     <!--Disabling DBHThrist from genes doesn't seem to actually work, so we're locking those too.-->
     <modExtensions>
-      <li Class="BetterPrerequisites.LockedNeed">
+      <li Class="BetterPrerequisites.GeneExtension">
         <lockedNeeds>
-          <li>Food</li>
-          <li MayRequire="Dubwise.DubsBadHygiene">DBHThirst</li>
-          <li MayRequire="Dubwise.DubsBadHygienee">Bladder</li>
+          <li>
+            <need>Food</need>
+            <value>0.9</value>
+          </li>
+          <li>
+            <need MayRequire="Dubwise.DubsBadHygiene">DBHThirst</need>
+            <value>0.9</value>
+          </li>
+          <li>
+            <need MayRequire="Dubwise.DubsBadHygienee">Bladder</need>
+            <value>0.9</value>
+          </li>
         </lockedNeeds>
-        <value>0.90</value>
       </li>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
-		</modExtensions>
+    </modExtensions>
   </GeneDef>
 
   <GeneDef>
     <defName>VU_UltraRapidAging</defName>
     <label>deterioration</label>
-    <description>Carriers of this gene fall apart quickly over time.</description>
+    <description>Carriers of this gene fall apart quickly over time, for example due to the body being unable to properly repair itself.\n\nThis can be overriden by certain archite genes.</description>
     <iconPath>GeneIcons/VU_UltraAging</iconPath>
+    <displayCategory>BS_Aging</displayCategory>
     <biologicalAgeTickFactorFromAgeCurve>
       <points>
         <li>(15, 1)</li>
@@ -393,13 +329,6 @@
       <li>BS_AgingRate</li>
     </exclusionTags>
     <selectionWeight>0.75</selectionWeight>
-    <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
-		</modExtensions>
   </GeneDef>
 
   <GeneDef>
@@ -407,13 +336,14 @@
     <label>very fast aging</label>
     <description>Carriers of this gene age much faster than a baseline human.</description>
     <iconPath>GeneIcons/BS_VeryFastAging</iconPath>
+    <displayCategory>BS_Aging</displayCategory>
     <biologicalAgeTickFactorFromAgeCurve>
       <points>
-        <li>(0, 16)</li>
-        <li>(2.99, 16)</li>
+        <li>(0, 8)</li>
+        <li>(2.99, 8)</li>
         <li>(3, 4)</li>
         <li>(18, 4)</li>
-        <li>(35, 5)</li>
+        <li>(35, 4)</li>
         <li>(40, 8)</li>
       </points>
     </biologicalAgeTickFactorFromAgeCurve>
@@ -426,13 +356,6 @@
     <statFactors>
       <SM_GrowthPointAccumulation>4</SM_GrowthPointAccumulation>
     </statFactors>
-    <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
-		</modExtensions>
   </GeneDef>
 
   <GeneDef>
@@ -440,6 +363,7 @@
     <label>fast aging</label>
     <description>Carriers appear to age roughly twice as fast as a baseline human.</description>
     <iconPath>GeneIcons/BS_FastAging</iconPath>
+    <displayCategory>BS_Aging</displayCategory>
     <biologicalAgeTickFactorFromAgeCurve>
       <points>
         <li>(0, 4)</li>
@@ -457,13 +381,6 @@
     <statFactors>
       <SM_GrowthPointAccumulation>2.1</SM_GrowthPointAccumulation>
     </statFactors>
-    <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
-		</modExtensions>
   </GeneDef>
 
   <GeneDef>
@@ -471,6 +388,7 @@
     <label>slow aging</label>
     <description>Carriers age half as fast as a baseline human.</description>
     <iconPath>GeneIcons/BS_SlowAging</iconPath>
+    <displayCategory>BS_Aging</displayCategory>
     <biologicalAgeTickFactorFromAgeCurve>
       <points>
         <li>(0, 0.9)</li>
@@ -486,13 +404,6 @@
     <exclusionTags>
       <li>BS_AgingRate</li>
     </exclusionTags>
-    <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
-		</modExtensions>
   </GeneDef>
 
   <GeneDef>
@@ -500,6 +411,7 @@
     <label>slow aging</label>
     <description>Carriers age at about a quarter of the speed of a baseline human.</description>
     <iconPath>GeneIcons/BS_VerySlowAging</iconPath>
+    <displayCategory>BS_Aging</displayCategory>
     <biologicalAgeTickFactorFromAgeCurve>
       <points>
         <li>(0, 0.8)</li>
@@ -515,13 +427,6 @@
     <exclusionTags>
       <li>BS_AgingRate</li>
     </exclusionTags>
-    <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
-		</modExtensions>
   </GeneDef>
 
   <GeneDef>
@@ -529,18 +434,12 @@
     <label>truly ageless</label>
     <description>Carriers of this gene have at most an apparent age of 25 regardless of their actual age.</description>
     <geneClass>BigAndSmall.TrulyAgeless</geneClass>
+    <displayCategory>BS_Aging</displayCategory>
     <prerequisite>Ageless</prerequisite>
     <iconPath>GeneIcons/BS_TrulyAgeless</iconPath>
     <biostatMet>0</biostatMet>
     <biostatCpx>1</biostatCpx>
     <selectionWeight>0.5</selectionWeight>
-    <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
-		</modExtensions>
   </GeneDef>
 
   <GeneDef>
@@ -574,11 +473,6 @@
           </li>
         </prerequisiteSets>
       </li>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
 		</modExtensions>
     <selectionWeight>0.4</selectionWeight>
   </GeneDef>
@@ -596,13 +490,6 @@
     <statFactors>
       <HSAU_GhoulismSusceptibility MayRequire="Baskerville.HellsingARMSUltimate">0</HSAU_GhoulismSusceptibility>
     </statFactors>
-    <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
-		</modExtensions>
     <!-- <selectionWeight>0.0</selectionWeight> -->
   </GeneDef>
 
@@ -620,13 +507,6 @@
     <exclusionTags>
       <li>BS_Pacifism</li>
     </exclusionTags>
-    <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
-		</modExtensions>
   </GeneDef>
 
   <GeneDef>
@@ -646,13 +526,6 @@
     <exclusionTags>
       <li>BS_Pacifism</li>
     </exclusionTags>
-    <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
-		</modExtensions>
   </GeneDef>
 
   <GeneDef ParentName="GeneMeleeDamageBase">
@@ -679,11 +552,6 @@
           </li>
         </prerequisiteSets>
       </li>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
 		</modExtensions>
   </GeneDef>
 
@@ -712,14 +580,48 @@
           </li>
         </prerequisiteSets>
       </li>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
 		</modExtensions>
   </GeneDef>
 
+  <GeneDef ParentName="GeneMoveSpeedBase">
+    <defName>BS_MoveSpeed_UltraQuick</defName>
+    <label>unreasonably fast runner</label> 
+    <labelShortAdj>fast</labelShortAdj>
+    <description>Carriers of this gene move dramatically more quickly than normal.</description>
+    <iconPath>GeneIcons/BS_UltraFastMovespeed</iconPath>
+    <displayOrderInCategory>20</displayOrderInCategory>
+    <statOffsets>
+      <MoveSpeed>1.35</MoveSpeed>
+    </statOffsets>
+    <biostatMet>-7</biostatMet>
+    <symbolPack>
+      <wholeNameSymbols>
+        <li><symbol>speeder</symbol></li>
+      </wholeNameSymbols>
+      <prefixSymbols>
+        <li><symbol>speed</symbol></li>
+        <li><symbol>fast</symbol></li>
+        <li><symbol>quick</symbol></li>
+        <li><symbol>agi</symbol></li>
+        <li><symbol>nimb</symbol></li>
+        <li><symbol>swift</symbol></li>
+        <li><symbol>flash</symbol></li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li><symbol>flash</symbol></li>
+        <li><symbol>runner</symbol></li>
+        <li><symbol>sprinter</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
+  </GeneDef>
+
+  <GeneDef Abstract="True" Name="BS_BodySwitch">
+    <customEffectDescriptions>
+			<li>Switches the character's "Race" for another one (if human). HAR required for this part of the gene.</li>
+		</customEffectDescriptions>
+    <displayCategory>BS_BodySwap</displayCategory>
+    <geneClass>BetterPrerequisites.PGene</geneClass>
+  </GeneDef>
 
   <!-- <GeneDef>
 		<defName>BS_FusedPiloting</defName>
@@ -742,11 +644,7 @@
 					</li>
 				</applyBodyHediff>
 			</li>
-      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
+      
 		</modExtensions>
 		<selectionWeight>1</selectionWeight>
 	</GeneDef> -->

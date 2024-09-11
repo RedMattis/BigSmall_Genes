@@ -8,12 +8,7 @@
     <displayOrderInCategory>97</displayOrderInCategory>
     <selectionWeight>0.1</selectionWeight>
     <canGenerateInGeneSet>false</canGenerateInGeneSet>
-    <modExtensions>
-      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-        <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-        <backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-      </li>
-    </modExtensions>
+
     <renderNodeProperties Inherit="False">
       <li>
         <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
@@ -59,10 +54,7 @@
       <li Class="BetterPrerequisites.GeneExtension">
         <disableFacialAnimations>true</disableFacialAnimations>
       </li>
-      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-        <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-        <backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-      </li>
+
     </modExtensions>
     <renderNodeProperties Inherit="False">
       <li>
@@ -108,10 +100,7 @@
         <facialDisabler>
         </facialDisabler>
       </li>
-      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-        <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-        <backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-      </li>
+
     </modExtensions>
     <renderNodeProperties Inherit="False">
       <li>
@@ -152,10 +141,7 @@
           <browName>retain</browName>
         </facialDisabler>
       </li>
-      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-        <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-        <backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-      </li>
+
     </modExtensions>
     <renderNodeProperties Inherit="False">
       <li>
@@ -204,10 +190,7 @@
         <facialDisabler>
         </facialDisabler>
       </li>
-      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-        <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-        <backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-      </li>
+
     </modExtensions>
     <renderNodeProperties Inherit="False">
       <li>

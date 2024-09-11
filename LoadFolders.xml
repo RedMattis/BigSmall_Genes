@@ -24,6 +24,10 @@
     <li IfModActive="nals.facialanimation">1.5/Mods/FacialAnim</li>
     <li IfModNotActive="nals.facialanimation">1.5/Mods/NO_FacialAnim</li>
     <li IfModActive="Ludeon.RimWorld.Royalty">1.5/Royalty</li>
+    <li IfModActive="Ludeon.RimWorld.Ideology">1.5/Ideology</li>
     <li IfModActive="erdelf.HumanoidAlienRaces">1.5/Mods/HAR</li>
+    <li IfModActive="OskarPotocki.VFE.Insectoid2">1.5/Mods/VE_Insectoids2</li>
+
+    <!-- <li IfModActive="RedMattis.BigSmall.Bugs">1.5/Experimental</li> -->
   </v1.5>
 </loadFolders>

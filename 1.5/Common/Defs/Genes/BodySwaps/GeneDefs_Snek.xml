@@ -16,12 +16,7 @@
       <li>taur</li>
       <li>ThingDefSwap</li>
     </exclusionTags>
-    <modExtensions>
-      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-        <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-        <backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-      </li>
-    </modExtensions>
+
   </GeneDef>
   <GeneDef Name="LoS_Snake_Tail" ParentName="LoS_SnakeTailBase">
     <defName>LoS_Snake_Tail</defName>
@@ -45,6 +40,7 @@
     <missingGeneRomanceChanceFactor>0.75</missingGeneRomanceChanceFactor>
     <modExtensions>
       <li Class="BetterPrerequisites.GeneExtension">
+        <canWalkOnCreep>true</canWalkOnCreep>
         <renderCacheOff>true</renderCacheOff>
         <applyBodyHediff MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
           <li>
@@ -181,6 +177,7 @@
     <missingGeneRomanceChanceFactor>0.75</missingGeneRomanceChanceFactor>
     <modExtensions>
       <li Class="BetterPrerequisites.GeneExtension">
+        <canWalkOnCreep>true</canWalkOnCreep>
         <renderCacheOff>true</renderCacheOff>
         <applyBodyHediff MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
           <li>

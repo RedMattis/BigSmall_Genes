@@ -177,7 +177,7 @@
 		<degreeDatas>
 			<li>
 				<label>Unpretentious</label>
-				<description>[PAWN_nameDef] isn't bothered by rough apperances, a bit of rough living. [PAWN_nameDef] also doesn't care as much for royal titles.</description>
+				<description>[PAWN_nameDef] isn't bothered by rough appearances, a bit of rough living. [PAWN_nameDef] also doesn't care as much for royal titles.</description>
 			</li>
 		</degreeDatas>
 		<conflictingTraits>

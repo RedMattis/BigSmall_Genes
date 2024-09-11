@@ -5,14 +5,6 @@
     <label>acid</label>
     <deathMessage>{0} has melted to death.</deathMessage>
     <workerClass>BigAndSmall.DamageWorker_OuterAndFullDamage</workerClass>
-    <!-- <additionalHediffs>
-      <li>
-        <hediff>BS_AcidBuildUp</hediff>
-        <severityPerDamageDealt>0.015</severityPerDamageDealt>
-        <inverseStatScaling>true</inverseStatScaling>
-        <victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
-      </li>
-    </additionalHediffs> -->
     <applyAdditionalHediffsIfHuntingForFood>false</applyAdditionalHediffsIfHuntingForFood>
     <impactSoundType>Toxic</impactSoundType>
     <damageEffecter>Impact_Toxic</damageEffecter>
@@ -39,13 +31,45 @@
       </li>
     </additionalHediffs>
     <applyAdditionalHediffsIfHuntingForFood>false</applyAdditionalHediffsIfHuntingForFood>
-    <!-- <impactSoundType/> -->
     <impactSoundType>Toxic</impactSoundType>
     <damageEffecter>Impact_Toxic</damageEffecter>
     <armorCategory>Heat</armorCategory>
     <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
     <workerClass>DamageWorker_AddInjury</workerClass>
   </DamageDef>
+
+  <HediffDef>
+    <defName>BS_AcidBuildUp</defName>
+    <label>acid build-up</label>
+    <description>description.</description>
+    <isBad>true</isBad>
+    <makesSickThought>true</makesSickThought>
+    <tendable>true</tendable>
+    <initialSeverity>0.01</initialSeverity>
+    <hediffClass>BigAndSmall.AcidBuildUp</hediffClass>
+    <stages>
+      <li>
+        <label>acid buildup (light)</label>
+        <extraTooltip>Small spots exposed to corrosive substance</extraTooltip>
+        <minSeverity>0.05</minSeverity>
+      </li>
+      <li>
+        <label>acid buildup (moderate)</label>
+        <extraTooltip>Significantly exposed to corrosive substance</extraTooltip>
+        <minSeverity>0.33</minSeverity>
+      </li>
+      <li>
+        <label>acid buildup (severe)</label>
+        <extraTooltip>Almost completely covered in corrosive substance</extraTooltip>
+        <minSeverity>0.66</minSeverity>
+      </li>
+      <li>
+        <label>acid buildup (maximal)</label>
+        <extraTooltip>Drenched in corrosive substance. More build-up will only increase duration.</extraTooltip>
+        <minSeverity>1</minSeverity>
+      </li>
+    </stages>
+  </HediffDef>
 
   <DamageDef ParentName="Bite">
     <defName>BS_BiteDevourDmg</defName>

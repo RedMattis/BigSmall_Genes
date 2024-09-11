@@ -1,0 +1,89 @@
+<Defs>
+  <!-- <PawnRelationDef>
+    <workerClass>Some_Worker_Class</workerClass>
+    <defName>BS_Drone</defName>
+    <label>drone</label>
+    <importance>204</importance>
+    <diedThought>BS_DroneDied</diedThought>
+    <lostThought>BS_DroneLost</lostThought>
+    <opinionOffset>5</opinionOffset>
+    <generationChanceFactor>0</generationChanceFactor>
+    <implied>true</implied>
+  </PawnRelationDef> -->
+
+  <GeneDef>
+    <defName>BS_DroneKind</defName>
+    <label>drone</label>
+    <displayCategory>Aptitudes</displayCategory>
+    <description>Carriers of this gene lack higher reasoning and try creativity. They might be highly advanced AI capable of feigning sapience, collecting and combine information, all without being a true AGI, Persona, or Archotech.\n\nAlternatively they might be like animals or insectoids of similar characteristics and limitations, in which case it is often combined with limited ability to learn.\n\nCarriers of this gene will tend to not fully process events they did not see with their own eyes, and hold on to most memories for a dramatically shorter time.</description>
+    <customEffectDescriptions>
+      <li>Most memories have only 20% of the normal duration.</li>
+      <li>Doesn't react to the death of colonists unless seen.</li>
+      <li>Death of a drone is treated less severely.</li>
+    </customEffectDescriptions>
+    <iconPath>GeneIcons/BS_FalseSapience</iconPath>
+    <displayOrderInCategory>-5</displayOrderInCategory>
+    <disabledWorkTags>
+      <li>Intellectual</li>
+    </disabledWorkTags>
+    <statOffsets>
+      <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">0.1</SlaveSuppressionOffset>
+    </statOffsets>
+    <biostatMet>-1</biostatMet>
+    <biostatCpx>-3</biostatCpx>
+    <exclusionTags>
+    </exclusionTags>
+    <modExtensions>
+      <li Class="BetterPrerequisites.GeneExtension">
+        <isDrone>true</isDrone>
+        <applyBodyHediff><li><hediff>BS_DroneHediff</hediff></li></applyBodyHediff>
+      </li>
+    </modExtensions>
+  </GeneDef>
+
+  <HediffDef>
+    <defName>BS_DroneHediff</defName>
+    <label>drone</label>
+    <!-- This is used to disable the kill thoughts. Not doing it this way makes the tooltip an absolute mess. -->
+    <description>This pawn is a drone, lacking some higher reasoning and creativity.</description>
+    <stages>
+      <li>
+        <becomeVisible>false</becomeVisible>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <ThoughtDef ParentName="DeathMemory">
+    <defName>BS_DroneDied</defName>
+    <durationDays>5</durationDays>
+    <stackLimit>3</stackLimit>
+    <nullifyingTraits>
+      <li>Psychopath</li>
+      <li>Bloodlust</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>drone died</label>
+        <description>We lost a drone.</description>
+        <baseMoodEffect>-3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>BS_DroneLost</defName>
+    <durationDays>6</durationDays>
+    <stackLimit>2</stackLimit>
+    <showBubble>true</showBubble>
+    <nullifyingTraits>
+      <li>Psychopath</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>drone lost</label>
+        <description>We lost a drone.</description>
+        <baseMoodEffect>-3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+</Defs>

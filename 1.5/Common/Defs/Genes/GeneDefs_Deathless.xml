@@ -37,11 +37,6 @@
     <biostatCpx>6</biostatCpx>
     <geneClass>BigAndSmall.ReturningSoul</geneClass>
     <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
       <li Class="BigAndSmall.ReturningSoulModExt">
         <corpseReturn>true</corpseReturn>
         <addCorpseGenes>true</addCorpseGenes>
@@ -62,11 +57,6 @@
     <geneClass>BigAndSmall.ReturningSoul</geneClass>
     <selectionWeight>0.5</selectionWeight>
     <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
       <li Class="BigAndSmall.ReturningSoulModExt">
         <corpseReturn>false</corpseReturn>
       </li>

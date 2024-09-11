@@ -11,13 +11,6 @@
     <iconPath>GeneIcons/VU_NoLibido</iconPath>
     <displayOrderInCategory>0</displayOrderInCategory>
     <lovinMTBFactor>50</lovinMTBFactor>
-    <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
-		</modExtensions>
   </GeneDef>
 
   <GeneDef>
@@ -38,13 +31,6 @@
     <exclusionTags>
       <li>Flirty</li>
     </exclusionTags>
-		<modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
-		</modExtensions>
   </GeneDef>
 
   <GeneDef>
@@ -65,13 +51,6 @@
     <exclusionTags>
       <li>Flirty</li>
     </exclusionTags>
-		<modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
-		</modExtensions>
   </GeneDef>
   
   <GeneDef>
@@ -80,18 +59,126 @@
     <description>Carriers of this gene have very short pregnancies, less than half the usual.</description>
     <iconPath>GeneIcons/BS_FastPregnancy</iconPath>
     <displayCategory>Reproduction</displayCategory>
-    <marketValueFactor>2</marketValueFactor>
+    <biostatCpx>2</biostatCpx>
+    <biostatMet>-1</biostatMet>
+    <biostatArc>0</biostatArc>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>BS_EarlyMaturity</defName>
+    <label>early maturity</label>
+    <description>Like many animals, carriers of this gene give birth to offspring already capable of walking and learning.</description>
+    <iconPath>GeneIcons/BS_EarlyMaturity</iconPath>
+    <displayCategory>Reproduction</displayCategory>
+    <exclusionTags><li>BS_Maturity</li></exclusionTags>
+    <biostatCpx>2</biostatCpx>
+    <biostatMet>-1</biostatMet>
+    <biostatArc>0</biostatArc>
+    <modExtensions>
+      <li Class="BetterPrerequisites.GeneExtension">
+        <babyStartAge>3</babyStartAge>
+        <sizeByAgeMult>
+          <points>
+            <li>(3, 0.75)</li>
+            <li>(8, 1)</li>
+          </points>
+        </sizeByAgeMult>
+      </li>
+		</modExtensions>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>BS_VeryEarlyMaturity</defName>
+    <label>very early maturity</label>
+    <description>Like many animals, carriers of this gene give birth to large offspring almost as capable as adults. They are still born very small however.</description>
+    <iconPath>GeneIcons/BS_EarlyMaturity_2</iconPath>
+    <displayCategory>Reproduction</displayCategory>
+    <exclusionTags><li>BS_Maturity</li></exclusionTags>
     <biostatCpx>3</biostatCpx>
     <biostatMet>-1</biostatMet>
     <biostatArc>0</biostatArc>
     <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
+      <li Class="BetterPrerequisites.GeneExtension">
+        <babyStartAge>10</babyStartAge>
+        <sizeByAgeMult>
+          <points>
+            <li>(10, 0.5)</li>
+            <li>(13, 1)</li>
+          </points>
+        </sizeByAgeMult>
+      </li>
 		</modExtensions>
-    <!-- <selectionWeight>0.0</selectionWeight> -->
+  </GeneDef>
+
+  <GeneDef>
+    <defName>BS_BirthTwins</defName>
+    <label>multiple offspring</label>
+    <description>Carriers of this gene typically give birth to more than one child. The average is 2. The babies are a bit smaller as a result.</description>
+    <iconPath>GeneIcons/BS_PregnancyTwins</iconPath>
+    <displayCategory>Reproduction</displayCategory>
+    <exclusionTags><li>BS_Babycount</li></exclusionTags>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>0</biostatMet>
+    <biostatArc>0</biostatArc>
+    <modExtensions>
+      <li Class="BetterPrerequisites.GeneExtension">
+        <babyBirthCount>
+          <li>1</li>
+          <li>1</li>
+          <li>2</li>
+          <li>2</li>
+          <li>2</li>
+          <li>2</li>
+          <li>3</li>
+          <li>3</li>
+          <li>4</li>
+        </babyBirthCount>
+        <sizeByAgeMult>
+          <points>
+            <li>(3, 0.75)</li>
+            <li>(8, 1)</li>
+          </points>
+        </sizeByAgeMult>
+      </li>
+		</modExtensions>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>BS_BirthLitter</defName>
+    <label>litter offspring</label>
+    <description>Carriers of this gene give birth to large litters of ofspring. Usually between 4 and 6. The babies are very small as a result.</description>
+    <iconPath>GeneIcons/BS_PregnancyLitter</iconPath>
+    <displayCategory>Reproduction</displayCategory>
+    <exclusionTags><li>BS_Babycount</li></exclusionTags>
+    <biostatCpx>2</biostatCpx>
+    <biostatMet>-1</biostatMet>
+    <biostatArc>0</biostatArc>
+    <modExtensions>
+      <li Class="BetterPrerequisites.GeneExtension">
+        <babyBirthCount>
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+          <li>5</li>
+          <li>6</li>
+          <li>4</li>
+          <li>5</li>
+          <li>6</li>
+          <li>4</li>
+          <li>5</li>
+          <li>6</li>
+          <li>7</li>
+          <li>8</li>
+        </babyBirthCount>
+        <sizeByAgeMult>
+          <points>
+            <li>(3, 0.5)</li>
+            <li>(5, 1)</li>
+          </points>
+        </sizeByAgeMult>
+      </li>
+		</modExtensions>
   </GeneDef>
 
   <GeneDef>
@@ -100,16 +187,10 @@
     <description>Carriers of this gene do not lose fertility with age.</description>
     <iconPath>GeneIcons/BS_EverFertile</iconPath>
     <displayCategory>Reproduction</displayCategory>
-    <marketValueFactor>2</marketValueFactor>
     <biostatCpx>1</biostatCpx>
     <biostatMet>0</biostatMet>
     <biostatArc>0</biostatArc>
     <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
 		</modExtensions>
     <selectionWeight>0.5</selectionWeight>
   </GeneDef>
@@ -126,11 +207,6 @@
       <Fertility>0.2</Fertility>
     </statFactors>
     <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
 		</modExtensions>
   </GeneDef>
 </Defs>

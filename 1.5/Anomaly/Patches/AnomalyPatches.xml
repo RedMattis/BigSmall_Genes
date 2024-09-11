@@ -68,6 +68,7 @@
 
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/HediffDef[defName="VoidTouched"]/stages/li/statFactors</xpath>
+    <success>Always</success>
     <value>
       <BS_SoulPower>2</BS_SoulPower>
     </value>

@@ -24,11 +24,7 @@
       <BS_SoulPower>0.25</BS_SoulPower>
     </statOffsets>
     <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
+			
 		</modExtensions>
     <canGenerateInGeneSet>true</canGenerateInGeneSet>
     <selectionWeight>1</selectionWeight>
@@ -58,11 +54,7 @@
       <BS_SoulPower>0.25</BS_SoulPower>
     </statOffsets>
     <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
+			
 		</modExtensions>
     <canGenerateInGeneSet>true</canGenerateInGeneSet>
     <selectionWeight>1</selectionWeight>
@@ -92,11 +84,7 @@
       <BS_SoulPower>0.25</BS_SoulPower>
     </statOffsets>
     <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
+			
 		</modExtensions>
     <canGenerateInGeneSet>true</canGenerateInGeneSet>
     <selectionWeight>1</selectionWeight>
@@ -128,11 +116,7 @@
       <BS_SoulPower>0.25</BS_SoulPower>
     </statOffsets>
     <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
+			
 		</modExtensions>
     <canGenerateInGeneSet>true</canGenerateInGeneSet>
     <selectionWeight>0</selectionWeight>

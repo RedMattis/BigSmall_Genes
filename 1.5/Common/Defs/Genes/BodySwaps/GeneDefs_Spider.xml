@@ -56,6 +56,7 @@
     <geneClass>BigAndSmall.ProductionGene</geneClass>
     <modExtensions>
       <li Class="BetterPrerequisites.GeneExtension">
+        <canWalkOnCreep>true</canWalkOnCreep>
         <renderCacheOff>true</renderCacheOff>
         <applyBodyHediff MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
           <li>
@@ -66,10 +67,7 @@
         <forceThingDefSwap>false</forceThingDefSwap>
         <bodyPosOffset>0.5</bodyPosOffset>
       </li>
-      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-        <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-        <backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-      </li>
+
       <li Class="BigAndSmall.ProductionGeneSettings">
         <product>Synthread</product>
         <frequencyInDays>4</frequencyInDays>
@@ -155,6 +153,7 @@
     <geneClass>BigAndSmall.ProductionGene</geneClass>
     <modExtensions>
       <li Class="BetterPrerequisites.GeneExtension">
+        <canWalkOnCreep>true</canWalkOnCreep>
         <renderCacheOff>true</renderCacheOff>
         <applyBodyHediff MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
           <li>
@@ -165,10 +164,7 @@
         <forceThingDefSwap>false</forceThingDefSwap>
         <bodyPosOffset>0.5</bodyPosOffset>
       </li>
-      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-        <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-        <backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-      </li>
+
       <li Class="BigAndSmall.ProductionGeneSettings">
         <product>DevilstrandCloth</product>
         <frequencyInDays>4</frequencyInDays>

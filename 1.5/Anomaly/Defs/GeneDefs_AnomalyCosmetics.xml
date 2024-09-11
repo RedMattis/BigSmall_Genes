@@ -17,10 +17,6 @@
       <li Class="BetterPrerequisites.GeneExtension">
 				<disableFacialAnimations>true</disableFacialAnimations>
 			</li>
-      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-        <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-        <backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-      </li>
     </modExtensions>
   </GeneDef>
 
@@ -38,13 +34,6 @@
         <li>BS_Creepy</li>
       </tags>
     </hairTagFilter>
-    <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
-		</modExtensions>
   </GeneDef>
 
   <!--Just a verion of the anomality hair with the gene needed instead of the race.-->
@@ -53,7 +42,7 @@
     <styleGender>Any</styleGender>
     <styleTags>
 			<li>VRE_HighmateHair</li>
-			<li>Shaved</li>
+			<!-- <li>Shaved</li> -->
 			<li>Urban</li>
 			<li>Punk</li>
 			<li>Rural</li>

@@ -6,22 +6,38 @@
     <geneClass>BigAndSmall.ProductionGene</geneClass>
     <iconPath>GeneIcons/BS_BananaSplitProduction</iconPath>
     <displayOrderInCategory>666</displayOrderInCategory>
+    <displayCategory>BS_Production</displayCategory>
     <minAgeActive>15</minAgeActive>
     <biostatCpx>1</biostatCpx>
-    <biostatMet>-1</biostatMet>
+    <biostatMet>-2</biostatMet>
     <modExtensions>
-      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
       <li Class="BigAndSmall.ProductionGeneSettings">
         <product>Chocolate</product>
-        <frequencyInDays>1</frequencyInDays>
-        <!-- <frequencyInDays>0.05</frequencyInDays> -->
-        <baseAmount>4</baseAmount>
+        <frequencyInDays>2</frequencyInDays>
+        <baseAmount>6</baseAmount>
         <progressName>Marabou Switzere Progress</progressName>
         <saveKey>BS_ChocolateProduction</saveKey>
+      </li>
+    </modExtensions>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>BS_JellyProduction</defName>
+    <label>insect jelly production</label>
+    <description>Carriers of this gene produce a small amount of insect jelly</description>
+    <geneClass>BigAndSmall.ProductionGene</geneClass>
+    <iconPath>GeneIcons/BS_InsectJelly</iconPath>
+    <displayCategory>BS_Production</displayCategory>
+    <minAgeActive>18</minAgeActive>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-2</biostatMet>
+    <modExtensions>
+      <li Class="BigAndSmall.ProductionGeneSettings">
+        <product>InsectJelly</product>
+        <frequencyInDays>2</frequencyInDays>
+        <baseAmount>12</baseAmount>
+        <progressName>Producing Jelly</progressName>
+        <saveKey>BS_JellyProduction</saveKey>
       </li>
     </modExtensions>
   </GeneDef>

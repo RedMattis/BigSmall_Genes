@@ -70,7 +70,8 @@
     <costList>
       <Steel>100</Steel>
       <ComponentIndustrial>3</ComponentIndustrial>
-      <ComponentSpacer>1</ComponentSpacer>
+      <Gold>20</Gold>
+      <Neutroamine>5</Neutroamine>
     </costList>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <designationCategory>Security</designationCategory>

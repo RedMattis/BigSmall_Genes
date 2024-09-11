@@ -34,7 +34,6 @@
         <li>firstNamePrefix->mol</li>
         <li>firstNamePrefix->astar</li>
         
-
         <!-- Suffixes for demon first names -->
         <li>firstNameSuffix->ax</li>
         <li>firstNameSuffix->ion</li>
@@ -109,6 +108,7 @@
         <li>lastNameSuffix->hollow</li>
         <li>lastNameSuffix->curse</li>
 
+        <!-- Full one-word lastnames -->
         <li>lastNameFull->lust</li>
         <li>lastNameFull->gluttony</li>
         <li>lastNameFull->avarice</li>
