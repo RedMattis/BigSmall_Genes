@@ -23,7 +23,7 @@
       <body>BS_Marlith</body>
       <baseBodySize>1</baseBodySize>
       <baseHealthScale>1</baseHealthScale>
-      <gestationPeriodDays>45</gestationPeriodDays>
+      <gestationPeriodDays>18</gestationPeriodDays>
 
       <useMeatFrom>Human</useMeatFrom>
       <useLeatherFrom>Cobra</useLeatherFrom>

@@ -62,6 +62,11 @@
     <biostatCpx>2</biostatCpx>
     <biostatMet>-1</biostatMet>
     <biostatArc>0</biostatArc>
+    <modExtensions>
+    <li Class="BetterPrerequisites.GeneExtension">
+      <pregnancySpeedMultiplier>2.25</pregnancySpeedMultiplier>
+    </li>
+  </modExtensions>
   </GeneDef>
 
   <GeneDef>

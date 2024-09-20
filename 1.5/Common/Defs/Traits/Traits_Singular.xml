@@ -27,11 +27,11 @@
     <degreeDatas>
       <li>
         <label>large</label>
-        <description>{PAWN_nameDef} is taller and bulkier than usual for their kind. This makes them sturdier but slightly slower.</description> <!---->
+        <description>{PAWN_nameDef} is both taller and bulkier than usual for their kind. This makes them sturdier but slightly slower.</description> <!---->
         <statFactors>
           <SM_BodySizeMultiplier>1.15</SM_BodySizeMultiplier>
           <ConstructionSpeed>1.05</ConstructionSpeed>
-          <MoveSpeed>0.95</MoveSpeed>
+          <MoveSpeed>0.98</MoveSpeed>
           <LifespanFactor>0.95</LifespanFactor>
         </statFactors>
       </li>

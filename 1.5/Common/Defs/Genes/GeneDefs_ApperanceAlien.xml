@@ -4,7 +4,6 @@
     <label>strange appearance</label>
     <displayCategory>Beauty</displayCategory>
     <description>Carriers of this gene possess fairly strange or alien appearance and their own standards reflect this.\n\nA person with this gene will have a two-way relation modifier to others which do not possess this gene. This is based on certain shared genes (romance chance genes such as pig noses).\n\nUnlike the more severe version beauty in this version still apply normally.</description>
-    <!-- <descriptionShort>Carriers of this gene possess fairly strange or alien appearance and their own standards reflect this.</descriptionShort> -->
     <customEffectDescriptions>
       <li>Modifier to relations between +10 and -25 depending on similarity</li>
 		</customEffectDescriptions>
@@ -12,6 +11,7 @@
     <displayOrderInCategory>10</displayOrderInCategory>
     <biostatMet>1</biostatMet>
     <selectionWeight>1</selectionWeight>
+    <missingGeneRomanceChanceFactor>0.5</missingGeneRomanceChanceFactor>
     <exclusionTags>
       <li>BS_AlienLook</li>
       <!-- <li>BS_SomeAlien</li> -->
@@ -32,6 +32,7 @@
     <displayOrderInCategory>10</displayOrderInCategory>
     <biostatMet>2</biostatMet>
     <selectionWeight>1</selectionWeight>
+    <missingGeneRomanceChanceFactor>0.5</missingGeneRomanceChanceFactor> <!--Keep in mind there is likely also a relation penalty already. -->
     <exclusionTags>
       <li>BS_AlienLook</li>
       <!-- <li>BS_VeryAlien</li> -->

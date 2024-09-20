@@ -40,6 +40,7 @@
       <researchPrerequisite>BS_AnimalGrowthSerums</researchPrerequisite>
       <recipeUsers>
         <li>DrugLab</li>
+        <li>FabricationBench</li>
       </recipeUsers>
       <soundWorking>Recipe_Drug</soundWorking>
       <skillRequirements>
@@ -60,7 +61,7 @@
   <ThingDef ParentName="BS_Giant_Serum">
     <defName>BS_Shrink_Serum</defName>
     <label>animal minimizer</label>
-    <description>A serum to make an animal much smaller than usual.</description>
+    <description>A serum to make an animal much smaller than usual, but far faster, sturdy and, ferocious than what is normal for its size.</description>
     <graphicData>
       <texPath>Item/Serum/BS_Minimizer</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -109,17 +110,17 @@
   <HediffDef>
     <defName>BS_Minified</defName>
     <label>minified animal</label>
-    <description>This animal has been shrunked down, but the method used made it unusually fast, ferocious, and sturdy for its size.</description>
+    <description>This animal has been shrunked down, but the method used made it exceptionally fast, ferocious, and sturdy for its size.</description>
     <isBad>false</isBad>
     <makesSickThought>false</makesSickThought>
     <everCurableByItem>false</everCurableByItem>
     <stages>
       <li>
         <statFactors>
-          <MoveSpeed>1.15</MoveSpeed>
+          <MoveSpeed>1.2</MoveSpeed>
           <IncomingDamageFactor>0.4</IncomingDamageFactor>
           <SM_BodySizeMultiplier>0.4</SM_BodySizeMultiplier>
-          <MeleeDamageFactor>1.2</MeleeDamageFactor>
+          <MeleeDamageFactor>1.3</MeleeDamageFactor>
         </statFactors>
       </li>
     </stages>
@@ -137,14 +138,14 @@
   <ThingDef Name="BS_GeneDicombobulator" ParentName="BS_Giant_Serum">
     <defName>BS_GeneDicombobulator</defName>
     <label>Xenodiscombobulator</label>
-    <description>Chaotically shifts around all xenogenes genes in a character into any possible genes their metabolism can sustain.\n\nExcludes some control genes as well as most genes from Vampires, Demons, and the Undead mod. Also excludes the Titan Frame gene.</description>
+    <description>This here gizmo is the Xenodiscomvovu- discombob-vu.\n\nUrgh.\n\nIt can harvest readings from most genes to-. It shifts the germline.\n\nDamn it.\n\nIt generates a semi-random set of genes. A set the body of the customer can support. There!\n\nI swear these egg-heads are good for nothing else than sniffing glue and made-up words no one understands.\n\nLast time I visited the project in person I had to help them sort out so many elementary problems. "What shape should we make it in, the Strongest Shape?" Of course the strongest shape! Why would we want a weaker one? Bloody genies\n\nI hope the Stellarch understands that I'm the only reason we get anything productive done around here.</description>
     <graphicData>
       <!-- Replace icon...-->
       <texPath>Item/Serum/BS_Discombobulator</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.85, 0.85)</drawSize>
     </graphicData>
-    <thingSetMakerTags Inherit="False">
-    </thingSetMakerTags>
+    <!-- <thingSetMakerTags Inherit="False"/> -->
     <comps Inherit="False">
       <li Class="CompProperties_Usable">
         <useJob>UseItem</useJob>
@@ -165,6 +166,7 @@
       <researchPrerequisite>BS_GeneScience</researchPrerequisite>
       <recipeUsers>
         <li>DrugLab</li>
+        <li>FabricationBench</li>
       </recipeUsers>
       <soundWorking>Recipe_Drug</soundWorking>
       <skillRequirements>
@@ -190,8 +192,7 @@
       <texPath>Item/Serum/BS_GeneIntegrator</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <thingSetMakerTags Inherit="False">
-    </thingSetMakerTags>
+    <thingSetMakerTags Inherit="False"/>
     <comps Inherit="False">
       <li Class="CompProperties_Usable">
         <useJob>UseItem</useJob>
@@ -224,9 +225,9 @@
       <!-- Replace icon...-->
       <texPath>Item/Serum/BS_Mirroring</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9, 0.9)</drawSize>
     </graphicData>
-    <thingSetMakerTags Inherit="False">
-    </thingSetMakerTags>
+    <thingSetMakerTags Inherit="False"/>
     <comps Inherit="False">
       <li Class="CompProperties_Usable">
         <useJob>UseItem</useJob>
@@ -243,25 +244,20 @@
         <humanoidsOnly>true</humanoidsOnly>
       </li>
     </comps>
-    <costList Inherit="False">
-      <MedicineIndustrial>3</MedicineIndustrial>
-      <ComponentIndustrial>1</ComponentIndustrial>
-      <!-- <Neutroamine>5</Neutroamine> -->
-      <!-- <MedicineHerbal>1</MedicineHerbal> -->
-    </costList>
+    <recipeMaker IsNull="True" />
   </ThingDef>
 
   <ThingDef ParentName="BS_GeneDicombobulator">
     <defName>BS_CreateXenogerm</defName>
     <label>Xenogerm Cloner</label>
-    <description>Generates a new Xenogerm based on a subject's xenogenes. This let's you, for example, create a Hussar Xenogerm from a hussar. The subject keeps their xenogerms. Does not copy archite genes.</description>
+    <description>Generates a new Xenogerm based on a subject's xenogenes. This let's you, for example, create a Hussar Xenogerm from a hussar. The subject keeps their xenogenes. Does not copy archite genes.</description>
     <graphicData>
       <!-- Replace icon...-->
       <texPath>Item/Serum/BS_GeneCreate</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9, 0.9)</drawSize>
     </graphicData>
-    <thingSetMakerTags Inherit="False">
-    </thingSetMakerTags>
+    <thingSetMakerTags Inherit="False"/>
     <comps Inherit="False">
       <li Class="CompProperties_Usable">
         <useJob>UseItem</useJob>
@@ -287,16 +283,47 @@
   </ThingDef>
 
   <ThingDef ParentName="BS_GeneDicombobulator">
+    <defName>BS_CreateXenogerm_Endo</defName>
+    <label>Germline Cloner</label>
+    <description>This gadget is a modern recreation older methods of generating Xenogerms. When used on a person generates a new Xenogerm based on a subject's endogenes. This let's you, for example, create a yttakin xenogerm from a yttakin. Does not copy archite genes.</description>
+    <graphicData>
+      <texPath>Item/Serum/BS_GeneCreateEndo</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9, 0.9)</drawSize>
+    </graphicData>
+    <thingSetMakerTags Inherit="False"/>
+    <comps Inherit="False">
+      <li Class="CompProperties_Usable">
+        <useJob>UseItem</useJob>
+        <useLabel>Use {0_label}</useLabel>
+        <useDuration>0</useDuration>
+        <warmupMote>Mote_ResurrectAbility</warmupMote>
+      </li>
+      <li Class="CompProperties_Targetable">
+        <compClass>CompTargetable_SinglePawn</compClass>
+      </li>
+      <li Class="BigAndSmall.CompProperties_TargetEffectApplySerum">
+        <specialEffect>CreateXenogermFromEndogenes</specialEffect>
+        <animalsOnly>false</animalsOnly>
+        <humanoidsOnly>true</humanoidsOnly>
+      </li>
+    </comps>
+    <costList Inherit="False">
+      <MedicineUltratech>2</MedicineUltratech>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+  </ThingDef>
+
+  <ThingDef ParentName="BS_GeneDicombobulator">
     <defName>BS_CreateArchiteXenogerm</defName>
     <label>Archite Xenogerm Cloner</label>
-    <description>Generates a new Xenogerm based on a subject's xenogenes. This let's you, for example, create a Sanguophage Xenogerm from a Sanguophage. The subject keeps their xenogerms. This DOES copy archite genes.</description>
+    <description>Generates a new Xenogerm based on a subject's xenogenes. This let's you, for example, create a Sanguophage Xenogerm from a Sanguophage. The subject keeps their previous. This DOES copy archite genes.</description>
     <graphicData>
-      <!-- Replace icon...-->
       <texPath>Item/Serum/BS_GeneCreate_archite</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9, 0.9)</drawSize>
     </graphicData>
-    <thingSetMakerTags Inherit="False">
-    </thingSetMakerTags>
+    <thingSetMakerTags Inherit="False"/>
     <comps Inherit="False">
       <li Class="CompProperties_Usable">
         <useJob>UseItem</useJob>
@@ -317,6 +344,51 @@
       <researchPrerequisite>BS_ArchiteGeneScience</researchPrerequisite>
       <recipeUsers>
         <li>DrugLab</li>
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <soundWorking>Recipe_Drug</soundWorking>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+        <Intellectual>8</Intellectual>
+      </skillRequirements>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    </recipeMaker>
+    <costList Inherit="False">
+      <BS_CreateArchiteXenogerm_Endo>1</BS_CreateArchiteXenogerm_Endo>
+    </costList>
+    
+  </ThingDef>
+
+  <ThingDef ParentName="BS_GeneDicombobulator">
+    <defName>BS_CreateArchiteXenogerm_Endo</defName>
+    <label>Archite Genome Cloner</label>
+    <description>Generates a new Xenogerm based on a subject's active genes from both endo- and xenogene sources. This let's you, for example, create a Sanguophage Xenogerm from a Sanguophage. The subject keeps their xenogerms. This DOES copy archite genes.</description>
+    <graphicData>
+      <texPath>Item/Serum/BS_GeneCreate_architeEndo</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9, 0.9)</drawSize>
+    </graphicData>
+    <comps Inherit="False">
+      <li Class="CompProperties_Usable">
+        <useJob>UseItem</useJob>
+        <useLabel>Use {0_label}</useLabel>
+        <useDuration>0</useDuration>
+        <warmupMote>Mote_ResurrectAbility</warmupMote>
+      </li>
+      <li Class="CompProperties_Targetable">
+        <compClass>CompTargetable_SinglePawn</compClass>
+      </li>
+      <li Class="BigAndSmall.CompProperties_TargetEffectApplySerum">
+        <specialEffect>CreateArchiteXenogermEndo</specialEffect>
+        <animalsOnly>false</animalsOnly>
+        <humanoidsOnly>true</humanoidsOnly>
+      </li>
+    </comps>
+    <recipeMaker Inherit="False">
+      <researchPrerequisite>BS_ArchiteGeneScience</researchPrerequisite>
+      <recipeUsers>
+        <li>DrugLab</li>
+        <li>FabricationBench</li>
       </recipeUsers>
       <soundWorking>Recipe_Drug</soundWorking>
       <skillRequirements>

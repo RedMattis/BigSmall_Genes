@@ -22,7 +22,7 @@
       <body>BS_SpiderHybrid</body>
       <baseBodySize>1.1</baseBodySize>
       <baseHealthScale>0.9091</baseHealthScale>
-      <gestationPeriodDays>45</gestationPeriodDays>
+      <gestationPeriodDays>18</gestationPeriodDays>
       <useMeatFrom>Megaspider</useMeatFrom>
       <useLeatherFrom>Megaspider</useLeatherFrom>
       <manhunterOnDamageChance>0.20</manhunterOnDamageChance>

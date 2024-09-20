@@ -28,7 +28,7 @@
   </GeneDef>
   <AbilityDef>
     <defName>BS_StickyAcidSpray</defName>
-    <label>acid spray</label>
+    <label>sticky acid spray</label>
     <description>Spray a sticky acid substance from glands over a conical area. The acid will stick to targets and burn them.</description>
     <iconPath>UI/Abilities/AcidSpray</iconPath>
     <cooldownTicksRange>2500</cooldownTicksRange>

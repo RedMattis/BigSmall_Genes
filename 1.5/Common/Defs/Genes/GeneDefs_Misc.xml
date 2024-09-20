@@ -408,7 +408,7 @@
 
   <GeneDef>
     <defName>BS_VerySlowAging</defName>
-    <label>slow aging</label>
+    <label>very slow aging</label>
     <description>Carriers age at about a quarter of the speed of a baseline human.</description>
     <iconPath>GeneIcons/BS_VerySlowAging</iconPath>
     <displayCategory>BS_Aging</displayCategory>
@@ -507,6 +507,11 @@
     <exclusionTags>
       <li>BS_Pacifism</li>
     </exclusionTags>
+    <modExtensions>
+      <li Class="BetterPrerequisites.GeneExtension">
+        <forceUnarmed>true</forceUnarmed>
+      </li>
+    </modExtensions>
   </GeneDef>
 
   <GeneDef>
@@ -532,7 +537,7 @@
     <defName>BS_Unarmed_Strong</defName>
     <label>Strong Unarmed</label>
     <labelShortAdj>strong</labelShortAdj>
-    <description>Carriers of this gene do more damage in close-quarters combat, but they are only able to use this power in unarmed combat.</description>
+    <description>Carriers of this gene do more damage in close-quarters combat, but they will only use bionic or natural melee weapons.\n\nThis gene is compatible and best combined with genes like "Unarmed Combat Only" or "Cannot Wield Weapons".</description>
     <iconPath>GeneIcons/BS_UnarmedStrong</iconPath>
     <statFactors>
       <MeleeDamageFactor>1.5</MeleeDamageFactor>
@@ -541,25 +546,17 @@
     <biostatMet>-1</biostatMet>
     <geneClass>BetterPrerequisites.PGene</geneClass>
     <modExtensions>
-      <li Class="BetterPrerequisites.GenePrerequisites" MayRequire="RedMattis.BetterPrerequisites">
-        <prerequisiteSets>
-          <li>
-            <type>AnyOf</type>
-            <prerequisites>
-              <li>BS_UnarmedOnly</li>
-              <li>BS_NoEquip</li>
-            </prerequisites>
-          </li>
-        </prerequisiteSets>
+      <li Class="BetterPrerequisites.GeneExtension">
+        <forceUnarmed>true</forceUnarmed>
       </li>
-		</modExtensions>
+    </modExtensions>
   </GeneDef>
 
   <GeneDef ParentName="GeneMeleeDamageBase">
     <defName>BS_Unarmed_VeryStrong</defName>
     <label>Very Strong Unarmed</label>
     <labelShortAdj>strong</labelShortAdj>
-    <description>Carriers of this gene do significantly more damage in close-quarters combat, but they are only able to use this power in unarmed combat.</description>
+    <description>Carriers of this gene do significantly more damage in close-quarters combat, but they will only use bionic or natural melee weapons.\n\nThis gene is compatible and best combined with genes like "Unarmed Combat Only" or "Cannot Wield Weapons".</description>
     <iconPath>GeneIcons/BS_UnarmedVeryStrong</iconPath>
     <statFactors>
       <MeleeDamageFactor>1.75</MeleeDamageFactor>
@@ -568,19 +565,10 @@
     <biostatMet>-2</biostatMet>
     <geneClass>BetterPrerequisites.PGene</geneClass>
     <modExtensions>
-      <li Class="BetterPrerequisites.GenePrerequisites" MayRequire="RedMattis.BetterPrerequisites">
-        <prerequisiteSets>
-          <li>
-            <type>AnyOf</type>
-            <prerequisites>
-              <li>BS_UnarmedOnly</li>
-              <li>BS_NoEquip</li>
-              <li>VU_Involuntary_Werewolf</li>
-            </prerequisites>
-          </li>
-        </prerequisiteSets>
+      <li Class="BetterPrerequisites.GeneExtension">
+        <forceUnarmed>true</forceUnarmed>
       </li>
-		</modExtensions>
+    </modExtensions>
   </GeneDef>
 
   <GeneDef ParentName="GeneMoveSpeedBase">

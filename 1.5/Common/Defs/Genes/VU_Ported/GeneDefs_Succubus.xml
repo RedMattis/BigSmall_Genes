@@ -141,7 +141,7 @@
         </supressedGenes>
       </li>
       <li Class="BetterPrerequisites.GeneExtension">
-        <hideInXenotypeUI>true</hideInXenotypeUI>
+        <hideInGenePicker>true</hideInGenePicker>
       </li>
     </modExtensions>
   </GeneDef>
@@ -162,7 +162,7 @@
     <biostatMet>-5</biostatMet>
     <modExtensions>
 			<li Class="BetterPrerequisites.GeneExtension">
-				<hideInXenotypeUI>true</hideInXenotypeUI>
+				<hideInGenePicker>true</hideInGenePicker>
 			</li>
 		</modExtensions>
     <canGenerateInGeneSet>false</canGenerateInGeneSet>
