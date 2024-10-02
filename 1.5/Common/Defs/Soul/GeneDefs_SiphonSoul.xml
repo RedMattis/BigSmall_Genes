@@ -16,9 +16,6 @@
     <minAgeActive>5</minAgeActive>
     <selectionWeight>1</selectionWeight>
     <biostatCpx>4</biostatCpx>
-    <modExtensions>
-			
-		</modExtensions>
   </GeneDef>
 
   <AbilityDef ParentName="AbilityTouchBase">
@@ -74,9 +71,6 @@
     <minAgeActive>5</minAgeActive>
     <selectionWeight>1</selectionWeight>
     <biostatCpx>3</biostatCpx>
-    <modExtensions>
-			
-		</modExtensions>
   </GeneDef>
 
   <AbilityDef ParentName="AbilityTouchBase">
@@ -125,7 +119,6 @@
     <iconPath>GeneIcons/BS_SoulEaterOnKill</iconPath>
     <biostatMet>-1</biostatMet>
     <modExtensions>
-			
       <li Class="BetterPrerequisites.GeneExtension">
 				<consumeSoulOnHit>
           <gainMultiplier>0.15</gainMultiplier>

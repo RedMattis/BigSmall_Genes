@@ -18,7 +18,7 @@
       <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
       <intelligence>Humanlike</intelligence>
       <makesFootprints>true</makesFootprints>
-      <lifeExpectancy>79</lifeExpectancy>
+      <lifeExpectancy>80</lifeExpectancy>
       <nameCategory>HumanStandard</nameCategory>
       <body>BS_FourArmedHuman</body>
       <baseBodySize>1</baseBodySize>
@@ -35,8 +35,6 @@
 
       <useMeatFrom>Human</useMeatFrom>
       <useLeatherFrom>Human</useLeatherFrom>
-
-      <!--Just for testing.-->
     </race>
     <alienRace>
       <generalSettings>
