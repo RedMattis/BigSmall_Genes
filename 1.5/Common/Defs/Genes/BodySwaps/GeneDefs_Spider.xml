@@ -45,7 +45,7 @@
     <biostatMet>-2</biostatMet>
     <selectionWeight>1</selectionWeight>
     <statFactors>
-      <SM_Food_Need_Capacity>2.0</SM_Food_Need_Capacity>
+      <MaxNutrition>2.0</MaxNutrition>
     </statFactors>
     <missingGeneRomanceChanceFactor>0.75</missingGeneRomanceChanceFactor>
   </GeneDef>

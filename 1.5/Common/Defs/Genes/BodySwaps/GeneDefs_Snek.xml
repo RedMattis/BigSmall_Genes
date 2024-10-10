@@ -34,7 +34,7 @@
       <MoveSpeed>-0.5</MoveSpeed>
     </statOffsets>
     <statFactors>
-      <SM_Food_Need_Capacity>4.0</SM_Food_Need_Capacity>
+      <MaxNutrition>4.0</MaxNutrition>
       <EatingSpeed>1.5</EatingSpeed>
     </statFactors>
     <missingGeneRomanceChanceFactor>0.75</missingGeneRomanceChanceFactor>
@@ -165,7 +165,7 @@
       <WorkSpeedGlobal>0.50</WorkSpeedGlobal>
     </statOffsets>
     <statFactors>
-      <SM_Food_Need_Capacity>3.0</SM_Food_Need_Capacity>
+      <MaxNutrition>3.0</MaxNutrition>
       <EatingSpeed>1.5</EatingSpeed>
     </statFactors>
     <capMods>

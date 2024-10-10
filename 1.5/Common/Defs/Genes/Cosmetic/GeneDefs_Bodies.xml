@@ -48,7 +48,7 @@
     <defName>BS_OgreBody</defName>
     <label>ogre body</label>
     <labelShortAdj>ogre body</labelShortAdj>
-    <description>Carriers of this gene have obese ogre body.</description>
+    <description>Carriers of this gene have an obese ogre body.</description>
     <exclusionTags>
       <li>BodyType</li>
     </exclusionTags>
@@ -91,7 +91,7 @@
       <li>ThingDefSwap</li>
     </exclusionTags>
     <statOffsets>
-      <SM_Food_Need_Capacity>2</SM_Food_Need_Capacity>
+      <MaxNutrition>2</MaxNutrition>
     </statOffsets>
     <modExtensions>
 

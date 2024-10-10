@@ -14,14 +14,20 @@
       <li>- - - - - - - - - - - - - - - - - - -</li>
       <li>- - Body Size General - - -</li>
       <li>Alters Body Size attribute and associated traits</li>
-      <li>Dramatic effect on max nutrition.</li>
       <li>Very large effect on nutrition use.</li>
       <li>Dramatically modifies health.</li>
-      <li>Alters damage, a bit less than the linear increase.</li>
+      <li>Significantly improves melee armor penetration.</li>
+      <li>Somewhat improves melee damage</li>
       <li>Large effect on Melee Dodge chance benefitting small characters.</li>
       <li>Very large effect on Self-"Production" from Alpha Genes and Biotech Expansion genes.</li>
     </customEffectDescriptions>
   </GeneDef>
+
+  <!-- <GeneDef ParentName="BodyFrameBase" Name="BigFrameAbstract">
+    <statFactors>
+      <MaxNutrition>1.5</MaxNutrition>
+    </statFactors>
+  </GeneDef> -->
 
   <GeneDef ParentName="BodyFrameBase">
     <defName>JotunFrame</defName>
