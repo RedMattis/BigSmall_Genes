@@ -1,31 +1,32 @@
 <Defs>
-  <ThingDef Class="AlienRace.ThingDef_AlienRace" ParentName="Human">
-    <defName>BS_GluttonRace</defName>
-    <label>glutton</label>
-    <description>At a distance they could be mistaken for being human...</description>
+  <ThingDef ParentName="Human">
+    <defName>BS_HumanFouramed</defName>
+    <label>Four Armed Human</label>
+    <description>A humanlike being with a great forearms, no, wait FOUR great arms.</description>
     <statBases>
-      <MarketValue>1500</MarketValue>
+      <MarketValue>2000</MarketValue>
       <MoveSpeed>4.6</MoveSpeed>
       <Flammability>1.0</Flammability>
       <ComfyTemperatureMin>16</ComfyTemperatureMin>
       <ComfyTemperatureMax>26</ComfyTemperatureMax>
       <LeatherAmount>100</LeatherAmount>
-      <RoyalFavorValue>2</RoyalFavorValue>
+      <RoyalFavorValue>3</RoyalFavorValue>
     </statBases>
     <race>
+      <renderTree>Humanlike</renderTree>
       <thinkTreeMain>Humanlike</thinkTreeMain>
       <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
       <intelligence>Humanlike</intelligence>
       <makesFootprints>true</makesFootprints>
       <lifeExpectancy>80</lifeExpectancy>
       <nameCategory>HumanStandard</nameCategory>
-      <body>BS_Glutton</body>
-      <baseBodySize>1.1</baseBodySize>
-      <baseHealthScale>0.9091</baseHealthScale>
+      <body>BS_FourArmedHuman</body>
+      <baseBodySize>1</baseBodySize>
+      <baseHealthScale>1</baseHealthScale>
       <foodType>OmnivoreHuman</foodType>
       <gestationPeriodDays>18</gestationPeriodDays>
       <meatMarketValue>0.8</meatMarketValue>
-      <manhunterOnDamageChance>0.50</manhunterOnDamageChance>
+      <manhunterOnDamageChance>0.20</manhunterOnDamageChance>
       <manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>
 
       <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
@@ -34,12 +35,6 @@
 
       <useMeatFrom>Human</useMeatFrom>
       <useLeatherFrom>Human</useLeatherFrom>
-      
     </race>
-    <alienRace>
-      <generalSettings>
-        <humanRecipeImport>true</humanRecipeImport>
-      </generalSettings>
-    </alienRace>
   </ThingDef>
 </Defs>

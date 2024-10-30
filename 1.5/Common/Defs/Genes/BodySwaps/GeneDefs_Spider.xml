@@ -12,7 +12,7 @@
       <li>Tail</li>
       <li>Bug_BodyAttachment</li>
       <li>taur</li>
-      <li>ThingDefSwap</li>
+      <li>BS_BodySwap</li>
       <li>spiderlegs</li>
     </exclusionTags>
     <renderNodeProperties Inherit="False">
@@ -63,7 +63,7 @@
             <hediff MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">BS_Stride</hediff>
           </li>
         </applyBodyHediff>
-        <thingDefSwap MayRequire="erdelf.HumanoidAlienRaces">BS_SpiderPersonRace</thingDefSwap>
+        <thingDefSwap>BS_SpiderPersonRace</thingDefSwap>
         <forceThingDefSwap>false</forceThingDefSwap>
         <bodyPosOffset>0.5</bodyPosOffset>
       </li>

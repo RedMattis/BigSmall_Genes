@@ -1,10 +1,10 @@
 <Defs>
-  <AlienRace.ThingDef_AlienRace ParentName="Human">
+  <ThingDef ParentName="Human">
     <defName>BS_InsectoidHumanoid_FourArmed</defName>
     <label>insect-like humanoid</label>
     <description>A humanlike being with four arms, four eyes, and four times the chance of frightening outlanders.</description>
     <statBases>
-      <MarketValue>2000</MarketValue>
+      <MarketValue>1500</MarketValue>
       <MoveSpeed>4.6</MoveSpeed>
       <Flammability>1.0</Flammability>
       <ComfyTemperatureMin>16</ComfyTemperatureMin>
@@ -37,10 +37,5 @@
       <useLeatherFrom>Megaspider</useLeatherFrom>
 
     </race>
-    <alienRace>
-      <generalSettings>
-        <humanRecipeImport>true</humanRecipeImport>
-      </generalSettings>
-    </alienRace>
-  </AlienRace.ThingDef_AlienRace>
+  </ThingDef>
 </Defs>

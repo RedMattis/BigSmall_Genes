@@ -126,7 +126,7 @@
 						<hediff>BS_FeedingFrenzy</hediff>
 						<bodyparts>
 							<li>Jaw</li>
-							<li MayRequire="erdelf.HumanoidAlienRaces">BS_MegaMaw</li>
+							<li>BS_MegaMaw</li>
 						</bodyparts>
 					</li>
 				</applyPartHediff>

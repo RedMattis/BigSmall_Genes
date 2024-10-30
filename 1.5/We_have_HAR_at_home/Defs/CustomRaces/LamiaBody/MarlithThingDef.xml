@@ -1,10 +1,11 @@
 <Defs>
-  <AlienRace.ThingDef_AlienRace ParentName="Human">
-    <defName>BS_SpiderPersonRace</defName>
-    <label>spider-person</label>
-    <description>A humanlike being with a spider-like abdomen.</description>
+
+  <ThingDef ParentName="Human">
+    <defName>BS_Marlith</defName>
+    <label>six-armed snake-person</label>
+    <description>A humanlike being with a six arms and a snake tail instead of legs.</description>
     <statBases>
-      <MarketValue>1750</MarketValue>
+      <MarketValue>2000</MarketValue>
       <MoveSpeed>4.6</MoveSpeed>
       <Flammability>1.0</Flammability>
       <ComfyTemperatureMin>16</ComfyTemperatureMin>
@@ -17,26 +18,23 @@
       <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
       <intelligence>Humanlike</intelligence>
       <makesFootprints>true</makesFootprints>
-      <lifeExpectancy>80</lifeExpectancy>
+      <lifeExpectancy>81</lifeExpectancy>
       <nameCategory>HumanStandard</nameCategory>
-      <body>BS_SpiderHybrid</body>
-      <baseBodySize>1.1</baseBodySize>
-      <baseHealthScale>0.9091</baseHealthScale>
+      <body>BS_Marlith</body>
+      <baseBodySize>1</baseBodySize>
+      <baseHealthScale>1</baseHealthScale>
       <gestationPeriodDays>18</gestationPeriodDays>
-      <useMeatFrom>Megaspider</useMeatFrom>
-      <useLeatherFrom>Megaspider</useLeatherFrom>
-      <manhunterOnDamageChance>0.20</manhunterOnDamageChance>
-      <manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>
+
+      <useMeatFrom>Human</useMeatFrom>
+      <useLeatherFrom>Cobra</useLeatherFrom>
+      
+      <manhunterOnDamageChance>0.30</manhunterOnDamageChance>
+      <manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
 
       <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
       <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding_Generic</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
       <!--Just for testing.-->
     </race>
-    <alienRace>
-      <generalSettings>
-        <humanRecipeImport>true</humanRecipeImport>
-      </generalSettings>
-    </alienRace>
-  </AlienRace.ThingDef_AlienRace>
+  </ThingDef>
 </Defs>

@@ -490,7 +490,11 @@
     <statFactors>
       <HSAU_GhoulismSusceptibility MayRequire="Baskerville.HellsingARMSUltimate">0</HSAU_GhoulismSusceptibility>
     </statFactors>
-    <!-- <selectionWeight>0.0</selectionWeight> -->
+    <modExtensions>
+			<li Class="BetterPrerequisites.GeneExtension">
+				<isDeathlike>true</isDeathlike>
+			</li>
+		</modExtensions>
   </GeneDef>
 
   <GeneDef>
@@ -605,7 +609,7 @@
 
   <GeneDef Abstract="True" Name="BS_BodySwitch">
     <customEffectDescriptions>
-			<li>Switches the character's "Race" for another one (if human). HAR required for this part of the gene.</li>
+			<li>Switches the character's "Race" for another one (if human).</li>
 		</customEffectDescriptions>
     <displayCategory>BS_BodySwap</displayCategory>
     <geneClass>BetterPrerequisites.PGene</geneClass>

@@ -5,7 +5,7 @@
     <biostatCpx>0</biostatCpx>
     <biostatMet>0</biostatMet>
     <customEffectDescriptions>
-      <li>Switches the character's &quot;Race&quot; for another one. HAR required for this part of the gene.</li>
+      <li>Switches the character's &quot;Race&quot; for another one.</li>
     </customEffectDescriptions>
     <randomChosen>false</randomChosen>
     <displayCategory>LoS_Snake_Vis</displayCategory>
@@ -14,7 +14,7 @@
     <exclusionTags>
       <li>Bug_BodyAttachment</li>
       <li>taur</li>
-      <li>ThingDefSwap</li>
+      <li>BS_BodySwap</li>
     </exclusionTags>
 
   </GeneDef>
@@ -51,14 +51,11 @@
           <li>
             <hediff>LS_SnakeTail</hediff>
             <bodyparts>
-              <li>Leg</li>
-              <li>Leg</li>
-              <li MayRequire="erdelf.HumanoidAlienRaces">BS_SnakeBody</li>
+              <li>BS_SnakeBody</li>
             </bodyparts>
           </li>
         </applyPartHediff>
-        <thingDefSwap MayRequire="erdelf.HumanoidAlienRaces">BS_Naga</thingDefSwap>
-        <forceThingDefSwap>false</forceThingDefSwap>
+        <thingDefSwap>BS_Naga</thingDefSwap>
         <bodyPosOffset>0.6</bodyPosOffset>
       </li>
       <li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
@@ -188,14 +185,11 @@
           <li>
             <hediff>LS_SnakeTail</hediff>
             <bodyparts>
-              <li>Leg</li>
-              <li>Leg</li>
-              <li MayRequire="erdelf.HumanoidAlienRaces">BS_SnakeBody</li>
+              <li>BS_SnakeBody</li>
             </bodyparts>
           </li>
         </applyPartHediff>
-        <thingDefSwap MayRequire="erdelf.HumanoidAlienRaces">BS_Marlith</thingDefSwap>
-        <forceThingDefSwap>false</forceThingDefSwap>
+        <thingDefSwap>BS_Marlith</thingDefSwap>
         <bodyPosOffset>0.6</bodyPosOffset>
       </li>
       <li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">

@@ -14,6 +14,12 @@
     <description>Carriers of this gene can only eat carnivore food. They will not automatically eat vegetarian food, and will vomit if they are forced.</description>
     <iconPath>GeneIcons/BS_Carnivore</iconPath>
     <biostatMet>3</biostatMet>
+    <modExtensions>
+      <li Class="BigAndSmall.PawnExtension">
+        <pawnDiet>BS_Carnivore</pawnDiet>
+      </li>
+    </modExtensions>
+
   </GeneDef>
 
   <GeneDef ParentName="BS_AbstractDiet">
@@ -26,6 +32,11 @@
       <li>BS_Cannibal</li>
       <li>Diet</li>
     </exclusionTags>
+    <modExtensions>
+      <li Class="BigAndSmall.PawnExtension">
+        <pawnDiet>BS_Herbivore</pawnDiet>
+      </li>
+    </modExtensions>
   </GeneDef>
 
   <GeneDef>
