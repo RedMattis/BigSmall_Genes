@@ -1,6 +1,6 @@
 <Defs>
 
-  <ThingDef ParentName="Human">
+  <ThingDef ParentName="Human" BS_Alt="ThingDef_AlienRace">
     <defName>BS_Marlith</defName>
     <label>six-armed snake-person</label>
     <description>A humanlike being with a six arms and a snake tail instead of legs.</description>

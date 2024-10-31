@@ -1,5 +1,5 @@
 <Defs>
-  <ThingDef ParentName="Human">
+  <ThingDef ParentName="Human" BS_Alt="ThingDef_AlienRace">
     <defName>BS_SpiderPersonRace</defName>
     <label>spider-person</label>
     <description>A humanlike being with a spider-like abdomen.</description>

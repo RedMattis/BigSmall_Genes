@@ -1,5 +1,5 @@
 <Defs>
-  <ThingDef ParentName="Human">
+  <ThingDef ParentName="Human" BS_Alt="ThingDef_AlienRace">
     <defName>BS_GluttonRace</defName>
     <label>glutton</label>
     <description>At a distance they could be mistaken for being human...</description>

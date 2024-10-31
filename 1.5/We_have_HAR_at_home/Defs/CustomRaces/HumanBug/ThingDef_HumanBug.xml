@@ -1,5 +1,5 @@
 <Defs>
-  <ThingDef ParentName="Human">
+  <ThingDef ParentName="Human" BS_Alt="ThingDef_AlienRace">
     <defName>BS_InsectoidHumanoid_FourArmed</defName>
     <label>insect-like humanoid</label>
     <description>A humanlike being with four arms, four eyes, and four times the chance of frightening outlanders.</description>
