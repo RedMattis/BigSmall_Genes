@@ -116,9 +116,9 @@
     <iconPath>Xenotypes/BS_Jotun</iconPath>
     <combatPowerFactor>3</combatPowerFactor>
     <inheritable>true</inheritable>
-    <!-- <doubleXenotypeChances>
-      <VU_Returned MayRequire="RedMattis.Undead">0.05</VU_Returned>
-    </doubleXenotypeChances> -->
+    <doubleXenotypeChances>
+      <VU_Returned_Intact MayRequire="RedMattis.Undead">0.05</VU_Returned_Intact>
+    </doubleXenotypeChances>
     <genes>
       <li>JotunFrame</li>
       <li>BS_JotunArchiteMetabolism</li>

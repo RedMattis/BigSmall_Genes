@@ -1,0 +1,190 @@
+<Defs>
+
+  <GeneDef>
+    <defName>BS_BulletVulnerability</defName>
+    <label>pierce-weakness</label>
+		<displayCategory>Pain</displayCategory>
+    <description>Carriers of this gene have especially vulnerable internal components. They take increased damage from piercing weapons such as bullets.</description>
+    <!-- <customEffectDescriptions>
+      <li>Explosion damage x0.40</li>
+      <li>Blunt damage x0.70</li>
+    </customEffectDescriptions> -->
+		<iconPath>GeneIcons/BS_BulletWeakness</iconPath>
+    <displayOrderInCategory>2</displayOrderInCategory>
+    <statFactors>
+      <SM_BulletDmgMult>1.25</SM_BulletDmgMult>
+    </statFactors>
+
+    <biostatCpx>-1</biostatCpx>
+    <biostatMet>1</biostatMet>
+    <exclusionTags>
+      
+      <!-- <li>Concussive_Resistance</li> -->
+    </exclusionTags>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>BS_Concussive_Resistance</defName>
+    <label>concussive resistance</label>
+		<displayCategory>Pain</displayCategory>
+    <description>Carriers of this gene are highly resistant to wide-area concussive damage such as that from explosions.</description>
+    <!-- <customEffectDescriptions>
+      <li>Explosion damage x0.40</li>
+      <li>Blunt damage x0.70</li>
+    </customEffectDescriptions> -->
+		<iconPath>GeneIcons/BS_ConcussiveResistance</iconPath>
+    <displayOrderInCategory>2</displayOrderInCategory>
+    <statFactors>
+      <SM_ConcussiveDmgMult>0.4</SM_ConcussiveDmgMult>
+    </statFactors>
+
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-2</biostatMet>
+    <exclusionTags>
+      <li>Concussive_Resistance</li>
+    </exclusionTags>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>BS_AcidWeakness</defName>
+    <label>acid weakness</label>
+		<displayCategory>Pain</displayCategory>
+    <description>Carriers of this gene are extremely vulnerable to acid.</description>
+    <!-- <customEffectDescriptions>
+      <li>Acid damage x0.40 (should work with any mod)</li>
+      <li>Poison &amp; Tox damage x0.70</li>
+    </customEffectDescriptions> -->
+		<iconPath>GeneIcons/BS_AcidWeakness</iconPath>
+    <displayOrderInCategory>2</displayOrderInCategory>
+    <statFactors>
+      <SM_AcidDmgMult>2</SM_AcidDmgMult>
+    </statFactors>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>2</biostatMet>
+    <exclusionTags>
+      <li>Acid_Resistance</li>
+    </exclusionTags>
+  </GeneDef>
+
+	<GeneDef>
+    <defName>BS_AcidResistanceMid</defName>
+    <label>acid resistance</label>
+		<displayCategory>Pain</displayCategory>
+    <description>Carriers of this gene are highly resistant to acid.</description>
+    <!-- <customEffectDescriptions>
+      <li>Acid damage x0.40 (should work with any mod)</li>
+      <li>Poison &amp; Tox damage x0.70</li>
+    </customEffectDescriptions> -->
+		<iconPath>GeneIcons/BS_PartialAcidResistance</iconPath>
+    <displayOrderInCategory>2</displayOrderInCategory>
+    <statFactors>
+      <SM_AcidDmgMult>0.4</SM_AcidDmgMult>
+    </statFactors>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
+    <exclusionTags>
+      <li>Acid_Resistance</li>
+    </exclusionTags>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>BS_AcidResistanceTotal</defName>
+    <label>acid immunity</label>
+		<displayCategory>Pain</displayCategory>
+    <description>Carriers of this gene are immune resistant to acid. They take no damage from acid of any source.</description>
+    <!-- <customEffectDescriptions>
+      <li>Acid Immunity (should work with any mod)</li>
+      <li>Poison &amp; Tox damage x0.40</li>
+    </customEffectDescriptions> -->
+		<iconPath>GeneIcons/BS_TotalAcidResistance</iconPath>
+    <displayOrderInCategory>2</displayOrderInCategory>
+    <statFactors>
+      <SM_AcidDmgMult>-0.2</SM_AcidDmgMult>
+    </statFactors>
+    <biostatCpx>2</biostatCpx>
+    <biostatMet>-2</biostatMet>
+    <exclusionTags>
+      <li>Acid_Resistance</li>
+    </exclusionTags>
+  </GeneDef>
+
+  <GeneDef Name="VU_UnlivingBase" Abstract="True">
+    <displayCategory>VU_Unliving</displayCategory>
+    <exclusionTags>
+      <li>VU_UnlivingBase</li>
+    </exclusionTags>
+    <selectionWeight>1</selectionWeight>
+    <canGenerateInGeneSet>true</canGenerateInGeneSet>
+  </GeneDef>
+
+  <GeneDef ParentName="VU_UnlivingBase">
+    <defName>VU_Lesser_Unliving_Resilience</defName>
+    <label>unliving resilience</label>
+    <description>Carriers of this gene are less bothered by holes through their body than most.\n\nThey are also unffected by decompression or lack of oxygen in the vacuum of space.</description>
+    <!-- <customEffectDescriptions>
+      <li>Bullet &amp; Arrow damage x 0.50</li>
+      <li>Stabbing damage x 0.75</li>
+    </customEffectDescriptions> -->
+    <iconPath>GeneIcons/VU_UnlivingResistance_Lesser</iconPath>
+    <displayOrderInCategory>2</displayOrderInCategory>
+    <statFactors>
+      <SM_BulletDmgMult>0.5</SM_BulletDmgMult>
+      <HSAU_GhoulismSusceptibility MayRequire="Baskerville.HellsingARMSUltimate">0</HSAU_GhoulismSusceptibility>
+    </statFactors>
+    <statOffsets>
+      <SM_EVA_Level>2</SM_EVA_Level>
+      <DecompressionResistance MayRequire="kentington.saveourship2">1</DecompressionResistance>
+      <HypoxiaResistance MayRequire="kentington.saveourship2">1</HypoxiaResistance>
+    </statOffsets>
+
+    <biostatCpx>3</biostatCpx>
+    <biostatMet>-3</biostatMet>
+    <exclusionTags>
+      <li>BulletResistance</li>
+    </exclusionTags>
+    <modExtensions>
+      <li Class="Universum.Utilities.Gene.Properties" MayRequire="sindre0830.Universum">
+          <allowed_utilities>
+              <li>universum.vacuum_decompression_protection</li>
+              <li>universum.vacuum_suffocation_protection</li>
+          </allowed_utilities>
+      </li>
+		</modExtensions>
+  </GeneDef>
+  
+  <GeneDef ParentName="VU_UnlivingBase">
+    <defName>VU_Unliving_Resilience</defName>
+    <label>greater unliving resilience</label>
+    <description>Carriers of this gene are much less bothered by bullet holes than most. \n\nThey are also unffected by decompression or lack of oxygen in the vacuum of space.</description>
+    <!-- <customEffectDescriptions>
+      <li>Bullet &amp; Arrow damage x 0.35</li>
+      <li>Stabbing damage x 0.67</li>
+    </customEffectDescriptions> -->
+    
+    <iconPath>GeneIcons/VU_UnlivingResistance_Normal</iconPath>
+    <displayOrderInCategory>1</displayOrderInCategory>
+    <statFactors>
+      <SM_BulletDmgMult>0.35</SM_BulletDmgMult>
+      <HSAU_GhoulismSusceptibility MayRequire="Baskerville.HellsingARMSUltimate">0</HSAU_GhoulismSusceptibility>
+    </statFactors>
+    <statOffsets>
+      <SM_EVA_Level>2</SM_EVA_Level>
+      <DecompressionResistance MayRequire="kentington.saveourship2">1</DecompressionResistance>
+      <HypoxiaResistance MayRequire="kentington.saveourship2">1</HypoxiaResistance>
+    </statOffsets>
+
+    <biostatCpx>5</biostatCpx>
+    <biostatMet>-5</biostatMet>
+    <exclusionTags>
+      <li>BulletResistance</li>
+    </exclusionTags>
+    <modExtensions>
+      <li Class="Universum.Utilities.Gene.Properties" MayRequire="sindre0830.Universum">
+          <allowed_utilities>
+              <li>universum.vacuum_decompression_protection</li>
+              <li>universum.vacuum_suffocation_protection</li>
+          </allowed_utilities>
+      </li>
+		</modExtensions>
+  </GeneDef>
+</Defs>
