@@ -80,7 +80,7 @@
           <!-- <li>PsycastPsychicEffect</li> -->
         </fleckDefs>
         <scale>1.5</scale>
-        <sound>Psycast_Skip_Exit</sound>
+        <sound MayRequire="Ludeon.Rimworld.Royalty">Psycast_Skip_Exit</sound>
       </li>
     </comps>
   </AbilityDef>
