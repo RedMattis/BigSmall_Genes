@@ -3,7 +3,7 @@
     <defName>BS_ConsumeSoul</defName>
     <label>siphon soul</label>
     <displayCategory>Archite</displayCategory>
-    <description>Grants the ability to drain the essence of a downed foe; killing them in the process. THe ability grants Anomalous Power and steals a small amount of the target's highest skill. The effect has diminishing returns. Dramatically more effective on psychicially sensitive targets (above 100%), targets with many archite genes, and targets with anomalous power themselves.</description>
+    <description>Grants the ability to drain the essence of a downed foe; killing them in the process. The ability grants Anomalous Power and steals a small amount of the target's highest skill. The effect has diminishing returns. Dramatically more effective on psychicially sensitive targets (above 100%), targets with many archite genes, and targets with anomalous power themselves.</description>
     <iconPath>GeneIcons/BS_SoulEater</iconPath>
     <abilities>
       <li>BS_ConsumeSoul</li>
