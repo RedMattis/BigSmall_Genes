@@ -15,7 +15,7 @@
   <v1.5>
     <li>/</li>
     <li>1.5/Common</li>
-    <li>1.5/We_have_HAR_at_home</li>
+    <li>1.5/SimplyRaces</li>
     <li IfModActive="ludeon.rimworld.anomaly">1.5/Anomaly</li>
     <li IfModActive="Rooboid.Minotaur">1.5/Mods/RooMinotaur</li>
     <li IfModActive="vanillaracesexpanded.android">1.5/Mods/VRE_Android</li>

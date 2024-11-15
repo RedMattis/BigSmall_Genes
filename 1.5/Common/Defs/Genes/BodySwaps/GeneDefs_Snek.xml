@@ -23,6 +23,7 @@
     <label>Snake Tail</label>
     <description>Carriers of this gene have a large snake tail instead regular human legs. They eat much less often than baseliners.</description>
     <customEffectDescriptions>
+      <li>Changes the pawn to the marlith race.</li>
       <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">Reduces the movement speed penalty when traversing difficult terrain</li>
     </customEffectDescriptions>
     <iconPath>GeneIcons/LoS_SnekTail_icon2</iconPath>
@@ -30,13 +31,8 @@
     <biostatCpx>1</biostatCpx>
     <biostatMet>0</biostatMet>
     <selectionWeight>1</selectionWeight>
-    <statOffsets>
-      <MoveSpeed>-0.5</MoveSpeed>
-    </statOffsets>
-    <statFactors>
-      <MaxNutrition>4.0</MaxNutrition>
-      <EatingSpeed>1.5</EatingSpeed>
-    </statFactors>
+    
+    
     <missingGeneRomanceChanceFactor>0.75</missingGeneRomanceChanceFactor>
     <modExtensions>
       <li Class="BetterPrerequisites.GeneExtension">
@@ -56,7 +52,7 @@
           </li>
         </applyPartHediff>
         <thingDefSwap>BS_Naga</thingDefSwap>
-        <bodyPosOffset>0.6</bodyPosOffset>
+        <!-- <bodyPosOffset>0.6</bodyPosOffset> -->
       </li>
       <li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
         <movementDef>PF_Movement_Flying</movementDef>
@@ -152,6 +148,7 @@
     <label>Marlith</label>
     <description>Carriers of this gene have a 3 pairs of arms and a large snake tail instead regular human legs.</description>
     <customEffectDescriptions>
+      <li>Changes the pawn to the marlith race.</li>
       <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">Reduces the movement speed penalty when traversing difficult terrain</li>
     </customEffectDescriptions>
     <iconPath>GeneIcons/BS_Marlith</iconPath>
@@ -160,13 +157,8 @@
     <biostatMet>-4</biostatMet>
     <selectionWeight>1</selectionWeight>
     <statOffsets>
-      <MoveSpeed>-0.5</MoveSpeed>
       <WorkSpeedGlobal>0.50</WorkSpeedGlobal>
     </statOffsets>
-    <statFactors>
-      <MaxNutrition>3.0</MaxNutrition>
-      <EatingSpeed>1.5</EatingSpeed>
-    </statFactors>
     <capMods>
       <li>
         <capacity>Manipulation</capacity>
@@ -192,7 +184,7 @@
           </li>
         </applyPartHediff>
         <thingDefSwap>BS_Marlith</thingDefSwap>
-        <bodyPosOffset>0.6</bodyPosOffset>
+        <!-- <bodyPosOffset>0.6</bodyPosOffset> -->
       </li>
       <li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
         <movementDef>PF_Movement_Flying</movementDef>

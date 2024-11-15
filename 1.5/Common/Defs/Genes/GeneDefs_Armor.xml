@@ -250,6 +250,7 @@
       <li>5% to 30% damage reduction based on alcohol amount</li>
 			<li>5% to 45% increased melee attack based on alcohol amount</li>
 			<li>Less penalties from being drunk.</li>
+			<li>Larger mood bonuses when drunk.</li>
     </customEffectDescriptions>
     <symbolPack>
       <prefixSymbols>
@@ -294,7 +295,7 @@
 		<stages>
 			<li>
 				<statFactors>
-					<IncomingDamageFactor>0.95</IncomingDamageFactor>
+					<IncomingDamageFactor>0.9</IncomingDamageFactor>
 					<MeleeDamageFactor>1.1</MeleeDamageFactor>
 				</statFactors>
 				<!-- <statOffsets>
@@ -314,15 +315,31 @@
 		<stages>
 			<li>
 				<statFactors>
-					<IncomingDamageFactor>0.9</IncomingDamageFactor>
-					<MeleeDamageFactor>1.10</MeleeDamageFactor>
+					<IncomingDamageFactor>0.80</IncomingDamageFactor>
+					<MeleeDamageFactor>1.08</MeleeDamageFactor>
 				</statFactors>
-				<!-- <statOffsets>
-					<MeleeHitChance>21,1</MeleeHitChance>
-				</statOffsets> -->
+				<statOffsets>
+					<SM_AttackSpeed>0.08</SM_AttackSpeed>
+					<MeleeHitChance>1</MeleeHitChance>
+					<MeleeDodgeChance>5</MeleeDodgeChance>
+				</statOffsets>
 			</li>
 		</stages>
 	</HediffDef>
+	<ThoughtDef>
+    <defName>BS_DrunkenHigh2</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>BS_DrunkenPower2</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+    <stages>
+      <li>
+        <label>drunken revelry</label>
+        <description>The party is just starting!</description>
+        <baseMoodEffect>10</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
 
 	<HediffDef>
 		<defName>BS_DrunkenPower3</defName>
@@ -334,12 +351,13 @@
 		<stages>
 			<li>
 				<statFactors>
-					<IncomingDamageFactor>0.80</IncomingDamageFactor>
-					<MeleeDamageFactor>1.20</MeleeDamageFactor>
+					<IncomingDamageFactor>0.70</IncomingDamageFactor>
+					<MeleeDamageFactor>1.2</MeleeDamageFactor>
 				</statFactors>
 				<statOffsets>
 					<SM_AttackSpeed>0.15</SM_AttackSpeed>
 					<MeleeHitChance>5</MeleeHitChance>
+					<MeleeDodgeChance>5</MeleeDodgeChance>
 				</statOffsets>
 				<capMods>
 					<li>
@@ -354,6 +372,20 @@
 			</li>
 		</stages>
 	</HediffDef>
+	<ThoughtDef>
+    <defName>BS_DrunkenHigh3</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>BS_DrunkenPower3</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+    <stages>
+      <li>
+        <label>drunken high!</label>
+        <description>No one will end my revelry.</description>
+        <baseMoodEffect>45</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
 	
 	<GeneDef>
     <defName>BS_TinyTough</defName>

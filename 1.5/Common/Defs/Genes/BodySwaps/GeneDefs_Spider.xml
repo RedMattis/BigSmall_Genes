@@ -44,9 +44,6 @@
     <biostatCpx>1</biostatCpx>
     <biostatMet>-2</biostatMet>
     <selectionWeight>1</selectionWeight>
-    <statFactors>
-      <MaxNutrition>2.0</MaxNutrition>
-    </statFactors>
     <missingGeneRomanceChanceFactor>0.75</missingGeneRomanceChanceFactor>
   </GeneDef>
   <GeneDef ParentName="BS_SpoderLegs">
@@ -56,16 +53,8 @@
     <geneClass>BigAndSmall.ProductionGene</geneClass>
     <modExtensions>
       <li Class="BetterPrerequisites.GeneExtension">
-        <canWalkOnCreep>true</canWalkOnCreep>
-        <renderCacheOff>true</renderCacheOff>
-        <applyBodyHediff MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
-          <li>
-            <hediff MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">BS_Stride</hediff>
-          </li>
-        </applyBodyHediff>
         <thingDefSwap>BS_SpiderPersonRace</thingDefSwap>
         <forceThingDefSwap>false</forceThingDefSwap>
-        <bodyPosOffset>0.5</bodyPosOffset>
       </li>
 
       <li Class="BigAndSmall.ProductionGeneSettings">
@@ -155,16 +144,8 @@
     <geneClass>BigAndSmall.ProductionGene</geneClass>
     <modExtensions>
       <li Class="BetterPrerequisites.GeneExtension">
-        <canWalkOnCreep>true</canWalkOnCreep>
-        <renderCacheOff>true</renderCacheOff>
-        <applyBodyHediff MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
-          <li>
-            <hediff MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">BS_Stride</hediff>
-          </li>
-        </applyBodyHediff>
         <thingDefSwap MayRequire="erdelf.HumanoidAlienRaces">BS_SpiderPersonRace</thingDefSwap>
         <forceThingDefSwap>false</forceThingDefSwap>
-        <bodyPosOffset>0.5</bodyPosOffset>
       </li>
 
       <li Class="BigAndSmall.ProductionGeneSettings">
