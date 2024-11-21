@@ -23,7 +23,6 @@
     <label>Snake Tail</label>
     <description>Carriers of this gene have a large snake tail instead regular human legs. They eat much less often than baseliners.</description>
     <customEffectDescriptions>
-      <li>Changes the pawn to the marlith race.</li>
       <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">Reduces the movement speed penalty when traversing difficult terrain</li>
     </customEffectDescriptions>
     <iconPath>GeneIcons/LoS_SnekTail_icon2</iconPath>
@@ -38,9 +37,9 @@
       <li Class="BetterPrerequisites.GeneExtension">
         <canWalkOnCreep>true</canWalkOnCreep>
         <renderCacheOff>true</renderCacheOff>
-        <applyBodyHediff MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+        <applyBodyHediff>
           <li>
-            <hediff MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">BS_Slither</hediff>
+            <hediff>BS_Slither</hediff>
           </li>
         </applyBodyHediff>
         <applyPartHediff>
@@ -170,9 +169,9 @@
       <li Class="BetterPrerequisites.GeneExtension">
         <canWalkOnCreep>true</canWalkOnCreep>
         <renderCacheOff>true</renderCacheOff>
-        <applyBodyHediff MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+        <applyBodyHediff>
           <li>
-            <hediff MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">BS_Slither</hediff>
+            <hediff>BS_Slither</hediff>
           </li>
         </applyBodyHediff>
         <applyPartHediff>

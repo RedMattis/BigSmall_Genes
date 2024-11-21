@@ -39,6 +39,32 @@
     </modExtensions>
   </GeneDef>
 
+  <GeneDef ParentName="BS_AbstractDiet">
+    <defName>BS_Diet_Fuel</defName>
+    <label>Fuel-diet</label>
+    <description>Carriers of this gene can only eat fuel typically made for androids.</description>
+    <iconPath>GeneIcons/BS_Carnivore</iconPath>
+    <biostatMet>3</biostatMet>
+    <modExtensions>
+      <li Class="BigAndSmall.PawnExtension">
+        <pawnDiet>BS_ChemRobotDiet</pawnDiet>
+      </li>
+    </modExtensions>
+  </GeneDef>
+
+  <GeneDef ParentName="BS_AbstractDiet">
+    <defName>BS_Diet_Universal</defName>
+    <label>universal digestion</label>
+    <description>Carriers of this gene can eat most types of food, including some varieties of chemfuel.</description>
+    <iconPath>GeneIcons/BS_Carnivore</iconPath>
+    <biostatMet>-1</biostatMet>
+    <modExtensions>
+      <li Class="BigAndSmall.PawnExtension">
+        <pawnDiet>BS_EverythingAndFuel</pawnDiet>
+      </li>
+    </modExtensions>
+  </GeneDef>
+
   <GeneDef>
     <defName>Cannibal</defName>
     <label>Cannibal</label>
