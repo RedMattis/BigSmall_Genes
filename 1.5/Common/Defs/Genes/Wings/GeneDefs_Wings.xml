@@ -34,6 +34,9 @@
     <abilities>
       <li>BS_flying_jump</li>
     </abilities>
+    <modExtensions>
+      <li Class="BigAndSmall.PawnExtension"> <thingDefSwap>BS_HumanoidWithWings</thingDefSwap> </li>
+		</modExtensions>
   </GeneDef>
   <GeneDef ParentName="BS_FunctionalWingBase">
     <defName>BS_SmallDemonWings</defName>
@@ -49,9 +52,6 @@
             <hediff>BS_Floating</hediff>
           </li>
         </applyBodyHediff>
-      </li>
-      <li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
-        <movementDef>PF_Movement_Flying</movementDef>
       </li>
       <li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
         <movementDef>PF_Movement_Flying</movementDef>

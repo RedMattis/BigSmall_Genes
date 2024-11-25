@@ -10,9 +10,7 @@
     <iconColor>(0.75, 0.75, 0.75)</iconColor>
     <exclusionTags>
       <li>Tail</li>
-      <li>Bug_BodyAttachment</li>
       <li>taur</li>
-      <li>BS_BodySwap</li>
       <li>spiderlegs</li>
     </exclusionTags>
     <renderNodeProperties Inherit="False">
@@ -51,10 +49,10 @@
     <label>Spider Abdomen (Synthread)</label>
     <description>Carriers of this gene have their lower half replaced with the body of a spider. Has science gone too far?\n\nProduces 80 Synthread every 4 days, modified by body-size.\n\nSpider body has skin-colour.</description>
     <geneClass>BigAndSmall.ProductionGene</geneClass>
+    <iconPath>BS_Icons/Spider</iconPath>
     <modExtensions>
       <li Class="BetterPrerequisites.GeneExtension">
         <thingDefSwap>BS_SpiderPersonRace</thingDefSwap>
-        <forceThingDefSwap>false</forceThingDefSwap>
       </li>
 
       <li Class="BigAndSmall.ProductionGeneSettings">
@@ -64,8 +62,21 @@
         <progressName>Producing Synthread</progressName>
         <saveKey>BS_SynthreadProduction</saveKey>
       </li>
+      <li Class="BigAndSmall.Flagger"><flags><ShowBaseAbdomen/></flags></li>
+      <li Class="BigAndSmall.GraphicsOverride">
+        <overrideList>
+          <li>
+            <replaceFlags><SpiderColorA/></replaceFlags>
+            <graphics>
+              <li Class="BigAndSmall.ColorSetting">
+                <skinColor>true</skinColor> 
+              </li>
+            </graphics>
+          </li>
+        </overrideList>
+      </li>
     </modExtensions>
-    <renderNodeProperties Inherit="False">
+    <!-- <renderNodeProperties Inherit="False">
       <li>
         <workerClass>BigAndSmall.PawnRenderNodeWorker_BodyTypeOffsets</workerClass>
         <parentTagDef>Body</parentTagDef>
@@ -134,7 +145,7 @@
           </dataEast>
         </drawData>
       </li>
-    </renderNodeProperties>
+    </renderNodeProperties> -->
   </GeneDef>
 
   <GeneDef ParentName="BS_SpoderLegs">
@@ -145,7 +156,6 @@
     <modExtensions>
       <li Class="BetterPrerequisites.GeneExtension">
         <thingDefSwap MayRequire="erdelf.HumanoidAlienRaces">BS_SpiderPersonRace</thingDefSwap>
-        <forceThingDefSwap>false</forceThingDefSwap>
       </li>
 
       <li Class="BigAndSmall.ProductionGeneSettings">

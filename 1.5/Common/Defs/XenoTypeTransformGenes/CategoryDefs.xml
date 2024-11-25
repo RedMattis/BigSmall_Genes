@@ -14,7 +14,7 @@
     <defName>BS_MetamorphTemplate</defName>
     <label>metamorph</label>
     <keyTag>Metamorphosis</keyTag>
-    <description>Carries of this gene can undergo metamorphosis to a {0} if the right conditions are met.</description>
+    <description>Carriers of this gene can undergo metamorphosis to a {0} if the right conditions are met.</description>
     <customEffectDescriptions>
       <li>Genes such as "Morph [when] Adult", "Morph Pregnant", or "Morph Day" are valid conditions.</li>
     </customEffectDescriptions>
@@ -31,7 +31,7 @@
     <defName>BS_RetromorphDownTemplate</defName>
     <label>retromorph</label>
     <keyTag>Retromorphosis</keyTag>
-    <description>Carries of this gene can undergo retromorphosis to a {0} if the right conditions are met.</description>
+    <description>Carriers of this gene can undergo retromorphosis to a {0} if the right conditions are met.</description>
     <customEffectDescriptions>
       <li>Genes such as "Retromorphmorph [when] Pre-Adult" are valid conditions.</li>
     </customEffectDescriptions>

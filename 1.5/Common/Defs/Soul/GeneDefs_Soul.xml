@@ -2,7 +2,7 @@
   <GeneDef ParentName="BS_GenericGene">
     <defName>BS_SoulPower</defName>
     <label>trace anomalous power</label>
-    <description>Carries of this genes naturally possess trace amounts anomalous power. This power can be further increased using dark shards of archotech (crafting requires Anomaly DLC).</description>
+    <description>Carriers of this genes naturally possess trace amounts anomalous power. This power can be further increased using dark shards of archotech (crafting requires Anomaly DLC).</description>
     <customEffectDescriptions>
       <li>+5% Consciousness, scaled by Anomalous Power</li>
       <li>+5% Melee Damage, scaled by Anomalous Power</li>
@@ -20,7 +20,7 @@
   <GeneDef ParentName="BS_GenericGene">
     <defName>BS_SoulPowerGreat</defName>
     <label>anomalous power</label>
-    <description>Carries of this genes naturally possess significant anomalous power. This power can be further increased using dark shards of archotech (crafting requires Anomaly DLC)</description>
+    <description>Carriers of this genes naturally possess significant anomalous power. This power can be further increased using dark shards of archotech (crafting requires Anomaly DLC)</description>
     <displayCategory>Archite</displayCategory>
     <customEffectDescriptions>
       <li>+5% Consciousness, scaled by Anomalous Power</li>

@@ -1,0 +1,21 @@
+<Defs>
+  <GeneDef ParentName="BS_BodySwitchNonExclusive">
+    <defName>BS_CentaurBody</defName>
+    <label>centauroid body</label>
+    <description>Carriers of this gene have four legs.</description>
+    <biostatCpx>0</biostatCpx>
+    <biostatMet>-2</biostatMet>
+    <randomChosen>false</randomChosen>
+    <iconPath>BS_Icons/Centaur</iconPath>
+    <exclusionTags>
+      <li>Bug_BodyAttachment</li>
+      <li>taur</li>
+    </exclusionTags>
+    <modExtensions>
+      <li Class="BetterPrerequisites.GeneExtension">
+        <thingDefSwap>BS_Centaur</thingDefSwap>
+      </li>
+      <li Class="BigAndSmall.Flagger"><flags><ShowBaseAbdomen/></flags></li>
+    </modExtensions>
+  </GeneDef>
+</Defs>

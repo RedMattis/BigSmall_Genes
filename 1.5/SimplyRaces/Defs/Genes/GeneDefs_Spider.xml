@@ -1,0 +1,23 @@
+<Defs>
+
+  <GeneDef ParentName="BS_BodySwitchNonExclusive">
+    <defName>BS_SpiderBody</defName>
+    <label>spider-like body</label>
+    <description>Carriers of this gene have 8 legs, like a spider.</description>
+    <biostatCpx>0</biostatCpx>
+    <biostatMet>-1</biostatMet>
+    <randomChosen>false</randomChosen>
+    <iconPath>BS_Icons/Spider</iconPath>
+    <exclusionTags>
+      <li>Tail</li>
+      <li>taur</li>
+      <li>spiderlegs</li>
+    </exclusionTags>
+    <modExtensions>
+      <li Class="BetterPrerequisites.GeneExtension">
+        <thingDefSwap>BS_SpiderPersonRace</thingDefSwap>
+      </li>
+      <li Class="BigAndSmall.Flagger"><flags><ShowBaseAbdomen/></flags></li>
+    </modExtensions>
+  </GeneDef>
+</Defs>

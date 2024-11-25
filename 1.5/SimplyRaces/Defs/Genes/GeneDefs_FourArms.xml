@@ -1,5 +1,5 @@
 <Defs>
-  <GeneDef ParentName="BS_BodySwitch">
+  <GeneDef ParentName="BS_BodySwitchNonExclusive">
 		<defName>BS_FourArms</defName>
 		<label>four arms</label>
 		<description>NO! I told you I wanted you to give them amazing forearms!</description>
@@ -21,13 +21,12 @@
 			</li>
 		</capMods>
     <exclusionTags>
-      <li>BS_BodySwap</li>
+      <li>ExtraArms</li>
     </exclusionTags>
     <modExtensions>
 			
       <li Class="BetterPrerequisites.GeneExtension">
 				<thingDefSwap>BS_HumanFouramed</thingDefSwap>
-        <forceThingDefSwap>false</forceThingDefSwap>
 			</li>
 		</modExtensions>
 	</GeneDef>

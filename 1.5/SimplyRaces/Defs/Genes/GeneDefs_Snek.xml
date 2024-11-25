@@ -14,7 +14,6 @@
     <exclusionTags>
       <li>Bug_BodyAttachment</li>
       <li>taur</li>
-      <li>BS_BodySwap</li>
     </exclusionTags>
 
   </GeneDef>
@@ -102,7 +101,7 @@
     <defName>LoS_Snake_Tail_HairClr</defName>
     <label>Snake Tail (hair-color)</label>
     <renderNodeProperties Inherit="False">
-      <li>
+      <!-- <li>
         <workerClass>BigAndSmall.PawnRenderNodeWorker_BodyTypeOffsets</workerClass>
         <parentTagDef>Body</parentTagDef>
         <bodyTypeGraphicPaths>
@@ -139,8 +138,11 @@
             <layer>20</layer>
           </dataWest>
         </drawData>
-      </li>
+      </li> -->
     </renderNodeProperties>
+    <modExtensions>
+      <li Class="BigAndSmall.Flagger"><flags><ShowBaseAbdomen/></flags></li>
+    </modExtensions>
   </GeneDef>
   <GeneDef ParentName="LoS_SnakeTailBase">
     <defName>LoS_MarlithBody</defName>
@@ -155,6 +157,7 @@
     <biostatCpx>1</biostatCpx>
     <biostatMet>-4</biostatMet>
     <selectionWeight>1</selectionWeight>
+    <exclusionTags><li>ExtraArms</li></exclusionTags>
     <statOffsets>
       <WorkSpeedGlobal>0.50</WorkSpeedGlobal>
     </statOffsets>
