@@ -64,7 +64,7 @@
       <li>
         <parentTagDef>Body</parentTagDef>
         <workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
-        <texPath>Humanlike/BodyAttachments/BS_Wings/AngelicWings_Bottom</texPath>
+        <texPath>BS_BodyAttachments/BS_Wings/AngelicWings_Bottom</texPath>
         <drawSize>(1.45,1.45)</drawSize>
         <color>(245,245,245)</color>
         <colorType>Hair</colorType>
@@ -87,7 +87,7 @@
       <li>
         <parentTagDef>Body</parentTagDef>
         <workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
-        <texPath>Humanlike/BodyAttachments/BS_Wings/AngelicWings_Top</texPath>
+        <texPath>BS_BodyAttachments/BS_Wings/AngelicWings_Top</texPath>
         <drawSize>(1.45,1.45)</drawSize>
         <color>(245,245,245)</color>
         <colorType>Hair</colorType>
@@ -175,7 +175,7 @@
     <renderNodeProperties Inherit="False">
       <li>
         <parentTagDef>Body</parentTagDef>
-        <texPath>Humanlike/BodyAttachments/BS_DemonWingsb</texPath>
+        <texPath>BS_BodyAttachments/BS_DemonWingsb</texPath>
         <drawSize>(1.45,1.45)</drawSize>
         <colorType>Skin</colorType>
         <drawData>
@@ -192,7 +192,7 @@
       </li>
       <li>
         <parentTagDef>Body</parentTagDef>
-        <texPath>Humanlike/BodyAttachments/BS_DemonTaila</texPath>
+        <texPath>BS_BodyAttachments/BS_DemonTaila</texPath>
         <drawSize>(1.125,1.125)</drawSize>
         <colorType>Skin</colorType>
         <drawData>
@@ -213,7 +213,7 @@
       <li>
         <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
         <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
-        <texPath>Humanlike/HeadAttachments/BS_DemonHornsc</texPath>
+        <texPath>BS_HeadAttachments/BS_DemonHornsc</texPath>
         <color>(200, 200, 200)</color>
         <colorType>Hair</colorType>
         <drawData>
@@ -232,7 +232,7 @@
       <li>
         <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
         <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
-        <texPath>Humanlike/HeadAttachments/BS_PointedEars</texPath>
+        <texPath>BS_HeadAttachments/BS_PointedEars</texPath>
         <useSkinShader>false</useSkinShader>
         <colorType>Skin</colorType>
         <drawData>
@@ -270,7 +270,6 @@
       </li>
 		</stages>
     <comps>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="AnimalBehaviours.HediffCompProperties_Floating"/>
       <li Class="BetterPrerequisites.CompProperties_ColorAndFur">
         <hairColorOverride>
           <li>(100,100,100)</li>
@@ -408,7 +407,7 @@
       <!-- <li>
         <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
         <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
-        <texPath>Humanlike/HeadAttachments/BS_WerewolfSnoot</texPath>
+        <texPath>BS_HeadAttachments/BS_WerewolfSnoot</texPath>
         <drawSize>(1.0,1.0)</drawSize>
         <useSkinShader>true</useSkinShader>
         <colorType>Hair</colorType>
@@ -423,7 +422,7 @@
       <li>
         <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
         <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
-        <texPath>Humanlike/HeadAttachments/BS_GenericAnimalPersonEars</texPath>
+        <texPath>BS_HeadAttachments/BS_GenericAnimalPersonEars</texPath>
         <useSkinShader>false</useSkinShader>
         <colorType>Hair</colorType>
         <drawData>
@@ -435,7 +434,7 @@
       </li>
       <li>
         <workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
-        <texPath>Things/Pawn/Humanlike/BodyAttachments/FurryTail/FurryTail</texPath>
+        <texPath>Things/Pawn/BS_BodyAttachments/FurryTail/FurryTail</texPath>
         <colorType>Hair</colorType>
         <overrideMeshSize>(1, 1)</overrideMeshSize>
         <parentTagDef>Body</parentTagDef>

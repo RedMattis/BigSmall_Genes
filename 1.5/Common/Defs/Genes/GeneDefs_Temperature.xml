@@ -202,7 +202,7 @@
     <statOffsets>
       <ComfyTemperatureMax>-50</ComfyTemperatureMax>
     </statOffsets>
-    <biostatMet>3</biostatMet>
+    <biostatMet>5</biostatMet>
     <symbolPack>
       <prefixSymbols>
         <li>
@@ -238,7 +238,7 @@
     <statOffsets>
       <ComfyTemperatureMin>55</ComfyTemperatureMin>
     </statOffsets>
-    <biostatMet>3</biostatMet>
+    <biostatMet>5</biostatMet>
     <symbolPack>
       <prefixSymbols>
         <li>

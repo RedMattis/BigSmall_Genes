@@ -5,16 +5,16 @@
     <defName>BS_BrokenTitanBody</defName>
     <noGraphic>true</noGraphic>
     <bodyTypeGraphicPaths>
-      <Hulk>Humanlike/Bodies/BS_TitanBody</Hulk>
+      <Hulk>BS_Bodies/Borg/Borg_Hulk</Hulk>
 
-      <Male>Humanlike/Bodies/BS_NoFur</Male>
-      <Female>Humanlike/Bodies/BS_NoFur</Female>
+      <Male>BS_Bodies/BS_NoFur</Male>
+      <Female>BS_Bodies/BS_NoFur</Female>
       
-      <Fat>Humanlike/Bodies/BS_NoFur</Fat>
-      <Thin>Humanlike/Bodies/BS_NoFur</Thin>
+      <Fat>BS_Bodies/BS_NoFur</Fat>
+      <Thin>BS_Bodies/BS_NoFur</Thin>
       
-      <Child>Humanlike/Bodies/BS_NoFur</Child>
-      <Baby>Humanlike/Bodies/BS_NoFur</Baby>
+      <Child>BS_Bodies/BS_NoFur</Child>
+      <Baby>BS_Bodies/BS_NoFur</Baby>
     </bodyTypeGraphicPaths>
   </FurDef>
 
@@ -22,16 +22,16 @@
     <defName>BS_OgreBody</defName>
     <noGraphic>true</noGraphic>
     <bodyTypeGraphicPaths>
-      <Hulk>Humanlike/Bodies/BS_NoFur</Hulk>
+      <Hulk>BS_Bodies/BS_NoFur</Hulk>
 
-      <Male>Humanlike/Bodies/BS_NoFur</Male>
-      <Female>Humanlike/Bodies/BS_NoFur</Female>
+      <Male>BS_Bodies/BS_NoFur</Male>
+      <Female>BS_Bodies/BS_NoFur</Female>
       
-      <Fat>Humanlike/Bodies/BS_OgreBody</Fat>
-      <Thin>Humanlike/Bodies/BS_NoFur</Thin>
+      <Fat>BS_Bodies/BS_Ogre/Ogre_Fat</Fat>
+      <Thin>BS_Bodies/BS_NoFur</Thin>
       
-      <Child>Humanlike/Bodies/BS_NoFur</Child>
-      <Baby>Humanlike/Bodies/BS_NoFur</Baby>
+      <Child>BS_Bodies/BS_NoFur</Child>
+      <Baby>BS_Bodies/BS_NoFur</Baby>
     </bodyTypeGraphicPaths>
   </FurDef>
 
@@ -39,16 +39,16 @@
     <defName>BS_MimicBody</defName>
     <noGraphic>true</noGraphic>
     <bodyTypeGraphicPaths>
-      <Hulk>Humanlike/Bodies/BS_Mimic/bp_hulk</Hulk>
+      <Hulk>BS_Bodies/Mimic/Mimic_hulk</Hulk>
 
-      <Male>Humanlike/Bodies/BS_Mimic/bp_male</Male>
-      <Female>Humanlike/Bodies/BS_Mimic/bp_female</Female>
+      <Male>BS_Bodies/Mimic/Mimic_male</Male>
+      <Female>BS_Bodies/Mimic/Mimic_female</Female>
 
-      <Fat>Humanlike/Bodies/BS_Mimic/bp_fat</Fat>
-      <Thin>Humanlike/Bodies/BS_Mimic/bp_default</Thin>
+      <Fat>BS_Bodies/Mimic/Mimic_fat</Fat>
+      <Thin>BS_Bodies/Mimic/Mimic_default</Thin>
 
-      <Child>Humanlike/Bodies/BS_NoFur</Child>
-      <Baby>Humanlike/Bodies/BS_NoFur</Baby>
+      <Child>BS_Bodies/BS_NoFur</Child>
+      <Baby>BS_Bodies/BS_NoFur</Baby>
     </bodyTypeGraphicPaths>
   </FurDef>
 </Defs>

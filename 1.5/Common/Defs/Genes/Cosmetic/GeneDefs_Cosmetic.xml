@@ -131,7 +131,7 @@
       <li>
         <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
         <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
-        <texPath>Humanlike/HeadAttachments/BS_WerewolfSnoot</texPath>
+        <texPath>BS_HeadAttachments/BS_WerewolfSnoot</texPath>
         <drawSize>(1.0,1.0)</drawSize>
         <useSkinShader>true</useSkinShader>
         <colorType>Hair</colorType>
@@ -177,7 +177,7 @@
       <li>
         <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
         <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
-        <texPath>Humanlike/HeadAttachments/BS_bananasplit</texPath>
+        <texPath>BS_HeadAttachments/BS_bananasplit</texPath>
         <color>(255, 255, 255)</color>
         <useSkinShader>false</useSkinShader>
         <colorType>Custom</colorType>

@@ -89,7 +89,7 @@
     <description>Rawr! Carriers of this gene possess a mean werewolf-like snoot.</description>
     <iconPath>GeneIcons/BS_werewolfsnoot</iconPath>
     <graphicData>
-      <graphicPath>Humanlike/HeadAttachments/BS_WerewolfSnoot</graphicPath>
+      <graphicPath>BS_HeadAttachments/BS_WerewolfSnoot</graphicPath>
       <layer>PostSkin</layer>
       <useSkinShader>true</useSkinShader>
 	    <drawScale>1</drawScale>
@@ -127,7 +127,7 @@
 		<iconPath>GeneIcons/BS_Horns/BananaSplit</iconPath>
 		<graphicData>
       <color>(255, 255, 255)</color>
-			<graphicPath>Humanlike/HeadAttachments/BS_bananasplit</graphicPath>
+			<graphicPath>BS_HeadAttachments/BS_bananasplit</graphicPath>
       <useSkinShader>false</useSkinShader>
       <colorType>Custom</colorType>
       <drawWhileDessicated>false</drawWhileDessicated>

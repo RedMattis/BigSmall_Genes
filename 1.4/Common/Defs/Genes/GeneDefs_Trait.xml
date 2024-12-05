@@ -111,7 +111,7 @@
   <GeneDef>
     <defName>BS_Abrasive</defName>
     <label>Abrasive</label>
-    <description>Carriers of this gene make frequent rude remarks that test the patience of everyone around them.\n\nArt by Oskar. Ask him why this has the art of a goomba :'D.</description>
+    <description>Carriers of this gene make frequent rude remarks that test the patience of everyone around them.</description>
     <iconPath>GeneIcons/BS_Abrasive</iconPath>
     <forcedTraits>
       <li>

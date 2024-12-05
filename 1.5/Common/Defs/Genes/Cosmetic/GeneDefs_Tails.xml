@@ -4,7 +4,7 @@
     <defName>BS_DemonTail</defName>
     <label>dexterous demon tail</label>
     <description>Carriers of this gene grow a powerful demonic-looking tail.</description>
-    <iconPath>Humanlike/BodyAttachments/BS_DemonTaila_icon</iconPath>
+    <iconPath>BS_BodyAttachments/BS_DemonTaila_icon</iconPath>
     <biostatCpx>1</biostatCpx>
     <biostatMet>-1</biostatMet>
     <selectionWeight>0.1</selectionWeight>
@@ -18,7 +18,7 @@
     <renderNodeProperties Inherit="False">
       <li>
         <parentTagDef>Body</parentTagDef>
-        <texPath>Humanlike/BodyAttachments/BS_DemonTaila</texPath>
+        <texPath>BS_BodyAttachments/BS_DemonTaila</texPath>
         <drawSize>(1.125,1.125)</drawSize>
         <colorType>Skin</colorType>
         <drawData>

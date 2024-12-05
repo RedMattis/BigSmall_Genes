@@ -28,9 +28,7 @@
     </forcedHeadTypes>
     <selectionWeight>0.25</selectionWeight>
     <canGenerateInGeneSet>true</canGenerateInGeneSet>
-    <modExtensions>
-			
-		</modExtensions>
+
   </GeneDef>
 
   <HeadTypeDef ParentName="AverageBase">
@@ -92,9 +90,7 @@
         <li>NoBeard</li>
       </tags>
     </beardTagFilter>
-    <modExtensions>
-			
-		</modExtensions>
+
   </GeneDef>
 
   <HeadTypeDef ParentName="AverageBase">
@@ -161,9 +157,7 @@
         <li>NoBeard</li>
       </tags>
     </beardTagFilter>
-    <modExtensions>
-			
-		</modExtensions>
+
   </GeneDef>
 
   <HeadTypeDef ParentName="AverageBase">

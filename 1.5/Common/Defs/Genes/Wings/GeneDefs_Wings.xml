@@ -42,7 +42,7 @@
     <defName>BS_SmallDemonWings</defName>
     <label>Small Demon Wings</label>
     <description>Carriers of this gene grow small leathery wings.</description>
-    <iconPath>Humanlike/BodyAttachments/BS_DemonWings_south</iconPath>
+    <iconPath>BS_BodyAttachments/BS_DemonWings_south</iconPath>
     <displayOrderInCategory>777</displayOrderInCategory>
     <modExtensions>
       <li Class="BetterPrerequisites.GeneExtension">
@@ -60,7 +60,7 @@
     <renderNodeProperties Inherit="False">
       <li>
         <parentTagDef>Body</parentTagDef>
-        <texPath>Humanlike/BodyAttachments/BS_DemonWings</texPath>
+        <texPath>BS_BodyAttachments/BS_DemonWings</texPath>
         <colorType>Skin</colorType>
         <drawData>
           <defaultData>
@@ -81,7 +81,7 @@
     <defName>BS_LargeDemonWings</defName>
     <label>Large Demon Wings</label>
     <description>Carriers of this gene grow leathery wings.</description>
-    <iconPath>Humanlike/BodyAttachments/BS_DemonWingsc_south</iconPath>
+    <iconPath>BS_BodyAttachments/BS_DemonWingsc_south</iconPath>
     <displayOrderInCategory>777</displayOrderInCategory>
     <modExtensions>
       <li Class="BetterPrerequisites.GeneExtension">
@@ -98,7 +98,7 @@
     <renderNodeProperties Inherit="False">
       <li>
         <parentTagDef>Body</parentTagDef>
-        <texPath>Humanlike/BodyAttachments/BS_DemonWingsc</texPath>
+        <texPath>BS_BodyAttachments/BS_DemonWingsc</texPath>
         <drawSize>(1.45,1.45)</drawSize>
         <colorType>Skin</colorType>
         <drawData>
@@ -120,7 +120,7 @@
     <defName>BS_AncientDemonWings</defName>
     <label>Ancient Demon Wings</label>
     <description>Carriers of this gene grow majestic wings.</description>
-    <iconPath>Humanlike/BodyAttachments/BS_DemonWingsb_south</iconPath>
+    <iconPath>BS_BodyAttachments/BS_DemonWingsb_south</iconPath>
     <displayOrderInCategory>777</displayOrderInCategory>
     <modExtensions>
       <li Class="BetterPrerequisites.GeneExtension">
@@ -137,7 +137,7 @@
     <renderNodeProperties Inherit="False">
       <li>
         <parentTagDef>Body</parentTagDef>
-        <texPath>Humanlike/BodyAttachments/BS_DemonWingsb</texPath>
+        <texPath>BS_BodyAttachments/BS_DemonWingsb</texPath>
         <drawSize>(1.45,1.45)</drawSize>
         <colorType>Skin</colorType>
         <drawData>
@@ -159,7 +159,7 @@
     <defName>BS_flying_jump</defName>
     <label>flying jump</label>
     <description>Use your wings to fly high above.</description>
-    <iconPath>Humanlike/BodyAttachments/BS_GorgonWings_south</iconPath>
+    <iconPath>BS_BodyAttachments/BS_GorgonWings_south</iconPath>
     <cooldownTicksRange>1000</cooldownTicksRange>
     <hostile>false</hostile>
     <verbProperties>

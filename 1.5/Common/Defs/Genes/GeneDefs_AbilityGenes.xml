@@ -3,7 +3,7 @@
   <GeneDef>
     <defName>VU_Hermaphromorph</defName>
     <label>Hermaphromorph</label>
-    <displayCategory>Reproduction</displayCategory>
+    <displayCategory>ForcedSex</displayCategory>
     
     <description>Carriers of this gene can change the sex of their body at will.</description>
     <iconPath>GeneIcons/VU_Genderbender</iconPath>

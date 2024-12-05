@@ -75,7 +75,7 @@
 		<biostatMet>-1</biostatMet>
 		<selectionWeight>0</selectionWeight>
 		<displayOrderInCategory>430</displayOrderInCategory>
-		<iconPath>Humanlike/Bodies/BS_Mimic/bp_hulk_south</iconPath>
+		<iconPath>BS_Bodies/Mimic/Mimic_hulk_south</iconPath>
 		<statOffsets>
 			<SM_Food_Need_Capacity>2</SM_Food_Need_Capacity>
 		</statOffsets>

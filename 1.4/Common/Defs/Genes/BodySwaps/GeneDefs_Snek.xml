@@ -52,12 +52,12 @@
     <missingGeneRomanceChanceFactor>0.75</missingGeneRomanceChanceFactor>
 		<graphicData>
 			<graphicPaths>
-				<li>Pawn/BodyAttachments/LoS_SnakeTail/bp_default</li>
-				<li>Pawn/BodyAttachments/LoS_SnakeTail/bp_child</li>
-				<li>Pawn/BodyAttachments/LoS_SnakeTail/bp_fat</li>
-				<li>Pawn/BodyAttachments/LoS_SnakeTail/bp_hulk</li>
-				<li>Pawn/BodyAttachments/LoS_SnakeTail/bp_female</li>
-				<li>Pawn/BodyAttachments/LoS_SnakeTail/bp_male</li>
+				<li>Legacy/LoS_SnakeTail/bp_default</li>
+				<li>Legacy/LoS_SnakeTail/bp_child</li>
+				<li>Legacy/LoS_SnakeTail/bp_fat</li>
+				<li>Legacy/LoS_SnakeTail/bp_hulk</li>
+				<li>Legacy/LoS_SnakeTail/bp_female</li>
+				<li>Legacy/LoS_SnakeTail/bp_male</li>
 			</graphicPaths>
 			<drawScale>2.25</drawScale>
 			<drawOffsetNorth>(0, 0.0150617733, -0.3067)</drawOffsetNorth>
@@ -127,12 +127,12 @@
     <missingGeneRomanceChanceFactor>0.75</missingGeneRomanceChanceFactor>
 		<graphicData>
 			<graphicPaths>
-				<li>Pawn/BodyAttachments/LoS_SnakeTail/bp_default</li>
-				<li>Pawn/BodyAttachments/LoS_SnakeTail/bp_child</li>
-				<li>Pawn/BodyAttachments/LoS_SnakeTail/bp_fat</li>
-				<li>Pawn/BodyAttachments/LoS_SnakeTail/bp_hulk</li>
-				<li>Pawn/BodyAttachments/LoS_SnakeTail/bp_female</li>
-				<li>Pawn/BodyAttachments/LoS_SnakeTail/bp_male</li>
+				<li>Legacy/LoS_SnakeTail/bp_default</li>
+				<li>Legacy/LoS_SnakeTail/bp_child</li>
+				<li>Legacy/LoS_SnakeTail/bp_fat</li>
+				<li>Legacy/LoS_SnakeTail/bp_hulk</li>
+				<li>Legacy/LoS_SnakeTail/bp_female</li>
+				<li>Legacy/LoS_SnakeTail/bp_male</li>
 			</graphicPaths>
 			<drawScale>2.25</drawScale>
 			<drawOffsetNorth>(0, 0.0150617733, -0.3067)</drawOffsetNorth>

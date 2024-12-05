@@ -51,12 +51,12 @@
     <geneClass>BigAndSmall.ProductionGene</geneClass>
     <graphicData>
       <graphicPaths>
-        <li>Humanlike/BodyAttachments/BS_Spoder/bp_default</li>
-        <li>Humanlike/BodyAttachments/BS_Spoder/bp_child</li>
-        <li>Humanlike/BodyAttachments/BS_Spoder/bp_fat</li>
-        <li>Humanlike/BodyAttachments/BS_Spoder/bp_hulk</li>
-        <li>Humanlike/BodyAttachments/BS_Spoder/bp_female</li>
-        <li>Humanlike/BodyAttachments/BS_Spoder/bp_male</li>
+        <li>BS_BodyAttachments/BS_Spoder/bp_default</li>
+        <li>BS_BodyAttachments/BS_Spoder/bp_child</li>
+        <li>BS_BodyAttachments/BS_Spoder/bp_fat</li>
+        <li>BS_BodyAttachments/BS_Spoder/bp_hulk</li>
+        <li>BS_BodyAttachments/BS_Spoder/bp_female</li>
+        <li>BS_BodyAttachments/BS_Spoder/bp_male</li>
       </graphicPaths>
       <drawScale>2.25</drawScale>
       <drawOffsetNorth>(0, 0.0150617733, -0.3067)</drawOffsetNorth>
@@ -100,12 +100,12 @@
     <geneClass>BigAndSmall.ProductionGene</geneClass>
     <graphicData>
       <graphicPaths>
-        <li>Humanlike/BodyAttachments/BS_Spoder/bp_default</li>
-        <li>Humanlike/BodyAttachments/BS_Spoder/bp_child</li>
-        <li>Humanlike/BodyAttachments/BS_Spoder/bp_fat</li>
-        <li>Humanlike/BodyAttachments/BS_Spoder/bp_hulk</li>
-        <li>Humanlike/BodyAttachments/BS_Spoder/bp_female</li>
-        <li>Humanlike/BodyAttachments/BS_Spoder/bp_male</li>
+        <li>BS_BodyAttachments/BS_Spoder/bp_default</li>
+        <li>BS_BodyAttachments/BS_Spoder/bp_child</li>
+        <li>BS_BodyAttachments/BS_Spoder/bp_fat</li>
+        <li>BS_BodyAttachments/BS_Spoder/bp_hulk</li>
+        <li>BS_BodyAttachments/BS_Spoder/bp_female</li>
+        <li>BS_BodyAttachments/BS_Spoder/bp_male</li>
       </graphicPaths>
       <drawScale>2.25</drawScale>
       <drawOffsetNorth>(0, 0.0150617733, -0.3067)</drawOffsetNorth>
@@ -156,12 +156,12 @@
 
     <graphicData>
       <graphicPaths>
-        <li>Humanlike/BodyAttachments/BS_Spoder/Back/bp_default</li>
-        <li>Humanlike/BodyAttachments/BS_Spoder/Back/bp_child</li>
-        <li>Humanlike/BodyAttachments/BS_Spoder/Back/bp_fat</li>
-        <li>Humanlike/BodyAttachments/BS_Spoder/Back/bp_hulk</li>
-        <li>Humanlike/BodyAttachments/BS_Spoder/Back/bp_female</li>
-        <li>Humanlike/BodyAttachments/BS_Spoder/Back/bp_male</li>
+        <li>BS_BodyAttachments/BS_Spoder/Back/bp_default</li>
+        <li>BS_BodyAttachments/BS_Spoder/Back/bp_child</li>
+        <li>BS_BodyAttachments/BS_Spoder/Back/bp_fat</li>
+        <li>BS_BodyAttachments/BS_Spoder/Back/bp_hulk</li>
+        <li>BS_BodyAttachments/BS_Spoder/Back/bp_female</li>
+        <li>BS_BodyAttachments/BS_Spoder/Back/bp_male</li>
       </graphicPaths>
       <visibleNorth>false</visibleNorth>
       <drawOffsetNorth>(0, 0.0150617733, -0.3067)</drawOffsetNorth>
@@ -194,12 +194,12 @@
 
     <graphicData>
       <graphicPaths>
-        <li>Humanlike/BodyAttachments/BS_Spoder/Back/bp_default</li>
-        <li>Humanlike/BodyAttachments/BS_Spoder/Back/bp_child</li>
-        <li>Humanlike/BodyAttachments/BS_Spoder/Back/bp_fat</li>
-        <li>Humanlike/BodyAttachments/BS_Spoder/Back/bp_hulk</li>
-        <li>Humanlike/BodyAttachments/BS_Spoder/Back/bp_female</li>
-        <li>Humanlike/BodyAttachments/BS_Spoder/Back/bp_male</li>
+        <li>BS_BodyAttachments/BS_Spoder/Back/bp_default</li>
+        <li>BS_BodyAttachments/BS_Spoder/Back/bp_child</li>
+        <li>BS_BodyAttachments/BS_Spoder/Back/bp_fat</li>
+        <li>BS_BodyAttachments/BS_Spoder/Back/bp_hulk</li>
+        <li>BS_BodyAttachments/BS_Spoder/Back/bp_female</li>
+        <li>BS_BodyAttachments/BS_Spoder/Back/bp_male</li>
       </graphicPaths>
       <visibleNorth>false</visibleNorth>
       <drawOffsetNorth>(0, 0.0150617733, -0.3067)</drawOffsetNorth>

@@ -8,7 +8,7 @@
       <li>
         <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
         <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
-        <texPath>Humanlike/HeadAttachments/jotun_horns</texPath>
+        <texPath>BS_HeadAttachments/jotun_horns</texPath>
         <colorType>Skin</colorType>
         <drawData>
           <defaultData>
@@ -66,7 +66,7 @@
       <li>
         <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
         <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
-        <texPath>Humanlike/HeadAttachments/jotun_horns</texPath>
+        <texPath>BS_HeadAttachments/jotun_horns</texPath>
         <color>(180, 180, 180)</color>
         <colorType>Hair</colorType>
         <drawData>
@@ -93,7 +93,7 @@
       <li>
         <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
         <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
-        <texPath>Humanlike/HeadAttachments/jotun_horns</texPath>
+        <texPath>BS_HeadAttachments/jotun_horns</texPath>
         <useSkinShader>true</useSkinShader>
         <colorType>Skin</colorType>
         <drawData>
@@ -120,7 +120,7 @@
       <li>
         <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
         <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
-        <texPath>Humanlike/HeadAttachments/jotun_horns_small</texPath>
+        <texPath>BS_HeadAttachments/jotun_horns_small</texPath>
         <color>(200, 200, 200)</color>
         <colorType>Hair</colorType>
         <drawData>
@@ -147,7 +147,7 @@
       <li>
         <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
         <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
-        <texPath>Humanlike/HeadAttachments/jotun_horns_small</texPath>
+        <texPath>BS_HeadAttachments/jotun_horns_small</texPath>
         <useSkinShader>true</useSkinShader>
         <colorType>Skin</colorType>
         <drawData>
@@ -174,7 +174,7 @@
       <li>
         <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
         <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
-        <texPath>Humanlike/HeadAttachments/BS_BendyHorns</texPath>
+        <texPath>BS_HeadAttachments/BS_BendyHorns</texPath>
         <color>(180, 180, 180)</color>
         <colorType>Hair</colorType>
         <drawData>
@@ -201,7 +201,7 @@
       <li>
         <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
         <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
-        <texPath>Humanlike/HeadAttachments/BS_BendyHorns</texPath>
+        <texPath>BS_HeadAttachments/BS_BendyHorns</texPath>
         <useSkinShader>true</useSkinShader>
         <colorType>Skin</colorType>
         <drawData>
@@ -228,7 +228,7 @@
       <li>
         <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
         <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
-        <texPath>Humanlike/HeadAttachments/BS_DemonHornsa</texPath>
+        <texPath>BS_HeadAttachments/BS_DemonHornsa</texPath>
         <color>(180, 180, 180)</color>
         <colorType>Hair</colorType>
         <drawData>
@@ -255,7 +255,7 @@
       <li>
         <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
         <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
-        <texPath>Humanlike/HeadAttachments/BS_DemonHornsa</texPath>
+        <texPath>BS_HeadAttachments/BS_DemonHornsa</texPath>
         <useSkinShader>true</useSkinShader>
         <colorType>Skin</colorType>
         <drawData>
@@ -282,7 +282,7 @@
       <li>
         <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
         <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
-        <texPath>Humanlike/HeadAttachments/BS_DemonHornsb</texPath>
+        <texPath>BS_HeadAttachments/BS_DemonHornsb</texPath>
         <color>(180, 180, 180)</color>
         <colorType>Hair</colorType>
         <drawData>
@@ -309,7 +309,7 @@
       <li>
         <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
         <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
-        <texPath>Humanlike/HeadAttachments/BS_DemonHornsb</texPath>
+        <texPath>BS_HeadAttachments/BS_DemonHornsb</texPath>
         <useSkinShader>true</useSkinShader>
         <colorType>Skin</colorType>
         <drawData>
@@ -336,7 +336,7 @@
       <li>
         <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
         <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
-        <texPath>Humanlike/HeadAttachments/BS_DemonHornsc</texPath>
+        <texPath>BS_HeadAttachments/BS_DemonHornsc</texPath>
         <color>(200, 200, 200)</color>
         <colorType>Hair</colorType>
         <drawData>
@@ -363,7 +363,7 @@
       <li>
         <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
         <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
-        <texPath>Humanlike/HeadAttachments/BS_DemonHornsc</texPath>
+        <texPath>BS_HeadAttachments/BS_DemonHornsc</texPath>
         <useSkinShader>true</useSkinShader>
         <colorType>Skin</colorType>
         <drawData>
@@ -390,7 +390,7 @@
       <li>
         <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
         <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
-        <texPath>Humanlike/HeadAttachments/BS_DemonHornsd</texPath>
+        <texPath>BS_HeadAttachments/BS_DemonHornsd</texPath>
         <colorType>Hair</colorType>
         <drawData>
           <defaultData>
@@ -410,7 +410,7 @@
       <li>
         <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
         <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
-        <texPath>Humanlike/HeadAttachments/BS_DemonHornsd</texPath>
+        <texPath>BS_HeadAttachments/BS_DemonHornsd</texPath>
         <colorType>Skin</colorType>
         <drawData>
           <defaultData>
@@ -430,7 +430,7 @@
       <li>
         <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
         <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
-        <texPath>Humanlike/HeadAttachments/BS_DemonHornse</texPath>
+        <texPath>BS_HeadAttachments/BS_DemonHornse</texPath>
         <colorType>Hair</colorType>
         <drawData>
           <defaultData>
@@ -456,7 +456,7 @@
       <li>
         <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
         <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
-        <texPath>Humanlike/HeadAttachments/BS_DemonHornse</texPath>
+        <texPath>BS_HeadAttachments/BS_DemonHornse</texPath>
         <useSkinShader>true</useSkinShader>
         <colorType>Skin</colorType>
         <drawData>
@@ -483,7 +483,7 @@
       <li>
         <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
         <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
-        <texPath>Humanlike/HeadAttachments/BS_DemonHornsf</texPath>
+        <texPath>BS_HeadAttachments/BS_DemonHornsf</texPath>
         <colorType>Hair</colorType>
         <drawData>
           <defaultData>
@@ -509,7 +509,7 @@
       <li>
         <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
         <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
-        <texPath>Humanlike/HeadAttachments/BS_DemonHornsf</texPath>
+        <texPath>BS_HeadAttachments/BS_DemonHornsf</texPath>
         <useSkinShader>true</useSkinShader>
         <colorType>Skin</colorType>
         <drawData>
@@ -536,7 +536,7 @@
       <li>
         <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
         <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
-        <texPath>Humanlike/HeadAttachments/BS_OniHorns</texPath>
+        <texPath>BS_HeadAttachments/BS_OniHorns</texPath>
         <colorType>Skin</colorType>
         <drawData>
           <defaultData>
@@ -562,7 +562,34 @@
       <li>
         <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
         <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
-        <texPath>Humanlike/HeadAttachments/BS_OniSingleHorn</texPath>
+        <texPath>BS_HeadAttachments/BS_OniSingleHorn</texPath>
+        <colorType>Skin</colorType>
+        <drawData>
+          <defaultData>
+            <layer>80</layer>
+          </defaultData>
+          <dataNorth>
+            <layer>10</layer>
+          </dataNorth>
+          <dataSouth>
+            <offset>(0, 0, 0)</offset>
+          </dataSouth>
+        </drawData>
+        <parentTagDef>Head</parentTagDef>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+  <GeneDef ParentName="BS_DemonHornBase">
+    <defName>BS_DragonHorns</defName>
+    <label>draconic horns (skin-coloured)</label>
+    <description>Carriers of this gene possess arching horns. This variant has the same colour as the carrier's skin.</description>
+    <iconPath>GeneIcons/BS_Horns/DragonHorns</iconPath>
+    <renderNodeProperties Inherit="False">
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPath>BS_HeadAttachments/BS_DragonHorns</texPath>
+        <useSkinShader>true</useSkinShader>
         <colorType>Skin</colorType>
         <drawData>
           <defaultData>

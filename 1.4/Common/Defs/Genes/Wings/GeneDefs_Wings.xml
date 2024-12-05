@@ -73,10 +73,10 @@
 		<defName>BS_SmallDemonWings</defName>
 		<label>Small Demon Wings</label>
 		<description>Carriers of this gene grow small leathery wings.</description>
-		<iconPath>Humanlike/BodyAttachments/BS_DemonWings_south</iconPath>
+		<iconPath>BS_BodyAttachments/BS_DemonWings_south</iconPath>
 		<displayOrderInCategory>777</displayOrderInCategory>
 		<graphicData>
-			<graphicPath>Humanlike/BodyAttachments/BS_DemonWings</graphicPath>
+			<graphicPath>BS_BodyAttachments/BS_DemonWings</graphicPath>
 			<colorType>Skin</colorType>
 		</graphicData>
     <modExtensions>
@@ -100,10 +100,10 @@
 		<defName>BS_LargeDemonWings</defName>
 		<label>Large Demon Wings</label>
 		<description>Carriers of this gene grow leathery wings.</description>
-		<iconPath>Humanlike/BodyAttachments/BS_DemonWingsc_south</iconPath>
+		<iconPath>BS_BodyAttachments/BS_DemonWingsc_south</iconPath>
 		<displayOrderInCategory>777</displayOrderInCategory>
 		<graphicData>
-			<graphicPath>Humanlike/BodyAttachments/BS_DemonWingsc</graphicPath>
+			<graphicPath>BS_BodyAttachments/BS_DemonWingsc</graphicPath>
 			<colorType>Skin</colorType>
       <drawScale>1.9</drawScale>
 		</graphicData>
@@ -125,10 +125,10 @@
 		<defName>BS_AncientDemonWings</defName>
 		<label>Ancient Demon Wings</label>
 		<description>Carriers of this gene grow majestic wings.</description>
-		<iconPath>Humanlike/BodyAttachments/BS_DemonWingsb_south</iconPath>
+		<iconPath>BS_BodyAttachments/BS_DemonWingsb_south</iconPath>
 		<displayOrderInCategory>777</displayOrderInCategory>
 		<graphicData>
-			<graphicPath>Humanlike/BodyAttachments/BS_DemonWingsb</graphicPath>
+			<graphicPath>BS_BodyAttachments/BS_DemonWingsb</graphicPath>
 			<colorType>Skin</colorType>
       <drawScale>1.9</drawScale>
 		</graphicData>
@@ -153,7 +153,7 @@
     <defName>BS_flying_jump</defName>
     <label>flying jump</label>
     <description>Use your wings to fly high above.</description>
-    <iconPath>Humanlike/BodyAttachments/BS_GorgonWings_south</iconPath>
+    <iconPath>BS_BodyAttachments/BS_GorgonWings_south</iconPath>
     <cooldownTicksRange>1000</cooldownTicksRange>
     <hostile>false</hostile>
     <verbProperties>

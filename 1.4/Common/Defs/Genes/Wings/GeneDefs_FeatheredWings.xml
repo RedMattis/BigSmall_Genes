@@ -6,11 +6,11 @@
     <defName>BS_MajesticBird</defName>
     <label>Majestic Bird Wings (Large)</label>
     <description>Carriers of this gene possess angelic wings.</description>
-    <iconPath>Humanlike/BodyAttachments/BS_GorgonWings_south</iconPath>
+    <iconPath>BS_BodyAttachments/BS_GorgonWings_south</iconPath>
     <displayOrderInCategory>777</displayOrderInCategory>
     <geneClass>BetterPrerequisites.PGene</geneClass>
     <graphicData>
-      <graphicPath>Humanlike/BodyAttachments/BS_GorgonWingsBack</graphicPath>
+      <graphicPath>BS_BodyAttachments/BS_GorgonWingsBack</graphicPath>
       <colorType>Hair</colorType>
       <color>(245,245,245)</color>
       <drawScale>1.9</drawScale>
@@ -36,10 +36,10 @@
     <defName>BS_MajesticBird_Front</defName>
     <label>Majestic Bird Wings (OuterGraphic)</label>
     <description>Carriers of this gene possess angelic wings.</description>
-    <iconPath>Humanlike/BodyAttachments/BS_GorgonWings_south</iconPath>
+    <iconPath>BS_BodyAttachments/BS_GorgonWings_south</iconPath>
     <prerequisite>BS_MajesticBird</prerequisite> <!--This is just to avoid them spawning in AlphaGenes something..-->
     <graphicData>
-      <graphicPath>Humanlike/BodyAttachments/BS_GorgonWingsFront</graphicPath>
+      <graphicPath>BS_BodyAttachments/BS_GorgonWingsFront</graphicPath>
       <colorType>Hair</colorType>
       <color>(245,245,245)</color>
       <drawScale>1.9</drawScale>
@@ -50,11 +50,11 @@
     <defName>BS_MajesticBird_Mid</defName>
     <label>Majestic Bird Wings</label>
     <description>Carriers of this gene possess angelic wings.</description>
-    <iconPath>Humanlike/BodyAttachments/BS_GorgonWings_south</iconPath>
+    <iconPath>BS_BodyAttachments/BS_GorgonWings_south</iconPath>
     <displayOrderInCategory>777</displayOrderInCategory>
     <geneClass>BetterPrerequisites.PGene</geneClass>
     <graphicData>
-      <graphicPath>Humanlike/BodyAttachments/BS_GorgonWingsBack</graphicPath>
+      <graphicPath>BS_BodyAttachments/BS_GorgonWingsBack</graphicPath>
       <colorType>Hair</colorType>
       <color>(245,245,245)</color>
       <drawScale>1.48</drawScale>
@@ -80,10 +80,10 @@
     <defName>BS_MajesticBird_Mid_Front</defName>
     <label>Majestic Bird Wings (OuterGraphic)</label>
     <description>Carriers of this gene possess angelic wings.</description>
-    <iconPath>Humanlike/BodyAttachments/BS_GorgonWings_south</iconPath>
+    <iconPath>BS_BodyAttachments/BS_GorgonWings_south</iconPath>
     <prerequisite>BS_MajesticBird_Mid</prerequisite> <!--This is just to avoid them spawning in AlphaGenes something..-->
     <graphicData>
-      <graphicPath>Humanlike/BodyAttachments/BS_GorgonWingsFront</graphicPath>
+      <graphicPath>BS_BodyAttachments/BS_GorgonWingsFront</graphicPath>
       <colorType>Hair</colorType>
       <color>(245,245,245)</color>
       <drawScale>1.48</drawScale>
@@ -97,11 +97,11 @@
     <defName>BS_AngelWings</defName>
     <label>Angelic Messenger Wings (Large)</label>
     <description>Carriers of this gene possess angelic wings.</description>
-    <iconPath>Humanlike/BodyAttachments/BS_GorgonWings_south</iconPath>
+    <iconPath>BS_BodyAttachments/BS_GorgonWings_south</iconPath>
     <displayOrderInCategory>777</displayOrderInCategory>
     <geneClass>BetterPrerequisites.PGene</geneClass>
     <graphicData>
-      <graphicPath>Humanlike/BodyAttachments/BS_GorgonWingsBack</graphicPath>
+      <graphicPath>BS_BodyAttachments/BS_GorgonWingsBack</graphicPath>
       <colorType>Custom</colorType>
       <color>(255,241,199)</color>
       <drawScale>1.9</drawScale>
@@ -127,10 +127,10 @@
     <defName>BS_AngelWings_Front</defName>
     <label>Angelic Messenger Wings (OuterGraphic)</label>
     <description>Carriers of this gene possess angelic wings.</description>
-    <iconPath>Humanlike/BodyAttachments/BS_GorgonWings_south</iconPath>
+    <iconPath>BS_BodyAttachments/BS_GorgonWings_south</iconPath>
     <prerequisite>BS_AngelWings</prerequisite>
     <graphicData>
-      <graphicPath>Humanlike/BodyAttachments/BS_GorgonWingsFront</graphicPath>
+      <graphicPath>BS_BodyAttachments/BS_GorgonWingsFront</graphicPath>
       <colorType>Custom</colorType>
       <color>(255,241,199)</color>
       <drawScale>1.9</drawScale>
@@ -141,11 +141,11 @@
     <defName>BS_AngelWings_Mid</defName>
     <label>Angelic Messenger Wings</label>
     <description>Carriers of this gene possess angelic wings.</description>
-    <iconPath>Humanlike/BodyAttachments/BS_GorgonWings_south</iconPath>
+    <iconPath>BS_BodyAttachments/BS_GorgonWings_south</iconPath>
     <displayOrderInCategory>777</displayOrderInCategory>
     <geneClass>BetterPrerequisites.PGene</geneClass>
     <graphicData>
-      <graphicPath>Humanlike/BodyAttachments/BS_GorgonWingsBack</graphicPath>
+      <graphicPath>BS_BodyAttachments/BS_GorgonWingsBack</graphicPath>
       <colorType>Custom</colorType>
       <color>(255,241,199)</color>
       <drawScale>1.48</drawScale>
@@ -171,10 +171,10 @@
     <defName>BS_AngelWings_Mid_Front</defName>
     <label>Angelic Messenger Wings (OuterGraphic)</label>
     <description>Carriers of this gene possess angelic wings.</description>
-    <iconPath>Humanlike/BodyAttachments/BS_GorgonWings_south</iconPath>
+    <iconPath>BS_BodyAttachments/BS_GorgonWings_south</iconPath>
     <prerequisite>BS_AngelWings_Mid</prerequisite>
     <graphicData>
-      <graphicPath>Humanlike/BodyAttachments/BS_GorgonWingsFront</graphicPath>
+      <graphicPath>BS_BodyAttachments/BS_GorgonWingsFront</graphicPath>
       <colorType>Custom</colorType>
       <color>(255,241,199)</color>
       <drawScale>1.48</drawScale>
@@ -187,11 +187,11 @@
     <defName>BS_GoldenGorgonWings</defName>
     <label>Golden Gorgon Wings</label>
     <description>Carriers of this gene possess divine golden wings.</description>
-    <iconPath>Humanlike/BodyAttachments/BS_GorgonWings_south</iconPath>
+    <iconPath>BS_BodyAttachments/BS_GorgonWings_south</iconPath>
     <displayOrderInCategory>777</displayOrderInCategory>
     <geneClass>BetterPrerequisites.PGene</geneClass>
     <graphicData>
-      <graphicPath>Humanlike/BodyAttachments/BS_GorgonWingsBack</graphicPath>
+      <graphicPath>BS_BodyAttachments/BS_GorgonWingsBack</graphicPath>
       <colorType>Custom</colorType>
       <color>(255,241,160)</color>
       <drawScale>1.9</drawScale>
@@ -217,10 +217,10 @@
     <defName>BS_GoldenGorgonWings_Front</defName>
     <label>Golden Gorgon Wings (OuterGraphic)</label>
     <description>Carriers of this gene possess divine golden wings.</description>
-    <iconPath>Humanlike/BodyAttachments/BS_GorgonWings_south</iconPath>
+    <iconPath>BS_BodyAttachments/BS_GorgonWings_south</iconPath>
     <prerequisite>BS_GoldenGorgonWings</prerequisite>
     <graphicData>
-      <graphicPath>Humanlike/BodyAttachments/BS_GorgonWingsFront</graphicPath>
+      <graphicPath>BS_BodyAttachments/BS_GorgonWingsFront</graphicPath>
       <colorType>Custom</colorType>
       <color>(255,241,160)</color>
       <drawScale>1.9</drawScale>
@@ -239,7 +239,7 @@
     <displayOrderInCategory>777</displayOrderInCategory>
     <geneClass>BetterPrerequisites.PGene</geneClass>
     <graphicData>
-      <graphicPath>Humanlike/BodyAttachments/BS_Wings/AngelicWings_Bottom</graphicPath>
+      <graphicPath>BS_BodyAttachments/BS_Wings/AngelicWings_Bottom</graphicPath>
       <colorType>Hair</colorType>
       <color>(245,245,245)</color>
       <drawScale>1.9</drawScale>
@@ -267,7 +267,7 @@
     <iconPath>GeneIcons/BS_Wings/Gene_WingsAngelic</iconPath>
     <prerequisite>BS_GracefulAngelwings</prerequisite>
     <graphicData>
-      <graphicPath>Humanlike/BodyAttachments/BS_Wings/AngelicWings_Top</graphicPath>
+      <graphicPath>BS_BodyAttachments/BS_Wings/AngelicWings_Top</graphicPath>
       <colorType>Hair</colorType>
       <color>(245,245,245)</color>
       <drawScale>1.9</drawScale>
@@ -282,7 +282,7 @@
     <displayOrderInCategory>777</displayOrderInCategory>
     <geneClass>BetterPrerequisites.PGene</geneClass>
     <graphicData>
-      <graphicPath>Humanlike/BodyAttachments/BS_Wings/HolyWings_Bottom</graphicPath>
+      <graphicPath>BS_BodyAttachments/BS_Wings/HolyWings_Bottom</graphicPath>
       <colorType>Hair</colorType>
       <color>(245,245,245)</color>
       <drawScale>1.7</drawScale>
@@ -310,7 +310,7 @@
     <iconPath>GeneIcons/BS_Wings/Gene_WingsHoly</iconPath>
     <prerequisite>BS_HolyAngelwings</prerequisite>
     <graphicData>
-      <graphicPath>Humanlike/BodyAttachments/BS_Wings/HolyWings_Top</graphicPath>
+      <graphicPath>BS_BodyAttachments/BS_Wings/HolyWings_Top</graphicPath>
       <colorType>Hair</colorType>
       <color>(245,245,245)</color>
       <drawScale>1.7</drawScale>
@@ -325,7 +325,7 @@
     <displayOrderInCategory>777</displayOrderInCategory>
     <geneClass>BetterPrerequisites.PGene</geneClass>
     <graphicData>
-      <graphicPath>Humanlike/BodyAttachments/BS_Wings/MenacingWings_Bottom</graphicPath>
+      <graphicPath>BS_BodyAttachments/BS_Wings/MenacingWings_Bottom</graphicPath>
       <colorType>Hair</colorType>
       <color>(245,245,245)</color>
       <drawScale>1.9</drawScale>
@@ -353,7 +353,7 @@
     <iconPath>GeneIcons/BS_Wings/Gene_WingsMenacing</iconPath>
     <prerequisite>BS_MenacingAngelwings</prerequisite>
     <graphicData>
-      <graphicPath>Humanlike/BodyAttachments/BS_Wings/MenacingWings_Top</graphicPath>
+      <graphicPath>BS_BodyAttachments/BS_Wings/MenacingWings_Top</graphicPath>
       <colorType>Hair</colorType>
       <color>(245,245,245)</color>
       <drawScale>1.9</drawScale>
@@ -370,7 +370,7 @@
     <displayOrderInCategory>777</displayOrderInCategory>
     <geneClass>BetterPrerequisites.PGene</geneClass>
     <graphicData>
-      <graphicPath>Humanlike/BodyAttachments/BS_Wings/DemonWings_Bottom</graphicPath>
+      <graphicPath>BS_BodyAttachments/BS_Wings/DemonWings_Bottom</graphicPath>
       <colorType>Skin</colorType>
       <color>(245,245,245)</color>
       <drawScale>1.9</drawScale>
@@ -398,7 +398,7 @@
     <iconPath>GeneIcons/BS_Wings/Gene_WingsDemon</iconPath>
     <prerequisite>BS_DemonAngelwings</prerequisite>
     <graphicData>
-      <graphicPath>Humanlike/BodyAttachments/BS_Wings/DemonWings_Top</graphicPath>
+      <graphicPath>BS_BodyAttachments/BS_Wings/DemonWings_Top</graphicPath>
       <colorType>Skin</colorType>
       <color>(245,245,245)</color>
       <drawScale>1.9</drawScale>

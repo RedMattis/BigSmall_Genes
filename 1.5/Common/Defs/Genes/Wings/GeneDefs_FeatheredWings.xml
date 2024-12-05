@@ -4,7 +4,7 @@
     <defName>BS_MajesticBird</defName>
     <label>Majestic Bird Wings (Large)</label>
     <description>Carriers of this gene possess angelic wings.</description>
-    <iconPath>Humanlike/BodyAttachments/BS_GorgonWings_south</iconPath>
+    <iconPath>BS_BodyAttachments/BS_GorgonWings_south</iconPath>
     <displayOrderInCategory>777</displayOrderInCategory>
     <geneClass>BetterPrerequisites.PGene</geneClass>
     <modExtensions>
@@ -35,7 +35,7 @@
     <defName>BS_MajesticBird_Mid</defName>
     <label>Majestic Bird Wings</label>
     <description>Carriers of this gene possess angelic wings.</description>
-    <iconPath>Humanlike/BodyAttachments/BS_GorgonWings_south</iconPath>
+    <iconPath>BS_BodyAttachments/BS_GorgonWings_south</iconPath>
     <displayOrderInCategory>777</displayOrderInCategory>
     <geneClass>BetterPrerequisites.PGene</geneClass>
     <modExtensions>
@@ -58,7 +58,7 @@
     <defName>BS_AngelWings</defName>
     <label>Angelic Messenger Wings (Large)</label>
     <description>Carriers of this gene possess angelic wings.</description>
-    <iconPath>Humanlike/BodyAttachments/BS_GorgonWings_south</iconPath>
+    <iconPath>BS_BodyAttachments/BS_GorgonWings_south</iconPath>
     <displayOrderInCategory>777</displayOrderInCategory>
     <geneClass>BetterPrerequisites.PGene</geneClass>
     <modExtensions>
@@ -101,7 +101,7 @@
     <defName>BS_AngelWings_Mid</defName>
     <label>Angelic Messenger Wings</label>
     <description>Carriers of this gene possess angelic wings.</description>
-    <iconPath>Humanlike/BodyAttachments/BS_GorgonWings_south</iconPath>
+    <iconPath>BS_BodyAttachments/BS_GorgonWings_south</iconPath>
     <displayOrderInCategory>777</displayOrderInCategory>
     <geneClass>BetterPrerequisites.PGene</geneClass>
     <modExtensions>
@@ -132,7 +132,7 @@
     <defName>BS_GoldenGorgonWings</defName>
     <label>Golden Gorgon Wings</label>
     <description>Carriers of this gene possess huge divine golden wings.</description>
-    <iconPath>Humanlike/BodyAttachments/BS_GorgonWings_south</iconPath>
+    <iconPath>BS_BodyAttachments/BS_GorgonWings_south</iconPath>
     <displayOrderInCategory>777</displayOrderInCategory>
     <geneClass>BetterPrerequisites.PGene</geneClass>
     <modExtensions>
@@ -195,7 +195,7 @@
       <li>
         <parentTagDef>Body</parentTagDef>
         <workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
-        <texPath>Humanlike/BodyAttachments/BS_Wings/AngelicWings_Bottom</texPath>
+        <texPath>BS_BodyAttachments/BS_Wings/AngelicWings_Bottom</texPath>
         <drawSize>(1.4,1.4)</drawSize>
         <color>(245,245,245)</color>
         <colorType>Hair</colorType>
@@ -218,7 +218,7 @@
       <li>
         <parentTagDef>Body</parentTagDef>
         <workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
-        <texPath>Humanlike/BodyAttachments/BS_Wings/AngelicWings_Top</texPath>
+        <texPath>BS_BodyAttachments/BS_Wings/AngelicWings_Top</texPath>
         <drawSize>(1.4,1.4)</drawSize>
         <color>(245,245,245)</color>
         <colorType>Hair</colorType>
@@ -260,7 +260,7 @@
     <li>
       <parentTagDef>Body</parentTagDef>
       <workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
-      <texPath>Humanlike/BodyAttachments/BS_Wings/HolyWings_Bottom</texPath>
+      <texPath>BS_BodyAttachments/BS_Wings/HolyWings_Bottom</texPath>
       <drawSize>(1.25,1.25)</drawSize>
       <color>(245,245,245)</color>
       <colorType>Hair</colorType>
@@ -283,7 +283,7 @@
     <li>
       <parentTagDef>Body</parentTagDef>
       <workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
-      <texPath>Humanlike/BodyAttachments/BS_Wings/HolyWings_Top</texPath>
+      <texPath>BS_BodyAttachments/BS_Wings/HolyWings_Top</texPath>
       <drawSize>(1.25,1.25)</drawSize>
       <color>(245,245,245)</color>
       <colorType>Hair</colorType>
@@ -325,7 +325,7 @@
       <li>
         <parentTagDef>Body</parentTagDef>
         <workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
-        <texPath>Humanlike/BodyAttachments/BS_Wings/MenacingWings_Bottom</texPath>
+        <texPath>BS_BodyAttachments/BS_Wings/MenacingWings_Bottom</texPath>
         <drawSize>(1.45,1.45)</drawSize>
         <color>(245,245,245)</color>
         <colorType>Hair</colorType>
@@ -348,7 +348,7 @@
       <li>
         <parentTagDef>Body</parentTagDef>
         <workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
-        <texPath>Humanlike/BodyAttachments/BS_Wings/MenacingWings_Top</texPath>
+        <texPath>BS_BodyAttachments/BS_Wings/MenacingWings_Top</texPath>
         <drawSize>(1.45,1.45)</drawSize>
         <color>(245,245,245)</color>
         <colorType>Hair</colorType>
@@ -390,7 +390,7 @@
       <li>
         <parentTagDef>Body</parentTagDef>
         <workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
-        <texPath>Humanlike/BodyAttachments/BS_Wings/DemonWings_Bottom</texPath>
+        <texPath>BS_BodyAttachments/BS_Wings/DemonWings_Bottom</texPath>
         <drawSize>(1.45,1.45)</drawSize>
         <color>(245,245,245)</color>
         <colorType>Skin</colorType>
@@ -413,7 +413,7 @@
       <li>
         <parentTagDef>Body</parentTagDef>
         <workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
-        <texPath>Humanlike/BodyAttachments/BS_Wings/DemonWings_Top</texPath>
+        <texPath>BS_BodyAttachments/BS_Wings/DemonWings_Top</texPath>
         <drawSize>(1.45,1.45)</drawSize>
         <color>(245,245,245)</color>
         <colorType>Skin</colorType>

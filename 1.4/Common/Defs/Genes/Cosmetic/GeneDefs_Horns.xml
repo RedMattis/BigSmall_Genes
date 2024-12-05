@@ -1,7 +1,7 @@
 <Defs>
   <GeneDef Name="BS_Hornbase" ParentName="GeneHeadboneBase" Abstract="True">
     <graphicData>
-			<graphicPath>Humanlike/HeadAttachments/jotun_horns</graphicPath>
+			<graphicPath>BS_HeadAttachments/jotun_horns</graphicPath>
 			<layer>PostHeadgear</layer>
       <!-- <useSkinShader>true</useSkinShader> -->
       <colorType>Skin</colorType>
@@ -43,7 +43,7 @@
 		<graphicData>
       <color>(180, 180, 180)</color>
       <colorType>Hair</colorType>
-			<graphicPath>Humanlike/HeadAttachments/jotun_horns</graphicPath>
+			<graphicPath>BS_HeadAttachments/jotun_horns</graphicPath>
     </graphicData>
 	</GeneDef>
 
@@ -53,7 +53,7 @@
 		<description>Carriers of this gene possess large impressive horns. This variant has the same colour as the carrier's skin.</description>
 		<iconPath>GeneIcons/BS_Horns/JotunHorns</iconPath>
 		<graphicData>
-			<graphicPath>Humanlike/HeadAttachments/jotun_horns</graphicPath>
+			<graphicPath>BS_HeadAttachments/jotun_horns</graphicPath>
       <colorType>Skin</colorType>
       <useSkinShader>true</useSkinShader>
     </graphicData>
@@ -66,7 +66,7 @@
     <iconPath>UI/Icons/Genes/Gene_HeadboneMinihorns</iconPath>
     <graphicData>
       <color>(200, 200, 200)</color>
-      <graphicPath>Humanlike/HeadAttachments/jotun_horns_small</graphicPath>
+      <graphicPath>BS_HeadAttachments/jotun_horns_small</graphicPath>
       <colorType>Hair</colorType>
     </graphicData>
   </GeneDef>
@@ -77,7 +77,7 @@
     <description>Carriers of this gene possess two small horns. This variant has the same colour as the carrier's skin.</description>
     <iconPath>UI/Icons/Genes/Gene_HeadboneMinihorns</iconPath>
     <graphicData>
-      <graphicPath>Humanlike/HeadAttachments/jotun_horns_small</graphicPath>
+      <graphicPath>BS_HeadAttachments/jotun_horns_small</graphicPath>
       <colorType>Skin</colorType>
       <useSkinShader>true</useSkinShader>
     </graphicData>
@@ -91,7 +91,7 @@
     <graphicData>
       <color>(180, 180, 180)</color>
       <colorType>Hair</colorType>
-			<graphicPath>Humanlike/HeadAttachments/BS_BendyHorns</graphicPath>
+			<graphicPath>BS_HeadAttachments/BS_BendyHorns</graphicPath>
     </graphicData>
   </GeneDef>
 
@@ -101,7 +101,7 @@
     <description>Carriers of this gene possess two arching horns. This variant has the same colour as the carrier's skin.</description>
     <iconPath>GeneIcons/BS_Horns/Bendy</iconPath>
     <graphicData>
-      <graphicPath>Humanlike/HeadAttachments/BS_BendyHorns</graphicPath>
+      <graphicPath>BS_HeadAttachments/BS_BendyHorns</graphicPath>
       <colorType>Skin</colorType>
       <useSkinShader>true</useSkinShader>
     </graphicData>
@@ -115,7 +115,7 @@
 		<graphicData>
       <color>(180, 180, 180)</color>
       <colorType>Hair</colorType>
-			<graphicPath>Humanlike/HeadAttachments/BS_DemonHornsa</graphicPath>
+			<graphicPath>BS_HeadAttachments/BS_DemonHornsa</graphicPath>
     </graphicData>
 	</GeneDef>
 
@@ -125,7 +125,7 @@
 		<description>Carriers of this gene possess long impressive horns. This variant has the same colour as the carrier's skin.</description>
 		<iconPath>GeneIcons/BS_Horns/HornGenea</iconPath>
 		<graphicData>
-			<graphicPath>Humanlike/HeadAttachments/BS_DemonHornsa</graphicPath>
+			<graphicPath>BS_HeadAttachments/BS_DemonHornsa</graphicPath>
 			<layer>PostHeadgear</layer>
       <colorType>Skin</colorType>
       <useSkinShader>true</useSkinShader>
@@ -140,7 +140,7 @@
 		<graphicData>
       <color>(180, 180, 180)</color>
       <colorType>Hair</colorType>
-			<graphicPath>Humanlike/HeadAttachments/BS_DemonHornsb</graphicPath>
+			<graphicPath>BS_HeadAttachments/BS_DemonHornsb</graphicPath>
     </graphicData>
 	</GeneDef>
 
@@ -150,7 +150,7 @@
 		<description>Carriers of this gene possess short horns. This variant has the same colour as the carrier's skin.</description>
 		<iconPath>GeneIcons/BS_Horns/HornGeneb</iconPath>
 		<graphicData>
-			<graphicPath>Humanlike/HeadAttachments/BS_DemonHornsb</graphicPath>
+			<graphicPath>BS_HeadAttachments/BS_DemonHornsb</graphicPath>
 			<layer>PostHeadgear</layer>
       <colorType>Skin</colorType>
       <useSkinShader>true</useSkinShader>
@@ -165,7 +165,7 @@
 		<graphicData>
       <color>(200, 200, 200)</color>
       <colorType>Hair</colorType>
-			<graphicPath>Humanlike/HeadAttachments/BS_DemonHornsc</graphicPath>
+			<graphicPath>BS_HeadAttachments/BS_DemonHornsc</graphicPath>
     </graphicData>
 	</GeneDef>
 
@@ -175,7 +175,7 @@
 		<description>Carriers of this gene possess arching horns. This variant has the same colour as the carrier's skin.</description>
 		<iconPath>GeneIcons/BS_Horns/HornGenec</iconPath>
 		<graphicData>
-			<graphicPath>Humanlike/HeadAttachments/BS_DemonHornsc</graphicPath>
+			<graphicPath>BS_HeadAttachments/BS_DemonHornsc</graphicPath>
 			<layer>PostHeadgear</layer>
       <colorType>Skin</colorType>
       <useSkinShader>true</useSkinShader>
@@ -189,7 +189,7 @@
 		<iconPath>GeneIcons/BS_Horns/HornGened</iconPath>
 		<graphicData>
       <colorType>Hair</colorType>
-			<graphicPath>Humanlike/HeadAttachments/BS_DemonHornsd</graphicPath>
+			<graphicPath>BS_HeadAttachments/BS_DemonHornsd</graphicPath>
     </graphicData>
 	</GeneDef>
 
@@ -200,7 +200,7 @@
 		<iconPath>GeneIcons/BS_Horns/HornGened</iconPath>
 		<graphicData>
       <colorType>Skin</colorType>
-			<graphicPath>Humanlike/HeadAttachments/BS_DemonHornsd</graphicPath>
+			<graphicPath>BS_HeadAttachments/BS_DemonHornsd</graphicPath>
     </graphicData>
 	</GeneDef>
 
@@ -208,9 +208,9 @@
 		<defName>BS_TyrantCrown</defName>
 		<label>tyrant crown (skin-coloured)</label>
 		<description>Carriers of this gene possess bull-like horns. This variant has the same colour as the carrier's skin.</description>
-		<iconPath>Humanlike/HeadAttachments/BS_DemonHornsd_south</iconPath>
+		<iconPath>BS_HeadAttachments/BS_DemonHornsd_south</iconPath>
 		<graphicData>
-			<graphicPath>Humanlike/HeadAttachments/BS_DemonHornsd</graphicPath>
+			<graphicPath>BS_HeadAttachments/BS_DemonHornsd</graphicPath>
       <colorType>Skin</colorType>
       <useSkinShader>true</useSkinShader>
     </graphicData>
@@ -223,7 +223,7 @@
 		<iconPath>GeneIcons/BS_Horns/HornGenee</iconPath>
 		<graphicData>
       <colorType>Hair</colorType>
-			<graphicPath>Humanlike/HeadAttachments/BS_DemonHornse</graphicPath>
+			<graphicPath>BS_HeadAttachments/BS_DemonHornse</graphicPath>
     </graphicData>
 	</GeneDef>
 
@@ -233,7 +233,7 @@
 		<description>Carriers of this gene possess two pairs of horns. This variant has the same colour as the carrier's skin.</description>
 		<iconPath>GeneIcons/BS_Horns/HornGenee</iconPath>
 		<graphicData>
-			<graphicPath>Humanlike/HeadAttachments/BS_DemonHornse</graphicPath>
+			<graphicPath>BS_HeadAttachments/BS_DemonHornse</graphicPath>
       <colorType>Skin</colorType>
       <useSkinShader>true</useSkinShader>
     </graphicData>
@@ -246,7 +246,7 @@
 		<iconPath>GeneIcons/BS_Horns/HornGenef</iconPath>
 		<graphicData>
       <colorType>Hair</colorType>
-			<graphicPath>Humanlike/HeadAttachments/BS_DemonHornsf</graphicPath>
+			<graphicPath>BS_HeadAttachments/BS_DemonHornsf</graphicPath>
     </graphicData>
 	</GeneDef>
 
@@ -256,7 +256,7 @@
 		<description>Carriers of this gene possess two pairs of horns. This variant has the same colour as the carrier's skin.</description>
 		<iconPath>GeneIcons/BS_Horns/HornGenef</iconPath>
 		<graphicData>
-			<graphicPath>Humanlike/HeadAttachments/BS_DemonHornsf</graphicPath>
+			<graphicPath>BS_HeadAttachments/BS_DemonHornsf</graphicPath>
       <colorType>Skin</colorType>
       <useSkinShader>true</useSkinShader>
     </graphicData>
@@ -270,7 +270,7 @@
 		<graphicData>
       <colorType>Skin</colorType>
       <!-- <useSkinShader>true</useSkinShader> -->
-			<graphicPath>Humanlike/HeadAttachments/BS_OniHorns</graphicPath>
+			<graphicPath>BS_HeadAttachments/BS_OniHorns</graphicPath>
     </graphicData>
 	</GeneDef>
 
@@ -282,7 +282,7 @@
 		<graphicData>
       <colorType>Skin</colorType>
       <!-- <useSkinShader>true</useSkinShader> -->
-			<graphicPath>Humanlike/HeadAttachments/BS_OniSingleHorn</graphicPath>
+			<graphicPath>BS_HeadAttachments/BS_OniSingleHorn</graphicPath>
     </graphicData>
 	</GeneDef>
 

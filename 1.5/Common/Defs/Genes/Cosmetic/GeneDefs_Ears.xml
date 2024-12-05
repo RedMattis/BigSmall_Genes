@@ -10,7 +10,7 @@
       <li>
         <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
         <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
-        <texPath>Humanlike/HeadAttachments/BS_GenericAnimalPersonEars</texPath>
+        <texPath>BS_HeadAttachments/BS_GenericAnimalPersonEars</texPath>
         <useSkinShader>false</useSkinShader>
         <colorType>Hair</colorType>
         <drawData>
@@ -21,9 +21,7 @@
         <parentTagDef>Head</parentTagDef>
       </li>
     </renderNodeProperties>
-    <modExtensions>
-			
-		</modExtensions>
+
   </GeneDef>
   <GeneDef ParentName="GeneEarsBase">
     <defName>BS_FoxEars</defName>
@@ -53,7 +51,7 @@
       <li>
         <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
         <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
-        <texPath>Humanlike/HeadAttachments/BS_FoxEars</texPath>
+        <texPath>BS_HeadAttachments/BS_FoxEars</texPath>
         <useSkinShader>false</useSkinShader>
         <colorType>Hair</colorType>
         <drawData>
@@ -64,9 +62,7 @@
         <parentTagDef>Head</parentTagDef>
       </li>
     </renderNodeProperties>
-    <modExtensions>
-			
-		</modExtensions>
+
   </GeneDef>
   <GeneDef ParentName="GeneEarsBase">
     <defName>BS_Ears_PointedHD</defName>
@@ -95,7 +91,7 @@
       <li>
         <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
         <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
-        <texPath>Humanlike/HeadAttachments/BS_PointedEars</texPath>
+        <texPath>BS_HeadAttachments/BS_PointedEars</texPath>
         <useSkinShader>false</useSkinShader>
         <colorType>Skin</colorType>
         <drawData>
@@ -106,8 +102,42 @@
         <parentTagDef>Head</parentTagDef>
       </li>
     </renderNodeProperties>
-    <modExtensions>
-			
-		</modExtensions>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneEarsBase">
+    <defName>BS_DragonEars</defName>
+    <label>pointed ears (alternative)</label>
+    <description>Carriers of this gene have pointed ears.</description>
+    <iconPath>GeneIcons/BS_DragonEars</iconPath>
+    <symbolPack>
+      <prefixSymbols>
+        <li>
+          <symbol>draco</symbol>
+        </li>
+        <li>
+          <symbol>drake</symbol>
+        </li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li>
+          <symbol>ear</symbol>
+        </li>
+      </suffixSymbols>
+    </symbolPack>
+    <renderNodeProperties Inherit="False">
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPath>BS_HeadAttachments/BS_DragonEars</texPath>
+        <useSkinShader>false</useSkinShader>
+        <colorType>Skin</colorType>
+        <drawData>
+          <defaultData>
+            <layer>52</layer>
+          </defaultData>
+        </drawData>
+        <parentTagDef>Head</parentTagDef>
+      </li>
+    </renderNodeProperties>
   </GeneDef>
 </Defs>

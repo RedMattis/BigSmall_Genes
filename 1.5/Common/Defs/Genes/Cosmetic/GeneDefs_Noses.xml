@@ -8,7 +8,7 @@
       <li>
         <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
         <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
-        <texPath>Humanlike/HeadAttachments/BS_TrollNose</texPath>
+        <texPath>BS_HeadAttachments/BS_TrollNose</texPath>
         <narrowCrownHorizontalOffset>0.03</narrowCrownHorizontalOffset>
         <useSkinShader>true</useSkinShader>
         <useRottenColor>true</useRottenColor>
@@ -39,9 +39,7 @@
         <li><symbol>nose</symbol></li>
       </suffixSymbols>
     </symbolPack>
-    <modExtensions>
-			
-		</modExtensions>
+
     <selectionWeight>0.25</selectionWeight>
   </GeneDef>
 </Defs>

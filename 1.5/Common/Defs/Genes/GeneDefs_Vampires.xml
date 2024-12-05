@@ -14,9 +14,7 @@
     <minAgeActive>3</minAgeActive>
     <biostatCpx>1</biostatCpx>
     <biostatMet>10</biostatMet>
-    <modExtensions>
-			
-		</modExtensions>
+
   </GeneDef>
 
   <GeneDef>
@@ -26,9 +24,7 @@
     <description>Carriers of this gene have a troublesome tendency to bite their lovers.</description>
     <iconPath>GeneIcons/VU_BiteSleeper_2</iconPath>
     <biostatMet>1</biostatMet>
-    <modExtensions>
-			
-		</modExtensions>
+
     <canGenerateInGeneSet>false</canGenerateInGeneSet>
     <selectionWeight>0</selectionWeight>
   </GeneDef>

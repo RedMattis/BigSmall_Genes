@@ -5,7 +5,7 @@
     <description>Carriers of this gene have furry ears.\n\nUwU.</description>
     <iconPath>GeneIcons/BS_GenericAnimalEars</iconPath>
     <graphicData>
-      <graphicPath>Humanlike/HeadAttachments/BS_GenericAnimalPersonEars</graphicPath>
+      <graphicPath>BS_HeadAttachments/BS_GenericAnimalPersonEars</graphicPath>
       <colorType>Hair</colorType>
       <useSkinShader>false</useSkinShader>
     </graphicData>
@@ -18,7 +18,7 @@
     <description>Carriers of this gene have furry ears.\n\nUwU.</description>
     <iconPath>GeneIcons/BS_FoxEars</iconPath>
     <graphicData>
-      <graphicPath>Humanlike/HeadAttachments/BS_FoxEars</graphicPath>
+      <graphicPath>BS_HeadAttachments/BS_FoxEars</graphicPath>
       <colorType>Hair</colorType>
       <useSkinShader>false</useSkinShader>
     </graphicData>
@@ -41,7 +41,7 @@
     <description>Carriers of this gene have pointed ears without alpha-blending artefacts.</description>
     <iconPath>UI/Icons/Genes/Gene_EarPointed</iconPath>
     <graphicData>
-      <graphicPath>Humanlike/HeadAttachments/BS_PointedEars</graphicPath>
+      <graphicPath>BS_HeadAttachments/BS_PointedEars</graphicPath>
       <colorType>Skin</colorType>
       <useSkinShader>false</useSkinShader>
     </graphicData>

@@ -80,7 +80,7 @@
     <biostatMet>-1</biostatMet>
     <biostatArc>0</biostatArc>
     <modExtensions>
-      <li Class="BetterPrerequisites.GeneExtension">
+      <li Class="BigAndSmall.PawnExtension">
         <babyStartAge>3</babyStartAge>
         <sizeByAgeMult>
           <points>

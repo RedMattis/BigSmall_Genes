@@ -23,9 +23,7 @@
     <statOffsets>
       <BS_SoulPower>0.25</BS_SoulPower>
     </statOffsets>
-    <modExtensions>
-			
-		</modExtensions>
+
     <canGenerateInGeneSet>true</canGenerateInGeneSet>
     <selectionWeight>1</selectionWeight>
   </GeneDef>
@@ -53,9 +51,7 @@
     <statOffsets>
       <BS_SoulPower>0.25</BS_SoulPower>
     </statOffsets>
-    <modExtensions>
-			
-		</modExtensions>
+
     <canGenerateInGeneSet>true</canGenerateInGeneSet>
     <selectionWeight>1</selectionWeight>
   </GeneDef>
@@ -83,9 +79,7 @@
     <statOffsets>
       <BS_SoulPower>0.25</BS_SoulPower>
     </statOffsets>
-    <modExtensions>
-			
-		</modExtensions>
+
     <canGenerateInGeneSet>true</canGenerateInGeneSet>
     <selectionWeight>1</selectionWeight>
   </GeneDef>
@@ -115,9 +109,7 @@
     <statOffsets>
       <BS_SoulPower>0.25</BS_SoulPower>
     </statOffsets>
-    <modExtensions>
-			
-		</modExtensions>
+
     <canGenerateInGeneSet>true</canGenerateInGeneSet>
     <selectionWeight>0</selectionWeight>
   </GeneDef>
