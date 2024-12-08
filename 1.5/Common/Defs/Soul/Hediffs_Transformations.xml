@@ -434,7 +434,7 @@
       </li>
       <li>
         <workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
-        <texPath>Things/Pawn/BS_BodyAttachments/FurryTail/FurryTail</texPath>
+        <texPath>Things/Pawn/Humanlike/BodyAttachments/FurryTail/FurryTail</texPath>
         <colorType>Hair</colorType>
         <overrideMeshSize>(1, 1)</overrideMeshSize>
         <parentTagDef>Body</parentTagDef>

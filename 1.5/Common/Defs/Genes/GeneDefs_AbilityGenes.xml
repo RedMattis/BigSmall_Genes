@@ -16,6 +16,11 @@
     <biostatMet>0</biostatMet>
     <biostatCpx>3</biostatCpx>
     <selectionWeight>1</selectionWeight>
+    <modExtensions>
+      <li Class="BigAndSmall.PawnExtension">
+        <ignoreForceGender>True</ignoreForceGender>
+      </li>
+    </modExtensions>
   </GeneDef>
 
   <GeneDef>
