@@ -83,7 +83,7 @@
     <biostatMet>-1</biostatMet>
     <selectionWeight>1</selectionWeight>
     <displayOrderInCategory>430</displayOrderInCategory>
-    <iconPath>BS_Bodies/Mimic/Mimic_hulk_south</iconPath>
+    <iconPath>BS_Bodies/Mimic/mimic_hulk_south</iconPath>
     <fur>BS_MimicBody</fur>
     <tattoosVisible>false</tattoosVisible>
     <skinIsHairColor>false</skinIsHairColor>

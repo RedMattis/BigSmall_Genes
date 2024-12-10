@@ -39,13 +39,13 @@
     <defName>BS_MimicBody</defName>
     <noGraphic>true</noGraphic>
     <bodyTypeGraphicPaths>
-      <Hulk>BS_Bodies/Mimic/Mimic_hulk</Hulk>
+      <Hulk>BS_Bodies/Mimic/mimic_hulk</Hulk>
 
-      <Male>BS_Bodies/Mimic/Mimic_male</Male>
-      <Female>BS_Bodies/Mimic/Mimic_female</Female>
+      <Male>BS_Bodies/Mimic/mimic_male</Male>
+      <Female>BS_Bodies/Mimic/mimic_female</Female>
 
-      <Fat>BS_Bodies/Mimic/Mimic_fat</Fat>
-      <Thin>BS_Bodies/Mimic/Mimic_default</Thin>
+      <Fat>BS_Bodies/Mimic/mimic_fat</Fat>
+      <Thin>BS_Bodies/Mimic/mimic_default</Thin>
 
       <Child>BS_Bodies/BS_NoFur</Child>
       <Baby>BS_Bodies/BS_NoFur</Baby>
