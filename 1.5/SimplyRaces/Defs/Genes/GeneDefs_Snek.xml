@@ -33,7 +33,7 @@
     
     <missingGeneRomanceChanceFactor>0.75</missingGeneRomanceChanceFactor>
     <modExtensions>
-      <li Class="BetterPrerequisites.GeneExtension">
+      <li Class="BigAndSmall.PawnExtension">
         <canWalkOnCreep>true</canWalkOnCreep>
         <renderCacheOff>true</renderCacheOff>
         <applyBodyHediff>
@@ -169,7 +169,7 @@
     </capMods>
     <missingGeneRomanceChanceFactor>0.75</missingGeneRomanceChanceFactor>
     <modExtensions>
-      <li Class="BetterPrerequisites.GeneExtension">
+      <li Class="BigAndSmall.PawnExtension">
         <canWalkOnCreep>true</canWalkOnCreep>
         <renderCacheOff>true</renderCacheOff>
         <applyBodyHediff>

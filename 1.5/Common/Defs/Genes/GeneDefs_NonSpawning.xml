@@ -20,7 +20,7 @@
     </exclusionTags>
     <selectionWeight>0</selectionWeight>
     <modExtensions>
-			<li Class="BetterPrerequisites.GeneExtension">
+			<li Class="BigAndSmall.PawnExtension">
 				<hideInGenePicker>true</hideInGenePicker>
 			</li>
 		</modExtensions>
@@ -68,7 +68,7 @@
     <aggroMentalBreakSelectionChanceFactor>999</aggroMentalBreakSelectionChanceFactor>
     <selectionWeight>0</selectionWeight>
     <modExtensions>
-			<li Class="BetterPrerequisites.GeneExtension">
+			<li Class="BigAndSmall.PawnExtension">
 				<hideInGenePicker>true</hideInGenePicker>
 			</li>
 		</modExtensions>

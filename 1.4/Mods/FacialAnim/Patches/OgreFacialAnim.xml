@@ -44,8 +44,6 @@
 				<graphicPaths>
 					<li>BS_Titan/bp_default_normal</li>
 					<li>BS_Titan/bp_female_normal</li>
-					<!-- <li>Humanlike/Ogre/Heads_Blank/Pointy/Male/normal</li>
-					<li>Humanlike/Ogre/Heads_Blank/Square/Male/normal</li> -->
 				</graphicPaths>
 				<layer>PostSkin</layer>
 				<colorType>Skin</colorType>				

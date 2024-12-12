@@ -7,7 +7,7 @@
     <match Class="PatchOperationAdd">
       <xpath>/Defs/GeneDef[defName="Exoskin"]/modExtensions</xpath>
       <value>
-        <li Class="BetterPrerequisites.GeneExtension">
+        <li Class="BigAndSmall.PawnExtension">
           <disableFacialAnimations>true</disableFacialAnimations>
         </li>
       </value>

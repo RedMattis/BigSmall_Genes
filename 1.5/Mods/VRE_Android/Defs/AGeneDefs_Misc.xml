@@ -180,7 +180,7 @@
     </exclusionTags>
     <missingGeneRomanceChanceFactor>0</missingGeneRomanceChanceFactor>
 		 <modExtensions>
-			<li Class="BetterPrerequisites.GeneExtension">
+			<li Class="BigAndSmall.PawnExtension">
 				<applyBodyHediff>
 					<li>
 						<hediff>BS_Piloted</hediff>
@@ -208,7 +208,7 @@
     </exclusionTags>
 		<biostatMet>-1</biostatMet>
 		 <modExtensions>
-			<li Class="BetterPrerequisites.GeneExtension">
+			<li Class="BigAndSmall.PawnExtension">
 				<applyBodyHediff>
 					<li>
 						<hediff>BS_PilotAssisted</hediff>
@@ -237,7 +237,7 @@
     </exclusionTags>
     <missingGeneRomanceChanceFactor>0</missingGeneRomanceChanceFactor>
 		 <modExtensions>
-			<li Class="BetterPrerequisites.GeneExtension">
+			<li Class="BigAndSmall.PawnExtension">
 				<applyBodyHediff>
 					<li>
 						<hediff>BS_PilotedSameSize</hediff>
@@ -266,7 +266,7 @@
     </exclusionTags>
     <missingGeneRomanceChanceFactor>0</missingGeneRomanceChanceFactor>
 		 <modExtensions>
-			<li Class="BetterPrerequisites.GeneExtension">
+			<li Class="BigAndSmall.PawnExtension">
 				<applyBodyHediff>
 					<li>
 						<hediff>BS_PermanentPiloted</hediff>

@@ -95,7 +95,7 @@
     </statOffsets>
     <modExtensions>
 
-      <li Class="BetterPrerequisites.GeneExtension">
+      <li Class="BigAndSmall.PawnExtension">
         <thingDefSwap MayRequire="erdelf.HumanoidAlienRaces">BS_GluttonRace</thingDefSwap>
         <forceThingDefSwap>false</forceThingDefSwap>
       </li>

@@ -25,7 +25,7 @@
     </exclusionTags>
     <modExtensions>
 			
-      <li Class="BetterPrerequisites.GeneExtension">
+      <li Class="BigAndSmall.PawnExtension">
 				<thingDefSwap>BS_HumanFouramed</thingDefSwap>
 			</li>
 		</modExtensions>

@@ -51,7 +51,7 @@
     <geneClass>BigAndSmall.ProductionGene</geneClass>
     <iconPath>BS_Icons/Spider</iconPath>
     <modExtensions>
-      <li Class="BetterPrerequisites.GeneExtension">
+      <li Class="BigAndSmall.PawnExtension">
         <thingDefSwap>BS_SpiderPersonRace</thingDefSwap>
       </li>
 
@@ -154,7 +154,7 @@
     <description>Carriers of this gene have their lower half replaced with the body of a spider. Has science gone too far?\n\nProduces 25 Devilstrand every 4 days, modified by body-size.\n\nSpider body has hair-colour</description>
     <geneClass>BigAndSmall.ProductionGene</geneClass>
     <modExtensions>
-      <li Class="BetterPrerequisites.GeneExtension">
+      <li Class="BigAndSmall.PawnExtension">
         <thingDefSwap MayRequire="erdelf.HumanoidAlienRaces">BS_SpiderPersonRace</thingDefSwap>
       </li>
 

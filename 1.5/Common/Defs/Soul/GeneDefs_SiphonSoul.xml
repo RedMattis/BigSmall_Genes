@@ -119,7 +119,7 @@
     <iconPath>GeneIcons/BS_SoulEaterOnKill</iconPath>
     <biostatMet>-1</biostatMet>
     <modExtensions>
-      <li Class="BetterPrerequisites.GeneExtension">
+      <li Class="BigAndSmall.PawnExtension">
 				<consumeSoulOnHit>
           <gainMultiplier>0.15</gainMultiplier>
           <exponentialFalloff>2.5</exponentialFalloff>

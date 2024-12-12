@@ -12,7 +12,7 @@
       <li>taur</li>
     </exclusionTags>
     <modExtensions>
-      <li Class="BetterPrerequisites.GeneExtension">
+      <li Class="BigAndSmall.PawnExtension">
         <thingDefSwap>BS_Centaur</thingDefSwap>
       </li>
       <li Class="BigAndSmall.Flagger"><flags><ShowBaseAbdomen/></flags></li>

@@ -51,7 +51,7 @@
     </beardTagFilter>
     <geneClass>BetterPrerequisites.PGene</geneClass>
     <modExtensions>
-      <li Class="BetterPrerequisites.GeneExtension">
+      <li Class="BigAndSmall.PawnExtension">
         <disableFacialAnimations>true</disableFacialAnimations>
       </li>
 
@@ -96,7 +96,7 @@
     </beardTagFilter>
     <geneClass>BetterPrerequisites.PGene</geneClass>
     <modExtensions>
-      <li Class="BetterPrerequisites.GeneExtension">
+      <li Class="BigAndSmall.PawnExtension">
         <facialDisabler>
         </facialDisabler>
       </li>
@@ -136,7 +136,7 @@
     </beardTagFilter>
     <geneClass>BetterPrerequisites.PGene</geneClass>
     <modExtensions>
-      <li Class="BetterPrerequisites.GeneExtension">
+      <li Class="BigAndSmall.PawnExtension">
         <facialDisabler>
           <browName>retain</browName>
         </facialDisabler>
@@ -186,7 +186,7 @@
     </beardTagFilter>
     <geneClass>BetterPrerequisites.PGene</geneClass>
     <modExtensions>
-      <li Class="BetterPrerequisites.GeneExtension">
+      <li Class="BigAndSmall.PawnExtension">
         <facialDisabler>
         </facialDisabler>
       </li>

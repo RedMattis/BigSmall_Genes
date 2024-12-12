@@ -309,7 +309,7 @@
       </li>
     </forcedTraits>
     <modExtensions>
-      <li Class="BetterPrerequisites.GeneExtension">
+      <li Class="BigAndSmall.PawnExtension">
         <sizeByAge>
           <points>
             <li>(0, 0)</li>

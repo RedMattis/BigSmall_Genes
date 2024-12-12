@@ -3,7 +3,7 @@
     <defName>VU_DarknessWoundHealing_Fast</defName>
     <label>fast darkness healing</label>
     <labelShortAdj>super-heal</labelShortAdj>
-    <description>Carriers of this gene heal from wounds at an alarming rate at night, but struggle to heal under the light of the sun.</description>
+    <description>Carriers of this gene heal from wounds at an alarming rate at night, but struggle to heal during the day, especially if exposed to sunlight.</description>
     <iconPath>GeneIcons/VU_DarknessHealing</iconPath>
     <displayOrderInCategory>50</displayOrderInCategory>
     <marketValueFactor>2.0</marketValueFactor>
@@ -30,7 +30,7 @@
     <defName>VU_DarknessWoundHealing_UltraFast</defName>
     <label>exceptional darkness healing</label>
     <labelShortAdj>super-heal</labelShortAdj>
-    <description>Carriers of this gene heal at an unbeliavable speed under the veil of darkness, but struggle to heal at all under the light of the sun..</description>
+    <description>Carriers of this gene heal at an unbeliavable speed under the veil of darkness, but struggle to heal during the day, especially if exposed to sunlight.</description>
     <iconPath>GeneIcons/VU_DarknessHealing_Fast</iconPath>
     <displayOrderInCategory>50</displayOrderInCategory>
     <marketValueFactor>2.0</marketValueFactor>
@@ -57,7 +57,7 @@
     <defName>VU_DarknessMelee</defName>
     <label>darkness melee</label>
     <labelShortAdj>strong</labelShortAdj>
-    <description>Carriers of this gene do more damage in close quarters combat at night. When caught in the sun they are significantly weakened.</description>
+    <description>Carriers of this gene do more damage in close quarters combat at night. When caught outside in the sun they are significantly weakened.</description>
     <iconPath>GeneIcons/VU_DarknessMelee</iconPath>
     <displayOrderInCategory>40</displayOrderInCategory>
     <conditionalStatAffecters>
@@ -80,7 +80,7 @@
     <defName>VU_DarknessMelee_Strong</defName>
     <label>darkness improved melee</label>
     <labelShortAdj>strong</labelShortAdj>
-    <description>Carriers of this gene do more damage in close quarters combat at night. When caught in the sun they are significantly weakened.</description>
+    <description>Carriers of this gene do more damage in close quarters combat at night. They are less strong during the day, especially if exposed to sunlight.</description>
     <iconPath>GeneIcons/VU_DarknessMelee_Strong</iconPath>
     <displayOrderInCategory>40</displayOrderInCategory>
     <statFactors>
@@ -106,7 +106,7 @@
     <defName>VU_Darkness_MoveSpeed_Quick</defName>
     <label>darkness fast runner</label>
     <labelShortAdj>fast</labelShortAdj>
-    <description>Carriers of this gene move more quickly than normal after nightfall.</description>
+    <description>Carriers of this gene move more quickly than normal after nightfall, but are slowed down during the day, especially if exposed to sunlight.</description>
     <iconPath>GeneIcons/VU_DarknessSpeed_Fast</iconPath>
     <displayOrderInCategory>20</displayOrderInCategory>
 
@@ -174,7 +174,7 @@
     <defName>VU_Darkness_MoveSpeed_VeryQuick</defName>
     <label>darkness very fast runner</label>
     <labelShortAdj>fast</labelShortAdj>
-    <description>Carriers of this gene move much more quickly than normal after nightfall.</description>
+    <description>Carriers of this gene move much more quickly than normal after nightfall, but are slowed down during the day, especially if exposed to sunlight.</description>
     <iconPath>GeneIcons/VU_DarknessSpeed_VeryFast</iconPath>
     <displayOrderInCategory>20</displayOrderInCategory>
 

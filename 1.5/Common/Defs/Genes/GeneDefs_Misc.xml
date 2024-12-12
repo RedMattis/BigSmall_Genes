@@ -239,7 +239,7 @@
 
     <!--Disabling DBHThrist from genes doesn't seem to actually work, so we're locking those too.-->
     <modExtensions>
-      <li Class="BetterPrerequisites.GeneExtension">
+      <li Class="BigAndSmall.PawnExtension">
         <lockedNeeds>
           <li>
             <need>Food</need>
@@ -277,7 +277,7 @@
 
     <!--Disabling DBHThrist from genes doesn't seem to actually work, so we're locking those too.-->
     <modExtensions>
-      <li Class="BetterPrerequisites.GeneExtension">
+      <li Class="BigAndSmall.PawnExtension">
         <lockedNeeds>
           <li>
             <need>Food</need>
@@ -491,7 +491,7 @@
       <HSAU_GhoulismSusceptibility MayRequire="Baskerville.HellsingARMSUltimate">0</HSAU_GhoulismSusceptibility>
     </statFactors>
     <modExtensions>
-			<li Class="BetterPrerequisites.GeneExtension">
+			<li Class="BigAndSmall.PawnExtension">
 				<isDeathlike>true</isDeathlike>
 			</li>
 		</modExtensions>
@@ -512,7 +512,7 @@
       <li>BS_Pacifism</li>
     </exclusionTags>
     <modExtensions>
-      <li Class="BetterPrerequisites.GeneExtension">
+      <li Class="BigAndSmall.PawnExtension">
         <forceUnarmed>true</forceUnarmed>
       </li>
     </modExtensions>
@@ -550,7 +550,7 @@
     <biostatMet>-1</biostatMet>
     <geneClass>BetterPrerequisites.PGene</geneClass>
     <modExtensions>
-      <li Class="BetterPrerequisites.GeneExtension">
+      <li Class="BigAndSmall.PawnExtension">
         <forceUnarmed>true</forceUnarmed>
       </li>
     </modExtensions>
@@ -569,7 +569,7 @@
     <biostatMet>-2</biostatMet>
     <geneClass>BetterPrerequisites.PGene</geneClass>
     <modExtensions>
-      <li Class="BetterPrerequisites.GeneExtension">
+      <li Class="BigAndSmall.PawnExtension">
         <forceUnarmed>true</forceUnarmed>
       </li>
     </modExtensions>
@@ -623,7 +623,7 @@
     </exclusionTags>
     <missingGeneRomanceChanceFactor>0</missingGeneRomanceChanceFactor>
 		 <modExtensions>
-			<li Class="BetterPrerequisites.GeneExtension">
+			<li Class="BigAndSmall.PawnExtension">
 				<applyBodyHediff>
 					<li>
 						<hediff>BS_PermanentPiloted</hediff>

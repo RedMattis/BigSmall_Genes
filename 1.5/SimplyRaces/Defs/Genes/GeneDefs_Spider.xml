@@ -14,7 +14,7 @@
       <li>spiderlegs</li>
     </exclusionTags>
     <modExtensions>
-      <li Class="BetterPrerequisites.GeneExtension">
+      <li Class="BigAndSmall.PawnExtension">
         <thingDefSwap>BS_SpiderPersonRace</thingDefSwap>
       </li>
       <li Class="BigAndSmall.Flagger"><flags><ShowBaseAbdomen/></flags></li>

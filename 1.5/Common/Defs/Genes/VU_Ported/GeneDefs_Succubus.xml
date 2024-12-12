@@ -140,7 +140,7 @@
           <li>BS_SkinBloodRed</li> -->
         </supressedGenes>
       </li>
-      <li Class="BetterPrerequisites.GeneExtension">
+      <li Class="BigAndSmall.PawnExtension">
         <hideInGenePicker>true</hideInGenePicker>
       </li>
     </modExtensions>
@@ -161,7 +161,7 @@
     </descriptionHyperlinks>
     <biostatMet>-5</biostatMet>
     <modExtensions>
-			<li Class="BetterPrerequisites.GeneExtension">
+			<li Class="BigAndSmall.PawnExtension">
 				<hideInGenePicker>true</hideInGenePicker>
 			</li>
 		</modExtensions>

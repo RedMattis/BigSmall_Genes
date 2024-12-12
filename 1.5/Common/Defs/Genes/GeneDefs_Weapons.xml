@@ -16,7 +16,7 @@
 		</statOffsets>
 		<modExtensions>
 			
-			<li Class="BetterPrerequisites.GeneExtension">
+			<li Class="BigAndSmall.PawnExtension">
 				<applyPartHediff>
 					<li>
 						<hediff>BS_AcidAttack</hediff>
@@ -47,7 +47,7 @@
 		<displayCategory>BS_InnateAttacks</displayCategory>
 		<selectionWeight>0.5</selectionWeight>
 		<modExtensions>
-			<li Class="BetterPrerequisites.GeneExtension">
+			<li Class="BigAndSmall.PawnExtension">
 				<applyPartHediff>
 					<li>
 						<hediff>LoS_VenomClaws</hediff>
@@ -85,7 +85,7 @@
 		<displayCategory>BS_InnateAttacks</displayCategory>
 		<selectionWeight>0.5</selectionWeight>
 		<modExtensions>
-			<li Class="BetterPrerequisites.GeneExtension">
+			<li Class="BigAndSmall.PawnExtension">
 				<applyPartHediff>
 					<li>
 						<hediff>BS_Talons</hediff>
@@ -120,7 +120,7 @@
       <EatingSpeed>4</EatingSpeed>
     </statFactors>
 		<modExtensions>
-			<li Class="BetterPrerequisites.GeneExtension">
+			<li Class="BigAndSmall.PawnExtension">
 				<applyPartHediff>
 					<li>
 						<hediff>BS_FeedingFrenzy</hediff>

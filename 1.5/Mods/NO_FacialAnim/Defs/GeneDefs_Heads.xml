@@ -196,7 +196,7 @@
       </tags>
     </beardTagFilter>
     <modExtensions>
-      <li Class="BetterPrerequisites.GeneExtension">
+      <li Class="BigAndSmall.PawnExtension">
 				<disableFacialAnimations>true</disableFacialAnimations>
 			</li>
 			
@@ -241,7 +241,7 @@
       </tags>
     </beardTagFilter>
     <modExtensions>
-      <li Class="BetterPrerequisites.GeneExtension">
+      <li Class="BigAndSmall.PawnExtension">
 				<disableFacialAnimations>true</disableFacialAnimations>
 			</li>
 			

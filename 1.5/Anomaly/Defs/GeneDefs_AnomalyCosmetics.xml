@@ -14,7 +14,7 @@
       <li MayRequire="Ludeon.RimWorld.Biotech">Ghoul_Wide</li>
     </forcedHeadTypes>
     <modExtensions>
-      <li Class="BetterPrerequisites.GeneExtension">
+      <li Class="BigAndSmall.PawnExtension">
 				<disableFacialAnimations>true</disableFacialAnimations>
 			</li>
     </modExtensions>

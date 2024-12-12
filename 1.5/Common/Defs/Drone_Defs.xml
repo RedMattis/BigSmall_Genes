@@ -34,7 +34,7 @@
     <exclusionTags>
     </exclusionTags>
     <modExtensions>
-      <li Class="BetterPrerequisites.GeneExtension">
+      <li Class="BigAndSmall.PawnExtension">
         <isDrone>true</isDrone>
         <applyBodyHediff><li><hediff>BS_DroneHediff</hediff></li></applyBodyHediff>
       </li>

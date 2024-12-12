@@ -88,7 +88,7 @@
 		</exclusionTags>
 		<selectionWeight>1</selectionWeight>
     <modExtensions>
-			<li Class="BetterPrerequisites.GeneExtension">
+			<li Class="BigAndSmall.PawnExtension">
 				<conditionals>
 					<li Class="BigAndSmall.ConditionalStatAffecter_PsychicSensitivityNormal" /></conditionals>
 				<applyBodyHediff>
@@ -204,7 +204,7 @@
 		</statOffsets>
 		<selectionWeight>1</selectionWeight>
 		<modExtensions>
-			<li Class="BetterPrerequisites.GeneExtension">
+			<li Class="BigAndSmall.PawnExtension">
 				<preventDisfigurement>true</preventDisfigurement>
 				<conditionals>
 					<li Class="BigAndSmall.ConditionalStatAffecter_PsychicSensitivityNormal" />

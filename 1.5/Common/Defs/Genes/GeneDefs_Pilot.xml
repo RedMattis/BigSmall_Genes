@@ -14,7 +14,7 @@
       <li>BS_Pilotable</li>
     </exclusionTags>
 		 <modExtensions>
-			<li Class="BetterPrerequisites.GeneExtension">
+			<li Class="BigAndSmall.PawnExtension">
 				<applyBodyHediff>
 					<li>
 						<hediff>BS_Piloted</hediff>
@@ -39,7 +39,7 @@
       <li>BS_Pilotable</li>
     </exclusionTags>
 		 <modExtensions>
-			<li Class="BetterPrerequisites.GeneExtension">
+			<li Class="BigAndSmall.PawnExtension">
 				<applyBodyHediff>
 					<li>
 						<hediff>BS_PilotAssisted</hediff>
@@ -64,7 +64,7 @@
       <li>BS_Pilotable</li>
     </exclusionTags>
 		 <modExtensions>
-			<li Class="BetterPrerequisites.GeneExtension">
+			<li Class="BigAndSmall.PawnExtension">
 				<applyBodyHediff>
 					<li>
 						<hediff>BS_PilotRequired</hediff>
@@ -90,7 +90,7 @@
       <li>BS_Pilotable</li>
     </exclusionTags>
 		 <modExtensions>
-			<li Class="BetterPrerequisites.GeneExtension">
+			<li Class="BigAndSmall.PawnExtension">
 				<applyBodyHediff>
 					<li>
 						<hediff>BS_PilotedSameSize</hediff>

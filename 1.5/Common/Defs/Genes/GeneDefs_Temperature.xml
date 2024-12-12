@@ -143,7 +143,7 @@
     <geneClass>BetterPrerequisites.PGene</geneClass>
     <modExtensions>
 			
-      <li Class="BetterPrerequisites.GeneExtension">
+      <li Class="BigAndSmall.PawnExtension">
 				<applyBodyHediff><li><hediff>BS_HeatGenerator</hediff></li></applyBodyHediff>
 			</li>
 		</modExtensions>
@@ -186,7 +186,7 @@
     <geneClass>BetterPrerequisites.PGene</geneClass>
     <modExtensions>
 			
-      <li Class="BetterPrerequisites.GeneExtension">
+      <li Class="BigAndSmall.PawnExtension">
 				<applyBodyHediff><li><hediff>BS_ColdGenerator</hediff></li></applyBodyHediff>
 			</li>
 		</modExtensions>

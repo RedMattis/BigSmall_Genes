@@ -111,7 +111,7 @@
       </suffixSymbols>
     </symbolPack>
     <modExtensions>
-      <li Class="BetterPrerequisites.GeneExtension">
+      <li Class="BigAndSmall.PawnExtension">
 				<disableFacialAnimations>true</disableFacialAnimations>
 			</li>
 
