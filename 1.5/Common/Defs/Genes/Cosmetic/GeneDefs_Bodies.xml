@@ -114,4 +114,64 @@
       </li>
     </renderNodeProperties>
   </GeneDef>
+
+  <!-- <GeneDef>
+    <defName>BS_RottenBody</defName>
+    <label>rotted body</label>
+    <displayCategory>Cosmetic_Body</displayCategory>
+    <description>Carriers of this gene have a head and body with apperance like a rotted corpse.</description>
+    <biostatCpx>0</biostatCpx>
+    <biostatMet>0</biostatMet>
+    <selectionWeight>1</selectionWeight>
+    <displayOrderInCategory>427</displayOrderInCategory>
+    <iconPath>GeneIcons/VU_Skull</iconPath>
+    <exclusionTags>
+      <li>BS_RotState</li>
+    </exclusionTags>
+    <modExtensions>
+      <li Class="BigAndSmall.PawnExtension">
+        <forcedRotDrawMode>Rotting</forcedRotDrawMode>
+      </li>
+    </modExtensions>
+  </GeneDef> -->
+
+  <!-- <GeneDef>
+    <defName>BS_DessicatedBody</defName>
+    <label>skeletal body</label>
+    <displayCategory>Cosmetic_Body</displayCategory>
+    <description>Carriers of this gene have a head and body with apperace like a dessicated corpse.</description>
+    <biostatCpx>0</biostatCpx>
+    <biostatMet>0</biostatMet>
+    <selectionWeight>1</selectionWeight>
+    <displayOrderInCategory>426</displayOrderInCategory>
+    <iconPath>GeneIcons/VU_Skull</iconPath>
+    <exclusionTags>
+      <li>BS_RotState</li>
+    </exclusionTags>
+    <modExtensions>
+      <li Class="BigAndSmall.PawnExtension">
+        <forcedRotDrawMode>Dessicated</forcedRotDrawMode>
+      </li>
+    </modExtensions>
+  </GeneDef> -->
+
+  <!-- <GeneDef>
+    <defName>BS_FreshBody</defName>
+    <label>life-like body</label>
+    <displayCategory>Cosmetic_Body</displayCategory>
+    <description>Carriers of this gene have a head and body which always appears lifelike even should the insides are actually rotted or mostly dessicated.</description>
+    <biostatCpx>0</biostatCpx>
+    <biostatMet>0</biostatMet>
+    <selectionWeight>0.1</selectionWeight>
+    <displayOrderInCategory>425</displayOrderInCategory>
+    <iconPath>GeneIcons/VU_Skull</iconPath>
+    <exclusionTags>
+      <li>BS_RotState</li>
+    </exclusionTags>
+    <modExtensions>
+      <li Class="BigAndSmall.PawnExtension">
+        <forcedRotDrawMode>Fresh</forcedRotDrawMode>
+      </li>
+    </modExtensions>
+  </GeneDef> -->
 </Defs>
