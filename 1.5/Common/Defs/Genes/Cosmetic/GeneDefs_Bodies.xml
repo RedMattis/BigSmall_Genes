@@ -115,7 +115,11 @@
     </renderNodeProperties>
   </GeneDef>
 
-  <!-- <GeneDef>
+  <GeneDef Name="BS_RotStage" Abstract="True">
+    <randomChosen>true</randomChosen>
+  </GeneDef>
+
+  <!-- <GeneDef ParentName="BS_RotStage">
     <defName>BS_RottenBody</defName>
     <label>rotted body</label>
     <displayCategory>Cosmetic_Body</displayCategory>
@@ -135,14 +139,14 @@
     </modExtensions>
   </GeneDef> -->
 
-  <!-- <GeneDef>
+  <GeneDef ParentName="BS_RotStage">
     <defName>BS_DessicatedBody</defName>
     <label>skeletal body</label>
     <displayCategory>Cosmetic_Body</displayCategory>
-    <description>Carriers of this gene have a head and body with apperace like a dessicated corpse.</description>
+    <description>Carriers of this gene have a head and body with appearance like a desiccated corpse.</description>
     <biostatCpx>0</biostatCpx>
     <biostatMet>0</biostatMet>
-    <selectionWeight>1</selectionWeight>
+    <selectionWeight>0.5</selectionWeight>
     <displayOrderInCategory>426</displayOrderInCategory>
     <iconPath>GeneIcons/VU_Skull</iconPath>
     <exclusionTags>
@@ -153,9 +157,82 @@
         <forcedRotDrawMode>Dessicated</forcedRotDrawMode>
       </li>
     </modExtensions>
-  </GeneDef> -->
+  </GeneDef>
 
-  <!-- <GeneDef>
+  <GeneDef ParentName="BS_RotStage">
+    <defName>BS_DessicatedBodyWithHair</defName>
+    <label>skeletal + hair</label>
+    <displayCategory>Cosmetic_Body</displayCategory>
+    <description>Carriers of this gene have a head and body with appearance like a desiccated corpse. They retain their hair.</description>
+    <biostatCpx>0</biostatCpx>
+    <biostatMet>0</biostatMet>
+    <selectionWeight>0.5</selectionWeight>
+    <displayOrderInCategory>426</displayOrderInCategory>
+    <iconPath>GeneIcons/VU_Skull</iconPath>
+    <exclusionTags>
+      <li>BS_RotState</li>
+    </exclusionTags>
+    <renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_Hair</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <rotDrawMode>Dessicated</rotDrawMode>
+        <colorType>Hair</colorType>
+        <skipFlag>Hair</skipFlag>
+        <baseLayer>62</baseLayer>
+        <parentTagDef>Head</parentTagDef>
+			</li>
+		</renderNodeProperties>
+    <modExtensions>
+      <li Class="BigAndSmall.PawnExtension">
+        <forcedRotDrawMode>Dessicated</forcedRotDrawMode>
+      </li>
+    </modExtensions>
+  </GeneDef>
+
+  <GeneDef ParentName="BS_RotStage">
+    <defName>BS_DessicatedBodyWithGreyHair</defName>
+    <label>skeletal + bleached hair</label>
+    <displayCategory>Cosmetic_Body</displayCategory>
+    <description>Carriers of this gene have a head and body with appearance like a desiccated corpse. They have matted hair.</description>
+    <biostatCpx>0</biostatCpx>
+    <biostatMet>0</biostatMet>
+    <selectionWeight>0.5</selectionWeight>
+    <displayOrderInCategory>426</displayOrderInCategory>
+    <iconPath>GeneIcons/VU_Skull</iconPath>
+    <exclusionTags>
+      <li>BS_RotState</li>
+    </exclusionTags>
+    <renderNodeProperties>
+			<li Class="BigAndSmall.PawnRenderNodeProps_HSVHair">
+        <saturation>0.3</saturation>
+        <valueGradientRemap>
+          <points>
+            <li>(0, 0)</li>
+            <li>(0.1, 0.05)</li>
+            <li>(0.2, 0.2)</li>
+            <li>(0.3, 0.5)</li>
+            <li>(0.75, 0.85)</li>
+            <li>(1.0, 1.0)</li>
+          </points>
+        </valueGradientRemap>
+				<nodeClass>BigAndSmall.PawnRenderNode_HSVHair</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <rotDrawMode>Dessicated</rotDrawMode>
+        <colorType>Hair</colorType>
+        <skipFlag>Hair</skipFlag>
+        <baseLayer>62</baseLayer>
+        <parentTagDef>Head</parentTagDef>
+			</li>
+		</renderNodeProperties>
+    <modExtensions>
+      <li Class="BigAndSmall.PawnExtension">
+        <forcedRotDrawMode>Dessicated</forcedRotDrawMode>
+      </li>
+    </modExtensions>
+  </GeneDef>
+
+  <!-- <GeneDef ParentName="BS_RotStage">
     <defName>BS_FreshBody</defName>
     <label>life-like body</label>
     <displayCategory>Cosmetic_Body</displayCategory>
