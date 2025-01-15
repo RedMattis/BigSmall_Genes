@@ -1,25 +1,75 @@
 <Defs>
-<!-- 
+
+  <!--
+  Not sure if I should keep the old Ogre heads or replace them with the scarier ones from Sir Van.
+  Might be best to just make a new Xenotype for them...
+  -->
   <GeneDef ParentName="GeneJawBase">
-    <defName>BS_BrokenTitanHead</defName>
-    <label>urb cyborg head</label>
-    <description>Carriers of this gene have partial cybernetic-looking head</description>
-    <iconPath>GeneIcons/BS_TitanHead_Icon</iconPath>
+    <defName>BS_FomorialHead_Savage</defName>
+    <label>Fomorian head</label>
+    <description>Carriers of this gene have big scary fomorian head</description>
+    <iconPath>GeneIcons/BS_OgreHead</iconPath>
     <displayOrderInCategory>97</displayOrderInCategory>
     <forcedHeadTypes>
-      <li>BS_BrokenTitanHead</li>
+      <li>BS_OgreHead_SavageA</li>
+      <li>BS_OgreHead_SavageB</li>
+      <li>BS_OgreHead_SavageC</li>
+      <li>BS_OgreHead_SavageD</li>
     </forcedHeadTypes>
-    <selectionWeight>0.5</selectionWeight>
+    <selectionWeight>0.25</selectionWeight>
     <canGenerateInGeneSet>true</canGenerateInGeneSet>
-  </GeneDef> -->
+  </GeneDef>
+
+  <HeadTypeDef ParentName="AverageBase">
+    <defName>BS_OgreHead_SavageA</defName>
+    <graphicPath>BS_Heads/Ogre/OgreHeadA</graphicPath>
+    <randomChosen>false</randomChosen>
+    <gender>None</gender>
+    <selectionWeight>99999</selectionWeight>
+    <requiredGenes>
+      <li>BS_FomorialHead_Savage</li>
+    </requiredGenes>
+  </HeadTypeDef>
+
+  <HeadTypeDef ParentName="AverageBase">
+    <defName>BS_OgreHead_SavageB</defName>
+    <graphicPath>BS_Heads/Ogre/OgreHeadB</graphicPath>
+    <randomChosen>false</randomChosen>
+    <gender>None</gender>
+    <selectionWeight>99999</selectionWeight>
+    <requiredGenes>
+      <li>BS_FomorialHead_Savage</li>
+    </requiredGenes>
+  </HeadTypeDef>
+
+  <HeadTypeDef ParentName="AverageBase">
+    <defName>BS_OgreHead_SavageC</defName>
+    <graphicPath>BS_Heads/Ogre/OgreHeadC</graphicPath>
+    <randomChosen>false</randomChosen>
+    <gender>None</gender>
+    <selectionWeight>99999</selectionWeight>
+    <requiredGenes>
+      <li>BS_FomorialHead_Savage</li>
+    </requiredGenes>
+  </HeadTypeDef>
+
+  <HeadTypeDef ParentName="AverageBase">
+    <defName>BS_OgreHead_SavageD</defName>
+    <graphicPath>BS_Heads/Ogre/OgreHeadD</graphicPath>
+    <randomChosen>false</randomChosen>
+    <gender>None</gender>
+    <selectionWeight>99999</selectionWeight>
+    <requiredGenes>
+      <li>BS_FomorialHead_Savage</li>
+    </requiredGenes>
+  </HeadTypeDef>
 
   <!-- Ogre -->
-
   <GeneDef ParentName="GeneJawBase">
     <defName>BS_OgreHead</defName>
     <label>ogre head</label>
     <description>Carriers of this gene have big ugly ogre head</description>
-    <iconPath>GeneIcons/BS_OgreHead</iconPath>
+    <iconPath>GeneIcons/BS_OgreHead_old</iconPath>
     <displayOrderInCategory>97</displayOrderInCategory>
     <forcedHeadTypes>
       <li>BS_OgreHead_Normal</li>
@@ -28,7 +78,6 @@
     </forcedHeadTypes>
     <selectionWeight>0.25</selectionWeight>
     <canGenerateInGeneSet>true</canGenerateInGeneSet>
-
   </GeneDef>
 
   <HeadTypeDef ParentName="AverageBase">

@@ -11,7 +11,7 @@
     <customEffectDescriptions>
       <li>Gene is incompatible with the very large body size genes.</li>
     </customEffectDescriptions>
-    <description>Carriers of this gene can transform into a larger more powerful form temporarily, the power of which is determined by the amount of Anomalous Power possessed. Sprouts glorious feathered wings, a halo, and gains increased ability to resist injury.</description>
+    <description>Carriers of this gene can transform into a larger more powerful form temporarily, the power of which is determined by the amount of Soul Power possessed. Sprouts glorious feathered wings, a halo, and gains increased ability to resist injury.</description>
     <iconPath>GeneIcons/BS_AngelicForm</iconPath>
     <abilities>
       <li>BS_AngelicForm_Abillity</li>
@@ -39,7 +39,7 @@
     <customEffectDescriptions>
       <li>Gene is incompatible with the very large body size genes.</li>
     </customEffectDescriptions>
-    <description>Carriers of this gene can transform into a larger more powerful form temporarily, the power of which is determined by the amount of Anomalous Power possessed. Sprouts frightening wings, talons, and gains the ability to breathe fire.</description>
+    <description>Carriers of this gene can transform into a larger more powerful form temporarily, the power of which is determined by the amount of Soul Power possessed. Sprouts frightening wings, talons, and gains the ability to breathe fire.</description>
     <iconPath>GeneIcons/VU_DemonForm</iconPath>
     <abilities>
       <li>BS_DemonicForm_Abillity</li>
@@ -67,7 +67,7 @@
     <customEffectDescriptions>
       <li>Gene is incompatible with the very large body size genes.</li>
     </customEffectDescriptions>
-    <description>Carriers of this gene can transform into a larger more powerful form temporarily, the power of which is determined by the amount of Anomalous Power possessed. The form of a goliath is incredible resilient.</description>
+    <description>Carriers of this gene can transform into a larger more powerful form temporarily, the power of which is determined by the amount of Soul Power possessed. The form of a goliath is incredible resilient.</description>
     <iconPath>GeneIcons/BS_GoliathForm</iconPath>
     <abilities>
       <li>BS_GoliathForm_Abillity</li>
@@ -96,7 +96,7 @@
     <customEffectDescriptions>
       <li>Gene is incompatible with the very large body size genes.</li>
     </customEffectDescriptions>
-    <description>Carriers of this gene can transform into a larger more powerful form temporarily, the power of which is determined by the amount of Anomalous Power possessed. Sprouts frightening wings, talons, and gains the ability to breathe fire.\n\nThis is a hemogenic version, trading resources for more rapid reuse and reset of true-form abilities.</description>
+    <description>Carriers of this gene can transform into a larger more powerful form temporarily, the power of which is determined by the amount of Soul Power possessed. Sprouts frightening wings, talons, and gains the ability to breathe fire.\n\nThis is a hemogenic version, trading resources for more rapid reuse and reset of true-form abilities.</description>
     <iconPath>GeneIcons/VU_DemonForm</iconPath>
     <prerequisite>Hemogenic</prerequisite>
     <abilities>

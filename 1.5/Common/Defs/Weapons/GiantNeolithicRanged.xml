@@ -6,11 +6,11 @@
     <label>Huge Javelin</label>
     <description>These huge javelins are primarily made for throwing, but they also make for acceptable melee weapons. They take a long time to throw, but one hit can do devastating damage. They are exceptionally bad at penetrating heavy armour. \n\nCan be wielded by giant, herculean, or warcasket pawns.</description>
     <graphicData>
-      <texPath>Item/GiantJavelin</texPath>
+      <texPath>Item/BS_GiantJavelin</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>3</drawSize>
+      <drawSize>2.3</drawSize>
     </graphicData>
-    <!-- <equippedAngleOffset>-95</equippedAngleOffset> -->
+    <equippedAngleOffset>45</equippedAngleOffset>
     <equippedDistanceOffset>0.2</equippedDistanceOffset>
     <soundInteract>Interact_BeatFire</soundInteract>
     <costList>
@@ -73,7 +73,7 @@
     <defName>BS_JotunJavelinProjectile</defName>
     <label>giant javelin</label>
     <graphicData>
-      <texPath>Item/GiantJavelin_Projectile</texPath>
+      <texPath>Item/BS_GiantJavelinProjectile</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>3</drawSize>
     </graphicData>
@@ -102,6 +102,103 @@
       </li>
     </subSounds>
   </SoundDef>
+  
+
+  <ThingDef ParentName="BaseWeaponNeolithic">
+    <defName>BS_GiantPrimitiveBow</defName>
+    <label>Giant Bow</label>
+    <description>A huge bow capable of shooting arrows that put human javelins to shame. This weapon can only be wielded by giants.</description>
+    <graphicData>
+      <texPath>Item/BS_GiantPrimitiveBow</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>2.2</drawSize>
+    </graphicData>
+    <equippedAngleOffset>-45</equippedAngleOffset>
+    <equippedDistanceOffset>0.1</equippedDistanceOffset>
+    <soundInteract>Bow_Large</soundInteract>
+    <costList>
+      <WoodLog>180</WoodLog>
+    </costList>
+    <relicChance>0.05</relicChance>
+    <statBases>
+      <WorkToMake>22000</WorkToMake>
+      <Mass>20</Mass>
+      <AccuracyTouch>0.52</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.66</AccuracyMedium>
+      <AccuracyLong>0.49</AccuracyLong>
+      <RangedWeapon_Cooldown>2.2</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponClasses Inherit="False">
+      <li>BS_GiantWeapon</li>
+    </weaponClasses>
+    <weaponTags Inherit="False">
+      <li>RangedMedievalGiant</li>
+      <li>RangedNeolithicAdvancedGiant</li>
+    </weaponTags>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+      <displayPriority>531</displayPriority>
+      <researchPrerequisite>Greatbow</researchPrerequisite>
+    </recipeMaker>
+    <rotateInShelves>false</rotateInShelves>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>BS_GiantArrow</defaultProjectile>
+        <warmupTime>3.0</warmupTime>
+        <range>21.9</range>
+        <soundCast>BS_Bow_Giant</soundCast>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>limb</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  <ThingDef ParentName="BaseProjectileNeolithic">
+    <defName>BS_GiantArrow</defName>
+    <label>giant arrow</label>
+    <graphicData>
+      <texPath>Item/BS_GiantArrow</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>2.3</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>RangedStab</damageDef>
+      <damageAmountBase>28</damageAmountBase>
+      <stoppingPower>3.5</stoppingPower>
+      <armorPenetrationBase>0.15</armorPenetrationBase>
+      <speed>44</speed>
+      <arcHeightFactor>0.6</arcHeightFactor>
+    </projectile>
+  </ThingDef>
+  <SoundDef>
+    <defName>BS_Bow_Giant</defName>  
+    <context>MapOnly</context>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Weapon/BowA</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>77.30627~82.30627</volumeRange>      
+        <pitchRange>0.6076015~0.6976015</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
   <RecipeDef>
     <defName>BS_OgreThrowinRockRecipe</defName>
     <label>make throwing chunks</label>

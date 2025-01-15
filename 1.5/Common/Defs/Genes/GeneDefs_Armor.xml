@@ -261,6 +261,7 @@
     </symbolPack>
 		<modExtensions>
 			<li Class="BigAndSmall.PawnExtension">
+				<frequentUpdate>true</frequentUpdate>
 				<applyBodyHediff>
 					<li>
 						<hediff>BS_DrunkenPower1</hediff>

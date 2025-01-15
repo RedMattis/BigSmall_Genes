@@ -148,7 +148,7 @@
     <biostatMet>0</biostatMet>
     <selectionWeight>0.5</selectionWeight>
     <displayOrderInCategory>426</displayOrderInCategory>
-    <iconPath>GeneIcons/VU_Skull</iconPath>
+    <iconPath>GeneIcons/BS_Skeleton</iconPath>
     <exclusionTags>
       <li>BS_RotState</li>
     </exclusionTags>
@@ -168,7 +168,7 @@
     <biostatMet>0</biostatMet>
     <selectionWeight>0.5</selectionWeight>
     <displayOrderInCategory>426</displayOrderInCategory>
-    <iconPath>GeneIcons/VU_Skull</iconPath>
+    <iconPath>GeneIcons/BS_Skeleton</iconPath>
     <exclusionTags>
       <li>BS_RotState</li>
     </exclusionTags>

@@ -88,6 +88,7 @@
     <cooldownTicksRange>7500</cooldownTicksRange>
     <warmupStartSound>FoamSpray_Warmup</warmupStartSound>
     <hostile>false</hostile>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
     <verbProperties>
       <verbClass>Verb_CastAbility</verbClass>
       <range>6.9</range>
@@ -119,6 +120,7 @@
     <targetRequired>False</targetRequired>
     <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
     <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
     <cooldownTicksRange>50</cooldownTicksRange>
     <verbProperties>
       <verbClass>Verb_CastAbility</verbClass>
@@ -148,6 +150,7 @@
     <targetRequired>False</targetRequired>
     <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
     <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
     <verbProperties>
       <verbClass>Verb_CastAbility</verbClass>
       <label>Eject Pilot</label>

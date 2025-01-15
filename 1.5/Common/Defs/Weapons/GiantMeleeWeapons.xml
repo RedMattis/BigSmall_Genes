@@ -4,7 +4,7 @@
     <label>giant club</label>
     <description>A huge heavy club which is too unwieldly for normal person to use.</description>
     <graphicData>
-      <texPath>Item/GiantClub</texPath>
+      <texPath>Item/BS_GiantClub</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>2.3</drawSize>
     </graphicData>
@@ -68,8 +68,8 @@
     <label>giant primitive hammer</label>
     <description>A huge primitive one-handed stone hammer which is too unwieldly for normal person to use.</description>
     <graphicData>
-      <texPath>Item/StoneHammer</texPath>
-      <maskPath>Item/StoneHammer_m</maskPath>
+      <texPath>Item/BS_GiantStoneHammer</texPath>
+      <maskPath>Item/BS_GiantStoneHammer_m</maskPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
       <drawSize>1.62</drawSize>
@@ -139,9 +139,10 @@
     <label>giant warhammer</label>
     <description>A massive warhammer far too unwieldly for normal person to use. Also amazingly good at demolishing buildings.</description>
     <graphicData>
-      <texPath>Item/GiantWarhammer</texPath>
+      <texPath>Item/BS_GiantWarhammer</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>2.4</drawSize>
+      <drawSize>2.1</drawSize>
+      <!-- <drawSize>2.4</drawSize> -->
     </graphicData>
     <uiIconScale>1.1</uiIconScale>
     <techLevel>Medieval</techLevel>
@@ -157,7 +158,7 @@
       <WorkToMake>10000</WorkToMake>
       <Mass>18</Mass>
     </statBases>
-    <equippedAngleOffset>-65</equippedAngleOffset>
+    <equippedAngleOffset>-25</equippedAngleOffset>
     <stuffCategories>
       <li>Metallic</li>
       <li>Woody</li>
@@ -200,7 +201,7 @@
     <label>giant sword</label>
     <description>A very large sword with grip for one-handed use. It is far too unwieldly for normal person to use.</description>
     <graphicData>
-      <texPath>Item/GiantSword</texPath>
+      <texPath>Item/BS_GiantNordicSword</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>2</drawSize>
     </graphicData>

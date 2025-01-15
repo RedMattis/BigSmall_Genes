@@ -61,12 +61,16 @@
     <defName>Jotun_Horns</defName>
     <label>jotun horns</label>
     <description>Carriers of this gene possess large impressive horns.</description>
-    <iconPath>GeneIcons/BS_Horns/JotunHorns</iconPath>
+    <iconPath>GeneIcons/BS_Horns/JotunHornsBig</iconPath>
     <renderNodeProperties Inherit="False">
       <li>
         <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
         <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
-        <texPath>BS_HeadAttachments/jotun_horns</texPath>
+        <texPaths>
+          <!--  -->
+          <li>BS_HeadAttachments/jotun_horns</li>
+          <li>BS_HeadAttachments/BS_JotunHorns</li>
+        </texPaths>
         <color>(180, 180, 180)</color>
         <colorType>Hair</colorType>
         <drawData>
@@ -88,12 +92,16 @@
     <defName>Jotun_Horns_skin</defName>
     <label>jotun horns (skin-coloured)</label>
     <description>Carriers of this gene possess large impressive horns. This variant has the same colour as the carrier's skin.</description>
-    <iconPath>GeneIcons/BS_Horns/JotunHorns</iconPath>
+    <iconPath>GeneIcons/BS_Horns/JotunHornsBig</iconPath>
     <renderNodeProperties Inherit="False">
       <li>
         <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
         <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
         <texPath>BS_HeadAttachments/jotun_horns</texPath>
+        <texPaths>
+          <li>BS_HeadAttachments/jotun_horns</li>
+          <li>BS_HeadAttachments/BS_JotunHorns</li>
+        </texPaths>
         <useSkinShader>true</useSkinShader>
         <colorType>Skin</colorType>
         <drawData>
@@ -115,12 +123,15 @@
     <defName>Jotun_Horns_Small</defName>
     <label>small jotun horns</label>
     <description>Carriers of this gene possess two small horns.</description>
-    <iconPath>UI/Icons/Genes/Gene_HeadboneMinihorns</iconPath>
+    <iconPath>GeneIcons/BS_Horns/JotunHorns</iconPath>
     <renderNodeProperties Inherit="False">
       <li>
         <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
         <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
-        <texPath>BS_HeadAttachments/jotun_horns_small</texPath>
+        <texPaths>
+          <li>BS_HeadAttachments/jotun_horns_small</li>
+          <li>BS_HeadAttachments/BS_JotunSmallHorns</li>
+        </texPaths>
         <color>(200, 200, 200)</color>
         <colorType>Hair</colorType>
         <drawData>
@@ -142,12 +153,15 @@
     <defName>Jotun_Horns_Small_skin</defName>
     <label>small jotun horns (skin-coloured)</label>
     <description>Carriers of this gene possess two small horns. This variant has the same colour as the carrier's skin.</description>
-    <iconPath>UI/Icons/Genes/Gene_HeadboneMinihorns</iconPath>
+    <iconPath>GeneIcons/BS_Horns/JotunHorns</iconPath>
     <renderNodeProperties Inherit="False">
       <li>
         <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
         <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
-        <texPath>BS_HeadAttachments/jotun_horns_small</texPath>
+        <texPaths>
+          <li>BS_HeadAttachments/jotun_horns_small</li>
+          <li>BS_HeadAttachments/BS_JotunSmallHorns</li>
+        </texPaths>
         <useSkinShader>true</useSkinShader>
         <colorType>Skin</colorType>
         <drawData>

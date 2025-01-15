@@ -28,10 +28,6 @@
     <label>concussive resistance</label>
 		<displayCategory>Pain</displayCategory>
     <description>Carriers of this gene are highly resistant to wide-area concussive damage such as that from explosions.</description>
-    <!-- <customEffectDescriptions>
-      <li>Explosion damage x0.40</li>
-      <li>Blunt damage x0.70</li>
-    </customEffectDescriptions> -->
 		<iconPath>GeneIcons/BS_ConcussiveResistance</iconPath>
     <displayOrderInCategory>2</displayOrderInCategory>
     <statFactors>
@@ -50,17 +46,13 @@
     <label>acid weakness</label>
 		<displayCategory>Pain</displayCategory>
     <description>Carriers of this gene are extremely vulnerable to acid.</description>
-    <!-- <customEffectDescriptions>
-      <li>Acid damage x0.40 (should work with any mod)</li>
-      <li>Poison &amp; Tox damage x0.70</li>
-    </customEffectDescriptions> -->
 		<iconPath>GeneIcons/BS_AcidWeakness</iconPath>
     <displayOrderInCategory>2</displayOrderInCategory>
     <statFactors>
       <SM_AcidDmgMult>2</SM_AcidDmgMult>
     </statFactors>
     <biostatCpx>1</biostatCpx>
-    <biostatMet>2</biostatMet>
+    <biostatMet>1</biostatMet>
     <exclusionTags>
       <li>Acid_Resistance</li>
     </exclusionTags>
@@ -71,10 +63,6 @@
     <label>acid resistance</label>
 		<displayCategory>Pain</displayCategory>
     <description>Carriers of this gene are highly resistant to acid.</description>
-    <!-- <customEffectDescriptions>
-      <li>Acid damage x0.40 (should work with any mod)</li>
-      <li>Poison &amp; Tox damage x0.70</li>
-    </customEffectDescriptions> -->
 		<iconPath>GeneIcons/BS_PartialAcidResistance</iconPath>
     <displayOrderInCategory>2</displayOrderInCategory>
     <statFactors>
@@ -92,10 +80,6 @@
     <label>acid immunity</label>
 		<displayCategory>Pain</displayCategory>
     <description>Carriers of this gene are immune resistant to acid. They take no damage from acid of any source.</description>
-    <!-- <customEffectDescriptions>
-      <li>Acid Immunity (should work with any mod)</li>
-      <li>Poison &amp; Tox damage x0.40</li>
-    </customEffectDescriptions> -->
 		<iconPath>GeneIcons/BS_TotalAcidResistance</iconPath>
     <displayOrderInCategory>2</displayOrderInCategory>
     <statFactors>
