@@ -31,7 +31,22 @@
     </forcedTraits>
     <biostatCpx>1</biostatCpx>
     <biostatMet>1</biostatMet>
+  </GeneDef>
 
+  <GeneDef>
+    <defName>BS_PerfectMemory</defName>
+    <label>eidetic memory</label>
+    <labelShortAdj>eidetic</labelShortAdj>
+    <description>Carriers of this gene have perfect memory</description>
+    <iconPath>GeneIcons/BS_Wise</iconPath>
+    <displayOrderInCategory>1</displayOrderInCategory>
+    <forcedTraits>
+      <li>
+        <def>GreatMemory</def>
+      </li>
+    </forcedTraits>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
   </GeneDef>
 
   <GeneDef>

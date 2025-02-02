@@ -85,6 +85,17 @@
 	</GeneDef>
 
   <GeneDef ParentName="GeneSkinColorOverride">
+    <defName>BS_BorealSkin</defName>
+    <label>fair skin</label>
+    <description>Carriers of this gene have light skin.</description>
+    <iconPath>UI/Icons/Genes/Gene_SkinColorOverride</iconPath>
+    <randomBrightnessFactor>0.1</randomBrightnessFactor>
+    <skinColorOverride>(255,253,227)</skinColorOverride>
+    <displayOrderInCategory>175</displayOrderInCategory>
+    <selectionWeight>0.2</selectionWeight>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneSkinColorOverride">
     <defName>VU_LightPallorSkin</defName>
     <label>light pallor</label>
     <description>Carriers of this gene have icy white skin.</description>
@@ -92,7 +103,6 @@
     <randomBrightnessFactor>0</randomBrightnessFactor>
     <skinColorOverride>(227,255,227)</skinColorOverride>
     <displayOrderInCategory>175</displayOrderInCategory>
-
     <selectionWeight>0.2</selectionWeight>
   </GeneDef>
 

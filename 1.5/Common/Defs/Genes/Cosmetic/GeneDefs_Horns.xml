@@ -28,33 +28,10 @@
   <GeneDef Name="BS_DemonHornBase" ParentName="BS_Hornbase" Abstract="True">
     <symbolPack>
       <prefixSymbols>
-        <li>
-          <symbol>horn</symbol>
-        </li>
-        <li>
-          <symbol>devil</symbol>
-        </li>
-        <li>
-          <symbol>demon</symbol>
-        </li>
-        <li>
-          <symbol>luci</symbol>
-        </li>
-        <li>
-          <symbol>beelze</symbol>
-        </li>
-        <li>
-          <symbol>hell</symbol>
-        </li>
+        <li> <symbol>horn</symbol> </li> <li> <symbol>devil</symbol> </li> <li> <symbol>demon</symbol> </li>
+        <li> <symbol>luci</symbol> </li> <li> <symbol>beelze</symbol> </li> <li> <symbol>hell</symbol> </li>
       </prefixSymbols>
-      <suffixSymbols>
-        <li>
-          <symbol>horn</symbol>
-        </li>
-        <li>
-          <symbol>vil</symbol>
-        </li>
-      </suffixSymbols>
+      <suffixSymbols> <li> <symbol>horn</symbol> </li> <li> <symbol>vil</symbol> </li> </suffixSymbols>
     </symbolPack>
   </GeneDef>
   <GeneDef ParentName="BS_DemonHornBase">
@@ -69,20 +46,16 @@
         <texPaths>
           <!--  -->
           <li>BS_HeadAttachments/jotun_horns</li>
-          <li>BS_HeadAttachments/BS_JotunHorns</li>
+          <!-- <li>BS_HeadAttachments/BS_JotunHorns</li> -->
+          <li>BS_HeadAttachments/BS_JotunHornsB</li>
+          <li>BS_HeadAttachments/BS_JotunHornsB</li>
         </texPaths>
         <color>(180, 180, 180)</color>
         <colorType>Hair</colorType>
         <drawData>
-          <defaultData>
-            <layer>80</layer>
-          </defaultData>
-          <dataNorth>
-            <layer>10</layer>
-          </dataNorth>
-          <dataSouth>
-            <offset>(0, 0, 0)</offset>
-          </dataSouth>
+          <defaultData> <layer>80</layer> </defaultData>
+          <dataNorth> <layer>10</layer> </dataNorth>
+          <dataSouth> <offset>(0, 0, 0)</offset> </dataSouth>
         </drawData>
         <parentTagDef>Head</parentTagDef>
       </li>
@@ -100,20 +73,15 @@
         <texPath>BS_HeadAttachments/jotun_horns</texPath>
         <texPaths>
           <li>BS_HeadAttachments/jotun_horns</li>
-          <li>BS_HeadAttachments/BS_JotunHorns</li>
+          <li>BS_HeadAttachments/BS_JotunHornsB</li>
+          <li>BS_HeadAttachments/BS_JotunHornsB</li>
         </texPaths>
         <useSkinShader>true</useSkinShader>
         <colorType>Skin</colorType>
         <drawData>
-          <defaultData>
-            <layer>80</layer>
-          </defaultData>
-          <dataNorth>
-            <layer>10</layer>
-          </dataNorth>
-          <dataSouth>
-            <offset>(0, 0, 0)</offset>
-          </dataSouth>
+          <defaultData> <layer>80</layer> </defaultData>
+          <dataNorth> <layer>10</layer> </dataNorth>
+          <dataSouth> <offset>(0, 0, 0)</offset> </dataSouth>
         </drawData>
         <parentTagDef>Head</parentTagDef>
       </li>
@@ -135,20 +103,15 @@
         <color>(200, 200, 200)</color>
         <colorType>Hair</colorType>
         <drawData>
-          <defaultData>
-            <layer>80</layer>
-          </defaultData>
-          <dataNorth>
-            <layer>10</layer>
-          </dataNorth>
-          <dataSouth>
-            <offset>(0, 0, 0)</offset>
-          </dataSouth>
+          <defaultData> <layer>80</layer> </defaultData>
+          <dataNorth> <layer>10</layer> </dataNorth>
+          <dataSouth> <offset>(0, 0, 0)</offset> </dataSouth>
         </drawData>
         <parentTagDef>Head</parentTagDef>
       </li>
     </renderNodeProperties>
   </GeneDef>
+
   <GeneDef ParentName="BS_DemonHornBase">
     <defName>Jotun_Horns_Small_skin</defName>
     <label>small jotun horns (skin-coloured)</label>
@@ -165,20 +128,70 @@
         <useSkinShader>true</useSkinShader>
         <colorType>Skin</colorType>
         <drawData>
-          <defaultData>
-            <layer>80</layer>
-          </defaultData>
-          <dataNorth>
-            <layer>10</layer>
-          </dataNorth>
-          <dataSouth>
-            <offset>(0, 0, 0)</offset>
-          </dataSouth>
+          <defaultData> <layer>80</layer> </defaultData>
+          <dataNorth> <layer>10</layer> </dataNorth>
+          <dataSouth> <offset>(0, 0, 0)</offset> </dataSouth>
         </drawData>
         <parentTagDef>Head</parentTagDef>
       </li>
     </renderNodeProperties>
   </GeneDef>
+
+  <GeneDef ParentName="BS_DemonHornBase">
+    <defName>BS_TrollHorns</defName>
+    <label>troll horns</label>
+    <description>Carriers of this gene possess two branch-like horns.</description>
+    <iconPath>GeneIcons/BS_Horns/Roothorns</iconPath>
+    <renderNodeProperties Inherit="False">
+      <li Class="BigAndSmall.PawnRenderingProps_Ultimate">
+        <nodeClass>BigAndSmall.PawnRenderNode_Ultimate</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <shader>Cutout</shader>
+        <conditionalGraphics>
+          <colorA>
+            <hairColor>true</hairColor>
+            <skinColor>true</skinColor>
+            <colourRange>
+              <li>255,200,150</li>
+              <li>200,255,150</li>
+            </colourRange>
+          </colorA>
+          <conditionalPaths>
+            <alts>
+              <li>
+                <chanceByAge> <points> <li>(6, 0)</li> <li>(100, 0.8)</li> <li>(200, 0.97)</li> </points> </chanceByAge>
+                <randSeed>99</randSeed>
+                <texturePaths>
+                  <li>BS_HeadAttachments/RootOld/Roothorns2</li>
+                  <li>BS_HeadAttachments/RootOld/Roothorns3</li>
+                  <li>BS_HeadAttachments/RootOld/Roothorns1</li>
+                </texturePaths>
+              </li>
+              <li>
+                <chanceByAge> <points> <li>(0, 0)</li> <li>(20, 0.8)</li> <li>(100, 0.97)</li> </points> </chanceByAge>
+                <randSeed>99</randSeed>
+                <texturePaths>
+                  <li>BS_HeadAttachments/Root/RoothornsYoung</li>
+                  <li>BS_HeadAttachments/Root_Inverted/RoothornsYoung</li>
+                </texturePaths>
+              </li>
+            </alts>
+          </conditionalPaths>
+          <texturePaths>
+            <li>BS_Blank</li>
+          </texturePaths>
+        </conditionalGraphics>
+        <colorType>Skin</colorType>
+        <drawData>
+          <defaultData> <layer>80</layer> </defaultData>
+          <dataNorth> <layer>10</layer> </dataNorth>
+          <dataSouth> <offset>(0, 0, -0.05)</offset> </dataSouth>
+        </drawData>
+        <parentTagDef>Head</parentTagDef>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+
   <GeneDef ParentName="BS_DemonHornBase">
     <defName>BS_Arching_Horns</defName>
     <label>arching horns</label>

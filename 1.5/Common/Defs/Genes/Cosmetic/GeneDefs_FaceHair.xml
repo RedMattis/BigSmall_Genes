@@ -1,0 +1,139 @@
+<Defs>
+  
+  <GeneDef ParentName="GeneBeardStyleBase">
+    <defName>BS_TrollBeard</defName>
+    <label>great troll beard</label>
+    <description>Carriers of this gene, especially males, usually have a huge troll-like beard.</description>
+    <iconPath>GeneIcons/BS_Longbeard</iconPath>
+    <beardTagFilter>
+      <whitelist>true</whitelist>
+      <tags>
+        <li>NoBeard</li>
+      </tags>
+    </beardTagFilter>
+    <renderNodeProperties>
+      <li Class="BigAndSmall.PawnRenderingProps_Ultimate">
+        <nodeClass>BigAndSmall.PawnRenderNode_Ultimate</nodeClass>
+        <workerClass>BigAndSmall.URenderWorker_Beard</workerClass>
+        <drawSize>(1.15,1.15)</drawSize>
+        <shader>Cutout</shader>
+        <conditionalGraphics>
+          <colorA>
+            <hairColor>true</hairColor>
+          </colorA>
+          <texturePaths> <li>BS_Blank</li> </texturePaths>
+          <conditionalPaths>
+            <alts>
+              <li>
+                <triggers><li>Male</li></triggers>
+                <chanceByAge> <points> <li>(13, 0)</li> <li>(18, 0.2)</li> <li>(120, 0.88)</li> </points> </chanceByAge>
+                <randSeed>11</randSeed>
+                <texturePaths>
+                  <li>BS_Beards/Longbeard2a</li>
+                  <li>BS_Beards/Longbeard2b</li>
+                </texturePaths>
+              </li>
+              <li>
+                <triggers><li>Male</li></triggers>
+                <chanceByAge> <points> <li>(13, 0)</li> <li>(18, 0.4)</li> <li>(70, 0.9)</li> </points> </chanceByAge>
+                <texturePaths>
+                  <li>BS_Beards/Longbeard1a</li>
+                </texturePaths>
+              </li>
+              <li>
+                <triggers><li>Female</li></triggers>
+                <chanceByAge> <points> <li>(19, 0)</li> <li>(120, 0.23)</li> </points> </chanceByAge>
+                <randSeed>22</randSeed>
+                <texturePaths>
+                  <li>BS_Beards/Longbeard2a</li>
+                </texturePaths>
+              </li>
+              <li>
+                <triggers><li>Female</li></triggers>
+                <chanceByAge> <points> <li>(19, 0)</li> <li>(80, 0.25)</li> </points> </chanceByAge>
+                <texturePaths>
+                  <li>BS_Beards/Longbeard1a</li>
+                </texturePaths>
+              </li>
+            </alts>
+          </conditionalPaths>
+        </conditionalGraphics>
+        <narrowCrownHorizontalOffset>0.00</narrowCrownHorizontalOffset>
+        <parentTagDef>Head</parentTagDef>
+        <visibleFacing> <li>East</li> <li>South</li> <li>West</li> </visibleFacing>
+        <drawData>
+          <defaultData>
+            <layer>58</layer>
+            <offset>(0.0, 0, -0.0)</offset>
+          </defaultData>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+    <displayCategory>Miscellaneous</displayCategory>
+    <displayOrderInCategory>410</displayOrderInCategory>
+    <selectionWeight>0.25</selectionWeight>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>BS_FuzzyBrows</defName>
+    <label>thick eyebrows</label>
+    <description>Carriers of this gene often have a distinct thick eyebrows that grow as they age.</description>
+    <randomChosen>true</randomChosen>
+    <exclusionTags>
+      <li>Eyebrows</li>
+    </exclusionTags>
+    <iconPath>GeneIcons/BS_EyebrowsLarge</iconPath>
+    <renderNodeProperties>
+      <li Class="BigAndSmall.PawnRenderingProps_Ultimate">
+        <nodeClass>BigAndSmall.PawnRenderNode_UltimateHead</nodeClass>
+        <workerClass>BigAndSmall.URenderWorker_FlipWhenCrawling</workerClass>
+        <texPath>BS_HeadAttachments/LargeEyebrows1</texPath>
+        <texPathFemale>BS_Blank</texPathFemale>
+        <shader>Cutout</shader>
+        <conditionalGraphics>
+          <colorA>
+            <hairColor>true</hairColor>
+          </colorA>
+          <texturePaths> <li>BS_Blank</li> </texturePaths>
+          <conditionalPaths>
+            <alts>
+              <li>
+                <triggers><li>Male</li></triggers>
+                <chanceByAge> <points> <li>(0, 0)</li> <li>(5, 0.2)</li> <li>(120, 1)</li> </points> </chanceByAge>
+                <texturePaths> <li>BS_HeadAttachments/LargeEyebrows2</li> </texturePaths>
+              </li>
+              <li>
+                <triggers><li>Male</li></triggers>
+                <chanceByAge> <points> <li>(0, 0)</li> <li>(5, 0.25)</li> <li>(60, 1)</li> </points> </chanceByAge>
+                <texturePaths> <li>BS_HeadAttachments/LargeEyebrows1</li> </texturePaths>
+              </li>
+              <li>
+                <triggers><li>Female</li></triggers>
+                <chanceByAge> <points> <li>(0, 0)</li> <li>(5, 0.2)</li> <li>(120, 0.5)</li> </points> </chanceByAge>
+                <texturePaths> <li>BS_HeadAttachments/LargeEyebrows2</li> </texturePaths>
+              </li>
+              <li>
+                <triggers><li>Female</li></triggers>
+                <chanceByAge> <points> <li>(0, 0)</li> <li>(5, 0.25)</li> <li>(60, 0.5)</li> </points> </chanceByAge>
+                <texturePaths> <li>BS_HeadAttachments/LargeEyebrows1</li> </texturePaths>
+              </li>
+            </alts>
+          </conditionalPaths>
+        </conditionalGraphics>
+
+        <!-- <narrowCrownHorizontalOffset>0.03</narrowCrownHorizontalOffset> -->
+        <colorType>Hair</colorType>
+        <parentTagDef>Head</parentTagDef>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <visibleFacing> <li>East</li> <li>South</li> <li>West</li> </visibleFacing>
+        <drawData>
+          <defaultData> <layer>60</layer> </defaultData>
+          <dataSouth> <layer>54</layer> </dataSouth>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+    <displayCategory>Miscellaneous</displayCategory>
+    <displayOrderInCategory>410</displayOrderInCategory>
+    <selectionWeight>0.25</selectionWeight>
+  </GeneDef>
+</Defs>

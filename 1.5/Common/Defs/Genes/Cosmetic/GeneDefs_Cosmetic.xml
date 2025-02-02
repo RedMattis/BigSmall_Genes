@@ -199,20 +199,39 @@
     <labelShortAdj>creamy</labelShortAdj>
     <description>Carriers of this gene have creamy white hair.</description>
     <selectionWeight>0.05</selectionWeight>
-    <randomBrightnessFactor>0</randomBrightnessFactor>
+    <randomBrightnessFactor>0.05</randomBrightnessFactor>
     <hairColorOverride>(255,240,180)</hairColorOverride>
     <displayOrderInCategory>175</displayOrderInCategory>
-
   </GeneDef>
+
   <GeneDef ParentName="GeneHairColorBase">
     <defName>BS_MatteGreenHair</defName>
     <label>serpentine hair</label>
     <labelShortAdj>serpentine</labelShortAdj>
     <description>Carriers of this gene have matte green hair.</description>
     <selectionWeight>0.05</selectionWeight>
-    <randomBrightnessFactor>0</randomBrightnessFactor>
+    <randomBrightnessFactor>0.05</randomBrightnessFactor>
     <hairColorOverride>(115,163,95)</hairColorOverride>
     <displayOrderInCategory>175</displayOrderInCategory>
+  </GeneDef>
 
+  <GeneDef ParentName="GeneHairColorBase">
+    <defName>BS_Hair_DarkGray</defName>
+    <label>dark gray hair</label>
+    <hairColorOverride>(0.45, 0.45, 0.45)</hairColorOverride>
+    <randomBrightnessFactor>0.2</randomBrightnessFactor>
+    <selectionWeight>0.02</selectionWeight>
+    <displayOrderInCategory>10</displayOrderInCategory>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneHairColorBase">
+    <defName>BS_MossGreenHair</defName>
+    <label>moss-green hair</label>
+    <labelShortAdj>mossy</labelShortAdj>
+    <description>Carriers of this gene have mossy green hair.</description>
+    <selectionWeight>0.03</selectionWeight>
+    <randomBrightnessFactor>0.05</randomBrightnessFactor>
+    <hairColorOverride>(80,100,65)</hairColorOverride>
+    <displayOrderInCategory>175</displayOrderInCategory>
   </GeneDef>
 </Defs>

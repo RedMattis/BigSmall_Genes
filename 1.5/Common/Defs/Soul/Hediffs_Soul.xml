@@ -55,7 +55,7 @@
   <HediffDef>
     <defName>BS_SoulCollector</defName>
     <label>Soul Power Stockpile</label>
-    <description>A measure of anomalous energy obtained from some source.</description>
+    <description>Siritual power of strange origins.</description>
     <isBad>false</isBad>
     <everCurableByItem>false</everCurableByItem>
     <initialSeverity>0</initialSeverity>
@@ -83,7 +83,7 @@
   <HediffDef>
     <defName>BS_SoulPowerHediff</defName>
     <label>Soul Power</label>
-    <description>A messure of anomalous energy.</description>
+    <description>A limited manifestation of spiritual power.</description>
     <isBad>false</isBad>
     <everCurableByItem>false</everCurableByItem>
     <initialSeverity>1</initialSeverity>
@@ -113,8 +113,8 @@
 
   <HediffDef>
     <defName>BS_SoulSize</defName>
-    <label>Anomalous Form</label>
-    <description>The physical form of this being is determined by its soul power.</description>
+    <label>soul embodiment</label>
+    <description>The physical form size and power of this being increases with their soul power.</description>
     <isBad>false</isBad>
     <everCurableByItem>false</everCurableByItem>
     <initialSeverity>1</initialSeverity>
@@ -141,7 +141,7 @@
 
   <HediffDef>
     <defName>BS_SoulPsychicPower</defName>
-    <label>Anomalous Psychic Power</label>
+    <label>soul attunement</label>
     <description>Psychic Power is being amplified by soul power.</description>
     <isBad>false</isBad>
     <everCurableByItem>false</everCurableByItem>

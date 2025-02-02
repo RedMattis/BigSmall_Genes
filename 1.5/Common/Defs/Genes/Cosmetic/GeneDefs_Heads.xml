@@ -49,7 +49,22 @@
       </prefixSymbols>
     </symbolPack>
     <statOffsets>
-      <SM_HeadSize_Cosmetic>-0.15</SM_HeadSize_Cosmetic>
+      <SM_HeadSize_Cosmetic>-0.12</SM_HeadSize_Cosmetic>
     </statOffsets>
+    <modExtensions>
+      <li Class="BigAndSmall.PawnExtension">
+        <headDrawData>
+          <dataSouth>
+            <offset>(0.0, 0, -0.04)</offset>
+          </dataSouth>
+          <dataEast>
+            <offset>(0.0, 0, -0.04)</offset>
+          </dataEast>
+          <dataWest>
+            <offset>(-0.0, 0, -0.04)</offset>
+          </dataWest>
+        </headDrawData>
+      </li>
+    </modExtensions>
   </GeneDef>
 </Defs>

@@ -43,7 +43,7 @@
     <defName>BS_Diet_Fuel</defName>
     <label>Fuel-diet</label>
     <description>Carriers of this gene can only eat fuel typically made for androids.</description>
-    <iconPath>GeneIcons/BS_Carnivore</iconPath>
+    <iconPath>GeneIcons/BS_FuelDiet</iconPath>
     <biostatMet>3</biostatMet>
     <modExtensions>
       <li Class="BigAndSmall.PawnExtension">
@@ -56,7 +56,7 @@
     <defName>BS_Diet_Universal</defName>
     <label>universal digestion</label>
     <description>Carriers of this gene can eat most types of food, including some varieties of chemfuel.</description>
-    <iconPath>GeneIcons/BS_Carnivore</iconPath>
+    <iconPath>GeneIcons/BS_UniversalDiet</iconPath>
     <biostatMet>-1</biostatMet>
     <modExtensions>
       <li Class="BigAndSmall.PawnExtension">

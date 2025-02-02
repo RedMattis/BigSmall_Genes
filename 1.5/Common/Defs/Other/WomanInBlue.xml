@@ -6,6 +6,7 @@
 		<labelFemale>jotun adventurer</labelFemale>
 		<labelPlural>jotun adventurers</labelPlural>
 		<race>Human</race>
+		<maxPerGroup>1</maxPerGroup>
 		<defaultFactionType>Pirate</defaultFactionType>
 		<combatPower>50</combatPower>
 		<!-- <minGenerationAge>100</minGenerationAge> -->

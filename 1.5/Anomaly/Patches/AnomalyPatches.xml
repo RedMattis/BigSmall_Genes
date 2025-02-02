@@ -7,6 +7,16 @@
 		</value>
 	</Operation> -->
 
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/GeneDef[defName="BS_PerfectMemory"]/forcedTraits</xpath>
+    <value>
+      <forcedTraits>
+        <li>
+          <def>PerfectMemory</def>
+        </li>
+      </forcedTraits>
+    </value>
+  </Operation>
 
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/MutantDef[defName="Ghoul"]/disablesGenes</xpath>

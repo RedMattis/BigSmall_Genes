@@ -212,6 +212,11 @@
     <defName>BS_Troll_2</defName>
     <texPath>Xenotypes/BS_Troll_2</texPath>
   </XenotypeIconDef>
+
+  <XenotypeIconDef>
+    <defName>BS_Troll_3</defName>
+    <texPath>Xenotypes/BS_Troll_3</texPath>
+  </XenotypeIconDef>
   
   <XenotypeIconDef>
     <defName>BS_Hearthguardian</defName>

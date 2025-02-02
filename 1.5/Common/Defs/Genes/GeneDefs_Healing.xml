@@ -25,6 +25,7 @@
     <iconPath>GeneIcons/BS_WoundHealingRateUltra</iconPath>
     <displayOrderInCategory>28</displayOrderInCategory>
     <displayCategory>Archite</displayCategory>
+    <preventPermanentWounds>true</preventPermanentWounds>
     <statFactors>
       <InjuryHealingFactor>25</InjuryHealingFactor>
     </statFactors>
@@ -32,11 +33,6 @@
     <biostatMet>-5</biostatMet>
     <biostatArc>1</biostatArc>
     <geneClass>Gene_Clotting</geneClass>
-    <symbolPack>
-      <prefixSymbols>
-        <li><symbol>unhealing</symbol></li>
-      </prefixSymbols>
-    </symbolPack>
   </GeneDef>
 
   <GeneDef Name="BS_Xenoreconstruction">

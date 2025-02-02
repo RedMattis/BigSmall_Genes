@@ -38,8 +38,8 @@
 
   <GeneDef>
     <defName>BS_AnomalousPsychicPower</defName>
-    <label>anomalous psychic power</label>
-    <description>The shape and size of this being is determined by their amount of soul power. This is compatible with other genes that increase psychic power.</description>
+    <label>soul attunement </label>
+    <description>Increases psychic power based on the amount of Psychic Sensitivity. This is compatible with other genes that increase psychic power.</description>
     <customEffectDescriptions>
       <li>Gain 25% of Soul Power as Psychic Sensitivity</li>
     </customEffectDescriptions>
@@ -57,7 +57,7 @@
 
   <GeneDef>
     <defName>BS_AnomalousForm</defName>
-    <label>anomalous form</label>
+    <label>soul form</label>
     <displayCategory>Body_Size</displayCategory>
     <description>The shape and size of this being is determined by their amount of soul power. Note that if soul power is at 0% or less this will do nothing.</description>
     <customEffectDescriptions>

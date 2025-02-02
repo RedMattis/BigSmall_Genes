@@ -62,31 +62,18 @@
         <parentTagDef>Head</parentTagDef>
       </li>
     </renderNodeProperties>
-
   </GeneDef>
+
   <GeneDef ParentName="GeneEarsBase">
     <defName>BS_Ears_PointedHD</defName>
     <label>pointed ears (alternative)</label>
     <description>Carriers of this gene have pointed ears.</description>
     <iconPath>UI/Icons/Genes/Gene_EarPointed</iconPath>
     <symbolPack>
-      <prefixSymbols>
-        <li>
-          <symbol>point</symbol>
-        </li>
-        <li>
-          <symbol>sharp</symbol>
-        </li>
-      </prefixSymbols>
-      <suffixSymbols>
-        <li>
-          <symbol>ear</symbol>
-        </li>
-        <li>
-          <symbol>point</symbol>
-        </li>
-      </suffixSymbols>
+      <prefixSymbols> <li> <symbol>point</symbol> </li> <li> <symbol>sharp</symbol> </li> </prefixSymbols>
+      <suffixSymbols> <li> <symbol>ear</symbol> </li> <li> <symbol>point</symbol> </li> </suffixSymbols>
     </symbolPack>
+    <selectionWeight>0.5</selectionWeight>
     <renderNodeProperties Inherit="False">
       <li>
         <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
@@ -94,9 +81,60 @@
         <texPath>BS_HeadAttachments/BS_PointedEars</texPath>
         <useSkinShader>false</useSkinShader>
         <colorType>Skin</colorType>
+        <drawData> <defaultData> <layer>52</layer> </defaultData> </drawData>
+        <parentTagDef>Head</parentTagDef>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneEarsBase">
+    <defName>BS_TrollEars</defName>
+    <label>troll ears</label>
+    <description>Carriers of this gene have large pointed ears.</description>
+    <iconPath>GeneIcons/BS_EarLarge</iconPath>
+    <symbolPack>
+      <prefixSymbols> <li> <symbol>point</symbol> </li> <li> <symbol>sharp</symbol> </li> <li> <symbol>troll</symbol> </li> </prefixSymbols>
+      <suffixSymbols> <li> <symbol>ear</symbol> </li> </suffixSymbols>
+    </symbolPack>
+    <selectionWeight>0.25</selectionWeight>
+    <renderNodeProperties Inherit="False">
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>BigAndSmall.URenderWorker_FlipWhenCrawling</workerClass>
+        <texPath>BS_HeadAttachments/LargeEars1</texPath>
+        <useSkinShader>true</useSkinShader>
+        <colorType>Skin</colorType>
+        <drawData>
+          <defaultData> <layer>52</layer> </defaultData>
+          <dataEast> <layer>60</layer> </dataEast>
+          <dataWest> <layer>60</layer> </dataWest>
+        </drawData>
+        <parentTagDef>Head</parentTagDef>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+
+    <GeneDef ParentName="GeneEarsBase">
+    <defName>BS_TrollEars_Great</defName>
+    <label>great troll ears</label>
+    <description>Carriers of this gene have very large pointed ears.</description>
+    <iconPath>GeneIcons/BS_EarLarge</iconPath>
+    <symbolPack>
+      <prefixSymbols> <li> <symbol>point</symbol> </li> <li> <symbol>sharp</symbol> </li> <li> <symbol>troll</symbol> </li> </prefixSymbols>
+      <suffixSymbols> <li> <symbol>ear</symbol> </li> </suffixSymbols>
+    </symbolPack>
+    <selectionWeight>0.1</selectionWeight>
+    <renderNodeProperties Inherit="False">
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>BigAndSmall.URenderWorker_Beard</workerClass>
+        <texPath>BS_HeadAttachments/LargeEars2</texPath>
+        <useSkinShader>true</useSkinShader>
+        <colorType>Skin</colorType>
         <drawData>
           <defaultData>
             <layer>52</layer>
+            <offset>(0.0, 0, -0.0)</offset>
           </defaultData>
         </drawData>
         <parentTagDef>Head</parentTagDef>
