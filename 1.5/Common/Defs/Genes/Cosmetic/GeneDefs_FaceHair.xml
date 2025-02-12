@@ -26,7 +26,7 @@
             <alts>
               <li>
                 <triggers><li>Male</li></triggers>
-                <chanceByAge> <points> <li>(13, 0)</li> <li>(18, 0.2)</li> <li>(120, 0.88)</li> </points> </chanceByAge>
+                <chanceByAge> <points> <li>(13, 0)</li> <li>(18, 0.2)</li> <li>(25, 0.3)</li> <li>(120, 0.82)</li> </points> </chanceByAge>
                 <randSeed>11</randSeed>
                 <texturePaths>
                   <li>BS_Beards/Longbeard2a</li>
@@ -35,14 +35,14 @@
               </li>
               <li>
                 <triggers><li>Male</li></triggers>
-                <chanceByAge> <points> <li>(13, 0)</li> <li>(18, 0.4)</li> <li>(70, 0.9)</li> </points> </chanceByAge>
+                <chanceByAge> <points> <li>(13, 0)</li> <li>(18, 0.4)</li> <li>(25, 0.5)</li>  <li>(70, 0.9)</li> </points> </chanceByAge>
                 <texturePaths>
                   <li>BS_Beards/Longbeard1a</li>
                 </texturePaths>
               </li>
               <li>
                 <triggers><li>Female</li></triggers>
-                <chanceByAge> <points> <li>(19, 0)</li> <li>(120, 0.23)</li> </points> </chanceByAge>
+                <chanceByAge> <points> <li>(19, 0)</li> <li>(120, 0.12)</li> </points> </chanceByAge>
                 <randSeed>22</randSeed>
                 <texturePaths>
                   <li>BS_Beards/Longbeard2a</li>
@@ -50,7 +50,7 @@
               </li>
               <li>
                 <triggers><li>Female</li></triggers>
-                <chanceByAge> <points> <li>(19, 0)</li> <li>(80, 0.25)</li> </points> </chanceByAge>
+                <chanceByAge> <points> <li>(19, 0)</li> <li>(80, 0.20)</li> </points> </chanceByAge>
                 <texturePaths>
                   <li>BS_Beards/Longbeard1a</li>
                 </texturePaths>
@@ -109,7 +109,7 @@
               </li>
               <li>
                 <triggers><li>Female</li></triggers>
-                <chanceByAge> <points> <li>(0, 0)</li> <li>(5, 0.2)</li> <li>(120, 0.5)</li> </points> </chanceByAge>
+                <chanceByAge> <points> <li>(0, 0)</li> <li>(5, 0.2)</li> <li>(120, 0.4)</li> </points> </chanceByAge>
                 <texturePaths> <li>BS_HeadAttachments/LargeEyebrows2</li> </texturePaths>
               </li>
               <li>

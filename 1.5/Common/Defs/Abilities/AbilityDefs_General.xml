@@ -9,6 +9,7 @@
     <warmupEffecter>Coagulate</warmupEffecter>
     <warmupStartSound>Coagulate_Cast</warmupStartSound>
     <hostile>false</hostile>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
     <verbProperties>
       <verbClass>Verb_CastAbilityTouch</verbClass>
       <drawAimPie>true</drawAimPie>

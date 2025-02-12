@@ -29,12 +29,12 @@
             <alts>
               <li>
                 <triggers><li>Male</li></triggers>
-                <chanceByAge> <points> <li>(0, 0.0)</li> <li>(50, 0.25)</li> <li>(120, 0.43)</li> </points> </chanceByAge>
+                <chanceByAge> <points> <li>(0, 0.0)</li> <li>(50, 0.25)</li> <li>(120, 0.38)</li> </points> </chanceByAge>
                 <texturePaths> <li>BS_Hair/Longhair2a</li> </texturePaths>
               </li>
               <li>
                 <triggers><li>Male</li></triggers>
-                <chanceByAge> <points> <li>(0, 1)</li> <li>(50, 0.45)</li> <li>(120, 0.45)</li> </points> </chanceByAge>
+                <chanceByAge> <points> <li>(0, 1)</li> <li>(50, 0.45)</li> <li>(120, 0.40)</li> </points> </chanceByAge>
                 <texturePaths> <li>BS_Hair/Longhair1a</li> </texturePaths>
               </li>
               <li>

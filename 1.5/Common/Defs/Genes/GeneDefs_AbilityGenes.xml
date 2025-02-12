@@ -98,6 +98,7 @@
     <iconPath>UI/Abilities/Longjump</iconPath>
     <cooldownTicksRange>100</cooldownTicksRange>
     <hostile>false</hostile>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
     <verbProperties>
       <verbClass>Verb_CastAbilityJump</verbClass>
       <label>jump</label>

@@ -9,8 +9,10 @@
 					<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
 					<texPaths>
 						<li>BS_Titan/bp_default_normal</li>
-						<li>BS_Titan/bp_female_normal</li>
 					</texPaths>
+					<texPathsFemale>
+						<li>BS_Titan/bp_female_normal</li>
+					</texPathsFemale>
 					<useSkinShader>false</useSkinShader>
 					<colorType>Skin</colorType>
 					<drawData>

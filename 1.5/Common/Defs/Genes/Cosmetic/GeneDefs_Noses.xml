@@ -26,8 +26,7 @@
               </li>
               <li>
                 <triggers><li>Male</li></triggers>
-                <chanceByStat> <PawnBeauty> <li>(0, 1)</li> <li>(2, 0.5)</li> </PawnBeauty> </chanceByStat>
-                <chanceByAge> <points> <li>(0, 0.2)</li> <li>(18, 0.5)</li> <li>(40, 0.7)</li> <li>(75, 0.9)</li> <li>(150, 0.95)</li> </points> </chanceByAge>
+                <chanceByAge> <points> <li>(0, 0.2)</li> <li>(18, 0.5)</li> <li>(40, 0.7)</li> <li>(75, 0.9)</li> <li>(150, 1)</li> </points> </chanceByAge>
                 <texturePaths> <texPath>BS_HeadAttachments/TrollNose</texPath> </texturePaths>
               </li>
             </alts>

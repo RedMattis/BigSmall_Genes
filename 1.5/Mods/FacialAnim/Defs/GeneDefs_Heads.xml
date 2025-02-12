@@ -1,10 +1,10 @@
 <?xml version="1.0" ?>
 <Defs>
-  <GeneDef ParentName="GeneJawBase">
+  <!-- <GeneDef ParentName="GeneJawBase">
     <defName>BS_OgreHead</defName>
-    <label>ogre head</label>
-    <description>Carriers of this gene have a big lumpy ogre head.</description>
-    <iconPath>GeneIcons/BS_OgreHead</iconPath>
+    <label>ogre head (uncanny)</label>
+    <description>Carriers of this gene have a big dumb ogre head.</description>
+    <iconPath>GeneIcons/BS_OgreHead_old</iconPath>
     <displayOrderInCategory>97</displayOrderInCategory>
     <selectionWeight>0.1</selectionWeight>
     <canGenerateInGeneSet>false</canGenerateInGeneSet>
@@ -28,7 +28,8 @@
         <parentTagDef>Head</parentTagDef>
       </li>
     </renderNodeProperties>
-  </GeneDef>
+  </GeneDef> -->
+
   <GeneDef ParentName="GeneJawBase">
     <defName>BS_DevourerHead</defName>
     <label>devourer head</label>
