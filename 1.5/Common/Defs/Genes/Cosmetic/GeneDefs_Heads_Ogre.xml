@@ -28,13 +28,34 @@
         <colorType>Skin</colorType>
         <drawData>
           <defaultData>
-            <layer>50.5</layer>
+            <layer>50</layer>
             <offset>(0.0, 0, 0.04)</offset>
           </defaultData>
+          <dataSouth>
+            <layer>50</layer>
+            <offset>(0.0, 0, 0.02)</offset>
+          </dataSouth>
+          <dataNorth>
+            <layer>50</layer>
+            <offset>(0.0, 0, -0.02)</offset>
+          </dataNorth>
         </drawData>
         <parentTagDef>Head</parentTagDef>
       </li>
     </renderNodeProperties>
+    <modExtensions>
+      <li Class="BigAndSmall.PawnExtension">
+        <!-- <disableFacialAnimations>true</disableFacialAnimations> -->
+        <facialDisabler>
+          <skinName>retain</skinName>
+          <lidName>retain</lidName>
+          <lidOptionsName>retain</lidOptionsName>
+          <eyeballName>retain</eyeballName>
+          <mouthName>retain</mouthName>
+          <browName>retain</browName>
+        </facialDisabler>
+      </li>
+    </modExtensions>
   </GeneDef>
 
   <HeadTypeDef ParentName="AverageBase">
@@ -107,7 +128,7 @@
         <colorType>Skin</colorType>
         <drawData>
           <defaultData>
-            <layer>50.5</layer>
+            <layer>50</layer>
             <offset>(0.0, 0, 0.04)</offset>
           </defaultData>
         </drawData>
@@ -117,6 +138,14 @@
     <modExtensions>
       <li Class="BigAndSmall.PawnExtension">
         <!-- <disableFacialAnimations>true</disableFacialAnimations> -->
+        <facialDisabler>
+          <skinName>retain</skinName>
+          <lidName>retain</lidName>
+          <lidOptionsName>retain</lidOptionsName>
+          <eyeballName>retain</eyeballName>
+          <mouthName>retain</mouthName>
+          <browName>retain</browName>
+        </facialDisabler>
         <headDrawData>
           <dataSouth>
             <offset>(0.0, 0, -0.04)</offset>

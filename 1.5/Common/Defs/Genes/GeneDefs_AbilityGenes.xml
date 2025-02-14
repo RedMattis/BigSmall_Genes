@@ -91,32 +91,31 @@
     <selectionWeight>1</selectionWeight>
   </GeneDef>
 
-  <AbilityDef Name="VU_Pounce">
-    <defName>VU_Pounce</defName>
-    <label>Ambush</label>
-    <description>Jump to a nearby location.</description>
-    <iconPath>UI/Abilities/Longjump</iconPath>
-    <cooldownTicksRange>100</cooldownTicksRange>
-    <hostile>false</hostile>
-    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
-    <verbProperties>
-      <verbClass>Verb_CastAbilityJump</verbClass>
-      <label>jump</label>
-      <violent>false</violent>
-      <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
-      <warmupTime>1</warmupTime>
-      <range>4.9</range>
-      <requireLineOfSight>true</requireLineOfSight>
-      <soundCast>Longjump_Jump</soundCast>
-      <soundLanding>Longjump_Land</soundLanding>
-      <targetParams>
-        <canTargetLocations>true</canTargetLocations>
-        <canTargetPawns>false</canTargetPawns>
-        <canTargetBuildings>false</canTargetBuildings>
-      </targetParams>
-    </verbProperties>
-    <jobDef>CastJump</jobDef>
-    <aiCanUse>true</aiCanUse>
-  </AbilityDef>
+  <GeneDef>
+    <defName>BS_SnekEngulf</defName>
+    <label>swallow</label>
+    <displayCategory>Ability</displayCategory>
+    <description>Temporarily engulf a smaller target with intent to consume or temporarily suppress the target.\n\nUse on capable fighters for more than a short time is ill-advised; the target will cause injuries from the inside with any weapon they possess.\n\nNote that any non-cannibal will be very upset if forced to digest a humanlike.</description>
+    <customEffectDescriptions>
+      <li>Target can be max 35% of the users body size. Increased max nutrition can improve this to a max of 85%.</li>
+      <li>6 Base Damage (Acid)</li>
+      <li>Victim can strike back with melee attacks dealing 100% normal damage.</li>
+    </customEffectDescriptions>
+    <iconPath>GeneIcons/BS_Omnomnomnomnom</iconPath>
+    <abilities>
+      <li>BS_SnekEngulf_New</li>
+      <li>BS_Regurgitate</li>
+    </abilities>
+    <descriptionHyperlinks>
+      <AbilityDef>BS_SnekEngulf_New</AbilityDef>
+      <AbilityDef>BS_Regurgitate</AbilityDef>
+    </descriptionHyperlinks>
+    <biostatMet>-1</biostatMet>
+    <biostatArc>0</biostatArc>
+    <minAgeActive>5</minAgeActive>
+    <selectionWeight>1</selectionWeight>
+  </GeneDef>
+
+ 
 
 </Defs>

@@ -15,23 +15,6 @@
       <li>Bug_BodyAttachment</li>
       <li>taur</li>
     </exclusionTags>
-
-  </GeneDef>
-  <GeneDef Name="LoS_Snake_Tail" ParentName="LoS_SnakeTailBase">
-    <defName>LoS_Snake_Tail</defName>
-    <label>Snake Tail</label>
-    <description>Carriers of this gene have a large snake tail instead regular human legs. They eat much less often than baseliners.</description>
-    <customEffectDescriptions>
-      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">Reduces the movement speed penalty when traversing difficult terrain</li>
-    </customEffectDescriptions>
-    <iconPath>GeneIcons/LoS_SnekTail_icon2</iconPath>
-    <displayOrderInCategory>777</displayOrderInCategory>
-    <biostatCpx>1</biostatCpx>
-    <biostatMet>0</biostatMet>
-    <selectionWeight>1</selectionWeight>
-    
-    
-    <missingGeneRomanceChanceFactor>0.75</missingGeneRomanceChanceFactor>
     <modExtensions>
       <li Class="BigAndSmall.PawnExtension">
         <canWalkOnCreep>true</canWalkOnCreep>
@@ -50,12 +33,26 @@
           </li>
         </applyPartHediff>
         <thingDefSwap>BS_Naga</thingDefSwap>
-        <!-- <bodyPosOffset>0.6</bodyPosOffset> -->
       </li>
       <li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
         <movementDef>PF_Movement_Flying</movementDef>
       </li>
     </modExtensions>
+
+  </GeneDef>
+  <GeneDef Name="LoS_Snake_Tail" ParentName="LoS_SnakeTailBase">
+    <defName>LoS_Snake_Tail</defName>
+    <label>Snake Tail</label>
+    <description>Carriers of this gene have a large snake tail instead regular human legs. They eat much less often than baseliners.</description>
+    <customEffectDescriptions>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">Reduces the movement speed penalty when traversing difficult terrain</li>
+    </customEffectDescriptions>
+    <iconPath>GeneIcons/LoS_SnekTail_icon2</iconPath>
+    <displayOrderInCategory>777</displayOrderInCategory>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>0</biostatMet>
+    <selectionWeight>1</selectionWeight>
+    <missingGeneRomanceChanceFactor>0.75</missingGeneRomanceChanceFactor>
     <renderNodeProperties Inherit="False">
       <li>
         <workerClass>BigAndSmall.PawnRenderNodeWorker_BodyTypeOffsets</workerClass>
@@ -63,13 +60,10 @@
         <rotDrawMode>Fresh, Rotting</rotDrawMode>
         <bodyTypeGraphicPaths>
           <Hulk>BS_BodyAttachments/BS_Snek_New/bp_hulk</Hulk>
-    
           <Male>BS_BodyAttachments/BS_Snek_New/bp_male</Male>
           <Female>BS_BodyAttachments/BS_Snek_New/bp_female</Female>
-          
           <Fat>BS_BodyAttachments/BS_Snek_New/bp_fat</Fat>
           <Thin>BS_BodyAttachments/BS_Snek_New/bp_default</Thin>
-          
           <Child>BS_BodyAttachments/BS_Snek_New/bp_child</Child>
           <Baby>BS_BodyAttachments/BS_Snek_New/bp_child</Baby>
         </bodyTypeGraphicPaths>
@@ -77,22 +71,10 @@
         <colorType>Skin</colorType>
         <drawData>
           <scaleOffsetByBodySize>false</scaleOffsetByBodySize>
-          <dataNorth>
-            <offset>(0, 0, -0.3067)</offset>
-            <layer>79</layer>
-          </dataNorth>
-          <dataSouth>
-            <offset>(0, -0.0001, -0.3067)</offset>
-            <layer>20</layer>
-          </dataSouth>
-          <dataEast>
-            <offset>(-0.3067, -0.0001, -0.3067)</offset>
-            <layer>20</layer>
-          </dataEast>
-          <dataWest>
-            <offset>(0.3067, -0.0001, -0.3067)</offset>
-            <layer>20</layer>
-          </dataWest>
+          <dataNorth> <offset>(0, 0, -0.3067)</offset> <layer>79</layer> </dataNorth>
+          <dataSouth> <offset>(0, -0.0001, -0.3067)</offset> <layer>20</layer> </dataSouth>
+          <dataEast> <offset>(-0.3067, -0.0001, -0.3067)</offset> <layer>20</layer> </dataEast>
+          <dataWest> <offset>(0.3067, -0.0001, -0.3067)</offset> <layer>20</layer> </dataWest>
         </drawData>
       </li>
     </renderNodeProperties>
@@ -101,48 +83,24 @@
     <defName>LoS_Snake_Tail_HairClr</defName>
     <label>Snake Tail (hair-color)</label>
     <renderNodeProperties Inherit="False">
-      <!-- <li>
+      <li Class="BigAndSmall.PawnRenderingProps_Ultimate">
+        <nodeClass>BigAndSmall.PawnRenderNode_Ultimate</nodeClass>
         <workerClass>BigAndSmall.PawnRenderNodeWorker_BodyTypeOffsets</workerClass>
         <parentTagDef>Body</parentTagDef>
-        <bodyTypeGraphicPaths>
-          <Hulk>BS_BodyAttachments/BS_Snek_New/bp_hulk</Hulk>
-    
-          <Male>BS_BodyAttachments/BS_Snek_New/bp_male</Male>
-          <Female>BS_BodyAttachments/BS_Snek_New/bp_female</Female>
-          
-          <Fat>BS_BodyAttachments/BS_Snek_New/bp_fat</Fat>
-          <Thin>BS_BodyAttachments/BS_Snek_New/bp_default</Thin>
-          
-          <Child>BS_BodyAttachments/BS_Snek_New/bp_child</Child>
-          <Baby>BS_BodyAttachments/BS_Snek_New/bp_child</Baby>
-        </bodyTypeGraphicPaths>
-        <drawSize>(1.625,1.625)</drawSize>
-        <colorType>Hair</colorType>
         <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <colorType>Hair</colorType>
+        <shader>CutoutComplex</shader>
+        <graphicSetDef>BS_SnekGraphicSet</graphicSetDef>
+        <drawSize>(1.625,1.625)</drawSize>
         <drawData>
           <scaleOffsetByBodySize>false</scaleOffsetByBodySize>
-          <dataNorth>
-            <offset>(0, 0, -0.3067)</offset>
-            <layer>79</layer>
-          </dataNorth>
-          <dataSouth>
-            <offset>(0, -0.0001, -0.3067)</offset>
-            <layer>20</layer>
-          </dataSouth>
-          <dataEast>
-            <offset>(-0.3067, -0.0001, -0.3067)</offset>
-            <layer>20</layer>
-          </dataEast>
-          <dataWest>
-            <offset>(0.3067, -0.0001, -0.3067)</offset>
-            <layer>20</layer>
-          </dataWest>
+          <dataNorth> <offset>(0, 0, -0.3067)</offset> <layer>79</layer> </dataNorth>
+          <dataSouth> <offset>(0, -0.0001, -0.3067)</offset> <layer>20</layer> </dataSouth>
+          <dataEast> <offset>(-0.3067, -0.0001, -0.3067)</offset> <layer>20</layer> </dataEast>
+          <dataWest> <offset>(0.3067, -0.0001, -0.3067)</offset> <layer>20</layer> </dataWest>
         </drawData>
-      </li> -->
+      </li>
     </renderNodeProperties>
-    <modExtensions>
-      <li Class="BigAndSmall.Flagger"><flags><ShowBaseAbdomen/></flags></li>
-    </modExtensions>
   </GeneDef>
   <GeneDef ParentName="LoS_SnakeTailBase">
     <defName>LoS_MarlithBody</defName>

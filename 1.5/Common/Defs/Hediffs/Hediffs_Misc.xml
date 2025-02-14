@@ -173,8 +173,8 @@
 
   <HediffDef>
     <defName>BS_Engulfed</defName>
-    <label>Engulfed</label>
-    <description>This creature has temporarily engulfed something.</description>
+    <label>swallowed contents</label>
+    <description>List of contained things.</description>
     <isBad>false</isBad>
     <everCurableByItem>false</everCurableByItem>
     <initialSeverity>1</initialSeverity>
@@ -188,18 +188,18 @@
 
   <HediffDef>
     <defName>BS_EngulfedEnchumberance</defName>
-    <label>Enchumbered</label>
-    <description>This creature is enchumbered due to internal contents.</description>
+    <label>encumbered</label>
+    <description>Encumbered from internal content.</description>
     <isBad>false</isBad>
     <everCurableByItem>false</everCurableByItem>
     <initialSeverity>0</initialSeverity>
     <stages>
       <li>
-        <label>no enchumberance</label>
+        <label>no encumbrance</label>
       </li>
       <li>
         <minSeverity>0.25</minSeverity>
-        <label>light enchumberance</label>
+        <label>light encumbrance</label>
         <statFactors>
           <MoveSpeed>0.9</MoveSpeed>
         </statFactors>
@@ -212,7 +212,7 @@
       </li>
       <li>
         <minSeverity>0.45</minSeverity>
-        <label>moderate enchumberance</label>
+        <label>moderate encumbrance</label>
         <statFactors>
           <MoveSpeed>0.80</MoveSpeed>
         </statFactors>
@@ -225,7 +225,7 @@
       </li>
       <li>
         <minSeverity>0.65</minSeverity>
-        <label>severe enchumberance</label>
+        <label>severe encumbrance</label>
         <statFactors>
           <MoveSpeed>0.7</MoveSpeed>
         </statFactors>
