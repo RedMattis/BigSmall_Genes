@@ -48,7 +48,7 @@
       <Fat>BS_Bodies/Mimic/mimic_fat</Fat>
       <Thin>BS_Bodies/Mimic/mimic_default</Thin>
 
-      <Child>BS_Bodies/BS_NoFur</Child>
+      <Child MayRequire="Ludeon.RimWorld.Biotech">BS_Bodies/BS_NoFur</Child>
       <Baby>BS_Bodies/BS_NoFur</Baby>
     </bodyTypeGraphicPaths>
   </FurDef>

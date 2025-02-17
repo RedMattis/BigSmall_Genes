@@ -64,8 +64,8 @@
           <Female>BS_BodyAttachments/BS_Snek_New/bp_female</Female>
           <Fat>BS_BodyAttachments/BS_Snek_New/bp_fat</Fat>
           <Thin>BS_BodyAttachments/BS_Snek_New/bp_default</Thin>
-          <Child>BS_BodyAttachments/BS_Snek_New/bp_child</Child>
-          <Baby>BS_BodyAttachments/BS_Snek_New/bp_child</Baby>
+          <Child MayRequire="Ludeon.RimWorld.Biotech">BS_BodyAttachments/BS_Snek_New/bp_child</Child>
+          <Baby MayRequire="Ludeon.RimWorld.Biotech">BS_BodyAttachments/BS_Snek_New/bp_child</Baby>
         </bodyTypeGraphicPaths>
         <drawSize>(1.625,1.625)</drawSize>
         <colorType>Skin</colorType>
@@ -163,7 +163,7 @@
           <Fat>BS_BodyAttachments/BS_Snek_New/bp_fat</Fat>
           <Thin>BS_BodyAttachments/BS_Snek_New/bp_default</Thin>
           
-          <Child>BS_BodyAttachments/BS_Snek_New/bp_child</Child>
+          <Child MayRequire="Ludeon.RimWorld.Biotech">BS_BodyAttachments/BS_Snek_New/bp_child</Child>
           <Baby>BS_BodyAttachments/BS_Snek_New/bp_child</Baby>
         </bodyTypeGraphicPaths>
         <drawSize>(1.625,1.625)</drawSize>
