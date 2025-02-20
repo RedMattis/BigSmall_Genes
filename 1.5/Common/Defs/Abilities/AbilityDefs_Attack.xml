@@ -121,7 +121,7 @@
     <ai_IsOffensive>true</ai_IsOffensive>
     <comps>
       <li Class="BigAndSmall.CompProperties_AbilityEnglufJump">
-        <relativeSizeThreshold>0.35~1.0</relativeSizeThreshold>
+        <relativeSizeThreshold>0.35~0.9</relativeSizeThreshold>
         <internalBaseDamage>6</internalBaseDamage>
         <selfDamageMultiplier>1</selfDamageMultiplier>
       </li>

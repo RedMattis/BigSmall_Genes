@@ -144,7 +144,7 @@
     <defName>BS_EjectPilot</defName>
     <label>Eject Pilot</label>
     <description>Eject the pilot from the vehicle.\n\nIf downed this will happen automatically after some time.</description>
-    <iconPath>UI/Icons/Genes/Gene_FoamSpray</iconPath>
+    <iconPath>GeneIcons/BS_EjectPilot</iconPath>
     <cooldownTicksRange>50</cooldownTicksRange>
     <warmupStartSound>FoamSpray_Warmup</warmupStartSound>
     <hostile>false</hostile>
