@@ -181,7 +181,7 @@
     <graphicData>
       <texPath>Things/Projectile/Bullet_Small</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>1.5</drawSize>
+      <drawSize>1.7</drawSize>
     </graphicData>
     <projectile>
       <damageDef>Bullet</damageDef>

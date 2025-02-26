@@ -26,6 +26,7 @@
       <AccuracyMedium>0.45</AccuracyMedium>
       <AccuracyLong>0.32</AccuracyLong>
       <RangedWeapon_Cooldown>3</RangedWeapon_Cooldown>
+      <VEF_MeleeWeaponRange MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">2.84</VEF_MeleeWeaponRange>
     </statBases>
     <weaponClasses Inherit="False">
       <li>BS_GiantWeapon</li>
