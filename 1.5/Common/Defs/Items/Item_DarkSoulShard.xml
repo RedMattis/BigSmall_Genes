@@ -41,8 +41,7 @@
       <li Class="CompProperties_Targetable">
         <compClass>CompTargetable_SinglePawn</compClass>
       </li>
-      <li Class="BigAndSmall.CompProperties_TargetEffectApplySerum">
-        <specialEffect>AddSoulPower</specialEffect>
+      <li Class="BigAndSmall.CompProperties_ApplySoulstone">
         <factor>0.50001</factor>
         <falloff>2.5</falloff>
       </li>
