@@ -39,7 +39,7 @@
       <li>Skin_SlateGray</li>
       <li>VU_ZombieSkin</li>
       <li>VU_NosferatuSkin</li>
-      <!-- <li>Sleepy</li> -->
+      <li>BS_CreamSkin</li>
       <li>VU_Pallor</li>
       <li>VU_Libido_None</li>
       <li>Hair_Gray</li>
@@ -87,16 +87,14 @@
       <li>Sterile</li>
       <li>MinTemp_LargeDecrease</li>
       <li>MaxTemp_LargeIncrease</li>
-      <!-- <li>Head_Gaunt</li> -->
-      <li>Skin_SlateGray</li>
-      <li>VU_ZombieSkin</li>
       <li>VU_NosferatuSkin</li>
-      <!-- <li>Sleepy</li> -->
+      <li>BS_CreamSkin</li>
+      <!-- <li>BS_SkinFrostWhite</li> -->
       <li>VU_Pallor</li>
       <li>VU_Libido_None</li>
-      <li>Hair_Gray</li>
+      <!-- <li>Hair_Gray</li>
       <li>Hair_SnowWhite</li>
-      <li>Hair_MidBlack</li>
+      <li>Hair_MidBlack</li> -->
       <li>Jaw_Baseline</li>
       <li>ToxResist_Total</li>
       <li>BS_LesserDeathless</li>
@@ -104,7 +102,6 @@
   </XenotypeDef>
 
   <XenotypeDef Name="VU_ReturnedSkeletal" Abstract="True">
-    <!-- <defName>VU_Returned</defName> -->
     <label>Skeletal Returned</label>
     <description>A person who has come back from death for an unknown reason.</description>
     <descriptionShort>Intelligent undead</descriptionShort>
@@ -137,22 +134,17 @@
       <li>BS_PainNumb</li>
       <li>Mood_Pessimist</li>
       <li>Sterile</li>
-      <li>MinTemp_LargeDecrease</li>
-      <li>MaxTemp_LargeIncrease</li>
-      <li>VU_Pallor</li>
+      <li>Delicate</li>
+      <li>MinTemp_HugeDecrease</li>
+      <li>MaxTemp_HugeIncrease</li>
       <li>VU_Libido_None</li>
-      <li>Hair_Gray</li>
-      <li>Hair_SnowWhite</li>
-      <li>Hair_MidBlack</li>
       <li>ToxResist_Total</li>
       <li>BS_LesserDeathless</li>
 
-      <li>Skin_SlateGray</li>
-      <li>VU_ZombieSkin</li>
-      <li>BS_Skin_DarkAsh</li>
-
       <li>BS_DessicatedBody</li>
       <li>BS_DessicatedBodyWithHair</li>
+      <li>BS_DessicatedBodyWithGreyHair</li>
+      <li>Beauty_Ugly</li>
      </genes>
   </XenotypeDef>
 </Defs>

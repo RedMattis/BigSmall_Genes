@@ -19,6 +19,7 @@
     <hediffClass>HediffWithComps</hediffClass>
     <initialSeverity>0.001</initialSeverity>
     <defaultLabelColor>(0.9, 1.0, 0.35)</defaultLabelColor>
+    <forceRemoveOnResurrection>true</forceRemoveOnResurrection>
     <comps>
       <li Class="HediffCompProperties_KillAfterDays">
 				<days>1</days>

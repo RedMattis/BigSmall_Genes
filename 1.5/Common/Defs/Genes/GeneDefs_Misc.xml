@@ -486,7 +486,7 @@
     <marketValueFactor>2</marketValueFactor>
     <biostatCpx>0</biostatCpx>
     <biostatMet>0</biostatMet>
-    <biostatArc>2</biostatArc>
+    <biostatArc>1</biostatArc>
     <statFactors>
       <HSAU_GhoulismSusceptibility MayRequire="Baskerville.HellsingARMSUltimate">0</HSAU_GhoulismSusceptibility>
     </statFactors>
