@@ -19,6 +19,7 @@
     <stages>
       <li>
         <label>pilot missing</label>
+        <hungerRateFactor>0.1</hungerRateFactor>
         <capMods>
           <li>
             <capacity>Talking</capacity>
@@ -64,6 +65,7 @@
     <stages>
       <li>
         <label>pilot missing</label>
+        <hungerRateFactor>0.1</hungerRateFactor>
         <capMods>
           <li>
             <capacity>Talking</capacity>

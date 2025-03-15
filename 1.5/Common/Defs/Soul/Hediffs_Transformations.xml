@@ -321,12 +321,6 @@
     <everCurableByItem>false</everCurableByItem>
     <hediffClass>HediffWithComps</hediffClass>
     <initialSeverity>1</initialSeverity>
-    <!-- <beardTagFilter>
-      <whitelist>true</whitelist>
-      <tags>
-        <li>NoBeard</li>
-      </tags>
-    </beardTagFilter> -->
     <abilities>
       <li>VU_Pounce</li>
       <li MayRequire="RedMattis.Undead">VU_LycantropeInfect</li>
@@ -338,7 +332,6 @@
         <totalBleedFactor>0</totalBleedFactor>
         <blocksSleeping>true</blocksSleeping>
         <statFactors>
-          <!-- <SM_BodySizeMultiplier>1.05</SM_BodySizeMultiplier> -->
           <WorkSpeedGlobal>0.65</WorkSpeedGlobal>
           <StaggerDurationFactor>0</StaggerDurationFactor>
           <ShootingAccuracyFactor_Long>0.25</ShootingAccuracyFactor_Long>
@@ -404,21 +397,6 @@
         <colorType>Hair</colorType>
         <parentTagDef>Body</parentTagDef>
       </li>
-      <!-- <li>
-        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
-        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
-        <texPath>BS_HeadAttachments/BS_WerewolfSnoot</texPath>
-        <drawSize>(1.0,1.0)</drawSize>
-        <useSkinShader>true</useSkinShader>
-        <colorType>Hair</colorType>
-        <drawData>
-          <defaultData>
-            <layer>52</layer>
-          </defaultData>
-        </drawData>
-        <parentTagDef>Head</parentTagDef>
-        <narrowCrownHorizontalOffset>0.05</narrowCrownHorizontalOffset>
-      </li> -->
       <li>
         <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
         <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
