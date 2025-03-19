@@ -84,6 +84,7 @@
     <defName>BS_SoulPowerHediff</defName>
     <label>Soul Power</label>
     <description>A limited manifestation of spiritual power.</description>
+    <hediffClass>BigAndSmall.SoulResourceHediff</hediffClass>
     <isBad>false</isBad>
     <everCurableByItem>false</everCurableByItem>
     <initialSeverity>1</initialSeverity>

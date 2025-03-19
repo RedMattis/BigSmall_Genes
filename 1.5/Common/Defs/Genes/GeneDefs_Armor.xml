@@ -134,7 +134,7 @@
 		<defName>BS_ToughSkin</defName>
 		<label>Tough Skin</label>
 		<description>Carriers of this gene have naturally tough skin. This offers some resistance to blunt and cutting attacks.</description>
-		<iconPath>GeneIcons/BS_Leather</iconPath>
+		<iconPath>GeneIcons/BS_ArmourLeather</iconPath>
 		
 		<displayOrderInCategory>20</displayOrderInCategory>
 		<statOffsets>
@@ -164,7 +164,7 @@
 		<label>Natural Armor</label>
 
 		<description>Carriers of this gene shrug off attacks as though they were wearing padded armour.</description>
-		<iconPath>GeneIcons/BS_Platemail</iconPath>
+		<iconPath>GeneIcons/BS_ArmourSteel</iconPath>
 		
 		
 		<displayOrderInCategory>20</displayOrderInCategory>
@@ -202,7 +202,7 @@
 		<label>Fortified Body</label>
 		<displayCategory>Archite</displayCategory>
 		<description>Carriers of this gene shrug off attacks as though they were wearing heavily padded riot gear.</description>
-		<iconPath>GeneIcons/BS_ArchotechArmor</iconPath>
+		<iconPath>GeneIcons/BS_ArmourArchotech</iconPath>
 		
 		<displayOrderInCategory>20</displayOrderInCategory>
 		<statFactors>

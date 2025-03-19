@@ -113,6 +113,7 @@
     <modExtensions>
       <li Class="BigAndSmall.PawnExtension">
         <metamorphIfDay>true</metamorphIfDay>
+        <frequentUpdate>true</frequentUpdate>
 			</li>
 		</modExtensions>
   </GeneDef>
@@ -125,6 +126,7 @@
     <modExtensions>
       <li Class="BigAndSmall.PawnExtension">
         <metamorphIfNight>true</metamorphIfNight>
+        <frequentUpdate>true</frequentUpdate>
 			</li>
 		</modExtensions>
   </GeneDef>

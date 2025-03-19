@@ -220,7 +220,7 @@
       <drawSize>2.6</drawSize>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
-    <equippedDistanceOffset>-0.45</equippedDistanceOffset>
+    <equippedDistanceOffset>-0.30</equippedDistanceOffset>
     <weaponClasses Inherit="False">
       <li>BS_GiantWeapon</li>
     </weaponClasses>
@@ -316,7 +316,7 @@
     <defName>BS_Rocket</defName>
     <label>rocket</label>
     <graphicData>
-      <texPath>Things/Projectile/Rocket_Big</texPath>
+      <texPath>Item/BS_Rocket</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>TransparentPostLight</shaderType>
     </graphicData>

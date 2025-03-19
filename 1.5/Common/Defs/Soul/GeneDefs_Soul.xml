@@ -87,7 +87,6 @@
     <selectionWeight>1</selectionWeight>
     <geneClass>BetterPrerequisites.PGene</geneClass>
     <modExtensions>
-			
       <li Class="BigAndSmall.PawnExtension">
 				<applyBodyHediff><li><hediff>BS_SoulSize</hediff></li></applyBodyHediff>
 			</li>

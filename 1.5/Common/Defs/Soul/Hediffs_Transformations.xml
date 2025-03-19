@@ -6,23 +6,30 @@
     <initialSeverity>1</initialSeverity>
     <stages>
       <li>
-        <statFactors>
-          <!-- <SM_BodySizeMultiplier>1.05</SM_BodySizeMultiplier> -->
-        </statFactors>
         <statOffsets>
           <SM_BodySizeOffset>0.5</SM_BodySizeOffset>
         </statOffsets>
         <statFactorEffectMultiplier>BS_SoulPower</statFactorEffectMultiplier>
         <statOffsetEffectMultiplier>BS_SoulPower</statOffsetEffectMultiplier>
       </li>
+      <li>
+        <minSeverity>1</minSeverity>
+        <statOffsets>
+          <SM_BodySizeOffset>0.35</SM_BodySizeOffset>
+        </statOffsets>
+        <statFactorEffectMultiplier>BS_SoulPower</statFactorEffectMultiplier>
+        <statOffsetEffectMultiplier>BS_SoulPower</statOffsetEffectMultiplier>
+      </li>
+      <li>
+        <minSeverity>2</minSeverity>
+        <statOffsets>
+          <SM_BodySizeOffset>0.2</SM_BodySizeOffset>
+        </statOffsets>
+        <statFactorEffectMultiplier>BS_SoulPower</statFactorEffectMultiplier>
+        <statOffsetEffectMultiplier>BS_SoulPower</statOffsetEffectMultiplier>
+      </li>
     </stages>
     <allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
-    <comps>
-      <li Class="HediffCompProperties_Disappears">
-        <showRemainingTime>True</showRemainingTime>
-        <!-- <messageOnDisappear>Debug_Removed_TrueForm</messageOnDisappear> -->
-      </li>
-    </comps>
   </HediffDef>
 
   <HediffDef ParentName="BS_TrueFormBase">
@@ -37,11 +44,28 @@
     </aptitudes>
     <stages Inherit="False">
       <li>
-        <statFactors>
-          <!-- <SM_BodySizeMultiplier>1.05</SM_BodySizeMultiplier> -->
-        </statFactors>
         <statOffsets>
           <SM_BodySizeOffset>0.5</SM_BodySizeOffset>
+          <ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+          <ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+        </statOffsets>
+        <statFactorEffectMultiplier>BS_SoulPower</statFactorEffectMultiplier>
+        <statOffsetEffectMultiplier>BS_SoulPower</statOffsetEffectMultiplier>
+      </li>
+      <li>
+        <minSeverity>1</minSeverity>
+        <statOffsets>
+          <SM_BodySizeOffset>0.35</SM_BodySizeOffset>
+          <ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+          <ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+        </statOffsets>
+        <statFactorEffectMultiplier>BS_SoulPower</statFactorEffectMultiplier>
+        <statOffsetEffectMultiplier>BS_SoulPower</statOffsetEffectMultiplier>
+      </li>
+      <li>
+        <minSeverity>2</minSeverity>
+        <statOffsets>
+          <SM_BodySizeOffset>0.2</SM_BodySizeOffset>
           <ArmorRating_Blunt>0.05</ArmorRating_Blunt>
           <ArmorRating_Sharp>0.1</ArmorRating_Sharp>
         </statOffsets>
@@ -59,6 +83,12 @@
         </skinColorOverride>
       </li>
 			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="AnimalBehaviours.HediffCompProperties_Floating"/>
+      <li Class="BigAndSmall.CompProperties_DrainResource">
+        <compClass>BigAndSmall.Comp_DrainsSoulEnergy</compClass>
+        <ticksBetweenDrain>20</ticksBetweenDrain>
+        <removeOnZero>true</removeOnZero>
+        <canCancel>true</canCancel>
+      </li>
 		</comps>
     <renderNodeProperties Inherit="False">
       <li>
@@ -131,8 +161,8 @@
     </renderNodeProperties>
   </HediffDef>
 
-  <HediffDef ParentName="BS_TrueFormBase">
-    <defName>BS_TrueForm_Demonic</defName>
+  <HediffDef ParentName="BS_TrueFormBase" Name="BS_TrueForm_HemoDemonic">
+    <defName>BS_TrueForm_HemoDemonic</defName>
     <label>True Form (Demonic)</label>
     <description>True power unleached!</description>
     <abilities>
@@ -245,6 +275,18 @@
     </renderNodeProperties>
   </HediffDef>
 
+  <HediffDef ParentName="BS_TrueForm_HemoDemonic">
+    <defName>BS_TrueForm_Demonic</defName>
+    <comps>
+      <li Class="BigAndSmall.CompProperties_DrainResource">
+        <compClass>BigAndSmall.Comp_DrainsSoulEnergy</compClass>
+        <ticksBetweenDrain>20</ticksBetweenDrain>
+        <removeOnZero>true</removeOnZero>
+        <canCancel>true</canCancel>
+      </li>
+    </comps>
+  </HediffDef>
+
   <HediffDef ParentName="BS_TrueFormBase">
     <defName>BS_TrueForm_Goliath</defName>
     <label>goliath form</label>
@@ -257,7 +299,6 @@
         <painFactor>0.65</painFactor>
         <statFactors>
           <MoveSpeed>0.75</MoveSpeed>
-          <!-- <SM_BodySizeMultiplier>1.25</SM_BodySizeMultiplier> -->
           <StaggerDurationFactor>0</StaggerDurationFactor>
           <IncomingDamageFactor>0.9</IncomingDamageFactor>
         </statFactors>
@@ -266,6 +307,36 @@
           <ArmorRating_Sharp>0.10</ArmorRating_Sharp>
           <ArmorRating_Heat>0.5</ArmorRating_Heat>
         </statOffsets>
+        <statOffsetEffectMultiplier>BS_SoulPower</statOffsetEffectMultiplier>
+      </li>
+      <li>
+        <minSeverity>1</minSeverity>
+        <statFactors>
+          <MoveSpeed>0.75</MoveSpeed>
+          <StaggerDurationFactor>0</StaggerDurationFactor>
+          <IncomingDamageFactor>0.9</IncomingDamageFactor>
+        </statFactors>
+        <statOffsets>
+          <SM_BodySizeOffset>0.4</SM_BodySizeOffset>
+          <ArmorRating_Sharp>0.10</ArmorRating_Sharp>
+          <ArmorRating_Heat>0.5</ArmorRating_Heat>
+        </statOffsets>
+        <statFactorEffectMultiplier>BS_SoulPower</statFactorEffectMultiplier>
+        <statOffsetEffectMultiplier>BS_SoulPower</statOffsetEffectMultiplier>
+      </li>
+      <li>
+        <minSeverity>2</minSeverity>
+        <statFactors>
+          <MoveSpeed>0.75</MoveSpeed>
+          <StaggerDurationFactor>0</StaggerDurationFactor>
+          <IncomingDamageFactor>0.9</IncomingDamageFactor>
+        </statFactors>
+        <statOffsets>
+          <SM_BodySizeOffset>0.25</SM_BodySizeOffset>
+          <ArmorRating_Sharp>0.10</ArmorRating_Sharp>
+          <ArmorRating_Heat>0.5</ArmorRating_Heat>
+        </statOffsets>
+        <statFactorEffectMultiplier>BS_SoulPower</statFactorEffectMultiplier>
         <statOffsetEffectMultiplier>BS_SoulPower</statOffsetEffectMultiplier>
       </li>
 		</stages>
@@ -292,6 +363,12 @@
             <armorPenetration>0.3</armorPenetration>
           </li>
         </tools>
+      </li>
+      <li Class="BigAndSmall.CompProperties_DrainResource">
+        <compClass>BigAndSmall.Comp_DrainsSoulEnergy</compClass>
+        <ticksBetweenDrain>20</ticksBetweenDrain>
+        <removeOnZero>true</removeOnZero>
+        <canCancel>true</canCancel>
       </li>
 		</comps>
     <renderNodeProperties Inherit="False">

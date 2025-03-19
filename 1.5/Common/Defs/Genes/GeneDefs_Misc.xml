@@ -452,7 +452,7 @@
     <marketValueFactor>2</marketValueFactor>
     <biostatCpx>8</biostatCpx>
     <biostatMet>9</biostatMet>
-    <biostatArc>5</biostatArc>
+    <biostatArc>3</biostatArc>
     <exclusionTags>
       <li>BS_Metabolism_Gene</li>
     </exclusionTags>
