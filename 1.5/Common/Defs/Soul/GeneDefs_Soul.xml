@@ -6,7 +6,7 @@
     <customEffectDescriptions>
       <li>+5% Consciousness, scaled by Soul Power</li>
       <li>+5% Melee Damage, scaled by Soul Power</li>
-      <li>+5% Momvement Speed, scaled by Soul Power</li>
+      <li>+5% Movement Speed, scaled by Soul Power</li>
       <li>0.05 damage reduction, scaled by Soul Power</li>
     </customEffectDescriptions>
     <iconPath>GeneIcons/BS_SoulPower</iconPath>
@@ -15,6 +15,11 @@
     <statOffsets>
       <BS_SoulPower>0.5</BS_SoulPower>
     </statOffsets>
+    <modExtensions>
+      <li Class="BigAndSmall.PawnExtension">
+        <soulFalloffStart>0.5</soulFalloffStart>
+      </li>
+      </modExtensions>
   </GeneDef>
 
   <GeneDef ParentName="BS_GenericGene">
@@ -25,7 +30,7 @@
     <customEffectDescriptions>
       <li>+5% Consciousness, scaled by Soul Power</li>
       <li>+5% Melee Damage, scaled by Soul Power</li>
-      <li>+5% Momvement Speed, scaled by Soul Power</li>
+      <li>+5% Movement Speed, scaled by Soul Power</li>
       <li>0.05 damage reduction, scaled by Soul Power</li>
     </customEffectDescriptions>
     <iconPath>GeneIcons/BS_SoulPower</iconPath>
@@ -34,6 +39,11 @@
     <statOffsets>
       <BS_SoulPower>1</BS_SoulPower>
     </statOffsets>
+    <modExtensions>
+      <li Class="BigAndSmall.PawnExtension">
+        <soulFalloffStart>1</soulFalloffStart>
+      </li>
+    </modExtensions>
   </GeneDef>
 
   <GeneDef>

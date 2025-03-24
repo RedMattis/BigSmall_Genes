@@ -11,6 +11,16 @@
     <biostatCpx>1</biostatCpx>
     <biostatMet>-2</biostatMet>
     <modExtensions>
+      <li Class="BigAndSmall.PawnExtension">
+        <meatOverride>Chocolate</meatOverride>
+        <butcherProducts>
+          <li>
+            <thingDef>Milk</thingDef>
+            <count>10</count>
+            <scaleToBodySize>true</scaleToBodySize>
+          </li>
+        </butcherProducts>
+      </li>
       <li Class="BigAndSmall.ProductionGeneSettings">
         <product>Chocolate</product>
         <frequencyInDays>2</frequencyInDays>

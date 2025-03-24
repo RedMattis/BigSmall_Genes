@@ -1,0 +1,191 @@
+<Defs>
+  <BigAndSmall.GeneStealDef Abstract="True" Name="BS_Corpselike">
+    <genes>
+      <li>VU_NoBlood</li>
+      <li>VU_Unliving</li>
+      <li>VU_Unliving_Resilience</li>
+      <li>PerfectImmunity</li>
+      <li>BS_PainNumb</li>
+      <li>Sterile</li>
+      <li>MinTemp_HugeDecrease</li>
+      <li>MaxTemp_HugeIncrease</li>
+      <li>VU_Libido_None</li>
+      <li>ToxResist_Total</li>
+      <li>BS_DessicatedBody</li>
+      <li>BS_DessicatedBodyWithHair</li>
+      <li>BS_DessicatedBodyWithGreyHair</li>
+    </genes>
+  </BigAndSmall.GeneStealDef>
+
+  <BigAndSmall.GeneStealDef ParentName="BS_Corpselike">
+    <defName>BS_BasicAnomalyEntity</defName>
+    <selectors>
+      <MutantDef_Shambler>0</MutantDef_Shambler>
+      <FleshDef_EntityFlesh>0</FleshDef_EntityFlesh> 
+    </selectors>
+    <genes>
+      <li>WoundHealing_VerySlow</li>
+      <li>Beauty_Ugly</li>
+      <li>Delicate</li>
+      <li>Mood_Depressive</li>
+      <li>Aggression_HyperAggressive</li>
+    </genes>
+  </BigAndSmall.GeneStealDef>
+
+  <BigAndSmall.GeneStealDef ParentName="BS_Corpselike">
+    <defName>BS_Ghoul</defName>
+    <selectors> <MutantDef_Ghoul>10</MutantDef_Ghoul> </selectors>
+    <genes>
+      <li>Beauty_Ugly</li>
+      <li>BS_Instability_Catastrophic</li>
+      <li>WoundHealing_SuperFast</li>
+      <li>Ageless</li>
+      <li>Robust</li>
+      <li>BS_PainNumb</li>
+      <li>BS_ToughSkin</li>
+      <li>BS_NaturalArmor</li>
+      <li MayRequire="ludeon.rimworld.anomaly">BS_GhoulHead</li>
+      <li>Mood_Depressive</li>
+      <li>Aggression_HyperAggressive</li>
+      <li>Neversleep</li>
+    </genes>
+  </BigAndSmall.GeneStealDef>
+
+  <BigAndSmall.GeneStealDef>
+    <defName>BS_Fleshbeast</defName>
+    <selectors> <FleshDef_Fleshbeast>0</FleshDef_Fleshbeast> </selectors>
+    <genes>
+      <li>Beauty_VeryUgly</li>
+      <li>BS_Instability_Catastrophic</li>
+      <li>BS_CellPandemonium</li>
+      <li>WoundHealing_SuperFast</li>
+      <li>VU_UltraRapidAging</li>
+      <li>Pain_Reduced</li>
+      <li>Pain_Extra</li>
+      <li>BS_ToughSkin</li>
+      <li>BS_NaturalArmor</li>
+      <li>VU_Hermaphromorph</li>
+      <li>BS_MimicBody</li>
+      <li>Aggression_HyperAggressive</li>
+    </genes>
+  </BigAndSmall.GeneStealDef>
+
+  <BigAndSmall.GeneStealDef>
+    <defName>BS_Gorehulk</defName>
+    <selectors> <ThingDef_Gorehulk>10</ThingDef_Gorehulk> </selectors>
+    <genes>
+      <li>LoS_VenomTalons</li>
+      <li>BS_Talons</li>
+      <li>Pain_Extra</li>
+      <li>Delicate</li>
+      <li>Beauty_VeryUgly</li>
+      <li>BS_LargeFrame</li>
+      <li>MoveSpeed_Quick</li>
+      <li>Mood_Depressive</li>
+      <li>BS_CannotWearClothing</li>
+    </genes>
+  </BigAndSmall.GeneStealDef>
+
+  <BigAndSmall.GeneStealDef>
+    <defName>BS_Chimera</defName>
+    <selectors> <ThingDef_Chimera>10</ThingDef_Chimera> </selectors>
+    <genes>
+      <li>Beauty_VeryUgly</li>
+      <li>BS_Instability_Catastrophic</li>
+      <li>BS_FeedingFrenzy</li>
+      <li>Pain_Reduced</li>
+      <li>BS_ToughSkin</li>
+      <li>BS_CannotWearClothingOrArmor</li>
+      <li>BS_CannotWearClothing</li>
+      <li>BS_NoEquip</li>
+      <li>BS_Unarmed_VeryStrong</li>
+      <li>VeryNakedSpeed</li>
+      <li>NakedSpeed</li>
+      <li>BS_Talons</li>
+      <li>Aggression_HyperAggressive</li>
+    </genes>
+  </BigAndSmall.GeneStealDef>
+
+  <BigAndSmall.GeneStealDef>
+    <defName>BS_Metalhorror</defName>
+    <!-- Not normally possible as corpses. -->
+    <selectors> <ThingDef_Metalhorror>10</ThingDef_Metalhorror> </selectors>
+    <genes>
+      <li>BS_PainNumb</li>
+      <li>Pain_Reduced</li>
+      <li>BS_NaturalArmor_Great</li>
+      <li>Robust</li>
+      <li>ArchiteMetabolism</li>
+      <li>Mood_Depressive</li>
+      <li>BS_TrueForm_Goliath</li>
+    </genes>
+  </BigAndSmall.GeneStealDef>
+
+  <BigAndSmall.GeneStealDef>
+    <defName>BS_Revenant</defName>
+    <selectors> <ThingDef_Revenant>10</ThingDef_Revenant> </selectors>
+    <genes>
+      <li>BS_PainNumb</li>
+      <li>BS_NaturalArmor_Great</li>
+      <li>Robust</li>
+      <li>ArchiteMetabolism</li>
+      <li>BS_MoveSpeed_UltraQuick</li>
+      <li>Mood_Depressive</li>
+      <li>Deathless</li>
+      <li>BS_SoulPowerGreat</li>
+      <li>BS_ConsumeSoul</li>
+      <li>BS_ConsumeSoulOnHit</li>
+    </genes>
+  </BigAndSmall.GeneStealDef>
+
+  <BigAndSmall.GeneStealDef>
+    <defName>BS_Devourer</defName>
+    <selectors> <ThingDef_Devourer>10</ThingDef_Devourer> </selectors>
+    <genes>
+      <li>BS_Very_Slow</li>
+      <li>BS_NaturalArmor</li>
+      <li>BS_GeneEater</li>
+      <li>BS_SnekEngulf</li>
+      <li>BS_FeedingFrenzy</li>
+      <li>OgreFrame</li>
+      <li>GreatOgreFrame</li>
+      <li>BS_MimicBody</li>
+      <li>LoS_MarlithBody</li>
+    </genes>
+  </BigAndSmall.GeneStealDef>
+
+  <BigAndSmall.GeneStealDef>
+    <defName>BS_Noctol</defName>
+    <selectors> <ThingDef_Noctol>10</ThingDef_Noctol> </selectors>
+    <genes>
+      <li>VU_Darkness_MoveSpeed_VeryQuick</li>
+      <li>VU_DarknessMelee_Strong</li>
+      <li>VU_Darkness_MoveSpeed_Quick</li>
+      <li>VU_DarknessMelee</li>
+      <li>VU_DarknessWoundHealing_UltraFast</li>
+      <li>VU_DarknessWoundHealing_Fast</li>
+      <li>Undergrounder</li>
+      <li>DarkVision</li>
+      <li>BS_SoulPower</li>
+      <li>BS_ConsumeSoul</li>
+      <li>BS_ConsumeSoulOnHit</li>
+    </genes>
+  </BigAndSmall.GeneStealDef>
+
+  <BigAndSmall.GeneStealDef>
+    <defName>BS_Nociosphere</defName>
+    <!-- Should normally not even be possible since they explode... -->
+    <selectors> <ThingDef_Nociosphere>10</ThingDef_Nociosphere> </selectors>
+    <genes>
+      <li>ArchiteMetabolism</li>
+      <li>BS_NaturalArmor_Great</li>
+      <li>Robust</li>
+      <li>JotunFrame</li>
+      <li>BS_SoulPowerGreat</li>
+      <li>BS_ConsumeSoul</li>
+      <li>BS_ConsumeSoulOnHit</li>
+      <li>BS_ReturningSoul</li>
+    </genes>
+  </BigAndSmall.GeneStealDef>
+
+</Defs>

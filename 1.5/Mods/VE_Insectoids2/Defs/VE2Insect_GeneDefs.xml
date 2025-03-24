@@ -3,7 +3,7 @@
   <GeneDef>
     <defName>BS_RoyalJellyProduction</defName>
     <label>royal jelly production</label>
-    <description>Carriers of this gene produce a small amount of royal insect jelly</description>
+    <description>Carriers of this gene produce a small amount of royal insect jelly. They also produce a very small amount of regular jelly..</description>
     <geneClass>BigAndSmall.ProductionGene</geneClass>
     <iconPath>GeneIcons/BS_InsectJellyRoyal</iconPath>
     <displayCategory>BS_Production</displayCategory>
@@ -14,7 +14,14 @@
       <li Class="BigAndSmall.ProductionGeneSettings">
         <product>VFEI2_RoyalInsectJelly</product>
         <frequencyInDays>2</frequencyInDays>
-        <baseAmount>9</baseAmount>
+        <baseAmount>7</baseAmount>
+        <progressName>Producing Jelly</progressName>
+        <saveKey>BS_JellyProduction</saveKey>
+      </li>
+      <li Class="BigAndSmall.ProductionGeneSettings">
+        <product>InsectJelly</product>
+        <frequencyInDays>2</frequencyInDays>
+        <baseAmount>4</baseAmount>
         <progressName>Producing Jelly</progressName>
         <saveKey>BS_JellyProduction</saveKey>
       </li>
