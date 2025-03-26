@@ -220,7 +220,7 @@
     <label>dark gray hair</label>
     <hairColorOverride>(0.45, 0.45, 0.45)</hairColorOverride>
     <randomBrightnessFactor>0.2</randomBrightnessFactor>
-    <selectionWeight>0.02</selectionWeight>
+    <selectionWeight>0.05</selectionWeight>
     <displayOrderInCategory>10</displayOrderInCategory>
   </GeneDef>
 
@@ -229,7 +229,7 @@
     <label>moss-green hair</label>
     <labelShortAdj>mossy</labelShortAdj>
     <description>Carriers of this gene have mossy green hair.</description>
-    <selectionWeight>0.03</selectionWeight>
+    <selectionWeight>0.05</selectionWeight>
     <randomBrightnessFactor>0.05</randomBrightnessFactor>
     <hairColorOverride>(80,100,65)</hairColorOverride>
     <displayOrderInCategory>175</displayOrderInCategory>

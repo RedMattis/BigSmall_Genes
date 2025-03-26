@@ -9,7 +9,7 @@
     <skinColorOverride>(214,255,247)</skinColorOverride>
     <displayOrderInCategory>175</displayOrderInCategory>
 
-    <selectionWeight>0.2</selectionWeight>
+    <selectionWeight>0.1</selectionWeight>
   </GeneDef>
 
   <GeneDef ParentName="GeneSkinColorOverride">
@@ -22,7 +22,7 @@
     <skinColorOverride>(62,168,244,255)</skinColorOverride>
     <displayOrderInCategory>175</displayOrderInCategory>
 
-    <selectionWeight>0.2</selectionWeight>
+    <selectionWeight>0.1</selectionWeight>
   </GeneDef>
 
   <GeneDef ParentName="GeneSkinColorOverride">
@@ -34,7 +34,7 @@
     <randomBrightnessFactor>0</randomBrightnessFactor>
     <displayOrderInCategory>93</displayOrderInCategory>
 
-    <selectionWeight>0.2</selectionWeight>
+    <selectionWeight>0.1</selectionWeight>
   </GeneDef>
   
   <GeneDef ParentName="GeneSkinColorOverride">
@@ -46,7 +46,7 @@
     <skinColorOverride>(255,154,62)</skinColorOverride>
     <displayOrderInCategory>176</displayOrderInCategory>
 
-    <selectionWeight>0.2</selectionWeight>
+    <selectionWeight>0.1</selectionWeight>
   </GeneDef>
 
   <GeneDef ParentName="GeneSkinColorOverride">
@@ -58,7 +58,7 @@
     <skinColorOverride>(250, 238, 197)</skinColorOverride>
     <displayOrderInCategory>176</displayOrderInCategory>
 
-    <selectionWeight>0.2</selectionWeight>
+    <selectionWeight>0.1</selectionWeight>
   </GeneDef>
   
   <GeneDef ParentName="GeneSkinColorOverride">
@@ -71,7 +71,7 @@
     <skinColorOverride>(125,12,26,255)</skinColorOverride>
     <displayOrderInCategory>177</displayOrderInCategory>
 
-    <selectionWeight>0.2</selectionWeight>
+    <selectionWeight>0.1</selectionWeight>
   </GeneDef>
 
   <GeneDef ParentName="GeneSkinColorOverride">
@@ -81,7 +81,7 @@
 		<description>Carriers of this gene produce a deep purple pigment that gives their skin a sickly appearance.</description>
 		<skinColorOverride>(61, 59, 78)</skinColorOverride>
 		<displayOrderInCategory>178</displayOrderInCategory>
-    <selectionWeight>0.2</selectionWeight>
+    <selectionWeight>0.1</selectionWeight>
 	</GeneDef>
 
   <GeneDef ParentName="GeneSkinColorOverride">
@@ -92,7 +92,7 @@
     <randomBrightnessFactor>0.1</randomBrightnessFactor>
     <skinColorOverride>(255,253,227)</skinColorOverride>
     <displayOrderInCategory>175</displayOrderInCategory>
-    <selectionWeight>0.2</selectionWeight>
+    <selectionWeight>0.1</selectionWeight>
   </GeneDef>
 
   <GeneDef ParentName="GeneSkinColorOverride">
@@ -103,7 +103,7 @@
     <randomBrightnessFactor>0</randomBrightnessFactor>
     <skinColorOverride>(227,255,227)</skinColorOverride>
     <displayOrderInCategory>175</displayOrderInCategory>
-    <selectionWeight>0.2</selectionWeight>
+    <selectionWeight>0.1</selectionWeight>
   </GeneDef>
 
   <GeneDef ParentName="GeneSkinColorOverride">
@@ -115,7 +115,7 @@
     <skinColorOverride>(138,153,139)</skinColorOverride>
     <displayOrderInCategory>176</displayOrderInCategory>
 
-    <selectionWeight>0.2</selectionWeight>
+    <selectionWeight>0.1</selectionWeight>
   </GeneDef>
   
   <GeneDef ParentName="GeneSkinColorOverride">
@@ -127,7 +127,7 @@
     <skinColorOverride>(129,144,127,255)</skinColorOverride>
     <displayOrderInCategory>177</displayOrderInCategory>
 
-    <selectionWeight>0.2</selectionWeight>
+    <selectionWeight>0.1</selectionWeight>
   </GeneDef>
   
   <GeneDef ParentName="GeneSkinColorOverride">
@@ -139,7 +139,7 @@
     <skinColorOverride>(65,71,37)</skinColorOverride>
     <displayOrderInCategory>178</displayOrderInCategory>
 
-    <selectionWeight>0.2</selectionWeight>
+    <selectionWeight>0.1</selectionWeight>
   </GeneDef>
 
   <GeneDef ParentName="GeneSkinColorOverride">
@@ -151,7 +151,7 @@
     <randomBrightnessFactor>0</randomBrightnessFactor>
     <skinColorOverride>(230,255,210,255)</skinColorOverride>
     <displayOrderInCategory>175</displayOrderInCategory>
-    <selectionWeight>0</selectionWeight>
+    <selectionWeight>0.1</selectionWeight>
 
   </GeneDef>
 
@@ -173,6 +173,6 @@
         <li><symbol>leaf</symbol></li>
       </prefixSymbols>
     </symbolPack>
-    <selectionWeight>0</selectionWeight>
+    <selectionWeight>0.1</selectionWeight>
   </GeneDef>
 </Defs>
