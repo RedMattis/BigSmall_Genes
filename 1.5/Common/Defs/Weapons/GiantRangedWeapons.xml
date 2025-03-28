@@ -217,7 +217,7 @@
     <graphicData>
       <texPath>Item/BS_GiantRocketLauncher</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>2.6</drawSize>
+      <drawSize>2.3</drawSize>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <equippedDistanceOffset>-0.30</equippedDistanceOffset>

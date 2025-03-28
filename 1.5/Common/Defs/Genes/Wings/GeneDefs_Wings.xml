@@ -101,7 +101,7 @@
         <parentTagDef>Body</parentTagDef>
         <texPath>BS_BodyAttachments/BS_DemonWingsc</texPath>
         <workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
-        <drawSize>(1.45,1.45)</drawSize>
+        <drawSize>(1.25,1.25)</drawSize>
         <colorType>Skin</colorType>
         <drawData>
           <defaultData>
@@ -141,7 +141,7 @@
         <parentTagDef>Body</parentTagDef>
         <texPath>BS_BodyAttachments/BS_DemonWingsb</texPath>
         <workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
-        <drawSize>(1.45,1.45)</drawSize>
+        <drawSize>(1.25,1.25)</drawSize>
         <colorType>Skin</colorType>
         <drawData>
           <defaultData>

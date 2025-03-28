@@ -166,7 +166,6 @@
 		<description>Carriers of this gene shrug off attacks as though they were wearing padded armour.</description>
 		<iconPath>GeneIcons/BS_ArmourSteel</iconPath>
 		
-		
 		<displayOrderInCategory>20</displayOrderInCategory>
 		<statFactors>
 			<SM_RaidWealthMultiplier>1.2</SM_RaidWealthMultiplier>
@@ -186,15 +185,6 @@
 			</prefixSymbols>
 		</symbolPack>
 		<selectionWeight>1</selectionWeight>
-    <!-- <modExtensions>
-			<li Class="BigAndSmall.PawnExtension">
-				<applyBodyHediff>
-					<li>
-						<hediff>BS_NaturalArmor_Padded</hediff>
-					</li>
-				</applyBodyHediff>
-			</li>
-		</modExtensions> -->
 	</GeneDef>
   
   <GeneDef ParentName="BS_Armor">
@@ -228,14 +218,7 @@
 			</prefixSymbols>
 		</symbolPack>
 		<selectionWeight>1</selectionWeight>
-    <!-- <modExtensions>
-			<li Class="BigAndSmall.PawnExtension">
-				<applyBodyHediff><li><hediff>BS_NaturalArmor_Riot</hediff></li></applyBodyHediff>
-			</li>
-		</modExtensions> -->
 	</GeneDef>
-
-	
 
 	<GeneDef>
     <defName>BS_DrunkenPower</defName>

@@ -10,8 +10,8 @@
       <color>(180, 180, 255)</color>
 		</graphicData>
 		<projectile>
-			<damageDef>Vaporize</damageDef>
-			<damageAmountBase>1</damageAmountBase>
+			<damageDef>BS_IndictedDamage</damageDef>
+			<damageAmountBase>10</damageAmountBase>
 			<stoppingPower>0.15</stoppingPower>
 			<speed>70</speed>
 		</projectile>

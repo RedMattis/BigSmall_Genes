@@ -326,7 +326,7 @@
         <parentTagDef>Body</parentTagDef>
         <workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
         <texPath>BS_BodyAttachments/BS_Wings/MenacingWings_Bottom</texPath>
-        <drawSize>(1.45,1.45)</drawSize>
+        <drawSize>(1.25,1.25)</drawSize>
         <color>(245,245,245)</color>
         <colorType>Hair</colorType>
         <drawData>
@@ -349,7 +349,7 @@
         <parentTagDef>Body</parentTagDef>
         <workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
         <texPath>BS_BodyAttachments/BS_Wings/MenacingWings_Top</texPath>
-        <drawSize>(1.45,1.45)</drawSize>
+        <drawSize>(1.25,1.25)</drawSize>
         <color>(245,245,245)</color>
         <colorType>Hair</colorType>
         <drawData>
@@ -391,7 +391,7 @@
         <parentTagDef>Body</parentTagDef>
         <workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
         <texPath>BS_BodyAttachments/BS_Wings/DemonWings_Bottom</texPath>
-        <drawSize>(1.45,1.45)</drawSize>
+        <drawSize>(1.25,1.25)</drawSize>
         <color>(245,245,245)</color>
         <colorType>Skin</colorType>
         <drawData>
@@ -399,11 +399,17 @@
             <layer>10</layer>
           </defaultData>
           <dataSouth>
+            <offset>(0.0, 0, -0.05)</offset>
             <layer>-1</layer>
           </dataSouth>
           <dataEast>
             <offset>(0.10, 0, -0.05)</offset>
+            <rotationOffset>10</rotationOffset>
           </dataEast>
+          <dataWest>
+            <offset>(-0.10, 0, -0.05)</offset>
+            <rotationOffset>-10</rotationOffset>
+          </dataWest>
           <dataNorth>
             <layer>90</layer>
             <offset>(0.0, 0, -0.15)</offset>
@@ -414,16 +420,24 @@
         <parentTagDef>Body</parentTagDef>
         <workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
         <texPath>BS_BodyAttachments/BS_Wings/DemonWings_Top</texPath>
-        <drawSize>(1.45,1.45)</drawSize>
+        <drawSize>(1.25,1.25)</drawSize>
         <color>(245,245,245)</color>
         <colorType>Skin</colorType>
         <drawData>
           <defaultData>
             <layer>91</layer>
           </defaultData>
+          <dataSouth>
+            <offset>(0.0, 0, -0.05)</offset>
+          </dataSouth>
           <dataEast>
             <offset>(0.10, 0, -0.05)</offset>
+            <rotationOffset>10</rotationOffset>
           </dataEast>
+          <dataWest>
+            <offset>(-0.10, 0, -0.05)</offset>
+            <rotationOffset>-10</rotationOffset>
+          </dataWest>
           <dataNorth>
             <layer>91</layer>
             <offset>(0.0, 0, -0.15)</offset>

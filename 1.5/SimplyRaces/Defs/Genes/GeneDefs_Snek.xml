@@ -143,8 +143,10 @@
             </bodyparts>
           </li>
         </applyPartHediff>
-        <thingDefSwap>BS_Marlith</thingDefSwap>
-        <!-- <bodyPosOffset>0.6</bodyPosOffset> -->
+        <thingDefSwap>BS_Naga</thingDefSwap>
+      </li>
+      <li Class="BigAndSmall.PawnExtension">
+        <thingDefSwap>BS_SixArmedHuman</thingDefSwap>
       </li>
       <li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
         <movementDef>PF_Movement_Flying</movementDef>

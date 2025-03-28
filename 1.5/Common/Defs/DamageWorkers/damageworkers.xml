@@ -78,4 +78,20 @@
     <hediffSolid>Bite</hediffSolid>
     <overkillPctToDestroyPart>0~0.01</overkillPctToDestroyPart>
   </DamageDef>
+  
+
+  <DamageDef ParentName="Flame" Name="BS_IndictedDamage">
+    <defName>BS_IndictedDamage</defName>
+    <label>indirect damage</label>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} died.</deathMessage>
+    <workerClass>BigAndSmall.DamageWorker_NoDirectDamage</workerClass>
+    <defaultDamage>15</defaultDamage>
+    <applyAdditionalHediffsIfHuntingForFood>false</applyAdditionalHediffsIfHuntingForFood>
+    <impactSoundType>Electric</impactSoundType>
+    <armorCategory>Heat</armorCategory>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <hasForcefulImpact>true</hasForcefulImpact>
+    <makesAnimalsFlee>true</makesAnimalsFlee>
+  </DamageDef>
 </Defs>

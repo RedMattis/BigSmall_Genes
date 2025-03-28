@@ -2,15 +2,14 @@
   <ThingDef Name="BMad_ShrinkRay" ParentName="BaseHumanMakeableGun">
 		<defName>BMad_ShrinkRay</defName>
 		<label>shrink ray</label>
-		<description>A ray for shrinking. Use with caution since very small objects get quantum unstable and can fall into other dimensions.\n\nNote: try not to mix up to be confused with the other "shrink ray" made to restore mental health; no need to shrink our customer approval.</description>
-		<possessionCount>1</possessionCount>
+		<description>A ray for shrinking. Use with caution since very small objects get quantum unstable and can fall into other dimensions.\n\nNote: try not to mix up to be confused with the other "shrink ray" made to restore mental health; no need to shrink our customer approval.\n\nThis weapon afflicts no direct damage.</description>
 		<graphicData>
       <texPath>Item/mad_shrinkray</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
 		<soundInteract>Interact_ChargeRifle</soundInteract>
-    <generateCommonality>0.05</generateCommonality>
-    <generateAllowChance>0.05</generateAllowChance>
+    <generateCommonality>0.01</generateCommonality>
+    <!-- <generateAllowChance>1</generateAllowChance> -->
 		<statBases>
       <Mass>8</Mass>
       <AccuracyTouch>0.85</AccuracyTouch>
@@ -22,15 +21,12 @@
     </statBases>
 		<weaponTags Inherit="False">
       <li>SpacerGun</li>
-			<!-- <li>SpacerGun</li>
-			<li>Revolver</li>
-      <li>SpacerGun</li>
-      <li>MechanoidGunMedium</li> -->
+			<li>MadScience</li>
+      <li>ShrinkRay</li>
 		</weaponTags>
     
-		<weaponClasses Inherit="False">
+		<weaponClasses>
       <li>RangedLight</li>
-			<!-- <li>RangedLight</li> -->
 		</weaponClasses>
 		<costList>
 			<Steel>30</Steel>
@@ -77,11 +73,16 @@
   <ThingDef ParentName="BMad_ShrinkRay">
 		<defName>BMad_GrowthRay</defName>
 		<label>growth ray</label>
-		<description>A ray for growing things. Not in the botanical sense.\n\nHopefully this iterration will not create man-eating turnips if the botany team get them mixed up again. \n\nNote: Overloading the subject after growth has stopped can lead do a dangerous discharge of growth flux and the subject suffers a form micro-disintegration that has killed all machies and life-forms we've tested it on.</description>
+		<description>A ray for growing things. Not in the botanical sense.\n\nHopefully this iteration will not create man-eating turnips if the botany team get them mixed up again. \n\nNote: Overloading the subject after growth has stopped can lead do a dangerous discharge of growth flux and the subject suffers a form micro-disintegration that has killed all machines and life-forms we've tested it on.\n\nThis weapon afflicts no direct damage.</description>
 		<graphicData>
       <texPath>Item/mad_growthray</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
+    <weaponTags Inherit="False">
+      <li>SpacerGun</li>
+			<li>MadScience</li>
+      <li>GrowthRay</li>
+		</weaponTags>
 		<verbs Inherit="False">
 			<li>
 				<verbClass>Verb_Shoot</verbClass>

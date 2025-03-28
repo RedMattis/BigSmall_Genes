@@ -95,7 +95,7 @@
         <parentTagDef>Body</parentTagDef>
         <workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
         <texPath>BS_BodyAttachments/BS_Wings/AngelicWings_Bottom</texPath>
-        <drawSize>(1.45,1.45)</drawSize>
+        <drawSize>(1.25,1.25)</drawSize>
         <color>(245,245,245)</color>
         <colorType>Hair</colorType>
         <drawData>
@@ -118,7 +118,7 @@
         <parentTagDef>Body</parentTagDef>
         <workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
         <texPath>BS_BodyAttachments/BS_Wings/AngelicWings_Top</texPath>
-        <drawSize>(1.45,1.45)</drawSize>
+        <drawSize>(1.25,1.25)</drawSize>
         <color>(245,245,245)</color>
         <colorType>Hair</colorType>
         <drawData>
@@ -206,7 +206,7 @@
       <li>
         <parentTagDef>Body</parentTagDef>
         <texPath>BS_BodyAttachments/BS_DemonWingsb</texPath>
-        <drawSize>(1.45,1.45)</drawSize>
+        <drawSize>(1.25,1.25)</drawSize>
         <colorType>Skin</colorType>
         <drawData>
           <defaultData>
