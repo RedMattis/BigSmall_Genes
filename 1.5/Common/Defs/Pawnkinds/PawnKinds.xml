@@ -21,6 +21,7 @@
       <li>Violent</li>
     </requiredWorkTags>
     <apparelTags Inherit="False" />
+    <nakedChance>1</nakedChance>
     <weaponMoney>150~150</weaponMoney>
     <weaponTags>
       <li>NeolithicMeleeDecent</li>
@@ -47,6 +48,7 @@
       <li>Violent</li>
     </requiredWorkTags>
     <apparelTags Inherit="False" />
+    <nakedChance>1</nakedChance>
     <weaponMoney>150~300</weaponMoney>
     <weaponTags Inherit="False">
       <li>NeolithicMeleeBasic</li>

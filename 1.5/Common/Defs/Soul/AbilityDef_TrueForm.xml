@@ -44,11 +44,15 @@
 
   <AbilityDef Abstract="True" Name="BS_TrueFormAbillity">
     <cooldownTicksRange>1400</cooldownTicksRange>
-    <hostile>False</hostile>
-    <targetRequired>False</targetRequired>
+    <hostile>false</hostile>
+    <targetRequired>false</targetRequired>
     <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
     <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
     <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+    <groupAbility>true</groupAbility>
+
+    <aiCanUse>true</aiCanUse>
+    <!-- <ai_IsOffensive>true</ai_IsOffensive> -->
 
     <warmupEffecter>BS_TrueForm_Warmup</warmupEffecter>
     <warmupMote>BS_TrueformAbilityMote</warmupMote>
@@ -59,18 +63,14 @@
       <violent>false</violent>
       <warmupTime>2</warmupTime>
       <range>20</range>
-      <requireLineOfSight>False</requireLineOfSight>
+      <requireLineOfSight>false</requireLineOfSight>
       <nonInterruptingSelfCast>true</nonInterruptingSelfCast>
       <targetParams>
-        <canTargetSelf>True</canTargetSelf>
+        <canTargetSelf>true</canTargetSelf>
       </targetParams>
     </verbProperties>
-    
-    <groupAbility>true</groupAbility>
-    <aiCanUse>true</aiCanUse>
-    <ai_IsOffensive>true</ai_IsOffensive>
     <comps>
-      <li Class="CompProperties_AbilityFleckOnTarget">
+      <li Class="BigAndSmall.CompProperties_AbilityFleckOnSelf">
         <fleckDefs>
           <li>PsycastSkipInnerExit</li>
           <li>PsycastSkipOuterRingExit</li>
@@ -87,11 +87,11 @@
     <description>Temporarily transform into a more powerful form.</description>
     <iconPath>GeneIcons/BS_AngelicForm</iconPath>
     <comps>
-      <li Class="BigAndSmall.CompProperties_AbilityEffect_GiveHediffComplex">
+      <li Class="BigAndSmall.CompProperties_AbilityGiveHediffComplex">
         <compClass>BigAndSmall.CompAbilityEffect_GiveHediffComplex</compClass>
         <hediffDef>BS_TrueForm_Angelic</hediffDef>
-        <replaceExisting>True</replaceExisting>
-        <onlyApplyToSelf>True</onlyApplyToSelf>
+        <replaceExisting>true</replaceExisting>
+        <onlyApplyToSelf>true</onlyApplyToSelf>
         <offsetSeverityBodySize>true</offsetSeverityBodySize>
       </li>
       <li Class="BigAndSmall.CompProperties_SoulEnergyCost">
@@ -106,11 +106,11 @@
     <description>Temporarily transform into a more powerful form.</description>
     <iconPath>GeneIcons/VU_DemonForm</iconPath>
     <comps>
-      <li Class="BigAndSmall.CompProperties_AbilityEffect_GiveHediffComplex">
+      <li Class="BigAndSmall.CompProperties_AbilityGiveHediffComplex">
         <compClass>BigAndSmall.CompAbilityEffect_GiveHediffComplex</compClass>
         <hediffDef>BS_TrueForm_Demonic</hediffDef>
-        <replaceExisting>True</replaceExisting>
-        <onlyApplyToSelf>True</onlyApplyToSelf>
+        <replaceExisting>true</replaceExisting>
+        <onlyApplyToSelf>true</onlyApplyToSelf>
         <offsetSeverityBodySize>true</offsetSeverityBodySize>
       </li>
       <li Class="BigAndSmall.CompProperties_SoulEnergyCost">
@@ -125,11 +125,11 @@
     <description>Temporarily transform into a more powerful form.</description>
     <iconPath>GeneIcons/BS_GoliathForm</iconPath>
     <comps>
-      <li Class="BigAndSmall.CompProperties_AbilityEffect_GiveHediffComplex">
+      <li Class="BigAndSmall.CompProperties_AbilityGiveHediffComplex">
         <compClass>BigAndSmall.CompAbilityEffect_GiveHediffComplex</compClass>
         <hediffDef>BS_TrueForm_Goliath</hediffDef>
-        <replaceExisting>True</replaceExisting>
-        <onlyApplyToSelf>True</onlyApplyToSelf>
+        <replaceExisting>true</replaceExisting>
+        <onlyApplyToSelf>true</onlyApplyToSelf>
         <offsetSeverityBodySize>true</offsetSeverityBodySize>
       </li>
       <li Class="BigAndSmall.CompProperties_SoulEnergyCost">
@@ -148,11 +148,11 @@
       <Ability_Duration>125</Ability_Duration>
     </statBases>
     <comps>
-      <li Class="BigAndSmall.CompProperties_AbilityEffect_GiveHediffComplex">
+      <li Class="BigAndSmall.CompProperties_AbilityGiveHediffComplex">
         <compClass>BigAndSmall.CompAbilityEffect_GiveHediffComplex</compClass>
         <hediffDef>BS_TrueForm_HemoDemonic</hediffDef>
-        <replaceExisting>True</replaceExisting>
-        <onlyApplyToSelf>True</onlyApplyToSelf>
+        <replaceExisting>true</replaceExisting>
+        <onlyApplyToSelf>true</onlyApplyToSelf>
         <offsetSeverityBodySize>true</offsetSeverityBodySize>
       </li>
       <li Class="CompProperties_AbilityHemogenCost">

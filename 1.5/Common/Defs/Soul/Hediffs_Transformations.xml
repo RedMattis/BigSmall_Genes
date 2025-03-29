@@ -39,9 +39,7 @@
     <abilities>
       <li>BS_flying_jump</li>
     </abilities>
-    <aptitudes>
-      <Melee>4</Melee>
-    </aptitudes>
+    <aptitudes> <Melee>4</Melee> </aptitudes>
     <stages Inherit="False">
       <li>
         <statOffsets>
@@ -161,18 +159,14 @@
     </renderNodeProperties>
   </HediffDef>
 
-  <HediffDef ParentName="BS_TrueFormBase" Name="BS_TrueForm_HemoDemonic">
-    <defName>BS_TrueForm_HemoDemonic</defName>
-    <label>True Form (Demonic)</label>
+  <HediffDef ParentName="BS_TrueFormBase" Name="BS_TrueForm_HemoDemonic" Abstract="True">
     <description>True power unleached!</description>
     <abilities>
       <li>BS_flying_jump</li>
       <li>FireSpew</li>
       <li MayRequire="sarg.alphagenes">AG_Detonation</li>
     </abilities>
-    <aptitudes>
-      <Melee>4</Melee>
-    </aptitudes>
+    <aptitudes> <Melee>4</Melee> </aptitudes>
     <comps>
 			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="AnimalBehaviours.HediffCompProperties_Floating"/>
       <li Class="BetterPrerequisites.CompProperties_ColorAndFur">
@@ -274,6 +268,17 @@
       </li>
     </renderNodeProperties>
   </HediffDef>
+
+  <HediffDef ParentName="BS_TrueForm_HemoDemonic">
+    <defName>BS_TrueForm_HemoDemonic</defName>
+    <label>True Form (Demonic)</label>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <showRemainingTime>True</showRemainingTime>
+      </li>
+    </comps>
+  </HediffDef>
+  
 
   <HediffDef ParentName="BS_TrueForm_HemoDemonic">
     <defName>BS_TrueForm_Demonic</defName>

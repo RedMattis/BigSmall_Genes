@@ -1,16 +1,19 @@
 <Defs>
 
+  <!-- Obsolete: Remove in 1.6 -->
   <AbilityDef>
     <defName>VU_DemonForm_Abillity</defName>
     <label>true form</label>
     <description>Temporarily transform into a more powerful form.</description>
     <iconPath>GeneIcons/VU_DemonForm</iconPath>
     <cooldownTicksRange>4375</cooldownTicksRange>
-    <hostile>False</hostile>
+    <hostile>false</hostile>
     <targetRequired>False</targetRequired>
     <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
     <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
     <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+    <groupAbility>true</groupAbility>
+    <aiCanUse>true</aiCanUse>
     <verbProperties>
       <verbClass>Verb_CastAbility</verbClass>
       <label>Transform</label>
@@ -36,13 +39,10 @@
       <li Class="CompProperties_AbilityHemogenCost">
         <hemogenCost>0.35</hemogenCost>
       </li>
-      <!-- <li Class="BigAndSmall.CombatBuff"></li> -->
     </comps>
-    <groupAbility>true</groupAbility>
-    <aiCanUse>true</aiCanUse>
-    <ai_IsOffensive>true</ai_IsOffensive>
   </AbilityDef>
 
+  <!-- Obsolete: Remove in 1.6 -->
   <HediffDef>
     <defName>VU_DemonForm_Hediff</defName>
     <label>true form</label>
