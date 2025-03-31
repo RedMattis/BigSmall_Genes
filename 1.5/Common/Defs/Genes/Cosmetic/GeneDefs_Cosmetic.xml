@@ -46,8 +46,9 @@
     <hairColorOverride>(125,12,26)</hairColorOverride>
     <selectionWeight>0.05</selectionWeight>
     <displayOrderInCategory>191</displayOrderInCategory>
-
   </GeneDef>
+
+  <!-- To-do split into just a head gene later (it was combined for legacy reasons) -->
   <GeneDef>
     <defName>BS_WerewolfSnoot</defName>
     <label>werewolf body</label>

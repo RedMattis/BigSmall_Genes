@@ -21,7 +21,8 @@
 				<!-- <hediffToAddToPart>BS_Affliction_ShrinkRay</hediffToAddToPart>
         <severityPart>0.16</severityPart> -->
         <hediffToAdd>BS_Affliction_ShrinkRay</hediffToAdd>
-        <severity>0.12</severity>
+        <severity>0.012</severity>
+        <scaleSeverityByDamage>true</scaleSeverityByDamage>
         <softScaleSeverityByBodySize>true</softScaleSeverityByBodySize>
 			</li>
 		</modExtensions>
@@ -43,7 +44,8 @@
 				<!-- <hediffToAddToPart>BS_Affliction_GrowthRay</hediffToAddToPart>
         <severityPart>1.0</severityPart> -->
         <hediffToAdd>BS_Affliction_GrowthRay</hediffToAdd>
-        <severity>0.16</severity>
+        <severity>0.012</severity>
+        <scaleSeverityByDamage>true</scaleSeverityByDamage>
         <softScaleSeverityByBodySize>true</softScaleSeverityByBodySize>
 			</li>
 		</modExtensions>

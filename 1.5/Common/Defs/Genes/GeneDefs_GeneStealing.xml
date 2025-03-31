@@ -23,10 +23,8 @@
     <label>Incorporate</label>
     <description>Carriers of this gene possess the ability to steal genes from a corpse.\n\nThe carrier will be given a choice of least 4 possible options.\nSome traits can be turned into genes.\n\nIf metabolism gets too low random traits will be removed until it is okay again (-8 limit).</description>
     <iconPath>GeneIcons/BS_Frankenstein</iconPath>
-    <!-- <category>Sanguophage</category> -->
     <displayOrder>100</displayOrder>
     <warmupEffecter>Bloodfeed_Warmup</warmupEffecter>
-    <!-- <warmupStartSound>Bloodfeed_Cast</warmupStartSound> -->
     <hostile>true</hostile>
     <aiCanUse>false</aiCanUse>
     <cooldownTicksRange>120000</cooldownTicksRange>
