@@ -14,6 +14,7 @@
     <exclusionTags>
       <li>Bug_BodyAttachment</li>
       <li>taur</li>
+      <li>Tail</li>
     </exclusionTags>
     <modExtensions>
       <li Class="BigAndSmall.PawnExtension">

@@ -1,0 +1,26 @@
+<Defs>
+  <GeneDef ParentName="BS_BodySwitchNonExclusive">
+    <defName>BS_HumanoidWithTail</defName>
+    <label>tailed human</label>
+    <description>Carriers of this gene usually have a tail.</description>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>0</biostatMet>
+    <selectionWeight>0</selectionWeight>
+    <displayOrderInCategory>100</displayOrderInCategory>
+    <iconPath>RaceDefaults/Tails/BS_Tail_east</iconPath>
+    <capMods>
+      <li>
+        <capacity>Manipulation</capacity>
+        <offset>0.01</offset>
+      </li>
+    </capMods>
+    <exclusionTags>
+      <li>Tail</li>
+    </exclusionTags>
+    <modExtensions>
+      <li Class="BigAndSmall.PawnExtension">
+        <thingDefSwap>BS_HumanoidWithTail</thingDefSwap>
+      </li>
+    </modExtensions>
+  </GeneDef>
+</Defs>

@@ -24,12 +24,9 @@
       <li>ExtraArms</li>
     </exclusionTags>
     <modExtensions>
-			
       <li Class="BigAndSmall.PawnExtension">
 				<thingDefSwap>BS_HumanFouramed</thingDefSwap>
 			</li>
 		</modExtensions>
 	</GeneDef>
-
-
 </Defs>
