@@ -32,12 +32,14 @@
       <texPath>Item/BS_DarkSoulshard</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <comps Inherit="False">
+    <comps>
       <li Class="CompProperties_Usable">
-        <useJob>UseItem</useJob>
+        <useJob>BS_UseOnTarget</useJob>
         <useLabel>Use {0_label}</useLabel>
-        <useDuration>0</useDuration>
+        <useDuration>5</useDuration>
+        <warmupMote>Mote_ResurrectFlash</warmupMote>
       </li>
+      <li Class="CompProperties_UseEffectDestroySelf" />
       <li Class="CompProperties_Targetable">
         <compClass>CompTargetable_SinglePawn</compClass>
       </li>
