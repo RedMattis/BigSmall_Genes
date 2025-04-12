@@ -83,7 +83,7 @@
 			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="AnimalBehaviours.HediffCompProperties_Floating"/>
       <li Class="BigAndSmall.CompProperties_DrainResource">
         <compClass>BigAndSmall.Comp_DrainsSoulEnergy</compClass>
-        <ticksBetweenDrain>40</ticksBetweenDrain>
+        <ticksBetweenDrain>60</ticksBetweenDrain>
         <removeOnZero>true</removeOnZero>
         <canCancel>true</canCancel>
       </li>
