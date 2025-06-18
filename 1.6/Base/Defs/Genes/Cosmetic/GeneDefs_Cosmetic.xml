@@ -1,0 +1,238 @@
+<?xml version="1.0"?>
+<Defs>
+  <GeneDef ParentName="GeneHairColorBase">
+    <defName>Hair_MediumRed</defName>
+    <label>Dark red hair</label>
+    <hairColorOverride>(131, 66, 66)</hairColorOverride>
+    <selectionWeight>0.05</selectionWeight>
+    <displayOrderInCategory>191</displayOrderInCategory>
+
+  </GeneDef>
+  <GeneDef ParentName="GeneHairColorBase">
+    <defName>Hair_MediumBlue</defName>
+    <label>Dark Blue hair</label>
+    <hairColorOverride>(66, 66, 131)</hairColorOverride>
+    <selectionWeight>0.05</selectionWeight>
+    <displayOrderInCategory>191</displayOrderInCategory>
+
+  </GeneDef>
+  <GeneDef ParentName="GeneHairColorBase">
+    <defName>BS_Hair_TrueWhite</defName>
+    <label>Blinding White Hair</label>
+    <hairColorOverride>(255, 255, 255)</hairColorOverride>
+    <selectionWeight>0.05</selectionWeight>
+    <displayOrderInCategory>191</displayOrderInCategory>
+
+  </GeneDef>
+  <GeneDef ParentName="GeneHairColorBase">
+    <defName>BS_HairFrostWhite</defName>
+    <label>Frost-White Hair</label>
+    <hairColorOverride>(205,251,255)</hairColorOverride>
+    <selectionWeight>0.05</selectionWeight>
+    <displayOrderInCategory>191</displayOrderInCategory>
+
+  </GeneDef>
+  <GeneDef ParentName="GeneHairColorBase">
+    <defName>BS_HairPermafrost</defName>
+    <label>Permafrost Hair</label>
+    <hairColorOverride>(1,107,183,255)</hairColorOverride>
+    <selectionWeight>0.05</selectionWeight>
+    <displayOrderInCategory>191</displayOrderInCategory>
+
+  </GeneDef>
+  <GeneDef ParentName="GeneHairColorBase">
+    <defName>BS_BloodHair</defName>
+    <label>blood red hair</label>
+    <hairColorOverride>(125,12,26)</hairColorOverride>
+    <selectionWeight>0.05</selectionWeight>
+    <displayOrderInCategory>191</displayOrderInCategory>
+  </GeneDef>
+
+  <!-- To-do split into just a head gene later (it was combined for legacy reasons) -->
+  <GeneDef>
+    <defName>BS_WerewolfSnoot</defName>
+    <label>werewolf body</label>
+    <description>Rawr! Carriers of this gene possess a mean werewolf-like head and a somewhat furry body.</description>
+    <iconPath>GeneIcons/BS_werewolfsnoot</iconPath>
+    <selectionWeight>0.1</selectionWeight>
+    <biostatMet>-1</biostatMet>
+    <fur>Furskin</fur>
+    <skinIsHairColor>true</skinIsHairColor>
+    <statOffsets>
+      <ComfyTemperatureMin>-10</ComfyTemperatureMin>
+    </statOffsets>
+    <tattoosVisible>false</tattoosVisible>
+    <forcedHeadTypes>
+      <li>BS_WerewolfHead</li>
+    </forcedHeadTypes>
+    <beardTagFilter>
+      <whitelist>true</whitelist>
+      <tags/>
+    </beardTagFilter>
+    <exclusionTags>
+      <li>HairStyle</li>
+      <li>Fur</li>
+      <li>BeardStyle</li>
+      <li>Jaw</li>
+    </exclusionTags>
+    <symbolPack>
+      <prefixSymbols>
+        <li>
+          <symbol>lycan</symbol>
+        </li>
+        <li>
+          <symbol>lunar</symbol>
+        </li>
+        <li>
+          <symbol>mad</symbol>
+        </li>
+        <li>
+          <symbol>snout</symbol>
+        </li>
+        <li>
+          <symbol>snoot</symbol>
+        </li>
+        <li>
+          <symbol>wolf</symbol>
+        </li>
+        <li>
+          <symbol>moon</symbol>
+        </li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li>
+          <symbol>wolf</symbol>
+        </li>
+        <li>
+          <symbol>moon</symbol>
+        </li>
+        <li>
+          <symbol>crazed</symbol>
+        </li>
+      </suffixSymbols>
+    </symbolPack>
+    <modExtensions>
+      <li Class="BigAndSmall.PawnExtension">
+				<disableFacialAnimations>true</disableFacialAnimations>
+			</li>
+
+    </modExtensions>
+    <renderNodeProperties>
+      <li>
+        <debugLabel>Fur</debugLabel>
+        <nodeClass>PawnRenderNode_Fur</nodeClass>
+        <workerClass>PawnRenderNodeWorker_Fur</workerClass>
+        <baseLayer>5</baseLayer>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <colorType>Hair</colorType>
+        <parentTagDef>Body</parentTagDef>
+      </li>
+    </renderNodeProperties>
+    <!-- <renderNodeProperties Inherit="False">
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPath>BS_HeadAttachments/BS_WerewolfSnoot</texPath>
+        <drawSize>(1.0,1.0)</drawSize>
+        <useSkinShader>true</useSkinShader>
+        <colorType>Hair</colorType>
+        <drawData>
+          <defaultData>
+            <layer>52</layer>
+          </defaultData>
+        </drawData>
+        <parentTagDef>Head</parentTagDef>
+        <narrowCrownHorizontalOffset>0.05</narrowCrownHorizontalOffset>
+      </li>
+    </renderNodeProperties> -->
+  </GeneDef>
+
+  <HeadTypeDef ParentName="AverageBase">
+    <defName>BS_WerewolfHead</defName>
+    <graphicPath>BS_Heads/Werewolf/average</graphicPath>
+    <randomChosen>false</randomChosen>
+    <gender>None</gender>
+    <selectionWeight>9999</selectionWeight> 
+    <requiredGenes>
+      <li>BS_WerewolfSnoot</li>
+    </requiredGenes>
+  </HeadTypeDef>
+
+  <HeadTypeDef ParentName="AverageBase">
+    <defName>BS_WerewolfHeadHediff</defName>
+    <graphicPath>BS_Heads/Werewolf/average</graphicPath>
+    <randomChosen>false</randomChosen>
+    <gender>None</gender>
+    <selectionWeight>1</selectionWeight> 
+    <requiredGenes>
+      <li>BS_WerewolfSnoot</li>
+    </requiredGenes>
+  </HeadTypeDef>
+
+  <GeneDef ParentName="BS_Hornbase">
+    <defName>BS_BananaSplitHair</defName>
+    <label>neko banana split horns with sprinkles</label>
+    <description>Carriers of this gene grow protuding banana-looking horns, and cream with a cherry-looking thing on top.\n\nThat's can't be right.</description>
+    <iconPath>GeneIcons/BS_Horns/BananaSplit</iconPath>
+    <renderNodeProperties Inherit="False">
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPath>BS_HeadAttachments/BS_bananasplit</texPath>
+        <color>(255, 255, 255)</color>
+        <useSkinShader>false</useSkinShader>
+        <colorType>Custom</colorType>
+        <drawData>
+          <defaultData>
+            <layer>80</layer>
+          </defaultData>
+          <dataNorth>
+            <layer>10</layer>
+          </dataNorth>
+        </drawData>
+        <parentTagDef>Head</parentTagDef>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+  <GeneDef ParentName="GeneHairColorBase">
+    <defName>BS_CreamHair</defName>
+    <label>cream hair</label>
+    <labelShortAdj>creamy</labelShortAdj>
+    <description>Carriers of this gene have creamy white hair.</description>
+    <selectionWeight>0.05</selectionWeight>
+    <randomBrightnessFactor>0.05</randomBrightnessFactor>
+    <hairColorOverride>(255,240,180)</hairColorOverride>
+    <displayOrderInCategory>175</displayOrderInCategory>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneHairColorBase">
+    <defName>BS_MatteGreenHair</defName>
+    <label>serpentine hair</label>
+    <labelShortAdj>serpentine</labelShortAdj>
+    <description>Carriers of this gene have matte green hair.</description>
+    <selectionWeight>0.05</selectionWeight>
+    <randomBrightnessFactor>0.05</randomBrightnessFactor>
+    <hairColorOverride>(115,163,95)</hairColorOverride>
+    <displayOrderInCategory>175</displayOrderInCategory>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneHairColorBase">
+    <defName>BS_Hair_DarkGray</defName>
+    <label>dark gray hair</label>
+    <hairColorOverride>(0.45, 0.45, 0.45)</hairColorOverride>
+    <randomBrightnessFactor>0.2</randomBrightnessFactor>
+    <selectionWeight>0.05</selectionWeight>
+    <displayOrderInCategory>10</displayOrderInCategory>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneHairColorBase">
+    <defName>BS_MossGreenHair</defName>
+    <label>moss-green hair</label>
+    <labelShortAdj>mossy</labelShortAdj>
+    <description>Carriers of this gene have mossy green hair.</description>
+    <selectionWeight>0.05</selectionWeight>
+    <randomBrightnessFactor>0.05</randomBrightnessFactor>
+    <hairColorOverride>(80,100,65)</hairColorOverride>
+    <displayOrderInCategory>175</displayOrderInCategory>
+  </GeneDef>
+</Defs>

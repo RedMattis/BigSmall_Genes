@@ -1,0 +1,32 @@
+<Defs>
+  <GeneDef ParentName="BS_BodySwitchNonExclusive">
+		<defName>BS_FourArms</defName>
+		<label>four arms</label>
+		<description>NO! I told you I wanted you to give them amazing forearms!</description>
+    <customEffectDescriptions>
+			<li>Four arms. Compatible with Bionics.</li>
+		</customEffectDescriptions>
+		<biostatCpx>2</biostatCpx>
+    <biostatMet>-3</biostatMet>
+		<selectionWeight>0</selectionWeight>
+		<displayOrderInCategory>100</displayOrderInCategory>
+		<iconPath>GeneIcons/BS_FourArms</iconPath>
+    <statOffsets>
+      <WorkSpeedGlobal>0.40</WorkSpeedGlobal>
+    </statOffsets>
+    <capMods>
+			<li>
+				<capacity>Manipulation</capacity>
+				<offset>0.10</offset>
+			</li>
+		</capMods>
+    <exclusionTags>
+      <li>ExtraArms</li>
+    </exclusionTags>
+    <modExtensions>
+      <li Class="BigAndSmall.PawnExtension">
+				<thingDefSwap>BS_HumanFouramed</thingDefSwap>
+			</li>
+		</modExtensions>
+	</GeneDef>
+</Defs>

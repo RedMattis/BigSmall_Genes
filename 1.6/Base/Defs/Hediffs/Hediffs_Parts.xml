@@ -1,0 +1,186 @@
+<Defs>
+  <HediffDef>
+		<defName>BS_AcidAttack</defName>
+		<label>acidic attack</label>
+		<description>Permits the user to attack with acid that will cling to the victim.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+          <li>
+            <label>acid splash</label>
+            <capacities>
+              <li>BS_AcidBuiltupCap</li>
+            </capacities>
+            <power>10</power>
+            <cooldownTime>2</cooldownTime>
+            <alwaysTreatAsWeapon>false</alwaysTreatAsWeapon>
+          </li>
+          <li> <!--Just to make it more likely that acid will be used when the pawn low-rolls on tool-pick.-->
+            <label>acid splash</label>
+            <capacities>
+              <li>BS_AcidBuiltupCap</li>
+            </capacities>
+            <power>8</power>
+            <cooldownTime>2</cooldownTime>
+            <alwaysTreatAsWeapon>false</alwaysTreatAsWeapon>
+          </li>
+				</tools>
+      </li>
+		</comps>
+		<addedPartProps>
+			<betterThanNatural>false</betterThanNatural>
+		</addedPartProps>
+	</HediffDef>
+
+  <ToolCapacityDef>
+    <defName>BS_AcidBuiltupCap</defName>
+    <label>acid build-up</label>
+  </ToolCapacityDef>
+
+  <ManeuverDef>
+    <defName>VU_AcidAttack</defName>
+    <requiredCapacity>BS_AcidBuiltupCap</requiredCapacity>
+    <verb>
+      <verbClass>Verb_MeleeAttackDamage</verbClass>
+      <ai_IsWeapon>false</ai_IsWeapon>
+      <meleeDamageDef>BS_AcidBuildUpDmg</meleeDamageDef>
+    </verb>
+    <logEntryDef>MeleeAttack</logEntryDef>
+    <combatLogRulesHit>Maneuver_Bite_MeleeHit</combatLogRulesHit>
+    <combatLogRulesDeflect>Maneuver_Bite_MeleeDeflect</combatLogRulesDeflect>
+    <combatLogRulesMiss>Maneuver_Bite_MeleeMiss</combatLogRulesMiss>
+    <combatLogRulesDodge>Maneuver_Bite_MeleeDodge</combatLogRulesDodge>
+  </ManeuverDef>
+
+  <HediffDef>
+		<defName>LoS_VenomClaws</defName>
+		<label>Venom Talons</label>
+		<description>Long envenomed talons. They are very good at getting into the chinks of armour. Technically more corrosive than venomous.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>false</isBad>
+    <stages>
+      <li>
+        <statOffsets>
+          <SM_UnarmedAttackSpeed>0.05</SM_UnarmedAttackSpeed>
+        </statOffsets>
+        <partEfficiencyOffset>-0.1</partEfficiencyOffset>
+      </li>
+    </stages>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>venomus talons</label>
+						<capacities>
+							<li>Cut</li>
+              <li>BS_AcidBuiltupCap</li>
+						</capacities>
+						<power>18</power>
+            <chanceFactor>2.2</chanceFactor>
+						<cooldownTime>2.3</cooldownTime>
+            <armorPenetration>0.5</armorPenetration>
+					</li>
+				</tools>
+			</li>
+		</comps>
+		<addedPartProps>
+			<betterThanNatural>false</betterThanNatural>
+		</addedPartProps>
+	</HediffDef>
+
+  <HediffDef>
+		<defName>BS_Talons</defName>
+		<label>Talons</label>
+		<description>Long brutal talons. Fairly effective against armor.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>false</isBad>
+    <stages>
+      <li>
+        <statOffsets>
+          <SM_UnarmedAttackSpeed>0.05</SM_UnarmedAttackSpeed>
+        </statOffsets>
+        <partEfficiencyOffset>-0.1</partEfficiencyOffset>
+      </li>
+    </stages>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>talons</label>
+						<capacities>
+							<li>Cut</li>
+						</capacities>
+						<power>20</power>
+            <chanceFactor>2</chanceFactor>
+						<cooldownTime>2.3</cooldownTime>
+            <armorPenetration>0.3</armorPenetration>
+					</li>
+				</tools>
+			</li>
+		</comps>
+		<addedPartProps>
+			<betterThanNatural>false</betterThanNatural>
+		</addedPartProps>
+	</HediffDef>
+
+  <HediffDef>
+		<defName>BS_FeedingFrenzy</defName>
+		<label>frenzied feeding</label>
+		<description>This person will assault their foes like a hungry super-zombie. Extremely frequent damage, but low armour penetration.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>false</isBad>
+    <stages>
+      <li>
+        <statOffsets>
+          <SM_UnarmedAttackSpeed>0.05</SM_UnarmedAttackSpeed>
+        </statOffsets>
+      </li>
+    </stages>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>bite</label>
+						<capacities>
+							<li>BS_BiteDevour</li>
+						</capacities>
+						<power>12</power>
+            <chanceFactor>5</chanceFactor>
+						<cooldownTime>1.1</cooldownTime>
+            <armorPenetration>0</armorPenetration>
+					</li>
+				</tools>
+			</li>
+		</comps>
+		<addedPartProps>
+			<betterThanNatural>false</betterThanNatural>
+		</addedPartProps>
+	</HediffDef>
+
+  <ToolCapacityDef>
+    <defName>BS_BiteDevour</defName>
+    <label>cut</label>
+  </ToolCapacityDef>
+
+  <ManeuverDef>
+    <defName>BS_BiteDevour</defName>
+    <requiredCapacity>BS_BiteDevour</requiredCapacity>
+    <verb>
+      <verbClass>Verb_MeleeAttackDamage</verbClass>
+      <ai_IsWeapon>true</ai_IsWeapon>
+      <meleeDamageDef>BS_BiteDevourDmg</meleeDamageDef>
+    </verb>
+    <logEntryDef>MeleeAttack</logEntryDef>
+    <combatLogRulesHit>Maneuver_Bite_MeleeHit</combatLogRulesHit>
+    <combatLogRulesDeflect>Maneuver_Bite_MeleeDeflect</combatLogRulesDeflect>
+    <combatLogRulesMiss>Maneuver_Bite_MeleeMiss</combatLogRulesMiss>
+    <combatLogRulesDodge>Maneuver_Bite_MeleeDodge</combatLogRulesDodge>
+  </ManeuverDef>
+  
+</Defs>

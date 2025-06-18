@@ -1,0 +1,147 @@
+<Defs>
+  <XenotypeDef Name="VU_Returned">
+    <defName>VU_Returned</defName>
+    <label>Rotted Returned</label>
+    <description>A person who has come back from death for an unknown reason.</description>
+    <descriptionShort>Intelligent undead</descriptionShort>
+    <inheritable>true</inheritable>
+    <combatPowerFactor>1.5</combatPowerFactor>
+    <iconPath>Xenotypes/BS_Returned</iconPath>
+    <doubleXenotypeChances>
+      <Pigskin>0.02</Pigskin>
+      <Impid>0.02</Impid>
+      <Yttakin>0.02</Yttakin>
+      <Neanderthal>0.02</Neanderthal>
+      <Waster>0.02</Waster>
+      <Dirtmole>0.02</Dirtmole>
+      <VU_Revenant MayRequire="RedMattis.Undead">0.05</VU_Revenant>
+      <BS_Svartalf MayRequire="RedMattis.BigSmall">0.05</BS_Svartalf>
+      <BS_FrostJotun MayRequire="RedMattis.BigSmall">0.01</BS_FrostJotun>
+      <BS_Jotun MayRequire="RedMattis.BigSmall">0.01</BS_Jotun>
+      <BS_Half_Jotun MayRequire="RedMattis.BigSmall">0.02</BS_Half_Jotun>
+    </doubleXenotypeChances>
+    <genes>
+      <li>BS_Deathlike</li>
+      <li>VU_NoBlood</li>
+      <li>VU_Unliving</li>
+      <li>VU_Unliving_Resilience</li>
+      <li>VU_UltraRapidAging</li>
+      <li>Deathless</li>
+      <li>PerfectImmunity</li>
+      <li>Sleepy</li>
+      <li>WoundHealing_VerySlow</li>
+      <li>BS_PainNumb</li>
+      <li>Mood_Pessimist</li>
+      <li>Sterile</li>
+      <li>MinTemp_LargeDecrease</li>
+      <li>MaxTemp_LargeIncrease</li>
+      <li>Head_Gaunt</li>
+      <li>Skin_SlateGray</li>
+      <li>VU_ZombieSkin</li>
+      <li>VU_NosferatuSkin</li>
+      <li>BS_CreamSkin</li>
+      <li>VU_Pallor</li>
+      <li>VU_Libido_None</li>
+      <li>Hair_Gray</li>
+      <li>Hair_SnowWhite</li>
+      <li>Hair_MidBlack</li>
+      <li MayRequire="ludeon.rimworld.anomaly">BS_GhoulHead</li>
+      <li>Jaw_Baseline</li>
+      <li>ToxResist_Total</li>
+      <li>BS_LesserDeathless</li>
+     </genes>
+  </XenotypeDef>
+
+  <XenotypeDef Name="VU_Returned_Intact">
+    <defName>VU_Returned_Intact</defName>
+    <label>Returned</label>
+    <description>A person who has come back from death for an unknown reason.</description>
+    <descriptionShort>Intelligent undead</descriptionShort>
+    <inheritable>true</inheritable>
+    <combatPowerFactor>1.5</combatPowerFactor>
+    <iconPath>Xenotypes/BS_Returned</iconPath>
+    <doubleXenotypeChances>
+      <Pigskin>0.02</Pigskin>
+      <Impid>0.02</Impid>
+      <Yttakin>0.02</Yttakin>
+      <Neanderthal>0.02</Neanderthal>
+      <Dirtmole>0.02</Dirtmole>
+      <VU_Revenant MayRequire="RedMattis.Undead">0.05</VU_Revenant>
+      <BS_Svartalf MayRequire="RedMattis.BigSmall">0.05</BS_Svartalf>
+      <BS_FrostJotun MayRequire="RedMattis.BigSmall">0.01</BS_FrostJotun>
+      <BS_Jotun MayRequire="RedMattis.BigSmall">0.01</BS_Jotun>
+      <BS_Half_Jotun MayRequire="RedMattis.BigSmall">0.02</BS_Half_Jotun>
+    </doubleXenotypeChances>
+    <genes>
+      <li>BS_Deathlike</li>
+      <li>VU_NoBlood</li>
+      <li>VU_Unliving</li>
+      <li>VU_Unliving_Resilience</li>
+      <li>VU_UltraRapidAging</li>
+      <li>Deathless</li>
+      <li>PerfectImmunity</li>
+      <li>Sleepy</li>
+      <li>WoundHealing_VerySlow</li>
+      <li>BS_PainNumb</li>
+      <li>Mood_Pessimist</li>
+      <li>Sterile</li>
+      <li>MinTemp_LargeDecrease</li>
+      <li>MaxTemp_LargeIncrease</li>
+      <li>VU_NosferatuSkin</li>
+      <li>BS_CreamSkin</li>
+      <li>VU_Pallor</li>
+      <li>VU_Libido_None</li>
+      <li>Jaw_Baseline</li>
+      <li>ToxResist_Total</li>
+      <li>BS_LesserDeathless</li>
+     </genes>
+  </XenotypeDef>
+
+  <XenotypeDef Name="VU_ReturnedSkeletal">
+    <defName>VU_ReturnedSkeletal</defName>
+    <label>Skeletal Returned</label>
+    <description>A person who has come back from death for an unknown reason.</description>
+    <descriptionShort>Intelligent undead</descriptionShort>
+    <inheritable>true</inheritable>
+    <combatPowerFactor>1.5</combatPowerFactor>
+    <iconPath>Xenotypes/BS_Returned</iconPath>
+    <doubleXenotypeChances>
+      <Pigskin>0.02</Pigskin>
+      <Impid>0.02</Impid>
+      <Yttakin>0.02</Yttakin>
+      <Neanderthal>0.02</Neanderthal>
+      <Waster>0.02</Waster>
+      <Dirtmole>0.02</Dirtmole>
+      <VU_Revenant MayRequire="RedMattis.Undead">0.05</VU_Revenant>
+      <BS_Svartalf MayRequire="RedMattis.BigSmall">0.05</BS_Svartalf>
+      <BS_FrostJotun MayRequire="RedMattis.BigSmall">0.01</BS_FrostJotun>
+      <BS_Jotun MayRequire="RedMattis.BigSmall">0.01</BS_Jotun>
+      <BS_Half_Jotun MayRequire="RedMattis.BigSmall">0.02</BS_Half_Jotun>
+    </doubleXenotypeChances>
+    <genes>
+      <li>BS_Deathlike</li>
+      <li>VU_NoBlood</li>
+      <li>VU_Unliving</li>
+      <li>VU_Unliving_Resilience</li>
+      <li>VU_UltraRapidAging</li>
+      <li>Deathless</li>
+      <li>PerfectImmunity</li>
+      <li>Sleepy</li>
+      <li>WoundHealing_VerySlow</li>
+      <li>BS_PainNumb</li>
+      <li>Mood_Pessimist</li>
+      <li>Sterile</li>
+      <li>Delicate</li>
+      <li>MinTemp_HugeDecrease</li>
+      <li>MaxTemp_HugeIncrease</li>
+      <li>VU_Libido_None</li>
+      <li>ToxResist_Total</li>
+      <li>BS_LesserDeathless</li>
+
+      <li>BS_DessicatedBody</li>
+      <li>BS_DessicatedBodyWithHair</li>
+      <li>BS_DessicatedBodyWithGreyHair</li>
+      <li>Beauty_Ugly</li>
+     </genes>
+  </XenotypeDef>
+</Defs>

@@ -1,0 +1,29 @@
+<Defs>
+  <AbilityDef>
+    <defName>VU_CutBond</defName>
+    <label>Cut parasitic bond</label>
+    <description>A parasitic bond can be cut at any time. This will remove the psychic bond.</description>
+    <iconPath>GeneIcons/VU_LethalLover</iconPath>
+    <cooldownTicksRange>30</cooldownTicksRange>
+    <hostile>False</hostile>
+    <targetRequired>False</targetRequired>
+    <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <label>cut parasitic bond</label>
+      <violent>false</violent>
+      <warmupTime>2.5</warmupTime>
+      <range>0</range>
+      <requireLineOfSight>False</requireLineOfSight>
+      <targetParams>
+        <canTargetSelf>True</canTargetSelf>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="BigAndSmall.CompProperties_CutBond" />
+    </comps>
+    <aiCanUse>false</aiCanUse>
+  </AbilityDef>
+</Defs>

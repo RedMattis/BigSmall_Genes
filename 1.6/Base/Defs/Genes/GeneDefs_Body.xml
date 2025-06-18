@@ -1,0 +1,71 @@
+<Defs>
+  <GeneDef>
+    <defName>VU_NoBlood</defName>
+    <label>no blood</label>
+    <customEffectDescriptions>
+      <li>Does not bleed</li>
+    </customEffectDescriptions>
+    <displayCategory>Healing</displayCategory>
+    <description>Carriers of this gene don't bleed.</description>
+    <iconPath>GeneIcons/VU_NoBlood</iconPath>
+    <displayOrderInCategory>1</displayOrderInCategory>
+    <biostatCpx>2</biostatCpx>
+    <biostatMet>-2</biostatMet>
+    <exclusionTags><li>BS_BleedRate</li></exclusionTags>
+    <statFactors>
+      <HSAU_GhoulismSusceptibility MayRequire="Baskerville.HellsingARMSUltimate">0</HSAU_GhoulismSusceptibility>
+    </statFactors>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>BS_SlowBleeding</defName>
+    <label>slow bleeding</label>
+    <displayCategory>Healing</displayCategory>
+    <description>Carriers of this gene bleed out slower than usual. Perhaps their blod clots faster or flows slower than that of baseliners.</description>
+    <customEffectDescriptions>
+      <li>Bleed Rate x0.5</li>
+    </customEffectDescriptions>
+    <iconPath>GeneIcons/BS_SlowBleeding</iconPath>
+    <displayOrderInCategory>101</displayOrderInCategory>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
+    <exclusionTags><li>BS_BleedRate</li></exclusionTags>
+  </GeneDef>
+  
+  <GeneDef>
+    <defName>VU_Unliving</defName>
+    <label>deathlike body</label>
+    <displayCategory>Healing</displayCategory>
+    <description>Carriers of this gene have a non-living or death-like body. They never get some chronic age-related diseases like cancer, heart-attacks, asthma, or dementia.</description>
+    <iconPath>GeneIcons/VU_Skull</iconPath>
+    <hediffGiversCannotGive>
+      <li>Carcinoma</li>
+      <li>HeartAttack</li>
+      <li>Dementia</li>
+      <li>Alzheimers</li>
+      <li>Asthma</li>
+      <li>HeartArteryBlockage</li>
+      <li MayRequire="vanillaracesexpanded.fungoid">VRE_GeneInfection</li>
+    </hediffGiversCannotGive>
+    <customEffectDescriptions>
+      <li>Immune to vampirism</li>
+      <li>Immune to zombification.</li>
+    </customEffectDescriptions>
+    <makeImmuneTo>
+      <li>Carcinoma</li>
+      <li>HeartAttack</li>
+      <li>Dementia</li>
+      <li>Alzheimers</li>
+      <li>Asthma</li>
+      <li>HeartArteryBlockage</li>
+      <li MayRequire="vanillaracesexpanded.fungoid">VRE_GeneInfection</li>
+		</makeImmuneTo>
+    <statFactors>
+      <HSAU_GhoulismSusceptibility MayRequire="Baskerville.HellsingARMSUltimate">0</HSAU_GhoulismSusceptibility>
+    </statFactors>
+    <biostatCpx>2</biostatCpx>
+    <biostatMet>-1</biostatMet>
+    
+  </GeneDef>
+  
+</Defs>

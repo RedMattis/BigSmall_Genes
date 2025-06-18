@@ -1,0 +1,14 @@
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Alpha Genes</li>
+    </mods>
+    <nomatch Class="PatchOperationAdd">
+      <success>Always</success>
+      <xpath>/Defs/XenotypeDef[defName = "VU_Succubus"]/genes</xpath>
+      <value>
+        <li>Beauty_Beautiful</li>
+      </value>
+    </nomatch>
+  </Operation>
+</Patch>

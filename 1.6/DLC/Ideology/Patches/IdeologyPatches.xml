@@ -1,0 +1,9 @@
+<Patch>
+  <Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThoughtDef[defName="GroinUncovered_Disapproved_Male" or defName="GroinUncovered_Disapproved_Social_Male" or defName="GroinOrChestUncovered_Disapproved_Male" or defName="GroinOrChestUncovered_Disapproved_Social_Male" or defName="GroinChestOrHairUncovered_Disapproved_Male" or defName="GroinChestOrHairUncovered_Disapproved_Social_Male"]/nullifyingGenes</xpath>
+		<value>
+			<li>BS_CannotWearClothing</li>
+			<li>BS_CannotWearClothingOrArmor</li>
+		</value>
+	</Operation>
+</Patch>

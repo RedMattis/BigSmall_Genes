@@ -1,0 +1,460 @@
+<Defs>
+  <GeneDef Name="BS_Armor" Abstract="True">
+		<displayCategory>BS_Armour</displayCategory>
+		
+		<exclusionTags>
+			<li>AG_Armour</li>
+      <li>Armor</li>
+			<li>Armour</li>
+			<li>Armor</li>
+		</exclusionTags>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>BS_CannotWearClothing</defName>
+		<displayCategory>BS_Armour</displayCategory>
+		<label>cannot wear clothes</label>
+		<description>Carriers of this gene cannot or will not wear regular clothing. They can still wear dedicated armor however.</description>
+		<iconPath>GeneIcons/BS_NoClothes</iconPath>
+		<biostatMet>4</biostatMet>
+		<exclusionTags><li>NoArmor</li></exclusionTags>
+		<statFactors>
+			<SM_RaidWealthMultiplier>0.8</SM_RaidWealthMultiplier>
+		</statFactors>
+		<modExtensions>
+			<li Class="BigAndSmall.PawnExtension">
+				<apparelRestrictions>
+					<noClothes>true</noClothes>
+					<exceptNudistFriendly>true</exceptNudistFriendly>
+					<thingDefs>
+						<allowlist>
+							<li MayRequire="Ludeon.Rimworld.Royalty">Apparel_CrownStellic</li>
+							<li MayRequire="Ludeon.Rimworld.Royalty">Apparel_Crown</li>
+							<li MayRequire="Ludeon.Rimworld.Biotech">Apparel_Bandolier</li>
+							<li MayRequire="Ludeon.Rimworld.Biotech">Apparel_Sash</li>
+							<li MayRequire="Ludeon.Rimworld.Ideology">Apparel_Tailcap</li>
+							<li MayRequire="Ludeon.Rimworld.Ideology">Apparel_VisageMask</li>
+              <li MayRequire="Ludeon.Rimworld.Odyssey">Apparel_Vacsuit</li>
+              <li MayRequire="Ludeon.Rimworld.Odyssey">Apparel_VacsuitChildren</li>
+              <li MayRequire="Ludeon.Rimworld.Odyssey">Apparel_VacsuitHelmet</li>
+						</allowlist>
+					</thingDefs>
+				</apparelRestrictions>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>BS_CannotWearArmor</defName>
+		<displayCategory>BS_Armour</displayCategory>
+		<label>cannot wear armor</label>
+		<description>Carriers of this gene cannot or will not wear most types of dedicated armor</description>
+		<iconPath>GeneIcons/BS_NoArmour</iconPath>
+		<biostatMet>5</biostatMet>
+		<exclusionTags><li>NoArmor</li></exclusionTags>
+		<statFactors>
+			<SM_RaidWealthMultiplier>0.7</SM_RaidWealthMultiplier>
+		</statFactors>
+		<modExtensions>
+			<li Class="BigAndSmall.PawnExtension">
+				<apparelRestrictions>
+					<noArmor>true</noArmor>
+					<exceptNudistFriendly>true</exceptNudistFriendly>
+					<thingDefs>
+						<allowlist>
+							<li MayRequire="Ludeon.Rimworld.Royalty">Apparel_CrownStellic</li>
+							<li MayRequire="Ludeon.Rimworld.Royalty">Apparel_Crown</li>
+							<li MayRequire="Ludeon.Rimworld.Biotech">Apparel_Bandolier</li>
+							<li MayRequire="Ludeon.Rimworld.Biotech">Apparel_Sash</li>
+							<li MayRequire="Ludeon.Rimworld.Ideology">Apparel_Tailcap</li>
+							<li MayRequire="Ludeon.Rimworld.Ideology">Apparel_VisageMask</li>
+              <li MayRequire="Ludeon.Rimworld.Odyssey">Apparel_Vacsuit</li>
+              <li MayRequire="Ludeon.Rimworld.Odyssey">Apparel_VacsuitChildren</li>
+              <li MayRequire="Ludeon.Rimworld.Odyssey">Apparel_VacsuitHelmet</li>
+						</allowlist>
+					</thingDefs>
+				</apparelRestrictions>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>BS_CannotWearClothingOrArmor</defName>
+		<displayCategory>BS_Armour</displayCategory>
+		<label>cannot wear clothing or armor</label>
+		<description>Carriers of this gene cannot or will not wear any type of armour or clothing.</description>
+		<iconPath>GeneIcons/BS_NoArmorOrClothes</iconPath>
+		<biostatMet>9</biostatMet>
+		<exclusionTags><li>NoArmor</li></exclusionTags>
+		<statFactors>
+			<SM_RaidWealthMultiplier>0.5</SM_RaidWealthMultiplier>
+		</statFactors>
+		<modExtensions>
+			<li Class="BigAndSmall.PawnExtension">
+				<apparelRestrictions>
+					<absolutelyNothing>true</absolutelyNothing>
+					<thingDefs>
+						<allowlist>
+							<li MayRequire="Ludeon.Rimworld.Royalty">Apparel_CrownStellic</li>
+							<li MayRequire="Ludeon.Rimworld.Royalty">Apparel_Crown</li>
+							<li MayRequire="Ludeon.Rimworld.Ideology">Apparel_Tailcap</li>
+							<li MayRequire="Ludeon.Rimworld.Ideology">Apparel_VisageMask</li>
+						</allowlist>
+					</thingDefs>
+				</apparelRestrictions>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef>
+    <defName>VeryNakedSpeed</defName>
+    <label>greater naked speed</label>
+    <description>Carriers of this gene move much slower while clothed, and significantly faster while naked.</description>
+    <iconPath>GeneIcons/BS_GreaterNakedSpeed</iconPath>
+    <displayCategory>Movement</displayCategory>
+    <displayOrderInCategory>499</displayOrderInCategory>
+    <conditionalStatAffecters>
+      <li Class="ConditionalStatAffecter_Clothed">
+        <statOffsets>
+          <MoveSpeed>-0.3</MoveSpeed>
+        </statOffsets>
+        <statFactors>
+          <MoveSpeed>0.75</MoveSpeed>
+        </statFactors>
+      </li>
+      <li Class="ConditionalStatAffecter_Unclothed">
+        <statOffsets>
+          <MoveSpeed>0.3</MoveSpeed>
+        </statOffsets>
+        <statFactors>
+          <MoveSpeed>1.15</MoveSpeed>
+        </statFactors>
+      </li>
+    </conditionalStatAffecters>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>2</biostatMet>
+    <selectionWeight>1</selectionWeight>
+  </GeneDef>
+  
+  <GeneDef Name="BS_ToughSkin" ParentName="BS_Armor">
+		<defName>BS_ToughSkin</defName>
+		<label>Tough Skin</label>
+		<description>Carriers of this gene have naturally tough skin. This offers some resistance to blunt and cutting attacks.</description>
+		<iconPath>GeneIcons/BS_ArmourLeather</iconPath>
+		
+		<displayOrderInCategory>20</displayOrderInCategory>
+		<statOffsets>
+			<SM_RaidWealthOffset>250</SM_RaidWealthOffset>
+			<ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+		</statOffsets>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>thick-skinned</symbol>
+				</li>
+			</prefixSymbols>
+		</symbolPack>
+		<selectionWeight>1</selectionWeight>
+    <!-- <modExtensions>
+			<li Class="BigAndSmall.PawnExtension">
+				<applyBodyHediff><li><hediff>BS_ToughSkin</hediff></li></applyBodyHediff>
+			</li>
+		</modExtensions> -->
+	</GeneDef>
+  
+  <GeneDef ParentName="BS_Armor">
+		<defName>BS_NaturalArmor</defName>
+		<label>Natural Armor</label>
+
+		<description>Carriers of this gene shrug off attacks as though they were wearing padded armour.</description>
+		<iconPath>GeneIcons/BS_ArmourSteel</iconPath>
+		
+		<displayOrderInCategory>20</displayOrderInCategory>
+		<statFactors>
+			<SM_RaidWealthMultiplier>1.2</SM_RaidWealthMultiplier>
+		</statFactors>
+		<statOffsets>
+			<SM_RaidWealthOffset>1500</SM_RaidWealthOffset>
+			<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.40</ArmorRating_Sharp>
+		</statOffsets>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-2</biostatMet>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>sturdy</symbol>
+				</li>
+			</prefixSymbols>
+		</symbolPack>
+		<selectionWeight>1</selectionWeight>
+	</GeneDef>
+  
+  <GeneDef ParentName="BS_Armor">
+		<defName>BS_NaturalArmor_Great</defName>
+		<label>Fortified Body</label>
+		<displayCategory>Archite</displayCategory>
+		<description>Carriers of this gene shrug off attacks as though they were wearing heavily padded riot gear.</description>
+		<iconPath>GeneIcons/BS_ArmourArchotech</iconPath>
+		
+		<displayOrderInCategory>20</displayOrderInCategory>
+		<statFactors>
+			<SM_RaidWealthMultiplier>1.35</SM_RaidWealthMultiplier>
+		</statFactors>
+		<statOffsets>
+			<SM_RaidWealthOffset>1500</SM_RaidWealthOffset>
+			<ArmorRating_Blunt>0.40</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.60</ArmorRating_Sharp>
+		</statOffsets>
+
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-4</biostatMet>
+		<biostatArc>2</biostatArc>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>impervious</symbol>
+				</li>
+        <li>
+          <symbol>invulnerable</symbol>
+        </li>
+			</prefixSymbols>
+		</symbolPack>
+		<selectionWeight>1</selectionWeight>
+	</GeneDef>
+
+	<GeneDef>
+    <defName>BS_DrunkenPower</defName>
+    <label>drunken might</label>
+    <description>Carriers of this gene are amazingly strong and durable, but only while intoxicated with alcohol. The effect is even greater if the carrier is properly drunk.\n\nThe carrier of the gene will have higher conciousness while drunk as well, but not to the degree that a non-inebriated individual would.\n\nThis gene DOES stack with robust and strong melee damage. Oh my.</description>
+    <iconPath>GeneIcons/BS_DrunkenPower</iconPath>
+		<displayCategory>Pain</displayCategory>
+    <displayOrderInCategory>55</displayOrderInCategory>
+		
+    <biostatMet>-2</biostatMet>
+		<customEffectDescriptions>
+      <li>5% to 30% damage reduction based on alcohol amount</li>
+			<li>5% to 45% increased melee attack based on alcohol amount</li>
+			<li>Less penalties from being drunk.</li>
+			<li>Larger mood bonuses when drunk.</li>
+    </customEffectDescriptions>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>drunken</symbol></li>
+        <li><symbol>chaotic</symbol></li>
+        <li><symbol>oni</symbol></li>
+      </prefixSymbols>
+    </symbolPack>
+		<modExtensions>
+			<li Class="BigAndSmall.PawnExtension">
+				<frequentUpdate>true</frequentUpdate>
+				<applyBodyHediff>
+					<li>
+						<hediff>BS_DrunkenPower1</hediff>
+						<conditionals>
+							<li Class="BigAndSmall.ConditionalStatAffecter_Warm"/>
+						</conditionals>
+					</li>
+					<li>
+						<hediff>BS_DrunkenPower2</hediff>
+						<conditionals>
+							<li Class="BigAndSmall.ConditionalStatAffecter_Tipsy"/>
+						</conditionals>
+					</li>
+					<li>
+						<hediff>BS_DrunkenPower3</hediff>
+						<conditionals>
+							<li Class="BigAndSmall.ConditionalStatAffecter_Drunk"/>
+						</conditionals>
+					</li>
+				</applyBodyHediff>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+	<HediffDef>
+		<defName>BS_DrunkenPower1</defName>
+		<label>Warm-up</label>
+		<description>You can't fight without some alcohol in your blood!</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				<statFactors>
+					<IncomingDamageFactor>0.9</IncomingDamageFactor>
+					<MeleeDamageFactor>1.1</MeleeDamageFactor>
+				</statFactors>
+				<!-- <statOffsets>
+					<MeleeHitChance>1</MeleeHitChance>
+				</statOffsets> -->
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>BS_DrunkenPower2</defName>
+		<label>drunken fighter</label>
+		<description>Hahaha! Let me at 'em!</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				<statFactors>
+					<IncomingDamageFactor>0.80</IncomingDamageFactor>
+					<MeleeDamageFactor>1.08</MeleeDamageFactor>
+				</statFactors>
+				<statOffsets>
+					<SM_AttackSpeed>0.08</SM_AttackSpeed>
+					<MeleeHitChance>1</MeleeHitChance>
+					<MeleeDodgeChance>5</MeleeDodgeChance>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	<ThoughtDef>
+    <defName>BS_DrunkenHigh2</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>BS_DrunkenPower2</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+    <stages>
+      <li>
+        <label>drunken revelry</label>
+        <description>The party is just starting!</description>
+        <baseMoodEffect>10</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+	<HediffDef>
+		<defName>BS_DrunkenPower3</defName>
+		<label>drunken terror</label>
+		<description>Not you nor your floating ghost twin can stop meee!</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				<statFactors>
+					<IncomingDamageFactor>0.70</IncomingDamageFactor>
+					<MeleeDamageFactor>1.2</MeleeDamageFactor>
+				</statFactors>
+				<statOffsets>
+					<SM_AttackSpeed>0.15</SM_AttackSpeed>
+					<MeleeHitChance>5</MeleeHitChance>
+					<MeleeDodgeChance>5</MeleeDodgeChance>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.10</offset>
+					</li>
+					<li>
+						<capacity>Consciousness</capacity>
+						<postFactor>1.33</postFactor>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+	<ThoughtDef>
+    <defName>BS_DrunkenHigh3</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>BS_DrunkenPower3</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+    <stages>
+      <li>
+        <label>drunken high!</label>
+        <description>No one will end my revelry.</description>
+        <baseMoodEffect>45</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+	
+	<GeneDef>
+    <defName>BS_TinyTough</defName>
+    <label>small people toughness</label>
+    <displayCategory>Pain</displayCategory>
+    
+    <labelShortAdj>small toughness</labelShortAdj>
+    <description>Carriers of this gene are amazingly sturdy despite their tiny size.</description>
+    <iconPath>GeneIcons/BS_TinyTough</iconPath>
+    <displayOrderInCategory>-6</displayOrderInCategory>
+    <statFactors>
+      <IncomingDamageFactor>0.4</IncomingDamageFactor>
+			<CarryingCapacity>1.5</CarryingCapacity>
+    </statFactors>
+    <biostatCpx>3</biostatCpx>
+    <biostatMet>-4</biostatMet>
+    <exclusionTags>
+      <li>Toughness</li>
+    </exclusionTags>
+    
+    <modExtensions>
+      <li Class="BigAndSmall.GenePrerequisites">
+        <prerequisiteSets>
+          <li>
+            <type>AnyOf</type>
+            <prerequisites>
+              <li>GnomeFrame</li>
+              <li>BS_SmallFrame</li>
+              <li>BS_RabbitFrame</li>
+              <li>BS_AriettyFrame</li>
+            </prerequisites>
+          </li>
+        </prerequisiteSets>
+      </li>
+		</modExtensions>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>BS_DvergrConstitution</defName>
+    <label>dwarven grit</label>
+    <displayCategory>Pain</displayCategory>
+    <labelShortAdj>dwarven grit</labelShortAdj>
+    <description>Carriers of this gene are deceptively strong and robust for their size</description>
+    <iconPath>GeneIcons/BS_DwarvenGrit</iconPath>
+    <displayOrderInCategory>-6</displayOrderInCategory>
+    <statFactors>
+      <IncomingDamageFactor>0.5</IncomingDamageFactor>
+      <MeleeDamageFactor>1.1</MeleeDamageFactor>
+			<CarryingCapacity>1.5</CarryingCapacity>
+    </statFactors>
+    <biostatCpx>2</biostatCpx>
+    <biostatMet>-3</biostatMet>
+    <exclusionTags>
+      <li>Toughness</li>
+    </exclusionTags>
+    
+    <modExtensions>
+      <li Class="BigAndSmall.GenePrerequisites">
+        <prerequisiteSets>
+          <li>
+            <type>AnyOf</type>
+            <prerequisites>
+              <li>DwarfFrame</li>
+              <li>GnomeFrame</li>
+              <li>BS_SmallFrame</li>
+              <li>BS_RabbitFrame</li>
+            </prerequisites>
+          </li>
+          <li>
+            <type>NoneOf</type>
+            <prerequisites>
+              <li>MeleeDamage_Weak</li>
+              <li>ViolenceDisabled</li>
+            </prerequisites>
+          </li>
+        </prerequisiteSets>
+      </li>
+		</modExtensions>
+  </GeneDef>
+
+
+</Defs>

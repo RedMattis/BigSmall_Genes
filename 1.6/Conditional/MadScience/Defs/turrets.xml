@@ -1,0 +1,168 @@
+<Defs>
+  <ThingDef Name="BMAD_ShrinkTurret" ParentName="BuildingBase">
+    <defName>BMAD_ShrinkTurret</defName>
+    <label>shrink-ray mini-turret</label>
+    <description>A portable automatic turret with a shrink-ray attached.</description>
+    <thingClass>Building_TurretGun</thingClass>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <graphicData>
+      <texPath>Things/Building/Security/TurretMini_Base</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3,3)</drawSize>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+      <shadowData>
+        <volume>(0.27,0.25,0.27)</volume>
+        <offset>(0,0,0)</offset>
+      </shadowData>
+    </graphicData>
+    <uiIconPath>Things/Building/Security/TurretMini_MenuIcon</uiIconPath>
+    <uiIconScale>0.90</uiIconScale>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <altitudeLayer>Building</altitudeLayer>
+    <stealable>false</stealable>
+    <rotatable>false</rotatable>
+    <thingCategories>
+      <li>BuildingsSecurity</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Flammability>0.3</Flammability>
+      <WorkToBuild>3000</WorkToBuild>
+      <Mass>14</Mass>
+      <Beauty>-1</Beauty>
+      <ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>80</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Breakdownable"/>
+      <li Class="CompProperties_Refuelable">
+        <fuelLabel>Shots until barrel change</fuelLabel>
+        <fuelGizmoLabel>Barrel durability</fuelGizmoLabel>
+        <outOfFuelMessage>Needs new barrel</outOfFuelMessage>
+        <fuelFilter><thingDefs><li>Steel</li></thingDefs></fuelFilter>
+        <fuelCapacity>60</fuelCapacity>       <!-- 30 bursts -->
+        <fuelMultiplier>0.75</fuelMultiplier> <!-- 1.333 steel per burst, 80 per full rearm -->
+        <initialFuelPercent>1</initialFuelPercent>
+        <autoRefuelPercent>0.5</autoRefuelPercent>
+        <showFuelGizmo>true</showFuelGizmo>
+        <minimumFueledThreshold>1</minimumFueledThreshold>
+        <factorByDifficulty>true</factorByDifficulty>
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+        <fuelIconPath>UI/Overlays/Barrel</fuelIconPath>
+      </li>
+    </comps>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <fillPercent>0.4</fillPercent>
+    <hasTooltip>true</hasTooltip>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <costStuffCount>50</costStuffCount>
+    <costList>
+      <Steel>100</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+      <Gold>20</Gold>
+      <Neutroamine>5</Neutroamine>
+    </costList>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <designationCategory>Security</designationCategory>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <building Inherit="False">
+      <combatPower>75</combatPower>   <!-- same as a scavenger -->
+      <ai_combatDangerous>true</ai_combatDangerous>
+      <turretGunDef>BMAD_Gun_ShrinkTurret</turretGunDef>
+      <turretBurstCooldownTime>1</turretBurstCooldownTime>
+    </building>
+    <placeWorkers>
+      <li>PlaceWorker_TurretTop</li>
+      <li>PlaceWorker_ShowTurretRadius</li>
+    </placeWorkers>
+    <designationHotKey>Misc2</designationHotKey>
+    <researchPrerequisites>
+      <li>GunTurrets</li>
+      <li>BS_MadScienceField</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="BMAD_ShrinkTurret">
+    <defName>BMAD_GrowthTurret</defName>
+    <label>growth-ray mini-turret</label>
+    <description>A portable automatic turret with a growth-ray attached.</description>
+    
+    <building Inherit="False">
+      <combatPower>55</combatPower>   <!-- same as a scavenger -->
+      <ai_combatDangerous>true</ai_combatDangerous>
+      <turretGunDef>BMAD_Gun_GrowthTurret</turretGunDef>
+      <turretBurstCooldownTime>1</turretBurstCooldownTime>
+    </building>
+  </ThingDef>
+
+  <ThingDef Name="BMAD_Gun_ShrinkTurret" ParentName="BaseWeaponTurret">
+    <defName>BMAD_Gun_ShrinkTurret</defName>
+    <label>shrink-ray mini-turret gun</label>
+    <description>A simple automatic shrink-ray made to be mounted on a turret.</description>
+    <graphicData>
+      <!-- <texPath>Things/Building/Security/TurretMini_Top</texPath> -->
+      <texPath>Item/mad_shrinkray</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.75</drawSize>
+    </graphicData>
+    <statBases Inherit="False">
+      <AccuracyTouch>0.88</AccuracyTouch>
+      <AccuracyShort>0.78</AccuracyShort>
+      <AccuracyMedium>0.60</AccuracyMedium>
+      <AccuracyLong>0.24</AccuracyLong>
+      <RangedWeapon_Cooldown>0.18</RangedWeapon_Cooldown>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Mass>5</Mass>
+      <Flammability>0</Flammability>
+    </statBases>
+    <verbs Inherit="False">
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>BMad_ShrinkRayRay</defaultProjectile>
+        <warmupTime>1</warmupTime>
+        <range>24.9</range>
+        <soundCast>Resurrect_Resolve</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+        <consumeFuelPerShot>1</consumeFuelPerShot>
+      </li>
+    </verbs>
+  </ThingDef>
+
+  <ThingDef ParentName="BMAD_Gun_ShrinkTurret">
+    <defName>BMAD_Gun_GrowthTurret</defName>
+    <label>growth-ray mini-turret gun</label>
+    <description>A simple automatic growth-ray made to be mounted on a turret.</description>
+    <graphicData Inherit="False">
+      <!-- <texPath>Things/Building/Security/TurretMini_Top</texPath> -->
+      <texPath>Item/mad_growthray</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.75</drawSize>
+    </graphicData>
+    <verbs Inherit="False">
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>BMad_GrowthRayRay</defaultProjectile>
+        <warmupTime>1</warmupTime>
+        <range>24.9</range>
+        <soundCast>Resurrect_Resolve</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+        <consumeFuelPerShot>1</consumeFuelPerShot>
+      </li>
+    </verbs>
+  </ThingDef>
+</Defs>

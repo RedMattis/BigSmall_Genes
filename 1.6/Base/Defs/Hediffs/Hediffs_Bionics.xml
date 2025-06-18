@@ -1,0 +1,51 @@
+<Defs>
+  <HediffDef ParentName="ImplantHediffBase">
+    <defName>BS_IndestructibelApparel</defName>
+    <label>archotech apparel-integrator</label>
+    <description>An installed archotech apparel-integrator. It integrates with any worn apparel by mysterious methods and ensures the condition of any worn apparel will not degrade from their current state.</description>
+    <descriptionHyperlinks><ThingDef>BS_IndestructibelApparel</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>BS_IndestructibelApparel</spawnThingOnRemoved>
+  </HediffDef>
+
+  <ThingDef ParentName="BodyPartArchotechBase">
+    <defName>BS_IndestructibelApparel</defName>
+    <label>archotech apparel-integrator</label>
+    <description>An archotech apparel-integrator. It integrates with worn any apparel by mysterious methods and ensures the condition of any worn apparel will not degrade from their current state.</description>
+    <descriptionHyperlinks><RecipeDef>InstallBS_IndestructibelApparel</RecipeDef></descriptionHyperlinks>
+    <thingSetMakerTags><li>RewardStandardCore</li></thingSetMakerTags>
+    <statBases>
+      <MarketValue>2800</MarketValue>
+      <Mass>7</Mass>
+    </statBases>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallImplantBase">
+    <defName>InstallBS_IndestructibelApparel</defName>
+    <label>install archotech apparel-integrator</label>
+    <description>Install a archotech apparel-integrator.</description>
+    <descriptionHyperlinks>
+      <ThingDef>BS_IndestructibelApparel</ThingDef>
+      <HediffDef>BS_IndestructibelApparel</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing archotech apparel-integrator.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BS_IndestructibelApparel</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>BS_IndestructibelApparel</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+			<li>Torso</li>
+		</appliedOnFixedBodyParts>
+    <addsHediff>BS_IndestructibelApparel</addsHediff>
+  </RecipeDef>
+</Defs>

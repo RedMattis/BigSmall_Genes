@@ -26,9 +26,28 @@
     <li IfModNotActive="nals.facialanimation">1.5/Mods/NO_FacialAnim</li>
     <li IfModActive="Ludeon.RimWorld.Royalty">1.5/Royalty</li>
     <li IfModActive="Ludeon.RimWorld.Ideology">1.5/Ideology</li>
-    <!-- <li IfModActive="erdelf.HumanoidAlienRaces">1.5/Mods/HAR</li> -->
     <li IfModActive="OskarPotocki.VFE.Insectoid2">1.5/Mods/VE_Insectoids2</li>
-
-    <!-- <li IfModActive="RedMattis.BigSmall.Bugs">1.5/Experimental</li> -->
   </v1.5>
+  <v1.6>
+    <li>/</li>
+    <li>1.6/Base</li>
+    <li>1.6/SimplyRaces</li>
+    <li IfModActive="Rooboid.Minotaur">1.6/Mods/RooMinotaur</li>
+    <li IfModActive="vanillaracesexpanded.android">1.6/Mods/VRE_Android</li>
+    <li IfModActive="Killathon.MechHumanlikes.AndroidTiersCore">1.6/Mods/AndroidTiersCore</li>
+    <li IfModActive="sarg.alphagenes">1.6/Mods/AlphaSarg</li>
+    <li IfModActive="oskarpotocki.vanillafactionsexpanded.core">1.6/Mods/VE</li>
+    <li IfModActive="nals.facialanimation">1.6/Mods/FacialAnim</li>
+    <li IfModNotActive="nals.facialanimation">1.6/Mods/NO_FacialAnim</li>
+    <li IfModActive="Ludeon.RimWorld.Royalty">1.6/DLC/Royalty</li>
+    <li IfModActive="Ludeon.RimWorld.Ideology">1.6/DLC/Ideology</li>
+    <li IfModActive="ludeon.rimworld.anomaly">1.6/DLC/Anomaly</li>
+    <li IfModActive="OskarPotocki.VFE.Insectoid2">1.6/Mods/VE_Insectoids2</li>
+    
+    <li IfModActive="RedMattis.Undead,RedMattis.Yokai,RedMattis.Undead.ZombieApoc">1.6/Conditional/Undead</li>
+    <li IfModActive="RedMattis.Undead,RedMattis.Heaven">1.6/Conditional/Demon</li>
+    <li IfModActive="RedMattis.Optional">1.6/Conditional/BigMeals</li>
+    <li IfModActive="RedMattis.Optional,RedMattis.BigSmall,RedMattis.Heaven,RedMattis.BigSmall.Bugs,RedMattis.Undead,RedMattis.LamiasAndOtherSnakes,RedMattis.MoreXenos,RedMattis.BigWeapons,RedMattis.Yokai,RedMattis.MadApril2025">1.6/Conditional/AnyContentMod</li>
+    <li IfModActive="RedMattis.Optional,RedMattis.MadApril2025">1.6/Conditional/MadScience</li>
+  </v1.6>
 </loadFolders>

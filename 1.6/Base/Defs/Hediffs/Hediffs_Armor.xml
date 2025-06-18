@@ -1,0 +1,55 @@
+<Defs>
+  <!-- <HediffDef>
+		<defName>BS_ToughSkin</defName>
+		<label>tough skin</label>
+		<description>This person has exceptionally tough skin and somewhat resists blunt and cutting damage.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				<minSeverity>0</minSeverity>
+				<statOffsets>
+					<ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+					<ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+  
+  <HediffDef>
+		<defName>BS_NaturalArmor_Padded</defName>
+		<label>durable skin</label>
+		<description>Weak attacks struggle to harm this person</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				<minSeverity>0</minSeverity>
+				<statOffsets>
+					<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+					<ArmorRating_Sharp>0.40</ArmorRating_Sharp>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+  
+  <HediffDef>
+		<defName>BS_NaturalArmor_Riot</defName>
+		<label>impenetrable skin</label>
+		<description>Weak attacks tend to bounce off this person</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				<minSeverity>0</minSeverity>
+				<statOffsets>
+					<ArmorRating_Blunt>0.40</ArmorRating_Blunt>
+					<ArmorRating_Sharp>0.60</ArmorRating_Sharp>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef> -->
+</Defs>

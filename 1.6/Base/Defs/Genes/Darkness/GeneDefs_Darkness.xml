@@ -1,0 +1,240 @@
+<Defs>
+  <GeneDef ParentName="GeneHealingRateBase">
+    <defName>VU_DarknessWoundHealing_Fast</defName>
+    <label>fast darkness healing</label>
+    <labelShortAdj>super-heal</labelShortAdj>
+    <description>Carriers of this gene heal from wounds at an alarming rate at night, but struggle to heal during the day, especially if exposed to sunlight.</description>
+    <iconPath>GeneIcons/VU_DarknessHealing</iconPath>
+    <displayOrderInCategory>50</displayOrderInCategory>
+    <marketValueFactor>2.0</marketValueFactor>
+    <statFactors>
+      <InjuryHealingFactor>2</InjuryHealingFactor>
+    </statFactors>
+    <conditionalStatAffecters>
+      <li Class="BigAndSmall.ConditionalStatAffecter_AtNight">
+        <statFactors>
+          <InjuryHealingFactor>3</InjuryHealingFactor>
+        </statFactors>
+      </li>
+      <li Class="ConditionalStatAffecter_InSunlight">
+        <statFactors>
+          <InjuryHealingFactor>0.05</InjuryHealingFactor>
+        </statFactors>
+      </li>
+    </conditionalStatAffecters>
+    <biostatMet>-2</biostatMet>
+
+  </GeneDef>
+
+  <GeneDef ParentName="GeneHealingRateBase">
+    <defName>VU_DarknessWoundHealing_UltraFast</defName>
+    <label>exceptional darkness healing</label>
+    <labelShortAdj>super-heal</labelShortAdj>
+    <description>Carriers of this gene heal at an unbeliavable speed under the veil of darkness, but struggle to heal during the day, especially if exposed to sunlight.</description>
+    <iconPath>GeneIcons/VU_DarknessHealing_Fast</iconPath>
+    <displayOrderInCategory>50</displayOrderInCategory>
+    <marketValueFactor>2.0</marketValueFactor>
+    <!-- <statFactors> -->
+    <!-- <InjuryHealingFactor>1</InjuryHealingFactor> -->
+    <!-- </statFactors> -->
+    <conditionalStatAffecters>
+      <li Class="BigAndSmall.ConditionalStatAffecter_AtNight">
+        <statFactors>
+          <InjuryHealingFactor>20</InjuryHealingFactor>
+        </statFactors>
+      </li>
+      <li Class="ConditionalStatAffecter_InSunlight">
+        <statFactors>
+          <InjuryHealingFactor>0.05</InjuryHealingFactor>
+        </statFactors>
+      </li>
+    </conditionalStatAffecters>
+    <biostatMet>-4</biostatMet>
+
+  </GeneDef>
+
+  <GeneDef ParentName="GeneMeleeDamageBase">
+    <defName>VU_DarknessMelee</defName>
+    <label>darkness melee</label>
+    <labelShortAdj>strong</labelShortAdj>
+    <description>Carriers of this gene do more damage in close quarters combat at night. When caught outside in the sun they are significantly weakened.</description>
+    <iconPath>GeneIcons/VU_DarknessMelee</iconPath>
+    <displayOrderInCategory>40</displayOrderInCategory>
+    <conditionalStatAffecters>
+      <li Class="BigAndSmall.ConditionalStatAffecter_AtNight">
+        <statFactors>
+          <MeleeDamageFactor>1.3</MeleeDamageFactor>
+        </statFactors>
+      </li>
+      <li Class="ConditionalStatAffecter_InSunlight">
+        <statFactors>
+          <MeleeDamageFactor>0.7</MeleeDamageFactor>
+        </statFactors>
+      </li>
+    </conditionalStatAffecters>
+    <biostatMet>-1</biostatMet>
+
+  </GeneDef>
+
+  <GeneDef ParentName="GeneMeleeDamageBase">
+    <defName>VU_DarknessMelee_Strong</defName>
+    <label>darkness improved melee</label>
+    <labelShortAdj>strong</labelShortAdj>
+    <description>Carriers of this gene do more damage in close quarters combat at night. They are less strong during the day, especially if exposed to sunlight.</description>
+    <iconPath>GeneIcons/VU_DarknessMelee_Strong</iconPath>
+    <displayOrderInCategory>40</displayOrderInCategory>
+    <statFactors>
+      <MeleeDamageFactor>1.1</MeleeDamageFactor>
+    </statFactors>
+    <conditionalStatAffecters>
+      <li Class="BigAndSmall.ConditionalStatAffecter_AtNight">
+        <statFactors>
+          <MeleeDamageFactor>1.5</MeleeDamageFactor>
+        </statFactors>
+      </li>
+      <li Class="ConditionalStatAffecter_InSunlight">
+        <statFactors>
+          <MeleeDamageFactor>0.9</MeleeDamageFactor>
+        </statFactors>
+      </li>
+    </conditionalStatAffecters>
+    <biostatMet>-2</biostatMet>
+
+  </GeneDef>
+
+  <GeneDef ParentName="GeneMoveSpeedBase">
+    <defName>VU_Darkness_MoveSpeed_Quick</defName>
+    <label>darkness fast runner</label>
+    <labelShortAdj>fast</labelShortAdj>
+    <description>Carriers of this gene move more quickly than normal after nightfall, but are slowed down during the day, especially if exposed to sunlight.</description>
+    <iconPath>GeneIcons/VU_DarknessSpeed_Fast</iconPath>
+    <displayOrderInCategory>20</displayOrderInCategory>
+
+    <statOffsets>
+      <MoveSpeed>0.20</MoveSpeed>
+    </statOffsets>
+    <conditionalStatAffecters>
+      <li Class="BigAndSmall.ConditionalStatAffecter_AtNight">
+        <statOffsets>
+          <MoveSpeed>0.30</MoveSpeed>
+        </statOffsets>
+      </li>
+      <li Class="ConditionalStatAffecter_InSunlight">
+        <statOffsets>
+          <MoveSpeed>-0.30</MoveSpeed>
+        </statOffsets>
+      </li>
+    </conditionalStatAffecters>
+    <biostatMet>-2</biostatMet>
+    <symbolPack>
+      <wholeNameSymbols>
+        <li>
+          <symbol>speeder</symbol>
+        </li>
+      </wholeNameSymbols>
+      <prefixSymbols>
+        <li>
+          <symbol>speed</symbol>
+        </li>
+        <li>
+          <symbol>fast</symbol>
+        </li>
+        <li>
+          <symbol>quick</symbol>
+        </li>
+        <li>
+          <symbol>agi</symbol>
+        </li>
+        <li>
+          <symbol>nimb</symbol>
+        </li>
+        <li>
+          <symbol>swift</symbol>
+        </li>
+        <li>
+          <symbol>flash</symbol>
+        </li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li>
+          <symbol>flash</symbol>
+        </li>
+        <li>
+          <symbol>runner</symbol>
+        </li>
+        <li>
+          <symbol>sprinter</symbol>
+        </li>
+      </suffixSymbols>
+    </symbolPack>
+
+  </GeneDef>
+
+  <GeneDef ParentName="GeneMoveSpeedBase">
+    <defName>VU_Darkness_MoveSpeed_VeryQuick</defName>
+    <label>darkness very fast runner</label>
+    <labelShortAdj>fast</labelShortAdj>
+    <description>Carriers of this gene move much more quickly than normal after nightfall, but are slowed down during the day, especially if exposed to sunlight.</description>
+    <iconPath>GeneIcons/VU_DarknessSpeed_VeryFast</iconPath>
+    <displayOrderInCategory>20</displayOrderInCategory>
+
+    <statOffsets>
+      <MoveSpeed>0.40</MoveSpeed>
+    </statOffsets>
+    <conditionalStatAffecters>
+      <li Class="BigAndSmall.ConditionalStatAffecter_AtNight">
+        <statOffsets>
+          <MoveSpeed>0.80</MoveSpeed>
+        </statOffsets>
+      </li>
+      <li Class="ConditionalStatAffecter_InSunlight">
+        <statOffsets>
+          <MoveSpeed>-0.50</MoveSpeed>
+        </statOffsets>
+      </li>
+    </conditionalStatAffecters>
+    <biostatMet>-5</biostatMet>
+    <symbolPack>
+      <wholeNameSymbols>
+        <li>
+          <symbol>speeder</symbol>
+        </li>
+      </wholeNameSymbols>
+      <prefixSymbols>
+        <li>
+          <symbol>speed</symbol>
+        </li>
+        <li>
+          <symbol>fast</symbol>
+        </li>
+        <li>
+          <symbol>quick</symbol>
+        </li>
+        <li>
+          <symbol>agi</symbol>
+        </li>
+        <li>
+          <symbol>nimb</symbol>
+        </li>
+        <li>
+          <symbol>swift</symbol>
+        </li>
+        <li>
+          <symbol>flash</symbol>
+        </li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li>
+          <symbol>flash</symbol>
+        </li>
+        <li>
+          <symbol>runner</symbol>
+        </li>
+        <li>
+          <symbol>sprinter</symbol>
+        </li>
+      </suffixSymbols>
+    </symbolPack>
+
+  </GeneDef>
+</Defs>

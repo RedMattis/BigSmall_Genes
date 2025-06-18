@@ -1,0 +1,343 @@
+<Defs>
+  <ThingDef Name="ShrinkRayRay" ParentName="BaseBullet">
+		<defName>BMad_ShrinkRayRay</defName>
+		<label>shrink ray ray</label>
+		<graphicData>
+			<texPath>Things/Projectile/ChargeLanceShot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>1.5</drawSize>
+      <color>(180, 180, 255)</color>
+		</graphicData>
+		<projectile>
+			<damageDef>BS_IndictedDamage</damageDef>
+			<damageAmountBase>10</damageAmountBase>
+			<stoppingPower>0.15</stoppingPower>
+			<speed>70</speed>
+		</projectile>
+		<thingClass>BigAndSmall.BS_StatusBullet</thingClass>
+		<modExtensions>
+			<li Class="BigAndSmall.ModExtension_StatusAfflicter">
+				<!-- <hediffToAddToPart>BS_Affliction_ShrinkRay</hediffToAddToPart>
+        <severityPart>0.16</severityPart> -->
+        <hediffToAdd>BS_Affliction_ShrinkRay</hediffToAdd>
+        <severity>0.012</severity>
+        <scaleSeverityByDamage>true</scaleSeverityByDamage>
+        <softScaleSeverityByBodySize>true</softScaleSeverityByBodySize>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+  <ThingDef ParentName="ShrinkRayRay">
+		<defName>BMad_GrowthRayRay</defName>
+		<label>growth ray ray</label>
+		<thingClass>BigAndSmall.BS_StatusBullet</thingClass>
+    <graphicData>
+			<texPath>Things/Projectile/ChargeLanceShot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>1.5</drawSize>
+      <color>(255, 180, 255)</color>
+		</graphicData>
+		<modExtensions Inherit="False">
+			<li Class="BigAndSmall.ModExtension_StatusAfflicter">
+				<!-- <hediffToAddToPart>BS_Affliction_GrowthRay</hediffToAddToPart>
+        <severityPart>1.0</severityPart> -->
+        <hediffToAdd>BS_Affliction_GrowthRay</hediffToAdd>
+        <severity>0.012</severity>
+        <scaleSeverityByDamage>true</scaleSeverityByDamage>
+        <softScaleSeverityByBodySize>true</softScaleSeverityByBodySize>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+  <HediffDef>
+    <defName>BS_Affliction_ShrinkRay</defName>
+    <label>Shrink Ray Affliction</label>
+    <description>Subject has been shrunk by a shrink ray.</description>
+    <isBad>true</isBad>
+    <maxSeverity>2.3</maxSeverity>
+    <makesSickThought>false</makesSickThought>
+    <lethalSeverity>2.3</lethalSeverity>
+    <everCurableByItem>true</everCurableByItem>
+    <hediffClass>BigAndSmall.ShrinkRayHediff</hediffClass>
+    <stages>
+      <li>
+        <statOffsets>
+          <SM_BodySizeOffset>-0.10</SM_BodySizeOffset>
+        </statOffsets>
+        <statFactors>
+          <MoveSpeed>0.93</MoveSpeed>
+          <SM_BodySizeMultiplier>0.93</SM_BodySizeMultiplier>
+        </statFactors>
+      </li>
+
+      <li>
+        <minSeverity>0.30</minSeverity>
+        <statOffsets>
+          <SM_BodySizeOffset>-0.20</SM_BodySizeOffset>
+        </statOffsets>
+        <statFactors>
+          <MoveSpeed>0.86</MoveSpeed>
+          <SM_BodySizeMultiplier>0.86</SM_BodySizeMultiplier>
+        </statFactors>
+      </li>
+
+      <li>
+        <minSeverity>0.45</minSeverity>
+        <statOffsets>
+          <SM_BodySizeOffset>-0.30</SM_BodySizeOffset>
+        </statOffsets>
+        <statFactors>
+          <MoveSpeed>0.81</MoveSpeed>
+          <SM_BodySizeMultiplier>0.81</SM_BodySizeMultiplier>
+        </statFactors>
+      </li>
+
+      <li>
+        <minSeverity>0.60</minSeverity>
+        <statOffsets>
+          <SM_BodySizeOffset>-0.40</SM_BodySizeOffset>
+        </statOffsets>
+        <statFactors>
+          <MoveSpeed>0.72</MoveSpeed>
+          <SM_BodySizeMultiplier>0.72</SM_BodySizeMultiplier>
+        </statFactors>
+      </li>
+
+      <li>
+        <minSeverity>0.75</minSeverity>
+        <statOffsets>
+          <SM_BodySizeOffset>-0.50</SM_BodySizeOffset>
+        </statOffsets>
+        <statFactors>
+          <MoveSpeed>0.65</MoveSpeed>
+          <SM_BodySizeMultiplier>0.65</SM_BodySizeMultiplier>
+        </statFactors>
+      </li>
+
+      <li>
+        <minSeverity>0.90</minSeverity>
+        <statOffsets>
+          <SM_BodySizeOffset>-0.60</SM_BodySizeOffset>
+        </statOffsets>
+        <statFactors>
+          <MoveSpeed>0.58</MoveSpeed>
+          <SM_BodySizeMultiplier>0.58</SM_BodySizeMultiplier>
+        </statFactors>
+      </li>
+
+      <li>
+        <minSeverity>1.05</minSeverity>
+        <statOffsets>
+          <SM_BodySizeOffset>-0.60</SM_BodySizeOffset>
+        </statOffsets>
+        <statFactors>
+          <MoveSpeed>0.51</MoveSpeed>
+          <SM_BodySizeMultiplier>0.51</SM_BodySizeMultiplier>
+        </statFactors>
+      </li>
+
+      <li>
+        <minSeverity>1.20</minSeverity>
+        <statOffsets>
+          <SM_BodySizeOffset>-0.70</SM_BodySizeOffset>
+        </statOffsets>
+        <statFactors>
+          <MoveSpeed>0.44</MoveSpeed>
+          <SM_BodySizeMultiplier>0.44</SM_BodySizeMultiplier>
+        </statFactors>
+      </li>
+
+      <li>
+        <minSeverity>1.35</minSeverity>
+        <statOffsets>
+          <SM_BodySizeOffset>-0.80</SM_BodySizeOffset>
+        </statOffsets>
+        <statFactors>
+          <MoveSpeed>0.37</MoveSpeed>
+          <SM_BodySizeMultiplier>0.37</SM_BodySizeMultiplier>
+        </statFactors>
+      </li>
+
+      <li>
+        <minSeverity>1.50</minSeverity>
+        <statOffsets>
+          <SM_BodySizeOffset>-0.90</SM_BodySizeOffset>
+        </statOffsets>
+        <statFactors>
+          <MoveSpeed>0.30</MoveSpeed>
+          <SM_BodySizeMultiplier>0.30</SM_BodySizeMultiplier>
+        </statFactors>
+      </li>
+
+      <li>
+        <minSeverity>1.65</minSeverity>
+        <statOffsets>
+          <SM_BodySizeOffset>-1.00</SM_BodySizeOffset>
+        </statOffsets>
+        <statFactors>
+          <MoveSpeed>0.23</MoveSpeed>
+          <SM_BodySizeMultiplier>0.23</SM_BodySizeMultiplier>
+        </statFactors>
+      </li>
+
+      <li>
+        <minSeverity>1.80</minSeverity>
+        <statOffsets>
+          <SM_BodySizeOffset>-1.10</SM_BodySizeOffset>
+        </statOffsets>
+        <statFactors>
+          <MoveSpeed>0.16</MoveSpeed>
+          <SM_BodySizeMultiplier>0.16</SM_BodySizeMultiplier>
+        </statFactors>
+      </li>
+
+      <li>
+        <minSeverity>1.95</minSeverity>
+        <statOffsets>
+          <SM_BodySizeOffset>-1.20</SM_BodySizeOffset>
+          
+        </statOffsets>
+        <statFactors>
+          <MoveSpeed>0.10</MoveSpeed>
+          <SM_BodySizeMultiplier>0.10</SM_BodySizeMultiplier>
+        </statFactors>
+      </li>
+
+      <li>
+        <minSeverity>2.10</minSeverity>
+        <statOffsets>
+          <SM_BodySizeOffset>-1.30</SM_BodySizeOffset>
+        </statOffsets>
+        <statFactors>
+          <MoveSpeed>0.10</MoveSpeed>
+          <SM_BodySizeMultiplier>0.01</SM_BodySizeMultiplier>
+        </statFactors>
+      </li>
+
+      <li>
+        <minSeverity>2.25</minSeverity>
+        <statOffsets>
+          <SM_BodySizeOffset>-99.99</SM_BodySizeOffset>
+        </statOffsets>
+        <statFactors>
+          <MoveSpeed>0.10</MoveSpeed>
+          <SM_BodySizeMultiplier>0.01</SM_BodySizeMultiplier>
+        </statFactors>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.1</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+      <!-- <li Class="HediffCompProperties_Immunizable">
+        <severityPerDayNotImmune>-0.05</severityPerDayNotImmune>
+        <immunityPerDaySick>1.5</immunityPerDaySick>
+        <severityPerDayImmune>-0.6</severityPerDayImmune>
+        <immunityPerDayNotSick>-0.6</immunityPerDayNotSick>
+      </li> -->
+    </comps>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>BS_Affliction_GrowthRay</defName>
+    <label>Growth Ray Affliction</label>
+    <description>Unstable growth</description>
+    <isBad>true</isBad>
+    <maxSeverity>2</maxSeverity>
+    <makesSickThought>false</makesSickThought>
+    <everCurableByItem>true</everCurableByItem>
+    <lethalSeverity>1.25</lethalSeverity>
+    <hediffClass>BigAndSmall.GrowthRayHediff</hediffClass>
+    <stages>
+      <li>
+        <label>first signs</label>
+        <painOffset>0.05</painOffset>
+        <statFactors>
+          <RestFallRateFactor>1.2</RestFallRateFactor>
+        </statFactors>
+        <statOffsets>
+          <SM_BodySizeOffset>0.30</SM_BodySizeOffset>
+          <SM_BodySizeMultiplier>0.15</SM_BodySizeMultiplier>
+        </statOffsets>
+      </li>
+      <li>
+        <label>getting bad</label>
+        <extraTooltip>early signs of structural issues</extraTooltip>
+        <minSeverity>0.30</minSeverity>
+        <painOffset>0.10</painOffset>
+        <statFactors>
+          <RestFallRateFactor>1.4</RestFallRateFactor>
+          <MoveSpeed>0.80</MoveSpeed>
+          <StaggerDurationFactor>0.5</StaggerDurationFactor>
+        </statFactors>
+        <statOffsets>
+          <SM_BodySizeOffset>0.55</SM_BodySizeOffset>
+          <SM_BodySizeMultiplier>0.20</SM_BodySizeMultiplier>
+        </statOffsets>
+      </li>
+      <li>
+        <label>approaching critical</label>
+        <extraTooltip>oh no.</extraTooltip>
+        <minSeverity>0.60</minSeverity>
+        <painOffset>0.30</painOffset>
+        <statFactors>
+          <RestFallRateFactor>2</RestFallRateFactor>
+          <MoveSpeed>0.65</MoveSpeed>
+          <StaggerDurationFactor>0</StaggerDurationFactor>
+        </statFactors>
+        <statOffsets>
+          <SM_BodySizeOffset>0.8</SM_BodySizeOffset>
+          <SM_BodySizeMultiplier>0.25</SM_BodySizeMultiplier>
+        </statOffsets>
+      </li>
+      <li>
+        <label>critical!</label>
+        <extraTooltip>disintegration imminent!</extraTooltip>
+        <minSeverity>0.90</minSeverity>
+        <painOffset>0.6</painOffset>
+        <statFactors>
+          <RestFallRateFactor>2</RestFallRateFactor>
+          <StaggerDurationFactor>0</StaggerDurationFactor>
+          <MoveSpeed>0.55</MoveSpeed>
+        </statFactors>
+        <statOffsets>
+          <SM_BodySizeOffset>1</SM_BodySizeOffset>
+          <SM_BodySizeMultiplier>0.30</SM_BodySizeMultiplier>
+        </statOffsets>
+      </li>
+      <li>
+        <label>flux energy overload</label>
+        <extraTooltip>WARNING, excess energy at risk of explosive emission.</extraTooltip>
+        <minSeverity>1.05</minSeverity>
+        <painOffset>0.8</painOffset>
+        <statFactors>
+          <RestFallRateFactor>2</RestFallRateFactor>
+          <StaggerDurationFactor>0</StaggerDurationFactor>
+          <MoveSpeed>0.55</MoveSpeed>
+        </statFactors>
+        <statOffsets>
+          <SM_BodySizeOffset>1.00</SM_BodySizeOffset>
+          <SM_BodySizeMultiplier>0.30</SM_BodySizeMultiplier>
+        </statOffsets>
+      </li>
+      
+    </stages>
+    
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.1</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+      <!-- <li Class="HediffCompProperties_Immunizable">
+        <severityPerDayNotImmune>-0.05</severityPerDayNotImmune>
+        <immunityPerDaySick>1.5</immunityPerDaySick>
+        <severityPerDayImmune>-0.5</severityPerDayImmune>
+        <immunityPerDayNotSick>-0.6</immunityPerDayNotSick>
+      </li> -->
+    </comps>
+  </HediffDef>
+
+</Defs>

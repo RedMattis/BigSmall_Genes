@@ -1,0 +1,93 @@
+<Defs>
+  <ThingDef Name="BATR_Urbtech_BodyPartFrameworkBase" ParentName="ATR_BodyPartFrameworkBase" Abstract="True">
+    <statBases>
+      <WorkToMake>250000</WorkToMake>
+      <Mass>500</Mass>
+    </statBases>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
+      <skillRequirements>
+        <Crafting>18</Crafting>
+      </skillRequirements>
+      <researchPrerequisite>ATR_AdvancedMechanicalFrameworks</researchPrerequisite><!--ATR_ArchotechInsight-->
+      <recipeUsers>
+        <li>ATR_MechPartWorkbench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <thingSetMakerTags><li>RewardStandardHighFreq</li></thingSetMakerTags>
+  </ThingDef>
+
+
+  <!---->
+  <HediffDef ParentName="ATR_AddedBodyPartFrameworkBase">
+    <defName>BATR_Titan</defName>
+    <label>TITAN Frame</label>
+    <description>An android chassis intended as a fully mechanical product meant to replace the partially biological urbworld titans. This sister project to the cybernetic TITAN-project was unfortunately considered a failure due to the indredibly difficult process and even more staggeringly high production costs.\n\nVacuum Proof.</description>
+    <stages>
+      <li>
+        <hungerRateFactor>1.5</hungerRateFactor>
+        <statOffsets>
+          <VacuumResistance MayRequire="Ludeon.Rimworld.Odyssey">2</VacuumResistance>
+          <SM_BodySizeOffset>3</SM_BodySizeOffset>
+          <CarryingCapacity>500</CarryingCapacity>
+          <VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">500</VEF_MassCarryCapacity>
+          <ComfyTemperatureMin>-80</ComfyTemperatureMin>
+          <ComfyTemperatureMax>20</ComfyTemperatureMax>
+          <SM_EVA_Level>2</SM_EVA_Level>
+          <DecompressionResistance MayRequire="kentington.saveourship2">1</DecompressionResistance>
+          <HypoxiaResistance MayRequire="kentington.saveourship2">1</HypoxiaResistance>
+        </statOffsets>
+        <statFactors>
+          <MiningSpeed>3</MiningSpeed>
+          <DeepDrillingSpeed>2.0</DeepDrillingSpeed>
+          <ConstructionSpeed>1.2</ConstructionSpeed>
+          <StaggerDurationFactor>0</StaggerDurationFactor>
+          <MHC_ChargingSpeed>4</MHC_ChargingSpeed>
+        </statFactors>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <ThingDef ParentName="BATR_Urbtech_BodyPartFrameworkBase">
+    <defName>BATR_Titan</defName>
+    <label>TITAN Frame</label>
+    <description>A android chassis made as a fully mechanical product meant to replace the partially biological urbworld titans. This sister project to the cybernetic TITAN-project was unfortunately considered a failure due to the indredibly difficult process and even more staggeringly high production costs.\n\nVacuum Proof.</description>
+    <statBases>
+      <MarketValue>25000</MarketValue>
+    </statBases>
+    <costList>
+      <Steel>300</Steel>
+      <Neutroamine>500</Neutroamine>
+      <Plasteel>1000</Plasteel>
+      <ComponentSpacer>50</ComponentSpacer>
+    </costList>
+  </ThingDef>
+
+  <RecipeDef ParentName="ATR_SurgeryFramework">
+    <defName>BATR_Install_Titan_Frame</defName>
+    <label>Install TITAN Frame</label>
+    <description>Replaces the chassis frame of this unit with a experimental titan-chassis.\n\n This android chassis was intended as a fully mechanical replacement the partially biological urbworld titans. This sister project to the cybernetic TITAN-project was unfortunately considered a failure due to the indredibly difficult process and even more staggeringly high production costs.\n\nVacuum Proof.</description>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BATR_Titan</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>BATR_Titan</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <recipeUsers>
+    </recipeUsers>
+    <addsHediff>BATR_Titan</addsHediff>
+  </RecipeDef>
+</Defs>

@@ -1,0 +1,196 @@
+<?xml version="1.0" ?>
+<Defs>
+  <GeneDef Name="LoS_SnakeTailBase" Abstract="True">
+    
+    <biostatCpx>0</biostatCpx>
+    <biostatMet>0</biostatMet>
+    <customEffectDescriptions>
+      <li>Switches the character's &quot;Race&quot; for another one.</li>
+    </customEffectDescriptions>
+    <randomChosen>false</randomChosen>
+    <displayCategory>LoS_Snake_Vis</displayCategory>
+    <displayOrderInCategory>50</displayOrderInCategory>
+    <iconColor>(0.75, 0.75, 0.75)</iconColor>
+    <exclusionTags>
+      <li>Bug_BodyAttachment</li>
+      <li>taur</li>
+      <li>Tail</li>
+    </exclusionTags>
+    <modExtensions>
+      <li Class="BigAndSmall.PawnExtension">
+        <canWalkOnCreep>true</canWalkOnCreep>
+        <renderCacheOff>true</renderCacheOff>
+        <applyBodyHediff>
+          <li>
+            <hediff>BS_Slither</hediff>
+          </li>
+        </applyBodyHediff>
+        <applyPartHediff>
+          <li>
+            <hediff>LS_SnakeTail</hediff>
+            <bodyparts>
+              <li>BS_SnakeBody</li>
+            </bodyparts>
+          </li>
+        </applyPartHediff>
+        <thingDefSwap>BS_Naga</thingDefSwap>
+      </li>
+      <li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
+        <movementDef>PF_Movement_Flying</movementDef>
+      </li>
+    </modExtensions>
+
+  </GeneDef>
+  <GeneDef Name="LoS_Snake_Tail" ParentName="LoS_SnakeTailBase">
+    <defName>LoS_Snake_Tail</defName>
+    <label>Snake Tail</label>
+    <description>Carriers of this gene have a large snake tail instead regular human legs. They eat much less often than baseliners.</description>
+    <customEffectDescriptions>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">Reduces the movement speed penalty when traversing difficult terrain</li>
+    </customEffectDescriptions>
+    <iconPath>GeneIcons/LoS_SnekTail_icon2</iconPath>
+    <displayOrderInCategory>777</displayOrderInCategory>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>0</biostatMet>
+    <selectionWeight>1</selectionWeight>
+    <missingGeneRomanceChanceFactor>0.75</missingGeneRomanceChanceFactor>
+    <renderNodeProperties Inherit="False">
+      <li>
+        <workerClass>BigAndSmall.PawnRenderNodeWorker_BodyTypeOffsets</workerClass>
+        <parentTagDef>Body</parentTagDef>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <bodyTypeGraphicPaths>
+          <Hulk>BS_BodyAttachments/BS_Snek_New/bp_hulk</Hulk>
+          <Male>BS_BodyAttachments/BS_Snek_New/bp_male</Male>
+          <Female>BS_BodyAttachments/BS_Snek_New/bp_female</Female>
+          <Fat>BS_BodyAttachments/BS_Snek_New/bp_fat</Fat>
+          <Thin>BS_BodyAttachments/BS_Snek_New/bp_default</Thin>
+          <Child MayRequire="Ludeon.RimWorld.Biotech">BS_BodyAttachments/BS_Snek_New/bp_child</Child>
+          <Baby MayRequire="Ludeon.RimWorld.Biotech">BS_BodyAttachments/BS_Snek_New/bp_child</Baby>
+        </bodyTypeGraphicPaths>
+        <drawSize>(1.625,1.625)</drawSize>
+        <colorType>Skin</colorType>
+        <drawData>
+          <scaleOffsetByBodySize>false</scaleOffsetByBodySize>
+          <dataNorth> <offset>(0, 0, -0.3067)</offset> <layer>79</layer> </dataNorth>
+          <dataSouth> <offset>(0, -0.0001, -0.3067)</offset> <layer>20</layer> </dataSouth>
+          <dataEast> <offset>(-0.3067, -0.0001, -0.3067)</offset> <layer>20</layer> </dataEast>
+          <dataWest> <offset>(0.3067, -0.0001, -0.3067)</offset> <layer>20</layer> </dataWest>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+  <GeneDef ParentName="LoS_Snake_Tail">
+    <defName>LoS_Snake_Tail_HairClr</defName>
+    <label>Snake Tail (hair-color)</label>
+    <renderNodeProperties Inherit="False">
+      <li Class="BigAndSmall.PawnRenderingProps_Ultimate">
+        <nodeClass>BigAndSmall.PawnRenderNode_Ultimate</nodeClass>
+        <workerClass>BigAndSmall.PawnRenderNodeWorker_BodyTypeOffsets</workerClass>
+        <parentTagDef>Body</parentTagDef>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <colorType>Hair</colorType>
+        <shader>CutoutComplex</shader>
+        <graphicSetDef>BS_SnekGraphicSet</graphicSetDef>
+        <drawSize>(1.625,1.625)</drawSize>
+        <drawData>
+          <scaleOffsetByBodySize>false</scaleOffsetByBodySize>
+          <dataNorth> <offset>(0, 0, -0.3067)</offset> <layer>79</layer> </dataNorth>
+          <dataSouth> <offset>(0, -0.0001, -0.3067)</offset> <layer>20</layer> </dataSouth>
+          <dataEast> <offset>(-0.3067, -0.0001, -0.3067)</offset> <layer>20</layer> </dataEast>
+          <dataWest> <offset>(0.3067, -0.0001, -0.3067)</offset> <layer>20</layer> </dataWest>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+  <GeneDef ParentName="LoS_SnakeTailBase">
+    <defName>LoS_MarlithBody</defName>
+    <label>Marlith</label>
+    <description>Carriers of this gene have a 3 pairs of arms and a large snake tail instead regular human legs.</description>
+    <customEffectDescriptions>
+      <li>Changes the pawn to the marlith race.</li>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">Reduces the movement speed penalty when traversing difficult terrain</li>
+    </customEffectDescriptions>
+    <iconPath>GeneIcons/BS_Marlith</iconPath>
+    <displayOrderInCategory>777</displayOrderInCategory>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-4</biostatMet>
+    <selectionWeight>1</selectionWeight>
+    <exclusionTags><li>ExtraArms</li></exclusionTags>
+    <statOffsets>
+      <WorkSpeedGlobal>0.50</WorkSpeedGlobal>
+    </statOffsets>
+    <capMods>
+      <li>
+        <capacity>Manipulation</capacity>
+        <offset>0.15</offset>
+      </li>
+    </capMods>
+    <missingGeneRomanceChanceFactor>0.75</missingGeneRomanceChanceFactor>
+    <modExtensions>
+      <li Class="BigAndSmall.PawnExtension">
+        <canWalkOnCreep>true</canWalkOnCreep>
+        <renderCacheOff>true</renderCacheOff>
+        <applyBodyHediff>
+          <li>
+            <hediff>BS_Slither</hediff>
+          </li>
+        </applyBodyHediff>
+        <applyPartHediff>
+          <li>
+            <hediff>LS_SnakeTail</hediff>
+            <bodyparts>
+              <li>BS_SnakeBody</li>
+            </bodyparts>
+          </li>
+        </applyPartHediff>
+        <thingDefSwap>BS_Naga</thingDefSwap>
+      </li>
+      <li Class="BigAndSmall.PawnExtension">
+        <thingDefSwap>BS_SixArmedHuman</thingDefSwap>
+      </li>
+      <li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
+        <movementDef>PF_Movement_Flying</movementDef>
+      </li>
+    </modExtensions>
+    <renderNodeProperties>
+      <li>
+        <workerClass>BigAndSmall.PawnRenderNodeWorker_BodyTypeOffsets</workerClass>
+        <parentTagDef>Body</parentTagDef>
+        <bodyTypeGraphicPaths>
+          <Hulk>BS_BodyAttachments/BS_Snek_New/bp_hulk</Hulk>
+    
+          <Male>BS_BodyAttachments/BS_Snek_New/bp_male</Male>
+          <Female>BS_BodyAttachments/BS_Snek_New/bp_female</Female>
+          
+          <Fat>BS_BodyAttachments/BS_Snek_New/bp_fat</Fat>
+          <Thin>BS_BodyAttachments/BS_Snek_New/bp_default</Thin>
+          
+          <Child MayRequire="Ludeon.RimWorld.Biotech">BS_BodyAttachments/BS_Snek_New/bp_child</Child>
+          <Baby>BS_BodyAttachments/BS_Snek_New/bp_child</Baby>
+        </bodyTypeGraphicPaths>
+        <drawSize>(1.625,1.625)</drawSize>
+        <colorType>Skin</colorType>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <drawData>
+          <dataNorth>
+            <offset>(0, 0, -0.3067)</offset>
+            <layer>79</layer>
+          </dataNorth>
+          <dataSouth>
+            <offset>(0, -0.0001, -0.3067)</offset>
+            <layer>20</layer>
+          </dataSouth>
+          <dataEast>
+            <offset>(-0.3067, -0.0001, -0.3067)</offset>
+            <layer>20</layer>
+          </dataEast>
+          <dataWest>
+            <offset>(0.3067, -0.0001, -0.3067)</offset>
+            <layer>20</layer>
+          </dataWest>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+</Defs>

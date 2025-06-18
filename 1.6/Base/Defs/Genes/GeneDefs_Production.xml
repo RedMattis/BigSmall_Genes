@@ -1,0 +1,54 @@
+<Defs>
+  <GeneDef>
+    <defName>BS_ChocolateProduction</defName>
+    <label>chocolate production</label>
+    <description>Carriers of this gene grow chocolate bars from their head, sometimes even with wrappers on.</description>
+    <geneClass>BigAndSmall.ProductionGene</geneClass>
+    <iconPath>GeneIcons/BS_BananaSplitProduction</iconPath>
+    <displayOrderInCategory>666</displayOrderInCategory>
+    <displayCategory>BS_Production</displayCategory>
+    <minAgeActive>15</minAgeActive>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-2</biostatMet>
+    <modExtensions>
+      <li Class="BigAndSmall.PawnExtension">
+        <meatOverride>Chocolate</meatOverride>
+        <butcherProducts>
+          <li>
+            <thingDef>Milk</thingDef>
+            <count>10</count>
+            <scaleToBodySize>true</scaleToBodySize>
+          </li>
+        </butcherProducts>
+      </li>
+      <li Class="BigAndSmall.ProductionGeneSettings">
+        <product>Chocolate</product>
+        <frequencyInDays>2</frequencyInDays>
+        <baseAmount>6</baseAmount>
+        <progressName>Marabou Switzere Progress</progressName>
+        <saveKey>BS_ChocolateProduction</saveKey>
+      </li>
+    </modExtensions>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>BS_JellyProduction</defName>
+    <label>insect jelly production</label>
+    <description>Carriers of this gene produce a small amount of insect jelly</description>
+    <geneClass>BigAndSmall.ProductionGene</geneClass>
+    <iconPath>GeneIcons/BS_InsectJelly</iconPath>
+    <displayCategory>BS_Production</displayCategory>
+    <minAgeActive>18</minAgeActive>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-2</biostatMet>
+    <modExtensions>
+      <li Class="BigAndSmall.ProductionGeneSettings">
+        <product>InsectJelly</product>
+        <frequencyInDays>2</frequencyInDays>
+        <baseAmount>12</baseAmount>
+        <progressName>Producing Jelly</progressName>
+        <saveKey>BS_JellyProduction</saveKey>
+      </li>
+    </modExtensions>
+  </GeneDef>
+</Defs>

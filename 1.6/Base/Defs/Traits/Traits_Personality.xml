@@ -1,0 +1,51 @@
+<Defs>
+  <TraitDef>
+    <defName>BS_Gentle</defName>
+    <commonality>0.5</commonality>
+    <degreeDatas>
+      <li>
+        <label>gentle</label>
+        <description>{PAWN_nameDef} has a gentle and cool-headed nature. {PAWN_pronoun} is less likely to insult others or starts fights, and will sometimes cheer up others.</description>
+        <statOffsets>
+          <MentalBreakThreshold>-0.20</MentalBreakThreshold>
+        </statOffsets>
+      </li>
+    </degreeDatas>
+    <conflictingTraits>
+      <li>Abrasive</li>
+      <li>Kind</li>
+      <li>Psychopath</li>
+    </conflictingTraits>
+  </TraitDef>
+
+  <TraitDef>
+		<defName>BS_InsultProof</defName>
+		<commonality>0.2</commonality>
+		<degreeDatas>
+			<li>
+				<label>uninsultable</label>
+				<description>[PAWN_nameDef] doesn't react to insults or to either part failing a flirt attempt.</description>
+			</li>
+		</degreeDatas>
+		<conflictingTraits>
+		</conflictingTraits>
+	</TraitDef>
+
+  <TraitDef>
+		<defName>BS_Unpretentious</defName>
+		<commonality>0.25</commonality>
+		<degreeDatas>
+			<li>
+				<label>Unpretentious</label>
+				<description>[PAWN_nameDef] isn't bothered by rough appearances, a bit of rough living. [PAWN_nameDef] also doesn't care as much for royal titles.</description>
+			</li>
+		</degreeDatas>
+		<conflictingTraits>
+      <li>Greedy</li>
+      <li>Jealous</li>
+      <li>BodyPurist</li>
+      <li>DislikesMen</li>
+      <li>DislikesWomen</li>
+		</conflictingTraits>
+	</TraitDef>
+</Defs>

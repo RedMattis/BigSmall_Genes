@@ -1,0 +1,54 @@
+<Defs>
+  
+
+  <HediffDef>
+    <defName>BS_SoulSize</defName>
+    <label>soul embodiment</label>
+    <description>The physical form size and power of this being increases with their soul power.</description>
+    <isBad>false</isBad>
+    <everCurableByItem>false</everCurableByItem>
+    <initialSeverity>1</initialSeverity>
+    <stages>
+      <li>
+        <statOffsets>
+          <SM_BodySizeOffset>0.5</SM_BodySizeOffset>
+          <SM_RaidWealthOffset>1000</SM_RaidWealthOffset>
+        </statOffsets>
+        <statFactors>
+          <MiningSpeed>1.35</MiningSpeed>
+          <DeepDrillingSpeed>1.2</DeepDrillingSpeed>
+          <ConstructionSpeed>1.10</ConstructionSpeed>
+          <SM_RaidWealthMultiplier>1.35</SM_RaidWealthMultiplier>
+          <CarryingCapacity>1.5</CarryingCapacity>
+          <VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">1.5</VEF_MassCarryCapacity>
+        </statFactors>
+        <statFactorEffectMultiplier>BS_SoulPower</statFactorEffectMultiplier>
+        <statOffsetEffectMultiplier>BS_SoulPower</statOffsetEffectMultiplier>
+      </li>
+    </stages>
+    <allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>BS_SoulPsychicPower</defName>
+    <label>soul attunement</label>
+    <description>Psychic Power is being amplified by soul power.</description>
+    <isBad>false</isBad>
+    <everCurableByItem>false</everCurableByItem>
+    <initialSeverity>1</initialSeverity>
+    <stages>
+      <li>
+        <statOffsets>
+          <PsychicSensitivity>0.25</PsychicSensitivity>
+          <MeditationFocusGain>0.1</MeditationFocusGain>
+          <PsychicEntropyRecoveryRate>0.1</PsychicEntropyRecoveryRate>
+        </statOffsets>
+        <!-- <statFactorEffectMultiplier>BS_SoulPower</statFactorEffectMultiplier> -->
+        <statOffsetEffectMultiplier>BS_SoulPower</statOffsetEffectMultiplier>
+      </li>
+    </stages>
+    <allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
+  </HediffDef>
+
+  
+</Defs>

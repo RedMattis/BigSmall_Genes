@@ -1,0 +1,38 @@
+<Defs>
+  <HediffDef>
+		<defName>LS_SnakeTail</defName>
+		<label>Constrictor Tail</label>
+		<description>A long snake body instead of legs. Permits performing a constriction attack.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>tail</label>
+						<capacities>
+							<li>Blunt</li>
+						</capacities>
+						<power>16</power>
+						<cooldownTime>3</cooldownTime>
+            <armorPenetration>0.5</armorPenetration>
+            <surpriseAttack>
+              <extraMeleeDamages>
+                <li>
+                  <def>Stun</def>
+                  <amount>16</amount>
+                </li>
+              </extraMeleeDamages>
+            </surpriseAttack>
+					</li>
+				</tools>
+			</li>
+		</comps>
+		<addedPartProps>
+			<betterThanNatural>false</betterThanNatural>
+		</addedPartProps>
+	</HediffDef>
+
+
+</Defs>

@@ -1,0 +1,49 @@
+<Defs>
+  <GeneDef>
+    <defName>BS_DroneKind</defName>
+    <label>drone</label>
+    <displayCategory>Aptitudes</displayCategory>
+    <description>Carriers of this gene lack higher reasoning and true creativity. They might be highly advanced AI capable of feigning sapience, collecting and combine information, all without being a true AGI, Persona, or Archotech.\n\nAlternatively they might be like animals or insectoids of similar characteristics and limitations, in which case it is often combined with limited ability to learn.\n\nCarriers of this gene will tend to not fully process events they did not see with their own eyes, and hold on to most memories for a dramatically shorter time.</description>
+    <customEffectDescriptions>
+      <li>Most memories have only 20% of the normal duration.</li>
+      <li>Doesn't react to the death of colonists unless seen.</li>
+      <li>Death of a drone is treated less severely.</li>
+    </customEffectDescriptions>
+    <iconPath>GeneIcons/BS_FalseSapience</iconPath>
+    <displayOrderInCategory>-5</displayOrderInCategory>
+    <disabledWorkTags>
+      <li>Intellectual</li>
+    </disabledWorkTags>
+    <statOffsets>
+      <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">0.1</SlaveSuppressionOffset>
+    </statOffsets>
+    <biostatMet>1</biostatMet>
+    <biostatCpx>-3</biostatCpx>
+    <exclusionTags>
+    </exclusionTags>
+    <modExtensions>
+      <li Class="BigAndSmall.PawnExtension">
+        <isDrone>true</isDrone>
+        <applyBodyHediff><li><hediff>BS_DroneHediff</hediff></li></applyBodyHediff>
+      </li>
+    </modExtensions>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>BS_NoFamilyRelations</defName>
+    <label>no family relations</label>
+    <displayCategory>Reproduction</displayCategory>
+    <description>Carriers of this gene do not recognize emotionally or genetically family relations in the common sense.\n\nBiological carriers may reproduce asexually via automixis, while case-oriented hive-creatures may carry multiple sets of genes to delay in-breeding.\n\nMechanical, archotech, or stranger beings may either simply engineer around it or simply lack the standard a concept of genes.</description>
+    <customEffectDescriptions>
+    </customEffectDescriptions>
+    <iconPath>GeneIcons/BS_ParadoxInteractive</iconPath>
+    <displayOrderInCategory>-5</displayOrderInCategory>
+    <biostatMet>0</biostatMet>
+    <biostatCpx>3</biostatCpx>
+    <modExtensions>
+      <li Class="BigAndSmall.PawnExtension">
+        <noFamilyRelations>true</noFamilyRelations>
+      </li>
+    </modExtensions>
+  </GeneDef>
+</Defs>

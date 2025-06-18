@@ -1,0 +1,331 @@
+<Defs>
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>BS_JotunRifle</defName>
+    <label>Warmech Anti-Material Rifle</label>
+    <description>A heavy rifle designed to be wielded by a combat mech for use against other mechs other other heavy military hardware.\n\nThe weapon is too large to be wielded by a regular human, even if they could somehow manage the terrible recoil.\n\nCan be wielded by giant, herculean, or warcasket pawns.</description>
+    <graphicData>
+      <texPath>Item/GiantAntiMaterialRifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>2.6</drawSize>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <equippedDistanceOffset>0.63</equippedDistanceOffset>
+    <weaponClasses Inherit="False">
+      <li>BS_GiantWeapon</li>
+    </weaponClasses>
+    <weaponTags Inherit="False">
+      <li>RangedHeavyGiant</li>
+    </weaponTags>
+    <relicChance>0.05</relicChance>
+    <statBases>
+      <WorkToMake>45000</WorkToMake>
+      <Mass>20</Mass>
+      <AccuracyTouch>0.5</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.70</AccuracyMedium>
+      <AccuracyLong>0.50</AccuracyLong>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>150</Steel>
+      <ComponentIndustrial>8</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>PrecisionRifling</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <displayPriority>419</displayPriority>
+    </recipeMaker>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>BS_Bullet_JotunRifle</defaultProjectile>
+        <warmupTime>1.7</warmupTime>
+        <range>46.9</range>
+        <soundCast>BS_JotunRifle_Fire</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>11</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>18</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>BS_Bullet_JotunRifle</defName>
+    <label>anti-material rifle bullet</label>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>35</damageAmountBase>
+      <stoppingPower>3</stoppingPower>
+      <speed>110</speed>
+      <armorPenetrationBase>1.5</armorPenetrationBase>
+    </projectile>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_big</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+  </ThingDef>
+
+  <SoundDef>
+    <defName>BS_JotunRifle_Fire</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Weapon/ThumpCannon_Fire</clipFolderPath>
+          </li>
+        </grains>
+        <pitchRange>1.15~1.25</pitchRange>
+        <volumeRange>85~100</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <!--Heavy Machine Gun-->
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>BS_GiantMinigun</defName>
+    <label>warmech machinegun</label>
+    <description>A hugely oversized multi-barrel machine gun. It's unwieldy and clearly made to be mounted on some sort of vehicle or mech. The weapon is made for laying down supressive fire and does not require aiming, and thanks to the belt-fed ammo the weapon fire for a long time without reloading. \n\nCan be wielded by giant, herculean, or warcasket pawns.</description>
+    <graphicData>
+      <texPath>Item/BS_Giant_MachineGun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>2.1</drawSize>
+    </graphicData>
+    <equippedDistanceOffset>0.63</equippedDistanceOffset>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <weaponClasses Inherit="False">
+      <li>BS_GiantWeapon</li>
+    </weaponClasses>
+    <weaponTags Inherit="False">
+      <li>RangedHeavyGiant</li>
+    </weaponTags>
+    <statBases>
+      <WorkToMake>90000</WorkToMake>
+      <Mass>22</Mass>
+      <AccuracyTouch>0.18</AccuracyTouch>
+      <AccuracyShort>0.22</AccuracyShort>
+      <AccuracyMedium>0.22</AccuracyMedium>
+      <AccuracyLong>0.18</AccuracyLong>
+      <RangedWeapon_Cooldown>0.133</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>360</Steel>
+      <ComponentIndustrial>22</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>MultibarrelWeapons</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <displayPriority>451</displayPriority>
+    </recipeMaker>
+    <techLevel>Industrial</techLevel>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.35</MoveSpeed>
+    </equippedStatOffsets>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>BS_GiantMinigunBullet</defaultProjectile>
+        <warmupTime>0.133</warmupTime>
+        <range>32.9</range>
+        <burstShotCount>7</burstShotCount>
+        <ticksBetweenBurstShots>16</ticksBetweenBurstShots>
+        <soundCast>BS_GiantMinigunShot</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>barrels</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15.7</power>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>BS_GiantMinigunBullet</defName>
+    <label>minigun bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.7</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>16</damageAmountBase>
+      <speed>90</speed>
+      <armorPenetrationBase>0.8</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+  <SoundDef>
+    <defName>BS_GiantMinigunShot</defName>  
+    <context>MapOnly</context>  
+    <maxVoices>8</maxVoices>  
+    <maxSimultaneous>4</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Weapon/Minigun/Shot</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>47.52942~48.52942</volumeRange>
+        <pitchRange>0.7~0.75</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <!--Raaaawwkeet Launcher!-->
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>BS_JotunRocketLauncher</defName>
+    <label>Warmech Rocket Launcher</label>
+    <description>A heavy rocket launcher originally designed to be welded to a combat mech for use against other mechs other other heavy military hardware.\n\nThe weapon is too large to be wielded by a regular human, even if they could somehow manage the terrible recoil.\n\nCan be wielded by giant, herculean, or warcasket pawns.</description>
+    <graphicData>
+      <texPath>Item/BS_GiantRocketLauncher</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>2.3</drawSize>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <equippedDistanceOffset>-0.30</equippedDistanceOffset>
+    <weaponClasses Inherit="False">
+      <li>BS_GiantWeapon</li>
+    </weaponClasses>
+    <weaponTags Inherit="False">
+      <li>RangedHeavyGiant</li>
+    </weaponTags>
+    <relicChance>0.05</relicChance>
+    <statBases>
+      <WorkToMake>45000</WorkToMake>
+      <Mass>20</Mass>
+      <AccuracyTouch>0.5</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.70</AccuracyMedium>
+      <AccuracyLong>0.50</AccuracyLong>
+      <RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>400</Steel>
+      <ComponentIndustrial>20</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>PrecisionRifling</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <displayPriority>419</displayPriority>
+    </recipeMaker>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>BS_Rocket</defaultProjectile>
+        <forcedMissRadius>1.9</forcedMissRadius>
+        <warmupTime>2.5</warmupTime>
+        <ai_AvoidFriendlyFireRadius>8</ai_AvoidFriendlyFireRadius>
+        <range>38.9</range>
+        <!-- <soundCast>BS_JotunRifle_Fire</soundCast> -->
+        <soundCast>BS_JotunRocketLauncher_Fire</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>11</muzzleFlashScale>
+        <onlyManualCast>true</onlyManualCast>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>18</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  <SoundDef>
+    <defName>BS_JotunRocketLauncher_Fire</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Weapon/ThumpCannon_Fire</clipFolderPath>
+          </li>
+        </grains>
+        <pitchRange>1.0~1.05</pitchRange>
+        <volumeRange>85~100</volumeRange>
+      </li>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Weapon/InfernoCannon_Fire</clipFolderPath>
+          </li>
+        </grains>      
+        <pitchRange>1.4~1.6</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>BS_Rocket</defName>
+    <label>rocket</label>
+    <graphicData>
+      <texPath>Item/BS_Rocket</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>Bomb</damageDef>
+      <!-- Use default damage from explosion def -->
+      <explosionRadius>1.9</explosionRadius>
+      <speed>50</speed>
+    </projectile>
+  </ThingDef>
+</Defs>

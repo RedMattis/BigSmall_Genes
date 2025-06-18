@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/GeneDef[defName="BS_BrokenTitanHead"]</xpath>
+		<value>
+			<renderNodeProperties>
+				<li>
+					<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+					<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+					<texPaths>
+						<li>BS_Titan/bp_default_normal</li>
+					</texPaths>
+					<texPathsFemale>
+						<li>BS_Titan/bp_female_normal</li>
+					</texPathsFemale>
+					<useSkinShader>false</useSkinShader>
+					<colorType>Skin</colorType>
+					<drawData>
+						<defaultData>
+							<layer>52</layer>
+						</defaultData>
+					</drawData>
+					<parentTagDef>Head</parentTagDef>
+				</li>
+			</renderNodeProperties>
+		</value>
+	</Operation>
+</Patch>

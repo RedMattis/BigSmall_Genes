@@ -1,0 +1,339 @@
+<Defs>
+  
+
+  <GeneDef Name="BodyFrameBase" Abstract="True">
+    <displayCategory>Body_Size</displayCategory>
+    <exclusionTags>
+      <li>BodySize</li>
+    </exclusionTags>
+    <biostatCpx>0</biostatCpx>
+    <biostatMet>0</biostatMet>
+    <selectionWeight>1</selectionWeight>
+    <canGenerateInGeneSet>true</canGenerateInGeneSet>
+    <customEffectDescriptions>
+      <li>- - - - - - - - - - - - - - - - - - -</li>
+      <li>- - Body Size General - - -</li>
+      <li>Alters Body Size attribute and associated traits</li>
+      <li>Very large effect on nutrition use.</li>
+      <li>Dramatically modifies health.</li>
+      <li>Significantly improves melee armor penetration.</li>
+      <li>Somewhat improves melee damage</li>
+      <li>Large effect on Melee Dodge chance benefitting small characters.</li>
+      <li>Very large effect on Self-"Production" from Alpha Genes and Biotech Expansion genes.</li>
+    </customEffectDescriptions>
+  </GeneDef>
+
+  <!-- <GeneDef ParentName="BodyFrameBase" Name="BigFrameAbstract">
+    <statFactors>
+      <MaxNutrition>1.5</MaxNutrition>
+    </statFactors>
+  </GeneDef> -->
+
+  <GeneDef ParentName="BodyFrameBase">
+    <defName>JotunFrame</defName>
+    <label>Jotun Frame</label>
+    <description>Carriers of this gene grow to an truly impressive size yet remain reasonably agile.</description>
+    <iconPath>GeneIcons/BS_Frames/Jotun</iconPath>
+    <displayOrderInCategory>950</displayOrderInCategory>
+    <biostatCpx>3</biostatCpx>
+    <biostatMet>-5</biostatMet>
+    <exclusionTags>
+      <li>BS_BodySizeHuge</li>
+    </exclusionTags>
+    <statOffsets>
+      <SM_BodySizeOffset>1.5</SM_BodySizeOffset>
+      <SM_RaidWealthOffset>2500</SM_RaidWealthOffset>
+    </statOffsets>
+    <statFactors>
+      <MiningSpeed>2.0</MiningSpeed>
+      <DeepDrillingSpeed>1.6</DeepDrillingSpeed>
+      <ConstructionSpeed>1.35</ConstructionSpeed>
+      <SM_RaidWealthMultiplier>2</SM_RaidWealthMultiplier>
+      <CarryingCapacity>3</CarryingCapacity>
+      <VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">2.5</VEF_MassCarryCapacity>
+    </statFactors>
+    <selectionWeight>1</selectionWeight>
+    <marketValueFactor>2</marketValueFactor>
+    <forcedTraits>
+      <li>
+        <def>BS_Giant</def>
+      </li>
+    </forcedTraits>
+  </GeneDef>
+  
+  <GeneDef ParentName="BodyFrameBase">
+    <defName>HalfJotunFrame</defName>
+    <label>Half-Jotun Frame</label>
+    <description>Carriers of this gene grow much larger than baseline humans and possess amazing speed and strength.</description>
+    <iconPath>GeneIcons/BS_Frames/HalfJotun</iconPath>
+    <displayOrderInCategory>1100</displayOrderInCategory>
+    <biostatCpx>2</biostatCpx>
+    <biostatMet>-3</biostatMet>
+    <statFactors>
+      <MiningSpeed>1.5</MiningSpeed>
+      <ConstructionSpeed>1.25</ConstructionSpeed>
+      <DeepDrillingSpeed>1.35</DeepDrillingSpeed>
+      <MoveSpeed>1.1</MoveSpeed>
+      <CarryingCapacity>1.5</CarryingCapacity>
+      <VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">1.4</VEF_MassCarryCapacity>
+      <SM_RaidWealthMultiplier>1.5</SM_RaidWealthMultiplier>
+    </statFactors>
+    <statOffsets>
+      <SM_BodySizeOffset>0.75</SM_BodySizeOffset>
+      <SM_RaidWealthOffset>1500</SM_RaidWealthOffset>
+      <VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">75</VEF_MassCarryCapacity>
+    </statOffsets>
+    <selectionWeight>1</selectionWeight>
+    <marketValueFactor>1.5</marketValueFactor>
+  </GeneDef>
+
+  <GeneDef ParentName="BodyFrameBase">
+    <defName>BS_LargeFrame</defName>
+    <label>Large Frame</label>
+    <description>Carriers of this gene grow larger than baseline humans. Comparable in size to a baseliner with gigantism but without the health issues.</description>
+    <iconPath>GeneIcons/BS_Frames/Large</iconPath>
+    <displayOrderInCategory>1100</displayOrderInCategory>
+    <biostatCpx>2</biostatCpx>
+    <biostatMet>-2</biostatMet>
+    <statFactors>
+      <MiningSpeed>1.35</MiningSpeed>
+      <ConstructionSpeed>1.2</ConstructionSpeed>
+      <DeepDrillingSpeed>1.2</DeepDrillingSpeed>
+      <MoveSpeed>1.1</MoveSpeed>
+      <CarryingCapacity>1.3</CarryingCapacity>
+      <VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">1.3</VEF_MassCarryCapacity>
+      <SM_RaidWealthMultiplier>1.2</SM_RaidWealthMultiplier>
+    </statFactors>
+    <statOffsets>
+      <SM_BodySizeOffset>0.4</SM_BodySizeOffset>
+      <SM_RaidWealthOffset>750</SM_RaidWealthOffset>
+    </statOffsets>
+    <selectionWeight>0.5</selectionWeight>
+    <marketValueFactor>1</marketValueFactor>
+  </GeneDef>
+  
+  <GeneDef ParentName="BodyFrameBase">
+    <defName>HalfColossusFrame</defName>
+    <label>Half-Colossus Frame</label>
+    <description>Carriers of this gene grow much larger and stouter than baseline humans. They possess incredible strength, but are lacking in agility.</description>
+    <iconPath>GeneIcons/BS_Frames/HalfColosuss</iconPath>
+    <displayOrderInCategory>1100</displayOrderInCategory>
+    <biostatCpx>2</biostatCpx>
+    <biostatMet>-2</biostatMet>
+    <statFactors>
+      <MiningSpeed>1.6</MiningSpeed>
+      <ConstructionSpeed>1.25</ConstructionSpeed>
+      <DeepDrillingSpeed>1.25</DeepDrillingSpeed>
+      <MoveSpeed>0.8</MoveSpeed>
+      <CarryingCapacity>2</CarryingCapacity>
+      <VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">2</VEF_MassCarryCapacity>
+      <SM_RaidWealthMultiplier>1.5</SM_RaidWealthMultiplier>
+    </statFactors>
+    <statOffsets>
+      <SM_BodySizeOffset>0.70</SM_BodySizeOffset>
+      <SM_RaidWealthOffset>1500</SM_RaidWealthOffset>
+    </statOffsets>
+    <selectionWeight>0.1</selectionWeight>
+    <marketValueFactor>1.5</marketValueFactor>
+  </GeneDef>
+
+  <GeneDef ParentName="BodyFrameBase">
+    <defName>OgreFrame</defName>
+    <label>Ogre Frame</label>
+    <description>Carriers of this gene grow to a large lumbering size, but they are clumsy and their size causes them health issues. Their bulky frame signifcantly hinders their movement, especially when wearing heavy armour. They are amazingly sturdy however.</description>
+    <iconPath>GeneIcons/BS_Frames/Ogre</iconPath>
+    <displayOrderInCategory>999</displayOrderInCategory>
+    <biostatCpx>2</biostatCpx>
+    <biostatMet>-3</biostatMet>
+    <statFactors>
+      <IncomingDamageFactor>0.80</IncomingDamageFactor>
+      <LifespanFactor>0.8</LifespanFactor>
+      <MiningSpeed>1.40</MiningSpeed>
+      <ConstructionSpeed>1.2</ConstructionSpeed>
+      <DeepDrillingSpeed>1.1</DeepDrillingSpeed>
+      <CarryingCapacity>2</CarryingCapacity>
+      <VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">2</VEF_MassCarryCapacity>
+      <SM_RaidWealthMultiplier>1.8</SM_RaidWealthMultiplier>
+    </statFactors>
+    <statOffsets>
+      <SM_BodySizeOffset>1.0</SM_BodySizeOffset>
+      <MoveSpeed>-0.1</MoveSpeed>
+      <ComfyTemperatureMin>-5</ComfyTemperatureMin>
+      <SM_RaidWealthOffset>1900</SM_RaidWealthOffset>
+    </statOffsets>
+    <conditionalStatAffecters>
+      <li Class="ConditionalStatAffecter_Clothed">
+        <statOffsets>
+          <MoveSpeed>-0.25</MoveSpeed>
+        </statOffsets>
+        <statFactors>
+          <MoveSpeed>0.90</MoveSpeed>
+        </statFactors>
+      </li>
+    </conditionalStatAffecters>
+    <selectionWeight>1</selectionWeight>
+    <marketValueFactor>1.5</marketValueFactor>
+    <forcedTraits>
+      <li>
+        <def>BS_Giant</def>
+      </li>
+    </forcedTraits>
+  </GeneDef>
+  
+  <GeneDef ParentName="BodyFrameBase">
+    <defName>GreatOgreFrame</defName>
+    <label>Great Ogre Frame</label>
+    <description>Carriers of this gene grow to a huge lumbering scale, but they are clumsy and their size causes them health issues. Their bulk significantly hinders their movement, especially when wearing heavy armour. They are amazingly sturdy however.</description>
+    <iconPath>GeneIcons/BS_Frames/GreatOgre</iconPath>
+    <displayOrderInCategory>998</displayOrderInCategory>
+    <biostatCpx>4</biostatCpx>
+    <biostatMet>-5</biostatMet>
+    <exclusionTags>
+      <li>BS_BodySizeHuge</li>
+    </exclusionTags>
+    <statFactors>
+      <IncomingDamageFactor>0.75</IncomingDamageFactor>
+      <LifespanFactor>0.6</LifespanFactor>
+      <MiningSpeed>1.6</MiningSpeed>
+      <ConstructionSpeed>1.3</ConstructionSpeed>
+      <DeepDrillingSpeed>1.2</DeepDrillingSpeed>
+      <CarryingCapacity>2</CarryingCapacity>
+      <VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">1.75</VEF_MassCarryCapacity>
+      <SM_RaidWealthMultiplier>2</SM_RaidWealthMultiplier>
+    </statFactors>
+    <statOffsets>
+      <SM_BodySizeOffset>2.0</SM_BodySizeOffset>
+      <MoveSpeed>-0.3</MoveSpeed>
+      <ComfyTemperatureMin>-8</ComfyTemperatureMin>
+      <SM_RaidWealthOffset>4000</SM_RaidWealthOffset>
+    </statOffsets>
+    <conditionalStatAffecters>
+      <li Class="ConditionalStatAffecter_Clothed">
+        <statOffsets>
+          <MoveSpeed>-0.3</MoveSpeed>
+        </statOffsets>
+        <statFactors>
+          <MoveSpeed>0.80</MoveSpeed>
+        </statFactors>
+      </li>
+    </conditionalStatAffecters>
+    <selectionWeight>1</selectionWeight>
+    <marketValueFactor>2.0</marketValueFactor>
+    <forcedTraits>
+      <li>
+        <def>BS_Giant</def>
+      </li>
+    </forcedTraits>
+  </GeneDef>
+  
+  <GeneDef ParentName="BodyFrameBase">
+    <defName>TitanFrame</defName>
+    <label>Titan Frame</label>
+    <!-- <prerequisite>JotunFrame</prerequisite> -->
+    <description>Carriers of this gene grow to an absurd size made possible only with Archite technology. Too large to properly make use of power-armor and exoskeletons the bodies of Titans were instead hollowed out and filled with bionic systems, their massive frames were also supported by huge amounts of a Luciferium-like drug and glittertech energy cores.\n\nNuclear Stomach and the like are advised.</description>
+    <iconPath>GeneIcons/BS_Frames/Titan</iconPath>
+    <displayOrderInCategory>411</displayOrderInCategory>
+    <biostatCpx>5</biostatCpx>
+    <biostatMet>-10</biostatMet>
+    <exclusionTags>
+      <li>BS_BodySizeHuge</li>
+    </exclusionTags>
+    <statFactors>
+      <IncomingDamageFactor>0.90</IncomingDamageFactor>
+      <MiningSpeed>3.0</MiningSpeed>
+      <DeepDrillingSpeed>2.0</DeepDrillingSpeed>
+      <ConstructionSpeed>1.6</ConstructionSpeed>
+      <MoveSpeed>1.2</MoveSpeed>
+      <CarryingCapacity>4</CarryingCapacity>
+      <VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">2</VEF_MassCarryCapacity>
+      <SM_RaidWealthMultiplier>4</SM_RaidWealthMultiplier>
+    </statFactors>
+    <statOffsets>
+      <SM_BodySizeOffset>3</SM_BodySizeOffset>
+      <MoveSpeed>1.0</MoveSpeed>
+      <SM_RaidWealthOffset>10000</SM_RaidWealthOffset>
+    </statOffsets>
+    <conditionalStatAffecters>
+      <li Class="ConditionalStatAffecter_Clothed"> <!--Replace with the equavalent for armor-->
+        <statOffsets>
+          <MoveSpeed>-1.0</MoveSpeed>
+        </statOffsets>
+        <statFactors>
+          <MoveSpeed>0.6</MoveSpeed>
+        </statFactors>
+      </li>
+    </conditionalStatAffecters>
+    <biostatArc>3</biostatArc>
+    <canGenerateInGeneSet>true</canGenerateInGeneSet>
+    <displayCategory>Archite</displayCategory>
+    <selectionWeight>1.5</selectionWeight>
+    <marketValueFactor>1</marketValueFactor>
+    <forcedTraits>
+      <li>
+        <def>BS_Giant</def>
+      </li>
+    </forcedTraits>
+  </GeneDef>
+
+  <GeneDef ParentName="BodyFrameBase">
+    <defName>BS_EndlessGrowth</defName>
+    <label>Endless Growth</label>
+    <description>Carriers of this gene grow to an absurd size</description>
+    <iconPath>GeneIcons/BS_Frames/EndlessGrowth</iconPath>
+    <displayOrderInCategory>412</displayOrderInCategory>
+    <biostatCpx>5</biostatCpx>
+    <biostatMet>-4</biostatMet>
+    <biostatArc>0</biostatArc>
+    <exclusionTags>
+      <li>BS_BodySizeHuge</li>
+    </exclusionTags>
+    <statFactors>
+      <MiningSpeed>1.6</MiningSpeed>
+      <ConstructionSpeed>1.25</ConstructionSpeed>
+      <DeepDrillingSpeed>1.25</DeepDrillingSpeed>
+      <CarryingCapacity>3</CarryingCapacity>
+      <VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">2</VEF_MassCarryCapacity>
+      <SM_RaidWealthMultiplier>2</SM_RaidWealthMultiplier>
+    </statFactors>
+    <statOffsets>
+      <SM_RaidWealthOffset>2500</SM_RaidWealthOffset>
+      <MoveSpeed>-0.1</MoveSpeed>
+    </statOffsets>
+    <canGenerateInGeneSet>true</canGenerateInGeneSet>
+    <selectionWeight>1.5</selectionWeight>
+    
+    <marketValueFactor>1</marketValueFactor>
+    <forcedTraits>
+      <li>
+        <def>BS_Giant</def>
+      </li>
+    </forcedTraits>
+    <modExtensions>
+      <li Class="BigAndSmall.PawnExtension">
+        <sizeByAge>
+          <points>
+            <li>(0, 0)</li>
+            <li>(13, 0.25)</li>
+            <li>(20, 0.5)</li>
+            <li>(45, 1)</li>
+            <li>(100, 1.6)</li>
+            <li>(400, 4)</li>
+            <li>(5000, 10)</li>
+          </points>
+        </sizeByAge>
+      </li>
+      <li Class="BigAndSmall.GenePrerequisites">
+        <prerequisiteSets>
+          <li>
+            <type>NoneOf</type>
+            <prerequisites>
+              <li>VU_UltraRapidAging</li>
+              <li>BS_UltraFastAging</li>
+            </prerequisites>
+          </li>
+        </prerequisiteSets>
+      </li>
+    </modExtensions>
+  </GeneDef>
+  
+</Defs>

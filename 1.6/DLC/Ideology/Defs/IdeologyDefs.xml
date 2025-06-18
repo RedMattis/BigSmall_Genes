@@ -1,0 +1,14 @@
+<Defs>
+  <IdeoIconDef>
+    <defName>BS_Aleph</defName>
+    <iconPath>Icons/BS_Aleph</iconPath>
+  </IdeoIconDef> 
+  <IdeoIconDef>
+    <defName>BS_Antimony</defName>
+    <iconPath>Icons/BS_Antimony</iconPath>
+  </IdeoIconDef> 
+  <IdeoIconDef>
+    <defName>BS_Brimstone</defName>
+    <iconPath>Icons/BS_Brimstone</iconPath>
+  </IdeoIconDef> 
+</Defs>

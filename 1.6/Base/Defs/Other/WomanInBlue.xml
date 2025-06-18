@@ -1,0 +1,233 @@
+<Defs>
+  <PawnKindDef Name="BS_WomanInBlue">
+		<defName>BS_WomanInBlue</defName>
+		<label>jotun adventurer</label>
+		<labelMale>jotun adventurer</labelMale>
+		<labelFemale>jotun adventurer</labelFemale>
+		<labelPlural>jotun adventurers</labelPlural>
+		<race>Human</race>
+		<maxPerGroup>1</maxPerGroup>
+		<defaultFactionType>Pirate</defaultFactionType>
+		<combatPower>50</combatPower>
+		<maxGenerationAge>200</maxGenerationAge>
+		<isFighter>true</isFighter>
+		<xenotypeSet Inherit="False">
+			<xenotypeChances>
+				<BS_FrostJotunInBlue>999</BS_FrostJotunInBlue>
+			</xenotypeChances>
+		</xenotypeSet>
+		<chemicalAddictionChance>0</chemicalAddictionChance>
+		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>Tribal</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+          <li>Tribal</li>
+				</categoriesAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<invNutrition>30.0</invNutrition>
+		<inventoryOptions>
+			<subOptionsTakeAll>
+				<li>
+					<thingDef>MedicineHerbal</thingDef>
+					<countRange>5</countRange>
+				</li>
+			</subOptionsTakeAll>
+		</inventoryOptions>
+    <invFoodDef>Pemmican</invFoodDef>
+		<gearHealthRange>0.8~1</gearHealthRange>
+		<itemQuality>Good</itemQuality>
+		<weaponMoney>1500~4000</weaponMoney>
+		<weaponTags>
+      <li>BS_ArcaneBattleAxe</li>
+			<li>MedievalMeleeGiant</li>
+			<li>MedievalMeleeAdvancedGiant</li>
+			<li>UltratechMeleeGiant_Cold</li>
+      <li>HerculeanWeapon</li>
+      <li>WarcasketMelee</li>
+		</weaponTags>
+    <apparelMoney>5000~7000</apparelMoney>
+    <apparelTags>
+			<li>MedievalMilitary</li>
+		</apparelTags>
+		<apparelRequired>
+      <li>Apparel_PlateArmor</li>
+      <li>Apparel_Pants</li>
+    </apparelRequired>
+		<apparelColor>(140,170,255)</apparelColor>
+		<ignoreIdeoApparelColors>true</ignoreIdeoApparelColors>
+		<favoriteColor>(140,170,255)</favoriteColor>
+		<!-- <forcedHair></forcedHair> -->
+		<forcedHairColor>RGBA(1,107,183,255)</forcedHairColor>
+		<skinColorOverride>RGBA(62,168,244,255)</skinColorOverride>
+		<fixedGender>Female</fixedGender>
+		<!-- <nameMaker></nameMaker> -->
+		<!-- <techHediffsMaxAmount>1</techHediffsMaxAmount> -->
+		<!-- <techHediffsRequired>
+			<li MayRequire="Ludeon.RimWorld.Ideology">PsychicAmplifier</li>
+		</techHediffsRequired> -->
+		<biocodeWeaponChance>0.0</biocodeWeaponChance>
+		<initialWillRange>10~10</initialWillRange>
+		<initialResistanceRange>0~2</initialResistanceRange>
+		<combatEnhancingDrugsCount>0~3</combatEnhancingDrugsCount>
+		<factionLeader>false</factionLeader>
+		<humanPregnancyChance>0</humanPregnancyChance>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>0~5</range>
+			</li>
+			<li>
+				<skill>Melee</skill>
+				<range>9~18</range>
+			</li>
+		</skills>
+		<forcedTraits Inherit="False">
+			<BS_Gentle/>
+      <!-- <SpeedOffset>2</SpeedOffset> -->
+      <Greedy/>
+		</forcedTraits>
+		<disallowedTraits>
+			<li>ShootingAccuracy</li>
+			<li>TooSmart</li>
+			<li>Wimp</li>
+      <li>Delicate</li>
+		</disallowedTraits>
+		<disallowedTraitsWithDegree>
+			<DrugDesire>1</DrugDesire>
+      <DrugDesire>2</DrugDesire>
+		</disallowedTraitsWithDegree>
+	</PawnKindDef>
+
+  <XenotypeDef>
+    <defName>BS_FrostJotunInBlue</defName>
+    <label>Frost Jotun</label>
+    <description>A great frost giant adventurer (or descendant thereof) from the great mountains of Nifelheim.\n\nDon't believe that hogwash outlanders tell you about giant space labourers or whatever!\n\nSource: Big and Small Races... \n\n\n\nSIKE! I'm built into the core mod!</description>
+    <descriptionShort>Frost giant from the great mountains of Nifelheim.</descriptionShort>
+    <iconPath>Xenotypes/BS_Jotun</iconPath>
+    <combatPowerFactor>3</combatPowerFactor>
+    <inheritable>true</inheritable>
+    <doubleXenotypeChances>
+      <VU_Returned_Intact MayRequire="RedMattis.Undead">0.05</VU_Returned_Intact>
+    </doubleXenotypeChances>
+    <genes>
+      <li>JotunFrame</li>
+      <li>BS_JotunArchiteMetabolism</li>
+      <li>HalfJotunFrame</li>
+      <li>Body_Standard</li>
+      <li>Aggression_Aggressive</li>
+      <li>AptitudePoor_Artistic</li>
+      <li>MinTemp_HugeDecrease</li>
+      <li>MaxTemp_SmallDecrease</li>
+      <li>Immunity_SuperStrong</li>
+      <li>StrongStomach</li>
+      <li>Unstoppable</li>
+      <li>Robust</li>
+      <li>AptitudeTerrible_Plants</li>
+      <li>AptitudePoor_Intellectual</li>
+      <li>AptitudePoor_Cooking</li>
+      <li>Superclotting</li>
+      <li>Jotun_Horns_Small</li>
+      
+      <li>BS_SkinPermafrost</li>
+      <li>BS_HairPermafrost</li>
+			<li>BS_EverFertile</li>
+			<li>Hair_LongOnly</li>
+			<li>BS_VerySlowAging</li>
+    </genes>
+    <forbiddenWeaponClasses><li>RangedLight</li></forbiddenWeaponClasses>
+    <factionlessGenerationWeight>0.0</factionlessGenerationWeight>
+  </XenotypeDef>
+
+
+	<!-- <PawnKindDef Parent="BS_WomanInBlue">
+		<defName>BS_LadyInRed</defName>
+		<label>jotun disgraced noble</label>
+		<labelMale>jotun disgraced noble</labelMale>
+		<labelFemale>jotun disgraced noble</labelFemale>
+		<labelPlural>jotun disgraced noble</labelPlural>
+		<xenotypeSet Inherit="False">
+			<xenotypeChances>
+				<BS_FireJotunInRed>999</BS_FireJotunInRed>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef> -->
+
+	<!-- <XenotypeDef>
+    <defName>BS_FireJotunInRed</defName>
+    <label>Fire Jotun</label>
+		<race>Human</race>
+		<combatPower>50</combatPower>
+    <description>A great frost giant adventurer (or descendant thereof) from the great mountains of Muspelheim.\n\nThe lesser races exist to serve us as labourers!\n\nSource: Big and Small Races. \n\n\n\nOr so you'd think.</description>
+    <descriptionShort>Fire giant from the great mountains of Muspelheim.</descriptionShort>
+    <iconPath>Xenotypes/BS_Jotun</iconPath>
+    <combatPowerFactor>3</combatPowerFactor>
+    <inheritable>true</inheritable>
+    <doubleXenotypeChances>
+      <VU_Returned MayRequire="RedMattis.Undead">0.05</VU_Returned>
+    </doubleXenotypeChances>
+    <genes>
+      <li>BS_JotunArchiteMetabolism</li>
+			<li>JotunFrame</li>
+			<li>HalfJotunFrame</li>
+			<li>StrongStomach</li>
+			<li>Immunity_SuperStrong</li>
+			<li>Superclotting</li>
+			<li>MoveSpeed_Quick</li>
+			<li>Mood_Pessimist</li>
+			<li>MaxTemp_HugeIncrease</li>
+			<li>MinTemp_SmallIncrease</li>
+			<li>FireImmunity</li>
+			<li>Aggression_Aggressive</li>
+			<li>Pain_Reduced</li>
+			<li>Jotun_Horns_Small</li>
+			<li>Body_Standard</li>
+			<li>Hair_MediumRed</li>
+			<li>Skin_DeepRed</li>
+			<li>BS_SkinBloodRed</li>
+			<li>Unstoppable</li>
+			<li>AptitudeTerrible_Cooking</li>
+			<li>AptitudeTerrible_Plants</li>
+			<li>AptitudePoor_Artistic</li>
+			<li>AptitudePoor_Intellectual</li>
+    </genes>
+    <forbiddenWeaponClasses><li>RangedLight</li></forbiddenWeaponClasses>
+    <factionlessGenerationWeight>0.05</factionlessGenerationWeight>
+		<disallowedTraits>
+			<li>ShootingAccuracy</li>
+			<li>TooSmart</li>
+			<li>Wimp</li>
+      <li>Delicate</li>
+		</disallowedTraits>
+		<disallowedTraitsWithDegree>
+			<DrugDesire>1</DrugDesire>
+      <DrugDesire>2</DrugDesire>
+		</disallowedTraitsWithDegree>
+		<skills Inherit="False">
+			<li>
+				<skill>Shooting</skill>
+				<range>0~5</range>
+			</li>
+			<li>
+				<skill>Melee</skill>
+				<range>9~18</range>
+			</li>
+			<li>
+				<skill>Crafting</skill>
+				<range>4~20</range>
+			</li>
+		</skills>
+		<forcedTraits Inherit="False">
+      <SpeedOffset>1</SpeedOffset>
+      <Greedy/>
+		</forcedTraits>
+		<factionlessGenerationWeight>0.05</factionlessGenerationWeight>
+  </XenotypeDef> -->
+</Defs>

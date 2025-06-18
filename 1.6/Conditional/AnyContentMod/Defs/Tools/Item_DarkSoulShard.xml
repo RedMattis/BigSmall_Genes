@@ -1,0 +1,53 @@
+<Defs>
+
+  <ThingDef>  <!--MayRequireAnyOf="Ludeon.RimWorld.Anomaly,Ludeon.RimWorld.Biotech" -->
+    <defName>BS_DarkSoulshard</defName>
+    <label>soul shard</label>
+    <description>A shard of dark archotechnology capable of imbuing the users with some strange power. The safety of this item is questionable at best. To use it you simply stab yourself at hope for the test. Preferably not in the brain. Adds 50% Soul Power with falloff starting at 100%.\n\nOn its own Soul Power very slightly improves the capabilities of a character, but there are also a variety of abilities which it greatly enhances.</description>
+    <descriptionHyperlinks><HediffDef>BS_SoulCollector</HediffDef></descriptionHyperlinks>
+    <thingClass>ThingWithComps</thingClass>
+    <category>Item</category>
+    <drawerType>MapMeshOnly</drawerType>
+    <techLevel>Archotech</techLevel>
+    <useHitPoints>false</useHitPoints>
+    <pathCost>14</pathCost>
+    <selectable>true</selectable>
+    <altitudeLayer>Item</altitudeLayer>
+    <tickerType>Never</tickerType>
+    <alwaysHaulable>true</alwaysHaulable>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+      <Beauty>-4</Beauty>
+      <Mass>0.1</Mass>
+      <MarketValue>400</MarketValue>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <intricate>true</intricate>
+    <graphicData>
+      <texPath>Item/BS_DarkSoulshard</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Usable">
+        <useJob>BS_UseOnTarget</useJob>
+        <useLabel>Use {0_label}</useLabel>
+        <useDuration>5</useDuration>
+        <warmupMote>Mote_ResurrectFlash</warmupMote>
+      </li>
+      <li Class="CompProperties_UseEffectDestroySelf" />
+      <li Class="CompProperties_Targetable">
+        <compClass>CompTargetable_SinglePawn</compClass>
+      </li>
+      <li Class="BigAndSmall.CompProperties_ApplySoulstone">
+        <factor>0.50001</factor>
+        <falloff>2.5</falloff>
+      </li>
+      <li Class="CompProperties_Forbiddable" />
+    </comps>
+  </ThingDef>
+</Defs>

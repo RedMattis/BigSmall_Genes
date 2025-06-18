@@ -1,0 +1,97 @@
+<Defs>
+
+  <DamageDef ParentName="Flame" Name="BS_AcidDmgDirect">
+    <defName>BS_AcidDmgDirect</defName>
+    <label>acid</label>
+    <deathMessage>{0} has melted to death.</deathMessage>
+    <workerClass>BigAndSmall.DamageWorker_OuterAndFullDamage</workerClass>
+    <applyAdditionalHediffsIfHuntingForFood>false</applyAdditionalHediffsIfHuntingForFood>
+    <impactSoundType>Toxic</impactSoundType>
+    <damageEffecter>Impact_Toxic</damageEffecter>
+    <armorCategory>Heat</armorCategory>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+  </DamageDef>
+
+  <DamageDef ParentName="BS_AcidDmgDirect">
+    <defName>BS_AcidDmgDirectQuiet</defName>
+    <impactSoundType/>
+  </DamageDef>
+
+  <DamageDef ParentName="Flame">
+    <defName>BS_AcidBuildUpDmg</defName>
+    <label>acid</label>
+    <deathMessage>{0} has melted to death.</deathMessage>
+    <additionalHediffs>
+      <li>
+        <hediff>BS_AcidBuildUp</hediff>
+        <severityPerDamageDealt>0.030</severityPerDamageDealt> <!--Roughly speaking you deal 25% direct damage and then 150% damage over time..-->
+        <!-- <victimSeverityScaling>ToxicResistance</victimSeverityScaling> -->
+        <inverseStatScaling>true</inverseStatScaling>
+        <victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+      </li>
+    </additionalHediffs>
+    <applyAdditionalHediffsIfHuntingForFood>false</applyAdditionalHediffsIfHuntingForFood>
+    <impactSoundType>Toxic</impactSoundType>
+    <damageEffecter>Impact_Toxic</damageEffecter>
+    <armorCategory>Heat</armorCategory>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+  </DamageDef>
+
+  <HediffDef>
+    <defName>BS_AcidBuildUp</defName>
+    <label>acid build-up</label>
+    <description>description.</description>
+    <isBad>true</isBad>
+    <makesSickThought>true</makesSickThought>
+    <tendable>true</tendable>
+    <initialSeverity>0.01</initialSeverity>
+    <hediffClass>BigAndSmall.AcidBuildUp</hediffClass>
+    <stages>
+      <li>
+        <label>acid buildup (light)</label>
+        <extraTooltip>Small spots exposed to corrosive substance</extraTooltip>
+        <minSeverity>0.05</minSeverity>
+      </li>
+      <li>
+        <label>acid buildup (moderate)</label>
+        <extraTooltip>Significantly exposed to corrosive substance</extraTooltip>
+        <minSeverity>0.33</minSeverity>
+      </li>
+      <li>
+        <label>acid buildup (severe)</label>
+        <extraTooltip>Almost completely covered in corrosive substance</extraTooltip>
+        <minSeverity>0.66</minSeverity>
+      </li>
+      <li>
+        <label>acid buildup (maximal)</label>
+        <extraTooltip>Drenched in corrosive substance. More build-up will only increase duration.</extraTooltip>
+        <minSeverity>1</minSeverity>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <DamageDef ParentName="Bite">
+    <defName>BS_BiteDevourDmg</defName>
+    <impactSoundType>Slice</impactSoundType>
+    <damageEffecter>BS_Impact_ToxicRed</damageEffecter>
+    <hediffSolid>Bite</hediffSolid>
+    <overkillPctToDestroyPart>0~0.01</overkillPctToDestroyPart>
+  </DamageDef>
+  
+
+  <DamageDef ParentName="Flame" Name="BS_IndictedDamage">
+    <defName>BS_IndictedDamage</defName>
+    <label>indirect damage</label>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} died.</deathMessage>
+    <workerClass>BigAndSmall.DamageWorker_NoDirectDamage</workerClass>
+    <defaultDamage>15</defaultDamage>
+    <applyAdditionalHediffsIfHuntingForFood>false</applyAdditionalHediffsIfHuntingForFood>
+    <impactSoundType>Electric</impactSoundType>
+    <armorCategory>Heat</armorCategory>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <hasForcefulImpact>true</hasForcefulImpact>
+    <makesAnimalsFlee>true</makesAnimalsFlee>
+  </DamageDef>
+</Defs>

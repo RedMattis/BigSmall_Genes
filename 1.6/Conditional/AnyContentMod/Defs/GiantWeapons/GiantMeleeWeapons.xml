@@ -1,0 +1,362 @@
+<Defs>
+  <ThingDef ParentName="BaseMeleeWeapon_Blunt">
+    <defName>BS_OgreClub</defName>
+    <label>giant club</label>
+    <description>A huge heavy club which is too unwieldly for normal person to use.</description>
+    <graphicData>
+      <texPath>Item/BS_GiantClub</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>2.3</drawSize>
+    </graphicData>
+    <uiIconScale>1.1</uiIconScale>
+    <techLevel>Neolithic</techLevel>
+    <weaponTags Inherit="False">
+      <li>NeolithicMeleeGiant</li>
+    </weaponTags>
+    <weaponClasses Inherit="False">
+      <li>BS_GiantWeapon</li>
+    </weaponClasses>
+    <costStuffCount>120</costStuffCount>
+    <statBases>
+      <WorkToMake>1800</WorkToMake>
+      <Mass>15</Mass>
+    </statBases>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <recipeMaker>
+      <recipeUsers>
+        <li>CraftingSpot</li>
+      </recipeUsers>
+      <displayPriority>300</displayPriority>
+    </recipeMaker>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>head</label>
+        <labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>16</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+		<possessionCount>1</possessionCount>
+		<rotateInShelves>false</rotateInShelves>
+		<relicChance>0.1</relicChance>
+		<tradeability>Sellable</tradeability>
+		<comps>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+
+  <ThingDef ParentName="BaseMeleeWeapon_Blunt">
+    <defName>BS_GiantHammer</defName>
+    <label>giant primitive hammer</label>
+    <description>A huge primitive one-handed stone hammer which is too unwieldly for normal person to use.</description>
+    <graphicData>
+      <texPath>Item/BS_GiantStoneHammer</texPath>
+      <maskPath>Item/BS_GiantStoneHammer_m</maskPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>1.62</drawSize>
+    </graphicData>
+    <uiIconScale>1.1</uiIconScale>
+    <techLevel>Neolithic</techLevel>
+    <weaponTags Inherit="False">
+      <li>NeolithicMeleeGiant</li>
+    </weaponTags>
+    <weaponClasses Inherit="False">
+      <li>BS_GiantWeapon</li>
+    </weaponClasses>
+    <costStuffCount>120</costStuffCount>
+    <statBases>
+      <WorkToMake>1800</WorkToMake>
+      <Mass>14</Mass>
+    </statBases>
+    <equippedStatOffsets>
+      <GeneralLaborSpeed>0.10</GeneralLaborSpeed>
+      <ConstructionSpeed>0.15</ConstructionSpeed>
+      <ConstructSuccessChance>0.10</ConstructSuccessChance>
+    </equippedStatOffsets>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <stuffCategories>
+      <li>Stony</li>
+    </stuffCategories>
+    <recipeMaker>
+      <recipeUsers>
+        <li>CraftingSpot</li>
+        <li>TableStonecutter</li>
+      </recipeUsers>
+      <displayPriority>300</displayPriority>
+    </recipeMaker>
+    <tools>
+      <li>
+        <label>head</label>
+        <labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>16</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>hammer peen</label>
+        <labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+		<possessionCount>1</possessionCount>
+		<rotateInShelves>false</rotateInShelves>
+		<relicChance>0.1</relicChance>
+		<tradeability>Sellable</tradeability>
+		<comps>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+
+  <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+    <defName>BS_JotunHammer</defName>
+    <label>giant warhammer</label>
+    <description>A massive warhammer far too unwieldly for normal person to use. Also amazingly good at demolishing buildings.</description>
+    <graphicData>
+      <texPath>Item/BS_GiantWarhammer</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>2.1</drawSize>
+      <!-- <drawSize>2.4</drawSize> -->
+    </graphicData>
+    <uiIconScale>1.1</uiIconScale>
+    <techLevel>Medieval</techLevel>
+    <weaponTags Inherit="False">
+      <li>MedievalMeleeGiant</li>
+    </weaponTags>
+    <weaponClasses Inherit="False">
+      <li>BS_GiantWeapon</li>
+    </weaponClasses>
+    <costStuffCount>300</costStuffCount>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+      <WorkToMake>10000</WorkToMake>
+      <Mass>18</Mass>
+    </statBases>
+    <equippedAngleOffset>-25</equippedAngleOffset>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+    </stuffCategories>
+    <recipeMaker>
+      <researchPrerequisite>LongBlades</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+      <displayPriority>440</displayPriority>
+    </recipeMaker>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+      <li>
+        <label>head</label>
+        <labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Demolish</li>
+        </capacities>
+        <power>23</power>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+      
+    </tools>
+		<possessionCount>1</possessionCount>
+		<rotateInShelves>false</rotateInShelves>
+		<relicChance>2</relicChance>
+		<tradeability>Sellable</tradeability>
+	</ThingDef>
+
+  <ThingDef Abstract="True" Name="BS_GiantMeleeUltratech" ParentName="BaseWeapon">
+    <!--Actually Ultratech, but thematically it should be able to show up wielded by Medieval giants-->
+    <techLevel>Medieval</techLevel>
+    <statBases>
+      <MarketValue>2500</MarketValue>
+      <Mass>8</Mass>
+    </statBases>
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponMelee</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+      <li Class="CompProperties_Biocodable"/>
+    </comps>
+    <smeltable>false</smeltable>
+    <burnableByRecipe>true</burnableByRecipe>
+    <thingCategories>
+      <li>WeaponsMelee</li>
+    </thingCategories>
+    <weaponTags Inherit="False">
+      <li>UltratechMeleeGiant</li>
+    </weaponTags>
+    <tradeTags>
+      <li>WeaponMelee</li>
+    </tradeTags>
+    <weaponClasses>
+      <li>BS_GiantWeapon</li>
+      <li>Ultratech</li>
+    </weaponClasses>
+    <thingSetMakerTags>
+      <li>RewardStandardMidFreq</li>
+    </thingSetMakerTags>
+  </ThingDef>
+
+  <ThingDef ParentName="BS_GiantMeleeUltratech">
+    <defName>BS_SurtrSword</defName>
+    <label>Sword of Surtr</label>
+    <description>An enormus one-handed sword with a blade wreathed in the barely-contained power of the sun. The sword burns, cuts, and melts through anything unfortunate enough to meet it's edge.\n\nThe sword is so large and heavy that even giants often struggle to wield it.</description>
+    <weaponTags>
+      <li>UltratechMeleeGiant_Fire</li>
+    </weaponTags>
+    <graphicData>
+      <texPath>Item/BS_FireSwordGlow</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+      <drawSize>2.2</drawSize>
+    </graphicData>
+    <uiIconScale>1.1</uiIconScale>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <relicChance>3</relicChance>
+    <statBases>
+      <Mass>12</Mass>
+    </statBases>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>14</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>25</power>
+        <cooldownTime>2.6</cooldownTime>
+        <extraMeleeDamages>
+          <li>
+            <def>Flame</def>
+            <amount>10</amount>
+            <chance>0.75</chance>
+          </li>
+        </extraMeleeDamages>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>25</power>
+        <cooldownTime>2.6</cooldownTime>
+        <extraMeleeDamages>
+          <li>
+            <def>Flame</def>
+            <amount>10</amount>
+            <chance>0.5</chance>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+		<possessionCount>1</possessionCount>
+		<rotateInShelves>false</rotateInShelves>
+		<tradeability>Sellable</tradeability>
+	</ThingDef>
+
+  <ThingDef ParentName="BS_GiantMeleeUltratech">
+    <defName>BS_SkrymirHammer</defName>
+    <label>Skrýmir's Mallet</label>
+    <description>An absurdly large and heavy hammer of unknown origin. It is claimed to be imbued with the power of a winter storm.\n\nThe few things the thunderous blows of the hammer does not outright pulverize by force alone are turned brittle by frost and stunned by the thunderous impact.</description>
+    <weaponTags>
+      <li>UltratechMeleeGiant_Cold</li>
+    </weaponTags>
+    <graphicData>
+      <texPath>Item/BS_BigIceHammer</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+      <drawSize>3</drawSize>
+    </graphicData>
+    <uiIconScale>1.1</uiIconScale>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+      <Mass>30</Mass>
+    </statBases>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>2.2</cooldownTime>
+      </li>
+      <li>
+        <label>head</label>
+        <labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Demolish</li>
+        </capacities>
+        <power>32</power>
+        <cooldownTime>3</cooldownTime>
+        <extraMeleeDamages>
+          <li>
+            <def>Frostbite</def>
+            <amount>9</amount>
+            <chance>0.75</chance>
+          </li>
+          <li>
+            <def>EMP</def>
+            <amount>9</amount>
+          </li>
+          <li>
+            <def>Stun</def>
+            <amount>9</amount>
+            <chance>0.25</chance>
+          </li>
+        </extraMeleeDamages>
+      </li>
+      
+    </tools>
+		<possessionCount>1</possessionCount>
+		<rotateInShelves>false</rotateInShelves>
+		<relicChance>2</relicChance>
+		<tradeability>Sellable</tradeability>
+	</ThingDef>
+</Defs>

@@ -1,0 +1,103 @@
+<Defs>
+  <GeneDef>
+		<defName>BS_Pilotable</defName>
+		<label>pilotable</label>
+		<description>This being has been made to function as a simple extension of a pilot. It will not be able to function without a pilot. The skills and mental traits of the pilot will be used.\n\nNote that the pilot can be no larger than half the size of their vehicle, also they will not be able to socially interact with others normally while busy piloting.</description>
+		<iconPath>GeneIcons/BS_Pilotable</iconPath>
+    
+		<displayOrderInCategory>1</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>1</biostatMet>
+    <missingGeneRomanceChanceFactor>0</missingGeneRomanceChanceFactor>
+		<displayCategory>BS_Pilotable</displayCategory>
+    <exclusionTags>
+      <li>BS_Pilotable</li>
+    </exclusionTags>
+		 <modExtensions>
+			<li Class="BigAndSmall.PawnExtension">
+				<applyBodyHediff>
+					<li>
+						<hediff>BS_Piloted</hediff>
+					</li>
+				</applyBodyHediff>
+			</li>
+		</modExtensions>
+		<selectionWeight>0.5</selectionWeight>
+	</GeneDef>
+
+  <GeneDef>
+		<defName>BS_PilotAssistible</defName>
+		<label>operator assistable</label>
+		<description>This being has been made to utilize an operator, and will be much more effective when one is available.\n\nNote that the operator can be no larger than half the size of the carrier.</description>
+		<iconPath>GeneIcons/BS_Pilotassistable</iconPath>
+    
+		<displayOrderInCategory>2</displayOrderInCategory>
+		<biostatCpx>5</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<displayCategory>BS_Pilotable</displayCategory>
+    <exclusionTags>
+      <li>BS_Pilotable</li>
+    </exclusionTags>
+		 <modExtensions>
+			<li Class="BigAndSmall.PawnExtension">
+				<applyBodyHediff>
+					<li>
+						<hediff>BS_PilotAssisted</hediff>
+					</li>
+				</applyBodyHediff>
+			</li>
+		</modExtensions>
+		<selectionWeight>1</selectionWeight>
+	</GeneDef>
+
+  <GeneDef>
+		<defName>BS_PilotRequired</defName>
+		<label>operator required</label>
+		<description>This being its own intelligence but has been unable to function without an operator. They will operate at great effectiveness when a pilot is present.\n\nNote that the operator can be no larger than half the size of the carrier.</description>
+		<iconPath>GeneIcons/BS_PilotRequired</iconPath>
+    
+		<displayOrderInCategory>2</displayOrderInCategory>
+		<biostatCpx>3</biostatCpx>
+		<biostatMet>0</biostatMet>
+		<displayCategory>BS_Pilotable</displayCategory>
+    <exclusionTags>
+      <li>BS_Pilotable</li>
+    </exclusionTags>
+		 <modExtensions>
+			<li Class="BigAndSmall.PawnExtension">
+				<applyBodyHediff>
+					<li>
+						<hediff>BS_PilotRequired</hediff>
+					</li>
+				</applyBodyHediff>
+			</li>
+		</modExtensions>
+		<selectionWeight>0.5</selectionWeight>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>BS_PilotableSameSize</defName>
+		<label>second-skin pilotable</label>
+		<description>This being has been made to function as a simple extension of a pilot. It will not be able to function without a pilot. The skills and mental traits of the pilot will be used.\n\nNote that the pilot can be no larger than the size of their vehicle.</description>
+		<iconPath>GeneIcons/BS_PilotableSameSize</iconPath>
+    
+		<displayOrderInCategory>1</displayOrderInCategory>
+		<biostatCpx>10</biostatCpx>
+		<biostatMet>1</biostatMet>
+    <missingGeneRomanceChanceFactor>0</missingGeneRomanceChanceFactor>
+		<displayCategory>BS_Pilotable</displayCategory>
+    <exclusionTags>
+      <li>BS_Pilotable</li>
+    </exclusionTags>
+		 <modExtensions>
+			<li Class="BigAndSmall.PawnExtension">
+				<applyBodyHediff>
+					<li>
+						<hediff>BS_PilotedSameSize</hediff>
+					</li>
+				</applyBodyHediff>
+			</li>
+		</modExtensions>
+		<selectionWeight>0.5</selectionWeight>
+	</GeneDef>
+</Defs>

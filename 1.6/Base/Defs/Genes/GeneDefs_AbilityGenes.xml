@@ -1,0 +1,121 @@
+<Defs>
+
+  <GeneDef>
+    <defName>VU_Hermaphromorph</defName>
+    <label>Hermaphromorph</label>
+    <displayCategory>ForcedSex</displayCategory>
+    
+    <description>Carriers of this gene can change the sex of their body at will.</description>
+    <iconPath>GeneIcons/VU_Genderbender</iconPath>
+    <abilities>
+      <li>VU_Hermaphromorph</li>
+    </abilities>
+    <descriptionHyperlinks>
+      <AbilityDef>VU_Hermaphromorph</AbilityDef>
+    </descriptionHyperlinks>
+    <biostatMet>0</biostatMet>
+    <biostatCpx>3</biostatCpx>
+    <selectionWeight>1</selectionWeight>
+    <modExtensions>
+      <li Class="BigAndSmall.PawnExtension">
+        <ignoreForceGender>True</ignoreForceGender>
+      </li>
+    </modExtensions>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>BS_FoamSpray</defName>
+    <label>foam spray cone</label>
+    <description>Carriers can generate and store a fire-retardant foam. They can spew this foam over an area to extinguish fires.</description>
+    <iconPath>UI/Icons/Genes/Gene_FoamSpray</iconPath>
+    <displayCategory>Ability</displayCategory>
+    <abilities>
+      <li>BS_FoamSpray</li>
+    </abilities>
+    <descriptionHyperlinks>
+      <AbilityDef>FoamSpray</AbilityDef>
+    </descriptionHyperlinks>
+    <biostatMet>-2</biostatMet>
+    <symbolPack>
+      <wholeNameSymbols>
+        <li><symbol>foamer</symbol></li>
+      </wholeNameSymbols>
+      <prefixSymbols>
+        <li><symbol>foam</symbol></li>
+        <li><symbol>spit</symbol></li>
+        <li><symbol>spray</symbol></li>
+        <li><symbol>suds</symbol></li>
+        <li><symbol>cream</symbol></li>
+        <li><symbol>froth</symbol></li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li><symbol>foamer</symbol></li>
+        <li><symbol>sud</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
+    <selectionWeight>0.25</selectionWeight>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>VU_Pounce</defName>
+    <label>pounce</label>
+    <displayCategory>Ability</displayCategory>
+    <description>Carriers of this gene can pounce at prey.</description>
+    <iconPath>UI/Icons/Genes/Gene_LongJumpLegs</iconPath>
+    
+    <biostatCpx>2</biostatCpx>
+    <biostatMet>-2</biostatMet>
+    <canGenerateInGeneSet>true</canGenerateInGeneSet>
+    <symbolPack>
+      <wholeNameSymbols>
+        <li><symbol>jumper</symbol></li>
+        <li><symbol>leaper</symbol></li>
+        <li><symbol>bouncer</symbol></li>
+      </wholeNameSymbols>
+      <prefixSymbols>
+        <li><symbol>jump</symbol></li>
+        <li><symbol>leap</symbol></li>
+        <li><symbol>vault</symbol></li>
+        <li><symbol>long</symbol></li>
+        <li><symbol>fly</symbol></li>
+        <li><symbol>hop</symbol></li>
+      </prefixSymbols>
+    </symbolPack>
+
+    <abilities>
+      <li>VU_Pounce</li>
+    </abilities>
+    <descriptionHyperlinks>
+      <AbilityDef>VU_Pounce</AbilityDef>
+    </descriptionHyperlinks>
+    <selectionWeight>1</selectionWeight>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>BS_SnekEngulf</defName>
+    <label>swallow</label>
+    <displayCategory>Ability</displayCategory>
+    <description>Temporarily engulf a smaller target with intent to consume or temporarily suppress the target.\n\nUse on capable fighters for more than a short time is ill-advised; the target will cause injuries from the inside with any weapon they possess.\n\nNote that any non-cannibal will be very upset if forced to digest a humanlike.</description>
+    <customEffectDescriptions>
+      <li>Target can be max 35% of the users body size. Increased max nutrition can improve this to a max of 85%.</li>
+      <li>6 Base Damage (Acid)</li>
+      <li>Victim can strike back with melee attacks dealing 100% normal damage.</li>
+    </customEffectDescriptions>
+    <iconPath>GeneIcons/BS_Omnomnomnomnom</iconPath>
+    <abilities>
+      <li>BS_SnekEngulf_New</li>
+      <li>BS_Regurgitate</li>
+    </abilities>
+    <descriptionHyperlinks>
+      <AbilityDef>BS_SnekEngulf_New</AbilityDef>
+      <AbilityDef>BS_Regurgitate</AbilityDef>
+    </descriptionHyperlinks>
+    <biostatMet>-1</biostatMet>
+    <biostatArc>0</biostatArc>
+    <minAgeActive>5</minAgeActive>
+    <selectionWeight>1</selectionWeight>
+  </GeneDef>
+
+ 
+
+</Defs>

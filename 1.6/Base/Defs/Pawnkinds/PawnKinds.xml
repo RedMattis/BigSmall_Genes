@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- Currently just used by the Snakemen faction in another mod. -->
+  <PawnKindDef ParentName="TribalBase">
+    <defName>Naked_Warrior</defName>
+    <label>Wild Warrior</label>
+    <combatPower>40</combatPower>
+    <chemicalAddictionChance>0.10</chemicalAddictionChance>
+    <invNutrition>0</invNutrition>
+    <itemQuality>Poor</itemQuality>
+    <gearHealthRange>0.2~1.1</gearHealthRange>
+    <apparelMoney>0</apparelMoney>
+    <techHediffsMoney>50~50</techHediffsMoney>
+    <techHediffsTags>
+      <li>Poor</li>
+    </techHediffsTags>
+    <techHediffsChance>0.15</techHediffsChance>
+    <initialWillRange>0~1</initialWillRange>
+    <initialResistanceRange>10~17</initialResistanceRange>
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+    <apparelTags Inherit="False" />
+    <nakedChance>1</nakedChance>
+    <weaponMoney>150~150</weaponMoney>
+    <weaponTags>
+      <li>NeolithicMeleeDecent</li>
+    </weaponTags>
+  </PawnKindDef>
+
+  <PawnKindDef Name="BS_Ogre_Warrior" ParentName="TribalBase">
+    <defName>BS_Ogre_Warrior</defName>
+    <label>ogre tribe warrior</label>
+    <combatPower>50</combatPower>
+    <chemicalAddictionChance>0.10</chemicalAddictionChance>
+    <invNutrition>0</invNutrition>
+    <itemQuality>Poor</itemQuality>
+    <gearHealthRange>0.2~1.1</gearHealthRange>
+    <apparelMoney>0</apparelMoney>
+    <techHediffsMoney>50~50</techHediffsMoney>
+    <techHediffsTags>
+      <li>Poor</li>
+    </techHediffsTags>
+    <techHediffsChance>0.15</techHediffsChance>
+    <initialWillRange>0~1</initialWillRange>
+    <initialResistanceRange>10~17</initialResistanceRange>
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+    <apparelTags Inherit="False" />
+    <nakedChance>1</nakedChance>
+    <weaponMoney>150~300</weaponMoney>
+    <weaponTags Inherit="False">
+      <li>NeolithicMeleeBasic</li>
+      <li>NeolithicMeleeGiant</li>
+    </weaponTags>
+  </PawnKindDef>
+
+  <PawnKindDef Name="BS_Ogre_Berserker" ParentName="BS_Ogre_Warrior">
+    <defName>BS_Ogre_Berserker</defName>
+    <label>ogre tribe berserker</label>
+    <combatPower>80</combatPower>
+    <initialWillRange>0~3</initialWillRange>
+    <initialResistanceRange>10~27</initialResistanceRange>
+    <weaponMoney>300~600</weaponMoney>
+    <weaponTags Inherit="False">
+      <li>NeolithicMeleeGiant</li>
+      <li>MedievalMeleeGiant</li>
+      <li>HerculeanWeapon</li>
+    </weaponTags>
+    <skills>
+      <li>
+        <skill>Melee</skill>
+        <range>6~16</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+  <PawnKindDef Name="BS_Ogre_Hunter" ParentName="BS_Ogre_Warrior">
+    <defName>BS_Ogre_Hunter</defName>
+    <label>ogre tribe thrower</label>
+    <combatPower>60</combatPower> <!--Throwing rocks is honestly _worse_ than using a club.-->
+    <initialWillRange>0~3</initialWillRange>
+    <initialResistanceRange>10~27</initialResistanceRange>
+    <weaponMoney>50~400</weaponMoney>
+    <weaponTags Inherit="False">
+      <li>RangedNeolithicGiant</li>
+      <li>RangedMedievalGiant</li>
+    </weaponTags>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BS_Ogre_Warrior">
+    <defName>BS_Ogre_Cook</defName>
+    <label>ogre tribe cook</label>
+    <combatPower>80</combatPower>
+    <initialWillRange>0~4</initialWillRange>
+    <initialResistanceRange>10~34</initialResistanceRange>
+    <weaponMoney>900~1500</weaponMoney>
+    <weaponTags Inherit="False">
+      <li>MedievalMeleeGiant</li>
+      <li>HerculeanWeapon</li>
+      <li>WarcasketMelee</li>
+      <li>MedievalMeleeAdvancedGiant</li>
+    </weaponTags>
+    <skills>
+      <li>
+        <skill>Melee</skill>
+        <range>12~20</range>
+      </li>
+      <li>
+        <skill>Cooking</skill>
+        <range>12~20</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+  
+  <PawnKindDef Name="BS_Tribal_Wildman" ParentName="TribalBase">
+    <defName>Tribal_Wildman</defName>
+    <label>Tribal Wildman</label>
+    <combatPower>40</combatPower>
+    <chemicalAddictionChance>0.10</chemicalAddictionChance>
+    <invNutrition>0</invNutrition>
+    <itemQuality>Poor</itemQuality>
+    <gearHealthRange>0.2~1.1</gearHealthRange>
+    <apparelMoney>0</apparelMoney>
+    <weaponMoney>0</weaponMoney>
+    <techHediffsMoney>50~50</techHediffsMoney>
+    <techHediffsTags>
+      <li>Poor</li>
+    </techHediffsTags>
+    <techHediffsChance>0.15</techHediffsChance>
+    <initialWillRange>0~1</initialWillRange>
+    <initialResistanceRange>10~17</initialResistanceRange>
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+    <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+    <apparelTags Inherit="False" />
+    <weaponTags Inherit="False" />
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BS_Tribal_Wildman">
+    <defName>Tribal_WildmanNW</defName>
+    <label>Tribal Wildman</label><!-- Use this variant if they have powerful natural weapons.-->
+    <combatPower>80</combatPower>
+    <apparelTags Inherit="False" />
+    <weaponTags Inherit="False" />
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="TribalBase" Name="Tribal_Wildman_Leader">
+    <defName>Tribal_Wildman_Leader</defName>
+    <label>Tribal Wildman Leader</label>
+    <combatPower>80</combatPower>
+    <chemicalAddictionChance>0.10</chemicalAddictionChance>
+    <invNutrition>0</invNutrition>
+    <itemQuality>Poor</itemQuality>
+    <gearHealthRange>0.2~1.1</gearHealthRange>
+    <apparelMoney>0</apparelMoney>
+    <weaponMoney>0</weaponMoney>
+    <techHediffsMoney>50~50</techHediffsMoney>
+    <techHediffsTags>
+      <li>Poor</li>
+    </techHediffsTags>
+    <techHediffsChance>0.15</techHediffsChance>
+    <initialWillRange>0~1</initialWillRange>
+    <initialResistanceRange>10~17</initialResistanceRange>
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+    <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+    <apparelTags Inherit="False" />
+    <weaponTags Inherit="False" />
+    <factionLeader>true</factionLeader>
+  </PawnKindDef>
+  
+  <!-- <PawnKindDef ParentName="Tribal_Hunter"> -->
+    <!-- <defName>BS_Nisse_Archer</defName> -->
+    <!-- <useFactionXenotypes>false</useFactionXenotypes> -->
+    <!-- <combatPower>100</combatPower> -->
+    <!-- <apparelMoney>300~500</apparelMoney> -->
+    <!-- <xenotypeSet> -->
+      <!-- <xenotypeChances> -->
+        <!-- <BS_Gnome>0.9</BS_Gnome> -->
+        <!-- <BS_Redcap>0.1</BS_Redcap> -->
+      <!-- </xenotypeChances> -->
+    <!-- </xenotypeSet> -->
+    <!-- <apparelRequired Inherit="False"> -->
+      <!-- <li>BS_Nisse_Cap</li> -->
+    <!-- </apparelRequired> -->
+  <!-- </PawnKindDef> -->
+
+
+</Defs>

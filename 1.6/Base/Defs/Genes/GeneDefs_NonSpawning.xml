@@ -1,0 +1,102 @@
+<Defs>
+  <!-- These genes will not spawn randomly, they are only found on xenotypes -->
+  <GeneDef>
+    <defName>BS_Damaged_Genes</defName>
+    <label>corrupted xenogenes</label>
+    <displayCategory>BS_DO_NOT</displayCategory>
+    <description>Degraded xenogenes have gone berserk on this creatures, drastically reducing metabolic efficency. Can be completely suppressed with Archite Metabolism.</description>
+    <iconPath>GeneIcons/detoriated_mind_icon</iconPath>
+    <biostatMet>-4</biostatMet>
+    <canGenerateInGeneSet>false</canGenerateInGeneSet>
+    <displayOrderInCategory>110</displayOrderInCategory>
+    <capMods>
+      <li>
+        <capacity>Consciousness</capacity>
+        <postFactor>0.85</postFactor>
+      </li>
+    </capMods>
+    <exclusionTags>
+      <li>BS_Metabolism_Gene</li>
+    </exclusionTags>
+    <selectionWeight>0</selectionWeight>
+    <modExtensions>
+			<li Class="BigAndSmall.PawnExtension">
+				<hideInGenePicker>true</hideInGenePicker>
+			</li>
+		</modExtensions>
+  </GeneDef>
+  
+  <ThoughtDef>
+    <defName>BS_Mood_Deteriorated_Mind</defName>
+    <workerClass>ThoughtWorker_AlwaysActive</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+    
+    <requiredGenes>
+      <li>BS_Damaged_Genes</li>
+    </requiredGenes>
+    <stages>
+      <li>
+        <label>deteriorated mind</label>
+        <description>{PAWN_nameDef} struggles to control impulses</description>
+        <baseMoodEffect>-8</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <GeneDef>
+    <defName>BS_Corrupted</defName>
+    <label>throughly corrupted</label>
+    <displayCategory>BS_DO_NOT</displayCategory>
+    <description>This creature has been twisted by rogue nanomachines and xenogenes and is extremely mentally unstable. This is very very bad. There might be an Archite gene that can suppress this.</description>
+    <iconPath>GeneIcons/corruped_mind_icon</iconPath>
+    <biostatMet>-6</biostatMet>
+    <canGenerateInGeneSet>false</canGenerateInGeneSet>
+    <displayOrderInCategory>110</displayOrderInCategory>
+    <capMods>
+      <li>
+        <capacity>Consciousness</capacity>
+        <postFactor>1.15</postFactor>
+      </li>
+    </capMods>
+    <!-- <statOffsets> -->
+      <!-- <Consciousness>0.2</Consciousness> -->
+    <!-- </statOffsets> -->
+    <exclusionTags>
+      <li>BS_Metabolism_Gene</li>
+    </exclusionTags>
+    <aggroMentalBreakSelectionChanceFactor>999</aggroMentalBreakSelectionChanceFactor>
+    <selectionWeight>0</selectionWeight>
+    <modExtensions>
+			<li Class="BigAndSmall.PawnExtension">
+				<hideInGenePicker>true</hideInGenePicker>
+			</li>
+		</modExtensions>
+  </GeneDef>
+  
+  <ThoughtDef>
+    <defName>BS_Mood_Violently_Insane</defName>
+    <workerClass>ThoughtWorker_AlwaysActive</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+    <requiredGenes>
+      <li>BS_Corrupted</li>
+    </requiredGenes>
+    <stages>
+      <li>
+        <label>violently insane</label>
+        <description>Frequently lashes out with uncontrolled violence.</description>
+        <baseMoodEffect>-999</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <GeneDef>
+    <defName>BS_Xenolocked</defName>
+    <label>xenolocked</label>
+    <description>Carriers of this gene cannot recieve further xenogerms.</description>
+    <iconPath>GeneIcons/BS_NoXenogerms</iconPath>
+    <displayOrderInCategory>10</displayOrderInCategory>
+    <biostatMet>1</biostatMet>
+  </GeneDef>
+</Defs>

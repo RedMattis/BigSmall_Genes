@@ -1,0 +1,98 @@
+<Defs>
+  <GeneDef ParentName="GeneNoseBase">
+    <defName>BS_TrollNose</defName>
+    <label>troll nose</label>
+    <description>Carriers of this gene sometimes grow a big nose, especially as they grow older.</description>
+    <iconPath>GeneIcons/BS_NoseLarge</iconPath>
+    <renderNodeProperties>
+      <li Class="BigAndSmall.PawnRenderingProps_Ultimate">
+        <nodeClass>BigAndSmall.PawnRenderNode_UltimateHead</nodeClass>
+        <workerClass>BigAndSmall.URenderWorker_Mouth</workerClass>
+        <colorType>Skin</colorType>
+        <useSkinShader>true</useSkinShader>
+        <narrowCrownHorizontalOffset>0.0</narrowCrownHorizontalOffset>
+        <conditionalGraphics>
+          <texturePaths> <li>BS_Blank</li> </texturePaths>
+          <colorA>
+            <skinColor>true</skinColor>
+          </colorA>
+          <conditionalPaths>
+            <alts>
+              <li>
+                <triggers><li>Female</li></triggers>
+                <chanceByStat> <PawnBeauty> <li>(-1, 1)</li> <li>(3, 0)</li> </PawnBeauty> </chanceByStat>
+                <chanceByAge> <points> <li>(0, 0.1)</li> <li>(18, 0.25)</li> <li>(40, 0.35)</li> <li>(100, 0.65)</li> </points> </chanceByAge>
+                <texturePaths> <texPath>BS_HeadAttachments/TrollNose</texPath> </texturePaths>
+              </li>
+              <li>
+                <triggers><li>Male</li></triggers>
+                <chanceByAge> <points> <li>(0, 0.2)</li> <li>(18, 0.5)</li> <li>(40, 0.7)</li> <li>(75, 0.9)</li> <li>(150, 1)</li> </points> </chanceByAge>
+                <texturePaths> <texPath>BS_HeadAttachments/TrollNose</texPath> </texturePaths>
+              </li>
+            </alts>
+          </conditionalPaths>
+        </conditionalGraphics>
+        <parentTagDef>Head</parentTagDef>
+        <visibleFacing> <li>East</li> <li>South</li> <li>West</li> </visibleFacing>
+        <drawData>
+          <defaultData> <layer>59</layer> <offset>(0.0, 0, -0.0)</offset> </defaultData>
+          <dataEast>  <layer>60</layer> <offset>(-0.0, 0, -0.0)</offset> </dataEast>
+          <dataWest> <layer>60</layer> <offset>(-0.0, 0, -0.0)</offset> </dataWest>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+    <missingGeneRomanceChanceFactor>0.6</missingGeneRomanceChanceFactor>
+    <displayCategory>Miscellaneous</displayCategory>
+    <displayOrderInCategory>410</displayOrderInCategory>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>big</symbol></li>
+        <li><symbol>troll</symbol></li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li><symbol>nose</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
+    <selectionWeight>0.25</selectionWeight>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneNoseBase">
+    <defName>BS_TrollNoseAlways</defName>
+    <label>always troll nose</label>
+    <description>Carriers of this gene have a big nose.</description>
+    <iconPath>GeneIcons/BS_NoseLarge</iconPath>
+    <renderNodeProperties>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>BigAndSmall.URenderWorker_Mouth</workerClass>
+        <texPath>BS_HeadAttachments/TrollNose</texPath>
+        <!-- <narrowCrownHorizontalOffset>0.045</narrowCrownHorizontalOffset> -->
+        <useSkinShader>true</useSkinShader>
+        <useRottenColor>true</useRottenColor>
+        <colorType>Skin</colorType>
+        <parentTagDef>Head</parentTagDef>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <visibleFacing> <li>East</li> <li>South</li> <li>West</li> </visibleFacing>
+        <drawData>
+          <defaultData> <layer>59</layer> </defaultData>
+          <dataEast> <offset>(-0.00, 0, -0.0)</offset> <layer>60</layer>  </dataEast>
+          <dataWest> <offset>(0.00, 0, -0.0)</offset> <layer>60</layer>  </dataWest>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+    
+    <missingGeneRomanceChanceFactor>0.6</missingGeneRomanceChanceFactor>
+    <displayCategory>Miscellaneous</displayCategory>
+    <displayOrderInCategory>410</displayOrderInCategory>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>big</symbol></li>
+        <li><symbol>troll</symbol></li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li><symbol>nose</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
+    <selectionWeight>0.25</selectionWeight>
+  </GeneDef>
+</Defs>

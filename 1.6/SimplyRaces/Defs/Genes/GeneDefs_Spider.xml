@@ -1,0 +1,69 @@
+<Defs>
+
+  <GeneDef ParentName="BS_BodySwitchNonExclusive">
+    <defName>BS_SpiderBody</defName>
+    <label>spider-like body</label>
+    <description>Carriers of this gene have 8 legs, like a spider.</description>
+    <biostatCpx>0</biostatCpx>
+    <biostatMet>-1</biostatMet>
+    <randomChosen>false</randomChosen>
+    <iconPath>BS_Icons/Spider</iconPath>
+    <exclusionTags>
+      <li>Tail</li>
+      <li>taur</li>
+      <li>spiderlegs</li>
+    </exclusionTags>
+    <renderNodeProperties>
+      <li Class="BigAndSmall.PawnRenderingProps_Ultimate">
+        <nodeClass>BigAndSmall.PawnRenderNode_Ultimate</nodeClass>
+        <workerClass>BigAndSmall.PawnRenderNodeWorker_LazyCentaur</workerClass>
+        <parentTagDef>Body</parentTagDef>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <graphicSetDef>BS_SpooderGraphicSetUpper</graphicSetDef>
+        <drawSize>(1.1,1.1)</drawSize>
+        <drawData>
+          <bodyTypeScales>
+            <Fat>1.5</Fat> <Female>1.05</Female> <Hulk>1.1</Hulk> <Thin>0.9</Thin>
+            <Child MayRequire="Ludeon.Rimworld.Ideology">0.9</Child>
+            <Baby MayRequire="Ludeon.Rimworld.Ideology">0.75</Baby>
+          </bodyTypeScales>
+          <dataNorth> <offset>(0, 0.000, -0.3)</offset> <layer>89.5</layer> </dataNorth>
+          <dataSouth> <offset>(0, -0.000, -0.1)</offset> <layer>89.5</layer> </dataSouth>
+          <dataEast> <offset>(-0.27, 0.0, -0.2)</offset> <layer>89.5</layer> </dataEast>
+          <dataWest> <offset>(0.27, 0.0, -0.12)</offset> <layer>89.5</layer> </dataWest>
+        </drawData>
+      </li>
+
+      <li Class="BigAndSmall.PawnRenderingProps_Ultimate">
+        <nodeClass>BigAndSmall.PawnRenderNode_Ultimate</nodeClass>
+        <workerClass>BigAndSmall.PawnRenderNodeWorker_LazyCentaur</workerClass>
+        <parentTagDef>Body</parentTagDef>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <graphicSetDef>BS_SpooderGraphicSetUnder</graphicSetDef>
+        <drawSize>(1.08,1.08)</drawSize>
+        <visibleFacing> <li>South</li> <li>North</li> </visibleFacing>
+        <drawData>
+          <bodyTypeScales>
+            <Fat>1.5</Fat> <Female>1.05</Female> <Hulk>1.1</Hulk> <Thin>0.95</Thin>
+            <Child MayRequire="Ludeon.Rimworld.Ideology">0.9</Child>
+            <Baby MayRequire="Ludeon.Rimworld.Ideology">0.75</Baby>
+          </bodyTypeScales>
+          <dataNorth>
+            <offset>(0, 0.0001, -0.3)</offset>
+            <layer>-1</layer>
+          </dataNorth>
+          <dataSouth>
+            <offset>(0, 0.000, -0.1)</offset>
+            <layer>-4</layer>
+          </dataSouth>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+    <modExtensions>
+      <li Class="BigAndSmall.PawnExtension">
+        <thingDefSwap>BS_SpiderPersonRace</thingDefSwap>
+      </li>
+      <!-- <li Class="BigAndSmall.Flagger"><flags><ShowBaseAbdomen/></flags></li> -->
+    </modExtensions>
+  </GeneDef>
+</Defs>

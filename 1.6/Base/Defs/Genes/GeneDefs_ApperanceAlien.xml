@@ -1,0 +1,166 @@
+<Defs>
+  <GeneDef>
+    <defName>BS_AlienApperanceStandards_Lesser</defName>
+    <label>strange appearance</label>
+    <displayCategory>Beauty</displayCategory>
+    <description>Carriers of this gene possess fairly strange or alien appearance and their own standards reflect this.\n\nA person with this gene will have a two-way relation modifier to others which do not possess this gene. This is based on certain shared genes (romance chance genes such as pig noses).\n\nUnlike the more severe version beauty in this version still apply normally.</description>
+    <customEffectDescriptions>
+      <li>Modifier to relations between +10 and -25 depending on similarity</li>
+		</customEffectDescriptions>
+    <iconPath>GeneIcons/BS_AlienApperance</iconPath>
+    <displayOrderInCategory>10</displayOrderInCategory>
+    <biostatMet>1</biostatMet>
+    <selectionWeight>1</selectionWeight>
+    <missingGeneRomanceChanceFactor>0.5</missingGeneRomanceChanceFactor>
+    <exclusionTags>
+      <li>BS_AlienLook</li>
+      <!-- <li>BS_SomeAlien</li> -->
+    </exclusionTags>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>BS_AlienApperanceStandards</defName>
+    <label>alien appearance</label>
+    <displayCategory>Beauty</displayCategory>
+    <description>Carriers of this gene possess very strange or alien appearance and their own standards reflect this.\n\nA person with this gene will have a two-way relation modifier to others which do not possess this gene. This is based on certain shared genes (romance chance genes such as pig noses).\n\nThis gene also negates much of the advantage of beauty in relation those with different standards. (If the penalties are lower than what is stated below that is likely why)</description>
+    <!-- <descriptionShort>Carriers of this gene possess very strange or alien appearance and their own standards reflect this.</descriptionShort> -->
+    <customEffectDescriptions>
+      <li>Modifier to relations between +10 and -45 depending on similarity.</li>
+      <li>Negates some Beauty bonus if they are very dissimilar.</li>
+		</customEffectDescriptions>
+    <iconPath>GeneIcons/BS_VeryAlienApperance</iconPath>
+    <displayOrderInCategory>10</displayOrderInCategory>
+    <biostatMet>2</biostatMet>
+    <selectionWeight>1</selectionWeight>
+    <missingGeneRomanceChanceFactor>0.5</missingGeneRomanceChanceFactor> <!--Keep in mind there is likely also a relation penalty already. -->
+    <exclusionTags>
+      <li>BS_AlienLook</li>
+      <!-- <li>BS_VeryAlien</li> -->
+    </exclusionTags>
+  </GeneDef>
+
+  <ThoughtDef>
+    <defName>BS_AlienApperanceStandards</defName>
+		<thoughtClass>Thought_SituationalSocial</thoughtClass>
+		<workerClass>BigAndSmall.ThoughtWorker_AlienApperance</workerClass>
+		<nullifyingTraits>
+      <li>Kind</li>
+      <li>BS_Unpretentious</li>
+      <li>Transhumanist</li>
+		</nullifyingTraits>
+    <nullifyingGenes>
+      <li>BS_VerySimpleMind</li>
+      <li>BS_SimpleMind</li>
+    </nullifyingGenes>
+    <nullifyingHediffs>
+			<li MayRequire="Ludeon.RimWorld.Anomaly">Inhumanized</li>
+		</nullifyingHediffs>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <!--Lesser Alien Standards-->
+      <li>
+        <label>they look just like my kind</label>
+        <baseOpinionOffset>10</baseOpinionOffset>
+      </li>
+      <li>
+        <label>they look a lot like my kind</label>
+        <baseOpinionOffset>5</baseOpinionOffset>
+      </li>
+      <li>
+        <label>they look uncanny</label>
+        <baseOpinionOffset>-7</baseOpinionOffset>
+      </li>
+      <li>
+        <label>uncomfortably alien appearance</label>
+        <baseOpinionOffset>-10</baseOpinionOffset>
+      </li>
+      <li>
+        <label>they have an unsettlingly alien appearance</label>
+        <baseOpinionOffset>-15</baseOpinionOffset>
+      </li>
+      <li>
+        <label>i find their appearance both alien and disturbing</label>
+        <baseOpinionOffset>-20</baseOpinionOffset>
+      </li>
+
+      <!--Beauty 0-->
+      <li>
+        <label>they look just like my kind</label>
+        <baseOpinionOffset>10</baseOpinionOffset>
+      </li>
+      <li>
+        <label>they look a lot like my kind</label>
+        <baseOpinionOffset>5</baseOpinionOffset>
+      </li>
+      <li>
+        <label>they look uncanny</label>
+        <baseOpinionOffset>-10</baseOpinionOffset>
+      </li>
+      <li>
+        <label>they have an unsettlingly alien appearance</label>
+        <baseOpinionOffset>-20</baseOpinionOffset>
+      </li>
+      <li>
+        <label>i find their appearance both alien and disturbing</label>
+        <baseOpinionOffset>-30</baseOpinionOffset>
+      </li>
+      <li>
+        <label>i find their appearance both alien and deeply disturbing</label>
+        <baseOpinionOffset>-45</baseOpinionOffset>
+      </li>
+
+      <!--Beauty 1-->
+      <li>
+        <label>they look just like my kind</label>
+        <baseOpinionOffset>10</baseOpinionOffset>
+      </li>
+      <li>
+        <label>they look a lot like my kind</label>
+        <baseOpinionOffset>5</baseOpinionOffset>
+      </li>
+      <li>
+        <label>they look uncanny</label>
+        <description>they look weird</description>
+        <baseOpinionOffset>-20</baseOpinionOffset>
+      </li>
+      <li>
+        <label>they have an unsettlingly alien appearance</label>
+        <baseOpinionOffset>-30</baseOpinionOffset>
+      </li>
+      <li>
+        <label>i find their appearance both alien and disturbing</label>
+        <baseOpinionOffset>-40</baseOpinionOffset>
+      </li>
+      <li>
+        <label>i find their apperance both alien and deeply disturbing</label>
+        <baseOpinionOffset>-55</baseOpinionOffset>
+      </li>
+
+      <!--Beauty 2-->
+      <li>
+        <label>they look just like my kind</label>
+        <baseOpinionOffset>10</baseOpinionOffset>
+      </li>
+      <li>
+        <label>they look a lot like my kind</label>
+        <baseOpinionOffset>5</baseOpinionOffset>
+      </li>
+      <li>
+        <label>they look uncanny</label>
+        <baseOpinionOffset>-30</baseOpinionOffset>
+      </li>
+      <li>
+        <label>they have an unsettlingly alien appearance</label>
+        <baseOpinionOffset>-40</baseOpinionOffset>
+      </li>
+      <li>
+        <label>i find their appearance both alien and disturbing</label>
+        <baseOpinionOffset>-45</baseOpinionOffset>
+      </li>
+      <li>
+        <label>i find their appearance both alien and deeply disturbing</label>
+        <baseOpinionOffset>-60</baseOpinionOffset>
+      </li>
+    </stages>
+  </ThoughtDef>
+</Defs>

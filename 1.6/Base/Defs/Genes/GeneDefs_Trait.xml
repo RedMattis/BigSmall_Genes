@@ -1,0 +1,188 @@
+<Defs>
+  <GeneDef>
+    <defName>BS_NightOwl</defName>
+    <label>night owl</label>
+    <displayCategory>Sleep</displayCategory>
+    <description>Carriers of this gene prefer being out at night and don't mind unlit areas.</description>
+    <iconPath>GeneIcons/BS_NightOwl</iconPath>
+    <displayOrderInCategory>1</displayOrderInCategory>
+    <forcedTraits>
+      <li>
+        <def>NightOwl</def>
+      </li>
+    </forcedTraits>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>0</biostatMet>
+
+  </GeneDef>
+
+  <!-- Really old gene is was missing the prefix... -->
+  <GeneDef>
+    <defName>Undergrounder</defName>
+    <label>Undergrounder</label>
+    <labelShortAdj>Undergrounder</labelShortAdj>
+    <description>Carriers of this gene prefer being indoors.</description>
+    <iconPath>GeneIcons/BS_Undergrounder</iconPath>
+    <displayOrderInCategory>1</displayOrderInCategory>
+    <forcedTraits>
+      <li>
+        <def>Undergrounder</def>
+      </li>
+    </forcedTraits>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>1</biostatMet>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>BS_PerfectMemory</defName>
+    <label>eidetic memory</label>
+    <labelShortAdj>eidetic</labelShortAdj>
+    <description>Carriers of this gene have perfect memory</description>
+    <iconPath>GeneIcons/BS_Wise</iconPath>
+    <displayOrderInCategory>1</displayOrderInCategory>
+    <forcedTraits>
+      <li>
+        <def>GreatMemory</def>
+      </li>
+    </forcedTraits>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>BS_Bisexual</defName>
+    <label>bisexual</label>
+    <description>Carriers of this gene are bisexual.</description>
+    <iconPath>GeneIcons/BS_Bisexual</iconPath>
+    <forcedTraits>
+      <li>
+        <def>Bisexual</def>
+      </li>
+    </forcedTraits>
+    <biostatMet>0</biostatMet>
+    <biostatCpx>0</biostatCpx>
+    <selectionWeight>0.0</selectionWeight>
+
+  </GeneDef>
+
+  <GeneDef>
+    <defName>BS_Bloodlust</defName>
+    <label>bloodlust</label>
+    <displayCategory>Violence</displayCategory>
+    <description>Carriers of this gene have a ruthless disposition</description>
+    <iconPath>GeneIcons/BS_BloodlustNew</iconPath>
+    <forcedTraits>
+      <li>
+        <def>Bloodlust</def>
+      </li>
+    </forcedTraits>
+    <biostatMet>0</biostatMet>
+    <biostatCpx>1</biostatCpx>
+    <selectionWeight>1</selectionWeight>
+
+  </GeneDef>
+
+  <GeneDef>
+    <defName>BS_Unpretentious</defName>
+    <label>unpretentious</label>
+    <displayCategory>Violence</displayCategory>
+    <description>Carriers of this gene aren't bothered by rough appearances or a bit of rough living. This also overwrites a large number of conflicting traits.</description>
+    <iconPath>GeneIcons/BS_Unpretencious</iconPath>
+    <forcedTraits>
+      <li>
+        <def>BS_Unpretentious</def>
+      </li>
+    </forcedTraits>
+    <biostatMet>-1</biostatMet>
+    <biostatCpx>1</biostatCpx>
+    <selectionWeight>1</selectionWeight>
+
+  </GeneDef>
+
+  <GeneDef>
+    <defName>BS_Abrasive</defName>
+    <label>Abrasive</label>
+    <description>Carriers of this gene make frequent rude remarks that test the patience of everyone around them.\n\nArt by Oskar. Ask him why this has the art of a goomba :'D.</description>
+    <iconPath>GeneIcons/BS_Abrasive</iconPath>
+    <forcedTraits>
+      <li>
+        <def>Abrasive</def>
+      </li>
+    </forcedTraits>
+    <biostatMet>2</biostatMet>
+    <biostatCpx>1</biostatCpx>
+    <selectionWeight>1</selectionWeight>
+
+  </GeneDef>
+
+  <GeneDef>
+    <defName>BS_InsultProof</defName>
+    <label>uninsultable</label>
+    <description>Carriers of this gene don't react to insults or either part failing a flirt attempt.</description>
+    <iconPath>GeneIcons/BS_InsultProof</iconPath>
+    <forcedTraits>
+      <li>
+        <def>BS_InsultProof</def>
+      </li>
+    </forcedTraits>
+    <biostatMet>-1</biostatMet>
+    <biostatCpx>1</biostatCpx>
+    <selectionWeight>1</selectionWeight>
+
+  </GeneDef>
+
+  <GeneDef>
+    <defName>BS_AnimalFriend</defName>
+    <label>Animal Friend</label>
+    <displayCategory>Violence</displayCategory>
+    <description>Carriers of this gene will never be targeted by hungry predators.</description>
+    <iconPath>GeneIcons/BS_AnimalFriend</iconPath>
+    <forcedTraits>
+      <li>
+        <def>BS_AnimalFriend</def>
+      </li>
+    </forcedTraits>
+    <biostatMet>-1</biostatMet>
+    <biostatCpx>1</biostatCpx>
+    <selectionWeight>1</selectionWeight>
+
+  </GeneDef>
+
+  <GeneDef>
+    <defName>BS_AlcoholAddict</defName>
+    <label>Alcohol Addiction</label>
+    <description>Carriers of this gene have a serious psychological need for alcohol\n\nCan be combined with alcohol dependency in which case the carrier will have both an addiction and a dependency.</description>
+    <iconPath>GeneIcons/BS_BeerAddict</iconPath>
+    <displayCategory>Drugs</displayCategory>
+    <forcedTraits>
+      <li>
+        <def>BS_AlcoholAddict</def>
+      </li>
+    </forcedTraits>
+    <!-- <exclusionTags>
+      <li>AddictionImmune_Alcohol</li>
+      <li>ChemicalDependency_Alcohol</li>
+      <li>AddictionResistant_Alcohol</li>
+    </exclusionTags> -->
+    <biostatMet>3</biostatMet>
+    <biostatCpx>1</biostatCpx>
+    <selectionWeight>1</selectionWeight>
+    
+    <modExtensions>
+      <li Class="BigAndSmall.GenePrerequisites">
+        <prerequisiteSets>
+          <li>
+            <type>NoneOf</type>
+            <prerequisites>
+              <li>AddictionImmune_Alcohol</li>
+              <li>AddictionResistant_Alcohol</li>
+            </prerequisites>
+          </li>
+        </prerequisiteSets>
+      </li>
+
+    </modExtensions>
+  </GeneDef>
+
+
+</Defs>

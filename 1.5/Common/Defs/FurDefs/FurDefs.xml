@@ -28,7 +28,6 @@
       <Female>BS_Bodies/BS_NoFur</Female>
       
       <Fat>BS_Bodies/Ogre/OgreBody</Fat>
-      <!-- <Fat>BS_Bodies/Ogre/OgreBody</Fat> -->
       <Thin>BS_Bodies/BS_NoFur</Thin>
       
       <Child>BS_Bodies/BS_NoFur</Child>

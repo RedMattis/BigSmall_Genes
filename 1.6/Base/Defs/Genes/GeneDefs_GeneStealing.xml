@@ -1,0 +1,277 @@
+<Defs>
+  <GeneDef>
+    <defName>BS_Incorporate</defName>
+    <label>Incorporate</label>
+    <description>Carriers of this gene possess the ability to steal genes from a corpse.\n\nThe carrier will be given a choice of at least 4 possible options.\nSome traits can be turned into genes.\n\nIf metabolism gets too low random traits will be removed until it is okay again (-8 limit).</description>
+    <displayCategory>Archite</displayCategory>
+    <iconPath>GeneIcons/BS_Frankenstein</iconPath>
+    <canGenerateInGeneSet>true</canGenerateInGeneSet>
+    <biostatMet>0</biostatMet>
+    <minAgeActive>3</minAgeActive>
+    <biostatArc>1</biostatArc>
+    <abilities Inherit="False">
+      <li>BS_Incorporate_Abillity</li>
+    </abilities>
+    <descriptionHyperlinks Inherit="False">
+      <AbilityDef>BS_Incorporate_Abillity</AbilityDef>
+    </descriptionHyperlinks>
+    <selectionWeight>2.0</selectionWeight>
+  </GeneDef>
+
+  <AbilityDef ParentName="AbilityTouchBase">
+    <defName>BS_Incorporate_Abillity</defName>
+    <label>Incorporate</label>
+    <description>Carriers of this gene possess the ability to steal genes from a corpse.\n\nThe carrier will be given a choice of least 4 possible options.\nSome traits can be turned into genes.\n\nIf metabolism gets too low random traits will be removed until it is okay again (-8 limit).</description>
+    <iconPath>GeneIcons/BS_Frankenstein</iconPath>
+    <displayOrder>100</displayOrder>
+    <warmupEffecter>Bloodfeed_Warmup</warmupEffecter>
+    <hostile>true</hostile>
+    <aiCanUse>false</aiCanUse>
+    <cooldownTicksRange>120000</cooldownTicksRange>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+    <verbProperties>
+      <verbClass>Verb_CastAbilityTouch</verbClass>
+      <drawAimPie>false</drawAimPie>
+      <range>-1</range>
+      <warmupTime>5</warmupTime>
+      <targetParams>
+        <canTargetSelf>false</canTargetSelf>
+        <canTargetBuildings>false</canTargetBuildings>
+        <canTargetMechs>false</canTargetMechs>
+        <canTargetAnimals>false</canTargetAnimals>
+        <canTargetBloodfeeders>false</canTargetBloodfeeders>
+        <canTargetPawns>false</canTargetPawns>
+        <canTargetCorpses>true</canTargetCorpses>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="BigAndSmall.CompProperties_Incorporate">
+        <pickCount>4</pickCount>
+      </li>
+      <li Class="CompProperties_AbilityFleckOnTarget">
+        <fleckDef>BloodSplash</fleckDef>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <GeneDef>
+    <defName>BS_Mimic</defName>
+    <label>mimic</label>
+    <description>Carriers of this gene possess the ability to steal all the genes of a corpse and replace their xenogenes with them.\n\nIf combined with Incorporate or that gene it gained by any means it will always be retained as well.</description>
+    <displayCategory>Archite</displayCategory>
+    <iconPath>GeneIcons/BS_Mimic</iconPath>
+    <canGenerateInGeneSet>true</canGenerateInGeneSet>
+    <biostatMet>0</biostatMet>
+    <minAgeActive>3</minAgeActive>
+    <biostatArc>5</biostatArc>
+    <biostatCpx>13</biostatCpx>
+    <abilities Inherit="False">
+      <li>BS_Mimic_Abillity</li>
+      <li>BS_StopMimic</li>
+    </abilities>
+    <descriptionHyperlinks Inherit="False">
+      <AbilityDef>BS_Mimic_Abillity</AbilityDef>
+      <AbilityDef>BS_StopMimic</AbilityDef>
+    </descriptionHyperlinks>
+    <selectionWeight>2.0</selectionWeight>
+  </GeneDef>
+
+  <AbilityDef ParentName="AbilityTouchBase">
+    <defName>BS_Mimic_Abillity</defName>
+    <label>Mimic</label>
+    <description>This ability lets the user steal all the genes of a corpse and use them as their xenogenes.</description>
+    <iconPath>GeneIcons/BS_Mimic</iconPath>
+    <!-- <category>Sanguophage</category> -->
+    <displayOrder>100</displayOrder>
+    <warmupEffecter>Bloodfeed_Warmup</warmupEffecter>
+    <!-- <warmupStartSound>Bloodfeed_Cast</warmupStartSound> -->
+    <hostile>true</hostile>
+    <aiCanUse>false</aiCanUse>
+    <cooldownTicksRange>10000</cooldownTicksRange>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+    <verbProperties>
+      <verbClass>Verb_CastAbilityTouch</verbClass>
+      <drawAimPie>false</drawAimPie>
+      <range>-1</range>
+      <warmupTime>4</warmupTime>
+      <targetParams>
+        <canTargetMechs>false</canTargetMechs>
+        <canTargetAnimals>true</canTargetAnimals>
+        <canTargetHumans>true</canTargetHumans>
+        <canTargetSubhumans>true</canTargetSubhumans>
+        <canTargetCorpses>true</canTargetCorpses>
+        <onlyTargetCorpses>true</onlyTargetCorpses>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="BigAndSmall.CompPropertiesMimic">
+        <genesToRetain>
+          <li>BS_Mimic</li>
+          <li>BS_Xenolocked</li>
+          <li>BS_Incorporate</li>
+          <li>BS_IntegrateGenes</li>
+        </genesToRetain>
+      </li>
+      <li Class="CompProperties_AbilityFleckOnTarget">
+        <fleckDef>BloodSplash</fleckDef>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <AbilityDef>
+    <defName>BS_StopMimic</defName>
+    <label>stop mimicry</label>
+    <description>Stop mimicing and attempt to return to original form. This does not restore original gender, body-type, and... hairstyle.</description>
+    <iconPath>GeneIcons/BS_MimicOff</iconPath>
+    <cooldownTicksRange>30</cooldownTicksRange>
+    <hostile>False</hostile>
+    <targetRequired>False</targetRequired>
+    <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <label>stomp mimicing</label>
+      <violent>false</violent>
+      <warmupTime>2.5</warmupTime>
+      <range>0</range>
+      <requireLineOfSight>False</requireLineOfSight>
+      <targetParams>
+        <canTargetSelf>True</canTargetSelf>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="BigAndSmall.CompPropertiesMimicOff">
+        <genesToRetain>
+          <li>BS_Mimic</li>
+          <li>BS_Xenolocked</li>
+          <li>BS_Incorporate</li>
+          <li>BS_IntegrateGenes</li>
+          <li>BS_DisintegrateXenoGenes</li>
+          <li>BS_GeneEater</li>
+        </genesToRetain>
+      </li>
+    </comps>
+    <aiCanUse>false</aiCanUse>
+  </AbilityDef>
+
+  <GeneDef>
+    <defName>BS_IntegrateGenes</defName>
+    <label>gene integrator</label>
+    <description>Carriers of this gene possess the ability to integrate xenogenes into their germline, making them a permanent part of their endogenes. This is not normally reversible all will remove all currently inactive genes in the process.</description>
+    <displayCategory>Archite</displayCategory>
+    <iconPath>GeneIcons/BS_IntegrateGenes</iconPath>
+    <canGenerateInGeneSet>true</canGenerateInGeneSet>
+    <biostatMet>0</biostatMet>
+    <minAgeActive>3</minAgeActive>
+    <biostatArc>1</biostatArc>
+    <biostatCpx>5</biostatCpx>
+    <abilities Inherit="False">
+      <li>BS_IntegrateGenes</li>
+    </abilities>
+    <descriptionHyperlinks Inherit="False">
+      <AbilityDef>BS_IntegrateGenes</AbilityDef>
+    </descriptionHyperlinks>
+    <selectionWeight>0.5</selectionWeight>
+  </GeneDef>
+
+  <AbilityDef>
+    <defName>BS_IntegrateGenes</defName>
+    <label>integrate genes</label>
+    <description>Integrate all xenogenes making the change fully permanent and IRREVERSIBLE.</description>
+    <iconPath>GeneIcons/BS_IntegrateGenes</iconPath>
+    <cooldownTicksRange>30</cooldownTicksRange>
+    <hostile>False</hostile>
+    <targetRequired>False</targetRequired>
+    <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <label>integrate genes</label>
+      <violent>false</violent>
+      <warmupTime>2.5</warmupTime>
+      <range>0</range>
+      <requireLineOfSight>False</requireLineOfSight>
+      <targetParams>
+        <canTargetSelf>True</canTargetSelf>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="BigAndSmall.CompPropertiesIntegrateGenes">
+      </li>
+    </comps>
+    <aiCanUse>false</aiCanUse>
+  </AbilityDef>
+
+  <GeneDef>
+    <defName>BS_DisintegrateXenoGenes</defName>
+    <label>gene disintegrator</label>
+    <description>Carriers of this gene possess the ability to purge themselves of their xenogenes at will at a moment's notice. There are a rare few types of xenogenes which cannot be purged by this method.</description>
+    <displayCategory>Archite</displayCategory>
+    <iconPath>GeneIcons/BS_DisIntegrateXenoGenes</iconPath>
+    <canGenerateInGeneSet>true</canGenerateInGeneSet>
+    <biostatMet>0</biostatMet>
+    <minAgeActive>3</minAgeActive>
+    <biostatArc>1</biostatArc>
+    <biostatCpx>1</biostatCpx>
+    <abilities Inherit="False">
+      <li>BS_DisintegrateXenoGenes</li>
+    </abilities>
+    <descriptionHyperlinks Inherit="False">
+      <AbilityDef>BS_DisintegrateXenoGenes</AbilityDef>
+    </descriptionHyperlinks>
+    <selectionWeight>0.25</selectionWeight>
+  </GeneDef>
+
+  <AbilityDef>
+    <defName>BS_DisintegrateXenoGenes</defName>
+    <label>disintegrate genes</label>
+    <description>Remove all xenogenes, with the exception of a rare few that cannot be removed by this method.</description>
+    <iconPath>GeneIcons/BS_DisIntegrateXenoGenes</iconPath>
+    <cooldownTicksRange>30</cooldownTicksRange>
+    <hostile>False</hostile>
+    <targetRequired>False</targetRequired>
+    <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <label>purging xenogenes</label>
+      <violent>false</violent>
+      <warmupTime>2.5</warmupTime>
+      <range>0</range>
+      <requireLineOfSight>False</requireLineOfSight>
+      <targetParams>
+        <canTargetSelf>True</canTargetSelf>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="BigAndSmall.CompPropertiesMimicOff">
+        <genesToRetain>
+          <li>BS_Mimic</li>
+          <li>BS_Xenolocked</li>
+          <li>BS_Incorporate</li>
+          <li>BS_IntegrateGenes</li>
+          <li>BS_DisintegrateXenoGenes</li>
+          <li>BS_GeneEater</li>
+        </genesToRetain>
+      </li>
+    </comps>
+    <aiCanUse>false</aiCanUse>
+  </AbilityDef>
+
+  <GeneDef>
+    <defName>BS_GeneEater</defName>
+    <label>Gene-Eater</label>
+    <description>Carriers of this gene possess a horrifying ability to replicate genes of corpses they munch on. This gene does NOT make them cannibals.</description>
+    <displayCategory>Archite</displayCategory>
+    <iconPath>GeneIcons/BS_GeneEater</iconPath>
+    <canGenerateInGeneSet>true</canGenerateInGeneSet>
+    <geneClass>BigAndSmall.GeneEater</geneClass>
+    <biostatMet>0</biostatMet>
+    <minAgeActive>3</minAgeActive>
+    <biostatArc>1</biostatArc>
+    <selectionWeight>2.0</selectionWeight>
+  </GeneDef>
+</Defs>

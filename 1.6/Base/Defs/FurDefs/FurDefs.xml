@@ -1,0 +1,55 @@
+<Defs>
+
+
+  <FurDef>
+    <defName>BS_BrokenTitanBody</defName>
+    <noGraphic>true</noGraphic>
+    <bodyTypeGraphicPaths>
+      <Hulk>BS_Bodies/Borg/Borg_Hulk</Hulk>
+
+      <Male>BS_Bodies/BS_NoFur</Male>
+      <Female>BS_Bodies/BS_NoFur</Female>
+      
+      <Fat>BS_Bodies/BS_NoFur</Fat>
+      <Thin>BS_Bodies/BS_NoFur</Thin>
+      
+      <Child>BS_Bodies/BS_NoFur</Child>
+      <Baby>BS_Bodies/BS_NoFur</Baby>
+    </bodyTypeGraphicPaths>
+  </FurDef>
+
+  <FurDef>
+    <defName>BS_OgreBody</defName>
+    <noGraphic>true</noGraphic>
+    <bodyTypeGraphicPaths>
+      <Hulk>BS_Bodies/BS_NoFur</Hulk>
+
+      <Male>BS_Bodies/BS_NoFur</Male>
+      <Female>BS_Bodies/BS_NoFur</Female>
+      
+      <Fat>BS_Bodies/Ogre/OgreBody</Fat>
+      <!-- <Fat>BS_Bodies/Ogre/OgreBody</Fat> -->
+      <Thin>BS_Bodies/BS_NoFur</Thin>
+      
+      <Child>BS_Bodies/BS_NoFur</Child>
+      <Baby>BS_Bodies/BS_NoFur</Baby>
+    </bodyTypeGraphicPaths>
+  </FurDef>
+
+  <FurDef>
+    <defName>BS_MimicBody</defName>
+    <noGraphic>true</noGraphic>
+    <bodyTypeGraphicPaths>
+      <Hulk>BS_Bodies/Mimic/mimic_hulk</Hulk>
+
+      <Male>BS_Bodies/Mimic/mimic_male</Male>
+      <Female>BS_Bodies/Mimic/mimic_female</Female>
+
+      <Fat>BS_Bodies/Mimic/mimic_fat</Fat>
+      <Thin>BS_Bodies/Mimic/mimic_default</Thin>
+
+      <Child MayRequire="Ludeon.RimWorld.Biotech">BS_Bodies/BS_NoFur</Child>
+      <Baby>BS_Bodies/BS_NoFur</Baby>
+    </bodyTypeGraphicPaths>
+  </FurDef>
+</Defs>

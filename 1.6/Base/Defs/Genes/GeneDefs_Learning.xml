@@ -1,0 +1,165 @@
+<Defs>
+  <GeneDef Name="BS_Passioned_Learning_Gene_Base" Abstract="True">
+    <displayCategory>BS_Learning</displayCategory>
+    <exclusionTags>
+      <li>BS_Passioned_Learning_Gene</li>
+    </exclusionTags>
+    <selectionWeight>1</selectionWeight>
+    <canGenerateInGeneSet>true</canGenerateInGeneSet>
+  </GeneDef>
+
+  <GeneDef ParentName="BS_Passioned_Learning_Gene_Base">
+    <defName>BS_Passioned_Learning_Gene</defName>
+    <label>diligent student</label>
+    <labelShortAdj>studious</labelShortAdj>
+    <description>Carriers of this gene have a knack for learning things even when only somewhat motivated.</description>
+    <iconPath>GeneIcons/BS_Passioned_Learning_Icon</iconPath>
+    <displayOrderInCategory>1</displayOrderInCategory>
+    <forcedTraits>
+      <li>
+        <def>Passioned_Learning</def>
+      </li>
+    </forcedTraits>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
+  </GeneDef>
+
+  <GeneDef ParentName="BS_Passioned_Learning_Gene_Base">
+    <defName>BS_Very_Passioned_Learning_Gene</defName>
+    <label>very diligent student</label>
+    <labelShortAdj>studious</labelShortAdj>
+    <description>Carriers of this gene really have a knack for learning things even when only somewhat motivated.</description>
+    <iconPath>GeneIcons/BS_Passioned_Learning_Very_Icon</iconPath>
+    <displayOrderInCategory>0</displayOrderInCategory>
+    <forcedTraits>
+      <li>
+        <def>Very_Passioned_Learning</def>
+      </li>
+    </forcedTraits>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-2</biostatMet>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>BS_SimpleMind</defName>
+    <label>simple mind</label>
+    <displayCategory>Aptitudes</displayCategory>
+    <description>Carriers of this gene are incapable of complex tasks.</description>
+    <iconPath>GeneIcons/BS_SimpleMind</iconPath>
+    <displayOrderInCategory>-5</displayOrderInCategory>
+    <disabledWorkTags>
+      <li>Constructing</li>
+      <li>Crafting</li>
+      <li>Cooking</li>
+      <li>Intellectual</li>
+      <li>Artistic</li>
+      <li>Caring</li>
+    </disabledWorkTags>
+    <statOffsets>
+      <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">0.1</SlaveSuppressionOffset>
+    </statOffsets>
+    <biostatMet>5</biostatMet>
+    <biostatCpx>-8</biostatCpx>
+    <missingGeneRomanceChanceFactor>0.2</missingGeneRomanceChanceFactor>
+    <exclusionTags>
+      <li>Mind_Complexity</li>
+    </exclusionTags>
+  </GeneDef>
+
+  <ThoughtDef>
+    <defName>BS_SimpleMind</defName>
+    <workerClass>ThoughtWorker_AlwaysActive</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+    <requiredGenes>
+      <li>BS_SimpleMind</li>
+    </requiredGenes>
+    <stages>
+      <li>
+        <label>simple joy</label>
+        <description>Natural bonus from 'simple mind' gene</description>
+        <baseMoodEffect>14</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <GeneDef>
+    <defName>BS_VerySimpleMind</defName>
+    <label>very simple mind</label>
+    <displayCategory>Aptitudes</displayCategory>
+    <description>Carriers of this gene are unsuitable for anything but dumb labour.</description>
+    <iconPath>GeneIcons/BS_VerySimpleMind</iconPath>
+    <displayOrderInCategory>-6</displayOrderInCategory>
+    <disabledWorkTags>
+      <li>ManualSkilled</li>
+      <li>Intellectual</li>
+      <li>Animals</li>
+      <li>Artistic</li>
+      <li>Caring</li>
+      <li>Social </li>
+    </disabledWorkTags>
+    <disablesNeeds>
+      <li>Joy</li>
+      <li>Beauty</li>
+      <li>Comfort</li>
+    </disablesNeeds>
+    <exclusionTags>
+      <li>Mind_Complexity</li>
+    </exclusionTags>
+    <statOffsets>
+      <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">0.5</SlaveSuppressionOffset>
+    </statOffsets>
+    <biostatMet>5</biostatMet>
+    <biostatCpx>-15</biostatCpx>
+    <missingGeneRomanceChanceFactor>0</missingGeneRomanceChanceFactor>
+  </GeneDef>
+
+  <ThoughtDef>
+    <defName>BS_VerySimpleMind</defName>
+    <workerClass>ThoughtWorker_AlwaysActive</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+    <requiredGenes>
+      <li>BS_VerySimpleMind</li>
+    </requiredGenes>
+    <stages>
+      <li>
+        <label>simple joy</label>
+        <description>Natural bonus from 'very simple mind' gene</description>
+        <baseMoodEffect>28</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <GeneDef ParentName="GeneLearningBase">
+    <defName>BS_Learning_None</defName>
+    <label>incapable of learning</label>
+    <description>Carriers of this gene are incapable of gaining new knowledge.</description>
+    <iconPath>GeneIcons/BS_NoLearning</iconPath>
+    <displayOrderInCategory>30</displayOrderInCategory>
+    <statFactors>
+      <GlobalLearningFactor>0.0</GlobalLearningFactor>
+    </statFactors>
+    <biostatMet>4</biostatMet>
+    <biostatCpx>0</biostatCpx>
+    <forcedTraits>
+      <li>
+        <def>GreatMemory</def>
+      </li>
+    </forcedTraits>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>thag</symbol></li>
+        <li><symbol>grunt</symbol></li>
+        <li><symbol>slow</symbol></li>
+        <li><symbol>dull</symbol></li>
+        <li><symbol>dumb</symbol></li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li><symbol>grunt</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
+    <missingGeneRomanceChanceFactor>0.2</missingGeneRomanceChanceFactor>
+  </GeneDef>
+
+</Defs>

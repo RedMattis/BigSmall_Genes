@@ -1,0 +1,170 @@
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/GeneDef[defName="ViolenceDisabled"]/exclusionTags</xpath>
+		<value>
+			<li>BS_Pacifism</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/TraitDef[defName = "Beauty"]/exclusionTags</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/TraitDef[defName = "Beauty"]</xpath>
+			<value>
+				<exclusionTags>
+					<li>BS_Beauty</li>
+				</exclusionTags>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/TraitDef[defName = "Beauty"]/exclusionTags</xpath>
+			<value>
+				<li>BS_Beauty</li>
+			</value>
+		</match>
+	</Operation>
+
+	<!---BS_InsultProof-->
+	<Operation Class="PatchOperationAdd">
+    <!-- <success>Always</success> -->
+    <xpath>Defs/ThoughtDef[defName="Slighted" or defName="Insulted" or defName="InsultedMood" or defName="FailedRomanceAttemptOnMe" or defName="FailedRomanceAttemptOnMeLowOpinionMood" or defName="RebuffedMyRomanceAttempt" or defName="RebuffedMyRomanceAttemptMood"][not(nullifyingTraits)]</xpath>
+    <value>
+      <nullifyingTraits/>
+    </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationAdd">
+    <!-- <success>Always</success> -->
+    <xpath>Defs/ThoughtDef[defName="Slighted" or defName="Insulted" or defName="InsultedMood" or defName="FailedRomanceAttemptOnMe" or defName="FailedRomanceAttemptOnMeLowOpinionMood" or defName="RebuffedMyRomanceAttempt" or defName="RebuffedMyRomanceAttemptMood"]/nullifyingTraits</xpath>
+    <value>
+      <li>BS_InsultProof</li>
+    </value>
+  </Operation>
+
+	<Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>Defs/ThoughtDef[defName="AteCorpse"][not(nullifyingGenes)]</xpath>
+    <value>
+      <nullifyingGenes/>
+    </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>Defs/ThoughtDef[defName="AteCorpse"]/nullifyingGenes</xpath>
+    <value>
+      <li>BS_FeedingFrenzy</li>
+			<li>BS_GeneEater</li>
+			<li MayRequire="RedMattis.LamiasAndOtherSnakes">BS_SnekEngulf</li>
+			<li MayRequire="RedMattis.BSSlime">BS_SlimeEngulf</li>
+    </value>
+  </Operation>
+
+  <!-- BS_DroneKind -->
+
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>Defs/ThoughtDef[@Name="DeathMemory" or @Name="LostMemory" or @Name="KilledChild_Opinion"][not(nullifyingHediffs)]</xpath>
+    <value>
+      <nullifyingHediffs/>
+    </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>Defs/ThoughtDef[@Name="DeathMemory" or @Name="LostMemory" or @Name="KilledChild_Opinion"]/nullifyingHediffs</xpath>
+    <value>
+      <li>BS_DroneHediff</li>
+    </value>
+  </Operation>
+
+	<!---BS_Unpretentious-->
+	<Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>Defs/ThoughtDef[defName="AteNutrientPasteMeal" or defName="DeadMansApparel" or defName="Pretty" or defName="Ugly" or defName="Ascetic" or defName="CreepyBreathing" or defName="AnnoyingVoice" or defName="SleptOutside" or defName="SleptOnGround" or defName="SleptInCold" or defName="SleptInHeat" or defName="TitleBedroomRequirementsNotMet" or defName="TitleThroneroomRequirementsNotMet" or defName="TitleNoPersonalBedroom" or defName="TitleApparelRequirementNotMet" or defName="TitleApparelMinQualityNotMet" or defName="TitleBedroomRequirementsNotMet" or defName="VFEE_TitleNoBallroom" or defName="VFEE_TitleNoGallery" or defName="VFEE_TitleGalleryRequirementsNotMet"][not(nullifyingTraits)]</xpath>
+    <value>
+      <nullifyingTraits/>
+    </value>
+  </Operation>
+
+	<Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>Defs/ThoughtDef[defName="AteNutrientPasteMeal" or defName="DeadMansApparel" or defName="Pretty" or defName="Ugly" or defName="Ascetic" or defName="CreepyBreathing" or defName="AnnoyingVoice" or defName="SleptOutside" or defName="SleptOnGround" or defName="SleptInCold" or defName="SleptInHeat" or defName="TitleBedroomRequirementsNotMet" or defName="TitleThroneroomRequirementsNotMet" or defName="TitleNoPersonalBedroom"  or defName="TitleApparelRequirementNotMet" or defName="TitleApparelMinQualityNotMet" or defName="TitleBedroomRequirementsNotMet" or defName="VFEE_TitleNoBallroom" or defName="VFEE_TitleNoGallery" or defName="VFEE_TitleGalleryRequirementsNotMet"]/nullifyingTraits</xpath>
+    <value>
+      <li>BS_Unpretentious</li>
+    </value>
+  </Operation>
+	
+	<!---Flirty-->
+	<Operation Class="PatchOperationAdd">
+    <!-- <success>Always</success> -->
+    <xpath>Defs/ThoughtDef[defName="FailedRomanceAttemptOnMe" or defName="FailedRomanceAttemptOnMeLowOpinionMood" or defName="RebuffedMyRomanceAttempt" or defName="RebuffedMyRomanceAttemptMood"][not(nullifyingGenes)]</xpath>
+    <value>
+      <nullifyingGenes/>
+    </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationAdd">
+    <!-- <success>Always</success> -->
+    <xpath>Defs/ThoughtDef[defName="FailedRomanceAttemptOnMe" or defName="FailedRomanceAttemptOnMeLowOpinionMood" or defName="RebuffedMyRomanceAttempt" or defName="RebuffedMyRomanceAttemptMood"]/nullifyingGenes</xpath>
+    <value>
+      <li>BS_Flirty</li>
+    </value>
+  </Operation>
+
+	<Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>Defs/ThoughtDef[defName="LookChangeDesired"][not(nullifyingGenes)]</xpath>
+    <value>
+      <nullifyingGenes/>
+    </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>Defs/ThoughtDef[defName="LookChangeDesired"]/nullifyingGenes</xpath>
+    <value>
+      <li MayRequire="RedMattis.LamiasAndOtherSnakes">BS_GorgonHair</li>
+			<li>BS_DevourerHead</li>
+			<li>BS_StonemaskHead</li>
+			<li>BS_SatanHead</li>
+      <li>BS_TrollHair</li>
+      <li>BS_TrollHairGreat</li>
+    </value>
+  </Operation>
+
+  <!--Add Tags for Medieval Pawnkinds.-->
+	<Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="Apparel_BasicShirt" or defName="Apparel_Pants" or defName="Apparel_SimpleHelmet"]/apparel/tags</xpath>
+    <value>
+			<li>BS_MedievalBasic</li>
+    </value>
+  </Operation>
+
+  <!-- Tuque's and Parka don't feel very medieval... -->
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="Apparel_Parka" or defName="Apparel_Tuque"]/apparel/tags</xpath>
+    <value>
+			<li>BS_MedievalBasicWeather</li>
+    </value>
+  </Operation>
+
+	<!--A character with both these genes otherwise lack a comfortable temperature entierly.-->
+	<Operation Class="PatchOperationReplace">
+    <xpath>Defs/GeneDef[defName="MinTemp_SmallIncrease"]/statOffsets/ComfyTemperatureMin</xpath>
+    <value>
+      <ComfyTemperatureMin>4.5</ComfyTemperatureMin>
+    </value>
+  </Operation>
+
+	<Operation Class="PatchOperationReplace">
+    <xpath>Defs/GeneDef[defName="MaxTemp_SmallDecrease"]/statOffsets/ComfyTemperatureMax</xpath>
+    <value>
+      <ComfyTemperatureMax>-4.5</ComfyTemperatureMax>
+    </value>
+  </Operation>
+	
+</Patch>

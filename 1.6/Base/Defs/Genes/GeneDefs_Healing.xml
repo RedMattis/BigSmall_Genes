@@ -1,0 +1,72 @@
+<Defs>
+  <GeneDef ParentName="GeneHealingRateBase">
+    <defName>WoundHealing_VerySlow</defName>
+    <label>Very slow wound healing</label>
+    <labelShortAdj>slow-heal</labelShortAdj>
+    <description>Carriers of this gene heal from wounds at a third of the normal speed.</description>
+    <iconPath>GeneIcons/VU_SlowerHealing</iconPath>
+    <displayOrderInCategory>29</displayOrderInCategory>
+    <statFactors>
+      <InjuryHealingFactor>0.35</InjuryHealingFactor>
+    </statFactors>
+    <biostatMet>6</biostatMet>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>unhealing</symbol></li>
+      </prefixSymbols>
+    </symbolPack>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneHealingRateBase">
+    <defName>WoundHealing_UltraFast</defName>
+    <label>Ultra-Fast wound healing</label>
+    <labelShortAdj>ultra-heal</labelShortAdj>
+    <description>Carriers of this gene heal wounds at an absolutely absurd rate, and any bleeding stops nearly instantly. The only drawback is that they feel far less pain than normal and often keep fighting until death.</description>
+    <iconPath>GeneIcons/BS_WoundHealingRateUltra</iconPath>
+    <displayOrderInCategory>28</displayOrderInCategory>
+    <displayCategory>Archite</displayCategory>
+    <preventPermanentWounds>true</preventPermanentWounds>
+    <statFactors>
+      <InjuryHealingFactor>25</InjuryHealingFactor>
+    </statFactors>
+    <painFactor>0.35</painFactor>
+    <biostatMet>-5</biostatMet>
+    <biostatArc>1</biostatArc>
+    <geneClass>Gene_Clotting</geneClass>
+  </GeneDef>
+
+  <GeneDef Name="BS_Xenoreconstruction">
+    <defName>BS_Xenoreconstruction</defName>
+    <label>Xenoreconstruction</label>
+    <description>Carriers of this gene can heal permanent injuries in themselves or others.</description>
+    <prerequisite>Hemogenic</prerequisite>
+    <iconPath>UI/Icons/Genes/Gene_Coagulate</iconPath>
+    <displayCategory>Ability</displayCategory>
+    <marketValueFactor>2.0</marketValueFactor>
+    <abilities>
+      <li>BS_Regenerate</li>
+    </abilities>
+    <descriptionHyperlinks>
+      <AbilityDef>BS_Regenerate</AbilityDef>
+    </descriptionHyperlinks>
+    <biostatMet>-3</biostatMet>
+    <selectionWeight>1</selectionWeight>
+    <biostatArc>3</biostatArc>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>BS_Fast_TotalHealing</defName>
+    <label>Regeneration</label>
+    <labelShortAdj>scarless</labelShortAdj>
+    <description>Carriers of this gene can regenerate scars and missing limbs.</description>
+    <customEffectDescriptions>
+      <li>Every few days, one old wound, limb, or missing organ is healed.</li>
+    </customEffectDescriptions>
+    <iconPath>GeneIcons/BS_TotalHealing_Fast</iconPath>
+    <geneClass>BigAndSmall.Gene_FastHealing</geneClass>
+    <preventPermanentWounds>true</preventPermanentWounds>
+    <biostatCpx>10</biostatCpx>
+    <biostatArc>3</biostatArc>
+    <displayCategory>Archite</displayCategory>
+  </GeneDef>
+</Defs>

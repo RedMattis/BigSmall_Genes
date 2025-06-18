@@ -1,0 +1,217 @@
+<Defs>
+
+
+  <GeneDef ParentName="LibidoBase">
+    <defName>VU_Libido_None</defName>
+    <label>no libido</label>
+    <description>Carriers of this gene are unlikely to ever engage in lovin' with their partner.</description>
+    <customEffectDescriptions>
+      <li>Dramatically decreases the chance of lovin'.</li>
+    </customEffectDescriptions>
+    <iconPath>GeneIcons/VU_NoLibido</iconPath>
+    <displayOrderInCategory>0</displayOrderInCategory>
+    <lovinMTBFactor>50</lovinMTBFactor>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>BS_Flirty</defName>
+    <label>flirty</label>
+    <description>Carriers of this gene will flirt much more often than usual. On the plus side they don't care much about being flirted with or rejected when flirting.</description>
+    <displayCategory>Reproduction</displayCategory>
+    <!-- <customEffectDescriptions>
+      <li>4x more likely to flirt.</li>
+    </customEffectDescriptions> -->
+    <iconPath>GeneIcons/BS_Flirty</iconPath>
+    <displayOrderInCategory>2</displayOrderInCategory>
+    <statFactors>
+      <SM_FlirtChance>4</SM_FlirtChance>
+    </statFactors>
+    <biostatCpx>0</biostatCpx>
+    <biostatMet>0</biostatMet>
+    <exclusionTags>
+      <li>Flirty</li>
+    </exclusionTags>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>BS_NotFlirty</defName>
+    <label>never flirts</label>
+    <description>Carriers of this gene will not flirt or be flirted with.</description>
+    <displayCategory>Reproduction</displayCategory>
+    <customEffectDescriptions>
+      <li>Will never flirt and will never be flirted with</li>
+    </customEffectDescriptions>
+    <iconPath>GeneIcons/BS_NeverFlirts</iconPath>
+    <displayOrderInCategory>2</displayOrderInCategory>
+    <statFactors>
+      <SM_FlirtChance>0</SM_FlirtChance>
+    </statFactors>
+    <biostatCpx>0</biostatCpx>
+    <biostatMet>0</biostatMet>
+    <exclusionTags>
+      <li>Flirty</li>
+    </exclusionTags>
+  </GeneDef>
+  
+  <GeneDef>
+    <defName>BS_ShortPregnancy</defName>
+    <label>short pregnancy</label>
+    <description>Carriers of this gene have very short pregnancies, less than half the usual.</description>
+    <iconPath>GeneIcons/BS_FastPregnancy</iconPath>
+    <displayCategory>Reproduction</displayCategory>
+    <biostatCpx>2</biostatCpx>
+    <biostatMet>-1</biostatMet>
+    <biostatArc>0</biostatArc>
+    <modExtensions>
+    <li Class="BigAndSmall.PawnExtension">
+      <pregnancySpeedMultiplier>2.25</pregnancySpeedMultiplier>
+    </li>
+  </modExtensions>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>BS_EarlyMaturity</defName>
+    <label>early maturity</label>
+    <description>Like many animals, carriers of this gene give birth to offspring already capable of walking and learning.</description>
+    <iconPath>GeneIcons/BS_EarlyMaturity</iconPath>
+    <displayCategory>Reproduction</displayCategory>
+    <exclusionTags><li>BS_Maturity</li></exclusionTags>
+    <biostatCpx>2</biostatCpx>
+    <biostatMet>-1</biostatMet>
+    <biostatArc>0</biostatArc>
+    <modExtensions>
+      <li Class="BigAndSmall.PawnExtension">
+        <babyStartAge>3</babyStartAge>
+        <sizeByAgeMult>
+          <points>
+            <li>(3, 0.75)</li>
+            <li>(8, 1)</li>
+          </points>
+        </sizeByAgeMult>
+      </li>
+		</modExtensions>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>BS_VeryEarlyMaturity</defName>
+    <label>very early maturity</label>
+    <description>Like many animals, carriers of this gene give birth to large offspring almost as capable as adults. They are still born very small however.</description>
+    <iconPath>GeneIcons/BS_EarlyMaturity_2</iconPath>
+    <displayCategory>Reproduction</displayCategory>
+    <exclusionTags><li>BS_Maturity</li></exclusionTags>
+    <biostatCpx>3</biostatCpx>
+    <biostatMet>-1</biostatMet>
+    <biostatArc>0</biostatArc>
+    <modExtensions>
+      <li Class="BigAndSmall.PawnExtension">
+        <babyStartAge>10</babyStartAge>
+        <sizeByAgeMult>
+          <points>
+            <li>(10, 0.5)</li>
+            <li>(13, 1)</li>
+          </points>
+        </sizeByAgeMult>
+      </li>
+		</modExtensions>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>BS_BirthTwins</defName>
+    <label>multiple offspring</label>
+    <description>Carriers of this gene typically give birth to more than one child. The average is 2. The babies are a bit smaller as a result.</description>
+    <iconPath>GeneIcons/BS_PregnancyTwins</iconPath>
+    <displayCategory>Reproduction</displayCategory>
+    <exclusionTags><li>BS_Babycount</li></exclusionTags>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>0</biostatMet>
+    <biostatArc>0</biostatArc>
+    <modExtensions>
+      <li Class="BigAndSmall.PawnExtension">
+        <babyBirthCount>
+          <li>1</li>
+          <li>1</li>
+          <li>2</li>
+          <li>2</li>
+          <li>2</li>
+          <li>2</li>
+          <li>3</li>
+          <li>3</li>
+          <li>4</li>
+        </babyBirthCount>
+        <sizeByAgeMult>
+          <points>
+            <li>(3, 0.75)</li>
+            <li>(8, 1)</li>
+          </points>
+        </sizeByAgeMult>
+      </li>
+		</modExtensions>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>BS_BirthLitter</defName>
+    <label>litter offspring</label>
+    <description>Carriers of this gene give birth to large litters of ofspring. Usually between 4 and 6. The babies are very small as a result.</description>
+    <iconPath>GeneIcons/BS_PregnancyLitter</iconPath>
+    <displayCategory>Reproduction</displayCategory>
+    <exclusionTags><li>BS_Babycount</li></exclusionTags>
+    <biostatCpx>2</biostatCpx>
+    <biostatMet>-1</biostatMet>
+    <biostatArc>0</biostatArc>
+    <modExtensions>
+      <li Class="BigAndSmall.PawnExtension">
+        <babyBirthCount>
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+          <li>5</li>
+          <li>6</li>
+          <li>4</li>
+          <li>5</li>
+          <li>6</li>
+          <li>4</li>
+          <li>5</li>
+          <li>6</li>
+          <li>7</li>
+          <li>8</li>
+        </babyBirthCount>
+        <sizeByAgeMult>
+          <points>
+            <li>(3, 0.5)</li>
+            <li>(5, 1)</li>
+          </points>
+        </sizeByAgeMult>
+      </li>
+		</modExtensions>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>BS_EverFertile</defName>
+    <label>ever fertile</label>
+    <description>Carriers of this gene do not lose fertility with age.</description>
+    <iconPath>GeneIcons/BS_EverFertile</iconPath>
+    <displayCategory>Reproduction</displayCategory>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>0</biostatMet>
+    <biostatArc>0</biostatArc>
+    <modExtensions>
+		</modExtensions>
+    <selectionWeight>0.5</selectionWeight>
+  </GeneDef>
+
+  <GeneDef ParentName="FertilityBase">
+    <defName>VU_NearSterile</defName>
+    <label>almost sterile</label>
+    <description>Carriers of this gene are almost incapable of reproducing by natural means.</description>
+    <iconPath>UI/Icons/Genes/Gene_Sterile</iconPath>
+    <sterilize>false</sterilize>
+    <biostatMet>1</biostatMet>
+    <displayOrderInCategory>101</displayOrderInCategory>
+    <statFactors>
+      <Fertility>0.2</Fertility>
+    </statFactors>
+    <modExtensions>
+		</modExtensions>
+  </GeneDef>
+</Defs>

@@ -1,0 +1,443 @@
+<?xml version="1.0" ?>
+<Defs>
+  <GeneDef ParentName="BS_FunctionalWingBase">
+    <defName>BS_MajesticBird</defName>
+    <label>Majestic Bird Wings (Large)</label>
+    <description>Carriers of this gene possess angelic wings.</description>
+    <iconPath>BS_BodyAttachments/BS_GorgonWings_south</iconPath>
+    <displayOrderInCategory>777</displayOrderInCategory>
+    
+    <modExtensions>
+      <li Class="BigAndSmall.PawnExtension">
+        <applyBodyHediff>
+          <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+            <hediff>BS_Floating</hediff>
+          </li>
+        </applyBodyHediff>
+      </li>
+      <li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
+        <movementDef>PF_Movement_Flying</movementDef>
+      </li>
+      <li Class="BigAndSmall.GraphicsOverride">
+        <replaceFlags><Wings/></replaceFlags>
+        <graphics>
+          <li Class="BigAndSmall.ConditionalGraphicProperties">
+            <drawSize>(1.15, 1.15)</drawSize>
+          </li>
+        </graphics>
+      </li>
+      <li Class="BigAndSmall.Flagger">
+        <flags> <ShowBaseWingsRight/><ShowBaseWingsLeft/> </flags>
+      </li>
+    </modExtensions>
+  </GeneDef>
+  <GeneDef ParentName="BS_FunctionalWingBase">
+    <defName>BS_MajesticBird_Mid</defName>
+    <label>Majestic Bird Wings</label>
+    <description>Carriers of this gene possess angelic wings.</description>
+    <iconPath>BS_BodyAttachments/BS_GorgonWings_south</iconPath>
+    <displayOrderInCategory>777</displayOrderInCategory>
+    
+    <modExtensions>
+      <li Class="BigAndSmall.PawnExtension">
+        <applyBodyHediff>
+          <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+            <hediff>BS_Floating</hediff>
+          </li>
+        </applyBodyHediff>
+      </li>
+      <li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
+        <movementDef>PF_Movement_Flying</movementDef>
+      </li>
+      <li Class="BigAndSmall.Flagger">
+        <flags> <ShowBaseWingsRight/><ShowBaseWingsLeft/> </flags>
+      </li>
+    </modExtensions>
+  </GeneDef>
+  <GeneDef ParentName="BS_FunctionalWingBase">
+    <defName>BS_AngelWings</defName>
+    <label>Angelic Messenger Wings (Large)</label>
+    <description>Carriers of this gene possess angelic wings.</description>
+    <iconPath>BS_BodyAttachments/BS_GorgonWings_south</iconPath>
+    <displayOrderInCategory>777</displayOrderInCategory>
+    
+    <modExtensions>
+      <li Class="BigAndSmall.PawnExtension">
+        <applyBodyHediff>
+          <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+            <hediff>BS_Floating</hediff>
+          </li>
+        </applyBodyHediff>
+      </li>
+      <li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
+        <movementDef>PF_Movement_Flying</movementDef>
+      </li>
+      <li Class="BigAndSmall.GraphicsOverride">
+        <overrideList>
+          <li>
+            <replaceFlags><Wings/></replaceFlags>
+            <graphics>
+              <li Class="BigAndSmall.ConditionalGraphicProperties">
+                <drawSize>(1.15, 1.15)</drawSize>
+              </li>
+            </graphics>
+          </li>
+          <li>
+            <replaceFlags><WingColorA/><WingColorB/></replaceFlags>
+            <graphics>
+              <li Class="BigAndSmall.ColorSetting">
+                <color>(255,241,199)</color>
+              </li>
+            </graphics>
+          </li>
+        </overrideList>
+      </li>
+      <li Class="BigAndSmall.Flagger">
+        <flags> <ShowBaseWingsRight/><ShowBaseWingsLeft/> </flags>
+      </li>
+    </modExtensions>
+  </GeneDef>
+  <GeneDef ParentName="BS_FunctionalWingBase">
+    <defName>BS_AngelWings_Mid</defName>
+    <label>Angelic Messenger Wings</label>
+    <description>Carriers of this gene possess angelic wings.</description>
+    <iconPath>BS_BodyAttachments/BS_GorgonWings_south</iconPath>
+    <displayOrderInCategory>777</displayOrderInCategory>
+    
+    <modExtensions>
+      <li Class="BigAndSmall.PawnExtension">
+        <applyBodyHediff>
+          <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+            <hediff>BS_Floating</hediff>
+          </li>
+        </applyBodyHediff>
+      </li>
+      <li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
+        <movementDef>PF_Movement_Flying</movementDef>
+      </li>
+      <li Class="BigAndSmall.GraphicsOverride">
+        <replaceFlags><WingColorA/><WingColorB/></replaceFlags>
+        <graphics>
+          <li Class="BigAndSmall.ColorSetting">
+            <color>(255,241,199)</color>
+          </li>
+        </graphics>
+      </li>
+      <li Class="BigAndSmall.Flagger">
+        <flags> <ShowBaseWingsRight/><ShowBaseWingsLeft/> </flags>
+      </li>
+    </modExtensions>
+  </GeneDef>
+  <GeneDef ParentName="BS_FunctionalWingBase">
+    <defName>BS_GoldenGorgonWings</defName>
+    <label>Golden Gorgon Wings</label>
+    <description>Carriers of this gene possess huge divine golden wings.</description>
+    <iconPath>BS_BodyAttachments/BS_GorgonWings_south</iconPath>
+    <displayOrderInCategory>777</displayOrderInCategory>
+    
+    <modExtensions>
+      <li Class="BigAndSmall.PawnExtension">
+        <applyBodyHediff>
+          <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+            <hediff>BS_Floating</hediff>
+          </li>
+        </applyBodyHediff>
+      </li>
+      <li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
+        <movementDef>PF_Movement_Flying</movementDef>
+      </li>
+      <li Class="BigAndSmall.GraphicsOverride">
+        <overrideList>
+          <li>
+            <replaceFlags><Wings/></replaceFlags>
+            <graphics>
+              <li Class="BigAndSmall.ConditionalGraphicProperties">
+                <drawSize>(1.15, 1.15)</drawSize>
+              </li>
+            </graphics>
+          </li>
+          <li>
+            <replaceFlags><WingColorA/><WingColorB/></replaceFlags>
+            <graphics>
+              <li Class="BigAndSmall.ColorSetting">
+                <color>(255,241,160)</color>
+              </li>
+            </graphics>
+          </li>
+        </overrideList>
+      </li>
+      <li Class="BigAndSmall.Flagger">
+        <flags> <ShowBaseWingsRight/><ShowBaseWingsLeft/> </flags>
+      </li>
+    </modExtensions>
+    
+  </GeneDef>
+  <GeneDef ParentName="BS_FunctionalWingBase">
+    <defName>BS_GracefulAngelwings</defName>
+    <label>Graceful Angel Wings</label>
+    <description>Carriers of this gene possess divine wings.</description>
+    <iconPath>GeneIcons/BS_Wings/Gene_WingsAngelic</iconPath>
+    <displayOrderInCategory>777</displayOrderInCategory>
+    
+    <modExtensions>
+      <li Class="BigAndSmall.PawnExtension">
+        <applyBodyHediff>
+          <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+            <hediff>BS_Floating</hediff>
+          </li>
+        </applyBodyHediff>
+      </li>
+      <li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
+        <movementDef>PF_Movement_Flying</movementDef>
+      </li>
+    </modExtensions>
+    <renderNodeProperties Inherit="False">
+      <li>
+        <parentTagDef>Body</parentTagDef>
+        <workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+        <texPath>BS_BodyAttachments/BS_Wings/AngelicWings_Bottom</texPath>
+        <drawSize>(1.1,1.1)</drawSize>
+        <color>(245,245,245)</color>
+        <colorType>Hair</colorType>
+        <drawData>
+          <defaultData>
+            <layer>-1</layer>
+          </defaultData>
+          <dataSouth>
+            <layer>-1</layer>
+          </dataSouth>
+          <dataEast>
+            <offset>(0.10, 0, -0.05)</offset>
+          </dataEast>
+          <dataNorth>
+            <layer>90</layer>
+            <offset>(0.0, 0, -0.05)</offset>
+          </dataNorth>
+        </drawData>
+      </li>
+      <li>
+        <parentTagDef>Body</parentTagDef>
+        <workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+        <texPath>BS_BodyAttachments/BS_Wings/AngelicWings_Top</texPath>
+        <drawSize>(1.1,1.1)</drawSize>
+        <color>(245,245,245)</color>
+        <colorType>Hair</colorType>
+        <drawData>
+          <defaultData>
+            <layer>91</layer>
+          </defaultData>
+          <dataEast>
+            <offset>(0.10, 0, -0.05)</offset>
+          </dataEast>
+          <dataNorth>
+            <layer>91</layer>
+            <offset>(0.0, 0, -0.05)</offset>
+          </dataNorth>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+<GeneDef ParentName="BS_FunctionalWingBase">
+  <defName>BS_HolyAngelwings</defName>
+  <label>Fluffy Angel Wings</label>
+  <description>Carriers of this gene possess divine wings.</description>
+  <iconPath>GeneIcons/BS_Wings/Gene_WingsHoly</iconPath>
+  <displayOrderInCategory>777</displayOrderInCategory>
+  
+  <modExtensions>
+    <li Class="BigAndSmall.PawnExtension">
+      <applyBodyHediff>
+        <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+          <hediff>BS_Floating</hediff>
+        </li>
+      </applyBodyHediff>
+    </li>
+    <li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
+      <movementDef>PF_Movement_Flying</movementDef>
+    </li>
+  </modExtensions>
+  <renderNodeProperties Inherit="False">
+    <li>
+      <parentTagDef>Body</parentTagDef>
+      <workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+      <texPath>BS_BodyAttachments/BS_Wings/HolyWings_Bottom</texPath>
+      <drawSize>(1.25,1.25)</drawSize>
+      <color>(245,245,245)</color>
+      <colorType>Hair</colorType>
+      <drawData>
+        <defaultData>
+          <layer>-1</layer>
+        </defaultData>
+        <dataEast>
+          <offset>(0.10, 0, -0.05)</offset>
+        </dataEast>
+        <dataNorth>
+          <layer>90</layer>
+          <offset>(0.0, 0, -0.05)</offset>
+        </dataNorth>
+      </drawData>
+    </li>
+    <li>
+      <parentTagDef>Body</parentTagDef>
+      <workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+      <texPath>BS_BodyAttachments/BS_Wings/HolyWings_Top</texPath>
+      <drawSize>(1.25,1.25)</drawSize>
+      <color>(245,245,245)</color>
+      <colorType>Hair</colorType>
+      <drawData>
+        <defaultData>
+          <layer>91</layer>
+        </defaultData>
+        <dataEast>
+          <offset>(0.10, 0, -0.05)</offset>
+        </dataEast>
+        <dataNorth>
+          <layer>91</layer>
+          <offset>(0.0, 0, -0.05)</offset>
+        </dataNorth>
+      </drawData>
+    </li>
+  </renderNodeProperties>
+</GeneDef>
+  <GeneDef ParentName="BS_FunctionalWingBase">
+    <defName>BS_MenacingAngelwings</defName>
+    <label>Menacing Angel Wings</label>
+    <description>Carriers of this gene possess divine wings.</description>
+    <iconPath>GeneIcons/BS_Wings/Gene_WingsMenacing</iconPath>
+    <displayOrderInCategory>777</displayOrderInCategory>
+    
+    <modExtensions>
+      <li Class="BigAndSmall.PawnExtension">
+        <applyBodyHediff>
+          <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+            <hediff>BS_Floating</hediff>
+          </li>
+        </applyBodyHediff>
+      </li>
+      <li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
+        <movementDef>PF_Movement_Flying</movementDef>
+      </li>
+    </modExtensions>
+    <renderNodeProperties Inherit="False">
+      <li>
+        <parentTagDef>Body</parentTagDef>
+        <workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+        <texPath>BS_BodyAttachments/BS_Wings/MenacingWings_Bottom</texPath>
+        <drawSize>(1.25,1.25)</drawSize>
+        <color>(245,245,245)</color>
+        <colorType>Hair</colorType>
+        <drawData>
+          <defaultData>
+            <layer>-1</layer>
+          </defaultData>
+          <dataEast>
+            <offset>(0.10, 0, -0.05)</offset>
+          </dataEast>
+          <dataNorth>
+            <layer>90</layer>
+            <offset>(0.0, 0, -0.05)</offset>
+          </dataNorth>
+        </drawData>
+      </li>
+      <li>
+        <parentTagDef>Body</parentTagDef>
+        <workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+        <texPath>BS_BodyAttachments/BS_Wings/MenacingWings_Top</texPath>
+        <drawSize>(1.25,1.25)</drawSize>
+        <color>(245,245,245)</color>
+        <colorType>Hair</colorType>
+        <drawData>
+          <defaultData>
+            <layer>91</layer>
+          </defaultData>
+          <dataEast>
+            <offset>(0.10, 0, -0.05)</offset>
+          </dataEast>
+          <dataNorth>
+            <layer>91</layer>
+            <offset>(0.0, 0, -0.05)</offset>
+          </dataNorth>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+  <GeneDef ParentName="BS_FunctionalWingBase">
+    <defName>BS_DemonAngelwings</defName>
+    <label>Demon Angel Wings</label>
+    <description>Carriers of this gene possess demonic wings.</description>
+    <iconPath>GeneIcons/BS_Wings/Gene_WingsDemon</iconPath>
+    <displayOrderInCategory>777</displayOrderInCategory>
+    
+    <modExtensions>
+      <li Class="BigAndSmall.PawnExtension">
+        <applyBodyHediff>
+          <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+            <hediff>BS_Floating</hediff>
+          </li>
+        </applyBodyHediff>
+      </li>
+      <li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
+        <movementDef>PF_Movement_Flying</movementDef>
+      </li>
+    </modExtensions>
+    <renderNodeProperties Inherit="False">
+      <li>
+        <parentTagDef>Body</parentTagDef>
+        <workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+        <texPath>BS_BodyAttachments/BS_Wings/DemonWings_Bottom</texPath>
+        <drawSize>(1.25,1.25)</drawSize>
+        <color>(245,245,245)</color>
+        <colorType>Skin</colorType>
+        <drawData>
+          <defaultData>
+            <layer>-1</layer>
+          </defaultData>
+          <dataSouth>
+            <offset>(0.0, 0, -0.05)</offset>
+            <layer>-1</layer>
+          </dataSouth>
+          <dataEast>
+            <offset>(0.10, 0, -0.05)</offset>
+            <rotationOffset>10</rotationOffset>
+          </dataEast>
+          <dataWest>
+            <offset>(-0.10, 0, -0.05)</offset>
+            <rotationOffset>-10</rotationOffset>
+          </dataWest>
+          <dataNorth>
+            <layer>90</layer>
+            <offset>(0.0, 0, -0.15)</offset>
+          </dataNorth>
+        </drawData>
+      </li>
+      <li>
+        <parentTagDef>Body</parentTagDef>
+        <workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+        <texPath>BS_BodyAttachments/BS_Wings/DemonWings_Top</texPath>
+        <drawSize>(1.25,1.25)</drawSize>
+        <color>(245,245,245)</color>
+        <colorType>Skin</colorType>
+        <drawData>
+          <defaultData>
+            <layer>91</layer>
+          </defaultData>
+          <dataSouth>
+            <offset>(0.0, 0, -0.05)</offset>
+          </dataSouth>
+          <dataEast>
+            <offset>(0.10, 0, -0.05)</offset>
+            <rotationOffset>10</rotationOffset>
+          </dataEast>
+          <dataWest>
+            <offset>(-0.10, 0, -0.05)</offset>
+            <rotationOffset>-10</rotationOffset>
+          </dataWest>
+          <dataNorth>
+            <layer>91</layer>
+            <offset>(0.0, 0, -0.15)</offset>
+          </dataNorth>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+</Defs>

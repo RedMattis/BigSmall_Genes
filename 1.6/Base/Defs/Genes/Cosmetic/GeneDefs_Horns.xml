@@ -1,0 +1,648 @@
+<?xml version="1.0" ?>
+<Defs>
+  <GeneDef Name="BS_Hornbase" ParentName="GeneHeadboneBase" Abstract="True">
+    <displayCategory>BS_Horns</displayCategory>
+    <selectionWeight>0.1</selectionWeight>
+
+    <renderNodeProperties Inherit="False">
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPath>BS_HeadAttachments/jotun_horns</texPath>
+        <colorType>Skin</colorType>
+        <drawData>
+          <defaultData>
+            <layer>80</layer>
+          </defaultData>
+          <dataNorth>
+            <layer>10</layer>
+          </dataNorth>
+          <dataSouth>
+            <offset>(0, 0, 0)</offset>
+          </dataSouth>
+        </drawData>
+        <parentTagDef>Head</parentTagDef>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+  <GeneDef Name="BS_DemonHornBase" ParentName="BS_Hornbase" Abstract="True">
+    <symbolPack>
+      <prefixSymbols>
+        <li> <symbol>horn</symbol> </li> <li> <symbol>devil</symbol> </li> <li> <symbol>demon</symbol> </li>
+        <li> <symbol>luci</symbol> </li> <li> <symbol>beelze</symbol> </li> <li> <symbol>hell</symbol> </li>
+      </prefixSymbols>
+      <suffixSymbols> <li> <symbol>horn</symbol> </li> <li> <symbol>vil</symbol> </li> </suffixSymbols>
+    </symbolPack>
+  </GeneDef>
+  <GeneDef ParentName="BS_DemonHornBase">
+    <defName>Jotun_Horns</defName>
+    <label>jotun horns</label>
+    <description>Carriers of this gene possess large impressive horns.</description>
+    <iconPath>GeneIcons/BS_Horns/JotunHornsBig</iconPath>
+    <renderNodeProperties Inherit="False">
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPaths>
+          <!--  -->
+          <li>BS_HeadAttachments/jotun_horns</li>
+          <!-- <li>BS_HeadAttachments/BS_JotunHorns</li> -->
+          <li>BS_HeadAttachments/BS_JotunHornsB</li>
+          <li>BS_HeadAttachments/BS_JotunHornsB</li>
+        </texPaths>
+        <color>(180, 180, 180)</color>
+        <colorType>Hair</colorType>
+        <drawData>
+          <defaultData> <layer>80</layer> </defaultData>
+          <dataNorth> <layer>10</layer> </dataNorth>
+          <dataSouth> <offset>(0, 0, 0)</offset> </dataSouth>
+        </drawData>
+        <parentTagDef>Head</parentTagDef>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+  <GeneDef ParentName="BS_DemonHornBase">
+    <defName>Jotun_Horns_skin</defName>
+    <label>jotun horns (skin-coloured)</label>
+    <description>Carriers of this gene possess large impressive horns. This variant has the same colour as the carrier's skin.</description>
+    <iconPath>GeneIcons/BS_Horns/JotunHornsBig</iconPath>
+    <renderNodeProperties Inherit="False">
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPath>BS_HeadAttachments/jotun_horns</texPath>
+        <texPaths>
+          <li>BS_HeadAttachments/jotun_horns</li>
+          <li>BS_HeadAttachments/BS_JotunHornsB</li>
+          <li>BS_HeadAttachments/BS_JotunHornsB</li>
+        </texPaths>
+        <useSkinShader>true</useSkinShader>
+        <colorType>Skin</colorType>
+        <drawData>
+          <defaultData> <layer>80</layer> </defaultData>
+          <dataNorth> <layer>10</layer> </dataNorth>
+          <dataSouth> <offset>(0, 0, 0)</offset> </dataSouth>
+        </drawData>
+        <parentTagDef>Head</parentTagDef>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+  <GeneDef ParentName="BS_DemonHornBase">
+    <defName>Jotun_Horns_Small</defName>
+    <label>small jotun horns</label>
+    <description>Carriers of this gene possess two small horns.</description>
+    <iconPath>GeneIcons/BS_Horns/JotunHorns</iconPath>
+    <renderNodeProperties Inherit="False">
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPaths>
+          <li>BS_HeadAttachments/jotun_horns_small</li>
+          <li>BS_HeadAttachments/BS_JotunSmallHorns</li>
+        </texPaths>
+        <color>(200, 200, 200)</color>
+        <colorType>Hair</colorType>
+        <drawData>
+          <defaultData> <layer>80</layer> </defaultData>
+          <dataNorth> <layer>10</layer> </dataNorth>
+          <dataSouth> <offset>(0, 0, 0)</offset> </dataSouth>
+        </drawData>
+        <parentTagDef>Head</parentTagDef>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+
+  <GeneDef ParentName="BS_DemonHornBase">
+    <defName>Jotun_Horns_Small_skin</defName>
+    <label>small jotun horns (skin-coloured)</label>
+    <description>Carriers of this gene possess two small horns. This variant has the same colour as the carrier's skin.</description>
+    <iconPath>GeneIcons/BS_Horns/JotunHorns</iconPath>
+    <renderNodeProperties Inherit="False">
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPaths>
+          <li>BS_HeadAttachments/jotun_horns_small</li>
+          <li>BS_HeadAttachments/BS_JotunSmallHorns</li>
+        </texPaths>
+        <useSkinShader>true</useSkinShader>
+        <colorType>Skin</colorType>
+        <drawData>
+          <defaultData> <layer>80</layer> </defaultData>
+          <dataNorth> <layer>10</layer> </dataNorth>
+          <dataSouth> <offset>(0, 0, 0)</offset> </dataSouth>
+        </drawData>
+        <parentTagDef>Head</parentTagDef>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+
+  <GeneDef ParentName="BS_DemonHornBase">
+    <defName>BS_TrollHorns</defName>
+    <label>troll horns</label>
+    <description>Carriers of this gene possess two branch-like horns.</description>
+    <iconPath>GeneIcons/BS_Horns/Roothorns</iconPath>
+    <renderNodeProperties Inherit="False">
+      <li Class="BigAndSmall.PawnRenderingProps_Ultimate">
+        <nodeClass>BigAndSmall.PawnRenderNode_Ultimate</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <shader>Cutout</shader>
+        <conditionalGraphics>
+          <colorA>
+            <hairColor>true</hairColor>
+            <skinColor>true</skinColor>
+            <colourRange>
+              <li>255,200,150</li>
+              <li>200,255,150</li>
+            </colourRange>
+          </colorA>
+          <conditionalPaths>
+            <alts>
+              <li>
+                <chanceByAge> <points> <li>(6, 0)</li> <li>(100, 0.8)</li> <li>(200, 0.97)</li> </points> </chanceByAge>
+                <randSeed>99</randSeed>
+                <texturePaths>
+                  <li>BS_HeadAttachments/RootOld/Roothorns2</li>
+                  <li>BS_HeadAttachments/RootOld/Roothorns3</li>
+                  <li>BS_HeadAttachments/RootOld/Roothorns1</li>
+                </texturePaths>
+              </li>
+              <li>
+                <chanceByAge> <points> <li>(0, 0)</li> <li>(20, 0.8)</li> <li>(100, 0.97)</li> </points> </chanceByAge>
+                <randSeed>99</randSeed>
+                <texturePaths>
+                  <li>BS_HeadAttachments/Root/RoothornsYoung</li>
+                  <li>BS_HeadAttachments/Root_Inverted/RoothornsYoung</li>
+                </texturePaths>
+              </li>
+            </alts>
+          </conditionalPaths>
+          <texturePaths>
+            <li>BS_Blank</li>
+          </texturePaths>
+        </conditionalGraphics>
+        <colorType>Skin</colorType>
+        <drawData>
+          <defaultData> <layer>80</layer> </defaultData>
+          <dataNorth> <layer>10</layer> </dataNorth>
+          <dataSouth> <offset>(0, 0, -0.05)</offset> </dataSouth>
+        </drawData>
+        <parentTagDef>Head</parentTagDef>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+
+  <GeneDef ParentName="BS_DemonHornBase">
+    <defName>BS_Arching_Horns</defName>
+    <label>arching horns</label>
+    <description>Carriers of this gene possess two arching horns. This variant has the same colour as the carrier's skin.</description>
+    <iconPath>GeneIcons/BS_Horns/Bendy</iconPath>
+    <renderNodeProperties Inherit="False">
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPath>BS_HeadAttachments/BS_BendyHorns</texPath>
+        <color>(180, 180, 180)</color>
+        <colorType>Hair</colorType>
+        <drawData>
+          <defaultData>
+            <layer>80</layer>
+          </defaultData>
+          <dataNorth>
+            <layer>10</layer>
+          </dataNorth>
+          <dataSouth>
+            <offset>(0, 0, 0)</offset>
+          </dataSouth>
+        </drawData>
+        <parentTagDef>Head</parentTagDef>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+  <GeneDef ParentName="BS_DemonHornBase">
+    <defName>BS_Arching_Horns_skin</defName>
+    <label>arching horns (skin-coloured)</label>
+    <description>Carriers of this gene possess two arching horns. This variant has the same colour as the carrier's skin.</description>
+    <iconPath>GeneIcons/BS_Horns/Bendy</iconPath>
+    <renderNodeProperties Inherit="False">
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPath>BS_HeadAttachments/BS_BendyHorns</texPath>
+        <useSkinShader>true</useSkinShader>
+        <colorType>Skin</colorType>
+        <drawData>
+          <defaultData>
+            <layer>80</layer>
+          </defaultData>
+          <dataNorth>
+            <layer>10</layer>
+          </dataNorth>
+          <dataSouth>
+            <offset>(0, 0, 0)</offset>
+          </dataSouth>
+        </drawData>
+        <parentTagDef>Head</parentTagDef>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+  <GeneDef ParentName="BS_DemonHornBase">
+    <defName>BS_TallJotunHorns</defName>
+    <label>tall jotun horns</label>
+    <description>Carriers of this gene possess large impressive horns.</description>
+    <iconPath>GeneIcons/BS_Horns/HornGenea</iconPath>
+    <renderNodeProperties Inherit="False">
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPath>BS_HeadAttachments/BS_DemonHornsa</texPath>
+        <color>(180, 180, 180)</color>
+        <colorType>Hair</colorType>
+        <drawData>
+          <defaultData>
+            <layer>80</layer>
+          </defaultData>
+          <dataNorth>
+            <layer>10</layer>
+          </dataNorth>
+          <dataSouth>
+            <offset>(0, 0, 0)</offset>
+          </dataSouth>
+        </drawData>
+        <parentTagDef>Head</parentTagDef>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+  <GeneDef ParentName="BS_DemonHornBase">
+    <defName>BS_TallJotunHorns_Skin</defName>
+    <label>tall jotun horns</label>
+    <description>Carriers of this gene possess long impressive horns. This variant has the same colour as the carrier's skin.</description>
+    <iconPath>GeneIcons/BS_Horns/HornGenea</iconPath>
+    <renderNodeProperties Inherit="False">
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPath>BS_HeadAttachments/BS_DemonHornsa</texPath>
+        <useSkinShader>true</useSkinShader>
+        <colorType>Skin</colorType>
+        <drawData>
+          <defaultData>
+            <layer>80</layer>
+          </defaultData>
+          <dataNorth>
+            <layer>10</layer>
+          </dataNorth>
+          <dataSouth>
+            <offset>(0, 0, 0)</offset>
+          </dataSouth>
+        </drawData>
+        <parentTagDef>Head</parentTagDef>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+  <GeneDef ParentName="BS_DemonHornBase">
+    <defName>BS_StubbyDemonHorns</defName>
+    <label>stubby demon horns</label>
+    <description>Carriers of this gene possess short horns.</description>
+    <iconPath>GeneIcons/BS_Horns/HornGeneb</iconPath>
+    <renderNodeProperties Inherit="False">
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPath>BS_HeadAttachments/BS_DemonHornsb</texPath>
+        <color>(180, 180, 180)</color>
+        <colorType>Hair</colorType>
+        <drawData>
+          <defaultData>
+            <layer>80</layer>
+          </defaultData>
+          <dataNorth>
+            <layer>10</layer>
+          </dataNorth>
+          <dataSouth>
+            <offset>(0, 0, 0)</offset>
+          </dataSouth>
+        </drawData>
+        <parentTagDef>Head</parentTagDef>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+  <GeneDef ParentName="BS_DemonHornBase">
+    <defName>BS_StubbyDemonHorns_Skin</defName>
+    <label>stubby demon</label>
+    <description>Carriers of this gene possess short horns. This variant has the same colour as the carrier's skin.</description>
+    <iconPath>GeneIcons/BS_Horns/HornGeneb</iconPath>
+    <renderNodeProperties Inherit="False">
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPath>BS_HeadAttachments/BS_DemonHornsb</texPath>
+        <useSkinShader>true</useSkinShader>
+        <colorType>Skin</colorType>
+        <drawData>
+          <defaultData>
+            <layer>80</layer>
+          </defaultData>
+          <dataNorth>
+            <layer>10</layer>
+          </dataNorth>
+          <dataSouth>
+            <offset>(0, 0, 0)</offset>
+          </dataSouth>
+        </drawData>
+        <parentTagDef>Head</parentTagDef>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+  <GeneDef ParentName="BS_DemonHornBase">
+    <defName>BS_ForwardArchingHorns</defName>
+    <label>forward-arching horns </label>
+    <description>Carriers of this gene possess arching horns.</description>
+    <iconPath>GeneIcons/BS_Horns/HornGenec</iconPath>
+    <renderNodeProperties Inherit="False">
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPath>BS_HeadAttachments/BS_DemonHornsc</texPath>
+        <color>(200, 200, 200)</color>
+        <colorType>Hair</colorType>
+        <drawData>
+          <defaultData>
+            <layer>80</layer>
+          </defaultData>
+          <dataNorth>
+            <layer>10</layer>
+          </dataNorth>
+          <dataSouth>
+            <offset>(0, 0, 0)</offset>
+          </dataSouth>
+        </drawData>
+        <parentTagDef>Head</parentTagDef>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+  <GeneDef ParentName="BS_DemonHornBase">
+    <defName>BS_ForwardArchingHorns_Skin</defName>
+    <label>forward-arching horns (skin-coloured)</label>
+    <description>Carriers of this gene possess arching horns. This variant has the same colour as the carrier's skin.</description>
+    <iconPath>GeneIcons/BS_Horns/HornGenec</iconPath>
+    <renderNodeProperties Inherit="False">
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPath>BS_HeadAttachments/BS_DemonHornsc</texPath>
+        <useSkinShader>true</useSkinShader>
+        <colorType>Skin</colorType>
+        <drawData>
+          <defaultData>
+            <layer>80</layer>
+          </defaultData>
+          <dataNorth>
+            <layer>10</layer>
+          </dataNorth>
+          <dataSouth>
+            <offset>(0, 0, 0)</offset>
+          </dataSouth>
+        </drawData>
+        <parentTagDef>Head</parentTagDef>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+  <GeneDef ParentName="BS_DemonHornBase">
+    <defName>BS_TyrantCrown</defName>
+    <label>tyrant crown</label>
+    <description>Carriers of this gene possess bull-like horns.</description>
+    <iconPath>GeneIcons/BS_Horns/HornGened</iconPath>
+    <renderNodeProperties Inherit="False">
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPath>BS_HeadAttachments/BS_DemonHornsd</texPath>
+        <colorType>Hair</colorType>
+        <drawData>
+          <defaultData>
+            <layer>80</layer>
+          </defaultData>
+          <dataNorth>
+            <layer>10</layer>
+          </dataNorth>
+          <dataSouth>
+            <offset>(0, 0, 0)</offset>
+          </dataSouth>
+        </drawData>
+        <parentTagDef>Head</parentTagDef>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+  <GeneDef ParentName="BS_DemonHornBase">
+    <defName>BS_TyrantCrown_Skin</defName>
+    <label>tyrant crown (skin-coloured)</label>
+    <description>Carriers of this gene possess bull-like horns.</description>
+    <iconPath>GeneIcons/BS_Horns/HornGened</iconPath>
+    <renderNodeProperties Inherit="False">
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPath>BS_HeadAttachments/BS_DemonHornsd</texPath>
+        <colorType>Skin</colorType>
+        <drawData>
+          <defaultData>
+            <layer>80</layer>
+          </defaultData>
+          <dataNorth>
+            <layer>10</layer>
+          </dataNorth>
+          <dataSouth>
+            <offset>(0, 0, 0)</offset>
+          </dataSouth>
+        </drawData>
+        <parentTagDef>Head</parentTagDef>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+  <GeneDef ParentName="BS_DemonHornBase">
+    <defName>BS_SmallQuadHorns</defName>
+    <label>quadhorns</label>
+    <description>Carriers of this gene possess two pairs of horns.</description>
+    <iconPath>GeneIcons/BS_Horns/HornGenee</iconPath>
+    <renderNodeProperties Inherit="False">
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPath>BS_HeadAttachments/BS_DemonHornse</texPath>
+        <colorType>Hair</colorType>
+        <drawData>
+          <defaultData>
+            <layer>80</layer>
+          </defaultData>
+          <dataNorth>
+            <layer>10</layer>
+          </dataNorth>
+          <dataSouth>
+            <offset>(0, 0, 0)</offset>
+          </dataSouth>
+        </drawData>
+        <parentTagDef>Head</parentTagDef>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+  <GeneDef ParentName="BS_DemonHornBase">
+    <defName>BS_SmallQuadHorns_Skin</defName>
+    <label>quadhorns (skin-coloured)</label>
+    <description>Carriers of this gene possess two pairs of horns. This variant has the same colour as the carrier's skin.</description>
+    <iconPath>GeneIcons/BS_Horns/HornGenee</iconPath>
+    <renderNodeProperties Inherit="False">
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPath>BS_HeadAttachments/BS_DemonHornse</texPath>
+        <useSkinShader>true</useSkinShader>
+        <colorType>Skin</colorType>
+        <drawData>
+          <defaultData>
+            <layer>80</layer>
+          </defaultData>
+          <dataNorth>
+            <layer>10</layer>
+          </dataNorth>
+          <dataSouth>
+            <offset>(0, 0, 0)</offset>
+          </dataSouth>
+        </drawData>
+        <parentTagDef>Head</parentTagDef>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+  <GeneDef ParentName="BS_DemonHornBase">
+    <defName>BS_HexaHorns</defName>
+    <label>demon hexahorns</label>
+    <description>Carriers of this gene possess two pairs of horns.</description>
+    <iconPath>GeneIcons/BS_Horns/HornGenef</iconPath>
+    <renderNodeProperties Inherit="False">
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPath>BS_HeadAttachments/BS_DemonHornsf</texPath>
+        <colorType>Hair</colorType>
+        <drawData>
+          <defaultData>
+            <layer>80</layer>
+          </defaultData>
+          <dataNorth>
+            <layer>10</layer>
+          </dataNorth>
+          <dataSouth>
+            <offset>(0, 0, 0)</offset>
+          </dataSouth>
+        </drawData>
+        <parentTagDef>Head</parentTagDef>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+  <GeneDef ParentName="BS_DemonHornBase">
+    <defName>BS_HexaHorns_Skin</defName>
+    <label>demon hexahorns (skin-coloured)</label>
+    <description>Carriers of this gene possess two pairs of horns. This variant has the same colour as the carrier's skin.</description>
+    <iconPath>GeneIcons/BS_Horns/HornGenef</iconPath>
+    <renderNodeProperties Inherit="False">
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPath>BS_HeadAttachments/BS_DemonHornsf</texPath>
+        <useSkinShader>true</useSkinShader>
+        <colorType>Skin</colorType>
+        <drawData>
+          <defaultData>
+            <layer>80</layer>
+          </defaultData>
+          <dataNorth>
+            <layer>10</layer>
+          </dataNorth>
+          <dataSouth>
+            <offset>(0, 0, 0)</offset>
+          </dataSouth>
+        </drawData>
+        <parentTagDef>Head</parentTagDef>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+  <GeneDef ParentName="BS_DemonHornBase">
+    <defName>BS_OniHorns</defName>
+    <label>oni horns</label>
+    <description>Carriers of this gene possess intimidating oni horns.</description>
+    <iconPath>GeneIcons/BS_Horns/Oni</iconPath>
+    <renderNodeProperties Inherit="False">
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPath>BS_HeadAttachments/BS_OniHorns</texPath>
+        <colorType>Skin</colorType>
+        <drawData>
+          <defaultData>
+            <layer>80</layer>
+          </defaultData>
+          <dataNorth>
+            <layer>10</layer>
+          </dataNorth>
+          <dataSouth>
+            <offset>(0, 0, 0)</offset>
+          </dataSouth>
+        </drawData>
+        <parentTagDef>Head</parentTagDef>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+  <GeneDef ParentName="BS_DemonHornBase">
+    <defName>BS_OniSingleHorn</defName>
+    <label>oni centre horn</label>
+    <description>Carriers of this gene possess a single intimidating oni horn.</description>
+    <iconPath>GeneIcons/BS_Horns/OniSingle</iconPath>
+    <renderNodeProperties Inherit="False">
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPath>BS_HeadAttachments/BS_OniSingleHorn</texPath>
+        <colorType>Skin</colorType>
+        <drawData>
+          <defaultData>
+            <layer>80</layer>
+          </defaultData>
+          <dataNorth>
+            <layer>10</layer>
+          </dataNorth>
+          <dataSouth>
+            <offset>(0, 0, 0)</offset>
+          </dataSouth>
+        </drawData>
+        <parentTagDef>Head</parentTagDef>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+  <GeneDef ParentName="BS_DemonHornBase">
+    <defName>BS_DragonHorns</defName>
+    <label>draconic horns (skin-coloured)</label>
+    <description>Carriers of this gene possess arching horns. This variant has the same colour as the carrier's skin.</description>
+    <iconPath>GeneIcons/BS_Horns/DragonHorns</iconPath>
+    <renderNodeProperties Inherit="False">
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPath>BS_HeadAttachments/BS_DragonHorns</texPath>
+        <useSkinShader>true</useSkinShader>
+        <colorType>Skin</colorType>
+        <drawData>
+          <defaultData>
+            <layer>80</layer>
+          </defaultData>
+          <dataNorth>
+            <layer>10</layer>
+          </dataNorth>
+          <dataSouth>
+            <offset>(0, 0, 0)</offset>
+          </dataSouth>
+        </drawData>
+        <parentTagDef>Head</parentTagDef>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+</Defs>

@@ -1,0 +1,173 @@
+<Defs>
+  <VREAndroids.AndroidGeneDef  Name="BS_AndroidHardware" Abstract="True" ParentName="VREA_HardwareBase">
+    <isCoreComponent>false</isCoreComponent>
+    <biostatCpx>0</biostatCpx>
+    <biostatMet>0</biostatMet>
+    <modExtensions Inherit="False">
+      <li Class="VanillaGenesExpanded.GeneExtension">
+        <backgroundPathXenogenes>GeneIcons/BS_BackAndroidChip</backgroundPathXenogenes>
+        <backgroundPathEndogenes>GeneIcons/BS_BackAndroidChip</backgroundPathEndogenes>
+      </li>
+    </modExtensions>
+  </VREAndroids.AndroidGeneDef >
+
+
+  <VREAndroids.AndroidGeneDef Name="BodyFrameBase_Android" Abstract="True" ParentName="BS_AndroidHardware">
+    <exclusionTags>
+      <li>BodySize</li>
+    </exclusionTags>
+    <customEffectDescriptions>
+      <li>- Body Size General - -</li>
+      <!-- <li>Dramatic effect on max energy.</li> -->
+      <li>Very large effect on energy consumed when charging.</li>
+      <li>Alters Body Size attribute and associated traits</li>
+      <li>Dramatically modifies health.</li>
+      <li>Alters damage, a bit less than the linear increase.</li>
+      <li>Large effect on Melee Dodge chance benefitting small characters.</li>
+      <li>Very large effect on Self-"Production" from Alpha Genes and this mod.</li>
+    </customEffectDescriptions>
+  </VREAndroids.AndroidGeneDef >
+
+  <VREAndroids.AndroidGeneDef ParentName="BodyFrameBase_Android">
+    <defName>BS_BigFrame_Android</defName>
+    <label>Extra-large design</label>
+    <description>This is a really large and sturdy android.</description>
+    <exclusionTags>
+      <li>BodySize</li>
+    </exclusionTags>
+    <iconPath>GeneIcons/BS_Frames/HalfGiant</iconPath>
+    <displayOrderInCategory>1050</displayOrderInCategory>
+    <biostatCpx>3</biostatCpx>
+    <biostatMet>-5</biostatMet>
+    <statFactors>
+      <MiningSpeed>1.5</MiningSpeed>
+      <ConstructionSpeed>1.25</ConstructionSpeed>
+      <DeepDrillingSpeed>1.25</DeepDrillingSpeed>
+      <MoveSpeed>1.1</MoveSpeed>
+      <IncomingDamageFactor>0.75</IncomingDamageFactor>
+    </statFactors>
+    <statOffsets>
+      <SM_BodySizeOffset>0.75</SM_BodySizeOffset>
+    </statOffsets>
+    <forcedTraits>
+      <li>
+        <def>BS_Giant</def>
+      </li>
+    </forcedTraits>
+  </VREAndroids.AndroidGeneDef>
+
+  <VREAndroids.AndroidGeneDef ParentName="BodyFrameBase_Android">
+    <defName>BS_GiantFrame_Android</defName>
+    <label>Giant Robot</label>
+    <description>This android is huge, huuuuuge.</description>
+    <exclusionTags>
+      <li>BodySize</li>
+    </exclusionTags>
+    <iconPath>GeneIcons/BS_Frames/Giant</iconPath>
+    <displayOrderInCategory>1050</displayOrderInCategory>
+    <biostatCpx>6</biostatCpx>
+    <biostatMet>-10</biostatMet>
+    <statOffsets>
+      <SM_BodySizeOffset>1.5</SM_BodySizeOffset>
+      <CarryingCapacity>200</CarryingCapacity>
+      <VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">200</VEF_MassCarryCapacity>
+    </statOffsets>
+    <statFactors>
+      <MiningSpeed>2.0</MiningSpeed>
+      <DeepDrillingSpeed>1.5</DeepDrillingSpeed>
+      <ConstructionSpeed>1.35</ConstructionSpeed>
+    </statFactors>
+    <forcedTraits>
+      <li>
+        <def>BS_Giant</def>
+      </li>
+    </forcedTraits>
+  </VREAndroids.AndroidGeneDef>
+
+  <!-- Dunno how to balance these when they don't even cost archite capsules... -->
+  <VREAndroids.AndroidGeneDef ParentName="BodyFrameBase_Android">
+    <defName>BS_TitanFrame_Android</defName>
+    <label>Android Mecha</label>
+    <description>You could fit an entire cockpit in this android. Powering this android is a huge hassle though.</description>
+    <exclusionTags>
+      <li>BodySize</li>
+    </exclusionTags>
+    <iconPath>GeneIcons/BS_Frames/Titan</iconPath>
+    <displayOrderInCategory>1050</displayOrderInCategory>
+    <biostatCpx>20</biostatCpx>
+    <biostatMet>-30</biostatMet>
+    <statFactors>
+      <IncomingDamageFactor>0.90</IncomingDamageFactor>
+      <MiningSpeed>3.0</MiningSpeed>
+      <DeepDrillingSpeed>2.0</DeepDrillingSpeed>
+      <ConstructionSpeed>1.6</ConstructionSpeed>
+      <MoveSpeed>1.2</MoveSpeed>
+    </statFactors>
+    <statOffsets>
+      <SM_BodySizeOffset>3</SM_BodySizeOffset>
+      <MoveSpeed>1.0</MoveSpeed>
+      <CarryingCapacity>500</CarryingCapacity>
+      <VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">500</VEF_MassCarryCapacity>
+    </statOffsets>
+    <conditionalStatAffecters>
+      <li Class="ConditionalStatAffecter_Clothed">
+        <statOffsets>
+          <MoveSpeed>-1.0</MoveSpeed>
+        </statOffsets>
+        <statFactors>
+          <MoveSpeed>0.6</MoveSpeed>
+        </statFactors>
+      </li>
+    </conditionalStatAffecters>
+    <forcedTraits>
+      <li>
+        <def>BS_Giant</def>
+      </li>
+    </forcedTraits>
+  </VREAndroids.AndroidGeneDef>
+
+  <VREAndroids.AndroidGeneDef ParentName="BodyFrameBase_Android">
+    <defName>BS_SmallFrame_Android</defName>
+    <label>Small Android</label>
+    <description>A small android for small jobs. Despite its size it is still reasonably sturdy.</description>
+    <exclusionTags>
+      <li>BodySize</li>
+    </exclusionTags>
+    <iconPath>GeneIcons/BS_Frames/Dwarf</iconPath>
+    <displayOrderInCategory>1050</displayOrderInCategory>
+    <biostatCpx>-3</biostatCpx>
+    <biostatMet>7</biostatMet>
+    <statFactors>
+      <MiningSpeed>0.90</MiningSpeed>
+      <ConstructionSpeed>0.90</ConstructionSpeed>
+      <MoveSpeed>0.9</MoveSpeed>
+      <IncomingDamageFactor>0.75</IncomingDamageFactor>
+    </statFactors>
+    <statOffsets>
+      <SM_BodySizeOffset>-0.35</SM_BodySizeOffset>
+    </statOffsets>
+  </VREAndroids.AndroidGeneDef>
+
+  <VREAndroids.AndroidGeneDef ParentName="BodyFrameBase_Android">
+    <defName>BS_TinyFrame_Android</defName>
+    <label>Miniaturized Android</label>
+    <description>This android is diminutive. While a bit less fragile than animals of this size it should still be kept out of harm's way.</description>
+    <exclusionTags>
+      <li>BodySize</li>
+    </exclusionTags>
+    <iconPath>GeneIcons/BS_Frames/Diminutive</iconPath>
+    <displayOrderInCategory>1050</displayOrderInCategory>
+    <biostatCpx>0</biostatCpx>
+    <biostatMet>12</biostatMet>
+    <statOffsets>
+      <SM_BodySizeOffset>-0.6</SM_BodySizeOffset>
+    </statOffsets>
+    <statFactors>
+      <MiningSpeed>0.6</MiningSpeed>
+      <DeepDrillingSpeed>0.6</DeepDrillingSpeed>
+      <ConstructionSpeed>0.6</ConstructionSpeed>
+      <MoveSpeed>0.8</MoveSpeed>
+      <IncomingDamageFactor>0.80</IncomingDamageFactor>
+    </statFactors>
+  </VREAndroids.AndroidGeneDef>
+</Defs>

@@ -1,0 +1,277 @@
+<Defs>
+  <GeneDef ParentName="GeneMinTempBase">
+    <defName>MinTemp_HugeDecrease</defName>
+    <label>Cold Immunity</label>
+    <labelShortAdj>freezing</labelShortAdj>
+    <description>Carriers of this gene are almost impervious to cold.</description>
+    <iconPath>GeneIcons/super_cold_resist_icon</iconPath>
+    <displayOrderInCategory>-5</displayOrderInCategory>
+    <statOffsets>
+      <ComfyTemperatureMin>-300</ComfyTemperatureMin>
+    </statOffsets>
+    <damageFactors>
+			<Frostbite>0.25</Frostbite>
+		</damageFactors>
+    <biostatMet>-3</biostatMet>
+    <symbolPack>
+      <prefixSymbols>
+        <li>
+          <symbol>ice</symbol>
+        </li>
+      </prefixSymbols>
+    </symbolPack>
+    <modExtensions>
+			
+		</modExtensions>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneMaxTempBase">
+    <defName>MaxTemp_HugeIncrease</defName>
+    <label>Heat Immunity</label>
+    <labelShortAdj>boiling</labelShortAdj>
+    <description>Carriers of this gene are practically impervious to passive heat, even mechanoids start to overheat malfunction before the carrier does.</description>
+    <iconPath>GeneIcons/super_heat_resist_icon</iconPath>
+    <displayOrderInCategory>-5</displayOrderInCategory>
+    <statOffsets>
+      <ComfyTemperatureMax>1500</ComfyTemperatureMax>
+    </statOffsets>
+    <biostatMet>-3</biostatMet>
+    <symbolPack>
+      <prefixSymbols>
+        <li>
+          <symbol>hot</symbol>
+        </li>
+        <li>
+          <symbol>heat</symbol>
+        </li>
+        <li>
+          <symbol>sun</symbol>
+        </li>
+        <li>
+          <symbol>sweat</symbol>
+        </li>
+        <li>
+          <symbol>bake</symbol>
+        </li>
+      </prefixSymbols>
+    </symbolPack>
+    <!-- <biostatArc>1</biostatArc> -->
+    <modExtensions>
+			
+		</modExtensions>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>FireImmunity</defName>
+    <label>fire immune</label>
+    <labelShortAdj>fireproof</labelShortAdj>
+    <description>Carriers of this gene are unfaced by fire and most heat-based attacks.</description>
+    <iconPath>GeneIcons/fire_immune_icon</iconPath>
+    <displayCategory>ResistanceAndWeakness</displayCategory>
+    <displayOrderInCategory>-5</displayOrderInCategory>
+    <statFactors>
+      <Flammability>0.0</Flammability>
+    </statFactors>
+    <damageFactors>
+      <Flame>0.0</Flame>
+    </damageFactors>
+    <biostatMet>-3</biostatMet>
+    <symbolPack>
+      <prefixSymbols>
+        <li>
+          <symbol>foam</symbol>
+        </li>
+        <li>
+          <symbol>wet</symbol>
+        </li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li>
+          <symbol>foam</symbol>
+        </li>
+      </suffixSymbols>
+    </symbolPack>
+    <exclusionTags>
+      <li>FireDamage</li>
+    </exclusionTags>
+    <modExtensions>
+			
+		</modExtensions>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneMaxTempBase">
+    <defName>BS_HeatGenerator</defName>
+    <label>living furnace</label>
+    <labelShortAdj>heating</labelShortAdj>
+    <description>Carriers of this gene will heat up their environment. They are also fire-proof and tolerant to extremely high temperatures. While somewhat tolerate low ambient temperatures, they are highly vulnerable to frostbite. Somewhat affected by BodySize.</description>
+    <customEffectDescriptions>
+      <li>Comparable to two heaters at full power.</li>
+    </customEffectDescriptions>
+    <displayCategory>Archite</displayCategory>
+    <iconPath>GeneIcons/BS_LivingFurnace</iconPath>
+    <displayOrderInCategory>-5</displayOrderInCategory>
+    <statOffsets>
+      <ComfyTemperatureMax>1500</ComfyTemperatureMax>
+      <ComfyTemperatureMin>-15</ComfyTemperatureMin>
+    </statOffsets>
+    <statFactors>
+      <Flammability>0.0</Flammability>
+    </statFactors>
+    <damageFactors>
+      <Flame>0.0</Flame>
+      <Frostbite>2</Frostbite>
+    </damageFactors>
+    <exclusionTags>
+      <li>FireDamage</li>
+      <li>TemperatureGenerator</li>
+    </exclusionTags>
+    <biostatMet>-4</biostatMet>
+    <symbolPack>
+      <prefixSymbols>
+        <li>
+          <symbol>hot</symbol>
+        </li>
+        <li>
+          <symbol>heat</symbol>
+        </li>
+        <li>
+          <symbol>sun</symbol>
+        </li>
+      </prefixSymbols>
+    </symbolPack>
+    <biostatArc>1</biostatArc>
+    
+    <modExtensions>
+			
+      <li Class="BigAndSmall.PawnExtension">
+				<applyBodyHediff><li><hediff>BS_HeatGenerator</hediff></li></applyBodyHediff>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneMinTempBase">
+    <defName>BS_ColdGenerator</defName>
+    <label>cryo-generator</label>
+    <labelShortAdj>freezing</labelShortAdj>
+    <description>Carriers of this gene will dramatically cool down their environment. They are also immune to frostbite and extremely low temperatures. Not flammable, but takes increased damage from direct heat damage. Somewhat affected by BodySize.</description>
+    <displayCategory>Archite</displayCategory>
+    <customEffectDescriptions>
+      <li>Comparable to two coolers at full power.</li>
+    </customEffectDescriptions>
+    <iconPath>GeneIcons/BS_CryoGenerator</iconPath>
+    <displayOrderInCategory>-3</displayOrderInCategory>
+    <statOffsets>
+      <ComfyTemperatureMin>-350</ComfyTemperatureMin>
+      <ComfyTemperatureMax>10</ComfyTemperatureMax>
+    </statOffsets>
+    <statFactors>
+      <Flammability>0.0</Flammability>
+    </statFactors>
+    <damageFactors>
+      <Flame>1.5</Flame>
+			<Frostbite>0</Frostbite>
+		</damageFactors>
+    <exclusionTags>
+      <li>TemperatureGenerator</li>
+    </exclusionTags>
+    <biostatMet>-2</biostatMet>
+    <symbolPack>
+      <prefixSymbols>
+        <li>
+          <symbol>freezing</symbol>
+        </li>
+      </prefixSymbols>
+    </symbolPack>
+    <biostatArc>1</biostatArc>
+    
+    <modExtensions>
+			
+      <li Class="BigAndSmall.PawnExtension">
+				<applyBodyHediff><li><hediff>BS_ColdGenerator</hediff></li></applyBodyHediff>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneMaxTempBase">
+    <defName>MinTemp_HugeNeed</defName>
+    <label>Cold Need</label>
+    <labelShortAdj>freezing</labelShortAdj>
+    <description>Carriers of this gene require extremely low temperatures to avoid heatstrokes. This can be somewhat mitigated with via equipmment with good insulation.Does not include extreme cold tolerance in itself, but lacking it is a death-sentence.</description>
+    <iconPath>GeneIcons/BS_TemperatureLowNeed</iconPath>
+    <displayOrderInCategory>-7</displayOrderInCategory>
+    <statOffsets>
+      <ComfyTemperatureMax>-50</ComfyTemperatureMax>
+    </statOffsets>
+    <biostatMet>5</biostatMet>
+    <symbolPack>
+      <prefixSymbols>
+        <li>
+          <symbol>ice</symbol>
+        </li>
+      </prefixSymbols>
+    </symbolPack>
+    <!--  -->
+    <modExtensions>
+    <!-- 
+      <li Class="BigAndSmall.GenePrerequisites">
+        <prerequisiteSets>
+          <li>
+            <type>AnyOf</type>
+            <prerequisites>
+              <li>MinTemp_HugeDecrease</li>
+              <li>BS_ColdGenerator</li>
+            </prerequisites>
+          </li>
+        </prerequisiteSets>
+      </li> -->
+			
+		</modExtensions>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneMinTempBase">
+    <defName>MaxTemp_HugeNeed</defName>
+    <label>Heat Need</label>
+    <labelShortAdj>boiling</labelShortAdj>
+    <description>Carriers of this gene require an extremely high temperature to survive. This can be somewhat mitigated with via equipmment with good insulation. Does not include extreme heat tolerance in itself, but lacking it is a death-sentence.</description>
+    <iconPath>GeneIcons/BS_TemperatureHighNeed</iconPath>
+    <displayOrderInCategory>-7</displayOrderInCategory>
+    <statOffsets>
+      <ComfyTemperatureMin>55</ComfyTemperatureMin>
+    </statOffsets>
+    <biostatMet>5</biostatMet>
+    <symbolPack>
+      <prefixSymbols>
+        <li>
+          <symbol>hot</symbol>
+        </li>
+        <li>
+          <symbol>heat</symbol>
+        </li>
+        <li>
+          <symbol>sun</symbol>
+        </li>
+        <li>
+          <symbol>sweat</symbol>
+        </li>
+        <li>
+          <symbol>bake</symbol>
+        </li>
+      </prefixSymbols>
+    </symbolPack>
+    <!--  -->
+    <modExtensions>
+      <!-- <li Class="BigAndSmall.GenePrerequisites">
+        <prerequisiteSets>
+          <li>
+            <type>AnyOf</type>
+            <prerequisites>
+              <li>MaxTemp_HugeIncrease</li>
+              <li>BS_HeatGenerator</li>
+            </prerequisites>
+          </li>
+        </prerequisiteSets>
+      </li> -->
+			
+		</modExtensions>
+  </GeneDef>
+</Defs>

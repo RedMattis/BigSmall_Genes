@@ -1,0 +1,112 @@
+<Defs>
+  <GeneCategoryDef>
+    <defName>Body_Size</defName>
+    <label>body size</label>
+    <displayPriorityInXenotype>709</displayPriorityInXenotype>
+  </GeneCategoryDef>
+  
+  <GeneCategoryDef>
+    <defName>Body_Size_Multiplier</defName>
+    <label>body size multiplier</label>
+    <displayPriorityInXenotype>708</displayPriorityInXenotype>
+  </GeneCategoryDef>
+
+   <GeneCategoryDef>
+    <defName>BS_Diet</defName>
+    <label>Diet</label>
+    <displayPriorityInXenotype>707</displayPriorityInXenotype>
+  </GeneCategoryDef>
+
+  <GeneCategoryDef>
+    <defName>BS_Learning</defName>
+    <label>Learning</label>
+    <displayPriorityInXenotype>706</displayPriorityInXenotype>
+  </GeneCategoryDef>
+
+  <GeneCategoryDef>
+    <defName>BS_Armour</defName>
+    <label>Armour</label>
+    <displayPriorityInXenotype>705</displayPriorityInXenotype>
+  </GeneCategoryDef>
+
+  <GeneCategoryDef>
+    <defName>BS_Pilotable</defName>
+    <label>Pilotable</label>
+    <displayPriorityInXenotype>704</displayPriorityInXenotype>
+  </GeneCategoryDef>
+
+  <GeneCategoryDef>
+    <defName>BS_InnateAttacks</defName>
+    <label>Innate Attacks</label>
+    <displayPriorityInXenotype>703</displayPriorityInXenotype>
+  </GeneCategoryDef>
+
+  <GeneCategoryDef>
+    <defName>BS_Production</defName>
+    <label>Production</label>
+    <displayPriorityInXenotype>702</displayPriorityInXenotype>
+  </GeneCategoryDef>
+
+  <GeneCategoryDef>
+    <defName>BS_Aging</defName>
+    <label>Aging</label>
+    <displayPriorityInXenotype>701</displayPriorityInXenotype>
+  </GeneCategoryDef>
+
+
+  <GeneCategoryDef>
+    <defName>LoS_Snake_Vis</defName>
+    <label>Snake Parts</label>
+    <!-- Cosmetic_Skin 280 Misc 270-->
+    <displayPriorityInXenotype>387</displayPriorityInXenotype>
+    <!-- Cosmetic_Skin -110 -->
+    <displayPriorityInGenepack>-2103</displayPriorityInGenepack>
+  </GeneCategoryDef>
+  <GeneCategoryDef>
+    <defName>LoS_Snake_NoVis</defName>
+    <label>Snake</label>
+    <!-- Cosmetic_Skin 280 Misc 270-->
+    <displayPriorityInXenotype>388</displayPriorityInXenotype>
+    <!-- Cosmetic_Skin -110 -->
+    <displayPriorityInGenepack>-2104</displayPriorityInGenepack>
+  </GeneCategoryDef>
+
+  <GeneCategoryDef>
+    <defName>BS_Horns</defName>
+    <label>Horns</label>
+    <displayPriorityInXenotype>730</displayPriorityInXenotype>
+  </GeneCategoryDef>
+
+  <GeneCategoryDef>
+    <defName>BS_DO_NOT</defName>
+    <label>Don't pick these</label>
+    <displayPriorityInXenotype>-99999</displayPriorityInXenotype>
+  </GeneCategoryDef>
+
+  <GeneCategoryDef>
+    <defName>VU_Unliving</defName>
+    <label>unliving</label>
+    <displayPriorityInXenotype>700</displayPriorityInXenotype>
+  </GeneCategoryDef>
+
+  <GeneCategoryDef>
+    <!--Require HAR to actually do the swap.-->
+    <defName>BS_BodySwap</defName>
+    <label>Body Transformation</label>
+    <displayPriorityInXenotype>-388</displayPriorityInXenotype>
+  </GeneCategoryDef>
+
+
+
+  <GeneCategoryDef>
+    <defName>BS_Deathless</defName>
+    <label>death-resistance</label>
+    <displayPriorityInXenotype>995</displayPriorityInXenotype>
+  </GeneCategoryDef>
+  <GeneCategoryDef>
+    <defName>BS_Transformation</defName>
+    <label>transformation</label>
+    <displayPriorityInXenotype>994</displayPriorityInXenotype>
+  </GeneCategoryDef>
+
+</Defs>

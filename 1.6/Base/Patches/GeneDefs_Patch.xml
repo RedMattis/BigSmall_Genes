@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <!-- <Operation Class="PatchOperationAdd">
+    <xpath>*/GeneDef[defName="ArchiteMetabolism"]</xpath>
+    <value>
+      <exclusionTags>
+        <li>BS_Metabolism_Gene</li>
+      </exclusionTags>
+    </value>
+  </Operation> -->
+
+  <Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/GeneDef[defName = "ArchiteMetabolism"]/exclusionTags</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/GeneDef[defName = "ArchiteMetabolism"]</xpath>
+			<value>
+				<exclusionTags>
+					<li>BS_Metabolism_Gene</li>
+				</exclusionTags>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/GeneDef[defName = "ArchiteMetabolism"]/exclusionTags</xpath>
+			<value>
+				<li>BS_Metabolism_Gene</li>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/GeneDef[defName = "Superclotting"]/exclusionTags</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/GeneDef[defName = "Superclotting"]</xpath>
+			<value>
+				<exclusionTags>
+					<li>BS_BleedRate</li>
+				</exclusionTags>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/GeneDef[defName = "Superclotting"]/exclusionTags</xpath>
+			<value>
+				<li>BS_BleedRate</li>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/GeneDef[defName = "Ageless"]/exclusionTags</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/GeneDef[defName = "Ageless"]</xpath>
+			<value>
+				<exclusionTags>
+					<li>BS_AgingRate</li>
+				</exclusionTags>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/GeneDef[defName = "Ageless"]/exclusionTags</xpath>
+			<value>
+				<li>BS_AgingRate</li>
+			</value>
+		</match>
+	</Operation>
+
+  <Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThoughtDef[defName = "GotSomeLovin"]/nullifyingGenes</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThoughtDef[defName = "GotSomeLovin"]</xpath>
+			<value>
+				<nullifyingGenes>
+					<li>BS_PainNumb</li>
+				</nullifyingGenes>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThoughtDef[defName = "GotSomeLovin"]/nullifyingGenes</xpath>
+			<value>
+				<li>BS_PainNumb</li>
+			</value>
+		</match>
+	</Operation>
+
+
+	<!-- Beauty Genes -->
+	<!-- <Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/GeneDef[defName = "Beauty_VeryUgly"]/exclusionTags</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/GeneDef[defName = "Beauty_VeryUgly"]</xpath>
+			<value>
+				<exclusionTags>
+					<li>BS_VeryAlien</li>
+					<li>BS_SomeAlien</li>
+				</exclusionTags>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/GeneDef[defName = "Beauty_VeryUgly"]/exclusionTags</xpath>
+			<value>
+				<li>BS_VeryAlien</li>
+				<li>BS_SomeAlien</li>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/GeneDef[defName = "Beauty_Ugly"]/exclusionTags</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/GeneDef[defName = "Beauty_Ugly"]</xpath>
+			<value>
+				<exclusionTags>
+					<li>BS_VeryAlien</li>
+				</exclusionTags>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/GeneDef[defName = "Beauty_Ugly"]/exclusionTags</xpath>
+			<value>
+				<li>BS_VeryAlien</li>
+			</value>
+		</match>
+	</Operation> -->
+
+  
+</Patch>

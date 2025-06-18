@@ -1,0 +1,42 @@
+<?xml version="1.0" ?>
+<Defs>
+  <GeneDef ParentName="GeneTailBase">
+    <defName>BS_DemonTail</defName>
+    <label>dexterous demon tail</label>
+    <description>Carriers of this gene grow a powerful demonic-looking tail.</description>
+    <iconPath>BS_BodyAttachments/BS_DemonTaila_icon</iconPath>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
+    <selectionWeight>0.1</selectionWeight>
+    <capMods>
+      <li>
+        <capacity>Manipulation</capacity>
+        <offset>0.05</offset>
+      </li>
+    </capMods>
+
+    <renderNodeProperties Inherit="False">
+      <li>
+        <parentTagDef>Body</parentTagDef>
+        <texPath>BS_BodyAttachments/BS_DemonTaila</texPath>
+        <drawSize>(1.125,1.125)</drawSize>
+        <colorType>Skin</colorType>
+        <drawData>
+          <defaultData>
+            <layer>-2</layer>
+          </defaultData>
+          <dataNorth>
+            <offset>(0.0, 0, -0.0)</offset>
+            <layer>90</layer>
+          </dataNorth>
+          <dataSouth>
+            <offset>(-0.0, 0, -0.0)</offset>
+          </dataSouth>
+          <dataEast>
+            <offset>(-0.0, 0, -0.0)</offset>
+          </dataEast>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+</Defs>

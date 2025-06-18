@@ -1,0 +1,111 @@
+<Patch>
+
+  <!-- <Operation Class="PatchOperationAdd">
+		<xpath>Defs/HairDef[@Name="GhoulHairBase"]/styleTags</xpath>
+		<value>
+			<li>BS_Creepy</li>
+		</value>
+	</Operation> -->
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/GeneDef[defName="BS_PerfectMemory"]/forcedTraits</xpath>
+    <value>
+      <forcedTraits>
+        <li>
+          <def>PerfectMemory</def>
+        </li>
+      </forcedTraits>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/MutantDef[defName="Ghoul"]/disablesGenes</xpath>
+    <value>
+      <li>BS_Diet_Herbivore</li>
+      <li>BS_NoFood_Hemogenic</li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/MutantDef[defName="Ghoul"]/abilityWhitelist</xpath>
+    <value>
+      <li>BS_StickyAcidSpray</li>
+      <li>VU_Hermaphromorph</li> <!-- -_-;; -->
+      <li>BS_FoamSpray</li>
+      <li>BS_EjectPilot</li>
+      <li>BS_Incorporate_Abillity</li>
+      <li>BS_Mimic_Abillity</li>
+      <li>BS_StopMimic</li>
+      <li>BS_IntegrateGenes</li>
+      <li>BS_DisintegrateXenoGenes</li>
+      <li>BS_flying_jump</li>
+      <li MayRequire="RedMattis.Yokai">BS_NekoReanimate</li>
+      <li MayRequire="RedMattis.Yokai">BS_KitsuneFireball</li>
+      <li MayRequire="RedMattis.Yokai">BS_FireJump</li>
+      <li MayRequire="RedMattis.LamiasAndOtherSnakes">LoS_Spring</li>
+      <li MayRequire="RedMattis.LamiasAndOtherSnakes">LoS_Long_Spring</li>
+      <li MayRequire="RedMattis.LamiasAndOtherSnakes">BS_GorgonPetrify</li>
+      <li MayRequire="RedMattis.LamiasAndOtherSnakes">BS_GorgonPointBlankPetrify</li>
+      <li MayRequire="RedMattis.LamiasAndOtherSnakes">BS_SnekEngulf_New</li>
+      <li MayRequire="RedMattis.BSSlimes">BS_Regurgitate</li>
+      <li MayRequire="RedMattis.BSSlimes">BS_SlimeEngulf_New</li>
+      <li MayRequire="RedMattis.BSSlimes">BS_SlimeEngulfElixir_New</li>
+      <li MayRequire="RedMattis.BSSlimes">BS_SlimeJump</li>
+      <li MayRequire="RedMattis.BSSlimes">BS_SlimeFoamJump</li>
+      <li MayRequire="RedMattis.BSSlimes">BS_SlimeFireJump</li>
+      <li MayRequire="RedMattis.BSSlimes">BS_Slime_Acidspray</li>
+      <li MayRequire="RedMattis.BSSlimes">BS_SlimeGreater_Acidspray</li>
+      <li MayRequire="RedMattis.BSSlimes">BS_SlimeFireSpew</li>
+      <li MayRequire="RedMattis.BSSlimes">BS_SlimeCoagulate</li>
+    </value>
+  </Operation>
+
+	<!-- <Operation Class="PatchOperationAdd">
+    <xpath>Defs/HediffDef[defName="VoidTouched"]/stages/li/[not(statOffsets)]</xpath>
+    <value>
+      <statOffsets/>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/HediffDef[defName="VoidTouched"]/stages/li/statOffsets</xpath>
+    <value>
+      <BS_SoulPower>1</BS_SoulPower>
+    </value>
+  </Operation> -->
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/HediffDef[defName="VoidTouched"]/stages/li/statFactors</xpath>
+    <success>Always</success>
+    <value>
+      <BS_SoulPower>2</BS_SoulPower>
+    </value>
+  </Operation>
+
+      
+
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="BS_DarkSoulshard"]</xpath>
+    <value>
+      <costList Inherit="False">
+        <Shard>1</Shard>
+        <Bioferrite>5</Bioferrite>
+      </costList>
+      <recipeMaker>
+        <researchPrerequisite>BioferriteShaping</researchPrerequisite>
+        <displayPriority>0</displayPriority>
+        <skillRequirements>
+          <Crafting>4</Crafting>
+        </skillRequirements>
+        <recipeUsers Inherit="false">
+          <li>BioferriteShaper</li>
+        </recipeUsers>
+      </recipeMaker>
+      <genericMarketSellable>false</genericMarketSellable>
+    </value>
+  </Operation>
+
+  
+
+</Patch>

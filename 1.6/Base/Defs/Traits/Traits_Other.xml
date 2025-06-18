@@ -1,0 +1,71 @@
+<Defs>
+  <TraitDef>
+    <defName>Passioned_Learning</defName>
+    <commonality>1.0</commonality>
+    <degreeDatas>
+      <li>
+        <label>diligent student</label>
+        <description>{PAWN_nameDef} learns faster in skills they lack passion in.\n\n(This increase to no-passion learning will not show in the skill UI)</description> <!---->
+        <statOffsets>
+          <SM_Minimum_Learning_Speed>0.35</SM_Minimum_Learning_Speed>
+          <GlobalLearningFactor>0.15</GlobalLearningFactor>
+          
+        </statOffsets>
+      </li>
+    </degreeDatas>
+    <exclusionTags>
+      <li>Passioned_Learning</li>
+    </exclusionTags>
+  </TraitDef>
+  
+  <TraitDef>
+    <defName>Very_Passioned_Learning</defName>
+    <commonality>1.0</commonality>
+    <degreeDatas>
+      <li>
+        <label>very diligent student</label>
+        <description>{PAWN_nameDef} learns much faster in skills they lack passion in.\n\n(This increase to no-passion learning will not show in the skill UI)</description> <!---->
+        <statOffsets>
+          <SM_Minimum_Learning_Speed>0.65</SM_Minimum_Learning_Speed>
+          <GlobalLearningFactor>0.30</GlobalLearningFactor>
+        </statOffsets>
+      </li>
+    </degreeDatas>
+    <exclusionTags>
+      <li>Passioned_Learning</li>
+    </exclusionTags>
+  </TraitDef>
+  
+  <TraitDef>
+    <defName>BS_AnimalFriend</defName>
+    <commonality>0.5</commonality>
+    <degreeDatas>
+      <li>
+        <label>Animal Friend</label>
+        <description>There is something about {PAWN_nameDef} that makes predators not consider them prey</description> <!---->
+      </li>
+    </degreeDatas>
+  </TraitDef>
+
+  <TraitDef>
+		<defName>BS_AlcoholAddict</defName>
+		<commonality>0.0</commonality>
+		<degreeDatas>
+			<li>
+				<label>alcohol lover</label>
+				<description>[PAWN_nameDef] loves alcohol. [PAWN_pronoun] will never stop being addicted to it.</description>
+        <statOffsets>
+          <MentalBreakThreshold>0.10</MentalBreakThreshold>
+        </statOffsets>
+        <statFactors>
+          <JoyGainFactor>1.5</JoyGainFactor>
+        </statFactors>
+			</li>
+		</degreeDatas>
+		<conflictingTraits>
+			<li>DrugDesire</li>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">VTE_Lush</li>
+		</conflictingTraits>
+	</TraitDef>
+
+</Defs>

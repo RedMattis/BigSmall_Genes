@@ -1,0 +1,254 @@
+<?xml version="1.0" ?>
+<Defs>
+  <GeneDef Name="BS_BodyBase" Abstract="True">
+    <displayCategory>Cosmetic_Body</displayCategory>
+    <exclusionTags>
+      <li>AG_Bodies</li>
+      <li>Bodies</li>
+      <li>Body</li>
+      <li>BS_Body</li>
+    </exclusionTags>
+    <renderNodeProperties Inherit="False">
+      <li>
+        <parentTagDef>Body</parentTagDef>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+  <GeneDef ParentName="BS_BodyBase">
+    <defName>BS_BrokenTitanBody</defName>
+    <label>urb cyborg body</label>
+    <labelShortAdj>urb body</labelShortAdj>
+    <description>Carriers of this gene have a part-robotic body. Forces Hulk-body type.</description>
+    <exclusionTags>
+      <li>BodyType</li>
+    </exclusionTags>
+    <biostatCpx>1</biostatCpx>
+    <selectionWeight>0</selectionWeight>
+    <displayOrderInCategory>430</displayOrderInCategory>
+    <iconPath>GeneIcons/BS_UrbCyborgBody</iconPath>
+    <bodyType>Hulk</bodyType>
+    <fur>BS_BrokenTitanBody</fur>
+    <tattoosVisible>false</tattoosVisible>
+    <skinIsHairColor>false</skinIsHairColor>
+    <renderNodeProperties Inherit="False">
+      <li>
+        <parentTagDef>Body</parentTagDef>
+        <useSkinShader>true</useSkinShader>
+        <debugLabel>Fur</debugLabel>
+        <nodeClass>BigAndSmall.PawnRenderNode_FurSkinClr</nodeClass>
+        <workerClass>PawnRenderNodeWorker_Fur</workerClass>
+        <baseLayer>5</baseLayer>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <colorType>Skin</colorType>
+        <!-- <colorType>Skin</colorType> -->
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+  <GeneDef ParentName="BS_BodyBase">
+    <defName>BS_OgreBody</defName>
+    <label>ogre body</label>
+    <labelShortAdj>ogre body</labelShortAdj>
+    <description>Carriers of this gene have an obese ogre body.</description>
+    <exclusionTags>
+      <li>BodyType</li>
+    </exclusionTags>
+    <biostatCpx>1</biostatCpx>
+    <selectionWeight>0</selectionWeight>
+    <displayOrderInCategory>430</displayOrderInCategory>
+    <iconPath>GeneIcons/BS_OgreBody</iconPath>
+    <bodyType>Fat</bodyType>
+    <fur>BS_OgreBody</fur>
+    <tattoosVisible>false</tattoosVisible>
+    <skinIsHairColor>false</skinIsHairColor>
+    <renderNodeProperties Inherit="False">
+      <li>
+        <parentTagDef>Body</parentTagDef>
+        <useSkinShader>true</useSkinShader>
+        <debugLabel>Fur</debugLabel>
+        <nodeClass>BigAndSmall.PawnRenderNode_FurSkinClr</nodeClass>
+        <workerClass>PawnRenderNodeWorker_Fur</workerClass>
+        <baseLayer>5</baseLayer>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <colorType>Skin</colorType>
+        <!-- <colorType>Skin</colorType> -->
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+  <GeneDef ParentName="BS_BodyBase">
+    <defName>BS_MimicBody</defName>
+    <label>glutton horror body</label>
+    <description>Carriers of this gene have a body like a terrifying demon of gluttony.</description>
+    
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
+    <selectionWeight>1</selectionWeight>
+    <displayOrderInCategory>430</displayOrderInCategory>
+    <iconPath>BS_Bodies/Mimic/mimic_hulk_south</iconPath>
+    <fur>BS_MimicBody</fur>
+    <tattoosVisible>false</tattoosVisible>
+    <skinIsHairColor>false</skinIsHairColor>
+    <exclusionTags>
+      <li>BS_BodySwap</li>
+    </exclusionTags>
+    <statOffsets>
+      <MaxNutrition>2</MaxNutrition>
+    </statOffsets>
+    <modExtensions>
+
+      <li Class="BigAndSmall.PawnExtension">
+        <thingDefSwap>BS_GluttonRace</thingDefSwap>
+        <forceThingDefSwap>false</forceThingDefSwap>
+      </li>
+    </modExtensions>
+    <renderNodeProperties Inherit="False">
+      <li>
+        <parentTagDef>Body</parentTagDef>
+        <useSkinShader>true</useSkinShader>
+        <debugLabel>Fur</debugLabel>
+        <nodeClass>BigAndSmall.PawnRenderNode_FurSkinClr</nodeClass>
+        <workerClass>PawnRenderNodeWorker_Fur</workerClass>
+        <baseLayer>5</baseLayer>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <colorType>Skin</colorType>
+        <!-- <colorType>Skin</colorType> -->
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+
+  <GeneDef Name="BS_RotStage" Abstract="True">
+    <randomChosen>true</randomChosen>
+  </GeneDef>
+
+  <!-- <GeneDef ParentName="BS_RotStage">
+    <defName>BS_RottenBody</defName>
+    <label>rotted body</label>
+    <displayCategory>Cosmetic_Body</displayCategory>
+    <description>Carriers of this gene have a head and body with apperance like a rotted corpse.</description>
+    <biostatCpx>0</biostatCpx>
+    <biostatMet>0</biostatMet>
+    <selectionWeight>1</selectionWeight>
+    <displayOrderInCategory>427</displayOrderInCategory>
+    <iconPath>GeneIcons/VU_Skull</iconPath>
+    <exclusionTags>
+      <li>BS_RotState</li>
+    </exclusionTags>
+    <modExtensions>
+      <li Class="BigAndSmall.PawnExtension">
+        <forcedRotDrawMode>Rotting</forcedRotDrawMode>
+      </li>
+    </modExtensions>
+  </GeneDef> -->
+
+  <GeneDef ParentName="BS_RotStage">
+    <defName>BS_DessicatedBody</defName>
+    <label>skeletal body</label>
+    <displayCategory>Cosmetic_Body</displayCategory>
+    <description>Carriers of this gene have a head and body with appearance like a desiccated corpse.</description>
+    <biostatCpx>0</biostatCpx>
+    <biostatMet>0</biostatMet>
+    <selectionWeight>0.5</selectionWeight>
+    <displayOrderInCategory>426</displayOrderInCategory>
+    <iconPath>GeneIcons/BS_Skeleton</iconPath>
+    <exclusionTags>
+      <li>BS_RotState</li>
+    </exclusionTags>
+    <modExtensions>
+      <li Class="BigAndSmall.PawnExtension">
+        <forcedRotDrawMode>Dessicated</forcedRotDrawMode>
+      </li>
+    </modExtensions>
+  </GeneDef>
+
+  <GeneDef ParentName="BS_RotStage">
+    <defName>BS_DessicatedBodyWithHair</defName>
+    <label>skeletal + hair</label>
+    <displayCategory>Cosmetic_Body</displayCategory>
+    <description>Carriers of this gene have a head and body with appearance like a desiccated corpse. They retain their hair.</description>
+    <biostatCpx>0</biostatCpx>
+    <biostatMet>0</biostatMet>
+    <selectionWeight>0.5</selectionWeight>
+    <displayOrderInCategory>426</displayOrderInCategory>
+    <iconPath>GeneIcons/BS_Skeleton</iconPath>
+    <exclusionTags>
+      <li>BS_RotState</li>
+    </exclusionTags>
+    <renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_Hair</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <rotDrawMode>Dessicated</rotDrawMode>
+        <colorType>Hair</colorType>
+        <skipFlag>Hair</skipFlag>
+        <baseLayer>62</baseLayer>
+        <parentTagDef>Head</parentTagDef>
+			</li>
+		</renderNodeProperties>
+    <modExtensions>
+      <li Class="BigAndSmall.PawnExtension">
+        <forcedRotDrawMode>Dessicated</forcedRotDrawMode>
+      </li>
+    </modExtensions>
+  </GeneDef>
+
+  <GeneDef ParentName="BS_RotStage">
+    <defName>BS_DessicatedBodyWithGreyHair</defName>
+    <label>skeletal + bleached hair</label>
+    <displayCategory>Cosmetic_Body</displayCategory>
+    <description>Carriers of this gene have a head and body with appearance like a desiccated corpse. They have matted hair.</description>
+    <biostatCpx>0</biostatCpx>
+    <biostatMet>0</biostatMet>
+    <selectionWeight>0.5</selectionWeight>
+    <displayOrderInCategory>426</displayOrderInCategory>
+    <iconPath>GeneIcons/VU_Skull</iconPath>
+    <exclusionTags>
+      <li>BS_RotState</li>
+    </exclusionTags>
+    <renderNodeProperties>
+			<li Class="BigAndSmall.PawnRenderNodeProps_HSVHair">
+        <saturation>0.3</saturation>
+        <valueGradientRemap>
+          <points>
+            <li>(0, 0)</li>
+            <li>(0.1, 0.05)</li>
+            <li>(0.2, 0.2)</li>
+            <li>(0.3, 0.5)</li>
+            <li>(0.75, 0.85)</li>
+            <li>(1.0, 1.0)</li>
+          </points>
+        </valueGradientRemap>
+				<nodeClass>BigAndSmall.PawnRenderNode_HSVHair</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <rotDrawMode>Dessicated</rotDrawMode>
+        <colorType>Hair</colorType>
+        <skipFlag>Hair</skipFlag>
+        <baseLayer>62</baseLayer>
+        <parentTagDef>Head</parentTagDef>
+			</li>
+		</renderNodeProperties>
+    <modExtensions>
+      <li Class="BigAndSmall.PawnExtension">
+        <forcedRotDrawMode>Dessicated</forcedRotDrawMode>
+      </li>
+    </modExtensions>
+  </GeneDef>
+
+  <!-- <GeneDef ParentName="BS_RotStage">
+    <defName>BS_FreshBody</defName>
+    <label>life-like body</label>
+    <displayCategory>Cosmetic_Body</displayCategory>
+    <description>Carriers of this gene have a head and body which always appears lifelike even should the insides are actually rotted or mostly dessicated.</description>
+    <biostatCpx>0</biostatCpx>
+    <biostatMet>0</biostatMet>
+    <selectionWeight>0.1</selectionWeight>
+    <displayOrderInCategory>425</displayOrderInCategory>
+    <iconPath>GeneIcons/VU_Skull</iconPath>
+    <exclusionTags>
+      <li>BS_RotState</li>
+    </exclusionTags>
+    <modExtensions>
+      <li Class="BigAndSmall.PawnExtension">
+        <forcedRotDrawMode>Fresh</forcedRotDrawMode>
+      </li>
+    </modExtensions>
+  </GeneDef> -->
+</Defs>

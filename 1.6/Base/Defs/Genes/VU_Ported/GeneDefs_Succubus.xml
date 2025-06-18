@@ -1,0 +1,100 @@
+<Defs>
+  
+
+
+  <GeneDef>
+    <defName>VU_SuccubusBloodFeeder</defName>
+    <label>bloodfeeder (demon)</label>
+    <description>Carriers of this gene have small retractable fangs and an organ on the roof of the mouth which can extract hemogen from fresh warm blood. They can bite an unresisting person, suck the blood, and gain hemogen directly.\nThe carriers of thise gene seem prone to biting their lovers.</description>
+    <iconPath>UI/Icons/Genes/Gene_Bloodfeeder</iconPath>
+    <geneClass>Gene_Bloodfeeder</geneClass>
+    <prerequisite>Hemogenic</prerequisite>
+    <displayCategory>Hemogen</displayCategory>
+    <deathHistoryEvent>BloodfeederDied</deathHistoryEvent>
+    <abilities>
+      <li>Bloodfeed</li>
+    </abilities>
+    <descriptionHyperlinks>
+      <AbilityDef>Bloodfeed</AbilityDef>
+    </descriptionHyperlinks>
+    <biostatMet>-1</biostatMet>
+    <minAgeActive>3</minAgeActive>
+    <symbolPack>
+      <wholeNameSymbols>
+        <li><symbol>bloodfeeder</symbol></li>
+      </wholeNameSymbols>
+      <prefixSymbols>
+        <li><symbol>hemo</symbol></li>
+        <li><symbol>blood</symbol></li>
+        <li><symbol>vamp</symbol></li>
+        <li><symbol>fang</symbol></li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li><symbol>fang</symbol></li>
+        <li><symbol>eater</symbol></li>
+        <li><symbol>ubus</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
+    <canGenerateInGeneSet>false</canGenerateInGeneSet>
+    <selectionWeight>0</selectionWeight>
+  </GeneDef>
+
+  <GeneDef ParentName="LibidoBase">
+    <defName>VU_Libido_Succubus</defName>
+    <label>very high libido</label>
+    <description>Carriers of this gene take almost every chance to engage in lovin'.</description>
+    <customEffectDescriptions>
+      <li>Greatly increases the chance of lovin'.</li>
+    </customEffectDescriptions>
+    <iconPath>GeneIcons/VU_VeryHighLibido</iconPath>
+    <displayOrderInCategory>9</displayOrderInCategory>
+    <lovinMTBFactor>0.20</lovinMTBFactor>
+    <abilities>
+			<li MayRequire="vanillaracesexpanded.highmate">VRE_InitiateLovin</li>
+		</abilities>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>VU_LethalLover</defName>
+    <label>parasitic bond</label>
+    <description>Carriers of this gene psychically bond with their lovers in a parasitic manner. Their lovers will get devastated should the carrier of this gene die.</description>
+    <iconPath>GeneIcons/VU_LethalLover</iconPath>
+    <displayCategory>Psychic</displayCategory>
+    <displayOrderInCategory>0</displayOrderInCategory>
+    <biostatCpx>2</biostatCpx>
+    <biostatMet>-2</biostatMet>
+    <hediffGiversCannotGive>
+      <li MayRequire="vanillaracesexpanded.highmate">VRE_PsychicBondBloodlust</li>
+    </hediffGiversCannotGive>
+    <exclusionTags>
+      <li>PsychicBonding</li>
+    </exclusionTags>
+    <forcedTraits>
+      <li>
+        <def>Bloodlust</def>
+      </li>
+    </forcedTraits>
+    <abilities>
+      <li>VU_CutBond</li>
+    </abilities>
+    <descriptionHyperlinks>
+      <AbilityDef>VU_CutBond</AbilityDef>
+    </descriptionHyperlinks>
+    <aggroMentalBreakSelectionChanceFactor>999</aggroMentalBreakSelectionChanceFactor>
+    
+    <modExtensions>
+      <li Class="BigAndSmall.GenePrerequisites">
+        <prerequisiteSets>
+          <li>
+            <type>AnyOf</type>
+            <prerequisites>
+              <li>PsychicBonding</li>
+            </prerequisites>
+          </li>
+        </prerequisiteSets>
+      </li>
+			
+		</modExtensions>
+  </GeneDef>
+
+</Defs>

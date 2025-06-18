@@ -1,0 +1,49 @@
+<Defs>
+
+  <AlphaGenes.WretchBlacklistDef>
+		<defName>BS_WretchBlacklistDef_Various</defName>
+		<blackListedGenes>							
+			<li>BS_Damaged_Genes</li>
+      <li>BS_Corrupted</li>
+      <li>BS_Xenolocked</li>
+      <li>TitanFrame</li>
+
+      <li>BS_Pilotable</li>
+      <li>BS_PilotAssistible</li>
+      <li>BS_PilotRequired</li>
+      <li>BS_PilotableSameSize</li>
+
+      <!-- Block Android Genes...-->
+      <li MayRequire="vanillaracesexpanded.android">BS_SmallFrame_Android</li>
+      <li MayRequire="vanillaracesexpanded.android">BS_TinyFrame_Android</li>
+      <li MayRequire="vanillaracesexpanded.android">BS_TitanFrame_Android</li>
+      <li MayRequire="vanillaracesexpanded.android">BS_BigFrame_Android</li>
+      <li MayRequire="vanillaracesexpanded.android">BS_GiantFrame_Android</li>
+
+      <li MayRequire="vanillaracesexpanded.android">BS_MinTemp_HugeDecrease_Android</li>
+      <li MayRequire="vanillaracesexpanded.android">BS_MaxTemp_HugeIncrease_Android</li>
+      <li MayRequire="vanillaracesexpanded.android">BS_FireImmunity_Android</li>
+
+      <li MayRequire="vanillaracesexpanded.android">BS_RoboticResilienceLesser</li>
+      <li MayRequire="vanillaracesexpanded.android">BS_RoboticResilience</li>
+      <li MayRequire="vanillaracesexpanded.android">BS_AndroidEVA_Gene</li>
+      <li MayRequire="vanillaracesexpanded.android">BS_UnarmedOnly_Android</li>
+      <li MayRequire="vanillaracesexpanded.android">BS_Unarmed_Strong_Android</li>
+      <li MayRequire="vanillaracesexpanded.android">BS_Unarmed_VeryStrong_Android</li>
+
+      <li MayRequire="vanillaracesexpanded.android">BS_Pilotable_Android</li>
+      <li MayRequire="vanillaracesexpanded.android">BS_PilotAssistible_Android</li>
+      <li MayRequire="vanillaracesexpanded.android">BS_PilotableSameSize_Android</li>
+
+      <!--Block nonsense from the Vampire mod.-->
+      <li MayRequire="redmattis.undead">VU_Disguised_Succubus</li>
+      <li MayRequire="redmattis.undead">VU_Involuntary_Werewolf</li>
+      <li MayRequire="redmattis.undead">VU_Disguised_Succubus</li>
+      <li MayRequire="redmattis.undead">VU_Stage_DraculSpawn</li>
+      <li MayRequire="redmattis.undead">VU_Stage_DraculNeonate</li>
+      <li MayRequire="redmattis.undead">VU_Stage_DraculMature</li>
+      <li MayRequire="redmattis.undead">VU_Stage_DraculProgenitor</li>
+		</blackListedGenes>							
+	</AlphaGenes.WretchBlacklistDef>
+
+</Defs>
