@@ -62,7 +62,7 @@
     </apparelRequired>
 		<apparelColor>(140,170,255)</apparelColor>
 		<ignoreIdeoApparelColors>true</ignoreIdeoApparelColors>
-		<favoriteColor>(140,170,255)</favoriteColor>
+		<!-- <favoriteColor>(140,170,255)</favoriteColor> -->
 		<!-- <forcedHair></forcedHair> -->
 		<forcedHairColor>RGBA(1,107,183,255)</forcedHairColor>
 		<skinColorOverride>RGBA(62,168,244,255)</skinColorOverride>
