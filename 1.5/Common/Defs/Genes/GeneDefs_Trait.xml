@@ -154,6 +154,7 @@
     <description>Carriers of this gene have a serious psychological need for alcohol\n\nCan be combined with alcohol dependency in which case the carrier will have both an addiction and a dependency.</description>
     <iconPath>GeneIcons/BS_BeerAddict</iconPath>
     <displayCategory>Drugs</displayCategory>
+    <minAgeActive>13</minAgeActive>
     <forcedTraits>
       <li>
         <def>BS_AlcoholAddict</def>
