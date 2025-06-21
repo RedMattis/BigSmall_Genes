@@ -105,10 +105,10 @@
   </GeneDef>
   <GeneDef ParentName="LoS_SnakeTailBase">
     <defName>LoS_MarlithBody</defName>
-    <label>Marlith</label>
+    <label>Marilith</label>
     <description>Carriers of this gene have a 3 pairs of arms and a large snake tail instead regular human legs.</description>
     <customEffectDescriptions>
-      <li>Changes the pawn to the marlith race.</li>
+      <li>Changes the pawn to the marilith race.</li>
       <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">Reduces the movement speed penalty when traversing difficult terrain</li>
     </customEffectDescriptions>
     <iconPath>GeneIcons/BS_Marlith</iconPath>
