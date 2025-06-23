@@ -16,7 +16,7 @@
 
   </GeneDef>
 
-  <!-- Really old gene is was missing the prefix... -->
+  <!-- Really old gene. That is why it is missing the prefix... -->
   <GeneDef>
     <defName>Undergrounder</defName>
     <label>Undergrounder</label>

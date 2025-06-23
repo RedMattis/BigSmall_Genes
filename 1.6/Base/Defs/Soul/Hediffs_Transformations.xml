@@ -80,7 +80,7 @@
           <li>(250, 238, 197)</li>
         </skinColorOverride>
       </li>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="AnimalBehaviours.HediffCompProperties_Floating"/>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VEF.AnimalBehaviours.HediffCompProperties_Floating"/>
       <li Class="BigAndSmall.CompProperties_DrainResource">
         <compClass>BigAndSmall.Comp_DrainsSoulEnergy</compClass>
         <ticksBetweenDrain>60</ticksBetweenDrain>
@@ -168,7 +168,7 @@
     </abilities>
     <aptitudes> <Melee>4</Melee> </aptitudes>
     <comps>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="AnimalBehaviours.HediffCompProperties_Floating"/>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VEF.AnimalBehaviours.HediffCompProperties_Floating"/>
       <li Class="BigAndSmall.CompProperties_ColorAndFur">
         <hairColorOverride>
           <li>(125,12,26)</li>
@@ -440,7 +440,7 @@
         <disableFacialAnims>true</disableFacialAnims>
         <disableBeards>true</disableBeards>
       </li>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="AnimalBehaviours.HediffCompProperties_Floating"/>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VEF.AnimalBehaviours.HediffCompProperties_Floating"/>
       <li Class="HediffCompProperties_VerbGiver">
         <tools>
           <li>

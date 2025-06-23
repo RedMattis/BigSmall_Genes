@@ -19,7 +19,7 @@
       </prefixSymbols>
     </symbolPack>
     <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VEF.Genes.GeneExtension">
 				<backgroundPathEndogenes>GeneIcons/BS_BackAndroidChip</backgroundPathEndogenes>
 				<backgroundPathXenogenes>GeneIcons/BS_BackAndroidChip</backgroundPathXenogenes>
 			</li>
@@ -57,7 +57,7 @@
       </prefixSymbols>
     </symbolPack>
     <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VEF.Genes.GeneExtension">
 				<backgroundPathEndogenes>GeneIcons/BS_BackAndroidChip</backgroundPathEndogenes>
 				<backgroundPathXenogenes>GeneIcons/BS_BackAndroidChip</backgroundPathXenogenes>
 			</li>
@@ -97,7 +97,7 @@
       <li>FireDamage</li>
     </exclusionTags>
     <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VEF.Genes.GeneExtension">
 				<backgroundPathEndogenes>GeneIcons/BS_BackAndroidChip</backgroundPathEndogenes>
 				<backgroundPathXenogenes>GeneIcons/BS_BackAndroidChip</backgroundPathXenogenes>
 			</li>

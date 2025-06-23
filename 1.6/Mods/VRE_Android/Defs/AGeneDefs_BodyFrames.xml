@@ -4,7 +4,7 @@
     <biostatCpx>0</biostatCpx>
     <biostatMet>0</biostatMet>
     <modExtensions Inherit="False">
-      <li Class="VanillaGenesExpanded.GeneExtension">
+      <li Class="VEF.Genes.GeneExtension">
         <backgroundPathXenogenes>GeneIcons/BS_BackAndroidChip</backgroundPathXenogenes>
         <backgroundPathEndogenes>GeneIcons/BS_BackAndroidChip</backgroundPathEndogenes>
       </li>

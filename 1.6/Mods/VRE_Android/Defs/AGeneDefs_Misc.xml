@@ -29,7 +29,7 @@
               <li>universum.vacuum_suffocation_protection</li>
           </allowed_utilities>
       </li>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VEF.Genes.GeneExtension">
 				<backgroundPathEndogenes>GeneIcons/BS_BackAndroidChip</backgroundPathEndogenes>
 				<backgroundPathXenogenes>GeneIcons/BS_BackAndroidChip</backgroundPathXenogenes>
 			</li>
@@ -63,7 +63,7 @@
               <li>universum.vacuum_suffocation_protection</li>
           </allowed_utilities>
       </li>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VEF.Genes.GeneExtension">
 				<backgroundPathEndogenes>GeneIcons/BS_BackAndroidChip</backgroundPathEndogenes>
 				<backgroundPathXenogenes>GeneIcons/BS_BackAndroidChip</backgroundPathXenogenes>
 			</li>
@@ -94,7 +94,7 @@
               <li>universum.vacuum_suffocation_protection</li>
           </allowed_utilities>
       </li>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VEF.Genes.GeneExtension">
 				<backgroundPathEndogenes>GeneIcons/BS_BackAndroidChip</backgroundPathEndogenes>
 				<backgroundPathXenogenes>GeneIcons/BS_BackAndroidChip</backgroundPathXenogenes>
 			</li>
@@ -114,7 +114,7 @@
       <li>BS_Pacifism</li>
     </exclusionTags>
     <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VEF.Genes.GeneExtension">
 				<backgroundPathEndogenes>GeneIcons/BS_BackAndroidChip</backgroundPathEndogenes>
 				<backgroundPathXenogenes>GeneIcons/BS_BackAndroidChip</backgroundPathXenogenes>
 			</li>
@@ -137,7 +137,7 @@
     <biostatMet>-1</biostatMet>
     <prerequisite>BS_UnarmedOnly_Android</prerequisite>
     <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VEF.Genes.GeneExtension">
 				<backgroundPathEndogenes>GeneIcons/BS_BackAndroidChip</backgroundPathEndogenes>
 				<backgroundPathXenogenes>GeneIcons/BS_BackAndroidChip</backgroundPathXenogenes>
 			</li>
@@ -160,7 +160,7 @@
     <biostatMet>-2</biostatMet>
     <prerequisite>BS_UnarmedOnly_Android</prerequisite>
     <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VEF.Genes.GeneExtension">
 				<backgroundPathEndogenes>GeneIcons/BS_BackAndroidChip</backgroundPathEndogenes>
 				<backgroundPathXenogenes>GeneIcons/BS_BackAndroidChip</backgroundPathXenogenes>
 			</li>
@@ -188,7 +188,7 @@
 					</li>
 				</applyBodyHediff>
 			</li>
-      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VEF.Genes.GeneExtension">
 				<backgroundPathEndogenes>GeneIcons/BS_BackAndroidChip</backgroundPathEndogenes>
 				<backgroundPathXenogenes>GeneIcons/BS_BackAndroidChip</backgroundPathXenogenes>
 			</li>
@@ -216,7 +216,7 @@
 					</li>
 				</applyBodyHediff>
 			</li>
-      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VEF.Genes.GeneExtension">
 				<backgroundPathEndogenes>GeneIcons/BS_BackAndroidChip</backgroundPathEndogenes>
 				<backgroundPathXenogenes>GeneIcons/BS_BackAndroidChip</backgroundPathXenogenes>
 			</li>
@@ -245,7 +245,7 @@
 					</li>
 				</applyBodyHediff>
 			</li>
-      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VEF.Genes.GeneExtension">
 				<backgroundPathEndogenes>GeneIcons/BS_BackAndroidChip</backgroundPathEndogenes>
 				<backgroundPathXenogenes>GeneIcons/BS_BackAndroidChip</backgroundPathXenogenes>
 			</li>
@@ -274,7 +274,7 @@
 					</li>
 				</applyBodyHediff>
 			</li>
-      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VEF.Genes.GeneExtension">
 				<backgroundPathEndogenes>GeneIcons/BS_BackAndroidChip</backgroundPathEndogenes>
 				<backgroundPathXenogenes>GeneIcons/BS_BackAndroidChip</backgroundPathXenogenes>
 			</li>
