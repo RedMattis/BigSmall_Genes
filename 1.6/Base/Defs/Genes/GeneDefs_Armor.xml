@@ -24,6 +24,11 @@
 		<modExtensions>
 			<li Class="BigAndSmall.PawnExtension">
 				<apparelRestrictions>
+          <tags>
+            <allowlist>
+              <li>Warcasket</li>
+            </allowlist>
+          </tags>
 					<noClothes>true</noClothes>
 					<exceptNudistFriendly>true</exceptNudistFriendly>
 					<thingDefs>
@@ -60,6 +65,11 @@
 				<apparelRestrictions>
 					<noArmor>true</noArmor>
 					<exceptNudistFriendly>true</exceptNudistFriendly>
+          <tags>
+            <allowlist>
+              <li>Warcasket</li>
+            </allowlist>
+          </tags>
 					<thingDefs>
 						<allowlist>
 							<li MayRequire="Ludeon.Rimworld.Royalty">Apparel_CrownStellic</li>

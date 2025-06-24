@@ -3,7 +3,6 @@
     <graphicData> <graphicClass>Graphic_Single</graphicClass> </graphicData>
     <stackLimit>10</stackLimit>
     <statBases>
-      <MarketValue>1000</MarketValue>
       <WorkToMake>2000</WorkToMake>
     </statBases>
     <thingCategories>
