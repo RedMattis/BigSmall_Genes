@@ -440,7 +440,6 @@
         <disableFacialAnims>true</disableFacialAnims>
         <disableBeards>true</disableBeards>
       </li>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VEF.AnimalBehaviours.HediffCompProperties_Floating"/>
       <li Class="HediffCompProperties_VerbGiver">
         <tools>
           <li>
