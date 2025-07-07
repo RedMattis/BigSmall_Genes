@@ -25,7 +25,6 @@
         <def>Gigantism</def>
       </li>
     </forcedTraits>
-    <marketValueFactor>1.2</marketValueFactor>
     <selectionWeight>1.5</selectionWeight>
   </GeneDef>
   
@@ -42,7 +41,6 @@
         <def>Large</def>
       </li>
     </forcedTraits>
-    <marketValueFactor>1.1</marketValueFactor>
   </GeneDef>
   
   <GeneDef ParentName="BodyMultiplierBase">
@@ -61,7 +59,7 @@
     <exclusionTags>
       <li>Tiny</li>
     </exclusionTags>
-    <marketValueFactor>0.9</marketValueFactor>
+    <marketValueFactor>0.8</marketValueFactor>
   </GeneDef>
   
   <GeneDef ParentName="BodyMultiplierBase">
@@ -80,7 +78,7 @@
     <exclusionTags>
       <li>Tiny</li>
     </exclusionTags>
-    <marketValueFactor>0.8</marketValueFactor>
+    <marketValueFactor>0.7</marketValueFactor>
     <selectionWeight>1.5</selectionWeight>
   </GeneDef>
   

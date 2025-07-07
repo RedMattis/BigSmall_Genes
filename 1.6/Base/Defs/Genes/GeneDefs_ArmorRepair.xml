@@ -24,6 +24,7 @@
     <biostatCpx>2</biostatCpx>
     <selectionWeight>1</selectionWeight>
     <biostatArc>2</biostatArc>
+    <marketValueFactor>0.5</marketValueFactor>
     <exclusionTags>
       <li>BS_SelfRepairingApparel</li>
     </exclusionTags>

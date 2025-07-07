@@ -5,7 +5,6 @@
     <description>Carriers of this gene can spit sticky corrosive acid over a conical area.</description>
     <iconPath>UI/Icons/Genes/Gene_AcidSpray</iconPath>
     <displayCategory>Ability</displayCategory>
-    <marketValueFactor>1.5</marketValueFactor>
     <abilities>
       <li>BS_StickyAcidSpray</li>
     </abilities>

@@ -155,6 +155,5 @@
       <SM_RaidWealthMultiplier>0.25</SM_RaidWealthMultiplier>
     </statFactors>
     <selectionWeight>0.5</selectionWeight>
-    <marketValueFactor>2.0</marketValueFactor>
   </GeneDef>
 </Defs>

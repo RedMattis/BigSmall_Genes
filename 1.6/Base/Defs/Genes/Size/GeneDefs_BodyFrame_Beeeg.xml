@@ -53,7 +53,6 @@
       <VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">2.5</VEF_MassCarryCapacity>
     </statFactors>
     <selectionWeight>1</selectionWeight>
-    <marketValueFactor>2</marketValueFactor>
     <forcedTraits>
       <li>
         <def>BS_Giant</def>
@@ -84,7 +83,6 @@
       <VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">75</VEF_MassCarryCapacity>
     </statOffsets>
     <selectionWeight>1</selectionWeight>
-    <marketValueFactor>1.5</marketValueFactor>
   </GeneDef>
 
   <GeneDef ParentName="BodyFrameBase">
@@ -134,7 +132,6 @@
       <SM_RaidWealthOffset>1500</SM_RaidWealthOffset>
     </statOffsets>
     <selectionWeight>0.1</selectionWeight>
-    <marketValueFactor>1.5</marketValueFactor>
   </GeneDef>
 
   <GeneDef ParentName="BodyFrameBase">
@@ -172,7 +169,6 @@
       </li>
     </conditionalStatAffecters>
     <selectionWeight>1</selectionWeight>
-    <marketValueFactor>1.5</marketValueFactor>
     <forcedTraits>
       <li>
         <def>BS_Giant</def>
@@ -218,7 +214,6 @@
       </li>
     </conditionalStatAffecters>
     <selectionWeight>1</selectionWeight>
-    <marketValueFactor>2.0</marketValueFactor>
     <forcedTraits>
       <li>
         <def>BS_Giant</def>
@@ -264,6 +259,7 @@
       </li>
     </conditionalStatAffecters>
     <biostatArc>3</biostatArc>
+    <marketValueFactor>0.35</marketValueFactor>
     <canGenerateInGeneSet>true</canGenerateInGeneSet>
     <displayCategory>Archite</displayCategory>
     <selectionWeight>1.5</selectionWeight>

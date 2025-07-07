@@ -35,6 +35,7 @@
     <displayCategory>BS_Deathless</displayCategory>
     <biostatMet>0</biostatMet>
     <biostatArc>2</biostatArc>
+    <marketValueFactor>0.5</marketValueFactor>
     <biostatCpx>6</biostatCpx>
     <geneClass>BigAndSmall.ReturningSoul</geneClass>
     <exclusionTags><li>ReturningSoul</li></exclusionTags>
@@ -55,6 +56,7 @@
     <displayCategory>BS_Deathless</displayCategory>
     <biostatMet>0</biostatMet>
     <biostatArc>3</biostatArc>
+    <marketValueFactor>0.35</marketValueFactor>
     <biostatCpx>12</biostatCpx>
     <geneClass>BigAndSmall.ReturningSoul</geneClass>
     <exclusionTags><li>ReturningSoul</li></exclusionTags>

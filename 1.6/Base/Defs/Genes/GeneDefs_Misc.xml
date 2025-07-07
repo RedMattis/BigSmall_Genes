@@ -232,6 +232,7 @@
     <biostatMet>-9</biostatMet>
     <biostatCpx>10</biostatCpx>
     <biostatArc>3</biostatArc>
+    <marketValueFactor>0.35</marketValueFactor>
 
     <exclusionTags>
       <li>Diet</li>
@@ -450,10 +451,10 @@
     <description>Carriers of this gene have special archites in their cells that facilitate and optimize metabolism. This particular variant is tailored for costly archite-powered Jotun.</description>
     <iconPath>GeneIcons/BS_JotunMetabolism</iconPath>
     <displayCategory>Archite</displayCategory>
-    <marketValueFactor>2</marketValueFactor>
     <biostatCpx>8</biostatCpx>
     <biostatMet>9</biostatMet>
     <biostatArc>3</biostatArc>
+    <marketValueFactor>0.35</marketValueFactor>
     <exclusionTags>
       <li>BS_Metabolism_Gene</li>
     </exclusionTags>
@@ -484,7 +485,6 @@
     <description>Carriers of this gene have something deathlike about them that causes zombies and the like to ignore them.\n\nSome obviously undead creatures lack this property, while some living entities possess it.</description>
     <iconPath>GeneIcons/BS_Zombie</iconPath>
     <displayCategory>Archite</displayCategory>
-    <marketValueFactor>2</marketValueFactor>
     <biostatCpx>0</biostatCpx>
     <biostatMet>0</biostatMet>
     <biostatArc>1</biostatArc>

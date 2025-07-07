@@ -6,7 +6,6 @@
     <description>Carriers of this gene heal from wounds at an alarming rate at night, but struggle to heal during the day, especially if exposed to sunlight.</description>
     <iconPath>GeneIcons/VU_DarknessHealing</iconPath>
     <displayOrderInCategory>50</displayOrderInCategory>
-    <marketValueFactor>2.0</marketValueFactor>
     <statFactors>
       <InjuryHealingFactor>2</InjuryHealingFactor>
     </statFactors>
@@ -33,7 +32,6 @@
     <description>Carriers of this gene heal at an unbeliavable speed under the veil of darkness, but struggle to heal during the day, especially if exposed to sunlight.</description>
     <iconPath>GeneIcons/VU_DarknessHealing_Fast</iconPath>
     <displayOrderInCategory>50</displayOrderInCategory>
-    <marketValueFactor>2.0</marketValueFactor>
     <!-- <statFactors> -->
     <!-- <InjuryHealingFactor>1</InjuryHealingFactor> -->
     <!-- </statFactors> -->

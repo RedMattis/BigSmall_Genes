@@ -223,6 +223,7 @@
 		<biostatCpx>1</biostatCpx>
 		<biostatMet>-4</biostatMet>
 		<biostatArc>2</biostatArc>
+    <marketValueFactor>0.5</marketValueFactor>
 		<symbolPack>
 			<prefixSymbols>
 				<li>

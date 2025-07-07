@@ -42,7 +42,6 @@
     <prerequisite>Hemogenic</prerequisite>
     <iconPath>UI/Icons/Genes/Gene_Coagulate</iconPath>
     <displayCategory>Ability</displayCategory>
-    <marketValueFactor>2.0</marketValueFactor>
     <abilities>
       <li>BS_Regenerate</li>
     </abilities>
@@ -52,6 +51,7 @@
     <biostatMet>-3</biostatMet>
     <selectionWeight>1</selectionWeight>
     <biostatArc>3</biostatArc>
+    <marketValueFactor>0.35</marketValueFactor>
   </GeneDef>
 
   <GeneDef>

@@ -63,7 +63,8 @@
     <canGenerateInGeneSet>true</canGenerateInGeneSet>
     <biostatMet>0</biostatMet>
     <minAgeActive>3</minAgeActive>
-    <biostatArc>5</biostatArc>
+    <biostatArc>3</biostatArc>
+    <marketValueFactor>0.35</marketValueFactor>
     <biostatCpx>13</biostatCpx>
     <abilities Inherit="False">
       <li>BS_Mimic_Abillity</li>
