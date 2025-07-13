@@ -45,6 +45,11 @@
     <description>Carriers of this gene can only eat fuel typically made for androids.</description>
     <iconPath>GeneIcons/BS_FuelDiet</iconPath>
     <biostatMet>3</biostatMet>
+    <disablesNeeds>
+      <li MayRequire="Dubwise.DubsBadHygiene">DBHThirst</li>
+      <li MayRequire="Dubwise.DubsBadHygiene">Bladder</li>
+      <!-- <li>FoodVariety</li> -->
+    </disablesNeeds>
     <modExtensions>
       <li Class="BigAndSmall.PawnExtension">
         <pawnDiet>BS_ChemRobotDiet</pawnDiet>

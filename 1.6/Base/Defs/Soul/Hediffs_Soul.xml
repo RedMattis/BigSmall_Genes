@@ -11,7 +11,7 @@
     <stages>
       <li>
         <statOffsets>
-          <SM_BodySizeOffset>0.5</SM_BodySizeOffset>
+          <SM_BodySizeOffset>0.6</SM_BodySizeOffset>
           <SM_RaidWealthOffset>1000</SM_RaidWealthOffset>
         </statOffsets>
         <statFactors>

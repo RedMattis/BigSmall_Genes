@@ -71,7 +71,7 @@
     <displayCategory>Body_Size</displayCategory>
     <description>The shape and size of this being is determined by their amount of soul power. Note that if soul power is at 0% or less this will do nothing.</description>
     <customEffectDescriptions>
-      <li>+0.5 size offset, scaled by Soul Power</li>
+      <li>+0.6 size offset, scaled by Soul Power</li>
       <li>+1000$ raid wealth, scaled by Soul Power</li>
       <li>x1.35 mining speed, scaled by Soul Power</li>
       <li>x1.2 deep drilling speed, scaled by Soul Power</li>
