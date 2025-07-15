@@ -36,9 +36,7 @@
       <li MayRequire="vanillaracesexpanded.android">BS_PilotableSameSize_Android</li>
 
       <!--Block nonsense from the Vampire mod.-->
-      <li MayRequire="redmattis.undead">VU_Disguised_Succubus</li>
       <li MayRequire="redmattis.undead">VU_Involuntary_Werewolf</li>
-      <li MayRequire="redmattis.undead">VU_Disguised_Succubus</li>
       <li MayRequire="redmattis.undead">VU_Stage_DraculSpawn</li>
       <li MayRequire="redmattis.undead">VU_Stage_DraculNeonate</li>
       <li MayRequire="redmattis.undead">VU_Stage_DraculMature</li>
