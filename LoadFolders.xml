@@ -47,7 +47,7 @@
     <li IfModActive="RedMattis.Undead,RedMattis.Yokai,RedMattis.Undead.ZombieApoc">1.6/Conditional/Undead</li>
     <li IfModActive="RedMattis.Undead,RedMattis.Heaven">1.6/Conditional/Demon</li>
     <li IfModActive="RedMattis.Optional">1.6/Conditional/BigMeals</li>
-    <li IfModActive="RedMattis.Optional,RedMattis.BigSmall,RedMattis.Heaven,RedMattis.BigSmall.Bugs,RedMattis.Undead,RedMattis.LamiasAndOtherSnakes,RedMattis.MoreXenos,RedMattis.BigWeapons,RedMattis.Yokai,RedMattis.MadApril2025">1.6/Conditional/AnyContentMod</li>
-    <li IfModActive="RedMattis.Optional,RedMattis.MadApril2025">1.6/Conditional/MadScience</li>
+    <li IfModActive="RedMattis.Optional,RedMattis.BigSmall,RedMattis.BSSlimes,RedMattis.Heaven,RedMattis.BigSmall.Bugs,RedMattis.Undead,RedMattis.LamiasAndOtherSnakes,RedMattis.MoreXenos,RedMattis.BigWeapons,RedMattis.SapientAnimals,RedMattis.Yokai,RedMattis.MadApril2025">1.6/Conditional/AnyContentMod</li>
+    <li IfModActive="RedMattis.Optional,RedMattis.MadApril2025,RedMattis.BSSlimes">1.6/Conditional/MadScience</li>
   </v1.6>
 </loadFolders>

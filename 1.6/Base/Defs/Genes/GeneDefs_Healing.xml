@@ -27,7 +27,7 @@
     <displayCategory>Archite</displayCategory>
     <preventPermanentWounds>true</preventPermanentWounds>
     <statFactors>
-      <InjuryHealingFactor>25</InjuryHealingFactor>
+      <InjuryHealingFactor>20</InjuryHealingFactor>
     </statFactors>
     <painFactor>0.35</painFactor>
     <biostatMet>-5</biostatMet>
