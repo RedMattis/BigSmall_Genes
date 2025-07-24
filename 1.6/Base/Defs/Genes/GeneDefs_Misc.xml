@@ -22,7 +22,7 @@
   <GeneDef>
     <defName>BS_EVA_Gene</defName>
     <label>Vacuum Sealed</label>
-    <description>Carriers of this gene can withstand the vacuum of space. This does nothing to help against the cold or slowness of movement in the void.</description>
+    <description>Carriers of this gene can withstand the vacuum of space. This does not help with the slowness of movement in the void.</description>
     <iconPath>GeneIcons/BS_Vacuum_Gene</iconPath>
     <displayOrderInCategory>1</displayOrderInCategory>
     <statOffsets>
@@ -39,6 +39,16 @@
           <li>universum.vacuum_decompression_protection</li>
           <li>universum.vacuum_suffocation_protection</li>
         </allowed_utilities>
+      </li>
+      <li Class="BigAndSmall.PawnExtension">
+        <applyBodyHediff>
+          <li>
+            <hediff>BS_VacuumInsulation</hediff>
+            <conditionals>
+              <li Class="BigAndSmall.ConditionalStatAffecter_InVacuum"/>
+            </conditionals>
+          </li>
+        </applyBodyHediff>
       </li>
 		</modExtensions>
   </GeneDef>

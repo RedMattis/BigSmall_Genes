@@ -98,6 +98,16 @@
 				<backgroundPathEndogenes>GeneIcons/BS_BackAndroidChip</backgroundPathEndogenes>
 				<backgroundPathXenogenes>GeneIcons/BS_BackAndroidChip</backgroundPathXenogenes>
 			</li>
+      <li Class="BigAndSmall.PawnExtension">
+        <applyBodyHediff>
+          <li>
+            <hediff>BS_VacuumInsulation</hediff>
+            <conditionals>
+              <li Class="BigAndSmall.ConditionalStatAffecter_InVacuum"/>
+            </conditionals>
+          </li>
+        </applyBodyHediff>
+      </li>
 		</modExtensions>
   </VREAndroids.AndroidGeneDef>
   

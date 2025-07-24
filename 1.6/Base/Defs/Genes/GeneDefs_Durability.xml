@@ -134,6 +134,16 @@
               <li>universum.vacuum_suffocation_protection</li>
           </allowed_utilities>
       </li>
+      <li Class="BigAndSmall.PawnExtension">
+        <applyBodyHediff>
+          <li>
+            <hediff>BS_VacuumInsulation</hediff>
+            <conditionals>
+              <li Class="BigAndSmall.ConditionalStatAffecter_InVacuum"/>
+            </conditionals>
+          </li>
+        </applyBodyHediff>
+      </li>
 		</modExtensions>
   </GeneDef>
   
@@ -170,6 +180,16 @@
               <li>universum.vacuum_decompression_protection</li>
               <li>universum.vacuum_suffocation_protection</li>
           </allowed_utilities>
+      </li>
+      <li Class="BigAndSmall.PawnExtension">
+        <applyBodyHediff>
+          <li>
+            <hediff>BS_VacuumInsulation</hediff>
+            <conditionals>
+              <li Class="BigAndSmall.ConditionalStatAffecter_InVacuum"/>
+            </conditionals>
+          </li>
+        </applyBodyHediff>
       </li>
 		</modExtensions>
   </GeneDef>

@@ -57,16 +57,21 @@
   <GeneDef>
     <defName>BS_Fast_TotalHealing</defName>
     <label>Regeneration</label>
-    <labelShortAdj>scarless</labelShortAdj>
-    <description>Carriers of this gene can regenerate scars and missing limbs.</description>
+    <labelShortAdj>regenerating</labelShortAdj>
+    <description>Carriers of this gene can regenerate scars and missing limbs The nature of their healing factor makes their parts unsuitable for donation or harvesting.</description>
     <customEffectDescriptions>
-      <li>Every few days, one old wound, limb, or missing organ is healed.</li>
+      <li>Heals scars, missing limbs, and organs. Somewhat scales with healing rate.</li>
     </customEffectDescriptions>
     <iconPath>GeneIcons/BS_TotalHealing_Fast</iconPath>
-    <geneClass>BigAndSmall.Gene_FastHealing</geneClass>
+    <geneClass>BigAndSmall.Regeneration</geneClass>
     <preventPermanentWounds>true</preventPermanentWounds>
-    <biostatCpx>10</biostatCpx>
-    <biostatArc>3</biostatArc>
+    <biostatCpx>8</biostatCpx>
+    <biostatArc>2</biostatArc>
     <displayCategory>Archite</displayCategory>
+    <modExtensions>
+      <li Class="BigAndSmall.PawnExtension">
+        <partsCanBeHarvested>false</partsCanBeHarvested>
+			</li>
+		</modExtensions>
   </GeneDef>
 </Defs>
