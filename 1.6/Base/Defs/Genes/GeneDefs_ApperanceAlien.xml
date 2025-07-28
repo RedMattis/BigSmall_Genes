@@ -14,7 +14,6 @@
     <missingGeneRomanceChanceFactor>0.5</missingGeneRomanceChanceFactor>
     <exclusionTags>
       <li>BS_AlienLook</li>
-      <!-- <li>BS_SomeAlien</li> -->
     </exclusionTags>
   </GeneDef>
 
@@ -35,7 +34,6 @@
     <missingGeneRomanceChanceFactor>0.5</missingGeneRomanceChanceFactor> <!--Keep in mind there is likely also a relation penalty already. -->
     <exclusionTags>
       <li>BS_AlienLook</li>
-      <!-- <li>BS_VeryAlien</li> -->
     </exclusionTags>
   </GeneDef>
 
@@ -44,9 +42,9 @@
 		<thoughtClass>Thought_SituationalSocial</thoughtClass>
 		<workerClass>BigAndSmall.ThoughtWorker_AlienApperance</workerClass>
 		<nullifyingTraits>
-      <li>Kind</li>
+      <!-- <li>Kind</li> -->
       <li>BS_Unpretentious</li>
-      <li>Transhumanist</li>
+      <!-- <li>Transhumanist</li> -->
 		</nullifyingTraits>
     <nullifyingGenes>
       <li>BS_VerySimpleMind</li>
@@ -68,7 +66,7 @@
       </li>
       <li>
         <label>they look uncanny</label>
-        <baseOpinionOffset>-7</baseOpinionOffset>
+        <baseOpinionOffset>-6</baseOpinionOffset>
       </li>
       <li>
         <label>uncomfortably alien appearance</label>

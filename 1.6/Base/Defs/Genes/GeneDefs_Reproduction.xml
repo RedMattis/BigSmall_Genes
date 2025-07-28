@@ -119,6 +119,9 @@
     <defName>BS_BirthTwins</defName>
     <label>multiple offspring</label>
     <description>Carriers of this gene typically give birth to more than one child. The average is 2. The babies are a bit smaller as a result.</description>
+    <customEffectDescriptions>
+      <li>Hybrid children can vary from each other in genes.</li>
+    </customEffectDescriptions>
     <iconPath>GeneIcons/BS_PregnancyTwins</iconPath>
     <displayCategory>Reproduction</displayCategory>
     <exclusionTags><li>BS_Babycount</li></exclusionTags>
@@ -152,6 +155,9 @@
     <defName>BS_BirthLitter</defName>
     <label>litter offspring</label>
     <description>Carriers of this gene give birth to large litters of ofspring. Usually between 4 and 6. The babies are very small as a result.</description>
+    <customEffectDescriptions>
+      <li>Hybrid children can vary from each other in genes.</li>
+    </customEffectDescriptions>
     <iconPath>GeneIcons/BS_PregnancyLitter</iconPath>
     <displayCategory>Reproduction</displayCategory>
     <exclusionTags><li>BS_Babycount</li></exclusionTags>

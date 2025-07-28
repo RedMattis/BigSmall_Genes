@@ -108,7 +108,7 @@
 			<li MayRequire="sarg.alphagenes">AG_DemonTail</li>
 			<li MayRequire="sarg.alphagenes">AG_DemonEars</li>
 			<li>BS_Ears_PointedHD</li>
-			<li>Beauty_Ugly</li>
+			<li>BS_AlienApperanceStandards_Lesser</li>
 			<li>Beard_NoBeardOnly</li>
 
 			
@@ -181,7 +181,7 @@
 			<li>Robust</li>
 			<li>BS_DemonTail</li>
 			<li MayRequire="sarg.alphagenes">AG_DemonTail</li>
-			<li>Beauty_Ugly</li>
+			<li>BS_AlienApperanceStandards_Lesser</li>
 			<li>Hair_BaldOnly</li>
 			<li>Beard_NoBeardOnly</li>
 			<li MayRequire="sarg.alphagenes">AG_GutturalVoice</li>
@@ -257,7 +257,7 @@
 			<li>BS_DemonTail</li>
 			<li MayRequire="sarg.alphagenes">AG_DemonEars</li>
 			<li>BS_Ears_PointedHD</li>
-			<li>Beauty_Ugly</li>
+			<li>BS_AlienApperanceStandards_Lesser</li>
 			<li>Beard_NoBeardOnly</li>
 			<!-- <li>BS_ForwardArchingHorns_Skin</li>
 			<li>BS_ForwardArchingHorns</li> -->

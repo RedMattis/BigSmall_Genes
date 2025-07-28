@@ -1,0 +1,41 @@
+<Defs>
+  <IssueDef>
+		<defName>BS_AlienAppearanceTolerance</defName>
+		<label>alien appearance</label>
+		<iconPath>BS_Ideo/AlienAppearance_Default</iconPath>
+	</IssueDef>
+
+  <PreceptDef>
+    <defName>BS_AlienAppearanceTolerance_Default</defName>
+    <issue>BS_AlienAppearanceTolerance</issue>
+    <label>weird</label>
+    <description>Some intelligent beings out there are incomprehensible or repulsive, others are just a bit strange. That's just how things are.</description>
+    <iconPath>BS_Ideo/AlienAppearance_Default</iconPath>
+    <impact>Low</impact>
+    <displayOrderInIssue>100</displayOrderInIssue>
+    <defaultSelectionWeight>8</defaultSelectionWeight>
+  </PreceptDef>
+
+  <PreceptDef>
+    <defName>BS_AlienAppearanceTolerance_SomeTolerance</defName>
+    <issue>BS_AlienAppearanceTolerance</issue>
+    <label>high tolerance</label>
+    <description>We must try learn to tolerate and understand even highly unusual appearances and ways to communicate.</description>
+    <iconPath>BS_Ideo/AlienAppearance_Some</iconPath>
+    <impact>Medium</impact>
+    <displayOrderInIssue>10</displayOrderInIssue>
+    <defaultSelectionWeight>1</defaultSelectionWeight>
+  </PreceptDef>
+
+  <PreceptDef>
+    <defName>BS_AlienAppearanceTolerance_FullTolerance</defName>
+    <issue>BS_AlienAppearanceTolerance</issue>
+    <label>extreme tolerance</label>
+    <description>It is essential that even the most extreme of appearances and bizarre ways to communicate are fully understood.</description>
+    <iconPath>BS_Ideo/AlienAppearance_Full</iconPath>
+    <impact>High</impact>
+    <displayOrderInIssue>10</displayOrderInIssue>
+    <defaultSelectionWeight>0.2</defaultSelectionWeight>
+  </PreceptDef>
+
+</Defs>
