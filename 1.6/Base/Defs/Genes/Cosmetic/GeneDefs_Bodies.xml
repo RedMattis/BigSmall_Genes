@@ -52,7 +52,7 @@
     <exclusionTags>
       <li>BodyType</li>
     </exclusionTags>
-    <biostatCpx>1</biostatCpx>
+    <biostatCpx>0</biostatCpx>
     <selectionWeight>0</selectionWeight>
     <displayOrderInCategory>430</displayOrderInCategory>
     <iconPath>GeneIcons/BS_OgreBody</iconPath>

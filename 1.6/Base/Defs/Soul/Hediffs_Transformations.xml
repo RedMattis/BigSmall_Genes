@@ -35,7 +35,7 @@
   <HediffDef ParentName="BS_TrueFormBase">
     <defName>BS_TrueForm_Angelic</defName>
     <label>True Form (Angelic)</label>
-    <description>True power unleached!</description>
+    <description>True power unleashed!</description>
     <abilities>
       <li>BS_flying_jump</li>
     </abilities>

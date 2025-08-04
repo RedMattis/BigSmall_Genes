@@ -27,6 +27,66 @@
   </Operation>
 
   <Operation Class="PatchOperationAdd">
+    <xpath>Defs/MutantDef[defName="Ghoul"]/forcedHeadTypes</xpath>
+    <value>
+      <li>BS_WerewolfHead</li>
+      <li>BS_WerewolfHeadHediff</li>
+      <li>BS_OgreHead_SavageA</li>
+      <li>BS_OgreHead_SavageB</li>
+      <li>BS_OgreHead_SavageC</li>
+      <li>BS_OgreHead_SavageD</li>
+      <li>BS_BrokenTitanHeadFemale</li>
+      <li>BS_BrokenTitanHeadMale</li>
+      <li>BS_DevourerHead_Normal</li>
+      <li>BS_DevourerHead_Square</li>
+      <li>BS_DevourerHead_Closed</li>
+      <li>BS_DevourerHead_Smile</li>
+      <li>BS_DragonHead_Normal</li>
+      <li>BS_StonemaskHead</li>
+      <li>BS_SatanHead</li>
+      <li MayRequire="RedMattis.LamiasAndOtherSnakes">LoS_SnekHead</li>
+      <li MayRequire="RedMattis.BSSlimes">BS_SlimeHead</li>
+      <li MayRequire="vera.bug">Exoskin_Average1</li>
+      <li MayRequire="vera.bug">Exoskin_Average2</li>
+      <li MayRequire="vera.bug">Exoskin_Average3</li>
+      <li MayRequire="vera.bug">Exoskin_Average4</li>
+      <li MayRequire="vera.bug">Exoskin_Average5</li>
+      <li MayRequire="vera.bug">Exoskin_Average1_Wide</li>
+      <li MayRequire="vera.bug">Exoskin_Average2_Wide</li>
+      <li MayRequire="vera.bug">Exoskin_Average3_Wide</li>
+      <li MayRequire="vera.bug">Exoskin_Average4_Wide</li>
+      <li MayRequire="vera.bug">Exoskin_Narrow1</li>
+      <li MayRequire="vera.bug">Exoskin_Narrow2</li>
+      <li MayRequire="vera.bug">Exoskin_Narrow3</li>
+      <li MayRequire="vera.bug">Exoskin_Narrow4</li>
+      <li MayRequire="vera.bug">Exoskin_HeavyJaw</li>
+      <li MayRequire="vera.bug">Spiderhead_Average1</li>
+      <li MayRequire="vera.bug">Spiderhead_Narrow1</li>
+      <li MayRequire="vera.bug">Spiderhead_HeavyJaw</li>
+      <li MayRequire="vera.bug">Mothhead_Average1</li>
+      <li MayRequire="vera.bug">Mothhead_Narrow1</li>
+      <li MayRequire="vera.bug">Mothhead_Gaunt</li>
+      <li MayRequire="vera.bug">Mothhead_HeavyJaw</li>
+      <li MayRequire="vera.bug">Mantidhead_Average1</li>
+      <li MayRequire="vera.bug">Mantidhead_Average2</li>
+      <li MayRequire="vera.bug">Mantidhead_Narrow1</li>
+      <li MayRequire="vera.bug">Mantidhead_Narrow2</li>
+      <li MayRequire="vera.bug">Mantidhead_HeavyJaw</li>
+      <li MayRequire="vera.bug">Mantidhead_Gaunt</li>
+      <li MayRequire="vera.bug">Bee_Average</li>
+      <li MayRequire="vera.bug">Bee_Narrow</li>
+      <li MayRequire="vera.bug">Bee_Gaunt</li>
+      <li MayRequire="vera.bug">Bee_HeavyJaw</li>
+      <li MayRequire="vera.bug">BP_Mantishead_Average1</li>
+      <li MayRequire="vera.bug">BP_Mantishead_Average2</li>
+      <li MayRequire="vera.bug">BP_Mantishead_Narrow1</li>
+      <li MayRequire="vera.bug">BP_Mantishead_Narrow2</li>
+      <li MayRequire="vera.bug">BP_Mantishead_Gaunt</li>
+      <li MayRequire="vera.bug">BP_Mantishead_HeavyJaw</li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
     <xpath>Defs/MutantDef[defName="Ghoul"]/abilityWhitelist</xpath>
     <value>
       <li>BS_StickyAcidSpray</li>
