@@ -90,7 +90,6 @@
   </GeneCategoryDef>
 
   <GeneCategoryDef>
-    <!--Require HAR to actually do the swap.-->
     <defName>BS_BodySwap</defName>
     <label>Body Transformation</label>
     <displayPriorityInXenotype>-388</displayPriorityInXenotype>

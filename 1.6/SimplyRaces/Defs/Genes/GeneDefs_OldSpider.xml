@@ -33,7 +33,6 @@
   <GeneDef Name="BS_SpoderLegs" ParentName="BS_Spiderbase" Abstract="True">
     <description>Carriers of this gene have their lower half replaced with the body of a spider. Has science gone too far?</description>
     <customEffectDescriptions>
-      <li>Switches the character's &quot;Race&quot; for another one. HAR required for this part of the gene.</li>
       <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">Reduces the movement speed penalty when traversing difficult terrain</li>
     </customEffectDescriptions>
     <iconPath>GeneIcons/BS_Spooder</iconPath>
