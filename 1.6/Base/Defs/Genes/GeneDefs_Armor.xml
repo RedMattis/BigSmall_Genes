@@ -10,6 +10,13 @@
 		</exclusionTags>
 	</GeneDef>
 
+  <HediffDef Abstract="True" Name="BS_BuffHediff">
+		<hediffClass>HediffWithComps</hediffClass>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>false</isBad>
+	</HediffDef>
+
+
 	<GeneDef>
 		<defName>BS_CannotWearClothing</defName>
 		<displayCategory>BS_Armour</displayCategory>
@@ -151,7 +158,10 @@
 		<label>Tough Skin</label>
 		<description>Carriers of this gene have naturally tough skin. This offers some resistance to blunt and cutting attacks.</description>
 		<iconPath>GeneIcons/BS_ArmourLeather</iconPath>
-		
+		<customEffectDescriptions>
+      <li>Increased effect when combined with genes preventing wearing armor</li>
+      <li>Doubled effect when combined with genes preventing wearing apparel</li>
+    </customEffectDescriptions>
 		<displayOrderInCategory>20</displayOrderInCategory>
 		<statOffsets>
 			<SM_RaidWealthOffset>250</SM_RaidWealthOffset>
@@ -160,28 +170,46 @@
 		</statOffsets>
 		<biostatCpx>1</biostatCpx>
 		<biostatMet>-1</biostatMet>
-		<symbolPack>
-			<prefixSymbols>
-				<li>
-					<symbol>thick-skinned</symbol>
-				</li>
-			</prefixSymbols>
-		</symbolPack>
-		<selectionWeight>1</selectionWeight>
-    <!-- <modExtensions>
+		<symbolPack> <prefixSymbols> <li> <symbol>thick-skinned</symbol> </li> </prefixSymbols> </symbolPack>
+    <modExtensions>
 			<li Class="BigAndSmall.PawnExtension">
-				<applyBodyHediff><li><hediff>BS_ToughSkin</hediff></li></applyBodyHediff>
+				<applyBodyHediff>
+					<li>
+						<hediff>BS_ToughSkin_NoArmor</hediff>
+						<prerequisiteSets> <li> <type>AnyOf</type> <prerequisites> <li>BS_CannotWearArmor</li> </prerequisites> </li> </prerequisiteSets>
+					</li>
+          <li>
+						<hediff>BS_ToughSkin_NoApparel</hediff>
+						<prerequisiteSets> <li> <type>AnyOf</type> <prerequisites> <li>BS_CannotWearClothingOrArmor</li> </prerequisites> </li> </prerequisiteSets>
+					</li>
+				</applyBodyHediff>
 			</li>
-		</modExtensions> -->
+		</modExtensions>
 	</GeneDef>
+
+  <HediffDef ParentName="BS_BuffHediff">
+		<defName>BS_ToughSkin_NoArmor</defName>
+		<label>seriously tough skin</label>
+		<description>Cannot wear armor, but greatly increases armor.</description>
+		<stages> <li> <statOffsets> <ArmorRating_Blunt>0.15</ArmorRating_Blunt> <ArmorRating_Sharp>0.15</ArmorRating_Sharp> </statOffsets> </li> </stages>
+	</HediffDef>
+
+  <HediffDef  ParentName="BS_BuffHediff">
+		<defName>BS_ToughSkin_NoApparel</defName>
+		<label>knife-proof skin</label>
+		<description>Cannot wear apparel, but greatly increases armor.</description>
+		<stages> <li> <statOffsets> <ArmorRating_Blunt>0.25</ArmorRating_Blunt> <ArmorRating_Sharp>0.25</ArmorRating_Sharp> </statOffsets> </li> </stages>
+	</HediffDef>
   
   <GeneDef ParentName="BS_Armor">
 		<defName>BS_NaturalArmor</defName>
 		<label>Natural Armor</label>
-
 		<description>Carriers of this gene shrug off attacks as though they were wearing padded armour.</description>
 		<iconPath>GeneIcons/BS_ArmourSteel</iconPath>
-		
+		<customEffectDescriptions>
+      <li>Increased effect when combined with genes preventing wearing armor</li>
+      <li>Nearly doubled effect when combined with genes preventing wearing apparel</li>
+    </customEffectDescriptions>
 		<displayOrderInCategory>20</displayOrderInCategory>
 		<statFactors>
 			<SM_RaidWealthMultiplier>1.2</SM_RaidWealthMultiplier>
@@ -193,15 +221,36 @@
 		</statOffsets>
 		<biostatCpx>1</biostatCpx>
 		<biostatMet>-2</biostatMet>
-		<symbolPack>
-			<prefixSymbols>
-				<li>
-					<symbol>sturdy</symbol>
-				</li>
-			</prefixSymbols>
-		</symbolPack>
-		<selectionWeight>1</selectionWeight>
+		<symbolPack> <prefixSymbols> <li> <symbol>sturdy</symbol> </li> </prefixSymbols> </symbolPack>
+    <modExtensions>
+			<li Class="BigAndSmall.PawnExtension">
+				<applyBodyHediff>
+					<li>
+						<hediff>BS_NaturalArmor_NoArmor</hediff>
+						<prerequisiteSets> <li> <type>AnyOf</type> <prerequisites> <li>BS_CannotWearArmor</li> </prerequisites> </li> </prerequisiteSets>
+					</li>
+          <li>
+						<hediff>BS_NaturalArmor_NoApparel</hediff>
+						<prerequisiteSets> <li> <type>AnyOf</type> <prerequisites> <li>BS_CannotWearClothingOrArmor</li> </prerequisites> </li> </prerequisiteSets>
+					</li>
+				</applyBodyHediff>
+			</li>
+		</modExtensions>
 	</GeneDef>
+
+  <HediffDef ParentName="BS_BuffHediff">
+		<defName>BS_NaturalArmor_NoArmor</defName>
+		<label>heavy natural armor</label>
+		<description>Cannot wear armor, but greatly increases armor.</description>
+		<stages> <li> <statOffsets> <ArmorRating_Blunt>0.15</ArmorRating_Blunt> <ArmorRating_Sharp>0.20</ArmorRating_Sharp> </statOffsets> </li> </stages>
+	</HediffDef>
+
+  <HediffDef  ParentName="BS_BuffHediff">
+		<defName>BS_NaturalArmor_NoApparel</defName>
+		<label>incredible natural armor</label>
+		<description>Cannot wear apparel, but greatly increases armor.</description>
+		<stages> <li> <statOffsets> <ArmorRating_Blunt>0.30</ArmorRating_Blunt> <ArmorRating_Sharp>0.25</ArmorRating_Sharp> </statOffsets> </li> </stages>
+	</HediffDef>
   
   <GeneDef ParentName="BS_Armor">
 		<defName>BS_NaturalArmor_Great</defName>
@@ -219,6 +268,10 @@
 			<ArmorRating_Blunt>0.40</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.60</ArmorRating_Sharp>
 		</statOffsets>
+    <customEffectDescriptions>
+      <li>Increased effect when combined with genes preventing wearing armor</li>
+      <li>Nearly doubled effect when combined with genes preventing wearing apparel</li>
+    </customEffectDescriptions>
 
 		<biostatCpx>1</biostatCpx>
 		<biostatMet>-4</biostatMet>
@@ -226,16 +279,39 @@
     <marketValueFactor>0.5</marketValueFactor>
 		<symbolPack>
 			<prefixSymbols>
-				<li>
-					<symbol>impervious</symbol>
-				</li>
-        <li>
-          <symbol>invulnerable</symbol>
-        </li>
+				<li> <symbol>impervious</symbol> </li>
+        <li> <symbol>invulnerable</symbol> </li>
 			</prefixSymbols>
 		</symbolPack>
-		<selectionWeight>1</selectionWeight>
+    <modExtensions>
+			<li Class="BigAndSmall.PawnExtension">
+				<applyBodyHediff>
+					<li>
+						<hediff>BS_NaturalArmor_Great_NoArmor</hediff>
+						<prerequisiteSets> <li> <type>AnyOf</type> <prerequisites> <li>BS_CannotWearArmor</li> </prerequisites> </li> </prerequisiteSets>
+					</li>
+          <li>
+						<hediff>BS_NaturalArmor_Great_NoApparel</hediff>
+						<prerequisiteSets> <li> <type>AnyOf</type> <prerequisites> <li>BS_CannotWearClothingOrArmor</li> </prerequisites> </li> </prerequisiteSets>
+					</li>
+				</applyBodyHediff>
+			</li>
+		</modExtensions>
 	</GeneDef>
+
+  <HediffDef ParentName="BS_BuffHediff">
+		<defName>BS_NaturalArmor_Great_NoArmor</defName>
+		<label>Near-impervious</label>
+		<description>Cannot wear armor, but greatly increases armor.</description>
+		<stages> <li> <statOffsets> <ArmorRating_Blunt>0.30</ArmorRating_Blunt> <ArmorRating_Sharp>0.30</ArmorRating_Sharp> </statOffsets> </li> </stages>
+	</HediffDef>
+
+  <HediffDef  ParentName="BS_BuffHediff">
+		<defName>BS_NaturalArmor_Great_NoApparel</defName>
+		<label>Practically impervious</label>
+		<description>Cannot wear apparel, but greatly increases armor.</description>
+		<stages> <li> <statOffsets> <ArmorRating_Blunt>0.60</ArmorRating_Blunt> <ArmorRating_Sharp>0.40</ArmorRating_Sharp> </statOffsets> </li> </stages>
+	</HediffDef>
 
 	<GeneDef>
     <defName>BS_DrunkenPower</defName>
@@ -286,13 +362,10 @@
 		</modExtensions>
   </GeneDef>
 
-	<HediffDef>
+	<HediffDef ParentName="BS_BuffHediff">
 		<defName>BS_DrunkenPower1</defName>
 		<label>Warm-up</label>
 		<description>You can't fight without some alcohol in your blood!</description>
-		<hediffClass>HediffWithComps</hediffClass>
-		<scenarioCanAdd>false</scenarioCanAdd>
-		<isBad>false</isBad>
 		<stages>
 			<li>
 				<statFactors>
@@ -306,13 +379,10 @@
 		</stages>
 	</HediffDef>
 
-	<HediffDef>
+	<HediffDef ParentName="BS_BuffHediff">
 		<defName>BS_DrunkenPower2</defName>
 		<label>drunken fighter</label>
 		<description>Hahaha! Let me at 'em!</description>
-		<hediffClass>HediffWithComps</hediffClass>
-		<scenarioCanAdd>false</scenarioCanAdd>
-		<isBad>false</isBad>
 		<stages>
 			<li>
 				<statFactors>
@@ -342,13 +412,10 @@
     </stages>
   </ThoughtDef>
 
-	<HediffDef>
+	<HediffDef ParentName="BS_BuffHediff">
 		<defName>BS_DrunkenPower3</defName>
 		<label>drunken terror</label>
 		<description>Not you nor your floating ghost twin can stop meee!</description>
-		<hediffClass>HediffWithComps</hediffClass>
-		<scenarioCanAdd>false</scenarioCanAdd>
-		<isBad>false</isBad>
 		<stages>
 			<li>
 				<statFactors>
