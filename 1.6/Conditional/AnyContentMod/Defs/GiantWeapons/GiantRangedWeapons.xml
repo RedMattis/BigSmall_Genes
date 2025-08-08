@@ -1,6 +1,6 @@
 <Defs>
 
-  <ThingDef ParentName="BaseHumanMakeableGun">
+  <ThingDef ParentName="BaseHumanMakeableGun" Name="BS_JotunRifle">
     <defName>BS_JotunRifle</defName>
     <label>Warmech Anti-Material Rifle</label>
     <description>A heavy rifle designed to be wielded by a combat mech for use against other mechs other other heavy military hardware.\n\nThe weapon is too large to be wielded by a regular human, even if they could somehow manage the terrible recoil.\n\nCan be wielded by giant, herculean, or warcasket pawns.</description>
@@ -108,7 +108,7 @@
 
   <!--Heavy Machine Gun-->
 
-  <ThingDef ParentName="BaseHumanMakeableGun">
+  <ThingDef ParentName="BaseHumanMakeableGun" Name="BS_GiantMinigun">
     <defName>BS_GiantMinigun</defName>
     <label>warmech machinegun</label>
     <description>A hugely oversized multi-barrel machine gun. It's unwieldy and clearly made to be mounted on some sort of vehicle or mech. The weapon is made for laying down supressive fire and does not require aiming, and thanks to the belt-fed ammo the weapon fire for a long time without reloading. \n\nCan be wielded by giant, herculean, or warcasket pawns.</description>
@@ -210,7 +210,7 @@
 
   <!--Raaaawwkeet Launcher!-->
 
-  <ThingDef ParentName="BaseHumanMakeableGun">
+  <ThingDef ParentName="BaseHumanMakeableGun" Name="BS_JotunRocketLauncher">
     <defName>BS_JotunRocketLauncher</defName>
     <label>Warmech Rocket Launcher</label>
     <description>A heavy rocket launcher originally designed to be welded to a combat mech for use against other mechs other other heavy military hardware.\n\nThe weapon is too large to be wielded by a regular human, even if they could somehow manage the terrible recoil.\n\nCan be wielded by giant, herculean, or warcasket pawns.</description>

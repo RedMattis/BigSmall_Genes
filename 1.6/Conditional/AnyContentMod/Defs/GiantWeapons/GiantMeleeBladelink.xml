@@ -1,6 +1,6 @@
 <Defs>
 
-    <ThingDef Name="BS_GiantWeapon_Bladelink" ParentName="BaseWeapon" Abstract="True">
+  <ThingDef Name="BS_GiantWeapon_Bladelink" ParentName="BaseWeapon" Abstract="True" MayRequire="Ludeon.RimWorld.Royalty">
     <techLevel>Ultra</techLevel>
     <tradeNeverStack>true</tradeNeverStack>
     <relicChance>3</relicChance>
@@ -39,10 +39,10 @@
     </thingSetMakerTags>
   </ThingDef>
 
-  <ThingDef ParentName="BS_GiantWeapon_Bladelink">
+  <ThingDef ParentName="BS_GiantWeapon_Bladelink" MayRequire="Ludeon.RimWorld.Royalty">
     <defName>BS_SurtrSword_Persona</defName>
     <label>Persona Sword of Surtr</label>
-    <description>An enormus one-handed sword with a blade wreathed in the barely-contained power of the sun. The sword burns, cuts, and melts through anything unfortunate enough to meet it's edge.\n\nThe sword is so large and heavy that even giants often struggle to wield it.</description>
+    <description>An enormous one-handed sword with a blade wreathed in the barely-contained power of the sun. The sword burns, cuts, and melts through anything unfortunate enough to meet it's edge.\n\nThe sword is so large and heavy that even giants often struggle to wield it.</description>
     <weaponTags>
       <li>UltratechMeleeGiant_Fire</li>
     </weaponTags>
@@ -102,7 +102,7 @@
 		<tradeability>Sellable</tradeability>
 	</ThingDef>
 
-  <ThingDef ParentName="BS_GiantWeapon_Bladelink">
+  <ThingDef ParentName="BS_GiantWeapon_Bladelink" MayRequire="Ludeon.RimWorld.Royalty">
     <defName>BS_SkrymirHammer_Persona</defName>
     <label>Persona Skrýmir's Mallet</label>
     <description>An absurdly large and heavy hammer of unknown origin. It is claimed to be imbued with the power of a winter storm.\n\nThe few things the thunderous blows of the hammer does not outright pulverize by force alone are turned brittle by frost and stunned by the thunderous impact.</description>

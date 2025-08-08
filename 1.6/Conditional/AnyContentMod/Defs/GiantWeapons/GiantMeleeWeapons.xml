@@ -188,7 +188,6 @@
         <power>23</power>
         <cooldownTime>2.6</cooldownTime>
       </li>
-      
     </tools>
 		<possessionCount>1</possessionCount>
 		<rotateInShelves>false</rotateInShelves>
@@ -237,7 +236,7 @@
   <ThingDef ParentName="BS_GiantMeleeUltratech">
     <defName>BS_SurtrSword</defName>
     <label>Sword of Surtr</label>
-    <description>An enormus one-handed sword with a blade wreathed in the barely-contained power of the sun. The sword burns, cuts, and melts through anything unfortunate enough to meet it's edge.\n\nThe sword is so large and heavy that even giants often struggle to wield it.</description>
+    <description>An enormous one-handed sword with a blade wreathed in the barely-contained power of the sun. The sword burns, cuts, and melts through anything unfortunate enough to meet it's edge.\n\nThe sword is so large and heavy that even giants often struggle to wield it.</description>
     <weaponTags>
       <li>UltratechMeleeGiant_Fire</li>
     </weaponTags>

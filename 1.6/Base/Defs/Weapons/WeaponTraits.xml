@@ -1,0 +1,218 @@
+<Defs>
+  <WeaponCategoryDef MayRequire="Ludeon.RimWorld.Odyssey">
+    <defName>BS_SingleShot</defName>
+  </WeaponCategoryDef>
+
+  <WeaponTraitDef MayRequire="Ludeon.RimWorld.Odyssey">
+    <defName>BS_DoubleTap</defName>
+    <label>double tap</label>
+    <description>This normally single-shot design has been (quite recklessly) modified to fire two projectiles.</description>
+    <commonality>1</commonality>
+    <weaponCategory>BS_SingleShot</weaponCategory>
+    <burstShotCountMultiplier>2</burstShotCountMultiplier>
+    <burstShotSpeedMultiplier>2</burstShotSpeedMultiplier>
+    <statFactors>
+      <AccuracyTouch>0.8</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.7</AccuracyMedium>
+      <AccuracyLong>0.6</AccuracyLong>
+      <RangedWeapon_Cooldown>1.15</RangedWeapon_Cooldown>
+    </statFactors>
+    <statOffsets>
+      <MarketValue>100</MarketValue>
+      <RangedWeapon_DamageMultiplier>-0.1</RangedWeapon_DamageMultiplier>
+    </statOffsets>
+    <traitAdjectives>
+      <li>split-barrel</li>
+      <li>twin-shot</li>
+      <li>mirror</li>
+      <li>double-up</li>
+    </traitAdjectives>
+  </WeaponTraitDef>
+
+  <WeaponCategoryDef MayRequire="Ludeon.RimWorld.Odyssey">
+    <defName>BS_SingleShotBullet</defName>
+  </WeaponCategoryDef>
+
+  <WeaponTraitDef MayRequire="Ludeon.RimWorld.Odyssey">
+    <defName>BS_QuadShot</defName>
+    <label>quad shot</label>
+    <description>Some absolute lunatic has modified this weapon to fire four astoundingly inaccurate projectiles at once.</description>
+    <commonality>0.25</commonality>
+    <weaponCategory>BS_SingleShotBullet</weaponCategory>
+    <burstShotCountMultiplier>4</burstShotCountMultiplier>
+    <burstShotSpeedMultiplier>16</burstShotSpeedMultiplier>
+    <statFactors>
+      <AccuracyTouch>0.4</AccuracyTouch>
+      <AccuracyShort>0.35</AccuracyShort>
+      <AccuracyMedium>0.25</AccuracyMedium>
+      <AccuracyLong>0.15</AccuracyLong>
+      <RangedWeapon_Cooldown>1.3</RangedWeapon_Cooldown>
+    </statFactors>
+    <statOffsets>
+      <MarketValue>100</MarketValue>
+      <RangedWeapon_DamageMultiplier>-0.2</RangedWeapon_DamageMultiplier>
+    </statOffsets>
+    <traitAdjectives>
+      <li>quad-shot</li>
+      <li>quadra</li>
+      <li>spread-gun</li>
+      <li>lunatic</li>
+      <li>mad-dog</li>
+    </traitAdjectives>
+  </WeaponTraitDef>
+
+  <WeaponCategoryDef MayRequire="Ludeon.RimWorld.Odyssey">
+    <defName>BS_PrimitiveGun</defName>
+  </WeaponCategoryDef>
+
+  <WeaponTraitDef MayRequire="Ludeon.RimWorld.Odyssey">
+    <defName>BS_Primitive_Modernized</defName>
+    <label>modernized</label>
+    <description>What may superficially appear as a primitive weapon has been upgraded using cutting edge-spacer materials and fabrication methods.</description>
+    <commonality>2</commonality>
+    <weaponCategory>BS_PrimitiveGun</weaponCategory>
+    <exclusionTags>
+      <li>Modernized</li>
+    </exclusionTags>
+    <statFactors>
+      <AccuracyTouch>1.1</AccuracyTouch>
+      <AccuracyShort>1.15</AccuracyShort>
+      <AccuracyMedium>1.2</AccuracyMedium>
+      <AccuracyLong>1.2</AccuracyLong>
+      <RangedWeapon_Cooldown>0.8</RangedWeapon_Cooldown>
+      <MarketValue>1.3</MarketValue>
+    </statFactors>
+    <statOffsets>
+      <RangedWeapon_DamageMultiplier>0.2</RangedWeapon_DamageMultiplier>
+      <RangedWeapon_ArmorPenetrationMultiplier>0.25</RangedWeapon_ArmorPenetrationMultiplier>
+    </statOffsets>
+    <traitAdjectives>
+      <li>modernized</li>
+      <li>re-imagined</li>
+      <li>cutting-edge</li>
+      <li>replica</li>
+      <li>black-market</li>
+    </traitAdjectives>
+  </WeaponTraitDef>
+
+  <WeaponTraitDef MayRequire="Ludeon.RimWorld.Odyssey">
+    <defName>BS_Primitive_UltraTech</defName>
+    <label>ultratech</label>
+    <description>From a distance it may appear fairly primitive, but an some eccentric genius or AI has almost completely re-imagined using technologies on par with the most cutting-edge in the galaxy.</description>
+    <commonality>1</commonality>
+    <weaponCategory>BS_PrimitiveGun</weaponCategory>
+    <exclusionTags>
+      <li>Modernized</li>
+    </exclusionTags>
+    <statFactors>
+      <AccuracyTouch>1.15</AccuracyTouch>
+      <AccuracyShort>1.2</AccuracyShort>
+      <AccuracyMedium>1.25</AccuracyMedium>
+      <AccuracyLong>1.25</AccuracyLong>
+      <RangedWeapon_Cooldown>0.7</RangedWeapon_Cooldown>
+      <MarketValue>1.5</MarketValue>
+    </statFactors>
+    <statOffsets>
+      <MarketValue>50</MarketValue>
+      <RangedWeapon_DamageMultiplier>0.3</RangedWeapon_DamageMultiplier>
+      <RangedWeapon_ArmorPenetrationMultiplier>0.5</RangedWeapon_ArmorPenetrationMultiplier>
+    </statOffsets>
+    <traitAdjectives>
+      <li>ultra</li>
+      <li>ultratech</li>
+      <li>eccentric</li>
+      <li>prototype</li>
+      <li>empire</li>
+      <li>nano-forged</li>
+    </traitAdjectives>
+  </WeaponTraitDef>
+
+  <WeaponTraitDef MayRequire="Ludeon.RimWorld.Odyssey">
+    <defName>BS_Primitive_ArchoTech</defName>
+    <label>archotech</label>
+    <description>While appearing as a mostly unremarkable weapon, the performance in use defies all explanation.\n\nThis is almost certainly the creation of an ancient archotechnological being.</description>
+    <commonality>0.5</commonality>
+    <weaponCategory>BS_PrimitiveGun</weaponCategory>
+    <exclusionTags>
+      <li>Modernized</li>
+    </exclusionTags>
+    <statFactors>
+      <RangedWeapon_Cooldown>0.8</RangedWeapon_Cooldown>
+      <MarketValue>2</MarketValue>
+    </statFactors>
+    <statOffsets>
+      <MarketValue>100</MarketValue>
+      <RangedWeapon_WarmupMultiplier>-0.4</RangedWeapon_WarmupMultiplier>
+      <RangedWeapon_DamageMultiplier>0.8</RangedWeapon_DamageMultiplier>
+      <RangedWeapon_ArmorPenetrationMultiplier>1</RangedWeapon_ArmorPenetrationMultiplier>
+    </statOffsets>
+    <ignoresAccuracyMaluses>true</ignoresAccuracyMaluses>
+    <traitAdjectives>
+      <li>strange</li>
+      <li>odd</li>
+      <li>weird</li>
+
+      <li>incomprehensible</li>
+      <li>ancient</li>
+      <li>mystic</li>
+      <li>unearthly</li>
+      <li>unreal</li>
+      <li>otherworldly</li>
+      <li>maddening</li>
+      <li>foretold</li>
+      <li>divine</li>
+      <li>anime</li>
+
+      <li>alien</li>
+      <li>archotech</li>
+      <li>quantum-entangled</li>
+    </traitAdjectives>
+  </WeaponTraitDef>
+
+  <WeaponCategoryDef MayRequire="Ludeon.RimWorld.Odyssey">
+    <defName>BS_ModernGun</defName>
+  </WeaponCategoryDef>
+
+  <WeaponTraitDef MayRequire="Ludeon.RimWorld.Odyssey">
+    <defName>BS_Modern_ArchoTech</defName>
+    <label>archotech</label>
+    <description>While appearing as a mostly unremarkable weapon, the performance in use defies all explanation.\n\nThis is almost certainly the creation of an ancient archotechnological being.</description>
+    <commonality>0.5</commonality>
+    <weaponCategory>BS_ModernGun</weaponCategory>
+    <exclusionTags>
+      <li>Modernized</li>
+    </exclusionTags>
+    <statFactors>
+      <RangedWeapon_Cooldown>0.8</RangedWeapon_Cooldown>
+      <MarketValue>2</MarketValue>
+    </statFactors>
+    <statOffsets>
+      <MarketValue>100</MarketValue>
+      <RangedWeapon_WarmupMultiplier>-0.3</RangedWeapon_WarmupMultiplier>
+      <RangedWeapon_DamageMultiplier>0.5</RangedWeapon_DamageMultiplier>
+      <RangedWeapon_ArmorPenetrationMultiplier>1</RangedWeapon_ArmorPenetrationMultiplier>
+    </statOffsets>
+    <ignoresAccuracyMaluses>true</ignoresAccuracyMaluses>
+    <traitAdjectives>
+      <li>strange</li>
+      <li>odd</li>
+      <li>weird</li>
+
+      <li>incomprehensible</li>
+      <li>ancient</li>
+      <li>mystic</li>
+      <li>unearthly</li>
+      <li>unreal</li>
+      <li>otherworldly</li>
+      <li>maddening</li>
+      <li>foretold</li>
+      <li>divine</li>
+      <li>anime</li>
+
+      <li>alien</li>
+      <li>archotech</li>
+      <li>quantum-entangled</li>
+    </traitAdjectives>
+  </WeaponTraitDef>
+</Defs>
