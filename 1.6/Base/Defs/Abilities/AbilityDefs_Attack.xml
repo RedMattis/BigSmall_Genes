@@ -80,7 +80,7 @@
     <projectile>
       <damageDef>BS_AcidBuildUpDmg</damageDef>
       <speed>26</speed>
-      <damageAmountBase>20</damageAmountBase>
+      <damageAmountBase>16</damageAmountBase>
       <arcHeightFactor>2</arcHeightFactor>
       <armorPenetrationBase>0</armorPenetrationBase>
       <stoppingPower>1</stoppingPower>
