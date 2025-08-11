@@ -178,7 +178,7 @@
       <soundLanding>Longjump_Land</soundLanding>
       <targetParams>
         <canTargetLocations>true</canTargetLocations>
-        <canTargetPawns>false</canTargetPawns>
+        <canTargetPawns>true</canTargetPawns>
         <canTargetBuildings>false</canTargetBuildings>
       </targetParams>
     </verbProperties>
