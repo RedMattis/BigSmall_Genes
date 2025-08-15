@@ -135,7 +135,7 @@
       <li>
         <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
         <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
-        <texPath>BS_Halos/AngelHaloSmall</texPath>
+        <texPath>BS_Halos/AngelHalo</texPath>
         <color>(255, 255, 255, 200)</color>
         <shaderTypeDef>TransparentPostLight</shaderTypeDef>
         <colorType>Custom</colorType>
