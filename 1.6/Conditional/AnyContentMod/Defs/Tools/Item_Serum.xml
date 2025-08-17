@@ -159,9 +159,9 @@
       <li> <compClass>BigAndSmall.CompTargetEffect_IntegrateGenes</compClass> </li>
     </comps>
     <costList Inherit="False">
-      <MedicineIndustrial>1</MedicineIndustrial>
+      <MedicineUltratech>1</MedicineUltratech>
       <ComponentIndustrial>1</ComponentIndustrial>
-      <Neutroamine>10</Neutroamine>
+      <Neutroamine>20</Neutroamine>
     </costList>
   </ThingDef>
 
