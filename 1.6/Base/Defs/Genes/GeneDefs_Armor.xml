@@ -191,14 +191,14 @@
 		<defName>BS_ToughSkin_NoArmor</defName>
 		<label>seriously tough skin</label>
 		<description>Cannot wear armor, but greatly increases armor.</description>
-		<stages> <li> <statOffsets> <ArmorRating_Blunt>0.15</ArmorRating_Blunt> <ArmorRating_Sharp>0.15</ArmorRating_Sharp> </statOffsets> </li> </stages>
+		<stages> <li> <statOffsets> <ArmorRating_Blunt>0.10</ArmorRating_Blunt> <ArmorRating_Sharp>0.15</ArmorRating_Sharp> </statOffsets> </li> </stages>
 	</HediffDef>
 
   <HediffDef  ParentName="BS_BuffHediff">
 		<defName>BS_ToughSkin_NoApparel</defName>
 		<label>knife-proof skin</label>
 		<description>Cannot wear apparel, but greatly increases armor.</description>
-		<stages> <li> <statOffsets> <ArmorRating_Blunt>0.25</ArmorRating_Blunt> <ArmorRating_Sharp>0.25</ArmorRating_Sharp> </statOffsets> </li> </stages>
+		<stages> <li> <statOffsets> <ArmorRating_Blunt>0.15</ArmorRating_Blunt> <ArmorRating_Sharp>0.20</ArmorRating_Sharp> </statOffsets> </li> </stages>
 	</HediffDef>
   
   <GeneDef ParentName="BS_Armor">
@@ -303,14 +303,14 @@
 		<defName>BS_NaturalArmor_Great_NoArmor</defName>
 		<label>Near-impervious</label>
 		<description>Cannot wear armor, but greatly increases armor.</description>
-		<stages> <li> <statOffsets> <ArmorRating_Blunt>0.30</ArmorRating_Blunt> <ArmorRating_Sharp>0.30</ArmorRating_Sharp> </statOffsets> </li> </stages>
+		<stages> <li> <statOffsets> <ArmorRating_Blunt>0.30</ArmorRating_Blunt> <ArmorRating_Sharp>0.25</ArmorRating_Sharp> </statOffsets> </li> </stages>
 	</HediffDef>
 
   <HediffDef  ParentName="BS_BuffHediff">
 		<defName>BS_NaturalArmor_Great_NoApparel</defName>
 		<label>Practically impervious</label>
 		<description>Cannot wear apparel, but greatly increases armor.</description>
-		<stages> <li> <statOffsets> <ArmorRating_Blunt>0.60</ArmorRating_Blunt> <ArmorRating_Sharp>0.40</ArmorRating_Sharp> </statOffsets> </li> </stages>
+		<stages> <li> <statOffsets> <ArmorRating_Blunt>0.40</ArmorRating_Blunt> <ArmorRating_Sharp>0.35</ArmorRating_Sharp> </statOffsets> </li> </stages>
 	</HediffDef>
 
 	<GeneDef>

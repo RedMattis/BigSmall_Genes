@@ -16,6 +16,7 @@
     <biostatMet>3</biostatMet>
     <modExtensions>
       <li Class="BigAndSmall.PawnExtension">
+        <pawnDietRacialOverride>true</pawnDietRacialOverride>
         <pawnDiet>BS_Carnivore</pawnDiet>
       </li>
     </modExtensions>
@@ -34,6 +35,7 @@
     </exclusionTags>
     <modExtensions>
       <li Class="BigAndSmall.PawnExtension">
+        <pawnDietRacialOverride>true</pawnDietRacialOverride>
         <pawnDiet>BS_Herbivore</pawnDiet>
       </li>
     </modExtensions>
@@ -52,6 +54,7 @@
     </disablesNeeds>
     <modExtensions>
       <li Class="BigAndSmall.PawnExtension">
+        <pawnDietRacialOverride>true</pawnDietRacialOverride>
         <pawnDiet>BS_ChemRobotDiet</pawnDiet>
       </li>
     </modExtensions>
@@ -71,6 +74,7 @@
     </capMods>
     <modExtensions>
       <li Class="BigAndSmall.PawnExtension">
+        <pawnDietRacialOverride>true</pawnDietRacialOverride>
         <pawnDiet>BS_EverythingAndFuel</pawnDiet>
       </li>
     </modExtensions>
