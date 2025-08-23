@@ -95,7 +95,7 @@
   <HediffDef>
     <defName>BS_Minified</defName>
     <label>minified animal</label>
-    <description>This animal has been shrunked down, but the method used made it exceptionally fast, ferocious, and sturdy for its size.</description>
+    <description>This animal has been shrunk down, but the method used made it exceptionally fast, ferocious, and sturdy for its size.</description>
     <isBad>false</isBad>
     <makesSickThought>false</makesSickThought>
     <everCurableByItem>false</everCurableByItem>
