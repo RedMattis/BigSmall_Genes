@@ -16,7 +16,6 @@
 		<isBad>false</isBad>
 	</HediffDef>
 
-
 	<GeneDef>
 		<defName>BS_CannotWearClothing</defName>
 		<displayCategory>BS_Armour</displayCategory>
@@ -52,6 +51,21 @@
 						</allowlist>
 					</thingDefs>
 				</apparelRestrictions>
+         <nullsThoughts>
+          <li MayRequire="Ludeon.Rimworld.Ideology">GroinUncovered_Disapproved_Male</li>
+          <li MayRequire="Ludeon.Rimworld.Ideology">GroinUncovered_Disapproved_Social_Male</li>
+          <li MayRequire="Ludeon.Rimworld.Ideology">GroinOrChestUncovered_Disapproved_Male</li>
+          <li MayRequire="Ludeon.Rimworld.Ideology">GroinOrChestUncovered_Disapproved_Social_Male</li>
+          <li MayRequire="Ludeon.Rimworld.Ideology">GroinChestOrHairUncovered_Disapproved_Male</li>
+          <li MayRequire="Ludeon.Rimworld.Ideology">GroinChestOrHairUncovered_Disapproved_Social_Male</li>
+          <li MayRequire="Ludeon.Rimworld.Ideology">GroinUncovered_Disapproved_Female</li>
+          <li MayRequire="Ludeon.Rimworld.Ideology">GroinUncovered_Disapproved_Social_Female</li>
+          <li MayRequire="Ludeon.Rimworld.Ideology">GroinOrChestUncovered_Disapproved_Female</li>
+          <li MayRequire="Ludeon.Rimworld.Ideology">GroinOrChestUncovered_Disapproved_Social_Female</li>
+          <li MayRequire="Ludeon.Rimworld.Ideology">GroinChestOrHairUncovered_Disapproved_Female</li>
+          <li MayRequire="Ludeon.Rimworld.Ideology">GroinChestOrHairUncovered_Disapproved_Social_Female</li>
+          <li>Naked</li>
+        </nullsThoughts>
 			</li>
 		</modExtensions>
 	</GeneDef>
@@ -119,6 +133,21 @@
 						</allowlist>
 					</thingDefs>
 				</apparelRestrictions>
+        <nullsThoughts>
+          <li MayRequire="Ludeon.Rimworld.Ideology">GroinUncovered_Disapproved_Male</li>
+          <li MayRequire="Ludeon.Rimworld.Ideology">GroinUncovered_Disapproved_Social_Male</li>
+          <li MayRequire="Ludeon.Rimworld.Ideology">GroinOrChestUncovered_Disapproved_Male</li>
+          <li MayRequire="Ludeon.Rimworld.Ideology">GroinOrChestUncovered_Disapproved_Social_Male</li>
+          <li MayRequire="Ludeon.Rimworld.Ideology">GroinChestOrHairUncovered_Disapproved_Male</li>
+          <li MayRequire="Ludeon.Rimworld.Ideology">GroinChestOrHairUncovered_Disapproved_Social_Male</li>
+          <li MayRequire="Ludeon.Rimworld.Ideology">GroinUncovered_Disapproved_Female</li>
+          <li MayRequire="Ludeon.Rimworld.Ideology">GroinUncovered_Disapproved_Social_Female</li>
+          <li MayRequire="Ludeon.Rimworld.Ideology">GroinOrChestUncovered_Disapproved_Female</li>
+          <li MayRequire="Ludeon.Rimworld.Ideology">GroinOrChestUncovered_Disapproved_Social_Female</li>
+          <li MayRequire="Ludeon.Rimworld.Ideology">GroinChestOrHairUncovered_Disapproved_Female</li>
+          <li MayRequire="Ludeon.Rimworld.Ideology">GroinChestOrHairUncovered_Disapproved_Social_Female</li>
+          <li>Naked</li>
+        </nullsThoughts>
 			</li>
 		</modExtensions>
 	</GeneDef>
