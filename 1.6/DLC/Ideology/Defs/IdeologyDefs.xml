@@ -10,5 +10,9 @@
   <IdeoIconDef>
     <defName>BS_Brimstone</defName>
     <iconPath>Icons/BS_Brimstone</iconPath>
+  </IdeoIconDef>
+  <IdeoIconDef>
+    <defName>BS_CogHeart</defName>
+    <iconPath>Icons/BS_CogHeart</iconPath>
   </IdeoIconDef> 
 </Defs>

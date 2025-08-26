@@ -90,7 +90,7 @@
         <parentTagDef>Body</parentTagDef>
         <rotDrawMode>Fresh, Rotting</rotDrawMode>
         <colorType>Hair</colorType>
-        <shader>CutoutComplex</shader>
+        <shader>BS_CutoutThreeColor</shader>
         <graphicSetDef>BS_SnekGraphicSet</graphicSetDef>
         <drawSize>(1.625,1.625)</drawSize>
         <drawData>
