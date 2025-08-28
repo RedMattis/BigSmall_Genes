@@ -41,7 +41,7 @@
     </modExtensions>
 
   </GeneDef>
-  <GeneDef Name="BS_Snake_Tail_Shared" ParentName="LoS_SnakeTailBase">
+  <GeneDef Name="BS_Snake_Tail_Shared" ParentName="LoS_SnakeTailBase" Abstract="True">
     <label>Snake Tail</label>
     <description>Carriers of this gene have a large snake tail instead regular human legs. They eat much less often than baseliners.</description>
     <customEffectDescriptions>
@@ -124,7 +124,7 @@
       </li>
     </renderNodeProperties>
   </GeneDef>
-  
+
   <GeneDef ParentName="LoS_SnakeTailBase">
     <defName>LoS_MarlithBody</defName>
     <label>Marilith</label>
