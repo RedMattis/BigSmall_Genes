@@ -36,10 +36,6 @@
               <li>Vacsuit</li>
               <li>Nudist</li>
               <li>BS_RoyalAndIdeologyHats</li>
-							<!-- <li MayRequire="Ludeon.Rimworld.Royalty">Apparel_CrownStellic</li>
-							<li MayRequire="Ludeon.Rimworld.Royalty">Apparel_Crown</li>
-							<li MayRequire="Ludeon.Rimworld.Ideology">Apparel_Tailcap</li>
-							<li MayRequire="Ludeon.Rimworld.Ideology">Apparel_VisageMask</li> -->
 						</allowlist>
 					</tags>
 				</apparelRestrictions>
@@ -84,10 +80,6 @@
               <li>Vacsuit</li>
               <li>Nudist</li>
               <li>BS_RoyalAndIdeologyHats</li>
-							<!-- <li MayRequire="Ludeon.Rimworld.Royalty">Apparel_CrownStellic</li>
-							<li MayRequire="Ludeon.Rimworld.Royalty">Apparel_Crown</li>
-							<li MayRequire="Ludeon.Rimworld.Ideology">Apparel_Tailcap</li>
-							<li MayRequire="Ludeon.Rimworld.Ideology">Apparel_VisageMask</li>-->
 						</allowlist>
 					</tags>
 				</apparelRestrictions>
@@ -112,12 +104,7 @@
 					<absolutelyNothing>true</absolutelyNothing>
 					<tags>
 						<allowlist>
-              <!-- <li>Vacsuit</li> -->
               <li>BS_RoyalAndIdeologyHats</li>
-							<!-- <li MayRequire="Ludeon.Rimworld.Royalty">Apparel_CrownStellic</li>
-							<li MayRequire="Ludeon.Rimworld.Royalty">Apparel_Crown</li>
-							<li MayRequire="Ludeon.Rimworld.Ideology">Apparel_Tailcap</li>
-							<li MayRequire="Ludeon.Rimworld.Ideology">Apparel_VisageMask</li> -->
 						</allowlist>
 					</tags>
 				</apparelRestrictions>
