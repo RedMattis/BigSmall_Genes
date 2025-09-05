@@ -30,6 +30,8 @@
 		<modExtensions>
 			<li Class="BigAndSmall.PawnExtension">
 				<apparelRestrictions>
+          <noClothes>true</noClothes>
+          <exceptNudistFriendly>true</exceptNudistFriendly>
           <tags>
             <allowlist>
               <li>Warcasket</li>
