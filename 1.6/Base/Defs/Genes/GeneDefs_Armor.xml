@@ -33,23 +33,15 @@
           <tags>
             <allowlist>
               <li>Warcasket</li>
-            </allowlist>
-          </tags>
-					<noClothes>true</noClothes>
-					<exceptNudistFriendly>true</exceptNudistFriendly>
-					<thingDefs>
-						<allowlist>
-							<li MayRequire="Ludeon.Rimworld.Royalty">Apparel_CrownStellic</li>
+              <li>Vacsuit</li>
+              <li>Nudist</li>
+              <li>BS_RoyalAndIdeologyHats</li>
+							<!-- <li MayRequire="Ludeon.Rimworld.Royalty">Apparel_CrownStellic</li>
 							<li MayRequire="Ludeon.Rimworld.Royalty">Apparel_Crown</li>
-							<li MayRequire="Ludeon.Rimworld.Biotech">Apparel_Bandolier</li>
-							<li MayRequire="Ludeon.Rimworld.Biotech">Apparel_Sash</li>
 							<li MayRequire="Ludeon.Rimworld.Ideology">Apparel_Tailcap</li>
-							<li MayRequire="Ludeon.Rimworld.Ideology">Apparel_VisageMask</li>
-              <li MayRequire="Ludeon.Rimworld.Odyssey">Apparel_Vacsuit</li>
-              <li MayRequire="Ludeon.Rimworld.Odyssey">Apparel_VacsuitChildren</li>
-              <li MayRequire="Ludeon.Rimworld.Odyssey">Apparel_VacsuitHelmet</li>
+							<li MayRequire="Ludeon.Rimworld.Ideology">Apparel_VisageMask</li> -->
 						</allowlist>
-					</thingDefs>
+					</tags>
 				</apparelRestrictions>
          <nullsThoughts>
           <li MayRequire="Ludeon.Rimworld.Ideology">GroinUncovered_Disapproved_Male</li>
@@ -89,21 +81,15 @@
           <tags>
             <allowlist>
               <li>Warcasket</li>
-            </allowlist>
-          </tags>
-					<thingDefs>
-						<allowlist>
-							<li MayRequire="Ludeon.Rimworld.Royalty">Apparel_CrownStellic</li>
+              <li>Vacsuit</li>
+              <li>Nudist</li>
+              <li>BS_RoyalAndIdeologyHats</li>
+							<!-- <li MayRequire="Ludeon.Rimworld.Royalty">Apparel_CrownStellic</li>
 							<li MayRequire="Ludeon.Rimworld.Royalty">Apparel_Crown</li>
-							<li MayRequire="Ludeon.Rimworld.Biotech">Apparel_Bandolier</li>
-							<li MayRequire="Ludeon.Rimworld.Biotech">Apparel_Sash</li>
 							<li MayRequire="Ludeon.Rimworld.Ideology">Apparel_Tailcap</li>
-							<li MayRequire="Ludeon.Rimworld.Ideology">Apparel_VisageMask</li>
-              <li MayRequire="Ludeon.Rimworld.Odyssey">Apparel_Vacsuit</li>
-              <li MayRequire="Ludeon.Rimworld.Odyssey">Apparel_VacsuitChildren</li>
-              <li MayRequire="Ludeon.Rimworld.Odyssey">Apparel_VacsuitHelmet</li>
+							<li MayRequire="Ludeon.Rimworld.Ideology">Apparel_VisageMask</li>-->
 						</allowlist>
-					</thingDefs>
+					</tags>
 				</apparelRestrictions>
 			</li>
 		</modExtensions>
@@ -124,14 +110,16 @@
 			<li Class="BigAndSmall.PawnExtension">
 				<apparelRestrictions>
 					<absolutelyNothing>true</absolutelyNothing>
-					<thingDefs>
+					<tags>
 						<allowlist>
-							<li MayRequire="Ludeon.Rimworld.Royalty">Apparel_CrownStellic</li>
+              <!-- <li>Vacsuit</li> -->
+              <li>BS_RoyalAndIdeologyHats</li>
+							<!-- <li MayRequire="Ludeon.Rimworld.Royalty">Apparel_CrownStellic</li>
 							<li MayRequire="Ludeon.Rimworld.Royalty">Apparel_Crown</li>
 							<li MayRequire="Ludeon.Rimworld.Ideology">Apparel_Tailcap</li>
-							<li MayRequire="Ludeon.Rimworld.Ideology">Apparel_VisageMask</li>
+							<li MayRequire="Ludeon.Rimworld.Ideology">Apparel_VisageMask</li> -->
 						</allowlist>
-					</thingDefs>
+					</tags>
 				</apparelRestrictions>
         <nullsThoughts>
           <li MayRequire="Ludeon.Rimworld.Ideology">GroinUncovered_Disapproved_Male</li>

@@ -4,6 +4,7 @@
     <rulePack>
       <include>
         <li>BS_HeavenFirstName</li>
+        <li>BS_HeavenFirstName_Arabic</li>
         <li>BS_HeavenLastName</li>
       </include>
       <rulesStrings>
@@ -17,6 +18,12 @@
     <rulePack>
       <rulesStrings>
         <li>firstName->[firstNamePrefix][firstNameSuffix]</li>
+        <li>firstName->[firstNamePrefix][firstNameSuffix]</li>
+        <li>firstName->[firstNamePrefix][firstNameSuffix]</li>
+        <li>firstName->[firstNamePrefix][firstNameSuffix]</li>
+        <li>firstName->[firstNamePrefix][firstNameSuffix]</li>
+        <li>firstName->[firstNamePrefix][firstNameSuffix]</li>
+        <li>firstName->[firstNameFull]</li>
 
         <li>firstNamePrefix->mich</li>
         <li>firstNamePrefix->gab</li>
@@ -37,9 +44,9 @@
         <li>firstNamePrefix->luc</li>
         <li>firstNamePrefix->jes</li>
         
+        <li>firstNameSuffix->iel</li>
         <li>firstNameSuffix->ael</li>
         <li>firstNameSuffix->riel</li>
-        <li>firstNameSuffix->iel</li>
         <li>firstNameSuffix->ion</li>
         <li>firstNameSuffix->us</li>
         <li>firstNameSuffix->ius</li>
@@ -50,6 +57,77 @@
         <li>firstNameSuffix->anis</li>
         <li>firstNameSuffix->miel</li>
         <li>firstNameSuffix->hael</li>
+
+        <!-- Specific angel names, but only obscure and unusual-sounding ones. -->
+        <li>firstNameFull->jehudiel</li>
+        <li>firstNameFull->barachiel</li>
+        <li>firstNameFull->sariel</li>
+        <li>firstNameFull->phaleg</li>
+        <li>firstNameFull->anael</li>
+        <li>firstNameFull->cassiel</li>
+        <li>firstNameFull->remiel</li>
+        <li>firstNameFull->raziel</li>
+        <li>firstNameFull->zadkiel</li>
+        <li>firstNameFull->sandalphon</li>
+        <li>firstNameFull->achaiah</li>
+        <li>firstNameFull->shemihazah</li>
+        <li>firstNameFull->erathaol</li>
+        <li>firstNameFull->taharial</li>
+        <li>firstNameFull->phul</li>
+        <li>firstNameFull->zagzagel</li>
+        <li>firstNameFull->harut</li>
+        <li>firstNameFull->marut</li>
+        <li>firstNameFull->israfel</li>
+        <li>firstNameFull->lailah</li>
+        <li>firstNameFull->matarael</li>
+        <li>firstNameFull->nuriel</li>
+        <li>firstNameFull->galgaliel</li>
+        <li>firstNameFull->jehoel</li>
+        <li>firstNameFull->sarandiel</li>
+        <li>firstNameFull->eiael</li>
+        <li>firstNameFull->achaiah</li>
+
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>BS_HeavenFirstName_Arabic</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>firstName->[firstNamePrefix][firstNameSuffix]</li>
+
+        <li>firstNamePrefix->azaz</li>
+        <li>firstNamePrefix->rid</li>
+        <li>firstNamePrefix->darda</li>
+        <li>firstNamePrefix->jibra</li>
+        <li>firstNamePrefix->mika</li>
+        <li>firstNamePrefix->isra</li>
+        <li>firstNamePrefix->sar</li>
+        <li>firstNamePrefix->han</li>
+        <li>firstNamePrefix->bar</li>
+        <li>firstNamePrefix->zad</li>
+        <li>firstNamePrefix->ana</li>
+        <li>firstNamePrefix->rag</li>
+        <li>firstNamePrefix->rau</li>
+        <li>firstNamePrefix->raz</li>
+        <li>firstNamePrefix->rem</li>
+        <li>firstNamePrefix->pha</li>
+        <li>firstNamePrefix->jibr</li>
+        <li>firstNamePrefix->isra</li>
+
+        <li>firstNameSuffix->il</li>
+        <li>firstNameSuffix->iel</li>
+        <li>firstNameSuffix->el</li>
+        <li>firstNameSuffix->wan</li>
+        <li>firstNameSuffix->'il</li>
+        <li>firstNameSuffix->'el</li>
+        <li>firstNameSuffix->el</li>
+        <li>firstNameSuffix->phiel</li>
+        <li>firstNameSuffix->fiel</li>
+        <li>firstNameSuffix->ielu</li>
+        <li>firstNameSuffix->ilu</li>
+
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -75,7 +153,6 @@
         <li>lastNameSuffix->star</li>
         <li>lastNameSuffix->sun</li>
         <li>lastNameSuffix->sword</li>
-        <li>lastNameSuffix->radience</li>
         <li>lastNameSuffix->heart</li>
         <li>lastNameSuffix->borne</li>
         <li>lastNameSuffix->wing</li>
@@ -94,7 +171,7 @@
         <li>lastNameFull->glory</li>
         <li>lastNameFull->salvation</li>
         <li>lastNameFull->light</li>
-        <li>lastNameFull->radience</li>
+        <li>lastNameFull->radiance</li>
         <li>lastNameFull->celestine</li>
         <li>lastNameFull->elysian</li>
         <li>lastNameFull->bliss</li>
@@ -107,10 +184,18 @@
         <li>lastNameFull->fortitude</li>
         <li>lastNameFull->charity</li>
         <li>lastNameFull->faith</li>
+        <li>lastNameFull->hope</li>
+        <li>lastNameFull->piety</li>
+        <li>lastNameFull->devotion</li>
+        <li>lastNameFull->grace</li>
+        <li>lastNameFull->mercy</li>
+        <li>lastNameFull->veritas</li>
+        <li>lastNameFull->truth</li>
+        <li>lastNameFull->sanctus</li>
         <li>lastNameFull->conviction</li>
         <li>lastNameFull->diligence</li>
         <li>lastNameFull->temperance</li>
-        <li>lastNameFull->soberiety</li>
+        <li>lastNameFull->sobriety</li>
         <li>lastNameFull->chastity</li>
         <li>lastNameFull->jihad</li>
         <li>lastNameFull->concord</li>
@@ -122,11 +207,18 @@
         <li>lastNameFull->crusade</li>
         <li>lastNameFull->martyr</li>
         <li>lastNameFull->lightbringer</li>
+        <li>lastNameFull->dawnbringer</li>
         <li>lastNameFull->salvation</li>
         <li>lastNameFull->prosperity</li>
         <li>lastNameFull->enlightment</li>
         <li>lastNameFull->kadosh</li>
+        <li>lastNameFull->shekinah</li>
         <li>lastNameFull->solemn</li>
+        <li>lastNameFull->faithful</li>
+        <li>lastNameFull->absolution</li>
+        <li>lastNameFull->music</li>
+        <li>lastNameFull->harmony</li>
+        <li>lastNameFull->zeal</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
