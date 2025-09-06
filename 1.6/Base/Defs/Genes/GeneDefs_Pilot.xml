@@ -100,4 +100,59 @@
 		</modExtensions>
 		<selectionWeight>0.5</selectionWeight>
 	</GeneDef>
+
+  <GeneDef>
+		<defName>BS_Parasite</defName>
+		<label>parasite</label>
+		<description>Carriers of this gene can invade the body of a host and take control of their body.</description>
+		<iconPath>GeneIcons/BS_Parasite</iconPath>
+    <displayCategory>Ability</displayCategory>
+    <abilities>
+      <li>BS_Parasite</li>
+    </abilities>
+
+		<displayOrderInCategory>1</displayOrderInCategory>
+		<biostatCpx>3</biostatCpx>
+		<biostatMet>-3</biostatMet>
+    <missingGeneRomanceChanceFactor>0</missingGeneRomanceChanceFactor>
+    <exclusionTags>
+      <li>BS_Pilotable</li>
+    </exclusionTags>
+		<selectionWeight>1</selectionWeight>
+	</GeneDef>
+
+  <AbilityDef>
+    <defName>BS_Parasite</defName>
+    <label>parasite</label>
+    <description>Jump onto the target and dig into their nervous system and influence their actions\n\nOnly works on stunned targets or those with reduced awareness.</description>
+    <iconPath>GeneIcons/BS_Parasite</iconPath>
+    <displayOrder>100</displayOrder>
+    <hostile>true</hostile>
+    <cooldownTicksRange>2000</cooldownTicksRange>
+    <jobDef>CastJump</jobDef>
+    <verbProperties>
+      <verbClass>BigAndSmall.Verb_CastAbilityJumpON</verbClass>
+      <label>Uh-oh</label>
+      <drawAimPie>true</drawAimPie>
+      <range>4.9</range>
+      <warmupTime>0.5</warmupTime>
+      <soundCast>Longjump_Jump</soundCast>
+      <soundLanding>Longjump_Land</soundLanding>
+      <requireLineOfSight>true</requireLineOfSight>
+      <targetParams>
+        <mustBeSelectable>true</mustBeSelectable>
+        <canTargetSelf>false</canTargetSelf>
+        <canTargetBuildings>false</canTargetBuildings>
+        <canTargetMechs>false</canTargetMechs>
+        <canTargetBloodfeeders>true</canTargetBloodfeeders>
+      </targetParams>
+    </verbProperties>
+    <aiCanUse>true</aiCanUse>
+    <ai_IsOffensive>true</ai_IsOffensive>
+    <comps>
+      <li Class="BigAndSmall.CompProperties_ParasiteAbility">
+        <pilotHediff>BS_ParasitePilot</pilotHediff>
+      </li>
+    </comps>
+  </AbilityDef>
 </Defs>

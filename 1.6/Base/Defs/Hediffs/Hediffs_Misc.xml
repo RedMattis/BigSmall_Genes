@@ -31,7 +31,6 @@
           </li>
         </capMods>
       </li>
-
       <li>
         <minSeverity>0.5</minSeverity>
         <label>pilot present</label>
@@ -172,6 +171,39 @@
     <reportString>Ejecting pilots.</reportString>
     <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
   </JobDef>
+
+  <HediffDef>
+    <defName>BS_ParasitePilot</defName>
+    <label>parasited</label>
+    <description>This creature is being controlled by a parasite. The parasite is heightening their senses, but also putting their metabolism into overdrive.</description>
+    <isBad>false</isBad>
+    <everCurableByItem>false</everCurableByItem>
+    <initialSeverity>1</initialSeverity>
+    <hediffClass>BigAndSmall.Piloted</hediffClass>
+    <stages>
+      <li>
+        <label>parasite present</label>
+        <painFactor>0.5</painFactor>
+        <hungerRateFactor>1.5</hungerRateFactor>
+      </li>
+    </stages>
+    
+    <comps>
+			<li Class="BigAndSmall.CompProperties_Piloted">
+        <pilotRequired>true</pilotRequired>
+        <pilotCapacity>1</pilotCapacity>
+        <flatBonusIfPiloted>0.3</flatBonusIfPiloted>
+        <pilotConsciousnessOffset>1</pilotConsciousnessOffset>
+        <temporarilySwapIdeology>true</temporarilySwapIdeology>
+        <temporarilySwapFaction>true</temporarilySwapFaction>
+        <removeIfNoPilot>true</removeIfNoPilot>
+        <injuryOnRemoval>10</injuryOnRemoval>
+			</li>
+      <li Class="BigAndSmall.CompProperties_GiveAbilities">
+        <abilities><li>BS_EjectPilot</li></abilities>
+			</li>
+		</comps>
+  </HediffDef>
 
   <HediffDef>
     <defName>BS_Engulfed</defName>
