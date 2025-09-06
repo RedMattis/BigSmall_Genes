@@ -175,4 +175,26 @@
     </symbolPack>
     <selectionWeight>0.1</selectionWeight>
   </GeneDef>
+
+    <GeneDef ParentName="GeneSkinColorOverride">
+    <defName>BS_BurgundySkin</defName>
+    <label>burgundy skin</label>
+    <labelShortAdj>burgundy</labelShortAdj>
+    <description>Carriers of this gene have dark reddish-purple skin.</description>
+    <selectionWeight>0.05</selectionWeight>
+    <randomBrightnessFactor>0.05</randomBrightnessFactor>
+    <skinColorOverride>(95,7,60)</skinColorOverride>
+    <displayOrderInCategory>175</displayOrderInCategory>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneSkinColorOverride">
+    <defName>BS_DeepVioletSkin</defName>
+    <label>deep violet skin</label>
+    <labelShortAdj>deep violet</labelShortAdj>
+    <description>Carriers of this gene have deep violet skin.</description>
+    <selectionWeight>0.05</selectionWeight>
+    <randomBrightnessFactor>0.05</randomBrightnessFactor>
+    <skinColorOverride>(63,25,102)</skinColorOverride>
+    <displayOrderInCategory>175</displayOrderInCategory>
+  </GeneDef>
 </Defs>

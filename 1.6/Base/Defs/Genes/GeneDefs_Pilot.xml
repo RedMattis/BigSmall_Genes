@@ -106,7 +106,7 @@
 		<label>parasite</label>
 		<description>Carriers of this gene can invade the body of a host and take control of their body. The carrier must be somewhat smaller than their target.</description>
 		<iconPath>GeneIcons/BS_Parasite</iconPath>
-    <displayCategory>Ability</displayCategory>
+    <displayCategory>BS_Pilotable</displayCategory>
     <abilities>
       <li>BS_Parasite</li>
     </abilities>
@@ -114,7 +114,7 @@
 		<displayOrderInCategory>1</displayOrderInCategory>
 		<biostatCpx>3</biostatCpx>
 		<biostatMet>-3</biostatMet>
-    <missingGeneRomanceChanceFactor>0</missingGeneRomanceChanceFactor>
+    <missingGeneRomanceChanceFactor>0.5</missingGeneRomanceChanceFactor>
     <exclusionTags>
       <li>BS_Pilotable</li>
     </exclusionTags>

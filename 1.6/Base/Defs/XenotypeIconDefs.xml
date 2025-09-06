@@ -219,6 +219,11 @@
   </XenotypeIconDef>
   
   <XenotypeIconDef>
+    <defName>BS_Parasite</defName>
+    <texPath>Xenotypes/BS_Parasite</texPath>
+  </XenotypeIconDef>
+
+  <XenotypeIconDef>
     <defName>BS_Hearthguardian</defName>
     <texPath>Xenotypes/BS_Hearthguardian</texPath>
   </XenotypeIconDef>

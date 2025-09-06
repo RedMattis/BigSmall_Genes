@@ -81,7 +81,11 @@
         <texPath>BS_HeadAttachments/BS_PointedEars</texPath>
         <useSkinShader>false</useSkinShader>
         <colorType>Skin</colorType>
-        <drawData> <defaultData> <layer>52</layer> </defaultData> </drawData>
+        <drawData>
+          <defaultData> <layer>52</layer> </defaultData>
+          <dataEast> <layer>70</layer> </dataEast>
+          <dataWest> <layer>70</layer> </dataWest>
+        </drawData>
         <parentTagDef>Head</parentTagDef>
       </li>
     </renderNodeProperties>
@@ -144,8 +148,8 @@
 
   <GeneDef ParentName="GeneEarsBase">
     <defName>BS_DragonEars</defName>
-    <label>pointed ears (alternative)</label>
-    <description>Carriers of this gene have pointed ears.</description>
+    <label>dragon ears</label>
+    <description>Carriers of this gene have draconic ears</description>
     <iconPath>GeneIcons/BS_DragonEars</iconPath>
     <symbolPack>
       <prefixSymbols>
@@ -173,6 +177,8 @@
           <defaultData>
             <layer>52</layer>
           </defaultData>
+          <dataEast> <layer>70</layer> </dataEast>
+          <dataWest> <layer>70</layer> </dataWest>
         </drawData>
         <parentTagDef>Head</parentTagDef>
       </li>

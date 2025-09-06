@@ -41,7 +41,7 @@
   <HediffDef>
     <defName>BS_AcidBuildUp</defName>
     <label>acid build-up</label>
-    <description>description.</description>
+    <description>Acid covers their body.</description>
     <isBad>true</isBad>
     <makesSickThought>true</makesSickThought>
     <tendable>true</tendable>
