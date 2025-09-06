@@ -90,7 +90,8 @@
     <modExtensions>
 			<li Class="BigAndSmall.PawnExtension">
 				<conditionals>
-					<li Class="BigAndSmall.ConditionalStatAffecter_PsychicSensitivityNormal" /></conditionals>
+					<li Class="BigAndSmall.ConditionalStatAffecter_PsychicSensitivityNormal" />
+        </conditionals>
 				<applyBodyHediff>
 					<li>
 						<hediff>BS_PsychicArmor_Stage1</hediff>
