@@ -104,7 +104,7 @@
   <GeneDef>
 		<defName>BS_Parasite</defName>
 		<label>parasite</label>
-		<description>Carriers of this gene can invade the body of a host and take control of their body.</description>
+		<description>Carriers of this gene can invade the body of a host and take control of their body. The carrier must be somewhat smaller than their target.</description>
 		<iconPath>GeneIcons/BS_Parasite</iconPath>
     <displayCategory>Ability</displayCategory>
     <abilities>

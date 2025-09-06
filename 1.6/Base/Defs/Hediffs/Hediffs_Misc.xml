@@ -184,7 +184,7 @@
       <li>
         <label>parasite present</label>
         <painFactor>0.5</painFactor>
-        <hungerRateFactor>1.5</hungerRateFactor>
+        <hungerRateFactor>1.8</hungerRateFactor>
       </li>
     </stages>
     
@@ -192,7 +192,7 @@
 			<li Class="BigAndSmall.CompProperties_Piloted">
         <pilotRequired>true</pilotRequired>
         <pilotCapacity>1</pilotCapacity>
-        <flatBonusIfPiloted>0.3</flatBonusIfPiloted>
+        <flatBonusIfPiloted>0.2</flatBonusIfPiloted>
         <pilotConsciousnessOffset>1</pilotConsciousnessOffset>
         <temporarilySwapIdeology>true</temporarilySwapIdeology>
         <temporarilySwapFaction>true</temporarilySwapFaction>
