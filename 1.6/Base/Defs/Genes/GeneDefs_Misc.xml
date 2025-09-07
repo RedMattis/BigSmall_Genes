@@ -546,6 +546,11 @@
     <exclusionTags>
       <li>BS_Pacifism</li>
     </exclusionTags>
+    <modExtensions>
+      <li Class="BigAndSmall.PawnExtension">
+        <canWieldThings>false</canWieldThings>
+      </li>
+    </modExtensions>
   </GeneDef>
 
   <GeneDef ParentName="GeneMeleeDamageBase">
