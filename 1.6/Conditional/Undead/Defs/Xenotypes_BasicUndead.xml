@@ -16,7 +16,6 @@
       <Dirtmole>0.02</Dirtmole>
       <VU_Revenant MayRequire="RedMattis.Undead">0.05</VU_Revenant>
       <BS_Svartalf MayRequire="RedMattis.BigSmall">0.05</BS_Svartalf>
-      <BS_FrostJotun MayRequire="RedMattis.BigSmall">0.01</BS_FrostJotun>
       <BS_Jotun MayRequire="RedMattis.BigSmall">0.01</BS_Jotun>
       <BS_Half_Jotun MayRequire="RedMattis.BigSmall">0.02</BS_Half_Jotun>
     </doubleXenotypeChances>
@@ -119,11 +118,11 @@
       <BS_Half_Jotun MayRequire="RedMattis.BigSmall">0.02</BS_Half_Jotun>
     </doubleXenotypeChances>
     <genes>
+      <li>Ageless</li>
       <li>BS_Deathlike</li>
       <li>VU_NoBlood</li>
       <li>VU_Unliving</li>
       <li>VU_Unliving_Resilience</li>
-      <li>VU_UltraRapidAging</li>
       <li>Deathless</li>
       <li>PerfectImmunity</li>
       <li>Sleepy</li>
@@ -131,7 +130,7 @@
       <li>BS_PainNumb</li>
       <li>Mood_Pessimist</li>
       <li>Sterile</li>
-      <li>Delicate</li>
+      <li>BS_VeryDelicate</li>
       <li>MinTemp_HugeDecrease</li>
       <li>MaxTemp_HugeIncrease</li>
       <li>VU_Libido_None</li>

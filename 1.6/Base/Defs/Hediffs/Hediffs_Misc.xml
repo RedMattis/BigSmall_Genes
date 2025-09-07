@@ -121,6 +121,7 @@
         <pilotCapacity>1</pilotCapacity>
         <flatBonusIfPiloted>0.4</flatBonusIfPiloted>
         <pilotConsciousnessOffset>1</pilotConsciousnessOffset>
+        <pilotLearnSkills>1</pilotLearnSkills>
 			</li>
       <li Class="BigAndSmall.CompProperties_GiveAbilities">
         <abilities><li>BS_EjectPilot</li></abilities>
@@ -175,7 +176,7 @@
   <HediffDef>
     <defName>BS_ParasitePilot</defName>
     <label>parasited</label>
-    <description>This creature is being controlled by a parasite. The parasite is heightening their senses, but also putting their metabolism into overdrive.</description>
+    <description>This creature is being controlled by a parasite. The parasite is heightening their abilities, but also putting their metabolism into overdrive.</description>
     <isBad>false</isBad>
     <everCurableByItem>false</everCurableByItem>
     <initialSeverity>1</initialSeverity>
@@ -184,7 +185,10 @@
       <li>
         <label>parasite present</label>
         <painFactor>0.5</painFactor>
-        <hungerRateFactor>1.8</hungerRateFactor>
+        <hungerRateFactor>1.3</hungerRateFactor>
+        <statFactors>
+          <GlobalLearningFactor>1.3</GlobalLearningFactor>
+        </statFactors>
       </li>
     </stages>
     
@@ -192,12 +196,14 @@
 			<li Class="BigAndSmall.CompProperties_Piloted">
         <pilotRequired>true</pilotRequired>
         <pilotCapacity>1</pilotCapacity>
-        <flatBonusIfPiloted>0.2</flatBonusIfPiloted>
+        <flatBonusIfPiloted>0.25</flatBonusIfPiloted>
         <pilotConsciousnessOffset>1</pilotConsciousnessOffset>
         <temporarilySwapIdeology>true</temporarilySwapIdeology>
         <temporarilySwapFaction>true</temporarilySwapFaction>
         <removeIfNoPilot>true</removeIfNoPilot>
         <injuryOnRemoval>10</injuryOnRemoval>
+        <pilotLearnSkills>1</pilotLearnSkills>
+        <canAutoEjectIfColonist>false</canAutoEjectIfColonist>
 			</li>
       <li Class="BigAndSmall.CompProperties_GiveAbilities">
         <abilities><li>BS_EjectPilot</li></abilities>

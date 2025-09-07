@@ -461,6 +461,28 @@
     </stages>
   </ThoughtDef>
 	
+  <GeneDef>
+    <defName>BS_VeryDelicate</defName>
+    <label>very delicate</label>
+    <displayCategory>Pain</displayCategory>
+
+    <labelShortAdj>very delicate</labelShortAdj>
+    <description>Carriers of this gene are incredibly fragile and easily injured.</description>
+    <iconPath>GeneIcons/BS_VeryDelicate</iconPath>
+    <displayOrderInCategory>-6</displayOrderInCategory>
+    <statFactors>
+      <IncomingDamageFactor>1.5</IncomingDamageFactor>
+			<CarryingCapacity>0.75</CarryingCapacity>
+      <VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">0.75</VEF_MassCarryCapacity>
+      <MeleeDamageFactor>0.9</MeleeDamageFactor>
+    </statFactors>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>6</biostatMet>
+    <exclusionTags>
+      <li>Toughness</li>
+    </exclusionTags>
+  </GeneDef>
+
 	<GeneDef>
     <defName>BS_TinyTough</defName>
     <label>small people toughness</label>
@@ -473,6 +495,7 @@
     <statFactors>
       <IncomingDamageFactor>0.4</IncomingDamageFactor>
 			<CarryingCapacity>1.5</CarryingCapacity>
+      <VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">1.5</VEF_MassCarryCapacity>
     </statFactors>
     <biostatCpx>3</biostatCpx>
     <biostatMet>-4</biostatMet>

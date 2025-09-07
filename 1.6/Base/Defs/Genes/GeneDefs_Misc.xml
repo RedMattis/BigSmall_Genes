@@ -492,7 +492,7 @@
   <GeneDef>
     <defName>BS_Deathlike</defName>
     <label>Undead Affinity</label>
-    <description>Carriers of this gene have something deathlike about them that causes zombies and the like to ignore them.\n\nSome obviously undead creatures lack this property, while some living entities possess it.</description>
+    <description>Carriers of this gene have something deathlike about them that seems to confuse shamblers. Shamblers in combat have been observer to hesitate, behave erratically or even change allegiance.</description>
     <iconPath>GeneIcons/BS_Zombie</iconPath>
     <displayCategory>Archite</displayCategory>
     <biostatCpx>0</biostatCpx>
