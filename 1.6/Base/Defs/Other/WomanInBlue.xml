@@ -79,7 +79,7 @@
 		<factionLeader>false</factionLeader>
 		<humanPregnancyChance>0</humanPregnancyChance>
 		<useFactionXenotypes>false</useFactionXenotypes>
-		<skills>
+		<!-- <skills>
 			<li>
 				<skill>Shooting</skill>
 				<range>0~5</range>
@@ -88,7 +88,7 @@
 				<skill>Melee</skill>
 				<range>9~18</range>
 			</li>
-		</skills>
+		</skills> -->
 		<forcedTraits Inherit="False">
 			<BS_Gentle/>
       <!-- <SpeedOffset>2</SpeedOffset> -->
@@ -104,6 +104,26 @@
 			<DrugDesire>1</DrugDesire>
       <DrugDesire>2</DrugDesire>
 		</disallowedTraitsWithDegree>
+    <modExtensions>
+      <li Class="BigAndSmall.PawnKindExtension">
+        <skillRange>
+          <li>
+            <skill>Melee</skill>
+            <range>9~18</range>
+          </li>
+          <li>
+            <skill>Shooting</skill>
+            <range>0~5</range>
+          </li>
+        </skillRange>
+        <forcedPassions>
+          <li>
+            <skill>Melee</skill>
+            <passion>Major</passion>
+          </li>
+        </forcedPassions>
+      </li>
+    </modExtensions>
 	</PawnKindDef>
 
   <XenotypeDef>

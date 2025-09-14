@@ -48,12 +48,12 @@
     <iconPath>GeneIcons/BS_SimpleMind</iconPath>
     <displayOrderInCategory>-5</displayOrderInCategory>
     <disabledWorkTags>
-      <li>Constructing</li>
+      <!-- <li>Constructing</li> -->
       <li>Crafting</li>
-      <li>Cooking</li>
+      <!-- <li>Cooking</li> -->
       <li>Intellectual</li>
-      <li>Artistic</li>
-      <li>Caring</li>
+      <!-- <li>Artistic</li> -->
+      <!-- <li>Caring</li> -->
     </disabledWorkTags>
     <statOffsets>
       <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">0.1</SlaveSuppressionOffset>
@@ -64,6 +64,39 @@
     <exclusionTags>
       <li>Mind_Complexity</li>
     </exclusionTags>
+    <modExtensions>
+      <li Class="BigAndSmall.PawnExtension">
+        <disableSkillBelowAptitude>
+          <Construction>7</Construction>
+          <Cooking>3</Cooking>
+          <Artistic>3</Artistic>
+          <Medicine>3</Medicine>
+          <Social>7</Social>
+        </disableSkillBelowAptitude>
+        <clampedSkills>
+          <li>
+            <skill>Construction</skill>
+            <range>0~2</range>
+          </li>
+          <li>
+            <skill>Medicine</skill>
+            <range>0~2</range>
+          </li>
+          <li>
+            <skill>Social</skill>
+            <range>0~4</range>
+          </li>
+          <li>
+            <skill>Cooking</skill>
+            <range>0~10</range>
+          </li>
+          <li>
+            <skill>Artistic</skill>
+            <range>0~10</range>
+          </li>
+        </clampedSkills>
+      </li>
+    </modExtensions>
   </GeneDef>
 
   <ThoughtDef>
