@@ -3,7 +3,7 @@
   <!-- Currently just used by the Snakemen faction in another mod. -->
   <PawnKindDef ParentName="TribalBase">
     <defName>Naked_Warrior</defName>
-    <label>Wild Warrior</label>
+    <label>wild warrior</label>
     <combatPower>40</combatPower>
     <chemicalAddictionChance>0.10</chemicalAddictionChance>
     <invNutrition>0</invNutrition>
@@ -11,10 +11,8 @@
     <gearHealthRange>0.2~1.1</gearHealthRange>
     <apparelMoney>0</apparelMoney>
     <techHediffsMoney>50~50</techHediffsMoney>
-    <techHediffsTags>
-      <li>Poor</li>
-    </techHediffsTags>
-    <techHediffsChance>0.15</techHediffsChance>
+    <techHediffsTags Inherit="False"/>
+    <techHediffsChance>0.0</techHediffsChance>
     <initialWillRange>0~1</initialWillRange>
     <initialResistanceRange>10~17</initialResistanceRange>
     <requiredWorkTags>
@@ -26,11 +24,16 @@
     <weaponTags>
       <li>NeolithicMeleeDecent</li>
     </weaponTags>
+    <modExtensions>
+      <li Class="BigAndSmall.PawnKindExtension">
+        <blockAllApparel>true</blockAllApparel>
+      </li>
+    </modExtensions>
   </PawnKindDef>
   
   <PawnKindDef Name="BS_Tribal_Wildman" ParentName="TribalBase">
     <defName>Tribal_Wildman</defName>
-    <label>Tribal Wildman</label>
+    <label>tribal wildman</label>
     <combatPower>40</combatPower>
     <chemicalAddictionChance>0.10</chemicalAddictionChance>
     <invNutrition>0</invNutrition>
@@ -39,10 +42,8 @@
     <apparelMoney>0</apparelMoney>
     <weaponMoney>0</weaponMoney>
     <techHediffsMoney>50~50</techHediffsMoney>
-    <techHediffsTags>
-      <li>Poor</li>
-    </techHediffsTags>
-    <techHediffsChance>0.15</techHediffsChance>
+    <techHediffsTags Inherit="False"/>
+    <techHediffsChance>0.0</techHediffsChance>
     <initialWillRange>0~1</initialWillRange>
     <initialResistanceRange>10~17</initialResistanceRange>
     <requiredWorkTags>
@@ -51,19 +52,29 @@
     <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
     <apparelTags Inherit="False" />
     <weaponTags Inherit="False" />
+    <modExtensions>
+      <li Class="BigAndSmall.PawnKindExtension">
+        <blockAllApparel>true</blockAllApparel>
+      </li>
+    </modExtensions>
   </PawnKindDef>
 
   <PawnKindDef ParentName="BS_Tribal_Wildman">
     <defName>Tribal_WildmanNW</defName>
-    <label>Tribal Wildman</label><!-- Use this variant if they have powerful natural weapons.-->
+    <label>tribal wildman</label><!-- Use this variant if they have powerful natural weapons.-->
     <combatPower>80</combatPower>
     <apparelTags Inherit="False" />
     <weaponTags Inherit="False" />
+    <modExtensions>
+      <li Class="BigAndSmall.PawnKindExtension">
+        <blockAllApparel>true</blockAllApparel>
+      </li>
+    </modExtensions>
   </PawnKindDef>
   
   <PawnKindDef ParentName="TribalBase" Name="Tribal_Wildman_Leader">
     <defName>Tribal_Wildman_Leader</defName>
-    <label>Tribal Wildman Leader</label>
+    <label>tribal wildman leader</label>
     <combatPower>80</combatPower>
     <chemicalAddictionChance>0.10</chemicalAddictionChance>
     <invNutrition>0</invNutrition>
@@ -72,10 +83,8 @@
     <apparelMoney>0</apparelMoney>
     <weaponMoney>0</weaponMoney>
     <techHediffsMoney>50~50</techHediffsMoney>
-    <techHediffsTags>
-      <li>Poor</li>
-    </techHediffsTags>
-    <techHediffsChance>0.15</techHediffsChance>
+    <techHediffsTags Inherit="False"/>
+    <techHediffsChance>0.0</techHediffsChance>
     <initialWillRange>0~1</initialWillRange>
     <initialResistanceRange>10~17</initialResistanceRange>
     <requiredWorkTags>
@@ -85,6 +94,11 @@
     <apparelTags Inherit="False" />
     <weaponTags Inherit="False" />
     <factionLeader>true</factionLeader>
+    <modExtensions>
+      <li Class="BigAndSmall.PawnKindExtension">
+        <blockAllApparel>true</blockAllApparel>
+      </li>
+    </modExtensions>
   </PawnKindDef>
   
   <!-- <PawnKindDef ParentName="Tribal_Hunter"> -->
