@@ -13,7 +13,7 @@
         <statOffsetEffectMultiplier>BS_SoulPower</statOffsetEffectMultiplier>
       </li>
       <li>
-        <minSeverity>1</minSeverity>
+        <minSeverity>1.1</minSeverity>
         <statOffsets>
           <SM_BodySizeOffset>0.35</SM_BodySizeOffset>
         </statOffsets>
@@ -21,7 +21,7 @@
         <statOffsetEffectMultiplier>BS_SoulPower</statOffsetEffectMultiplier>
       </li>
       <li>
-        <minSeverity>2</minSeverity>
+        <minSeverity>2.1</minSeverity>
         <statOffsets>
           <SM_BodySizeOffset>0.2</SM_BodySizeOffset>
         </statOffsets>
@@ -51,7 +51,7 @@
         <statOffsetEffectMultiplier>BS_SoulPower</statOffsetEffectMultiplier>
       </li>
       <li>
-        <minSeverity>1</minSeverity>
+        <minSeverity>1.1</minSeverity>
         <statOffsets>
           <SM_BodySizeOffset>0.35</SM_BodySizeOffset>
           <ArmorRating_Blunt>0.05</ArmorRating_Blunt>
@@ -61,7 +61,7 @@
         <statOffsetEffectMultiplier>BS_SoulPower</statOffsetEffectMultiplier>
       </li>
       <li>
-        <minSeverity>2</minSeverity>
+        <minSeverity>2.1</minSeverity>
         <statOffsets>
           <SM_BodySizeOffset>0.2</SM_BodySizeOffset>
           <ArmorRating_Blunt>0.05</ArmorRating_Blunt>
@@ -81,6 +81,7 @@
         </skinColorOverride>
       </li>
 			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VEF.AnimalBehaviours.HediffCompProperties_Floating"/>
+      <li Class="BigAndSmall.CompProperties_CanCancelHediff"/>
       <li Class="BigAndSmall.CompProperties_DrainResource">
         <compClass>BigAndSmall.Comp_DrainsSoulEnergy</compClass>
         <ticksBetweenDrain>60</ticksBetweenDrain>
@@ -89,13 +90,35 @@
       </li>
 		</comps>
     <renderNodeProperties Inherit="False">
-      <li>
+      <li Class="BigAndSmall.PawnRenderingProps_Ultimate">
+        <nodeClass>BigAndSmall.PawnRenderNode_Ultimate</nodeClass>
         <parentTagDef>Body</parentTagDef>
         <workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
-        <texPath>BS_BodyAttachments/BS_Wings/AngelicWings_Bottom</texPath>
         <drawSize>(1.25,1.25)</drawSize>
-        <color>(245,245,245)</color>
-        <colorType>Hair</colorType>
+        <shader>BS_EnergyShader</shader>
+        <conditionalGraphics>
+          <texturePaths> <li>BS_BodyAttachments/BS_Wings/AngelicWings_Bottom</li> </texturePaths>
+          <colorA>
+            <color>(245,245,245)</color>
+            <hairColor>true</hairColor>
+            <averageColors>false</averageColors>
+            <alts>
+              <li>
+                <customTagGraphicIsSet>
+                  <tag><WingGraphics/></tag>
+                  <colorA>true</colorA>
+                </customTagGraphicIsSet>
+                <customClrTagA><WingGraphics/></customClrTagA>
+              </li>
+            </alts>
+          </colorA>
+          <alts>
+            <li>
+              <triggerGeneTag> <acceptlist><li>Wing</li><li>Wings</li></acceptlist> </triggerGeneTag>
+              <texturePaths><default>BS_Blank</default></texturePaths>
+            </li>
+          </alts>
+        </conditionalGraphics>
         <drawData>
           <defaultData>
             <layer>10</layer>
@@ -112,13 +135,35 @@
           </dataNorth>
         </drawData>
       </li>
-      <li>
+      <li Class="BigAndSmall.PawnRenderingProps_Ultimate">
+        <nodeClass>BigAndSmall.PawnRenderNode_Ultimate</nodeClass>
         <parentTagDef>Body</parentTagDef>
         <workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
-        <texPath>BS_BodyAttachments/BS_Wings/AngelicWings_Top</texPath>
         <drawSize>(1.25,1.25)</drawSize>
-        <color>(245,245,245)</color>
-        <colorType>Hair</colorType>
+        <shader>BS_EnergyShader</shader>
+        <conditionalGraphics>
+          <texturePaths> <li>BS_BodyAttachments/BS_Wings/AngelicWings_Top</li> </texturePaths>
+          <colorA>
+            <color>(245,245,245)</color>
+            <hairColor>true</hairColor>
+            <averageColors>false</averageColors>
+            <alts>
+              <li>
+                <customTagGraphicIsSet>
+                  <tag><WingGraphics/></tag>
+                  <colorA>true</colorA>
+                </customTagGraphicIsSet>
+                <customClrTagA><WingGraphics/></customClrTagA>
+              </li>
+            </alts>
+          </colorA>
+          <alts>
+            <li>
+              <triggerGeneTag> <acceptlist><li>Wing</li><li>Wings</li></acceptlist> </triggerGeneTag>
+              <texturePaths><default>BS_Blank</default></texturePaths>
+            </li>
+          </alts>
+        </conditionalGraphics>
         <drawData>
           <defaultData>
             <layer>91</layer>
@@ -132,31 +177,55 @@
           </dataNorth>
         </drawData>
       </li>
-      <li>
-        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+      <li Class="BigAndSmall.PawnRenderingProps_Ultimate">
+        <nodeClass>BigAndSmall.PawnRenderNode_Ultimate</nodeClass>
+        <conditionalGraphics>
+          <texturePaths> <li>BS_Halos/AngelHalo</li> </texturePaths>
+          <colorA>
+            <color>(252, 228, 137, 180)</color>
+          </colorA>
+          <alts>
+            <li>
+              <customTagGraphicIsSet>
+                <tag><HaloGraphics/></tag>
+                <colorA>true</colorA>
+              </customTagGraphicIsSet>
+              <texturePaths> <li>BS_Halos/AngelHalo</li> </texturePaths>
+              <colorA>
+                <customClrTagA><HaloGraphics/></customClrTagA>
+                <averageColors>false</averageColors>
+              </colorA>
+            </li>
+          </alts>
+        </conditionalGraphics>
+        
         <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
-        <texPath>BS_Halos/AngelHalo</texPath>
-        <color>(255, 255, 255, 200)</color>
-        <shaderTypeDef>TransparentPostLight</shaderTypeDef>
-        <colorType>Custom</colorType>
+        <shader>BS_EnergyShader</shader>
+        <drawSize>(0.93,0.93)</drawSize>
+        
         <drawData>
-          <defaultData>
-            <layer>52</layer>
-          </defaultData>
-          <dataNorth>
-            <offset>(0.0, 0, 0.0)</offset>
-          </dataNorth>
-          <dataSouth>
-            <offset>(-0.0, 0, 0.05)</offset>
-          </dataSouth>
-          <dataEast>
-            <offset>(-0.0, 0, 0.0)</offset>
-            <layer>90</layer>
-          </dataEast>
+          <defaultData> <layer>49.5</layer> </defaultData>
+          <dataNorth> <offset>(0.0, 0.01, 0.0)</offset> </dataNorth>
+          <dataSouth> <offset>(-0.0, 0, 0.0)</offset> </dataSouth>
+          <dataEast> <offset>(-0.0, 0, 0.0)</offset> <layer>90</layer> </dataEast>
+          <dataWest> <offset>(-0.0, 0, 0.0)</offset> <layer>90</layer> </dataWest>
         </drawData>
         <parentTagDef>Head</parentTagDef>
       </li>
     </renderNodeProperties>
+    <modExtensions>
+      <li Class="BigAndSmall.PawnExtension">
+        <geneTagFilters>
+          <blacklist>
+            <li>BS_Halo</li>
+          </blacklist>
+        </geneTagFilters>
+      </li>
+      <li Class="BigAndSmall.HasCustomizableGraphics">
+        <tag><WingGraphics/></tag>
+        <colorA>true</colorA>
+      </li>
+    </modExtensions>
   </HediffDef>
 
   <HediffDef ParentName="BS_TrueFormBase" Name="BS_TrueForm_HemoDemonic" Abstract="True">
@@ -197,41 +266,95 @@
       </li>
 		</comps>
     <renderNodeProperties Inherit="False">
-      <li>
+      <li Class="BigAndSmall.PawnRenderingProps_Ultimate">
+        <nodeClass>BigAndSmall.PawnRenderNode_Ultimate</nodeClass>
         <parentTagDef>Body</parentTagDef>
-        <texPath>BS_BodyAttachments/BS_DemonWingsb</texPath>
-        <drawSize>(1.25,1.25)</drawSize>
-        <colorType>Skin</colorType>
+        <shader>Cutout</shader>
+        <conditionalGraphics>
+          <texturePaths> <li>BS_BodyAttachments/BS_DemonWingsb</li> </texturePaths>
+          <colorA>
+            <skinColor>true</skinColor>
+            <alts>
+              <li>
+                <customTagGraphicIsSet>
+                  <tag><WingGraphics/></tag>
+                  <colorA>true</colorA>
+                </customTagGraphicIsSet>
+                <customClrTagA><WingGraphics/></customClrTagA>
+              </li>
+            </alts>
+          </colorA>
+          <alts>
+            <li>
+              <triggerGeneTag> <acceptlist><li>Wing</li><li>Wings</li></acceptlist> </triggerGeneTag>
+              <texturePaths><default>BS_Blank</default></texturePaths>
+            </li>
+          </alts>
+        </conditionalGraphics>
+        <drawSize>(1.2, 1.2)</drawSize>
         <drawData>
-          <defaultData>
-            <layer>10</layer>
-          </defaultData>
-          <dataSouth>
-            <layer>-1</layer>
-          </dataSouth>
-          <dataNorth>
-            <layer>90</layer>
-          </dataNorth>
+          <defaultData> <layer>10</layer> </defaultData>
+          <dataSouth> <layer>-1</layer> </dataSouth>
+          <dataNorth> <layer>90</layer> </dataNorth>
         </drawData>
       </li>
-      <li>
+
+      <li Class="BigAndSmall.PawnRenderingProps_Ultimate">
+        <nodeClass>BigAndSmall.PawnRenderNode_Ultimate</nodeClass>
         <parentTagDef>Body</parentTagDef>
-        <texPath>BS_BodyAttachments/BS_DemonTaila</texPath>
+        <shader>BS_EnergyShader</shader>
+        <conditionalGraphics>
+          <texturePaths> <li>BS_BodyAttachments/BS_DemonWingsb</li> </texturePaths>
+          <colorA>
+            <color>(40, 0, 10, 255)</color>
+            <alts>
+              <li>
+                <customTagGraphicIsSet>
+                  <tag><WingGraphics/></tag>
+                  <colorB>true</colorB>
+                </customTagGraphicIsSet>
+                <customClrTagB><WingGraphics/></customClrTagB>
+              </li>
+            </alts>
+          </colorA>
+          <alts>
+            <li>
+              <triggerGeneTag> <acceptlist><li>Wing</li><li>Wings</li></acceptlist> </triggerGeneTag>
+              <texturePaths><default>BS_Blank</default></texturePaths>
+            </li>
+          </alts>
+        </conditionalGraphics>
+        <drawSize>(1.43, 1.30)</drawSize>
+        <drawData>
+          <defaultData> <layer>9</layer> <offset>(0, 0, 0.04)</offset></defaultData>
+          <dataSouth> <layer>-2</layer> <offset>(0, 0, 0.04)</offset></dataSouth>
+          <dataNorth> <layer>91</layer> <offset>(0, 0, 0.04)</offset></dataNorth>
+        </drawData>
+      </li>
+
+      <li Class="BigAndSmall.PawnRenderingProps_Ultimate">
+        <nodeClass>BigAndSmall.PawnRenderNode_Ultimate</nodeClass>
+        <parentTagDef>Body</parentTagDef>
         <drawSize>(1.125,1.125)</drawSize>
         <colorType>Skin</colorType>
+        <shader>Cutout</shader>
+        <conditionalGraphics>
+          <texturePaths> <li>BS_BodyAttachments/BS_DemonTaila</li> </texturePaths>
+          <colorA>
+            <hairColor>true</hairColor>
+          </colorA>
+          <alts>
+            <li>
+              <triggerGeneTag> <acceptlist><li>taur</li><li>tail</li><li>tails</li></acceptlist> </triggerGeneTag>
+              <texturePaths><default>BS_Blank</default></texturePaths>
+            </li>
+          </alts>
+        </conditionalGraphics>
         <drawData>
-          <defaultData>
-            <layer>-2</layer>
-          </defaultData>
-          <dataNorth>
-            <offset>(0.0, 0, -0.0)</offset>
-          </dataNorth>
-          <dataSouth>
-            <offset>(-0.0, 0, -0.0)</offset>
-          </dataSouth>
-          <dataEast>
-            <offset>(-0.0, 0, -0.0)</offset>
-          </dataEast>
+          <defaultData> <layer>-2</layer> </defaultData>
+          <dataNorth> <offset>(0.0, 0, -0.0)</offset> </dataNorth>
+          <dataSouth> <offset>(-0.0, 0, -0.0)</offset> </dataSouth>
+          <dataEast> <offset>(-0.0, 0, -0.0)</offset> </dataEast>
         </drawData>
       </li>
       <li>
@@ -241,15 +364,41 @@
         <color>(200, 200, 200)</color>
         <colorType>Hair</colorType>
         <drawData>
-          <defaultData>
-            <layer>80</layer>
-          </defaultData>
-          <dataNorth>
-            <layer>10</layer>
-          </dataNorth>
-          <dataSouth>
-            <offset>(0, 0, 0)</offset>
-          </dataSouth>
+          <defaultData> <layer>80</layer> </defaultData>
+          <dataNorth> <layer>10</layer> </dataNorth>
+          <dataSouth> <offset>(0, 0, 0)</offset> </dataSouth>
+        </drawData>
+        <parentTagDef>Head</parentTagDef>
+      </li>
+
+      <li Class="BigAndSmall.PawnRenderingProps_Ultimate">
+        <nodeClass>BigAndSmall.PawnRenderNode_Ultimate</nodeClass>
+        <shader>BS_EnergyShader</shader>
+        <useHeadMesh>true</useHeadMesh>
+        <drawSize>(0.93,0.93)</drawSize>
+        <conditionalGraphics>
+          <texturePaths> <li>BS_Halos/MenacingHalo_grey</li> </texturePaths>
+          <colorA>
+            <color>(40, 0, 10, 255)</color>
+            <averageColors>false</averageColors>
+            <alts>
+              <li>
+                <customTagGraphicIsSet>
+                  <tag><HaloGraphics/></tag>
+                  <colorA>true</colorA>
+                </customTagGraphicIsSet>
+                <customClrTagA><HaloGraphics/></customClrTagA>
+              </li>
+            </alts>
+          </colorA>
+        </conditionalGraphics>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <drawData>
+          <defaultData> <layer>49.5</layer> </defaultData>
+          <dataNorth> <offset>(0.0, 0, 0.05)</offset> </dataNorth>
+          <dataSouth> <offset>(-0.0, 0, 0.025)</offset> <layer>15</layer> </dataSouth>
+          <dataEast> <offset>(-0.0, 0, 0.025)</offset> <layer>90</layer> </dataEast>
+          <dataWest> <offset>(-0.0, 0, 0.025)</offset> <layer>90</layer> </dataWest>
         </drawData>
         <parentTagDef>Head</parentTagDef>
       </li>
@@ -260,13 +409,29 @@
         <useSkinShader>false</useSkinShader>
         <colorType>Skin</colorType>
         <drawData>
-          <defaultData>
-            <layer>52</layer>
-          </defaultData>
+          <defaultData> <layer>52</layer> </defaultData>
         </drawData>
         <parentTagDef>Head</parentTagDef>
       </li>
     </renderNodeProperties>
+    <modExtensions>
+      <li Class="BigAndSmall.PawnExtension">
+        <geneTagFilters>
+          <blacklist>
+            <li>BS_Halo</li>
+          </blacklist>
+        </geneTagFilters>
+      </li>
+      <li Class="BigAndSmall.HasCustomizableGraphics">
+        <tag><WingGraphics/></tag>
+        <colorA>true</colorA>
+        <colorB>true</colorB>
+      </li>
+      <li Class="BigAndSmall.HasCustomizableGraphics">
+        <tag><HaloGraphics/></tag>
+        <colorA>true</colorA>
+      </li>
+    </modExtensions>
   </HediffDef>
 
   <HediffDef ParentName="BS_TrueForm_HemoDemonic">
@@ -282,6 +447,7 @@
 
   <HediffDef ParentName="BS_TrueForm_HemoDemonic">
     <defName>BS_TrueForm_Demonic</defName>
+    <label>True Form (Hemodemonic)</label>
     <comps>
       <li Class="BigAndSmall.CompProperties_DrainResource">
         <compClass>BigAndSmall.Comp_DrainsSoulEnergy</compClass>
@@ -315,7 +481,7 @@
         <statOffsetEffectMultiplier>BS_SoulPower</statOffsetEffectMultiplier>
       </li>
       <li>
-        <minSeverity>1</minSeverity>
+        <minSeverity>1.1</minSeverity>
         <statFactors>
           <MoveSpeed>0.75</MoveSpeed>
           <StaggerDurationFactor>0</StaggerDurationFactor>
@@ -330,7 +496,7 @@
         <statOffsetEffectMultiplier>BS_SoulPower</statOffsetEffectMultiplier>
       </li>
       <li>
-        <minSeverity>2</minSeverity>
+        <minSeverity>2.1</minSeverity>
         <statFactors>
           <MoveSpeed>0.75</MoveSpeed>
           <StaggerDurationFactor>0</StaggerDurationFactor>
