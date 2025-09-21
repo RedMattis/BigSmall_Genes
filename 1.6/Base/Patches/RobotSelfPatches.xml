@@ -1,0 +1,23 @@
+<Patch> <Operation Class="BigAndSmall.PatchOp_RobotsEnabled"> <match Class="PatchOperationAdd"> <xpath>Defs</xpath><value>
+  
+  <GeneDef>
+    <defName>BS_BatteryChargeable</defName>
+    <label>battery chargeable</label>
+    <labelShortAdj>chargeable</labelShortAdj>
+    <description>Carriers of this gene can be recharged at special charging stations.\n\nThis is fairly inefficient and comes at a huge cost in battery charge.</description>
+    <iconPath>GeneIcons/BS_BatteryCharge</iconPath>
+    <displayOrderInCategory>-4</displayOrderInCategory>
+    <biostatMet>-1</biostatMet>
+    <biostatCpx>3</biostatCpx>
+    <statOffsets>
+      <BS_BatteryCharging>0.3</BS_BatteryCharging>
+    </statOffsets>
+
+    <modExtensions>
+			<li Class="BigAndSmall.PawnExtension">
+        <canUseChargers>true</canUseChargers>
+      </li>
+		</modExtensions>
+  </GeneDef>
+
+</value> </match> </Operation> </Patch>
