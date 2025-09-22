@@ -21,6 +21,7 @@
       <li Class="BigAndSmall.PawnExtension">
         <thingDefSwap>BS_HumanoidWithTail</thingDefSwap>
       </li>
+      <li Class="BigAndSmall.Flagger"><flags><ShowBaseAbdomen/></flags></li>
     </modExtensions>
   </GeneDef>
 </Defs>
