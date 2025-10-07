@@ -130,6 +130,7 @@
     <hostile>true</hostile>
     <cooldownTicksRange>2000</cooldownTicksRange>
     <jobDef>CastJump</jobDef>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
     <verbProperties>
       <verbClass>BigAndSmall.Verb_CastAbilityJumpON</verbClass>
       <label>Uh-oh</label>

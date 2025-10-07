@@ -130,6 +130,7 @@
     <label>Eject Pilot</label>
     <description>Eject the pilot from the vehicle.\n\nIf downed this will happen automatically after some time.</description>
     <iconPath>GeneIcons/BS_EjectPilot</iconPath>
+    <abilityClass>BigAndSmall.UsableDownedAbility</abilityClass>
     <cooldownTicksRange>50</cooldownTicksRange>
     <warmupStartSound>FoamSpray_Warmup</warmupStartSound>
     <hostile>false</hostile>
