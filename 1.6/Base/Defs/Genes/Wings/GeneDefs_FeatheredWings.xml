@@ -19,7 +19,7 @@
         <movementDef>PF_Movement_Flying</movementDef>
       </li>
       <li Class="BigAndSmall.GraphicsOverride">
-        <replaceFlags><Wings/></replaceFlags>
+        <replaceFlags><WingGraphics/></replaceFlags>
         <graphics>
           <li Class="BigAndSmall.ConditionalGraphicProperties">
             <drawSize>(1.15, 1.15)</drawSize>
@@ -75,7 +75,7 @@
       <li Class="BigAndSmall.GraphicsOverride">
         <overrideList>
           <li>
-            <replaceFlags><Wings/></replaceFlags>
+            <replaceFlags><WingGraphics/></replaceFlags>
             <graphics>
               <li Class="BigAndSmall.ConditionalGraphicProperties">
                 <drawSize>(1.15, 1.15)</drawSize>
@@ -149,7 +149,7 @@
       <li Class="BigAndSmall.GraphicsOverride">
         <overrideList>
           <li>
-            <replaceFlags><Wings/></replaceFlags>
+            <replaceFlags><WingGraphics/></replaceFlags>
             <graphics>
               <li Class="BigAndSmall.ConditionalGraphicProperties">
                 <drawSize>(1.15, 1.15)</drawSize>

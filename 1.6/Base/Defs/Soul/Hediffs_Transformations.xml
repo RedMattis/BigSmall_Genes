@@ -225,6 +225,20 @@
         <tag><WingGraphics/></tag>
         <colorA>true</colorA>
       </li>
+      <li Class="BigAndSmall.GraphicsOverride">
+        <overrideList>
+          <li>
+            <replaceFlags><WingGraphics/></replaceFlags>
+            <priority>10000</priority>
+            <graphics>
+              <li Class="BigAndSmall.ConditionalGraphicProperties">
+                <shader>BS_EnergyShader</shader>
+                <drawSize>(1.15, 1.15)</drawSize>
+              </li>
+            </graphics>
+          </li>
+        </overrideList>
+      </li>
     </modExtensions>
   </HediffDef>
 
@@ -317,12 +331,6 @@
               </li>
             </alts>
           </colorA>
-          <alts>
-            <li>
-              <triggerGeneTag> <acceptlist><li>Wing</li><li>Wings</li></acceptlist> </triggerGeneTag>
-              <texturePaths><default>BS_Blank</default></texturePaths>
-            </li>
-          </alts>
         </conditionalGraphics>
         <drawSize>(1.43, 1.30)</drawSize>
         <drawData>
