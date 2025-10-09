@@ -9,7 +9,7 @@
         <statOffsets>
           <SM_BodySizeOffset>0.5</SM_BodySizeOffset>
         </statOffsets>
-        <statFactorEffectMultiplier>BS_SoulPower</statFactorEffectMultiplier>
+        <blocksSleeping>true</blocksSleeping>
         <statOffsetEffectMultiplier>BS_SoulPower</statOffsetEffectMultiplier>
       </li>
       <li>
@@ -17,7 +17,7 @@
         <statOffsets>
           <SM_BodySizeOffset>0.35</SM_BodySizeOffset>
         </statOffsets>
-        <statFactorEffectMultiplier>BS_SoulPower</statFactorEffectMultiplier>
+        <blocksSleeping>true</blocksSleeping>
         <statOffsetEffectMultiplier>BS_SoulPower</statOffsetEffectMultiplier>
       </li>
       <li>
@@ -25,7 +25,7 @@
         <statOffsets>
           <SM_BodySizeOffset>0.2</SM_BodySizeOffset>
         </statOffsets>
-        <statFactorEffectMultiplier>BS_SoulPower</statFactorEffectMultiplier>
+        <blocksSleeping>true</blocksSleeping>
         <statOffsetEffectMultiplier>BS_SoulPower</statOffsetEffectMultiplier>
       </li>
     </stages>
@@ -40,34 +40,50 @@
       <li>BS_flying_jump</li>
     </abilities>
     <aptitudes> <Melee>4</Melee> </aptitudes>
+    <preventsDeath>true</preventsDeath>
     <stages Inherit="False">
       <li>
+        <totalBleedFactor>0.20</totalBleedFactor>
+        <painFactor>0.1</painFactor>
+        <preventVacuumBurns>true</preventVacuumBurns>
+        <blocksMentalBreaks>true</blocksMentalBreaks>
+        <blocksSleeping>true</blocksSleeping>
         <statOffsets>
           <SM_BodySizeOffset>0.5</SM_BodySizeOffset>
           <ArmorRating_Blunt>0.05</ArmorRating_Blunt>
           <ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+          <VacuumResistance MayRequire="Ludeon.Rimworld.Odyssey">0.75</VacuumResistance>
         </statOffsets>
-        <statFactorEffectMultiplier>BS_SoulPower</statFactorEffectMultiplier>
         <statOffsetEffectMultiplier>BS_SoulPower</statOffsetEffectMultiplier>
       </li>
       <li>
         <minSeverity>1.1</minSeverity>
+        <totalBleedFactor>0.20</totalBleedFactor>
+        <painFactor>0.1</painFactor>
+        <preventVacuumBurns>true</preventVacuumBurns>
+        <blocksMentalBreaks>true</blocksMentalBreaks>
+        <blocksSleeping>true</blocksSleeping>
         <statOffsets>
           <SM_BodySizeOffset>0.35</SM_BodySizeOffset>
           <ArmorRating_Blunt>0.05</ArmorRating_Blunt>
           <ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+          <VacuumResistance MayRequire="Ludeon.Rimworld.Odyssey">0.75</VacuumResistance>
         </statOffsets>
-        <statFactorEffectMultiplier>BS_SoulPower</statFactorEffectMultiplier>
         <statOffsetEffectMultiplier>BS_SoulPower</statOffsetEffectMultiplier>
       </li>
       <li>
         <minSeverity>2.1</minSeverity>
+        <totalBleedFactor>0.20</totalBleedFactor>
+        <painFactor>0.1</painFactor>
+        <preventVacuumBurns>true</preventVacuumBurns>
+        <blocksMentalBreaks>true</blocksMentalBreaks>
+        <blocksSleeping>true</blocksSleeping>
         <statOffsets>
           <SM_BodySizeOffset>0.2</SM_BodySizeOffset>
           <ArmorRating_Blunt>0.05</ArmorRating_Blunt>
           <ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+          <VacuumResistance MayRequire="Ludeon.Rimworld.Odyssey">0.75</VacuumResistance>
         </statOffsets>
-        <statFactorEffectMultiplier>BS_SoulPower</statFactorEffectMultiplier>
         <statOffsetEffectMultiplier>BS_SoulPower</statOffsetEffectMultiplier>
       </li>
 		</stages>
@@ -220,6 +236,14 @@
             <li>BS_Halo</li>
           </blacklist>
         </geneTagFilters>
+        <applyBodyHediff>
+          <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+            <hediff>BS_Floating</hediff>
+          </li>
+        </applyBodyHediff>
+      </li>
+      <li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
+        <movementDef>PF_Movement_Flying</movementDef>
       </li>
       <li Class="BigAndSmall.HasCustomizableGraphics">
         <tag><WingGraphics/></tag>
@@ -233,7 +257,7 @@
             <graphics>
               <li Class="BigAndSmall.ConditionalGraphicProperties">
                 <shader>BS_EnergyShader</shader>
-                <drawSize>(1.15, 1.15)</drawSize>
+                <drawSize>(1.18, 1.18)</drawSize>
               </li>
             </graphics>
           </li>
@@ -429,6 +453,14 @@
             <li>BS_Halo</li>
           </blacklist>
         </geneTagFilters>
+        <applyBodyHediff>
+          <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+            <hediff>BS_Floating</hediff>
+          </li>
+        </applyBodyHediff>
+      </li>
+      <li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
+        <movementDef>PF_Movement_Flying</movementDef>
       </li>
       <li Class="BigAndSmall.HasCustomizableGraphics">
         <tag><WingGraphics/></tag>
@@ -474,10 +506,12 @@
     </abilities>
     <stages Inherit="False">
       <li>
-        <totalBleedFactor>0.25</totalBleedFactor>
-        <painFactor>0.65</painFactor>
+        <totalBleedFactor>0.0</totalBleedFactor>
+        <painFactor>0.75</painFactor>
+        <preventVacuumBurns>true</preventVacuumBurns>
+        <blocksMentalBreaks>true</blocksMentalBreaks>
         <statFactors>
-          <!-- <MoveSpeed>0.75</MoveSpeed> -->
+          <MoveSpeed>0.95</MoveSpeed>
           <StaggerDurationFactor>0</StaggerDurationFactor>
           <IncomingDamageFactor>0.9</IncomingDamageFactor>
         </statFactors>
@@ -485,13 +519,19 @@
           <SM_BodySizeOffset>0.6</SM_BodySizeOffset>
           <ArmorRating_Sharp>0.10</ArmorRating_Sharp>
           <ArmorRating_Heat>0.5</ArmorRating_Heat>
+          <VacuumResistance MayRequire="Ludeon.Rimworld.Odyssey">0.75</VacuumResistance>
         </statOffsets>
+        <statFactorEffectMultiplier>BS_SoulPower</statFactorEffectMultiplier>
         <statOffsetEffectMultiplier>BS_SoulPower</statOffsetEffectMultiplier>
       </li>
       <li>
         <minSeverity>1.1</minSeverity>
+        <totalBleedFactor>0.0</totalBleedFactor>
+        <painFactor>0.75</painFactor>
+        <preventVacuumBurns>true</preventVacuumBurns>
+        <blocksMentalBreaks>true</blocksMentalBreaks>
         <statFactors>
-          <!-- <MoveSpeed>0.75</MoveSpeed> -->
+          <MoveSpeed>0.95</MoveSpeed>
           <StaggerDurationFactor>0</StaggerDurationFactor>
           <IncomingDamageFactor>0.9</IncomingDamageFactor>
         </statFactors>
@@ -499,14 +539,19 @@
           <SM_BodySizeOffset>0.4</SM_BodySizeOffset>
           <ArmorRating_Sharp>0.10</ArmorRating_Sharp>
           <ArmorRating_Heat>0.5</ArmorRating_Heat>
+          <VacuumResistance MayRequire="Ludeon.Rimworld.Odyssey">0.75</VacuumResistance>
         </statOffsets>
         <statFactorEffectMultiplier>BS_SoulPower</statFactorEffectMultiplier>
         <statOffsetEffectMultiplier>BS_SoulPower</statOffsetEffectMultiplier>
       </li>
       <li>
         <minSeverity>2.1</minSeverity>
+        <totalBleedFactor>0.0</totalBleedFactor>
+        <painFactor>0.75</painFactor>
+        <preventVacuumBurns>true</preventVacuumBurns>
+        <blocksMentalBreaks>true</blocksMentalBreaks>
         <statFactors>
-          <!-- <MoveSpeed>0.75</MoveSpeed> -->
+          <MoveSpeed>0.95</MoveSpeed>
           <StaggerDurationFactor>0</StaggerDurationFactor>
           <IncomingDamageFactor>0.9</IncomingDamageFactor>
         </statFactors>
@@ -514,6 +559,7 @@
           <SM_BodySizeOffset>0.25</SM_BodySizeOffset>
           <ArmorRating_Sharp>0.10</ArmorRating_Sharp>
           <ArmorRating_Heat>0.5</ArmorRating_Heat>
+          <VacuumResistance MayRequire="Ludeon.Rimworld.Odyssey">0.75</VacuumResistance>
         </statOffsets>
         <statFactorEffectMultiplier>BS_SoulPower</statFactorEffectMultiplier>
         <statOffsetEffectMultiplier>BS_SoulPower</statOffsetEffectMultiplier>

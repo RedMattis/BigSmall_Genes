@@ -10,7 +10,7 @@
     <customEffectDescriptions>
       <li>Gene has reduced effect on already large pawns.</li>
     </customEffectDescriptions>
-    <description>Carriers of this gene can transform into a larger more powerful form temporarily, the power of which is determined by the amount of Soul Power possessed. Sprouts glorious feathered wings, a halo, and gains increased ability to resist injury.</description>
+    <description>Carriers of this gene can transform into a larger more powerful form temporarily, the power of which is determined by the amount of Soul Power possessed. Sprouts glorious feathered wings, a halo, and gains increased ability to resist injury and temporarily prevent death.</description>
     <iconPath>GeneIcons/BS_AngelicForm</iconPath>
     <abilities>
       <li>BS_AngelicForm_Abillity</li>

@@ -43,6 +43,7 @@
   </ThingDef>
 
   <AbilityDef Abstract="True" Name="BS_TrueFormAbillity">
+    <abilityClass>BigAndSmall.UsableDownedAbility</abilityClass>
     <cooldownTicksRange>1400</cooldownTicksRange>
     <hostile>false</hostile>
     <targetRequired>false</targetRequired>
