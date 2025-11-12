@@ -16,14 +16,13 @@
         <frequencyInDays>2</frequencyInDays>
         <baseAmount>7</baseAmount>
         <progressName>Producing Jelly</progressName>
-        <saveKey>BS_JellyProduction</saveKey>
-      </li>
-      <li Class="BigAndSmall.ProductionGeneSettings">
-        <product>InsectJelly</product>
-        <frequencyInDays>2</frequencyInDays>
-        <baseAmount>4</baseAmount>
-        <progressName>Producing Jelly</progressName>
-        <saveKey>BS_JellyProduction</saveKey>
+        <saveKey>BS_RoyalJellyProduction</saveKey>
+        <extra>
+          <li>
+            <product>InsectJelly</product>
+            <baseAmount>4</baseAmount>
+          </li>
+        </extra>
       </li>
     </modExtensions>
   </GeneDef>
