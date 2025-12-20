@@ -28,7 +28,9 @@
     <iconPath>GeneIcons/BS_MorphAgeOld</iconPath>
     <modExtensions>
       <li Class="BigAndSmall.PawnExtension">
-        <metamorphAtAge>13</metamorphAtAge>
+        <morphSettings>
+          <morphOverAge>13</morphOverAge>
+        </morphSettings>
 			</li>
 		</modExtensions>
   </GeneDef>
@@ -40,7 +42,10 @@
     <iconPath>GeneIcons/BS_MorphAgeYoung</iconPath>
     <modExtensions>
       <li Class="BigAndSmall.PawnExtension">
-        <retromorphUnderAge>13</retromorphUnderAge>
+        <morphSettings>
+          <isRetromorph>true</isRetromorph>
+          <morphUnderAge>13</morphUnderAge>
+        </morphSettings>
 			</li>
 		</modExtensions>
   </GeneDef>
@@ -52,7 +57,9 @@
     <iconPath>GeneIcons/BS_MorphAgeOldAdult</iconPath>
     <modExtensions>
       <li Class="BigAndSmall.PawnExtension">
-        <metamorphAtAge>18</metamorphAtAge>
+        <morphSettings>
+          <morphOverAge>18</morphOverAge>
+        </morphSettings>
 			</li>
 		</modExtensions>
   </GeneDef>
@@ -64,7 +71,10 @@
     <iconPath>GeneIcons/BS_MorphAgeYoungAdult</iconPath>
     <modExtensions>
       <li Class="BigAndSmall.PawnExtension">
-        <retromorphUnderAge>18</retromorphUnderAge>
+        <morphSettings>
+          <isRetromorph>true</isRetromorph>
+          <morphUnderAge>18</morphUnderAge>
+        </morphSettings>
 			</li>
 		</modExtensions>
   </GeneDef>
@@ -76,7 +86,9 @@
     <iconPath>GeneIcons/BS_MorphAgeOldAdult</iconPath>
     <modExtensions>
       <li Class="BigAndSmall.PawnExtension">
-        <metamorphAtAge>75</metamorphAtAge>
+        <morphSettings>
+          <morphOverAge>75</morphOverAge>
+        </morphSettings>
 			</li>
 		</modExtensions>
   </GeneDef>
@@ -88,7 +100,10 @@
     <iconPath>GeneIcons/BS_MorphAgeYoungAdult</iconPath>
     <modExtensions>
       <li Class="BigAndSmall.PawnExtension">
-        <retromorphUnderAge>75</retromorphUnderAge>
+        <morphSettings>
+          <isRetromorph>true</isRetromorph>
+          <morphUnderAge>75</morphUnderAge>
+        </morphSettings>
 			</li>
 		</modExtensions>
   </GeneDef>
@@ -100,7 +115,9 @@
     <iconPath>GeneIcons/BS_MorphPregnant</iconPath>
     <modExtensions>
       <li Class="BigAndSmall.PawnExtension">
-        <metamorphIfPregnant>true</metamorphIfPregnant>
+        <morphSettings>
+          <morphIfPregnant>true</morphIfPregnant>
+        </morphSettings>
 			</li>
 		</modExtensions>
   </GeneDef>
@@ -112,7 +129,10 @@
     <iconPath>GeneIcons/BS_MorphSun</iconPath>
     <modExtensions>
       <li Class="BigAndSmall.PawnExtension">
-        <metamorphIfDay>true</metamorphIfDay>
+        <morphSettings>
+          <morphIfNight>true</morphIfNight>
+        </morphSettings>
+        <!-- Required to make sure it triggers an update often enough that they morph after awhile when the light level changes. -->
         <frequentUpdate>true</frequentUpdate>
 			</li>
 		</modExtensions>
@@ -125,7 +145,9 @@
     <iconPath>GeneIcons/BS_MorphMoon</iconPath>
     <modExtensions>
       <li Class="BigAndSmall.PawnExtension">
-        <metamorphIfNight>true</metamorphIfNight>
+        <morphSettings>
+          <morphIfNight>true</morphIfNight>
+        </morphSettings>
         <frequentUpdate>true</frequentUpdate>
 			</li>
 		</modExtensions>
