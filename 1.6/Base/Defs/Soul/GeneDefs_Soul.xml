@@ -49,16 +49,14 @@
   <GeneDef>
     <defName>BS_AnomalousPsychicPower</defName>
     <label>soul attunement </label>
-    <description>Increases psychic power based on the amount of Psychic Sensitivity. This is compatible with other genes that increase psychic power.</description>
+    <description>Increases psychic power based on the amount of Soul Power. This is compatible with other genes that increase psychic power.</description>
     <customEffectDescriptions>
       <li>Gain 25% of Soul Power as Psychic Sensitivity</li>
     </customEffectDescriptions>
     <iconPath>GeneIcons/BS_SoulPsychic</iconPath>
     <biostatMet>-2</biostatMet>
     <selectionWeight>1</selectionWeight>
-    
     <modExtensions>
-			
       <li Class="BigAndSmall.PawnExtension">
 				<applyBodyHediff><li><hediff>BS_SoulPsychicPower</hediff></li></applyBodyHediff>
 			</li>

@@ -70,6 +70,55 @@
   </GeneDef>
 
   <GeneDef>
+    <defName>BS_MinimalPregnancy</defName>
+    <label>light pregnancy</label>
+    <description>Carriers of this gene have lighter pregnancies and skip most of the third trimester.\n\nCompatible with "short pregnancy".</description>
+    <iconPath>GeneIcons/BS_LightPregnancy</iconPath>
+    <displayCategory>Reproduction</displayCategory>
+    <geneClass>BigAndSmall.ShortPregnancy</geneClass>
+    <marketValueFactor>2</marketValueFactor>
+    <biostatCpx>2</biostatCpx>
+    <biostatMet>-1</biostatMet>
+    <biostatArc>0</biostatArc>
+  </GeneDef>
+
+    <GeneDef>
+    <defName>BS_AutoPregnancy</defName>
+    <label>Auto Pregnancy</label>
+    <description>Carriers of this gene will periodically form a clone of themselves.</description>
+    <iconPath>GeneIcons/BS_AutoPregnancy</iconPath>
+    <displayCategory>Reproduction</displayCategory>
+    <geneClass>BigAndSmall.AutoPregnancy</geneClass>
+    <marketValueFactor>2</marketValueFactor>
+    <biostatCpx>2</biostatCpx>
+    <biostatMet>-1</biostatMet>
+    <modExtensions>
+      <li Class="BigAndSmall.AutoPregnancySettings">
+        <randomExtraParentChance>0.0</randomExtraParentChance>
+      </li>
+    </modExtensions>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>BS_AutoPregnancyArchite</defName>
+    <label>Archite Pregnancy</label>
+    <description>Carriers of this gene will periodically auto-impregnate.\n\nOffspring will fairly often materialize genes from unknown sources.</description>
+    <iconPath>GeneIcons/BS_AutoPregnancyArchite</iconPath>
+    <displayCategory>Archite</displayCategory>
+    <geneClass>BigAndSmall.AutoPregnancy</geneClass>
+    <marketValueFactor>2</marketValueFactor>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>1</biostatMet>
+    <biostatArc>1</biostatArc>
+    <modExtensions>
+      <li Class="BigAndSmall.AutoPregnancySettings">
+        <randomExtraParentChance>0.65</randomExtraParentChance>
+        <randomExtraParentChanceArchites>0.35</randomExtraParentChanceArchites>
+      </li>
+    </modExtensions>
+  </GeneDef>
+
+  <GeneDef>
     <defName>BS_EarlyMaturity</defName>
     <label>early maturity</label>
     <description>Like many animals, carriers of this gene give birth to offspring already capable of walking and learning.</description>
