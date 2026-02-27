@@ -177,7 +177,7 @@
   <WeaponTraitDef MayRequire="Ludeon.RimWorld.Odyssey">
     <defName>BS_Modern_ArchoTech</defName>
     <label>archotech</label>
-    <description>While appearing as a mostly unremarkable weapon, the performance in use defies all explanation.\n\nThis is almost certainly the creation of an ancient archotechnological being.</description>
+    <description>At a glance the weapon might appear standard-issue, the performance in use defies all explanation.\n\nThis is almost certainly the creation of an ancient archotechnological being.</description>
     <commonality>0.5</commonality>
     <weaponCategory>BS_ModernGun</weaponCategory>
     <exclusionTags>
