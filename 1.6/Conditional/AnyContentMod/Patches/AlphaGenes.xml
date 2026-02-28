@@ -1,0 +1,44 @@
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Alpha Genes</li>
+    </mods>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="AG_RandomGeneTool"]/comps/li[@Class="AlphaGenes.CompProperties_RandomItemSpawner"]/items</xpath>
+      <value>
+        <li>
+          <item>BS_CreateXenogerm_Endo</item>
+          <weight>1</weight>
+        </li>
+        <li>
+          <item>BS_CreateArchiteXenogerm_Endo</item>
+          <weight>1</weight>
+        </li>
+        <li>
+          <item>BS_CreateXenogerm</item>
+          <weight>1</weight>
+        </li>
+        <li>
+          <item>BS_GeneDicombobulator</item>
+          <weight>2</weight>
+        </li>
+        <li>
+          <item>BS_CreateArchiteXenogerm</item>
+          <weight>0.5</weight>
+        </li>
+        <li>
+          <item>BS_GeneGeneIntegrator</item>
+          <weight>1</weight>
+        </li>
+        <li>
+          <item>BS_Giant_Serum</item>
+          <weight>1</weight>
+        </li>
+        <li>
+          <item>BS_Shrink_Serum</item>
+          <weight>0.5</weight>
+        </li>
+      </value>
+    </match>
+  </Operation>
+</Patch>
