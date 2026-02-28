@@ -17,7 +17,7 @@
     </statOffsets>
     <modExtensions>
       <li Class="BigAndSmall.PawnExtension">
-        <soulFalloffStart>0.5</soulFalloffStart>
+        <soulFalloffStart>1</soulFalloffStart>
       </li>
       </modExtensions>
   </GeneDef>
@@ -34,7 +34,7 @@
       <li>0.05 damage reduction, scaled by Soul Power</li>
     </customEffectDescriptions>
     <iconPath>GeneIcons/BS_SoulPower</iconPath>
-    <biostatArc>2</biostatArc>
+    <biostatArc>1</biostatArc>
     <exclusionTags><li>BS_SoulPower</li></exclusionTags>
     <statOffsets>
       <BS_SoulPower>1</BS_SoulPower>
@@ -59,6 +59,7 @@
     <modExtensions>
       <li Class="BigAndSmall.PawnExtension">
 				<applyBodyHediff><li><hediff>BS_SoulPsychicPower</hediff></li></applyBodyHediff>
+        <soulFalloffStart>0.15</soulFalloffStart>
 			</li>
 		</modExtensions>
   </GeneDef>
@@ -97,6 +98,24 @@
     <modExtensions>
       <li Class="BigAndSmall.PawnExtension">
 				<applyBodyHediff><li><hediff>BS_SoulSize</hediff></li></applyBodyHediff>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>BS_HealingWithSoul</defName>
+    <label>soul reconstitution</label>
+    <description>Increases healing rate based on soul power.</description>
+    <customEffectDescriptions>
+      <li>Gain 4x of Soul Power as wound healing rate</li>
+    </customEffectDescriptions>
+    <iconPath>GeneIcons/BS_SoulHealing</iconPath>
+    <biostatMet>-2</biostatMet>
+    <selectionWeight>1</selectionWeight>
+    <modExtensions>
+      <li Class="BigAndSmall.PawnExtension">
+				<applyBodyHediff><li><hediff>BS_HealingSoulPower</hediff></li></applyBodyHediff>
+        <soulFalloffStart>0.25</soulFalloffStart>
 			</li>
 		</modExtensions>
   </GeneDef>

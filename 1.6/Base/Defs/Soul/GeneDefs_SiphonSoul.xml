@@ -120,12 +120,54 @@
     <biostatMet>-1</biostatMet>
     <modExtensions>
       <li Class="BigAndSmall.PawnExtension">
-				<consumeSoulOnHit>
+				<siphonSoul>
+          <type>KillingBlow</type>
           <gainMultiplier>0.15</gainMultiplier>
           <exponentialFalloff>2.5</exponentialFalloff>
           <gainSkillMultiplier>0.05</gainSkillMultiplier>
-        </consumeSoulOnHit>
+        </siphonSoul>
 			</li>
 		</modExtensions>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>BS_GainSoulOnRecruit</defName>
+    <label>power from reverence</label>
+    <description>Winning the hearts and minds of others fuels your soul. Literally.\n\nRecruiting new members to your faction empowers you and lets you siphon some of their skills.\n\nFor the greater good! Probably!</description>
+    <iconPath>GeneIcons/BS_SoulFaith</iconPath>
+    <displayCategory>Archite</displayCategory>
+    <biostatArc>2</biostatArc>
+    <modExtensions>
+      <li Class="BigAndSmall.PawnExtension">
+				<siphonSoul>
+          <type>Influence</type>
+          <baseAmount>0.02</baseAmount>
+          <gainMultiplier>6</gainMultiplier>
+          <exponentialFalloff>2.5</exponentialFalloff>
+          <gainSkillMultiplier>2</gainSkillMultiplier>
+        </siphonSoul>
+        <soulFalloffStart>0.25</soulFalloffStart>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+  <GeneDef ParentName="BS_GenericGene">
+    <defName>BS_SoulSiphonEfficiency</defName>
+    <label>siphon efficiency</label>
+    <description>Carriers of this gene are much more efficient at siphoning spiritual energy by any method.\n\nThis does little without the ability to draw soul power.</description>
+    <iconPath>GeneIcons/BS_SoulSiphon</iconPath>
+    <displayCategory>Archite</displayCategory>
+    <biostatArc>1</biostatArc>
+    <selectionWeight>0.4</selectionWeight>
+    <statOffsets>
+      <BS_SoulPower>0.25</BS_SoulPower>
+    </statOffsets>
+    <modExtensions>
+      <li Class="BigAndSmall.PawnExtension">
+        <soulFalloffStart>0.25</soulFalloffStart>
+        <siphonFactorOffset>2</siphonFactorOffset>
+        <siphonSkillFactorOffset></siphonSkillFactorOffset>
+      </li>
+    </modExtensions>
   </GeneDef>
 </Defs>

@@ -25,6 +25,11 @@
 
     <canGenerateInGeneSet>true</canGenerateInGeneSet>
     <selectionWeight>1</selectionWeight>
+    <modExtensions>
+      <li Class="BigAndSmall.PawnExtension">
+        <soulFalloffStart>0.25</soulFalloffStart>
+			</li>
+		</modExtensions>
   </GeneDef>
 
   <GeneDef>
@@ -49,9 +54,13 @@
     <statOffsets>
       <BS_SoulPower>0.25</BS_SoulPower>
     </statOffsets>
-
     <canGenerateInGeneSet>true</canGenerateInGeneSet>
     <selectionWeight>1</selectionWeight>
+    <modExtensions>
+      <li Class="BigAndSmall.PawnExtension">
+        <soulFalloffStart>0.25</soulFalloffStart>
+			</li>
+		</modExtensions>
   </GeneDef>
 
   <GeneDef>
@@ -76,7 +85,6 @@
     <statOffsets>
       <BS_SoulPower>0.25</BS_SoulPower>
     </statOffsets>
-
     <canGenerateInGeneSet>true</canGenerateInGeneSet>
     <selectionWeight>1</selectionWeight>
   </GeneDef>
@@ -108,6 +116,11 @@
 
     <canGenerateInGeneSet>true</canGenerateInGeneSet>
     <selectionWeight>0</selectionWeight>
+    <modExtensions>
+      <li Class="BigAndSmall.PawnExtension">
+        <soulFalloffStart>0.25</soulFalloffStart>
+			</li>
+		</modExtensions>
   </GeneDef>
 
 

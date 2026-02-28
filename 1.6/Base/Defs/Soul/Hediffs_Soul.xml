@@ -43,8 +43,25 @@
           <MeditationFocusGain>0.1</MeditationFocusGain>
           <PsychicEntropyRecoveryRate>0.1</PsychicEntropyRecoveryRate>
         </statOffsets>
-        <!-- <statFactorEffectMultiplier>BS_SoulPower</statFactorEffectMultiplier> -->
         <statOffsetEffectMultiplier>BS_SoulPower</statOffsetEffectMultiplier>
+      </li>
+    </stages>
+    <allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>BS_HealingSoulPower</defName>
+    <label>injury erasure</label>
+    <description>Unnatural healing via soul power.</description>
+    <isBad>false</isBad>
+    <everCurableByItem>false</everCurableByItem>
+    <initialSeverity>1</initialSeverity>
+    <stages>
+      <li>
+        <statFactors>
+          <InjuryHealingFactor>4</InjuryHealingFactor>
+        </statFactors>
+        <statFactorEffectMultiplier>BS_SoulPower</statFactorEffectMultiplier>
       </li>
     </stages>
     <allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
