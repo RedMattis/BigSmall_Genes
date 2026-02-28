@@ -29,6 +29,7 @@
     <aiCanUse>false</aiCanUse>
     <cooldownTicksRange>120000</cooldownTicksRange>
     <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+    <sendLetterOnCooldownComplete>true</sendLetterOnCooldownComplete>
     <verbProperties>
       <verbClass>Verb_CastAbilityTouch</verbClass>
       <drawAimPie>false</drawAimPie>
