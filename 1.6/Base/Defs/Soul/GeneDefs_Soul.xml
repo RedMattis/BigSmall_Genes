@@ -12,12 +12,13 @@
     <iconPath>GeneIcons/BS_SoulPower</iconPath>
     <biostatMet>-1</biostatMet>
     <exclusionTags><li>BS_SoulPower</li></exclusionTags>
+    <displayCategory>BS_Soul_Category</displayCategory>
     <statOffsets>
       <BS_SoulPower>0.5</BS_SoulPower>
     </statOffsets>
     <modExtensions>
       <li Class="BigAndSmall.PawnExtension">
-        <soulFalloffStart>1</soulFalloffStart>
+        <soulFalloffStart>0.5</soulFalloffStart>
       </li>
       </modExtensions>
   </GeneDef>
@@ -56,10 +57,10 @@
     <iconPath>GeneIcons/BS_SoulPsychic</iconPath>
     <biostatMet>-2</biostatMet>
     <selectionWeight>1</selectionWeight>
+    <displayCategory>BS_Soul_Category</displayCategory>
     <modExtensions>
       <li Class="BigAndSmall.PawnExtension">
 				<applyBodyHediff><li><hediff>BS_SoulPsychicPower</hediff></li></applyBodyHediff>
-        <soulFalloffStart>0.15</soulFalloffStart>
 			</li>
 		</modExtensions>
   </GeneDef>
@@ -92,6 +93,7 @@
     </exclusionTags>
     <iconPath>GeneIcons/BS_SoulSize</iconPath>
     <biostatMet>-3</biostatMet>
+    <displayCategory>BS_Soul_Category</displayCategory>
     <minAgeActive>5</minAgeActive>
     <selectionWeight>1</selectionWeight>
     
@@ -112,6 +114,7 @@
     <iconPath>GeneIcons/BS_SoulHealing</iconPath>
     <biostatMet>-2</biostatMet>
     <selectionWeight>1</selectionWeight>
+    <displayCategory>BS_Soul_Category</displayCategory>
     <modExtensions>
       <li Class="BigAndSmall.PawnExtension">
 				<applyBodyHediff><li><hediff>BS_HealingSoulPower</hediff></li></applyBodyHediff>

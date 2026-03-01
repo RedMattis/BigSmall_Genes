@@ -53,6 +53,12 @@
     <displayPriorityInXenotype>701</displayPriorityInXenotype>
   </GeneCategoryDef>
 
+  <GeneCategoryDef>
+    <defName>BS_Soul_Category</defName>
+    <label>Soul</label>
+    <displayPriorityInXenotype>699</displayPriorityInXenotype>
+  </GeneCategoryDef>
+
 
   <GeneCategoryDef>
     <defName>LoS_Snake_Vis</defName>

@@ -3,7 +3,7 @@
     <defName>BS_ConsumeSoul</defName>
     <label>siphon soul</label>
     <displayCategory>Archite</displayCategory>
-    <description>Grants the ability to drain the essence of a downed foe; killing them in the process. The ability grants Soul Power and steals a small amount of the target's highest skill. The effect has diminishing returns. Dramatically more effective on psychicially sensitive targets (above 100%), targets with many archite genes, and targets with soul power themselves.</description>
+    <description>Grants the ability to drain the essence of a downed foe; killing them in the process. The ability grants Soul Power and steals a small amount of the target's highest skill. The effect has diminishing returns. Dramatically more effective on psychically sensitive targets (above 100%), targets with many archite genes, and targets with soul power themselves.</description>
     <iconPath>GeneIcons/BS_SoulEater</iconPath>
     <abilities>
       <li>BS_ConsumeSoul</li>
@@ -21,7 +21,7 @@
   <AbilityDef ParentName="AbilityTouchBase">
     <defName>BS_ConsumeSoul</defName>
     <label>siphon soul</label>
-    <description>Siphon power from a downed foe. This will cause irreversible damage.</description>
+    <description>Siphon power from a downed foe. This will kill them and cause irreversible damage.</description>
     <iconPath>GeneIcons/BS_SoulEater</iconPath>
     <displayOrder>100</displayOrder>
     <warmupMote>Mote_ResurrectAbility</warmupMote>
@@ -42,9 +42,12 @@
     </verbProperties>
     <comps>
       <li Class="BigAndSmall.CompProperties_ConsumeSoul">
-        <gainMultiplier>1</gainMultiplier>
-        <exponentialFalloff>2.5</exponentialFalloff>
-        <gainSkillMultiplier>0.25</gainSkillMultiplier>
+        <siphonSoul>
+          <type>ConsumeSoul</type>
+          <gainFactor>20</gainFactor>
+          <gainSkill>15</gainSkill>
+          
+        </siphonSoul>
       </li>
       <li Class="CompProperties_AbilityFleckOnTarget">
         <fleckDef>PsycastPsychicEffect</fleckDef>
@@ -57,7 +60,7 @@
   <GeneDef>
     <defName>BS_ConsumeSoul_Enslave</defName>
     <label>siphon soul (husk)</label>
-    <description>Grants the ability to drain the essence of a downed foe; subjugating them in the process. The ability grants Soul Power and steals a small amount of the target's highest skill. The effect has diminishing returns. Dramatically more effective on psychicially sensitive targets (above 100%), targets with many archite genes, and targets with soul power themselves.</description>
+    <description>Grants the ability to drain the essence of a downed foe; subjugating them in the process. The ability grants Soul Power and steals a small amount of the target's highest skill. The effect has diminishing returns. Dramatically more effective on psychically sensitive targets (above 100%), targets with many archite genes, and targets with soul power themselves.</description>
     <iconPath>GeneIcons/BS_SoulEater</iconPath>
     <prerequisite>BS_ConsumeSoul</prerequisite>
     <abilities>
@@ -66,6 +69,7 @@
     <descriptionHyperlinks>
       <AbilityDef>BS_ConsumeSoul_Enslave</AbilityDef>
     </descriptionHyperlinks>
+    <displayCategory>BS_Soul_Category</displayCategory>
     <biostatMet>0</biostatMet>
     <biostatArc>0</biostatArc>
     <minAgeActive>5</minAgeActive>
@@ -76,7 +80,7 @@
   <AbilityDef ParentName="AbilityTouchBase">
     <defName>BS_ConsumeSoul_Enslave</defName>
     <label>create husk</label>
-    <description>Siphon power from a downed foe. This will not kill them, but will cause irreversible mental damage.</description>
+    <description>Siphon power from a downed foe. This will not kill them, but will cause irreversible mental damage. Provides less power than fully consuming souls, but siphons their mind more efficiently; granting more skill.</description>
     <iconPath>GeneIcons/BS_SoulEater_Enslave</iconPath>
     <displayOrder>100</displayOrder>
     <warmupMote>Mote_ResurrectAbility</warmupMote>
@@ -97,11 +101,14 @@
     </verbProperties>
     <comps>
       <li Class="BigAndSmall.CompProperties_ConsumeSoul">
-        <gainMultiplier>0.6</gainMultiplier>
-        <exponentialFalloff>2.5</exponentialFalloff>
+        <siphonSoul>
+          <type>ConsumeSoul</type>
+          <gainFactor>15</gainFactor>
+          <gainSkill>25</gainSkill>
+          
+        </siphonSoul>
         <doKill>false</doKill>
         <doEnslave>true</doEnslave>
-        <gainSkillMultiplier>0.25</gainSkillMultiplier>
       </li>
       <li Class="CompProperties_AbilityFleckOnTarget">
         <fleckDef>PsycastPsychicEffect</fleckDef>
@@ -114,17 +121,19 @@
   <GeneDef>
     <defName>BS_ConsumeSoulOnHit</defName>
     <label>siphon soul melee</label>
-    <description>Trigger siphon soul when dealing a fatal blow in melee or close-combat. Unlike the regular version this will steal only a tiny amount of skill from the victim.</description>
+    <description>Trigger siphon soul when dealing a fatal blow in melee or close-combat. Unlike the regular version this will steal only a tiny amount of skill from the victim.\n\nFar more effective against targets with high psychic sensitivity.</description>
     <prerequisite>BS_ConsumeSoul</prerequisite>
     <iconPath>GeneIcons/BS_SoulEaterOnKill</iconPath>
+    <displayCategory>BS_Soul_Category</displayCategory>
     <biostatMet>-1</biostatMet>
     <modExtensions>
       <li Class="BigAndSmall.PawnExtension">
 				<siphonSoul>
           <type>KillingBlow</type>
-          <gainMultiplier>0.15</gainMultiplier>
-          <exponentialFalloff>2.5</exponentialFalloff>
-          <gainSkillMultiplier>0.05</gainSkillMultiplier>
+          <gainFactor>2</gainFactor>
+          
+          <fromTargetSoulFactor>0.5</fromTargetSoulFactor>
+          <gainSkill>5</gainSkill>
         </siphonSoul>
 			</li>
 		</modExtensions>
@@ -133,7 +142,7 @@
   <GeneDef>
     <defName>BS_GainSoulOnRecruit</defName>
     <label>power from reverence</label>
-    <description>Winning the hearts and minds of others fuels your soul. Literally.\n\nRecruiting new members to your faction empowers you and lets you siphon some of their skills.\n\nFor the greater good! Probably!</description>
+    <description>Winning the hearts and minds of others fuels your soul. Literally.\n\nRecruiting new members to your faction empowers you and lets you siphon some of their skills.\n\nFor the greater good! Probably!\n\nFar more effective against targets with high psychic sensitivity and archite genes.</description>
     <iconPath>GeneIcons/BS_SoulFaith</iconPath>
     <displayCategory>Archite</displayCategory>
     <biostatArc>2</biostatArc>
@@ -141,12 +150,38 @@
       <li Class="BigAndSmall.PawnExtension">
 				<siphonSoul>
           <type>Influence</type>
-          <baseAmount>0.02</baseAmount>
-          <gainMultiplier>6</gainMultiplier>
-          <exponentialFalloff>2.5</exponentialFalloff>
-          <gainSkillMultiplier>2</gainSkillMultiplier>
+          <gainOffset>10</gainOffset>
+          <gainFactor>50</gainFactor>
+          
+          <fromTargetSoulFactor>0.1</fromTargetSoulFactor>
+          <architeGeneFactor>0.5</architeGeneFactor>
+          <gainSkill>30</gainSkill>
         </siphonSoul>
-        <soulFalloffStart>0.25</soulFalloffStart>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>BS_GainSoulOnLovin</defName>
+    <label>lovin' soul drain</label>
+    <description>Carriers of this gene will siphon the soul and mind from their partner when performing Lovin'\n\nEspecially strong skill-drain.\n\nFor better or worse, this is far more effective against targets with high psychic sensitivity and archite genes.</description>
+    <iconPath>GeneIcons/BS_SoulLovin</iconPath>
+    <displayCategory>BS_Soul_Category</displayCategory>
+    <biostatMet>2</biostatMet>
+    <modExtensions>
+      <li Class="BigAndSmall.PawnExtension">
+				<siphonSoul>
+          <type>Lovin</type>
+          <gainFactor>10</gainFactor>
+          
+          <fromTargetSoulFactor>0</fromTargetSoulFactor>
+          
+          <gainSkill>20</gainSkill>
+          <maxXpDrainPercent>20</maxXpDrainPercent>
+          <maxXPDrain>5000</maxXPDrain>
+          <architeGeneFactor>0.25</architeGeneFactor>
+          <fromTargetPsyfocusFactor_Max>1.0</fromTargetPsyfocusFactor_Max>
+        </siphonSoul>
 			</li>
 		</modExtensions>
   </GeneDef>
@@ -164,9 +199,9 @@
     </statOffsets>
     <modExtensions>
       <li Class="BigAndSmall.PawnExtension">
-        <soulFalloffStart>0.25</soulFalloffStart>
-        <siphonFactorOffset>2</siphonFactorOffset>
-        <siphonSkillFactorOffset></siphonSkillFactorOffset>
+        <soulFalloffStart>1</soulFalloffStart>
+        <siphonFactorOffset>1</siphonFactorOffset>
+        <siphonSkillFactorOffset>2</siphonSkillFactorOffset>
       </li>
     </modExtensions>
   </GeneDef>
