@@ -63,16 +63,16 @@
     <biostatMet>-1</biostatMet>
     <biostatArc>0</biostatArc>
     <modExtensions>
-    <li Class="BigAndSmall.PawnExtension">
-      <pregnancySpeedMultiplier>2.25</pregnancySpeedMultiplier>
-    </li>
-  </modExtensions>
+      <li Class="BigAndSmall.PawnExtension">
+        <pregnancySpeedMultiplier>2.25</pregnancySpeedMultiplier>
+      </li>
+    </modExtensions>
   </GeneDef>
 
   <GeneDef>
     <defName>BS_MinimalPregnancy</defName>
     <label>light pregnancy</label>
-    <description>Carriers of this gene have lighter pregnancies and skip most of the third trimester.\n\nCompatible with "short pregnancy".</description>
+    <description>Carriers of this gene have lighter pregnancies and skip most of the third trimester. They are also much less likely to suffer birth-complications.\n\nCompatible with "short pregnancy".</description>
     <iconPath>GeneIcons/BS_LightPregnancy</iconPath>
     <displayCategory>Reproduction</displayCategory>
     <geneClass>BigAndSmall.ShortPregnancy</geneClass>
@@ -80,6 +80,11 @@
     <biostatCpx>2</biostatCpx>
     <biostatMet>-1</biostatMet>
     <biostatArc>0</biostatArc>
+    <modExtensions>
+      <li Class="BigAndSmall.PawnExtension">
+        <pregnancyQuality>0.25</pregnancyQuality>
+      </li>
+    </modExtensions>
   </GeneDef>
 
     <GeneDef>
@@ -114,6 +119,9 @@
       <li Class="BigAndSmall.AutoPregnancySettings">
         <randomExtraParentChance>0.65</randomExtraParentChance>
         <randomExtraParentChanceArchites>0.35</randomExtraParentChanceArchites>
+      </li>
+      <li Class="BigAndSmall.PawnExtension">
+        <pregnancyQuality>1</pregnancyQuality>
       </li>
     </modExtensions>
   </GeneDef>

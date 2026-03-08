@@ -55,8 +55,7 @@
 			<li>BS_TrueForm_Demonic_Hemo</li>
 			<li>BS_ConsumeSoul</li>
 			<li>BS_ConsumeSoul_Enslave</li>
-			<li>BS_ConsumeSoulOnHit</li>
-
+      <li>BS_GainSoulOnLovin</li>
     </genes>
     <factionlessGenerationWeight>0.1</factionlessGenerationWeight>
     <forbiddenWeaponClasses>
