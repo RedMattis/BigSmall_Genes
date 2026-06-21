@@ -58,12 +58,12 @@
     <defName>BS_Fast_TotalHealing</defName>
     <label>Regeneration</label>
     <labelShortAdj>regenerating</labelShortAdj>
-    <description>Carriers of this gene can regenerate scars and missing limbs The nature of their healing factor makes their parts unsuitable for donation or harvesting.</description>
+    <description>Carriers of this gene can regenerate scars and missing limbs The nature of their healing factor makes their parts unsuitable for donation or harvesting. When combined with Superclotting carriers will see their wounds stich together far better.</description>
     <customEffectDescriptions>
       <li>Heals scars, missing limbs, and organs. Somewhat scales with healing rate.</li>
     </customEffectDescriptions>
     <iconPath>GeneIcons/BS_TotalHealing_Fast</iconPath>
-    <geneClass>BigAndSmall.Regeneration</geneClass>
+    <geneClass>BigAndSmall.Regeneration_TendOnlyIfSuperclotting</geneClass>
     <preventPermanentWounds>true</preventPermanentWounds>
     <biostatCpx>8</biostatCpx>
     <biostatArc>2</biostatArc>

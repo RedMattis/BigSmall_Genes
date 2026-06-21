@@ -20,7 +20,7 @@
       <li Class="BigAndSmall.PawnExtension">
         <soulFalloffStart>0.5</soulFalloffStart>
       </li>
-      </modExtensions>
+    </modExtensions>
   </GeneDef>
 
   <GeneDef ParentName="BS_GenericGene">
