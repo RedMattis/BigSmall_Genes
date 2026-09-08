@@ -41,7 +41,7 @@
         </drawData>
       </li>
     </renderNodeProperties>
-    <missingGeneRomanceChanceFactor>0.6</missingGeneRomanceChanceFactor>
+    <missingGeneRomanceChanceFactor>0.75</missingGeneRomanceChanceFactor>
     <displayCategory>Miscellaneous</displayCategory>
     <displayOrderInCategory>410</displayOrderInCategory>
     <symbolPack>

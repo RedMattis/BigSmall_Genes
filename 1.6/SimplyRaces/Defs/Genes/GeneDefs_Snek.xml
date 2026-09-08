@@ -52,7 +52,6 @@
     <biostatCpx>1</biostatCpx>
     <biostatMet>0</biostatMet>
     <selectionWeight>1</selectionWeight>
-    <missingGeneRomanceChanceFactor>0.75</missingGeneRomanceChanceFactor>
     <modExtensions>
       <li Class="BigAndSmall.Flagger"><flags><ShowBaseAbdomen/></flags></li>
     </modExtensions>
@@ -151,7 +150,6 @@
         <offset>0.15</offset>
       </li>
     </capMods>
-    <missingGeneRomanceChanceFactor>0.75</missingGeneRomanceChanceFactor>
     <modExtensions>
       <li Class="BigAndSmall.PawnExtension">
         <canWalkOnCreep>true</canWalkOnCreep>
