@@ -69,9 +69,9 @@
     <costStuffCount>50</costStuffCount>
     <costList>
       <Steel>100</Steel>
-      <ComponentIndustrial>3</ComponentIndustrial>
-      <Gold>20</Gold>
-      <Neutroamine>5</Neutroamine>
+      <ComponentIndustrial>2</ComponentIndustrial>
+      <Gold>10</Gold>
+      <Neutroamine>4</Neutroamine>
     </costList>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <designationCategory>Security</designationCategory>
@@ -91,13 +91,14 @@
       <li>GunTurrets</li>
       <li>BS_MadScienceField</li>
     </researchPrerequisites>
+    <uiIconPath>Item/mad_shrinkray</uiIconPath>
   </ThingDef>
 
   <ThingDef ParentName="BMAD_ShrinkTurret">
     <defName>BMAD_GrowthTurret</defName>
     <label>growth-ray mini-turret</label>
     <description>A portable automatic turret with a growth-ray attached.</description>
-    
+    <uiIconPath>Item/mad_growthray</uiIconPath>
     <building Inherit="False">
       <combatPower>55</combatPower>   <!-- same as a scavenger -->
       <ai_combatDangerous>true</ai_combatDangerous>
